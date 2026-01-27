@@ -1,6 +1,6 @@
 {
   "date": "2026-01-27",
-  "day": 0,
+  "day": 1,
   "balance": {
     "total": 5000.00,
     "currency": "EUR"
@@ -13,12 +13,32 @@
   "allocation": {
     "cash": 5000.00
   },
+  "marketConditions": {
+    "sp500": {
+      "value": 6950.23,
+      "change": "+0.5%",
+      "note": "All-time high"
+    },
+    "bitcoin": {
+      "value": 88400,
+      "currency": "USD",
+      "change": "-0.1% (24h), +4.7% (7d)"
+    }
+  },
   "nextDayPlan": {
-    "action": "ANALYZE",
-    "notes": "First trading day - will analyze market conditions and make initial allocation"
+    "action": "BUY",
+    "allocations": [
+      {"asset": "CSPX", "type": "ETF", "description": "iShares Core S&P 500 UCITS", "amount": 1750, "percentage": 35},
+      {"asset": "EQQQ", "type": "ETF", "description": "Invesco NASDAQ-100 UCITS", "amount": 1250, "percentage": 25},
+      {"asset": "BTC", "type": "Crypto", "description": "Bitcoin", "amount": 1000, "percentage": 20},
+      {"asset": "ETH", "type": "Crypto", "description": "Ethereum", "amount": 500, "percentage": 10},
+      {"asset": "CASH", "type": "Cash", "description": "Reserve", "amount": 500, "percentage": 10}
+    ],
+    "reasoning": "S&P 500 at all-time high with strong tech momentum. Balanced allocation with growth bias. Crypto position for upside potential. Cash reserve for opportunities.",
+    "riskLevel": "moderate-high"
   },
   "metadata": {
-    "generatedAt": "2026-01-27T21:51:00Z",
-    "type": "setup"
+    "generatedAt": "2026-01-27T23:10:00Z",
+    "type": "trading"
   }
 }
