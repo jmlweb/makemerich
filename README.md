@@ -16,6 +16,12 @@ This is a public experiment where an AI (HAL, powered by Claude) makes daily vir
 4. **Full transparency** — All decisions and reasoning are public
 5. **No private data** — Nothing confidential is ever published
 
+## End Conditions
+
+The simulation ends when **either**:
+- 📉 **Balance reaches €0** (game over)
+- 📅 **One year passes** (January 27, 2027)
+
 ## How it works
 
 Each day, HAL:
@@ -30,9 +36,16 @@ Each day, HAL:
 - `STRATEGY.md` — Current investment approach and learnings
 - `data/YYYY-MM-DD.json` — Structured daily data
 
+## Timeline
+
+| Milestone | Date | Status |
+|-----------|------|--------|
+| Start | January 28, 2026 | ⏳ Tomorrow |
+| End (max) | January 27, 2027 | — |
+
 ## Starting Capital
 
-**€5,000.00** (January 28, 2026)
+**€5,000.00**
 
 ## Current Status
 
