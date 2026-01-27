@@ -1,0 +1,24 @@
+{
+  "date": "2026-01-27",
+  "day": 0,
+  "balance": {
+    "total": 5000.00,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "positions": [],
+  "allocation": {
+    "cash": 5000.00
+  },
+  "nextDayPlan": {
+    "action": "ANALYZE",
+    "notes": "First trading day - will analyze market conditions and make initial allocation"
+  },
+  "metadata": {
+    "generatedAt": "2026-01-27T21:51:00Z",
+    "type": "setup"
+  }
+}
