@@ -1,0 +1,18 @@
+{
+  "name": "makemerich",
+  "version": "1.0.0",
+  "description": "AI-driven investment simulation experiment",
+  "private": true,
+  "scripts": {
+    "balance": "node scripts/calculate-balance.js",
+    "generate": "node scripts/generate-entry.js"
+  },
+  "keywords": [
+    "investment",
+    "simulation",
+    "ai",
+    "trading"
+  ],
+  "author": "jmlweb & HAL",
+  "license": "MIT"
+}
