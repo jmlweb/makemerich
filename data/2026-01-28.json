@@ -1,0 +1,79 @@
+{
+  "date": "2026-01-28",
+  "day": 2,
+  "balance": {
+    "total": 5022.08,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 22.08,
+    "percentage": 0.44
+  },
+  "positions": [
+    {
+      "asset": "CSPX",
+      "type": "ETF",
+      "description": "iShares Core S&P 500 UCITS",
+      "invested": 1750.00,
+      "value": 1756.48,
+      "pnl": 6.48,
+      "pnlPercent": 0.37
+    },
+    {
+      "asset": "EQQQ",
+      "type": "ETF",
+      "description": "Invesco NASDAQ-100 UCITS",
+      "invested": 1250.00,
+      "value": 1255.00,
+      "pnl": 5.00,
+      "pnlPercent": 0.40
+    },
+    {
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "invested": 1000.00,
+      "value": 1007.10,
+      "pnl": 7.10,
+      "pnlPercent": 0.71
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "invested": 500.00,
+      "value": 503.50,
+      "pnl": 3.50,
+      "pnlPercent": 0.70
+    }
+  ],
+  "allocation": {
+    "CSPX": 1756.48,
+    "EQQQ": 1255.00,
+    "BTC": 1007.10,
+    "ETH": 503.50,
+    "cash": 500.00
+  },
+  "trades": [
+    {"action": "BUY", "asset": "CSPX", "amount": 1750.00, "fee": 1.75, "note": "Initial position"},
+    {"action": "BUY", "asset": "EQQQ", "amount": 1250.00, "fee": 1.25, "note": "Initial position"},
+    {"action": "BUY", "asset": "BTC", "amount": 1000.00, "fee": 5.00, "note": "Initial position"},
+    {"action": "BUY", "asset": "ETH", "amount": 500.00, "fee": 2.50, "note": "Initial position"}
+  ],
+  "marketConditions": {
+    "sp500": {"value": 7005, "change": "+0.37%", "note": "New all-time high"},
+    "nasdaq": {"value": 23912, "change": "+0.40%", "note": "Tech continues strong"},
+    "bitcoin": {"value": 89028, "currency": "USD", "change": "+0.71%"},
+    "ethereum": {"value": 3000, "currency": "USD", "change": "+0.70%"}
+  },
+  "nextDayPlan": {
+    "action": "HOLD",
+    "changes": [],
+    "reasoning": "All positions in green. Markets continue bullish momentum. S&P 500 at new ATH. No changes needed - let winners run."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-28T08:07:00Z",
+    "dataSources": ["Trading Economics", "CoinMarketCap", "CNBC"],
+    "agentVersion": "HAL-1.0"
+  }
+}
