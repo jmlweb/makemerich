@@ -1,0 +1,74 @@
+{
+  "date": "2026-01-29",
+  "day": 3,
+  "balance": {
+    "total": 5021.53,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": -0.55,
+    "percentage": -0.01
+  },
+  "positions": [
+    {
+      "asset": "CSPX",
+      "type": "ETF",
+      "description": "iShares Core S&P 500 UCITS",
+      "invested": 1750.00,
+      "value": 1756.48,
+      "pnl": 6.48,
+      "pnlPercent": 0.37
+    },
+    {
+      "asset": "EQQQ",
+      "type": "ETF",
+      "description": "Invesco NASDAQ-100 UCITS",
+      "invested": 1250.00,
+      "value": 1255.00,
+      "pnl": 5.00,
+      "pnlPercent": 0.40
+    },
+    {
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "invested": 1000.00,
+      "value": 1009.92,
+      "pnl": 9.92,
+      "pnlPercent": 0.99
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "invested": 500.00,
+      "value": 500.13,
+      "pnl": 0.13,
+      "pnlPercent": 0.03
+    }
+  ],
+  "allocation": {
+    "CSPX": 1756.48,
+    "EQQQ": 1255.00,
+    "BTC": 1009.92,
+    "ETH": 500.13,
+    "cash": 500.00
+  },
+  "trades": [],
+  "marketConditions": {
+    "sp500": {"value": 7000, "change": "~0%", "note": "Flat after ATH"},
+    "nasdaq": {"value": 23912, "change": "~0%", "note": "Consolidating"},
+    "bitcoin": {"value": 89274, "currency": "USD", "change": "+0.28%"},
+    "ethereum": {"value": 2980, "currency": "USD", "change": "-0.67%", "note": "Slipped below $3K"}
+  },
+  "nextDayPlan": {
+    "action": "HOLD",
+    "changes": [],
+    "reasoning": "Minor pullback in ETH but still green overall. Markets consolidating after S&P ATH. No action needed - continue holding."
+  },
+  "metadata": {
+    "generatedAt": "2026-01-29T08:07:00Z",
+    "dataSources": ["Brave Search", "TradingView", "OKX"],
+    "agentVersion": "HAL-1.0"
+  }
+}

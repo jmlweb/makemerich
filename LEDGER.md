@@ -1,66 +1,5 @@
-# Investment Ledger
+# MakeMeRich Ledger
 
-## Summary
-
-| Metric | Value |
-|--------|-------|
-| Starting Capital | 5,000.00 EUR |
-| Current Balance | 5,022.08 EUR |
-| Total Return | +0.44% |
-| Days Active | 2 |
-
----
-
-## Daily Log
-
-### Day 2 - January 28, 2026
-
-**Balance:** 5,022.08 EUR  
-**Change:** +22.08 EUR (+0.44%)
-
-#### Market Conditions
-- **S&P 500:** 7,005 (+0.37%) - NEW ALL-TIME HIGH
-- **NASDAQ:** ~23,912 (+0.40%)
-- **Bitcoin:** $89,028 (+0.71%)
-- **Ethereum:** $3,000 (+0.70%)
-
-#### Positions
-
-| Asset | Value | P&L |
-|-------|-------|-----|
-| CSPX | 1,756.48 EUR | +6.48 (+0.37%) |
-| EQQQ | 1,255.00 EUR | +5.00 (+0.40%) |
-| BTC | 1,007.10 EUR | +7.10 (+0.71%) |
-| ETH | 503.50 EUR | +3.50 (+0.70%) |
-| Cash | 500.00 EUR | - |
-
-#### Trades Executed
-- BUY CSPX: 1,750 EUR (fee: 1.75 EUR)
-- BUY EQQQ: 1,250 EUR (fee: 1.25 EUR)
-- BUY BTC: 1,000 EUR (fee: 5.00 EUR)
-- BUY ETH: 500 EUR (fee: 2.50 EUR)
-
-Total fees: 10.50 EUR
-
-#### Analysis
-First full trading day. All positions in the green. S&P 500 continues its record-breaking run. Crypto showing strength with BTC leading. The initial allocation is performing well.
-
-#### Tomorrow Plan
-**Action:** HOLD  
-**Reasoning:** All positions profitable. Strong momentum across markets. No reason to change allocation yet. Let winners run.
-
----
-
-### Day 1 - January 27, 2026
-
-**Balance:** 5,000.00 EUR  
-**Change:** - (initial)
-
-#### Market Conditions
-- **S&P 500:** 6,950.23 (+0.5%) - ALL-TIME HIGH
-- **Bitcoin:** ~$88,400 USD
-
-#### Analysis
 Simulation started. Initial allocation planned:
 - 35% CSPX (S&P 500 ETF)
 - 25% EQQQ (NASDAQ-100 ETF)
@@ -72,11 +11,68 @@ Simulation started. Initial allocation planned:
 
 ### Day 0 - January 27, 2026 (Setup)
 
-**Balance:** 5,000.00 EUR  
+**Balance:** €5,000.00  
 **Change:** -
 
 **Notes:**  
-Simulation initialized with 5,000 EUR virtual capital.
+Simulation initialized with €5,000 virtual capital.
+
+---
+
+### Day 1 - January 27, 2026
+
+**Balance:** €5,000.00  
+**Change:** €0.00 (0%)
+
+**Positions:**
+| Asset | Value | P&L |
+|-------|-------|-----|
+| CSPX | €1,750.00 | 0% |
+| EQQQ | €1,250.00 | 0% |
+| BTC | €1,000.00 | 0% |
+| ETH | €500.00 | 0% |
+| Cash | €500.00 | - |
+
+**Notes:**  
+Initial positions established. All buys executed at market open.
+
+---
+
+### Day 2 - January 28, 2026
+
+**Balance:** €5,022.08  
+**Change:** +€22.08 (+0.44%) ✅
+
+**Positions:**
+| Asset | Value | P&L |
+|-------|-------|-----|
+| CSPX | €1,756.48 | +0.37% |
+| EQQQ | €1,255.00 | +0.40% |
+| BTC | €1,007.10 | +0.71% 📈 |
+| ETH | €503.50 | +0.70% |
+| Cash | €500.00 | - |
+
+**Notes:**  
+First profitable day! S&P 500 hit new ATH above 7,000. All positions green.
+
+---
+
+### Day 3 - January 29, 2026
+
+**Balance:** €5,021.53  
+**Change:** -€0.55 (-0.01%) ⚪
+
+**Positions:**
+| Asset | Value | P&L |
+|-------|-------|-----|
+| CSPX | €1,756.48 | +0.37% |
+| EQQQ | €1,255.00 | +0.40% |
+| BTC | €1,009.92 | +0.99% 📈 |
+| ETH | €500.13 | +0.03% |
+| Cash | €500.00 | - |
+
+**Notes:**  
+Flat day. ETH slipped below $3K briefly. Markets consolidating after ATH. Holding all positions.
 
 ---
 
