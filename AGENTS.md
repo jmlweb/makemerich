@@ -193,3 +193,47 @@ When considering new positions, always check ASSETS.md first for approved option
 | `STRATEGY.md` | Investment approach | When strategy changes |
 | `LEARNINGS.md` | Lessons learned | When something notable happens |
 | `RULES.md` | Game rules | Rarely (if ever) |
+
+## Automation Scripts
+
+The `scripts/` directory contains tools to automate daily updates:
+
+### fetch-prices.js
+Fetches real-time prices from free APIs:
+- **ETFs**: Yahoo Finance (CSPX.L, EQQQ.DE)
+- **Crypto**: CoinGecko API (no key needed)
+- **Indices**: S&P 500, NASDAQ
+- **FX**: GBP/EUR exchange rate
+
+```bash
+node scripts/fetch-prices.js
+```
+
+Output saved to `data/.prices-latest.json`.
+
+### update-portfolio.js
+Generates daily entry with real prices:
+
+```bash
+# Normal run
+node scripts/update-portfolio.js --date 2026-01-30
+
+# Dry run (preview without saving)
+node scripts/update-portfolio.js --date 2026-01-30 --dry-run
+```
+
+### calculate-balance.js
+Displays current portfolio status and checks rules (stop-loss, position limits).
+
+```bash
+node scripts/calculate-balance.js
+```
+
+## Recommended Daily Workflow
+
+1. Run `node scripts/update-portfolio.js --date YYYY-MM-DD --dry-run`
+2. Review the output
+3. If correct, run without `--dry-run`
+4. Update `LEDGER.md` with human-readable summary
+5. Update `README.md` Quick Stats
+6. Commit and push

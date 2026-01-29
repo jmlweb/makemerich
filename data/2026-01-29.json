@@ -2,12 +2,12 @@
   "date": "2026-01-29",
   "day": 3,
   "balance": {
-    "total": 5021.53,
+    "total": 5028.42,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -0.55,
-    "percentage": -0.01
+    "absolute": 6.34,
+    "percentage": 0.13
   },
   "positions": [
     {
@@ -15,60 +15,68 @@
       "type": "ETF",
       "description": "iShares Core S&P 500 UCITS",
       "invested": 1750.00,
-      "value": 1756.48,
-      "pnl": 6.48,
-      "pnlPercent": 0.37
+      "value": 1763.07,
+      "pnl": 13.07,
+      "pnlPercent": 0.75,
+      "dayChange": 0.37,
+      "note": "S&P +0.40% today, compounded from Day 2"
     },
     {
       "asset": "EQQQ",
       "type": "ETF",
       "description": "Invesco NASDAQ-100 UCITS",
       "invested": 1250.00,
-      "value": 1255.00,
-      "pnl": 5.00,
-      "pnlPercent": 0.40
+      "value": 1263.53,
+      "pnl": 13.53,
+      "pnlPercent": 1.08,
+      "dayChange": 0.68,
+      "note": "NASDAQ +1.09% today, ETF +0.68%"
     },
     {
       "asset": "BTC",
       "type": "Crypto",
       "description": "Bitcoin",
       "invested": 1000.00,
-      "value": 1009.92,
-      "pnl": 9.92,
-      "pnlPercent": 0.99
+      "value": 997.82,
+      "pnl": -2.18,
+      "pnlPercent": -0.22,
+      "dayChange": -0.92,
+      "note": "BTC dropped from $89,028 to $88,037"
     },
     {
       "asset": "ETH",
       "type": "Crypto",
       "description": "Ethereum",
       "invested": 500.00,
-      "value": 500.13,
-      "pnl": 0.13,
-      "pnlPercent": 0.03
+      "value": 504.00,
+      "pnl": 4.00,
+      "pnlPercent": 0.80,
+      "dayChange": 0.10,
+      "note": "ETH $2,951 - slight recovery vs yesterday's $2,980"
     }
   ],
   "allocation": {
-    "CSPX": 1756.48,
-    "EQQQ": 1255.00,
-    "BTC": 1009.92,
-    "ETH": 500.13,
+    "CSPX": 1763.07,
+    "EQQQ": 1263.53,
+    "BTC": 997.82,
+    "ETH": 504.00,
     "cash": 500.00
   },
   "trades": [],
   "marketConditions": {
-    "sp500": {"value": 7000, "change": "~0%", "note": "Flat after ATH"},
-    "nasdaq": {"value": 23912, "change": "~0%", "note": "Consolidating"},
-    "bitcoin": {"value": 89274, "currency": "USD", "change": "+0.28%"},
-    "ethereum": {"value": 2980, "currency": "USD", "change": "-0.67%", "note": "Slipped below $3K"}
+    "sp500": {"value": 6978.03, "change": "+0.40%"},
+    "nasdaq": {"value": 23857.45, "change": "+1.09%"},
+    "bitcoin": {"value": 88037, "currency": "USD", "change": "-0.92%"},
+    "ethereum": {"value": 2951.50, "currency": "USD", "change": "-1.18%"}
   },
   "nextDayPlan": {
     "action": "HOLD",
     "changes": [],
-    "reasoning": "Minor pullback in ETH but still green overall. Markets consolidating after S&P ATH. No action needed - continue holding."
+    "reasoning": "Equities up, crypto down. Net positive day. Continue holding - no action needed."
   },
   "metadata": {
-    "generatedAt": "2026-01-29T08:07:00Z",
-    "dataSources": ["Brave Search", "TradingView", "OKX"],
+    "generatedAt": "2026-01-29T08:45:00Z",
+    "dataSources": ["Yahoo Finance", "CoinGecko", "ExchangeRate-API"],
     "agentVersion": "HAL-1.0"
   }
 }
