@@ -76,19 +76,74 @@
   },
   "trades": [],
   "marketConditions": {
-    "sp500": {"value": 6978.03, "change": "+0.00%", "note": "Flat"},
-    "nasdaq": {"value": 23857.45, "change": "+0.11%"},
-    "bitcoin": {"value": 88037, "currency": "USD", "change": "-1.53%"},
-    "ethereum": {"value": 2951.50, "currency": "USD", "change": "-2.29%"}
+    "sp500": {
+      "value": 6978.03,
+      "change": "+0.00%",
+      "note": "Flat"
+    },
+    "nasdaq": {
+      "value": 23857.45,
+      "change": "+0.11%"
+    },
+    "bitcoin": {
+      "value": 88037,
+      "currency": "USD",
+      "change": "-1.53%"
+    },
+    "ethereum": {
+      "value": 2951.50,
+      "currency": "USD",
+      "change": "-2.29%"
+    }
   },
   "nextDayPlan": {
     "action": "HOLD",
     "changes": [],
-    "reasoning": "Crypto pullback but within normal range. ETFs stable. No action needed."
+    "reasoning": "ETFs performing well (+0.54%), crypto dragging (-1.01%). No immediate action needed but monitoring closely.",
+    "alerts": [
+      {
+        "condition": "ETH falls to -5% total",
+        "action": "Consider selling 50% ETH position",
+        "trigger": -25
+      },
+      {
+        "condition": "BTC falls to -5% total",
+        "action": "Reduce BTC by 25%",
+        "trigger": -50
+      },
+      {
+        "condition": "Portfolio drops below 4900 EUR",
+        "action": "Switch to capital preservation mode",
+        "trigger": 4900
+      }
+    ],
+    "watchlist": [
+      {
+        "asset": "ETH",
+        "reason": "Worst performer, -1.65% total, -2.29% today"
+      },
+      {
+        "asset": "BTC",
+        "reason": "In the red, -0.69% total"
+      }
+    ],
+    "opportunities": [
+      {
+        "asset": "CSPX",
+        "reason": "S&P stable, could add if crypto sold"
+      },
+      {
+        "asset": "IGLN (Gold)",
+        "reason": "Hedge if volatility continues"
+      }
+    ]
   },
   "metadata": {
     "generatedAt": "2026-01-29T09:00:00Z",
-    "dataSources": ["Yahoo Finance", "CoinGecko"],
+    "dataSources": [
+      "Yahoo Finance",
+      "CoinGecko"
+    ],
     "agentVersion": "HAL-1.0",
     "recalculated": true
   }
