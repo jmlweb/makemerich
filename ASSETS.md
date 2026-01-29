@@ -53,6 +53,15 @@ Assets disponibles para el portfolio de MakeMeRich.
 | EIMI | ETF | iShares Core MSCI EM IMI | Alto | Emergentes amplio |
 | VFEM | ETF | Vanguard FTSE Emerging Markets | Alto | Alternativa Vanguard |
 
+### Vehículos Fiscalmente Eficientes (España)
+
+| Ticker/Ref | Tipo | Descripción | Riesgo | Notas |
+|------------|------|-------------|--------|-------|
+| INDEXA-PP | PP | Indexa Más Rentabilidad Acciones | Alto | Plan de Pensiones (Desgravable) |
+| MYINV-PP | PP | MyInvestor S&P 500 PP | Medio-Alto | Plan de Pensiones indexado |
+| PIAS-AEGON | Seguro | Estrategia Inversión Activa | Medio | PIAS (Exención fiscal >5 años) |
+| FI-MSCI-W | Fondo | Vanguard Global Stock Index | Medio | Traspasable sin peaje fiscal |
+
 ### Crypto Adicional
 
 | Ticker | Tipo | Descripción | Riesgo | Notas |
@@ -68,6 +77,8 @@ Assets disponibles para el portfolio de MakeMeRich.
 | Mintos | Crowdlending | Préstamos P2P | Alto | Diversificar por originadores |
 | Urbanitae | Crowdfunding | Inmobiliario | Alto | Proyectos en España |
 | Indexa Capital | Robo-advisor | Gestión pasiva | Medio | Opción "set and forget" |
+| BullionVault | Oro Físico | Custodia de oro/plata | Bajo | Propiedad directa en bóveda |
+| Garaje/Trastero| Inmobiliario | Compra directa (Simulado) | Medio | Alquiler zona alta demanda |
 
 ---
 
