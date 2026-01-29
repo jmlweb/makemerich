@@ -42,6 +42,14 @@ Any legal investment in Spain is fair game. We are not limited to traditional ma
 | **Depositos** | Bank deposits | Very Low | Low |
 | **Money Market** | Money market funds | Very Low | High |
 
+### Spanish Tax-Advantaged Vehicles
+
+| Type | Examples | Risk | Liquidity |
+|------|----------|------|-----------|
+| **Fondos de Inversión** | Traspasables (Vanguard, Amundi) | Medium | High |
+| **Planes de Pensiones** | Indexa, MyInvestor PP | Medium-High | Very Low (Restricted) |
+| **Seguros de Ahorro** | PIAS, SIALP | Low-Medium | Medium |
+
 ### Speculative (Limited to 10%)
 
 | Type | Examples | Risk | Liquidity |
@@ -51,14 +59,16 @@ Any legal investment in Spain is fair game. We are not limited to traditional ma
 | **Options** | Covered calls, puts | Very High | Medium |
 | **Commodities** | Gold, Silver, Oil (via ETCs) | Medium-High | High |
 
-### Tangible Assets (Simulated)
+### Tangible Assets (Simulated/Physical)
 
 | Type | Examples | Risk | Liquidity |
 |------|----------|------|-----------|
+| **Real Estate (Direct)** | Parking spots, storage units (simulated) | Medium | Very Low |
+| **Precious Metals** | Physical Gold/Silver coins (Bullion) | Low-Medium | Medium |
 | **Wine** | Vinovest, wine funds | Medium | Very Low |
 | **Watches** | Rolex, Patek (indices) | Medium | Low |
 | **Classic Cars** | HAGI index tracking | Medium | Very Low |
-| **Collectibles** | Trading cards, sneakers | High | Variable |
+| **Collectibles** | Trading cards, sneakers, art | High | Variable |
 
 ## Decision Framework
 
