@@ -1,77 +1,71 @@
 # MakeMeRich Ledger
 
-Simulation started. Initial allocation planned:
-- 35% CSPX (S&P 500 ETF)
-- 25% EQQQ (NASDAQ-100 ETF)
-- 20% Bitcoin
-- 10% Ethereum
-- 10% Cash
+Simulation started January 27, 2026 with €5,000 virtual capital.
+
+**Allocation:** 35% CSPX | 25% EQQQ | 20% BTC | 10% ETH | 10% Cash
 
 ---
 
-### Day 0 - January 27, 2026 (Setup)
+### Day 1 - January 27, 2026 (Initial Buys)
 
 **Balance:** €5,000.00  
 **Change:** -
 
-**Notes:**  
-Simulation initialized with €5,000 virtual capital.
+| Asset | Units | Buy Price | Value | P&L |
+|-------|-------|-----------|-------|-----|
+| CSPX | 2.0 | €875.00 | €1,750.00 | 0% |
+| EQQQ | 2.36 | €529.66 | €1,250.56 | +0.04% |
+| BTC | 0.01351 | €74,003 | €1,000.00 | 0% |
+| ETH | 0.1996 | €2,505.60 | €500.00 | 0% |
+| Cash | - | - | €499.44 | - |
 
----
-
-### Day 1 - January 27, 2026
-
-**Balance:** €5,000.00  
-**Change:** €0.00 (0%)
-
-**Positions:**
-| Asset | Invested | Value | P&L |
-|-------|----------|-------|-----|
-| CSPX | €1,750 | €1,750.00 | 0% |
-| EQQQ | €1,250 | €1,250.00 | 0% |
-| BTC | €1,000 | €1,000.00 | 0% |
-| ETH | €500 | €500.00 | 0% |
-| Cash | - | €500.00 | - |
-
-**Notes:**  
-Initial positions established. All buys executed at market open.
+**Notes:** Initial positions established. Fees: €10.50 total.
 
 ---
 
 ### Day 2 - January 28, 2026
 
-**Balance:** €5,022.08  
-**Change:** +€22.08 (+0.44%) ✅
+**Balance:** €5,020.29  
+**Change:** +€20.29 (+0.41%) ✅
 
-**Positions:**
-| Asset | Value | P&L | Day Change |
-|-------|-------|-----|------------|
-| CSPX | €1,756.48 | +0.37% | +0.37% |
-| EQQQ | €1,255.00 | +0.40% | +0.40% |
-| BTC | €1,007.10 | +0.71% | +0.71% 📈 |
-| ETH | €503.50 | +0.70% | +0.70% |
+| Asset | Value | P&L Total | Day Change |
+|-------|-------|-----------|------------|
+| CSPX | €1,750.16 | +0.01% | +0.01% |
+| EQQQ | €1,258.82 | +0.71% | +0.66% 📈 |
+| BTC | €1,008.57 | +0.86% | +0.88% 📈 |
+| ETH | €503.30 | +0.66% | +0.64% |
 
-**Market:** S&P 500 hit new ATH above 7,000. All positions green.
+**Market:** NASDAQ strong (+0.66%), crypto up. S&P flat after ATH.
 
 ---
 
 ### Day 3 - January 29, 2026
 
-**Balance:** €5,028.42  
-**Change:** +€6.34 (+0.13%) ✅
+**Balance:** €5,000.56  
+**Change:** -€19.73 (-0.39%) 🟠
 
-**Positions:**
-| Asset | Value | P&L | Day Change |
-|-------|-------|-----|------------|
-| CSPX | €1,763.07 | +0.75% | +0.37% 📈 |
-| EQQQ | €1,263.53 | +1.08% | +0.68% 📈 |
-| BTC | €997.82 | -0.22% | -0.92% 📉 |
-| ETH | €504.00 | +0.80% | +0.10% |
+| Asset | Value | P&L Total | Day Change |
+|-------|-------|-----------|------------|
+| CSPX | €1,756.02 | +0.34% | +0.33% 📈 |
+| EQQQ | €1,260.24 | +0.82% | +0.11% |
+| BTC | €993.10 | **-0.69%** | -1.53% 📉 |
+| ETH | €491.76 | **-1.65%** | -2.29% 📉 |
 
-**Market:** Equities strong (S&P +0.40%, NASDAQ +1.09%). Crypto weak (BTC -0.92%).
+**Market:** Crypto selloff (BTC -1.5%, ETH -2.3%). Equities stable.
 
-**Notes:**  
-First day with mixed results. Equities compensated for crypto losses.
+**Notes:** First red day. Crypto erased previous gains. Portfolio back to breakeven.
+
+---
+
+## Summary
+
+| Metric | Value |
+|--------|-------|
+| Starting Capital | €5,000.00 |
+| Current Balance | €5,000.56 |
+| Total P&L | +€0.56 (+0.01%) |
+| Best Day | Day 2 (+0.41%) |
+| Worst Day | Day 3 (-0.39%) |
 
 ---
 

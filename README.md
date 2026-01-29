@@ -93,11 +93,11 @@ makemerich/
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €5,028.42 |
-| Total Return | **+0.57%** |
+| Current Balance | €5,000.56 |
+| Total Return | **+0.01%** |
 | Days Active | 3 |
 | Best Day | Day 2 (+0.44%) |
-| Worst Day | - (all positive) |
+| Worst Day | Day 3 (-0.39%) |
 
 ## For AI Agents
 

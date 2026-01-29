@@ -2,12 +2,12 @@
   "date": "2026-01-29",
   "day": 3,
   "balance": {
-    "total": 5028.42,
+    "total": 5000.56,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 6.34,
-    "percentage": 0.13
+    "absolute": -19.73,
+    "percentage": -0.39
   },
   "positions": [
     {
@@ -15,68 +15,81 @@
       "type": "ETF",
       "description": "iShares Core S&P 500 UCITS",
       "invested": 1750.00,
-      "value": 1763.07,
-      "pnl": 13.07,
-      "pnlPercent": 0.75,
-      "dayChange": 0.37,
-      "note": "S&P +0.40% today, compounded from Day 2"
+      "units": 2.0,
+      "buyPrice": 875.00,
+      "currentPrice": 878.01,
+      "value": 1756.02,
+      "pnl": 6.02,
+      "pnlPercent": 0.34,
+      "dayChange": 0.33,
+      "note": "CSPX.L 750.44 GBP * 1.17 = 878.01 EUR"
     },
     {
       "asset": "EQQQ",
       "type": "ETF",
       "description": "Invesco NASDAQ-100 UCITS",
       "invested": 1250.00,
-      "value": 1263.53,
-      "pnl": 13.53,
-      "pnlPercent": 1.08,
-      "dayChange": 0.68,
-      "note": "NASDAQ +1.09% today, ETF +0.68%"
+      "units": 2.36,
+      "buyPrice": 529.66,
+      "currentPrice": 534.00,
+      "value": 1260.24,
+      "pnl": 10.24,
+      "pnlPercent": 0.82,
+      "dayChange": 0.11,
+      "note": "EQQQ.DE 534.00 EUR"
     },
     {
       "asset": "BTC",
       "type": "Crypto",
       "description": "Bitcoin",
       "invested": 1000.00,
-      "value": 997.82,
-      "pnl": -2.18,
-      "pnlPercent": -0.22,
-      "dayChange": -0.92,
-      "note": "BTC dropped from $89,028 to $88,037"
+      "units": 0.01351,
+      "buyPrice": 74003.38,
+      "currentPrice": 73508.20,
+      "value": 993.10,
+      "pnl": -6.90,
+      "pnlPercent": -0.69,
+      "dayChange": -1.53,
+      "note": "BTC 73,508 EUR (-1.53% today)"
     },
     {
       "asset": "ETH",
       "type": "Crypto",
       "description": "Ethereum",
       "invested": 500.00,
-      "value": 504.00,
-      "pnl": 4.00,
-      "pnlPercent": 0.80,
-      "dayChange": 0.10,
-      "note": "ETH $2,951 - slight recovery vs yesterday's $2,980"
+      "units": 0.1996,
+      "buyPrice": 2505.60,
+      "currentPrice": 2463.72,
+      "value": 491.76,
+      "pnl": -8.24,
+      "pnlPercent": -1.65,
+      "dayChange": -2.29,
+      "note": "ETH 2,463.72 EUR (-2.29% today)"
     }
   ],
   "allocation": {
-    "CSPX": 1763.07,
-    "EQQQ": 1263.53,
-    "BTC": 997.82,
-    "ETH": 504.00,
-    "cash": 500.00
+    "CSPX": 1756.02,
+    "EQQQ": 1260.24,
+    "BTC": 993.10,
+    "ETH": 491.76,
+    "cash": 499.44
   },
   "trades": [],
   "marketConditions": {
-    "sp500": {"value": 6978.03, "change": "+0.40%"},
-    "nasdaq": {"value": 23857.45, "change": "+1.09%"},
-    "bitcoin": {"value": 88037, "currency": "USD", "change": "-0.92%"},
-    "ethereum": {"value": 2951.50, "currency": "USD", "change": "-1.18%"}
+    "sp500": {"value": 6978.03, "change": "+0.00%", "note": "Flat"},
+    "nasdaq": {"value": 23857.45, "change": "+0.11%"},
+    "bitcoin": {"value": 88037, "currency": "USD", "change": "-1.53%"},
+    "ethereum": {"value": 2951.50, "currency": "USD", "change": "-2.29%"}
   },
   "nextDayPlan": {
     "action": "HOLD",
     "changes": [],
-    "reasoning": "Equities up, crypto down. Net positive day. Continue holding - no action needed."
+    "reasoning": "Crypto pullback but within normal range. ETFs stable. No action needed."
   },
   "metadata": {
-    "generatedAt": "2026-01-29T08:45:00Z",
-    "dataSources": ["Yahoo Finance", "CoinGecko", "ExchangeRate-API"],
-    "agentVersion": "HAL-1.0"
+    "generatedAt": "2026-01-29T09:00:00Z",
+    "dataSources": ["Yahoo Finance", "CoinGecko"],
+    "agentVersion": "HAL-1.0",
+    "recalculated": true
   }
 }
