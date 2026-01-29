@@ -20,36 +20,28 @@ See [RULES.md](RULES.md) for complete rules and constraints.
 
 ## Investment Universe
 
-This is **not** limited to stocks and crypto. Any legal investment in Spain is fair game:
+This is **not** limited to stocks and crypto. Any legal investment in Spain is fair game.
 
-### Traditional
-Stocks - ETFs - Bonds - REITs/SOCIMIs - Mutual Funds
+See [ASSETS.md](ASSETS.md) for the complete list of available investments.
 
-### Digital
-Crypto (BTC, ETH, altcoins) - Stablecoins - DeFi yields
-
-### Alternative
-P2P Lending - Real Estate Crowdfunding - Equity Crowdfunding - Art Fractions
-
-### Fixed Income
-Letras del Tesoro - Bank Deposits - Money Market Funds
-
-### Speculative
-Sports Betting (licensed) - Forex - Options - Commodities
-
-### Tangible (Simulated)
-Wine - Watches - Classic Cars - Collectibles
+### Categories
+- **Traditional:** Stocks, ETFs, Bonds, REITs/SOCIMIs, Mutual Funds
+- **Digital:** Crypto (BTC, ETH, altcoins), Stablecoins, DeFi yields
+- **Alternative:** P2P Lending, Real Estate Crowdfunding, Equity Crowdfunding
+- **Fixed Income:** Letras del Tesoro, Bank Deposits, Money Market Funds
+- **Speculative:** Sports Betting (licensed), Forex, Options, Commodities
+- **Tangible (Simulated):** Wine, Watches, Classic Cars, Collectibles
 
 ## End Conditions
 
 The simulation ends when **either**:
-- Balance reaches 0 EUR (game over)
-- One year passes (January 27, 2027)
-- Balance reaches 50,000 EUR (10x victory!)
+- 📉 Balance reaches 0 EUR (game over)
+- 📅 One year passes (January 27, 2027)
+- 🏆 Balance reaches 50,000 EUR (10x victory!)
 
 ## How it works
 
-Each day at 20:00 (Madrid time), HAL:
+Each day at **09:00** (Madrid time), HAL:
 1. Fetches real market data for all positions
 2. Calculates the new portfolio balance
 3. Analyzes market conditions
@@ -64,22 +56,20 @@ makemerich/
   README.md           # This file
   RULES.md            # Complete rules and constraints
   STRATEGY.md         # Current investment approach
+  ASSETS.md           # Available investment options
   LEARNINGS.md        # Lessons, mistakes, and wins
   AGENTS.md           # Instructions for AI agents
   LEDGER.md           # Human-readable daily log
   data/
     YYYY-MM-DD.json   # Structured daily data
-  scripts/
-    calculate-balance.js  # Portfolio calculator
-    generate-entry.js     # Entry generator
 ```
 
 ## Timeline
 
 | Milestone | Date | Status |
 |-----------|------|--------|
-| Start | January 27, 2026 | Done |
-| End (max) | January 27, 2027 | Pending |
+| Start | January 27, 2026 | ✅ Done |
+| End (max) | January 27, 2027 | ⏳ Pending |
 
 ## Starting Capital
 
@@ -87,29 +77,31 @@ makemerich/
 
 ## Current Status
 
-**Day 1** - Initial allocation deployed
+**Day 3** - Consolidating after first profitable day
 
 ### Current Allocation
-- 35% Index ETFs (CSPX)
-- 25% Tech ETFs (EQQQ)
-- 20% Bitcoin
-- 10% Ethereum
-- 10% Cash
-
-## For AI Agents
-
-If you are an AI agent operating this simulation, see [AGENTS.md](AGENTS.md) for detailed instructions.
+| Asset | Value | % of Portfolio |
+|-------|-------|----------------|
+| CSPX (S&P 500) | €1,756.48 | 35% |
+| EQQQ (NASDAQ) | €1,255.00 | 25% |
+| Bitcoin | €1,009.92 | 20% |
+| Ethereum | €500.13 | 10% |
+| Cash | €500.00 | 10% |
 
 ## Quick Stats
 
 | Metric | Value |
 |--------|-------|
-| Starting Capital | 5,000 EUR |
-| Current Balance | 5,000 EUR |
-| Total Return | 0.00% |
-| Days Active | 1 |
-| Best Day | - |
-| Worst Day | - |
+| Starting Capital | €5,000.00 |
+| Current Balance | €5,021.53 |
+| Total Return | **+0.43%** |
+| Days Active | 3 |
+| Best Day | Day 2 (+0.44%) |
+| Worst Day | Day 3 (-0.01%) |
+
+## For AI Agents
+
+If you are an AI agent operating this simulation, see [AGENTS.md](AGENTS.md) for detailed instructions.
 
 ---
 

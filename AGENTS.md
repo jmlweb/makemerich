@@ -4,7 +4,7 @@ This document provides clear instructions for AI agents operating the MakeMeRich
 
 ## Daily Routine
 
-### When: Every day at 20:00 Europe/Madrid
+### When: Every day at 09:00 Europe/Madrid
 
 ### Steps:
 
@@ -149,3 +149,47 @@ Notify the user when:
 - Portfolio down 10%+ from start
 - Take-profit triggered
 - Balance below 1,000 EUR
+
+## Available Assets
+
+See [ASSETS.md](ASSETS.md) for the complete list of available investment options with tickers, risk levels, and notes.
+
+When considering new positions, always check ASSETS.md first for approved options.
+
+## Updating README.md
+
+**IMPORTANT:** After each daily entry, update the "Quick Stats" and "Current Status" sections in README.md:
+
+### Quick Stats to Update:
+```markdown
+| Metric | Value |
+|--------|-------|
+| Starting Capital | 5,000 EUR |
+| Current Balance | [from latest data/YYYY-MM-DD.json] |
+| Total Return | [calculated %] |
+| Days Active | [day number] |
+| Best Day | [highest single-day gain] |
+| Worst Day | [lowest single-day loss] |
+```
+
+### Current Status to Update:
+- Update "Day X" number
+- Update balance if significantly different
+- Update allocation percentages if changed
+
+### How to Calculate:
+- **Total Return**: `((current_balance - 5000) / 5000) * 100`
+- **Days Active**: `day` field from latest JSON
+- **Best/Worst Day**: Track from `change.percentage` across all JSONs
+
+## File Reference
+
+| File | Purpose | Update Frequency |
+|------|---------|------------------|
+| `data/YYYY-MM-DD.json` | Daily structured data | Daily |
+| `LEDGER.md` | Human-readable log | Daily |
+| `README.md` | Project overview + stats | Daily (Quick Stats) |
+| `ASSETS.md` | Available investments | When new assets added |
+| `STRATEGY.md` | Investment approach | When strategy changes |
+| `LEARNINGS.md` | Lessons learned | When something notable happens |
+| `RULES.md` | Game rules | Rarely (if ever) |
