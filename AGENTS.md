@@ -2,6 +2,15 @@
 
 > **For HAL:** See [HAL.md](HAL.md) for detailed workflow.
 
+## Language Rule
+
+**All documentation, commits, and logs must be in English.**
+- LEDGER.md entries: English
+- Commit messages: English
+- SIGNALS.md, WATCHLIST.md: English
+- Comments in code: English
+- Only exception: Direct messages to Jose (Spanish is fine)
+
 ---
 
 ## Project Files

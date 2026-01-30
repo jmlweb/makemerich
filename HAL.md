@@ -184,6 +184,7 @@ Notify Jose immediately if:
 | Averaging down | Only with intact thesis + plan |
 | Ignoring stops | Stops are sacred |
 | Confirmation bias | Look for counter-arguments |
+| Wrong language | All docs/commits in English |
 
 ---
 
