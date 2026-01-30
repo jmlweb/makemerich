@@ -18,7 +18,7 @@ const path = require("path");
 const ASSETS = {
   // ETFs - Yahoo Finance symbols
   CSPX: { type: "ETF", yahoo: "CSPX.L", currency: "GBP" },
-  EQQQ: { type: "ETF", yahoo: "EQQQ.DE", currency: "GBP" },
+  EQQQ: { type: "ETF", yahoo: "EQQQ.DE", currency: "EUR" },
   // Crypto - CoinGecko IDs
   BTC: { type: "Crypto", coingecko: "bitcoin" },
   ETH: { type: "Crypto", coingecko: "ethereum" }

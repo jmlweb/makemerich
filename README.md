@@ -77,27 +77,27 @@ makemerich/
 
 ## Current Status
 
-**Day 3** - Consolidating after first profitable day
+**Day 4** - Red day, crypto data stale
 
 ### Current Allocation
 | Asset | Value | % of Portfolio |
 |-------|-------|----------------|
-| CSPX (S&P 500) | €1,756.02 | 35% |
-| EQQQ (NASDAQ) | €1,260.24 | 25% |
+| CSPX (S&P 500) | €1,702.09 | 35% |
+| EQQQ (NASDAQ) | €1,236.17 | 25% |
 | Bitcoin | €993.10 | 20% |
 | Ethereum | €491.76 | 10% |
-| Cash | €499.44 | 10% |
+| Cash | €500.00 | 10% |
 
 ## Quick Stats
 
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €5,000.56 |
-| Total Return | **+0.01%** |
-| Days Active | 3 |
+| Current Balance | €4,923.12 |
+| Total Return | **-1.54%** |
+| Days Active | 4 |
 | Best Day | Day 2 (+0.41%) |
-| Worst Day | Day 3 (-0.39%) |
+| Worst Day | Day 4 (-1.55%) |
 
 ## For AI Agents
 

@@ -57,15 +57,35 @@ Simulation started January 27, 2026 with €5,000 virtual capital.
 
 ---
 
+---
+
+### Day 4 - January 30, 2026
+
+**Balance:** €4,923.12  
+**Change:** -€77.44 (-1.55%) 🔴
+
+| Asset | Value | P&L Total | Day Change |
+|-------|-------|-----------|------------|
+| CSPX | €1,702.09 | -2.74% | -3.08% 📉 |
+| EQQQ | €1,236.17 | -1.11% | -1.91% 📉 |
+| BTC | €993.10 | -0.69% | ~0% (stale) |
+| ETH | €491.76 | -1.65% | ~0% (stale) |
+
+**Market:** S&P flat (-0.14%), NASDAQ down (-0.55%). Crypto data unavailable (API rate limit).
+
+**Notes:** Red day. ETFs down on market weakness. Crypto prices stale due to CoinGecko rate limiting.
+
+---
+
 ## Summary
 
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €5,000.56 |
-| Total P&L | +€0.56 (+0.01%) |
+| Current Balance | €4,923.12 |
+| Total P&L | -€76.88 (-1.54%) |
 | Best Day | Day 2 (+0.41%) |
-| Worst Day | Day 3 (-0.39%) |
+| Worst Day | Day 4 (-1.55%) |
 
 ---
 

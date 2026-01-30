@@ -78,7 +78,7 @@ function calculatePositions(pricesData, lastEntry) {
     
     if (lastPos && lastPos.units) {
       units = lastPos.units;
-      avgPrice = lastPos.avgPrice;
+      avgPrice = lastPos.buyPrice || lastPos.avgPrice;
     } else {
       // Estimate units from last known value and current price ratio
       // This is imprecise - ideally Day 1 should have units
@@ -97,7 +97,7 @@ function calculatePositions(pricesData, lastEntry) {
       description: getAssetDescription(asset),
       invested: invested,
       units: parseFloat(units.toFixed(6)),
-      avgPrice: parseFloat(avgPrice.toFixed(4)),
+      buyPrice: parseFloat(avgPrice.toFixed(4)),
       currentPrice: parseFloat(priceInfo.price.toFixed(4)),
       value: parseFloat(currentValue.toFixed(2)),
       pnl: parseFloat(pnl.toFixed(2)),
