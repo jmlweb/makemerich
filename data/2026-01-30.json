@@ -2,12 +2,12 @@
   "date": "2026-01-30",
   "day": 4,
   "balance": {
-    "total": 4923.12,
+    "total": 4829.75,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -77.44,
-    "percentage": -1.55
+    "absolute": -170.81,
+    "percentage": -3.42
   },
   "positions": [
     {
@@ -41,11 +41,11 @@
       "invested": 1000,
       "units": 0.01351,
       "buyPrice": 74003.38,
-      "currentPrice": 73508.2,
-      "value": 993.1,
-      "pnl": -6.9,
-      "pnlPercent": -0.69,
-      "dayChange": -1.53,
+      "currentPrice": 69156,
+      "value": 934.3,
+      "pnl": -65.7,
+      "pnlPercent": -6.57,
+      "dayChange": -5.98,
       "note": "BTC 73,508 EUR (-1.53% today)"
     },
     {
@@ -55,19 +55,18 @@
       "invested": 500,
       "units": 0.1996,
       "buyPrice": 2505.6,
-      "currentPrice": 2463.72,
-      "value": 491.76,
-      "pnl": -8.24,
-      "pnlPercent": -1.65,
-      "dayChange": -2.29,
-      "note": "ETH 2,463.72 EUR (-2.29% today)"
+      "currentPrice": 2290.53,
+      "value": 457.19,
+      "pnl": -42.81,
+      "pnlPercent": -8.56,
+      "dayChange": -6.88
     }
   ],
   "allocation": {
     "CSPX": 1702.09,
     "EQQQ": 1236.17,
-    "BTC": 993.1,
-    "ETH": 491.76,
+    "BTC": 934.3,
+    "ETH": 457.19,
     "cash": 500
   },
   "trades": [],
@@ -80,8 +79,16 @@
       "value": 23685.119140625,
       "change": "-0.55%"
     },
-    "bitcoin": {},
-    "ethereum": {}
+    "bitcoin": {
+      "value": 82583,
+      "currency": "USD",
+      "change": "-5.98%"
+    },
+    "ethereum": {
+      "value": 2735.26,
+      "currency": "USD",
+      "change": "-6.88%"
+    }
   },
   "nextDayPlan": {
     "action": "HOLD",

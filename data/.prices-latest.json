@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-30T08:06:27.940Z",
+  "fetchedAt": "2026-01-30T08:08:12.025Z",
   "gbpToEur": 1.15,
   "prices": {
     "CSPX": {
@@ -13,6 +13,16 @@
       "priceOriginal": 523.7999877929688,
       "currency": "EUR",
       "change": "-1.80%"
+    },
+    "BTC": {
+      "price": 69156,
+      "priceUSD": 82583,
+      "change": "-5.98%"
+    },
+    "ETH": {
+      "price": 2290.53,
+      "priceUSD": 2735.26,
+      "change": "-6.88%"
     },
     "SP500": {
       "value": 6969.009765625,

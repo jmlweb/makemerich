@@ -4,7 +4,7 @@
  * 
  * Fetches real-time prices from free APIs:
  * - ETFs/Stocks: Yahoo Finance (via query1.finance.yahoo.com)
- * - Crypto: CoinGecko API (free, no key needed)
+ * - Crypto: CoinGecko API (primary), Binance API (fallback)
  * 
  * Usage:
  *   node scripts/fetch-prices.js
@@ -71,7 +71,50 @@ async function fetchYahooPrice(symbol) {
   }
 }
 
+// Binance symbol mapping
+const BINANCE_SYMBOLS = {
+  bitcoin: "BTCEUR",
+  ethereum: "ETHEUR"
+};
+
+async function fetchBinancePrice(id) {
+  const symbol = BINANCE_SYMBOLS[id];
+  if (!symbol) return { id, error: "No Binance symbol for " + id };
+  
+  const url = `https://api.binance.com/api/v3/ticker/24hr?symbol=${symbol}`;
+  try {
+    const data = await httpsGet(url);
+    if (!data.lastPrice) throw new Error("No data from Binance for " + id);
+    
+    const priceEUR = parseFloat(data.lastPrice);
+    const change24h = parseFloat(data.priceChangePercent);
+    
+    // Also fetch USD price
+    const usdSymbol = symbol.replace("EUR", "USDT");
+    let priceUSD = null;
+    try {
+      const usdData = await httpsGet(`https://api.binance.com/api/v3/ticker/price?symbol=${usdSymbol}`);
+      priceUSD = parseFloat(usdData.price);
+    } catch (e) {
+      // Estimate USD from EUR
+      priceUSD = priceEUR * 1.08;
+    }
+    
+    return {
+      id,
+      priceEUR,
+      priceUSD,
+      change24h: change24h.toFixed(2),
+      source: "binance"
+    };
+  } catch (e) {
+    console.error(`Binance error for ${id}: ${e.message}`);
+    return { id, error: e.message };
+  }
+}
+
 async function fetchCryptoPrice(id) {
+  // Try CoinGecko first
   const url = `https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=eur,usd&include_24hr_change=true`;
   try {
     const data = await httpsGet(url);
@@ -81,10 +124,19 @@ async function fetchCryptoPrice(id) {
       id,
       priceEUR: data[id].eur,
       priceUSD: data[id].usd,
-      change24h: data[id].eur_24h_change?.toFixed(2)
+      change24h: data[id].eur_24h_change?.toFixed(2),
+      source: "coingecko"
     };
   } catch (e) {
     console.error(`CoinGecko error for ${id}: ${e.message}`);
+    
+    // Fallback to Binance
+    console.log(`Trying Binance fallback for ${id}...`);
+    const binanceResult = await fetchBinancePrice(id);
+    if (!binanceResult.error) {
+      return binanceResult;
+    }
+    
     return { id, error: e.message };
   }
 }
