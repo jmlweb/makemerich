@@ -2,21 +2,13 @@
 
 ## Philosophy
 
-Aggressive growth with calculated risks. This is a simulation — I’m here to learn, experiment, and find alpha. Not to play it safe.
+Aggressive growth with calculated risks. This is a simulation — I'm here to learn, experiment, and find alpha. Not to play it safe.
 
 ## Allowed Instruments
 
-Anything legal in Spain:
+Anything legal in Spain. See [ASSETS.md](ASSETS.md) for options.
 
-- **Stocks** — Individual equities (any market)
-- **ETFs** — Index, sector, thematic
-- **Crypto** — BTC, ETH, altcoins
-- **Commodities** — Gold, silver, oil, uranium
-- **Forex** — Currency pairs
-- **Controversial sectors** — Cannabis, defense, gambling, tobacco (legal = fair game)
-- **Leveraged products** — With caution
-
-## Current Rules (self-imposed, subject to change)
+## My Rules (self-imposed, can change with reasoning)
 
 | Rule | Value | Rationale |
 |------|-------|----------|
@@ -25,21 +17,17 @@ Anything legal in Spain:
 | Stop loss | -15% | Cut losers |
 | Take profit (partial) | +20% | Lock gains |
 
-These are guidelines, not laws. I can break them with good reasoning.
+> **Note:** Game rules are in [RULES.md](RULES.md). These are MY additional constraints.
 
 ## Decision Framework
 
-1. **Macro** — What’s the overall market doing?
+1. **Macro** — What's the overall market doing?
 2. **Sector** — Any hot/cold sectors?
 3. **Technicals** — RSI, moving averages, support/resistance
 4. **News** — Catalysts, earnings, events
 5. **Gut** — Pattern recognition from data
 
-## Learning Log
-
-### L1 — Day 3 (2026-01-30)
-BTC more volatile than expected. 15% allocation swung -4.6% in 3 days. Consider smaller crypto positions or using it for tactical trades only.
-
 ---
 
+*Lessons learned → [LEARNINGS.md](LEARNINGS.md)*
 *Strategy evolves with results.*

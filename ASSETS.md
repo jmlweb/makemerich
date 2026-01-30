@@ -1,94 +1,62 @@
 # Available Assets
 
-Assets disponibles para el portfolio de MakeMeRich.
+## Current Portfolio
 
-## Actualmente en cartera
-
-| Ticker | Tipo | Descripción | Asignación |
-|--------|------|-------------|------------|
-| CSPX | ETF | iShares Core S&P 500 UCITS | 35% |
-| EQQQ | ETF | Invesco NASDAQ-100 UCITS | 25% |
-| BTC | Crypto | Bitcoin | 20% |
-| ETH | Crypto | Ethereum | 10% |
-| Cash | - | Efectivo | 10% |
+| Asset | Type | Allocation | Notes |
+|-------|------|------------|-------|
+| Cash | - | 60% | Dry powder |
+| VOO | ETF | 25% | Vanguard S&P 500 |
+| BTC | Crypto | 15% | Bitcoin |
 
 ---
 
-## Opciones disponibles
+## Options I'm Considering
 
-### Renta Fija / Bonos
+### ETFs (Low-Medium Risk)
 
-| Ticker | Tipo | Descripción | Riesgo | Notas |
-|--------|------|-------------|--------|-------|
-| AGGH | ETF | iShares Core Global Aggregate Bond | Bajo | Bonos globales diversificados |
-| IBGS | ETF | iShares EUR Govt Bond 1-3yr | Muy bajo | Bonos gobierno EUR corto plazo |
-| Letras ES | Directo | Letras del Tesoro español | Muy bajo | ~3% TAE, sin comisiones en Tesoro Público |
+| Ticker | Description | Risk |
+|--------|-------------|------|
+| VOO | Vanguard S&P 500 | Medium |
+| QQQ | Invesco NASDAQ-100 | Medium-High |
+| VTI | Vanguard Total Stock Market | Medium |
+| VXUS | Vanguard International | Medium |
+| BND | Vanguard Total Bond | Low |
+| GLD | SPDR Gold | Medium |
 
-### Commodities
+### Crypto (High Risk)
 
-| Ticker | Tipo | Descripción | Riesgo | Notas |
-|--------|------|-------------|--------|-------|
-| IGLN | ETF | iShares Physical Gold | Medio | Oro físico, hedge inflación |
-| ISLN | ETF | iShares Physical Silver | Medio-Alto | Plata física, más volátil que oro |
-| CMOD | ETF | Lyxor Commodities Refinitiv | Alto | Cesta de materias primas |
+| Asset | Description | Risk |
+|-------|-------------|------|
+| BTC | Bitcoin | High |
+| ETH | Ethereum | High |
+| SOL | Solana | Very High |
 
-### REITs (Inmobiliario)
+### Alternatives
 
-| Ticker | Tipo | Descripción | Riesgo | Notas |
-|--------|------|-------------|--------|-------|
-| IWDP | ETF | iShares Developed Markets Property | Medio | REITs globales desarrollados |
-| EPRA | ETF | iShares European Property | Medio | REITs europeos |
+| Type | Platform/Ticker | Risk | Notes |
+|------|-----------------|------|-------|
+| P2P Lending | Mintos | High | Diversify originators |
+| Real Estate | Urbanitae | High | Spanish projects |
+| Gold Physical | BullionVault | Low | Direct ownership |
+| Letras Tesoro | Direct | Very Low | ~3% TAE |
 
-### Dividendos
+### Controversial (Legal)
 
-| Ticker | Tipo | Descripción | Riesgo | Notas |
-|--------|------|-------------|--------|-------|
-| VHYL | ETF | Vanguard FTSE All-World High Dividend | Medio | Dividendos globales ~3-4% |
-| IDVY | ETF | iShares Euro Dividend | Medio | Dividendos eurozona |
-
-### Mercados Emergentes
-
-| Ticker | Tipo | Descripción | Riesgo | Notas |
-|--------|------|-------------|--------|-------|
-| EIMI | ETF | iShares Core MSCI EM IMI | Alto | Emergentes amplio |
-| VFEM | ETF | Vanguard FTSE Emerging Markets | Alto | Alternativa Vanguard |
-
-### Vehículos Fiscalmente Eficientes (España)
-
-| Ticker/Ref | Tipo | Descripción | Riesgo | Notas |
-|------------|------|-------------|--------|-------|
-| INDEXA-PP | PP | Indexa Más Rentabilidad Acciones | Alto | Plan de Pensiones (Desgravable) |
-| MYINV-PP | PP | MyInvestor S&P 500 PP | Medio-Alto | Plan de Pensiones indexado |
-| PIAS-AEGON | Seguro | Estrategia Inversión Activa | Medio | PIAS (Exención fiscal >5 años) |
-| FI-MSCI-W | Fondo | Vanguard Global Stock Index | Medio | Traspasable sin peaje fiscal |
-
-### Crypto Adicional
-
-| Ticker | Tipo | Descripción | Riesgo | Notas |
-|--------|------|-------------|--------|-------|
-| SOL | Crypto | Solana | Muy alto | Smart contracts, alta velocidad |
-| LINK | Crypto | Chainlink | Muy alto | Oráculos descentralizados |
-| DOT | Crypto | Polkadot | Muy alto | Interoperabilidad blockchains |
-
-### Alternativos
-
-| Plataforma | Tipo | Descripción | Riesgo | Notas |
-|------------|------|-------------|--------|-------|
-| Mintos | Crowdlending | Préstamos P2P | Alto | Diversificar por originadores |
-| Urbanitae | Crowdfunding | Inmobiliario | Alto | Proyectos en España |
-| Indexa Capital | Robo-advisor | Gestión pasiva | Medio | Opción "set and forget" |
-| BullionVault | Oro Físico | Custodia de oro/plata | Bajo | Propiedad directa en bóveda |
-| Garaje/Trastero| Inmobiliario | Compra directa (Simulado) | Medio | Alquiler zona alta demanda |
+| Sector | Examples | Notes |
+|--------|----------|-------|
+| Cannabis | MSOS, TLRY | US/Canada focused |
+| Defense | LMT, RTX, BA | Stable demand |
+| Gambling | DKNG, FLTR | High growth |
+| Tobacco | MO, PM | High dividends |
 
 ---
 
-## Notas
+## Brokers
 
-- **ETFs UCITS**: Todos los ETFs listados son UCITS (regulación EU), accesibles desde brokers españoles.
-- **Brokers recomendados**: Interactive Brokers, DEGIRO, Trade Republic.
-- **Crypto**: Binance, Kraken, Coinbase. Considerar cold wallets para holdings grandes.
-- **Fiscalidad**: Plusvalías tributan al 19-26% en España. Crypto sigue las mismas reglas.
+- **ETFs/Stocks:** Interactive Brokers, DEGIRO
+- **Crypto:** Coinbase, Kraken
+- **Alternatives:** Platform-specific
 
 ---
 
-*Última actualización: 2026-01-29*
+*Last updated: 2026-01-30*
