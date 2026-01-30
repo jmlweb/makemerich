@@ -1,144 +1,40 @@
 {
   "date": "2026-01-30",
-  "day": 4,
+  "day": 1,
   "balance": {
-    "total": 4829.75,
-    "currency": "EUR"
-  },
-  "change": {
-    "absolute": -170.81,
-    "percentage": -3.42
+    "previous": 5000.00,
+    "current": 5000.00,
+    "change_pct": 0.00
   },
   "positions": [
     {
-      "asset": "CSPX",
-      "type": "ETF",
-      "description": "iShares Core S&P 500 UCITS",
-      "invested": 1750,
-      "units": 2,
-      "buyPrice": 875,
-      "currentPrice": 851.046,
-      "value": 1702.09,
-      "pnl": -47.91,
-      "pnlPercent": -2.74
+      "asset": "CASH",
+      "type": "cash",
+      "allocation_pct": 60,
+      "amount": 3000.00
     },
     {
-      "asset": "EQQQ",
-      "type": "ETF",
-      "description": "Invesco NASDAQ-100 UCITS",
-      "invested": 1250,
-      "units": 2.36,
-      "buyPrice": 529.66,
-      "currentPrice": 523.8,
-      "value": 1236.17,
-      "pnl": -13.83,
-      "pnlPercent": -1.11
+      "asset": "VOO",
+      "type": "etf",
+      "allocation_pct": 25,
+      "entry_price": 638.50,
+      "shares": 1.96,
+      "amount": 1250.00
     },
     {
       "asset": "BTC",
-      "type": "Crypto",
-      "description": "Bitcoin",
-      "invested": 1000,
-      "units": 0.01351,
-      "buyPrice": 74003.38,
-      "currentPrice": 69156,
-      "value": 934.3,
-      "pnl": -65.7,
-      "pnlPercent": -6.57,
-      "dayChange": -5.98,
-      "note": "BTC 73,508 EUR (-1.53% today)"
-    },
-    {
-      "asset": "ETH",
-      "type": "Crypto",
-      "description": "Ethereum",
-      "invested": 500,
-      "units": 0.1996,
-      "buyPrice": 2505.6,
-      "currentPrice": 2290.53,
-      "value": 457.19,
-      "pnl": -42.81,
-      "pnlPercent": -8.56,
-      "dayChange": -6.88
+      "type": "crypto",
+      "allocation_pct": 15,
+      "entry_price": 82536.00,
+      "amount": 750.00
     }
   ],
-  "allocation": {
-    "CSPX": 1702.09,
-    "EQQQ": 1236.17,
-    "BTC": 934.3,
-    "ETH": 457.19,
-    "cash": 500
+  "market_context": {
+    "sp500": 6945,
+    "sp500_change": "+1% MTD",
+    "btc": 82536,
+    "sentiment": "neutral"
   },
-  "trades": [],
-  "marketConditions": {
-    "sp500": {
-      "value": 6969.009765625,
-      "change": "-0.14%"
-    },
-    "nasdaq": {
-      "value": 23685.119140625,
-      "change": "-0.55%"
-    },
-    "bitcoin": {
-      "value": 82583,
-      "currency": "USD",
-      "change": "-5.98%"
-    },
-    "ethereum": {
-      "value": 2735.26,
-      "currency": "USD",
-      "change": "-6.88%"
-    }
-  },
-  "nextDayPlan": {
-    "action": "HOLD",
-    "changes": [],
-    "reasoning": "Day 4 fue el peor d\u00eda (-3.42%), pero no hay p\u00e1nico. Crypto arrastr\u00f3 el portfolio con BTC -6% y ETH -8.5%. Los ETFs aguantan mejor. Ninguna posici\u00f3n cerca del stop-loss (-20%). Mantenemos posiciones y esperamos recuperaci\u00f3n.",
-    "alerts": [
-      {
-        "condition": "ETH cae a -15% total",
-        "action": "Vender 50% de ETH, mover a cash",
-        "triggerPrice": 2130
-      },
-      {
-        "condition": "BTC cae a -15% total",
-        "action": "Vender 25% de BTC",
-        "triggerPrice": 62900
-      },
-      {
-        "condition": "Portfolio cae a 4500 EUR (-10%)",
-        "action": "Activar modo preservaci\u00f3n: vender crypto, aumentar cash a 30%"
-      }
-    ],
-    "watchlist": [
-      {
-        "asset": "ETH",
-        "reason": "Peor performer -8.56%, vigilar de cerca"
-      },
-      {
-        "asset": "BTC",
-        "reason": "En rojo -6.57%, correlacionado con ETH"
-      }
-    ],
-    "opportunities": [
-      {
-        "asset": "CSPX",
-        "reason": "Si hay rebote, considerar a\u00f1adir con el cash"
-      },
-      {
-        "asset": "IGLN (Gold)",
-        "reason": "Hedge si volatilidad contin\u00faa"
-      }
-    ]
-  },
-  "metadata": {
-    "generatedAt": "2026-01-30T08:06:27.952Z",
-    "dataSources": [
-      "Yahoo Finance",
-      "CoinGecko",
-      "ExchangeRate-API"
-    ],
-    "agentVersion": "HAL-1.0",
-    "pricesFetchedAt": "2026-01-30T08:06:27.940Z"
-  }
+  "decision": "buy",
+  "reasoning": "Day 1: Conservative entry. 60% cash for flexibility, 25% broad market (VOO), 15% BTC for asymmetric upside. January barometer positive."
 }
