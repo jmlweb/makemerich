@@ -29,6 +29,17 @@ git commit -m "Day X: [resumen breve]"
 git push
 ```
 
+## Data Structure
+
+```
+data/
+├── trades.json      → Todas las transacciones (buy/sell/deposit)
+├── portfolio.json   → Estado actual del portfolio (calculated)
+└── YYYY-MM-DD.json  → Resumen diario
+```
+
+**trades.json** es la fuente de verdad. El portfolio se calcula desde los trades.
+
 ## Template JSON (data/)
 
 ```json
