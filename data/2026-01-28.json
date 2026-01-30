@@ -1,94 +1,13 @@
 {
   "date": "2026-01-28",
-  "day": 2,
-  "balance": {
-    "total": 5020.29,
-    "currency": "EUR"
-  },
-  "change": {
-    "absolute": 20.29,
-    "percentage": 0.41
-  },
+  "day": 1,
+  "balance": { "previous": 5000.00, "current": 5000.00, "change_pct": 0.00 },
   "positions": [
-    {
-      "asset": "CSPX",
-      "type": "ETF",
-      "description": "iShares Core S&P 500 UCITS",
-      "invested": 1750.00,
-      "units": 2.0,
-      "buyPrice": 875.00,
-      "currentPrice": 875.08,
-      "value": 1750.16,
-      "pnl": 0.16,
-      "pnlPercent": 0.01,
-      "dayChange": 0.01,
-      "note": "CSPX.L 747.93 GBP * 1.17 = 875.08 EUR (slightly down in GBP)"
-    },
-    {
-      "asset": "EQQQ",
-      "type": "ETF",
-      "description": "Invesco NASDAQ-100 UCITS",
-      "invested": 1250.00,
-      "units": 2.36,
-      "buyPrice": 529.66,
-      "currentPrice": 533.40,
-      "value": 1258.82,
-      "pnl": 8.82,
-      "pnlPercent": 0.71,
-      "dayChange": 0.66,
-      "note": "EQQQ.DE 533.40 EUR"
-    },
-    {
-      "asset": "BTC",
-      "type": "Crypto",
-      "description": "Bitcoin",
-      "invested": 1000.00,
-      "units": 0.01351,
-      "buyPrice": 74003.38,
-      "currentPrice": 74653.73,
-      "value": 1008.57,
-      "pnl": 8.57,
-      "pnlPercent": 0.86,
-      "dayChange": 0.88,
-      "note": "BTC 74,654 EUR (+0.88%)"
-    },
-    {
-      "asset": "ETH",
-      "type": "Crypto",
-      "description": "Ethereum",
-      "invested": 500.00,
-      "units": 0.1996,
-      "buyPrice": 2505.60,
-      "currentPrice": 2521.51,
-      "value": 503.30,
-      "pnl": 3.30,
-      "pnlPercent": 0.66,
-      "dayChange": 0.64,
-      "note": "ETH 2,521.51 EUR (+0.64%)"
-    }
+    { "asset": "CASH", "type": "cash", "allocation_pct": 60, "amount": 3000.00 },
+    { "asset": "VOO", "type": "etf", "allocation_pct": 25, "entry_price": 639.60, "shares": 1.954, "amount": 1250.00 },
+    { "asset": "BTC", "type": "crypto", "allocation_pct": 15, "entry_price": 86500, "units": 0.00867, "amount": 750.00 }
   ],
-  "allocation": {
-    "CSPX": 1750.16,
-    "EQQQ": 1258.82,
-    "BTC": 1008.57,
-    "ETH": 503.30,
-    "cash": 499.44
-  },
-  "trades": [],
-  "marketConditions": {
-    "sp500": {"value": 6978.03, "change": "-0.01%", "note": "Flat after ATH"},
-    "nasdaq": {"value": 23857, "change": "+0.66%"},
-    "bitcoin": {"value": 89200, "currency": "USD", "change": "+0.88%"},
-    "ethereum": {"value": 3015, "currency": "USD", "change": "+0.64%"}
-  },
-  "nextDayPlan": {
-    "action": "HOLD",
-    "changes": [],
-    "reasoning": "All positions green. Continue holding."
-  },
-  "metadata": {
-    "generatedAt": "2026-01-28T20:00:00Z",
-    "dataSources": ["Yahoo Finance", "CoinGecko"],
-    "agentVersion": "HAL-1.0"
-  }
+  "market_context": { "sp500": 6978, "btc": 86500, "sentiment": "neutral" },
+  "decision": "buy",
+  "reasoning": "Initial allocation: 60% cash, 25% VOO, 15% BTC"
 }

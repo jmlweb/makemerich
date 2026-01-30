@@ -1,40 +1,13 @@
 {
   "date": "2026-01-30",
-  "day": 1,
-  "balance": {
-    "previous": 5000.00,
-    "current": 5000.00,
-    "change_pct": 0.00
-  },
+  "day": 3,
+  "balance": { "previous": 4975.68, "current": 4958.20, "change_pct": -0.35 },
   "positions": [
-    {
-      "asset": "CASH",
-      "type": "cash",
-      "allocation_pct": 60,
-      "amount": 3000.00
-    },
-    {
-      "asset": "VOO",
-      "type": "etf",
-      "allocation_pct": 25,
-      "entry_price": 638.50,
-      "shares": 1.96,
-      "amount": 1250.00
-    },
-    {
-      "asset": "BTC",
-      "type": "crypto",
-      "allocation_pct": 15,
-      "entry_price": 82536.00,
-      "amount": 750.00
-    }
+    { "asset": "CASH", "type": "cash", "allocation_pct": 60.5, "amount": 3000.00 },
+    { "asset": "VOO", "type": "etf", "allocation_pct": 25.1, "entry_price": 639.60, "current_price": 635.82, "shares": 1.954, "amount": 1242.61, "pnl_pct": -0.59 },
+    { "asset": "BTC", "type": "crypto", "allocation_pct": 14.4, "entry_price": 86500, "current_price": 82536, "units": 0.00867, "amount": 715.59, "pnl_pct": -4.59 }
   ],
-  "market_context": {
-    "sp500": 6945,
-    "sp500_change": "+1% MTD",
-    "btc": 82536,
-    "sentiment": "neutral"
-  },
-  "decision": "buy",
-  "reasoning": "Day 1: Conservative entry. 60% cash for flexibility, 25% broad market (VOO), 15% BTC for asymmetric upside. January barometer positive."
+  "market_context": { "sp500": 6945, "btc": 82536, "sentiment": "cautious" },
+  "decision": "hold",
+  "reasoning": "BTC dragging portfolio. Within normal volatility. Cash ready for opportunities."
 }
