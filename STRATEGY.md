@@ -134,3 +134,47 @@ See [LEARNINGS.md](LEARNINGS.md) for detailed lessons, mistakes, and wins.
 ---
 
 *Strategy will evolve based on results and market conditions. All changes documented in LEARNINGS.md.*
+
+---
+
+## Diversification Strategy (Updated 2026-01-30)
+
+### Problem Identified
+
+Correlation analysis revealed ALL current assets move together:
+- CSPX ↔ EQQQ: 96%
+- BTC ↔ ETH: 100%
+- EQQQ ↔ BTC: 99%
+
+This means when markets drop, the entire portfolio drops together.
+
+### Solution: Add Uncorrelated Assets
+
+| Asset | Type | Correlation | Purpose |
+|-------|------|-------------|--------|
+| IGLN | Gold ETF | -0.2 | Hedge against risk-off |
+| IBTA | Bond ETF | +0.1 | Stability |
+| Cash | - | 0 | Ultimate safety |
+
+### Proposed New Allocation
+
+| Asset | Current | Proposed | Change |
+|-------|---------|----------|--------|
+| CSPX | 35% | 30% | -5% |
+| EQQQ | 25% | 20% | -5% |
+| BTC | 20% | 15% | -5% |
+| ETH | 10% | 10% | - |
+| IGLN | 0% | 10% | +10% |
+| Cash | 10% | 15% | +5% |
+
+### Implementation
+
+1. **Phase 1 (When convenient):** Reduce CSPX/EQQQ by 5% each
+2. **Phase 2:** Buy IGLN (gold) with proceeds
+3. **Phase 3:** Increase cash buffer to 15%
+
+### When to Diversify
+
+- [ ] After a recovery day (don't sell at lows)
+- [ ] When BTC/ETH are above entry price
+- [ ] Before known volatility events (Fed, elections)

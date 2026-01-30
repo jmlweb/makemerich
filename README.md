@@ -41,7 +41,7 @@ The simulation ends when **either**:
 
 ## How it works
 
-Each day at **09:00** (Madrid time), HAL:
+Each day at **20:00** (Madrid time), HAL:
 1. Fetches real market data for all positions
 2. Calculates the new portfolio balance
 3. Analyzes market conditions
@@ -106,3 +106,34 @@ If you are an AI agent operating this simulation, see [AGENTS.md](AGENTS.md) for
 ---
 
 *Experiment by [@jmlweb](https://github.com/jmlweb) and HAL*
+
+## Scripts
+
+| Script | Purpose |
+|--------|--------|
+| `update-portfolio.js` | Fetch prices and update daily data |
+| `check-alerts.js` | Check for stop-loss, take-profit alerts |
+| `analyze-portfolio.js` | Volatility, correlation, metrics |
+| `rebalance-suggester.js` | Drift analysis and rebalance suggestions |
+| `generate-dashboard.js` | Visual HTML dashboard |
+| `daily-routine.js` | Run all scripts in sequence |
+
+### Quick Commands
+
+```bash
+# Full daily update
+node scripts/daily-routine.js
+
+# Check if alerts (returns exit code 1 if critical)
+node scripts/check-alerts.js
+
+# Analyze portfolio
+node scripts/analyze-portfolio.js
+
+# View rebalance suggestions
+node scripts/rebalance-suggester.js
+
+# Generate dashboard
+node scripts/generate-dashboard.js
+open dashboard.html
+```
