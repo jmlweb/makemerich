@@ -1,0 +1,20 @@
+{
+  "months": [
+    {
+      "month": "2026-01",
+      "start_balance": 5000.00,
+      "end_balance": 4958.20,
+      "pnl_eur": -41.80,
+      "pnl_pct": -0.84,
+      "trades_count": 3
+    }
+  ],
+  "all_time": {
+    "start_date": "2026-01-28",
+    "total_deposited": 5000.00,
+    "total_withdrawn": 0,
+    "current_balance": 4958.20,
+    "pnl_eur": -41.80,
+    "pnl_pct": -0.84
+  }
+}

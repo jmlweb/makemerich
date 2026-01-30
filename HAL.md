@@ -22,11 +22,13 @@
 
 ```
 data/
-├── trades.json      → Todas las transacciones (fuente de verdad)
-└── portfolio.json   → Estado actual del portfolio
+├── trades/
+│   └── YYYY-MM.json → Transacciones del mes
+├── portfolio.json   → Estado actual
+└── summary.json     → Totales mensuales (para histórico)
 ```
 
-## trades.json format
+## trades/YYYY-MM.json format
 
 ```json
 {
