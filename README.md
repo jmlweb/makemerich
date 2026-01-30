@@ -1,139 +1,74 @@
-# MakeMeRich
+# 💰 MakeMeRich
 
 An AI-driven investment simulation experiment.
 
+## 📊 Portfolio Performance
+
+![Balance Chart](https://quickchart.io/chart?w=600&h=300&c=%7Btype%3A%27line%27%2Cdata%3A%7Blabels%3A%5B%27Day%201%27%2C%27Day%202%27%2C%27Day%203%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Balance%20%E2%82%AC%27%2Cdata%3A%5B5000%2C4975.68%2C4958.20%5D%2CborderColor%3A%27rgb%2875%2C192%2C192%29%27%2Cfill%3Afalse%2Ctension%3A0.1%7D%5D%7D%2Coptions%3A%7Bplugins%3A%7Btitle%3A%7Bdisplay%3Atrue%2Ctext%3A%27MakeMeRich%20Portfolio%27%7D%7D%2Cscales%3A%7By%3A%7Bmin%3A4800%2Cmax%3A5200%7D%7D%7D%7D)
+
+| Metric | Value |
+|--------|-------|
+| Starting Capital | €5,000.00 |
+| Current Balance | €4,958.20 |
+| Total Return | **-0.84%** |
+| Days Active | 3 |
+
+## Current Positions
+
+| Asset | Allocation | P/L |
+|-------|------------|-----|
+| 💵 Cash | 60.5% (€3,000) | — |
+| 📈 VOO | 25.1% (€1,242.61) | -0.59% |
+| ₿ BTC | 14.4% (€715.59) | -4.59% |
+
 ## What is this?
 
-This is a public experiment where an AI (HAL, powered by Claude) makes daily virtual investment decisions starting with **5,000 EUR** of simulated capital.
+A public experiment where **HAL** (AI powered by Claude) makes investment decisions with €5,000 of simulated capital.
 
-**This is NOT financial advice.** This is a simulation for educational and entertainment purposes only.
+**This is NOT financial advice.** Simulation for educational/entertainment purposes only.
 
 ## Rules
 
-1. **One entry per day** - No more, no less
-2. **Legal investments only** - All simulated investments must be legal in Spain
-3. **Real market data** - Decisions based on actual market prices and conditions
-4. **Full transparency** - All decisions and reasoning are public
-5. **No private data** - Nothing confidential is ever published
-
-See [RULES.md](RULES.md) for complete rules and constraints.
-
-## Investment Universe
-
-This is **not** limited to stocks and crypto. Any legal investment in Spain is fair game.
-
-See [ASSETS.md](ASSETS.md) for the complete list of available investments.
-
-### Categories
-- **Traditional:** Stocks, ETFs, Bonds, REITs/SOCIMIs, Mutual Funds
-- **Digital:** Crypto (BTC, ETH, altcoins), Stablecoins, DeFi yields
-- **Alternative:** P2P Lending, Real Estate Crowdfunding, Equity Crowdfunding
-- **Fixed Income:** Letras del Tesoro, Bank Deposits, Money Market Funds
-- **Speculative:** Sports Betting (licensed), Forex, Options, Commodities
-- **Tangible (Simulated):** Wine, Watches, Classic Cars, Collectibles
+1. **Legal investments only** — anything legal in Spain
+2. **Real market data** — actual prices and conditions
+3. **Full transparency** — all decisions and reasoning public
+4. **No private data** — nothing confidential published
 
 ## End Conditions
 
-The simulation ends when **either**:
-- 📉 Balance reaches 0 EUR (game over)
+- 📉 Balance reaches €0 (game over)
 - 📅 One year passes (January 27, 2027)
-- 🏆 Balance reaches 50,000 EUR (10x victory!)
+- 🏆 Balance reaches €50,000 (10x victory!)
 
 ## How it works
 
-Each day at **20:00** (Madrid time), HAL:
-1. Fetches real market data for all positions
-2. Calculates the new portfolio balance
-3. Analyzes market conditions
-4. Makes investment decisions for the next day
-5. Records everything in the ledger
-6. Commits and pushes to this repo
+HAL monitors markets 5x daily (09:00, 12:00, 15:30, 18:00, 21:30 CET) and:
+1. Fetches real market data
+2. Analyzes conditions
+3. Makes buy/sell decisions
+4. Records everything in [LEDGER.md](LEDGER.md)
 
 ## Structure
 
 ```
 makemerich/
-  README.md           # This file
-  RULES.md            # Complete rules and constraints
-  STRATEGY.md         # Current investment approach
-  ASSETS.md           # Available investment options
-  LEARNINGS.md        # Lessons, mistakes, and wins
-  AGENTS.md           # Instructions for AI agents
-  LEDGER.md           # Human-readable daily log
-  data/
-    YYYY-MM-DD.json   # Structured daily data
+├── README.md         # This file
+├── LEDGER.md         # Daily log
+├── STRATEGY.md       # Investment approach
+├── HAL.md            # AI workflow
+└── data/
+    ├── trades/       # Monthly transaction logs
+    ├── portfolio.json # Current state
+    └── summary.json   # Historical totals
 ```
 
 ## Timeline
 
 | Milestone | Date | Status |
 |-----------|------|--------|
-| Start | January 27, 2026 | ✅ Done |
-| End (max) | January 27, 2027 | ⏳ Pending |
-
-## Starting Capital
-
-**5,000.00 EUR**
-
-## Current Status
-
-**Day 4** - Red day, crypto data stale
-
-### Current Allocation
-| Asset | Value | % of Portfolio |
-|-------|-------|----------------|
-| CSPX (S&P 500) | €1,702.09 | 35% |
-| EQQQ (NASDAQ) | €1,236.17 | 26% |
-| Bitcoin | €934.30 | 19% |
-| Ethereum | €457.19 | 9% |
-| Cash | €500.00 | 10% |
-
-## Quick Stats
-
-| Metric | Value |
-|--------|-------|
-| Starting Capital | €5,000.00 |
-| Current Balance | €4,829.75 |
-| Total Return | **-3.40%** |
-| Days Active | 4 |
-| Best Day | Day 2 (+0.41%) |
-| Worst Day | Day 4 (-3.42%) |
-
-## For AI Agents
-
-If you are an AI agent operating this simulation, see [AGENTS.md](AGENTS.md) for detailed instructions.
+| Start | January 28, 2026 | ✅ |
+| End (max) | January 27, 2027 | ⏳ |
 
 ---
 
-*Experiment by [@jmlweb](https://github.com/jmlweb) and HAL*
-
-## Scripts
-
-| Script | Purpose |
-|--------|--------|
-| `update-portfolio.js` | Fetch prices and update daily data |
-| `check-alerts.js` | Check for stop-loss, take-profit alerts |
-| `analyze-portfolio.js` | Volatility, correlation, metrics |
-| `rebalance-suggester.js` | Drift analysis and rebalance suggestions |
-| `generate-dashboard.js` | Visual HTML dashboard |
-| `daily-routine.js` | Run all scripts in sequence |
-
-### Quick Commands
-
-```bash
-# Full daily update
-node scripts/daily-routine.js
-
-# Check if alerts (returns exit code 1 if critical)
-node scripts/check-alerts.js
-
-# Analyze portfolio
-node scripts/analyze-portfolio.js
-
-# View rebalance suggestions
-node scripts/rebalance-suggester.js
-
-# Generate dashboard
-node scripts/generate-dashboard.js
-open dashboard.html
-```
+*Experiment by [@jmlweb](https://github.com/jmlweb) and HAL 🤖*
