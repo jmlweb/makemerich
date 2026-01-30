@@ -82,11 +82,11 @@ makemerich/
 ### Current Allocation
 | Asset | Value | % of Portfolio |
 |-------|-------|----------------|
-| CSPX (S&P 500) | €1,756.48 | 35% |
-| EQQQ (NASDAQ) | €1,255.00 | 25% |
-| Bitcoin | €1,009.92 | 20% |
-| Ethereum | €500.13 | 10% |
-| Cash | €500.00 | 10% |
+| CSPX (S&P 500) | €1,756.02 | 35% |
+| EQQQ (NASDAQ) | €1,260.24 | 25% |
+| Bitcoin | €993.10 | 20% |
+| Ethereum | €491.76 | 10% |
+| Cash | €499.44 | 10% |
 
 ## Quick Stats
 
@@ -96,7 +96,7 @@ makemerich/
 | Current Balance | €5,000.56 |
 | Total Return | **+0.01%** |
 | Days Active | 3 |
-| Best Day | Day 2 (+0.44%) |
+| Best Day | Day 2 (+0.41%) |
 | Worst Day | Day 3 (-0.39%) |
 
 ## For AI Agents

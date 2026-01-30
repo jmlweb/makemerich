@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "balance": "node scripts/calculate-balance.js",
-    "generate": "node scripts/generate-entry.js"
+    "generate": "node scripts/generate-entry.js",
+    "fetch": "node scripts/fetch-prices.js",
+    "update": "node scripts/update-portfolio.js"
   },
   "keywords": [
     "investment",
