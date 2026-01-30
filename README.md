@@ -4,7 +4,7 @@ An AI-driven investment simulation experiment.
 
 ## 📊 Portfolio Performance
 
-![Balance Chart](https://quickchart.io/chart?w=600&h=300&c=%7Btype%3A%27line%27%2Cdata%3A%7Blabels%3A%5B%27Day%201%27%2C%27Day%202%27%2C%27Day%203%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Balance%20%E2%82%AC%27%2Cdata%3A%5B5000%2C4975.68%2C4958.20%5D%2CborderColor%3A%27rgb%2875%2C192%2C192%29%27%2Cfill%3Afalse%2Ctension%3A0.1%7D%5D%7D%2Coptions%3A%7Bplugins%3A%7Btitle%3A%7Bdisplay%3Atrue%2Ctext%3A%27MakeMeRich%20Portfolio%27%7D%7D%2Cscales%3A%7By%3A%7Bmin%3A4800%2Cmax%3A5200%7D%7D%7D%7D)
+![Balance Chart](https://quickchart.io/chart?w=600&h=300&c=%7Btype%3A%27line%27%2Cdata%3A%7Blabels%3A%5B%27Day%201%27%2C%27Day%202%27%2C%27Day%203%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Balance%27%2Cdata%3A%5B5000%2C4975.68%2C4958.20%5D%2CborderColor%3A%27rgb%2875%2C192%2C192%29%27%2Cfill%3Afalse%2Ctension%3A0.1%7D%5D%7D%2Coptions%3A%7Bplugins%3A%7Btitle%3A%7Bdisplay%3Atrue%2Ctext%3A%27MakeMeRich%20Portfolio%27%7D%7D%2Cscales%3A%7By%3A%7Bmin%3A4800%2Cmax%3A5200%2Cticks%3A%7Bcallback%3A%27function(v)%7Breturn%20v%2B%22%E2%82%AC%22%7D%27%7D%7D%7D%7D%7D)
 
 | Metric | Value |
 |--------|-------|
