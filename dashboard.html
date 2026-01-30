@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MakeMeRich Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, system-ui, sans-serif; background: #0f0f0f; color: #fff; padding: 20px; }
+    .header { text-align: center; margin-bottom: 30px; }
+    .header h1 { font-size: 2rem; margin-bottom: 10px; }
+    .header .balance { font-size: 3rem; font-weight: bold; }
+    .header .change { font-size: 1.5rem; margin-top: 10px; }
+    .positive { color: #22c55e; }
+    .negative { color: #ef4444; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+    .card { background: #1a1a1a; border-radius: 12px; padding: 20px; }
+    .card h2 { font-size: 1.2rem; margin-bottom: 15px; color: #888; }
+    .stats { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
+    .stat { background: #1a1a1a; padding: 15px 25px; border-radius: 8px; text-align: center; }
+    .stat-value { font-size: 1.5rem; font-weight: bold; }
+    .stat-label { color: #888; font-size: 0.9rem; }
+    .positions { margin-top: 20px; }
+    .position { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333; }
+    .position:last-child { border-bottom: none; }
+    .position-name { font-weight: 500; }
+    .position-value { color: #888; }
+    .position-pnl { font-weight: 500; }
+    canvas { max-height: 250px; }
+    .updated { text-align: center; color: #666; margin-top: 30px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>💰 MakeMeRich</h1>
+    <div class="balance">€4829.75</div>
+    <div class="change negative">
+      -3.40% from start
+    </div>
+  </div>
+  
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">Day 4</div>
+      <div class="stat-label">Trading Days</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value negative">
+        -3.42%
+      </div>
+      <div class="stat-label">Today</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">€500</div>
+      <div class="stat-label">Cash</div>
+    </div>
+  </div>
+  
+  <div class="grid">
+    <div class="card">
+      <h2>📈 Portfolio Value</h2>
+      <canvas id="balanceChart"></canvas>
+    </div>
+    <div class="card">
+      <h2>📉 Daily Changes</h2>
+      <canvas id="changesChart"></canvas>
+    </div>
+    <div class="card">
+      <h2>🎯 Allocation</h2>
+      <canvas id="allocationChart"></canvas>
+    </div>
+    <div class="card">
+      <h2>📊 Positions</h2>
+      <div class="positions">
+        
+          <div class="position">
+            <span class="position-name">CSPX</span>
+            <span class="position-value">€1702.09</span>
+            <span class="position-pnl negative">
+              -2.7%
+            </span>
+          </div>
+        
+          <div class="position">
+            <span class="position-name">EQQQ</span>
+            <span class="position-value">€1236.17</span>
+            <span class="position-pnl negative">
+              -1.1%
+            </span>
+          </div>
+        
+          <div class="position">
+            <span class="position-name">BTC</span>
+            <span class="position-value">€934.30</span>
+            <span class="position-pnl negative">
+              -6.6%
+            </span>
+          </div>
+        
+          <div class="position">
+            <span class="position-name">ETH</span>
+            <span class="position-value">€457.19</span>
+            <span class="position-pnl negative">
+              -8.6%
+            </span>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="updated">Updated: 1/30/2026, 2:10:31 PM</div>
+  
+  <script>
+    const chartOptions = {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#333' }, ticks: { color: '#888' } },
+        y: { grid: { color: '#333' }, ticks: { color: '#888' } }
+      }
+    };
+    
+    new Chart(document.getElementById('balanceChart'), {
+      type: 'line',
+      data: {
+        labels: ["2026-01-27","2026-01-28","2026-01-29","2026-01-30"],
+        datasets: [{
+          data: [5000,5020.29,5000.56,4829.75],
+          borderColor: '#3b82f6',
+          backgroundColor: 'rgba(59, 130, 246, 0.1)',
+          fill: true,
+          tension: 0.3
+        }]
+      },
+      options: {
+        ...chartOptions,
+        scales: {
+          ...chartOptions.scales,
+          y: { ...chartOptions.scales.y, min: Math.min(...[5000,5020.29,5000.56,4829.75]) * 0.95 }
+        }
+      }
+    });
+    
+    new Chart(document.getElementById('changesChart'), {
+      type: 'bar',
+      data: {
+        labels: ["2026-01-27","2026-01-28","2026-01-29","2026-01-30"],
+        datasets: [{
+          data: [0,0.41,-0.39,-3.42],
+          backgroundColor: [0,0.41,-0.39,-3.42].map(v => v >= 0 ? '#22c55e' : '#ef4444')
+        }]
+      },
+      options: chartOptions
+    });
+    
+    new Chart(document.getElementById('allocationChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ["CSPX","EQQQ","BTC","ETH","Cash"],
+        datasets: [{
+          data: [1702.09,1236.17,934.3,457.19,500],
+          backgroundColor: ['#3b82f6', '#8b5cf6', '#f59e0b', '#06b6d4', '#22c55e']
+        }]
+      },
+      options: { responsive: true, plugins: { legend: { position: 'right', labels: { color: '#fff' } } } }
+    });
+  </script>
+</body>
+</html>

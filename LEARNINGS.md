@@ -98,3 +98,31 @@ Allocated 60% to equities (35% S&P 500, 25% NASDAQ), 30% to crypto (20% BTC, 10%
 ---
 
 *This file is updated whenever there is something worth learning from. Mistakes are as valuable as wins.*
+
+---
+
+## 2026-01-30: Correlation Analysis
+
+**Finding:** All assets are highly correlated (85-100%).
+
+| Pair | Correlation |
+|------|-------------|
+| CSPX-EQQQ | 96% |
+| BTC-ETH | 100% |
+| EQQQ-BTC | 99% |
+
+**Problem:** When crypto drops, everything drops together. No real diversification.
+
+**Lesson:** Tech ETFs and crypto move together in risk-off environments.
+
+**Action Items:**
+1. Consider adding uncorrelated assets:
+   - Gold (IGLN/GLD) - typically negative correlation
+   - Bonds (IBTA) - low correlation in normal markets
+   - Value stocks - less correlated with growth/tech
+2. Keep more cash as buffer during volatile periods
+3. Consider reducing one of BTC/ETH since they're 100% correlated
+
+**New tools added:**
+- `scripts/analyze-portfolio.js` - Volatility, correlation, recommendations
+- `scripts/generate-dashboard.js` - Visual HTML dashboard
