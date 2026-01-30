@@ -1,89 +1,89 @@
 # 👀 Watchlist
 
-Assets bajo vigilancia activa con tesis de inversión.
+Assets under active surveillance with investment thesis.
 
 ---
 
-## Posiciones Actuales
+## Current Positions
 
-| Asset | Tipo | Allocation | Tesis | Convicción |
-|-------|------|------------|-------|------------|
-| VOO | ETF | 25% | Exposición broad market US | ⭐⭐⭐⭐ |
+| Asset | Type | Allocation | Thesis | Conviction |
+|-------|------|------------|--------|------------|
+| VOO | ETF | 25% | Broad US market exposure | ⭐⭐⭐⭐ |
 | BTC | Crypto | 15% | Store of value, halving cycle | ⭐⭐⭐ |
-| CASH | - | 60% | Dry powder para oportunidades | - |
+| CASH | - | 60% | Dry powder for opportunities | - |
 
 ---
 
-## En Vigilancia
+## Under Surveillance
 
 ### ETFs
 
-| Asset | Descripción | Entrada Ideal | Tesis | Status |
-|-------|-------------|---------------|-------|--------|
-| QQQ | Nasdaq 100 | RSI < 35 o caída > 10% | Tech rebound, AI momentum | 👀 Watching |
-| GLD | Gold ETF | Fear & Greed < 30 | Hedge contra volatilidad | 👀 Watching |
-| VXUS | International | Rotación desde US | Diversificación geográfica | 🔍 Research |
+| Asset | Description | Ideal Entry | Thesis | Status |
+|-------|-------------|-------------|--------|--------|
+| QQQ | Nasdaq 100 | RSI < 35 or drop > 10% | Tech rebound, AI momentum | 👀 Watching |
+| GLD | Gold ETF | Fear & Greed < 30 | Volatility hedge | 👀 Watching |
+| VXUS | International | Rotation from US | Geographic diversification | 🔍 Research |
 
 ### Crypto
 
-| Asset | Descripción | Entrada Ideal | Tesis | Status |
-|-------|-------------|---------------|-------|--------|
+| Asset | Description | Ideal Entry | Thesis | Status |
+|-------|-------------|-------------|--------|--------|
 | ETH | Ethereum | < $2,200 | DeFi, staking yield | 👀 Watching |
-| SOL | Solana | Caída > 20% desde reciente | Speed, ecosystem growth | 🔍 Research |
+| SOL | Solana | Drop > 20% from recent | Speed, ecosystem growth | 🔍 Research |
 
-### Stocks Individuales
+### Individual Stocks
 
-| Asset | Descripción | Entrada Ideal | Tesis | Status |
-|-------|-------------|---------------|-------|--------|
+| Asset | Description | Ideal Entry | Thesis | Status |
+|-------|-------------|-------------|--------|--------|
 | - | - | - | - | - |
 
-> *Por ahora prefiero ETFs sobre stocks individuales para esta fase inicial*
+> *Currently preferring ETFs over individual stocks for this initial phase*
 
-### Alternativos
+### Alternatives
 
-| Asset | Plataforma | Entrada Ideal | Tesis | Status |
-|-------|------------|---------------|-------|--------|
-| Letras Tesoro | Tesoro España | Siempre | ~3% TAE, risk-free | 🔍 Research |
-
----
-
-## Criterios de Entrada a Watchlist
-
-Para añadir un asset:
-1. **Fundamentales sólidos** - No memecoins, no penny stocks
-2. **Liquidez suficiente** - Poder salir sin slippage
-3. **Tesis clara** - Por qué debería subir
-4. **Catalizador identificado** - Qué lo va a mover
-5. **Nivel de entrada definido** - No FOMO
+| Asset | Platform | Ideal Entry | Thesis | Status |
+|-------|----------|-------------|--------|--------|
+| Treasury Bills | Spanish Treasury | Always | ~3% APY, risk-free | 🔍 Research |
 
 ---
 
-## Criterios de Salida de Watchlist
+## Watchlist Entry Criteria
 
-Eliminar si:
-- Tesis ya no aplica
-- Oportunidad pasó (subió sin nosotros)
-- 30 días sin acción
-- Mejor oportunidad disponible
+To add an asset:
+1. **Solid fundamentals** - No memecoins, no penny stocks
+2. **Sufficient liquidity** - Able to exit without slippage
+3. **Clear thesis** - Why it should go up
+4. **Identified catalyst** - What will move it
+5. **Defined entry level** - No FOMO
 
 ---
 
-## Ideas Descartadas
+## Watchlist Exit Criteria
 
-| Asset | Razón | Fecha |
-|-------|-------|-------|
+Remove if:
+- Thesis no longer applies
+- Opportunity passed (went up without us)
+- 30 days without action
+- Better opportunity available
+
+---
+
+## Discarded Ideas
+
+| Asset | Reason | Date |
+|-------|--------|------|
 | - | - | - |
 
 ---
 
-## Próximas Acciones
+## Next Actions
 
-| Prioridad | Asset | Acción | Trigger |
-|-----------|-------|--------|---------|
-| 1 | BTC | Añadir más | Si < $80,000 con RSI < 30 |
-| 2 | QQQ | Iniciar posición | Si RSI < 35 |
-| 3 | Cash | Desplegar | Si Fear & Greed < 25 |
+| Priority | Asset | Action | Trigger |
+|----------|-------|--------|---------|
+| 1 | BTC | Add more | If < $80,000 with RSI < 30 |
+| 2 | QQQ | Open position | If RSI < 35 |
+| 3 | Cash | Deploy | If Fear & Greed < 25 |
 
 ---
 
-*Actualizado: 2026-01-30*
+*Updated: 2026-01-30*
