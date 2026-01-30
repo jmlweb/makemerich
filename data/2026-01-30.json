@@ -93,7 +93,43 @@
   "nextDayPlan": {
     "action": "HOLD",
     "changes": [],
-    "reasoning": "Auto-generated. Review and update reasoning."
+    "reasoning": "Day 4 fue el peor d\u00eda (-3.42%), pero no hay p\u00e1nico. Crypto arrastr\u00f3 el portfolio con BTC -6% y ETH -8.5%. Los ETFs aguantan mejor. Ninguna posici\u00f3n cerca del stop-loss (-20%). Mantenemos posiciones y esperamos recuperaci\u00f3n.",
+    "alerts": [
+      {
+        "condition": "ETH cae a -15% total",
+        "action": "Vender 50% de ETH, mover a cash",
+        "triggerPrice": 2130
+      },
+      {
+        "condition": "BTC cae a -15% total",
+        "action": "Vender 25% de BTC",
+        "triggerPrice": 62900
+      },
+      {
+        "condition": "Portfolio cae a 4500 EUR (-10%)",
+        "action": "Activar modo preservaci\u00f3n: vender crypto, aumentar cash a 30%"
+      }
+    ],
+    "watchlist": [
+      {
+        "asset": "ETH",
+        "reason": "Peor performer -8.56%, vigilar de cerca"
+      },
+      {
+        "asset": "BTC",
+        "reason": "En rojo -6.57%, correlacionado con ETH"
+      }
+    ],
+    "opportunities": [
+      {
+        "asset": "CSPX",
+        "reason": "Si hay rebote, considerar a\u00f1adir con el cash"
+      },
+      {
+        "asset": "IGLN (Gold)",
+        "reason": "Hedge si volatilidad contin\u00faa"
+      }
+    ]
   },
   "metadata": {
     "generatedAt": "2026-01-30T08:06:27.952Z",
