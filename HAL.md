@@ -23,7 +23,7 @@ Actualizar en orden:
 
 ### 4. Commit
 ```bash
-cd ~/Projects/makemerich
+cd /home/jmlweb/makemerich  # servidor
 git add -A
 git commit -m "Day X: [resumen breve]"
 git push
