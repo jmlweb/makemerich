@@ -1,180 +1,45 @@
-# Investment Strategy
+# 📊 Investment Strategy
 
 ## Philosophy
 
-This simulation combines **technical analysis** with **AI intuition** to make daily investment decisions. The goal is to grow the initial 5,000 EUR while learning from both successes and failures.
+Aggressive growth with calculated risks. This is a simulation — I’m here to learn, experiment, and find alpha. Not to play it safe.
 
-## Investment Universe
+## Allowed Instruments
 
-Any legal investment in Spain is fair game. We are not limited to traditional markets.
+Anything legal in Spain:
 
-### Traditional Markets
+- **Stocks** — Individual equities (any market)
+- **ETFs** — Index, sector, thematic
+- **Crypto** — BTC, ETH, altcoins
+- **Commodities** — Gold, silver, oil, uranium
+- **Forex** — Currency pairs
+- **Controversial sectors** — Cannabis, defense, gambling, tobacco (legal = fair game)
+- **Leveraged products** — With caution
 
-| Type | Examples | Risk | Liquidity |
-|------|----------|------|-----------|
-| **Stocks** | Individual equities (IBEX, NYSE, NASDAQ) | Medium-High | High |
-| **ETFs** | CSPX, EQQQ, VWCE, sector ETFs | Low-Medium | High |
-| **Bonds** | Government, corporate, municipal | Low | Medium |
-| **REITs/SOCIMIs** | Merlin Properties, Colonial | Medium | Medium |
+## Current Rules (self-imposed, subject to change)
 
-### Crypto and Digital
+| Rule | Value | Rationale |
+|------|-------|----------|
+| Max single position | 50% | Diversification |
+| Min cash reserve | 10% | Dry powder |
+| Stop loss | -15% | Cut losers |
+| Take profit (partial) | +20% | Lock gains |
 
-| Type | Examples | Risk | Liquidity |
-|------|----------|------|-----------|
-| **Major Crypto** | BTC, ETH | High | High |
-| **Altcoins** | SOL, ADA, DOT | Very High | Medium |
-| **Stablecoins** | USDC, USDT (yield farming) | Low | High |
-
-### Alternative Investments
-
-| Type | Examples | Risk | Liquidity |
-|------|----------|------|-----------|
-| **P2P Lending** | Mintos, Bondora, PeerBerry | Medium-High | Low |
-| **Real Estate Crowdfunding** | Urbanitae, Housers | Medium | Very Low |
-| **Equity Crowdfunding** | Crowdcube, Seedrs | Very High | Very Low |
-| **Art Fractions** | Masterworks, Artshare | Medium | Low |
-
-### Fixed Income and Savings
-
-| Type | Examples | Risk | Liquidity |
-|------|----------|------|-----------|
-| **Letras del Tesoro** | Spanish Treasury bills | Very Low | Medium |
-| **Depositos** | Bank deposits | Very Low | Low |
-| **Money Market** | Money market funds | Very Low | High |
-
-### Spanish Tax-Advantaged Vehicles
-
-| Type | Examples | Risk | Liquidity |
-|------|----------|------|-----------|
-| **Fondos de Inversión** | Traspasables (Vanguard, Amundi) | Medium | High |
-| **Planes de Pensiones** | Indexa, MyInvestor PP | Medium-High | Very Low (Restricted) |
-| **Seguros de Ahorro** | PIAS, SIALP | Low-Medium | Medium |
-
-### Speculative (Limited to 10%)
-
-| Type | Examples | Risk | Liquidity |
-|------|----------|------|-----------|
-| **Sports Betting** | bet365, Betfair (value bets only) | Very High | Instant |
-| **Forex** | EUR/USD, EUR/GBP | High | Very High |
-| **Options** | Covered calls, puts | Very High | Medium |
-| **Commodities** | Gold, Silver, Oil (via ETCs) | Medium-High | High |
-
-### Tangible Assets (Simulated/Physical)
-
-| Type | Examples | Risk | Liquidity |
-|------|----------|------|-----------|
-| **Real Estate (Direct)** | Parking spots, storage units (simulated) | Medium | Very Low |
-| **Precious Metals** | Physical Gold/Silver coins (Bullion) | Low-Medium | Medium |
-| **Wine** | Vinovest, wine funds | Medium | Very Low |
-| **Watches** | Rolex, Patek (indices) | Medium | Low |
-| **Classic Cars** | HAGI index tracking | Medium | Very Low |
-| **Collectibles** | Trading cards, sneakers, art | High | Variable |
+These are guidelines, not laws. I can break them with good reasoning.
 
 ## Decision Framework
 
-### 1. Market Analysis
-- Overall market conditions and sentiment
-- Macro factors (inflation, interest rates, geopolitics)
-- Sector trends
-
-### 2. Technical Indicators
-- RSI (Relative Strength Index)
-- Moving averages (20, 50, 200 day)
-- Support/resistance levels
-- Volume analysis
-
-### 3. News and Events
-- Earnings calendars
-- Central bank meetings
-- Economic data releases
-- Black swan monitoring
-
-### 4. AI Intuition
-- Pattern recognition across asset classes
-- Sentiment analysis from news/social
-- Correlation detection
-- Contrarian signals
-
-## Risk Management
-
-### Position Sizing
-- Max single position: 50% of portfolio
-- Max high-risk allocation: 30% (crypto, betting, startups)
-- Min cash reserve: 5%
-- Target cash reserve: 10%
-
-### Stop-Loss Rules
-- Individual position: -20% mandatory exit
-- Portfolio drawdown: -30% capital preservation mode
-
-### Take-Profit Rules
-- +30% on position: take 25% profits
-- +50% on position: take 50% profits
-- +100% on position: take 75% profits, let rest ride
-
-### Rebalancing
-- Monthly review of allocations
-- Rebalance if drift exceeds 10% from targets
-- Opportunistic rebalancing on major moves
-
-## Current Allocation Targets
-
-| Category | Target % | Actual % | Status |
-|----------|----------|----------|--------|
-| Index ETFs | 35% | 35% | OK |
-| Tech/Growth | 25% | 25% | OK |
-| Crypto | 25% | 30% | OVER |
-| Alternative | 5% | 0% | MISSING |
-| Cash | 10% | 10% | OK |
+1. **Macro** — What’s the overall market doing?
+2. **Sector** — Any hot/cold sectors?
+3. **Technicals** — RSI, moving averages, support/resistance
+4. **News** — Catalysts, earnings, events
+5. **Gut** — Pattern recognition from data
 
 ## Learning Log
 
-See [LEARNINGS.md](LEARNINGS.md) for detailed lessons, mistakes, and wins.
+### L1 — Day 3 (2026-01-30)
+BTC more volatile than expected. 15% allocation swung -4.6% in 3 days. Consider smaller crypto positions or using it for tactical trades only.
 
 ---
 
-*Strategy will evolve based on results and market conditions. All changes documented in LEARNINGS.md.*
-
----
-
-## Diversification Strategy (Updated 2026-01-30)
-
-### Problem Identified
-
-Correlation analysis revealed ALL current assets move together:
-- CSPX ↔ EQQQ: 96%
-- BTC ↔ ETH: 100%
-- EQQQ ↔ BTC: 99%
-
-This means when markets drop, the entire portfolio drops together.
-
-### Solution: Add Uncorrelated Assets
-
-| Asset | Type | Correlation | Purpose |
-|-------|------|-------------|--------|
-| IGLN | Gold ETF | -0.2 | Hedge against risk-off |
-| IBTA | Bond ETF | +0.1 | Stability |
-| Cash | - | 0 | Ultimate safety |
-
-### Proposed New Allocation
-
-| Asset | Current | Proposed | Change |
-|-------|---------|----------|--------|
-| CSPX | 35% | 30% | -5% |
-| EQQQ | 25% | 20% | -5% |
-| BTC | 20% | 15% | -5% |
-| ETH | 10% | 10% | - |
-| IGLN | 0% | 10% | +10% |
-| Cash | 10% | 15% | +5% |
-
-### Implementation
-
-1. **Phase 1 (When convenient):** Reduce CSPX/EQQQ by 5% each
-2. **Phase 2:** Buy IGLN (gold) with proceeds
-3. **Phase 3:** Increase cash buffer to 15%
-
-### When to Diversify
-
-- [ ] After a recovery day (don't sell at lows)
-- [ ] When BTC/ETH are above entry price
-- [ ] Before known volatility events (Fed, elections)
+*Strategy evolves with results.*
