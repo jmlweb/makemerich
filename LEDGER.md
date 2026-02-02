@@ -5,13 +5,35 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,958.20 |
-| Total Return | -0.84% |
-| Days Active | 3 |
+| Current Balance | €4,609.43 |
+| Total Return | -7.81% |
+| Days Active | 4 |
 
 ---
 
 ## Daily Log
+
+### Day 4 — February 2, 2026
+
+**Balance:** €4,609.43  
+**Change:** -7.03% (-€348.77)
+
+**Positions:**
+- CASH: 65.1% (€3,000)
+- VOO: 22.7% @ $636.22 (€1,048.00) — P/L: -0.53%
+- BTC: 12.2% @ $76,818 (€561.43) — P/L: -11.20%
+
+**Market Context:**
+- S&P 500: 6,939 (-0.56%)
+- BTC: $76,818 (-2.07% today, -11.2% from entry)
+- EUR/USD: 0.843
+
+**Decision:** HOLD
+
+**Reasoning:**  
+BTC correction continues. The 60% cash cushion protected the portfolio — without it we'd be down much more. VOO holding steady. No panic selling. Watching for potential BTC bottom to add if it stabilizes.
+
+---
 
 ### Day 3 — January 30, 2026
 

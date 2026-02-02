@@ -1,28 +1,28 @@
 {
-  "last_updated": "2026-01-30T21:30:00Z",
+  "last_updated": "2026-02-02T08:32:51.297Z",
   "holdings": {
     "CASH": {
-      "amount_eur": 3000.00
+      "amount_eur": 3000
     },
     "VOO": {
       "shares": 1.954,
-      "entry_price_usd": 639.60,
-      "current_price_usd": 635.82,
-      "amount_eur": 1242.61,
-      "pnl_pct": -0.59
+      "entry_price_usd": 639.6,
+      "current_price_usd": 636.22,
+      "amount_eur": 1048,
+      "pnl_pct": -0.53
     },
     "BTC": {
       "units": 0.00867,
       "entry_price_usd": 86500,
-      "current_price_usd": 82536,
-      "amount_eur": 715.59,
-      "pnl_pct": -4.59
+      "current_price_usd": 76818,
+      "amount_eur": 561.43,
+      "pnl_pct": -11.2
     }
   },
   "totals": {
-    "balance_eur": 4958.20,
-    "initial_eur": 5000.00,
-    "pnl_eur": -41.80,
-    "pnl_pct": -0.84
+    "balance_eur": 4609.43,
+    "initial_eur": 5000,
+    "pnl_eur": -390.57,
+    "pnl_pct": -7.81
   }
 }

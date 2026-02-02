@@ -1,35 +1,35 @@
 {
-  "fetchedAt": "2026-01-30T22:08:56.749Z",
+  "fetchedAt": "2026-02-02T08:29:52.587Z",
   "gbpToEur": 1.15,
   "prices": {
     "CSPX": {
-      "price": 854.7720336914061,
-      "priceOriginal": 743.280029296875,
+      "price": 848.0904663085937,
+      "priceOriginal": 737.469970703125,
       "currency": "GBP",
-      "change": "-0.62%"
+      "change": "-0.35%"
     },
     "EQQQ": {
-      "price": 528.9000244140625,
-      "priceOriginal": 528.9000244140625,
+      "price": 521.5,
+      "priceOriginal": 521.5,
       "currency": "EUR",
-      "change": "-0.84%"
+      "change": "-0.44%"
     },
     "BTC": {
-      "price": 70873,
-      "priceUSD": 84011,
-      "change": "0.44%"
+      "price": 64640,
+      "priceUSD": 76667,
+      "change": "-2.17%"
     },
     "ETH": {
-      "price": 2274.3,
-      "priceUSD": 2695.89,
-      "change": "-3.37%"
+      "price": 1886.24,
+      "priceUSD": 2240.3,
+      "change": "-7.13%"
     },
     "SP500": {
       "value": 6939.02978515625,
       "change": "-0.56%"
     },
     "NASDAQ": {
-      "value": 23461.81640625,
+      "value": 23461.8203125,
       "change": "-1.66%"
     }
   }
