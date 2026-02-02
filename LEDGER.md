@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,600.11 |
-| Total Return | -8.00% |
+| Current Balance | €4,596.69 |
+| Total Return | -8.07% |
 | Days Active | 4 |
 
 ---
@@ -15,14 +15,14 @@
 
 ### Day 4 — February 2, 2026
 
-**Balance:** €4,600.11  
-**Change:** -7.22% (-€358.09 from Day 3)
+**Balance:** €4,596.69  
+**Change:** -7.27% (-€361.51 from Day 3)
 
-**Positions (after aggressive rebalance):**
-- CASH: 20.0% (€921.89)
-- VOO: 50.0% (€2,301.43) — 4.29 shares @ $636.22
-- GLD: 14.9% (€686.65) — 1.83 shares @ $444.95
-- QQQ: 15.0% (€690.14) — 1.33 shares @ $615.33
+**Positions (end of day):**
+- CASH: 20.1% (€921.89)
+- VOO: 50.3% (€2,313.06) — 4.29 shares @ $639.59 — P/L: +0.33%
+- GLD: 14.4% (€659.72) — 1.83 shares @ $427.64 — P/L: -4.53%
+- QQQ: 15.3% (€702.02) — 1.33 shares @ $626.14 — P/L: +1.76%
 
 **Trades (AM session):**
 - ❌ **SELL BTC** — 0.00867 @ $76,818 = €561.43 (realized loss: -€188.57 / -11.2%)
@@ -33,16 +33,16 @@
 - ✅ **BUY GLD** — 0.51 shares @ $444.95 = €191.41
 - ✅ **BUY QQQ** — 1.33 shares @ $615.33 = €691.41
 
-**Market Context:**
-- S&P 500: 6,939 (-0.56%)
-- NASDAQ: 23,462 (-1.66%)
-- Gold: $4,692/oz (-1.11%)
+**Market Context (Close):**
+- S&P 500: 6,978.81 (+0.14%)
+- NASDAQ: 23,590.07 (-0.40%)
+- Gold: $4,689.80 (-1.17%)
 - EUR/USD: 0.843
 
 **Decision:** AGGRESSIVE REBALANCE — Deploy cash
 
 **Reasoning:**  
-60%+ cash was too conservative for maximum returns. Deployed €2,139 to increase market exposure. New strategy: 50% broad market (VOO), 15% tech growth (QQQ), 15% gold hedge (GLD), 20% cash reserve. This gives us real growth potential while GLD provides downside protection. QQQ adds high-beta tech exposure for upside capture.
+60%+ cash was too conservative for maximum returns. Deployed €2,139 to increase market exposure. New strategy: 50% broad market (VOO), 15% tech growth (QQQ), 15% gold hedge (GLD), 20% cash reserve. VOO and QQQ performing well; GLD down on gold weakness but provides downside protection.
 
 ---
 

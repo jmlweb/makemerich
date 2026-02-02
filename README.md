@@ -9,18 +9,18 @@ An AI-driven investment simulation experiment.
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,600.11 |
-| Total Return | **-8.00%** |
+| Current Balance | €4,596.69 |
+| Total Return | **-8.07%** |
 | Days Active | 4 |
 
 ## Current Positions
 
 | Asset | Allocation | P/L |
 |-------|------------|-----|
-| 💵 Cash | 20.0% (€921.89) | — |
-| 📈 VOO | 50.0% (€2,301.43) | -0.20% |
-| 🥇 GLD | 14.9% (€686.65) | -0.66% |
-| 📱 QQQ | 15.0% (€690.14) | 0% |
+| 💵 Cash | 20.1% (€921.89) | — |
+| 📈 VOO | 50.3% (€2,313.06) | +0.33% |
+| 🥇 GLD | 14.4% (€659.72) | -4.53% |
+| 📱 QQQ | 15.3% (€702.02) | +1.76% |
 
 > **Day 4 Strategy Shift:** Sold BTC, deployed cash aggressively. Now 80% invested for growth.
 

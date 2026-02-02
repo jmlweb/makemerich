@@ -3,6 +3,7 @@
  * MakeMeRich - Portfolio Updater
  * 
  * Reads holdings from portfolio.json and updates with current prices.
+ * Supports: VOO, GLD, QQQ, VTI, BTC, ETH and other Yahoo Finance symbols.
  * 
  * Usage:
  *   node scripts/update-portfolio.js [--date YYYY-MM-DD] [--dry-run]
@@ -15,6 +16,16 @@ const https = require("https");
 const DATA_DIR = path.join(__dirname, "..", "data");
 const PORTFOLIO_FILE = path.join(DATA_DIR, "portfolio.json");
 const STARTING_CAPITAL = 5000.00;
+
+// Asset descriptions
+const ASSET_INFO = {
+  VOO: { description: "Vanguard S&P 500 ETF", type: "ETF" },
+  GLD: { description: "SPDR Gold Trust", type: "ETF" },
+  QQQ: { description: "Invesco Nasdaq-100 ETF", type: "ETF" },
+  VTI: { description: "Vanguard Total Stock Market ETF", type: "ETF" },
+  BTC: { description: "Bitcoin", type: "Crypto" },
+  ETH: { description: "Ethereum", type: "Crypto" }
+};
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -41,48 +52,79 @@ function getLastEntry() {
   return JSON.parse(fs.readFileSync(path.join(DATA_DIR, files[0]), "utf8"));
 }
 
+function getDayNumber() {
+  // Count trading days since start (Jan 28, 2026)
+  const files = fs.readdirSync(DATA_DIR)
+    .filter(f => f.match(/^\d{4}-\d{2}-\d{2}\.json$/))
+    .sort();
+  return files.length + 1;
+}
+
 function httpGet(url) {
   return new Promise((resolve, reject) => {
+    const timeout = setTimeout(() => reject(new Error('Timeout')), 10000);
     https.get(url, { headers: { 'User-Agent': 'MakeMeRich/1.0' } }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
+      res.on('end', () => {
+        clearTimeout(timeout);
+        resolve(data);
+      });
+    }).on('error', (e) => {
+      clearTimeout(timeout);
+      reject(e);
+    });
   });
 }
 
-async function fetchPrice(symbol) {
+async function fetchYahooPrice(symbol) {
   try {
-    if (symbol === 'BTC') {
-      const data = await httpGet('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd,eur&include_24hr_change=true');
-      const json = JSON.parse(data);
-      return {
-        priceUSD: json.bitcoin.usd,
-        priceEUR: json.bitcoin.eur,
-        change24h: json.bitcoin.usd_24h_change
-      };
-    }
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=2d`;
+    const data = await httpGet(url);
+    const json = JSON.parse(data);
+    const result = json.chart?.result?.[0];
+    if (!result) throw new Error("No data");
     
-    if (symbol === 'VOO') {
-      // Try Yahoo Finance
-      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=2d`;
-      const data = await httpGet(url);
-      const json = JSON.parse(data);
-      const result = json.chart.result[0];
-      const meta = result.meta;
-      const prevClose = meta.chartPreviousClose || meta.previousClose;
-      const current = meta.regularMarketPrice;
-      const change = prevClose ? ((current - prevClose) / prevClose * 100) : 0;
-      return {
-        priceUSD: current,
-        change24h: change
-      };
-    }
+    const meta = result.meta;
+    const prevClose = meta.chartPreviousClose || meta.previousClose;
+    const current = meta.regularMarketPrice;
+    const change = prevClose ? ((current - prevClose) / prevClose * 100) : 0;
     
-    return null;
+    return {
+      priceUSD: current,
+      change24h: change
+    };
   } catch (e) {
-    console.error(`Error fetching ${symbol}: ${e.message}`);
+    console.error(`Yahoo error for ${symbol}: ${e.message}`);
     return null;
+  }
+}
+
+async function fetchCryptoPrice(symbol) {
+  try {
+    const id = symbol === 'BTC' ? 'bitcoin' : symbol === 'ETH' ? 'ethereum' : symbol.toLowerCase();
+    const data = await httpGet(`https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=usd,eur&include_24hr_change=true`);
+    const json = JSON.parse(data);
+    if (!json[id]) throw new Error("No data");
+    
+    return {
+      priceUSD: json[id].usd,
+      priceEUR: json[id].eur,
+      change24h: json[id].usd_24h_change
+    };
+  } catch (e) {
+    console.error(`CoinGecko error for ${symbol}: ${e.message}`);
+    return null;
+  }
+}
+
+async function fetchPrice(symbol) {
+  const info = ASSET_INFO[symbol] || { type: "ETF" };
+  
+  if (info.type === "Crypto") {
+    return await fetchCryptoPrice(symbol);
+  } else {
+    return await fetchYahooPrice(symbol);
   }
 }
 
@@ -93,26 +135,25 @@ async function fetchEURUSD() {
     return json.rates.EUR;
   } catch (e) {
     console.error('Error fetching EUR/USD rate:', e.message);
-    return 0.92; // fallback
+    return 0.843; // fallback
   }
 }
 
 async function main() {
   const { date, dryRun } = parseArgs();
   
-  // Check for duplicate
   const entryPath = path.join(DATA_DIR, date + ".json");
-  if (fs.existsSync(entryPath) && !dryRun) {
-    console.log(`Entry for ${date} exists, updating...`);
+  const isUpdate = fs.existsSync(entryPath);
+  if (isUpdate) {
+    console.log(`Updating entry for ${date}...`);
   }
   
   console.log("Loading portfolio...");
   const portfolio = loadPortfolio();
-  const lastEntry = getLastEntry();
   
   console.log("Fetching prices...\n");
   const eurUsd = await fetchEURUSD();
-  console.log(`EUR/USD: ${eurUsd.toFixed(4)}`);
+  console.log(`EUR/USD: ${eurUsd.toFixed(4)}\n`);
   
   const positions = [];
   let totalValue = 0;
@@ -133,82 +174,67 @@ async function main() {
     }
     
     const priceData = await fetchPrice(asset);
+    const info = ASSET_INFO[asset] || { description: asset, type: "ETF" };
+    const units = holding.shares || holding.units;
+    const entryPriceUSD = holding.entry_price_usd;
+    
     if (!priceData) {
-      console.warn(`Could not fetch price for ${asset}, using last known`);
-      if (holding.amount_eur) {
-        totalValue += holding.amount_eur;
-        positions.push({
-          asset,
-          type: asset === 'BTC' ? 'Crypto' : 'ETF',
-          value: holding.amount_eur,
-          pnlPercent: holding.pnl_pct || 0
-        });
-      }
+      console.warn(`⚠ Could not fetch ${asset}, using last known value`);
+      const lastValue = holding.amount_eur || (units * entryPriceUSD * eurUsd);
+      totalValue += lastValue;
+      positions.push({
+        asset,
+        type: info.type,
+        description: info.description,
+        units,
+        entryPriceUSD,
+        currentPriceUSD: holding.current_price_usd || entryPriceUSD,
+        value: parseFloat(lastValue.toFixed(2)),
+        pnlPercent: holding.pnl_pct || 0,
+        stale: true
+      });
       continue;
     }
     
-    let currentValueEUR;
-    let units = holding.shares || holding.units;
-    let entryPriceUSD = holding.entry_price_usd;
+    const currentPriceUSD = priceData.priceUSD;
+    const currentValueEUR = units * currentPriceUSD * eurUsd;
+    const entryValueEUR = units * entryPriceUSD * eurUsd;
+    const pnlPct = ((currentPriceUSD - entryPriceUSD) / entryPriceUSD * 100);
     
-    if (asset === 'VOO') {
-      const currentPriceUSD = priceData.priceUSD;
-      currentValueEUR = units * currentPriceUSD * eurUsd;
-      const entryValueEUR = units * entryPriceUSD * eurUsd;
-      const pnlPct = ((currentValueEUR - entryValueEUR) / entryValueEUR * 100);
-      
-      console.log(`VOO: ${units} shares × $${currentPriceUSD.toFixed(2)} = €${currentValueEUR.toFixed(2)} (${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%)`);
-      
-      positions.push({
-        asset: 'VOO',
-        type: 'ETF',
-        description: 'Vanguard S&P 500 ETF',
-        units,
-        entryPriceUSD,
-        currentPriceUSD: priceData.priceUSD,
-        value: parseFloat(currentValueEUR.toFixed(2)),
-        pnlPercent: parseFloat(pnlPct.toFixed(2)),
-        change24h: priceData.change24h
-      });
-      totalValue += currentValueEUR;
-    }
+    console.log(`${asset}: ${units.toFixed(4)} × $${currentPriceUSD.toFixed(2)} = €${currentValueEUR.toFixed(2)} (${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%)`);
     
-    if (asset === 'BTC') {
-      currentValueEUR = units * priceData.priceEUR;
-      const entryValueEUR = units * entryPriceUSD * eurUsd;
-      const pnlPct = ((currentValueEUR - entryValueEUR) / entryValueEUR * 100);
-      
-      console.log(`BTC: ${units} × $${priceData.priceUSD.toFixed(2)} = €${currentValueEUR.toFixed(2)} (${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%)`);
-      
-      positions.push({
-        asset: 'BTC',
-        type: 'Crypto',
-        description: 'Bitcoin',
-        units,
-        entryPriceUSD,
-        currentPriceUSD: priceData.priceUSD,
-        currentPriceEUR: priceData.priceEUR,
-        value: parseFloat(currentValueEUR.toFixed(2)),
-        pnlPercent: parseFloat(pnlPct.toFixed(2)),
-        change24h: priceData.change24h
-      });
-      totalValue += currentValueEUR;
-    }
+    positions.push({
+      asset,
+      type: info.type,
+      description: info.description,
+      units,
+      entryPriceUSD,
+      currentPriceUSD,
+      value: parseFloat(currentValueEUR.toFixed(2)),
+      pnlPercent: parseFloat(pnlPct.toFixed(2)),
+      change24h: priceData.change24h
+    });
+    
+    totalValue += currentValueEUR;
   }
   
-  const day = lastEntry ? lastEntry.day + 1 : 1;
-  const prevBalance = lastEntry ? lastEntry.balance.total : STARTING_CAPITAL;
-  const change = {
-    absolute: parseFloat((totalValue - prevBalance).toFixed(2)),
-    percentage: parseFloat(((totalValue - prevBalance) / prevBalance * 100).toFixed(2))
-  };
+  // Get day number from existing files or LEDGER
+  const lastEntry = getLastEntry();
+  const day = isUpdate && lastEntry ? lastEntry.day : (lastEntry ? lastEntry.day + 1 : 1);
+  
+  const prevBalance = lastEntry && !isUpdate ? lastEntry.balance.total : STARTING_CAPITAL;
+  const dailyChange = isUpdate ? 
+    { absolute: 0, percentage: 0 } :
+    {
+      absolute: parseFloat((totalValue - prevBalance).toFixed(2)),
+      percentage: parseFloat(((totalValue - prevBalance) / prevBalance * 100).toFixed(2))
+    };
   const totalReturn = ((totalValue - STARTING_CAPITAL) / STARTING_CAPITAL * 100);
   
   console.log("\n" + "=".repeat(50));
   console.log(`Day ${day} - ${date}`);
   console.log("=".repeat(50));
   console.log(`Balance: €${totalValue.toFixed(2)}`);
-  console.log(`Daily change: ${change.percentage >= 0 ? '+' : ''}${change.percentage}%`);
   console.log(`Total return: ${totalReturn >= 0 ? '+' : ''}${totalReturn.toFixed(2)}%`);
   
   const entry = {
@@ -218,7 +244,7 @@ async function main() {
       total: parseFloat(totalValue.toFixed(2)),
       currency: "EUR"
     },
-    change,
+    change: dailyChange,
     totalReturn: parseFloat(totalReturn.toFixed(2)),
     positions,
     metadata: {
@@ -228,7 +254,7 @@ async function main() {
   };
   
   // Update portfolio.json with current values
-  const updatedPortfolio = { ...portfolio };
+  const updatedPortfolio = JSON.parse(JSON.stringify(portfolio));
   updatedPortfolio.last_updated = new Date().toISOString();
   updatedPortfolio.totals = {
     balance_eur: parseFloat(totalValue.toFixed(2)),
@@ -246,8 +272,7 @@ async function main() {
   }
   
   if (dryRun) {
-    console.log("\n[DRY RUN] Would save entry to: " + entryPath);
-    console.log(JSON.stringify(entry, null, 2));
+    console.log("\n[DRY RUN] Would save to: " + entryPath);
   } else {
     fs.writeFileSync(entryPath, JSON.stringify(entry, null, 2));
     fs.writeFileSync(PORTFOLIO_FILE, JSON.stringify(updatedPortfolio, null, 2));

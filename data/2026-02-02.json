@@ -2,47 +2,57 @@
   "date": "2026-02-02",
   "day": 4,
   "balance": {
-    "total": 4609.43,
+    "total": 4596.69,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -348.77,
-    "percentage": -7.03
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -7.81,
+  "totalReturn": -8.07,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 3000,
+      "value": 921.89,
       "pnlPercent": 0
     },
     {
       "asset": "VOO",
       "type": "ETF",
       "description": "Vanguard S&P 500 ETF",
-      "units": 1.954,
-      "entryPriceUSD": 639.6,
-      "currentPriceUSD": 636.22,
-      "value": 1048,
-      "pnlPercent": -0.53,
-      "change24h": -0.5284552845528449
+      "units": 4.29,
+      "entryPriceUSD": 637.5,
+      "currentPriceUSD": 639.59,
+      "value": 2313.06,
+      "pnlPercent": 0.33,
+      "change24h": 0.2068090306610134
     },
     {
-      "asset": "BTC",
-      "type": "Crypto",
-      "description": "Bitcoin",
-      "units": 0.00867,
-      "entryPriceUSD": 86500,
-      "currentPriceUSD": 76818,
-      "currentPriceEUR": 64756,
-      "value": 561.43,
-      "pnlPercent": -11.2,
-      "change24h": -2.0657503167085163
+      "asset": "GLD",
+      "type": "ETF",
+      "description": "SPDR Gold Trust",
+      "units": 1.83,
+      "entryPriceUSD": 447.92,
+      "currentPriceUSD": 427.64,
+      "value": 659.72,
+      "pnlPercent": -4.53,
+      "change24h": -13.764871949989915
+    },
+    {
+      "asset": "QQQ",
+      "type": "ETF",
+      "description": "Invesco Nasdaq-100 ETF",
+      "units": 1.33,
+      "entryPriceUSD": 615.33,
+      "currentPriceUSD": 626.14,
+      "value": 702.02,
+      "pnlPercent": 1.76,
+      "change24h": -0.5226951368698607
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-02T08:32:51.297Z",
+    "generatedAt": "2026-02-02T21:03:31.712Z",
     "eurUsd": 0.843
   }
 }
