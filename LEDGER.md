@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,609.43 |
-| Total Return | -7.81% |
+| Current Balance | €4,600.11 |
+| Total Return | -8.00% |
 | Days Active | 4 |
 
 ---
@@ -15,28 +15,34 @@
 
 ### Day 4 — February 2, 2026
 
-**Balance:** €4,609.43  
-**Change:** -7.03% (-€348.77)
+**Balance:** €4,600.11  
+**Change:** -7.22% (-€358.09 from Day 3)
 
-**Positions (after rebalance):**
-- CASH: 66.4% (€3,061.43)
-- VOO: 22.7% @ $636.22 (€1,048.00) — P/L: -0.53%
-- GLD: 10.9% @ $449.27 (€500.00) — P/L: 0% (new position)
+**Positions (after aggressive rebalance):**
+- CASH: 20.0% (€921.89)
+- VOO: 50.0% (€2,301.43) — 4.29 shares @ $636.22
+- GLD: 14.9% (€686.65) — 1.83 shares @ $444.95
+- QQQ: 15.0% (€690.14) — 1.33 shares @ $615.33
 
-**Trades:**
+**Trades (AM session):**
 - ❌ **SELL BTC** — 0.00867 @ $76,818 = €561.43 (realized loss: -€188.57 / -11.2%)
 - ✅ **BUY GLD** — 1.32 shares @ $449.27 = €500.00
 
+**Trades (Aggressive Rebalance 10:47 UTC):**
+- ✅ **BUY VOO** — 2.34 shares @ $636.22 = €1,256.72
+- ✅ **BUY GLD** — 0.51 shares @ $444.95 = €191.41
+- ✅ **BUY QQQ** — 1.33 shares @ $615.33 = €691.41
+
 **Market Context:**
 - S&P 500: 6,939 (-0.56%)
-- BTC: $76,818 (-2.07% today)
-- Gold: $4,569/oz (+0.8% today)
+- NASDAQ: 23,462 (-1.66%)
+- Gold: $4,692/oz (-1.11%)
 - EUR/USD: 0.843
 
-**Decision:** REBALANCE — Exit BTC, enter Gold
+**Decision:** AGGRESSIVE REBALANCE — Deploy cash
 
 **Reasoning:**  
-Analysis showed BTC had 99% correlation with VOO — it wasn't diversifying, just adding volatility. Cut the loss at -11.2% before hitting the -15% stop-loss. Rotated into GLD (gold) which provides actual diversification as a hedge. Gold historically moves opposite to equities in downturns. Portfolio now has real diversification: US equities (VOO), gold hedge (GLD), and cash for opportunities.
+60%+ cash was too conservative for maximum returns. Deployed €2,139 to increase market exposure. New strategy: 50% broad market (VOO), 15% tech growth (QQQ), 15% gold hedge (GLD), 20% cash reserve. This gives us real growth potential while GLD provides downside protection. QQQ adds high-beta tech exposure for upside capture.
 
 ---
 

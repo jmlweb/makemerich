@@ -4,9 +4,10 @@
 
 | Asset | Type | Allocation | Notes |
 |-------|------|------------|-------|
-| Cash | - | 66% | Dry powder |
-| VOO | ETF | 23% | Vanguard S&P 500 |
-| GLD | ETF | 11% | SPDR Gold (hedge) |
+| Cash | - | 20% | Reserve for opportunities |
+| VOO | ETF | 50% | Vanguard S&P 500 (core) |
+| QQQ | ETF | 15% | Invesco Nasdaq-100 (growth) |
+| GLD | ETF | 15% | SPDR Gold (hedge) |
 
 ---
 

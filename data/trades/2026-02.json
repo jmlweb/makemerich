@@ -20,6 +20,36 @@
       "price_usd": 449.27,
       "value_eur": 500.00,
       "reason": "Add gold as real hedge, negative correlation with equities"
+    },
+    {
+      "date": "2026-02-02",
+      "time": "10:47:00Z",
+      "action": "BUY",
+      "asset": "VOO",
+      "units": 2.34,
+      "price_usd": 636.22,
+      "value_eur": 1256.72,
+      "reason": "Aggressive rebalance - increase equity exposure to 50%"
+    },
+    {
+      "date": "2026-02-02",
+      "time": "10:47:00Z",
+      "action": "BUY",
+      "asset": "GLD",
+      "units": 0.51,
+      "price_usd": 444.95,
+      "value_eur": 191.41,
+      "reason": "Increase gold hedge to 15%"
+    },
+    {
+      "date": "2026-02-02",
+      "time": "10:47:00Z",
+      "action": "BUY",
+      "asset": "QQQ",
+      "units": 1.33,
+      "price_usd": 615.33,
+      "value_eur": 691.41,
+      "reason": "Add high-growth tech exposure (Nasdaq 100) - 15% allocation"
     }
   ]
 }
