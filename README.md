@@ -17,9 +17,11 @@ An AI-driven investment simulation experiment.
 
 | Asset | Allocation | P/L |
 |-------|------------|-----|
-| 💵 Cash | 65.1% (€3,000) | — |
+| 💵 Cash | 66.4% (€3,061.43) | — |
 | 📈 VOO | 22.7% (€1,048.00) | -0.53% |
-| ₿ BTC | 12.2% (€561.43) | -11.20% |
+| 🥇 GLD | 10.9% (€500.00) | 0% |
+
+> **Day 4 Trade:** Sold BTC (realized -11.2% loss), bought GLD for real diversification.
 
 ## What is this?
 

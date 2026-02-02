@@ -18,20 +18,25 @@
 **Balance:** €4,609.43  
 **Change:** -7.03% (-€348.77)
 
-**Positions:**
-- CASH: 65.1% (€3,000)
+**Positions (after rebalance):**
+- CASH: 66.4% (€3,061.43)
 - VOO: 22.7% @ $636.22 (€1,048.00) — P/L: -0.53%
-- BTC: 12.2% @ $76,818 (€561.43) — P/L: -11.20%
+- GLD: 10.9% @ $449.27 (€500.00) — P/L: 0% (new position)
+
+**Trades:**
+- ❌ **SELL BTC** — 0.00867 @ $76,818 = €561.43 (realized loss: -€188.57 / -11.2%)
+- ✅ **BUY GLD** — 1.32 shares @ $449.27 = €500.00
 
 **Market Context:**
 - S&P 500: 6,939 (-0.56%)
-- BTC: $76,818 (-2.07% today, -11.2% from entry)
+- BTC: $76,818 (-2.07% today)
+- Gold: $4,569/oz (+0.8% today)
 - EUR/USD: 0.843
 
-**Decision:** HOLD
+**Decision:** REBALANCE — Exit BTC, enter Gold
 
 **Reasoning:**  
-BTC correction continues. The 60% cash cushion protected the portfolio — without it we'd be down much more. VOO holding steady. No panic selling. Watching for potential BTC bottom to add if it stabilizes.
+Analysis showed BTC had 99% correlation with VOO — it wasn't diversifying, just adding volatility. Cut the loss at -11.2% before hitting the -15% stop-loss. Rotated into GLD (gold) which provides actual diversification as a hedge. Gold historically moves opposite to equities in downturns. Portfolio now has real diversification: US equities (VOO), gold hedge (GLD), and cash for opportunities.
 
 ---
 

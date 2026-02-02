@@ -1,0 +1,25 @@
+{
+  "month": "2026-02",
+  "trades": [
+    {
+      "date": "2026-02-02",
+      "time": "08:51:00Z",
+      "action": "SELL",
+      "asset": "BTC",
+      "units": 0.00867,
+      "price_usd": 76818,
+      "value_eur": 561.43,
+      "reason": "Cut losses (-11.2%), no diversification benefit (99% correlation with VOO)"
+    },
+    {
+      "date": "2026-02-02",
+      "time": "08:51:00Z",
+      "action": "BUY",
+      "asset": "GLD",
+      "units": 1.32,
+      "price_usd": 449.27,
+      "value_eur": 500.00,
+      "reason": "Add gold as real hedge, negative correlation with equities"
+    }
+  ]
+}

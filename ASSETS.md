@@ -4,9 +4,9 @@
 
 | Asset | Type | Allocation | Notes |
 |-------|------|------------|-------|
-| Cash | - | 60% | Dry powder |
-| VOO | ETF | 25% | Vanguard S&P 500 |
-| BTC | Crypto | 15% | Bitcoin |
+| Cash | - | 66% | Dry powder |
+| VOO | ETF | 23% | Vanguard S&P 500 |
+| GLD | ETF | 11% | SPDR Gold (hedge) |
 
 ---
 
