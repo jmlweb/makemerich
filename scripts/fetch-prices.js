@@ -4,7 +4,7 @@
  * 
  * Fetches real-time prices from free APIs:
  * - ETFs/Stocks: Yahoo Finance (via query1.finance.yahoo.com)
- * - Crypto: CoinGecko API (primary), Binance API (fallback)
+ * - Reads portfolio.json to determine which assets to fetch
  * 
  * Usage:
  *   node scripts/fetch-prices.js
@@ -14,20 +14,21 @@ const https = require("https");
 const fs = require("fs");
 const path = require("path");
 
-// Asset configuration
-const ASSETS = {
-  // ETFs - Yahoo Finance symbols
-  CSPX: { type: "ETF", yahoo: "CSPX.L", currency: "GBP" },
-  EQQQ: { type: "ETF", yahoo: "EQQQ.DE", currency: "EUR" },
-  // Crypto - CoinGecko IDs
-  BTC: { type: "Crypto", coingecko: "bitcoin" },
-  ETH: { type: "Crypto", coingecko: "ethereum" }
+// Asset metadata (for Yahoo symbols)
+const ASSET_CONFIG = {
+  VOO: { yahoo: "VOO", currency: "USD", description: "Vanguard S&P 500 ETF" },
+  GLD: { yahoo: "GLD", currency: "USD", description: "SPDR Gold Trust" },
+  BTC: { yahoo: "BTC-USD", currency: "USD", description: "Bitcoin" },
+  ETH: { yahoo: "ETH-USD", currency: "USD", description: "Ethereum" },
+  QQQ: { yahoo: "QQQ", currency: "USD", description: "Invesco NASDAQ-100" },
+  VTI: { yahoo: "VTI", currency: "USD", description: "Vanguard Total Stock Market" }
 };
 
 // Market indices for reference
 const INDICES = {
   SP500: { yahoo: "^GSPC" },
-  NASDAQ: { yahoo: "^IXIC" }
+  NASDAQ: { yahoo: "^IXIC" },
+  GOLD: { yahoo: "GC=F" }
 };
 
 function httpsGet(url) {
@@ -62,7 +63,7 @@ async function fetchYahooPrice(symbol) {
       symbol,
       price: lastClose,
       previousClose: prevClose,
-      change: prevClose ? ((lastClose - prevClose) / prevClose * 100).toFixed(2) : null,
+      change: prevClose ? ((lastClose - prevClose) / prevClose * 100) : 0,
       currency: meta.currency
     };
   } catch (e) {
@@ -71,128 +72,55 @@ async function fetchYahooPrice(symbol) {
   }
 }
 
-// Binance symbol mapping
-const BINANCE_SYMBOLS = {
-  bitcoin: "BTCEUR",
-  ethereum: "ETHEUR"
-};
-
-async function fetchBinancePrice(id) {
-  const symbol = BINANCE_SYMBOLS[id];
-  if (!symbol) return { id, error: "No Binance symbol for " + id };
-  
-  const url = `https://api.binance.com/api/v3/ticker/24hr?symbol=${symbol}`;
+async function fetchEURUSD() {
+  const url = "https://api.exchangerate-api.com/v4/latest/USD";
   try {
     const data = await httpsGet(url);
-    if (!data.lastPrice) throw new Error("No data from Binance for " + id);
-    
-    const priceEUR = parseFloat(data.lastPrice);
-    const change24h = parseFloat(data.priceChangePercent);
-    
-    // Also fetch USD price
-    const usdSymbol = symbol.replace("EUR", "USDT");
-    let priceUSD = null;
-    try {
-      const usdData = await httpsGet(`https://api.binance.com/api/v3/ticker/price?symbol=${usdSymbol}`);
-      priceUSD = parseFloat(usdData.price);
-    } catch (e) {
-      // Estimate USD from EUR
-      priceUSD = priceEUR * 1.08;
-    }
-    
-    return {
-      id,
-      priceEUR,
-      priceUSD,
-      change24h: change24h.toFixed(2),
-      source: "binance"
-    };
-  } catch (e) {
-    console.error(`Binance error for ${id}: ${e.message}`);
-    return { id, error: e.message };
-  }
-}
-
-async function fetchCryptoPrice(id) {
-  // Try CoinGecko first
-  const url = `https://api.coingecko.com/api/v3/simple/price?ids=${id}&vs_currencies=eur,usd&include_24hr_change=true`;
-  try {
-    const data = await httpsGet(url);
-    if (!data[id]) throw new Error("No data for " + id);
-    
-    return {
-      id,
-      priceEUR: data[id].eur,
-      priceUSD: data[id].usd,
-      change24h: data[id].eur_24h_change?.toFixed(2),
-      source: "coingecko"
-    };
-  } catch (e) {
-    console.error(`CoinGecko error for ${id}: ${e.message}`);
-    
-    // Fallback to Binance
-    console.log(`Trying Binance fallback for ${id}...`);
-    const binanceResult = await fetchBinancePrice(id);
-    if (!binanceResult.error) {
-      return binanceResult;
-    }
-    
-    return { id, error: e.message };
-  }
-}
-
-async function fetchGBPtoEUR() {
-  // Use ECB reference rate via a free API
-  const url = "https://api.exchangerate-api.com/v4/latest/GBP";
-  try {
-    const data = await httpsGet(url);
-    return data.rates?.EUR || 1.17; // fallback
+    return data.rates?.EUR || 0.92;
   } catch (e) {
     console.error("Exchange rate error: " + e.message);
-    return 1.17; // reasonable fallback
+    return 0.92;
   }
+}
+
+function loadPortfolio() {
+  const portfolioPath = path.join(__dirname, "..", "data", "portfolio.json");
+  if (fs.existsSync(portfolioPath)) {
+    return JSON.parse(fs.readFileSync(portfolioPath, "utf8"));
+  }
+  return null;
 }
 
 async function main() {
   console.log("Fetching current prices...\n");
   
   const prices = {};
-  const gbpToEur = await fetchGBPtoEUR();
-  console.log(`GBP/EUR: ${gbpToEur.toFixed(4)}\n`);
+  const eurUsd = await fetchEURUSD();
+  console.log(`EUR/USD: ${eurUsd.toFixed(4)}\n`);
   
-  // Fetch ETF prices
-  for (const [asset, config] of Object.entries(ASSETS)) {
-    if (config.yahoo) {
-      const data = await fetchYahooPrice(config.yahoo);
-      if (!data.error) {
-        const priceEUR = config.currency === "GBP" ? data.price * gbpToEur : data.price;
-        prices[asset] = {
-          price: priceEUR,
-          priceOriginal: data.price,
-          currency: config.currency,
-          change: data.change + "%"
-        };
-        console.log(`${asset}: €${priceEUR.toFixed(2)} (${data.change}%)`);
-      }
-    }
-  }
+  // Load portfolio to see what we need to fetch
+  const portfolio = loadPortfolio();
+  const assetsToFetch = portfolio 
+    ? Object.keys(portfolio.holdings).filter(a => a !== 'CASH' && ASSET_CONFIG[a])
+    : ['VOO', 'GLD'];
   
-  // Fetch crypto prices
-  const cryptoIds = Object.entries(ASSETS)
-    .filter(([_, c]) => c.coingecko)
-    .map(([_, c]) => c.coingecko);
-  
-  for (const [asset, config] of Object.entries(ASSETS)) {
-    if (config.coingecko) {
-      const data = await fetchCryptoPrice(config.coingecko);
-      if (!data.error) {
-        prices[asset] = {
-          price: data.priceEUR,
-          priceUSD: data.priceUSD,
-          change: data.change24h + "%"
-        };
-        console.log(`${asset}: €${data.priceEUR.toFixed(2)} / $${data.priceUSD.toFixed(2)} (${data.change24h}%)`);
-      }
+  // Fetch asset prices
+  for (const asset of assetsToFetch) {
+    const config = ASSET_CONFIG[asset];
+    if (!config) continue;
+    
+    const data = await fetchYahooPrice(config.yahoo);
+    if (!data.error) {
+      const priceUSD = data.price;
+      const priceEUR = priceUSD * eurUsd;
+      prices[asset] = {
+        priceUSD,
+        priceEUR,
+        change: data.change.toFixed(2)
+      };
+      console.log(`${asset}: $${priceUSD.toFixed(2)} / €${priceEUR.toFixed(2)} (${data.change >= 0 ? '+' : ''}${data.change.toFixed(2)}%)`);
+    } else {
+      console.log(`${asset}: ERROR - ${data.error}`);
     }
   }
   
@@ -201,8 +129,8 @@ async function main() {
   for (const [name, config] of Object.entries(INDICES)) {
     const data = await fetchYahooPrice(config.yahoo);
     if (!data.error) {
-      console.log(`${name}: ${data.price.toFixed(2)} (${data.change}%)`);
-      prices[name] = { value: data.price, change: data.change + "%" };
+      console.log(`${name}: ${data.price.toFixed(2)} (${data.change >= 0 ? '+' : ''}${data.change.toFixed(2)}%)`);
+      prices[name] = { value: data.price, change: data.change.toFixed(2) };
     }
   }
   
@@ -210,7 +138,7 @@ async function main() {
   const outPath = path.join(__dirname, "..", "data", ".prices-latest.json");
   fs.writeFileSync(outPath, JSON.stringify({
     fetchedAt: new Date().toISOString(),
-    gbpToEur,
+    eurUsd,
     prices
   }, null, 2));
   
