@@ -4,13 +4,13 @@ An AI-driven investment simulation experiment.
 
 ## 📊 Portfolio Performance
 
-![Balance Chart](https://quickchart.io/chart?c=%7Btype%3A%27line%27%2Cdata%3A%7Blabels%3A%5B%27Day+1%27%2C%27Day+2%27%2C%27Day+3%27%2C%27Day+4%27%2C%27Day+5%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Balance+%E2%82%AC%27%2Cdata%3A%5B5000%2C4975.68%2C4958.20%2C4596.69%2C4609.30%5D%2CborderColor%3A%27%2336a2eb%27%2CbackgroundColor%3A%27rgba%2854%2C162%2C235%2C0.2%29%27%2Cfill%3Atrue%7D%5D%7D%2Coptions%3A%7Bscales%3A%7ByAxes%3A%5B%7Bticks%3A%7Bcallback%3A%28val%29%3D%3Eval%2B%27%E2%82%AC%27%2Cmin%3A4400%2Cmax%3A5200%7D%7D%5D%7D%7D%7D)
+![Balance Chart](https://quickchart.io/chart?c=%7Btype%3A%27line%27%2Cdata%3A%7Blabels%3A%5B%27Day+1%27%2C%27Day+2%27%2C%27Day+3%27%2C%27Day+4%27%2C%27Day+5%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Balance+%E2%82%AC%27%2Cdata%3A%5B5000%2C4975.68%2C4958.20%2C4596.69%2C4610.73%5D%2CborderColor%3A%27%2336a2eb%27%2CbackgroundColor%3A%27rgba%2854%2C162%2C235%2C0.2%29%27%2Cfill%3Atrue%7D%5D%7D%2Coptions%3A%7Bscales%3A%7ByAxes%3A%5B%7Bticks%3A%7Bcallback%3A%28val%29%3D%3Eval%2B%27%E2%82%AC%27%2Cmin%3A4400%2Cmax%3A5200%7D%7D%5D%7D%7D%7D)
 
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,609.30 |
-| Total Return | **-7.81%** |
+| Current Balance | €4,610.73 |
+| Total Return | **-7.79%** |
 | Days Active | 5 |
 
 ## Current Positions
@@ -18,11 +18,11 @@ An AI-driven investment simulation experiment.
 | Asset | Allocation | P/L |
 |-------|------------|-----|
 | 💵 Cash | 20.0% (€921.89) | — |
-| 📈 VOO | 50.4% (€2,321.62) | +0.34% |
-| 🥇 GLD | 14.3% (€661.27) | -4.64% |
-| 📱 QQQ | 15.3% (€704.52) | +1.76% |
+| 📈 VOO | 49.8% (€2,295.30) | -0.80% |
+| 🥇 GLD | 15.2% (€702.78) | +1.34% |
+| 📱 QQQ | 15.0% (€690.76) | -0.23% |
 
-> **Day 5:** Quiet recovery day. VOO/QQQ positive, GLD still recovering. Holding positions.
+> **Day 5 Close:** Volatile session. Opened strong, sold off, recovered. GLD outperformed (+1.34%) on gold rally.
 
 ## What is this?
 

@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,609.30 |
-| Total Return | -7.81% |
+| Current Balance | €4,610.73 |
+| Total Return | -7.79% |
 | Days Active | 5 |
 
 ---
@@ -15,27 +15,27 @@
 
 ### Day 5 — February 3, 2026
 
-**Balance:** €4,609.30  
-**Change:** +0.27% (+€12.61 from Day 4)
+**Balance:** €4,610.73  
+**Change:** +0.31% (+€14.04 from Day 4)
 
-**Positions (midday update):**
+**Positions (end of day):**
 - CASH: 20.0% (€921.89)
-- VOO: 50.4% (€2,321.62) — 4.29 shares @ $639.68 — P/L: +0.34%
-- GLD: 14.3% (€661.27) — 1.83 shares @ $427.13 — P/L: -4.64%
-- QQQ: 15.3% (€704.52) — 1.33 shares @ $626.14 — P/L: +1.76%
+- VOO: 49.8% (€2,295.30) — 4.29 shares @ $632.43 — P/L: -0.80%
+- GLD: 15.2% (€702.78) — 1.83 shares @ $453.94 — P/L: +1.34%
+- QQQ: 15.0% (€690.76) — 1.33 shares @ $613.91 — P/L: -0.23%
 
 **Trades:** None
 
-**Market Context (Midday):**
-- S&P 500: 6,976.44 (+0.11%)
-- NASDAQ: 23,592.11 (-0.39%)
-- Gold: $4,922.40 (+6.49%)
+**Market Context (Close):**
+- S&P 500: 6,898.35 (-0.59%)
+- NASDAQ: 23,146.41 (-1.34%)
+- Gold: $4,955.70 (+7.21%)
 - EUR/USD: 0.846
 
 **Decision:** HOLD
 
 **Reasoning:**  
-Quiet day, slight recovery. VOO and QQQ continue positive momentum. GLD still underwater but gold spot recovering. Maintaining current allocation - no action needed.
+Volatile session. Markets opened strong (15:30: +0.69% S&P) but sold off in afternoon before recovering into close. GLD outperformed as gold rallied +7.21%. Maintaining positions — no action needed.
 
 ---
 
