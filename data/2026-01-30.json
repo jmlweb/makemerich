@@ -1,0 +1,45 @@
+{
+  "date": "2026-01-30",
+  "day": 3,
+  "balance": {
+    "total": 4958.20,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": -17.48,
+    "percentage": -0.35
+  },
+  "totalReturn": -0.84,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 3000.00,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "VOO",
+      "type": "ETF",
+      "description": "Vanguard S&P 500 ETF",
+      "units": 1.954,
+      "entryPriceUSD": 639.60,
+      "currentPriceUSD": 635.82,
+      "value": 1242.61,
+      "pnlPercent": -0.59
+    },
+    {
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.00867,
+      "entryPriceUSD": 86500,
+      "currentPriceUSD": 82536,
+      "value": 715.59,
+      "pnlPercent": -4.59
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-01-30T21:30:00.000Z",
+    "eurUsd": 0.845
+  }
+}

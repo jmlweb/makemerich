@@ -1,0 +1,25 @@
+{
+  "date": "2026-01-27",
+  "day": 0,
+  "balance": {
+    "total": 5000.00,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": 0,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 5000.00,
+      "pnlPercent": 0
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-01-27T21:30:00.000Z",
+    "note": "Simulation initialized"
+  }
+}
