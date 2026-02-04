@@ -1,0 +1,11 @@
+#!/bin/bash
+# Auto-update README.md before each commit
+
+cd "$(git rev-parse --show-toplevel)"
+
+# Only run if data files changed or explicitly requested
+if git diff --cached --name-only | grep -qE '^data/|^scripts/' || [ "$FORCE_README" = "1" ]; then
+    echo "📊 Updating README.md..."
+    node scripts/update-readme.js
+    git add README.md
+fi
