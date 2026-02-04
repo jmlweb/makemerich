@@ -4,25 +4,24 @@ An AI-driven investment simulation experiment.
 
 ## 📊 Portfolio Performance
 
-![Balance Chart](https://quickchart.io/chart?c=%7Btype%3A%27line%27%2Cdata%3A%7Blabels%3A%5B%27Day+1%27%2C%27Day+2%27%2C%27Day+3%27%2C%27Day+4%27%2C%27Day+5%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Balance+%E2%82%AC%27%2Cdata%3A%5B5000%2C4975.68%2C4958.20%2C4596.69%2C4610.73%5D%2CborderColor%3A%27%2336a2eb%27%2CbackgroundColor%3A%27rgba%2854%2C162%2C235%2C0.2%29%27%2Cfill%3Atrue%7D%5D%7D%2Coptions%3A%7Bscales%3A%7ByAxes%3A%5B%7Bticks%3A%7Bcallback%3A%28val%29%3D%3Eval%2B%27%E2%82%AC%27%2Cmin%3A4400%2Cmax%3A5200%7D%7D%5D%7D%7D%7D)
+![Balance Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Day%201%22%2C%22Day%202%22%2C%22Day%203%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Balance%20%E2%82%AC%22%2C%22data%22%3A%5B%224596.69%22%2C%224610.73%22%2C%224600.06%22%5D%2C%22borderColor%22%3A%22%2336a2eb%22%2C%22backgroundColor%22%3A%22rgba(54%2C162%2C235%2C0.2)%22%2C%22fill%22%3Atrue%7D%5D%7D%2C%22options%22%3A%7B%22scales%22%3A%7B%22yAxes%22%3A%5B%7B%22ticks%22%3A%7B%22min%22%3A4496.69%2C%22max%22%3A4710.73%7D%7D%5D%7D%7D%7D)
 
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,610.73 |
-| Total Return | **-7.79%** |
-| Days Active | 5 |
+| Current Balance | €4600.06 |
+| Total Return | **-8.00%** |
+| Days Active | 6 |
 
 ## Current Positions
 
 | Asset | Allocation | P/L |
 |-------|------------|-----|
-| 💵 Cash | 20.0% (€921.89) | — |
-| 📈 VOO | 49.8% (€2,295.30) | -0.80% |
-| 🥇 GLD | 15.2% (€702.78) | +1.34% |
-| 📱 QQQ | 15.0% (€690.76) | -0.23% |
+| 📈 VOO | 46.0% (€2297.94) | -0.80% |
+| 💵 CASH | 25.0% (€1252.29) | — |
+| 🥇 GLD | 21.0% (€1049.83) | +0.55% |
 
-> **Day 5 Close:** Volatile session. Opened strong, sold off, recovered. GLD outperformed (+1.34%) on gold rally.
+> **Day 6 Close:** GLD +0.55%, VOO -0.80%.
 
 ## What is this?
 
@@ -55,23 +54,19 @@ HAL monitors markets 5x daily (09:00, 12:00, 15:30, 18:00, 21:30 CET) and:
 
 ```
 makemerich/
-├── README.md         # This file
+├── README.md         # This file (auto-updated)
 ├── LEDGER.md         # Daily log
 ├── STRATEGY.md       # Investment approach
-├── HAL.md            # AI workflow
-└── data/
-    ├── trades/       # Monthly transaction logs
-    ├── portfolio.json # Current state
-    └── summary.json   # Historical totals
+├── data/             # Historical JSON data
+└── scripts/          # Automation scripts
 ```
 
-## Timeline
+## Links
 
-| Milestone | Date | Status |
-|-----------|------|--------|
-| Start | January 28, 2026 | ✅ |
-| End (max) | January 27, 2027 | ⏳ |
+- 📊 [Live Dashboard](dashboard.html)
+- 📒 [Investment Ledger](LEDGER.md)
+- 📋 [Strategy Document](STRATEGY.md)
 
 ---
 
-*Experiment by [@jmlweb](https://github.com/jmlweb) and HAL 🤖*
+*Last updated: 2026-02-04 by HAL 🤖*
