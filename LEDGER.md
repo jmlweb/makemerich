@@ -5,13 +5,40 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,610.73 |
-| Total Return | -7.79% |
-| Days Active | 5 |
+| Current Balance | €4,594.11 |
+| Total Return | -8.12% |
+| Days Active | 6 |
 
 ---
 
 ## Daily Log
+
+### Day 6 — February 4, 2026
+
+**Balance:** €4,594.11  
+**Change:** -0.36% (-€16.62 from Day 5)
+
+**Positions (after rebalance):**
+- CASH: 27.3% (€1,252.29)
+- VOO: 49.8% (€2,288.25) — 4.29 shares @ $629.74 — P/L: -1.22%
+- GLD: 22.9% (€1,053.57) — 2.74 shares @ $453.89 — P/L: +0.89%
+
+**Trades (19:20 UTC):**
+- ❌ **SELL QQQ** — 1.33 shares @ $603.99 = €680.40 (realized loss: -€10.41 / -1.5%)
+- ✅ **BUY GLD** — 0.91 shares @ $453.89 = €350.00
+
+**Market Context:**
+- S&P 500: 6,869.32 (-1.54%)
+- NASDAQ: 22,831.24 (-3.23%) 📉
+- Gold: $4,961.80 (+1.18%)
+- EUR/USD: 0.847
+
+**Decision:** REBALANCE — Exit QQQ, increase GLD
+
+**Reasoning:**  
+QQQ and VOO highly correlated (both US equity) — QQQ added volatility without real diversification. NASDAQ down hard (-3.23%) while tech continues selloff. S&P500 already has ~30% tech exposure via VOO. Sold QQQ at small loss, rotated partially into GLD (hedge working) and kept extra cash for opportunities. New portfolio: simpler, more defensive, better hedged.
+
+---
 
 ### Day 5 — February 3, 2026
 
