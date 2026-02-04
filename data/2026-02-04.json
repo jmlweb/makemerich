@@ -2,14 +2,14 @@
   "date": "2026-02-04",
   "day": 6,
   "balance": {
-    "total": 4594.14,
+    "total": 4600.06,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -8.12,
+  "totalReturn": -8,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Vanguard S&P 500 ETF",
       "units": 4.29,
       "entryPriceUSD": 637.5,
-      "currentPriceUSD": 629.803,
-      "value": 2288.47,
-      "pnlPercent": -1.21,
-      "change24h": -1.544053276638312
+      "currentPriceUSD": 632.41,
+      "value": 2297.94,
+      "pnlPercent": -0.8,
+      "change24h": -1.1365057528764355
     },
     {
       "asset": "GLD",
@@ -34,14 +34,14 @@
       "description": "SPDR Gold Trust",
       "units": 2.74,
       "entryPriceUSD": 449.9,
-      "currentPriceUSD": 453.89,
-      "value": 1053.38,
-      "pnlPercent": 0.89,
-      "change24h": 6.265071523892021
+      "currentPriceUSD": 452.36,
+      "value": 1049.83,
+      "pnlPercent": 0.55,
+      "change24h": 5.90686676187578
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-04T19:20:09.642Z",
+    "generatedAt": "2026-02-04T20:30:10.800Z",
     "eurUsd": 0.847
   }
 }
