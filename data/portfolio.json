@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-04T20:30:10.800Z",
+  "last_updated": "2026-02-05T20:30:15.930Z",
   "holdings": {
     "CASH": {
       "amount_eur": 1252.29
@@ -7,22 +7,22 @@
     "VOO": {
       "shares": 4.29,
       "entry_price_usd": 637.5,
-      "current_price_usd": 632.41,
-      "amount_eur": 2297.94,
-      "pnl_pct": -0.8
+      "current_price_usd": 623.29,
+      "amount_eur": 2264.81,
+      "pnl_pct": -2.23
     },
     "GLD": {
       "shares": 2.74,
       "entry_price_usd": 449.9,
-      "current_price_usd": 452.36,
-      "amount_eur": 1049.83,
-      "pnl_pct": 0.55
+      "current_price_usd": 443.315,
+      "amount_eur": 1028.84,
+      "pnl_pct": -1.46
     }
   },
   "totals": {
-    "balance_eur": 4600.06,
+    "balance_eur": 4545.93,
     "initial_eur": 5000,
-    "pnl_eur": -399.94,
-    "pnl_pct": -8
+    "pnl_eur": -454.07,
+    "pnl_pct": -9.08
   }
 }
