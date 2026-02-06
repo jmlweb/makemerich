@@ -4,24 +4,27 @@ An AI-driven investment simulation experiment.
 
 ## 📊 Portfolio Performance
 
-![Balance Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Day%201%22%2C%22Day%202%22%2C%22Day%203%22%2C%22Day%204%22%2C%22Day%205%22%2C%22Day%206%22%2C%22Day%207%22%2C%22Day%208%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Balance%20%E2%82%AC%22%2C%22data%22%3A%5B%225000.00%22%2C%225000.00%22%2C%224975.68%22%2C%224958.20%22%2C%224596.69%22%2C%224610.73%22%2C%224600.06%22%2C%224545.93%22%5D%2C%22borderColor%22%3A%22%2336a2eb%22%2C%22backgroundColor%22%3A%22rgba(54%2C162%2C235%2C0.2)%22%2C%22fill%22%3Atrue%7D%5D%7D%2C%22options%22%3A%7B%22scales%22%3A%7B%22yAxes%22%3A%5B%7B%22ticks%22%3A%7B%22min%22%3A4445.93%2C%22max%22%3A5100%7D%7D%5D%7D%7D%7D)
+![Balance Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Day%201%22%2C%22Day%202%22%2C%22Day%203%22%2C%22Day%204%22%2C%22Day%205%22%2C%22Day%206%22%2C%22Day%207%22%2C%22Day%208%22%2C%22Day%209%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Balance%20%E2%82%AC%22%2C%22data%22%3A%5B%225000.00%22%2C%225000.00%22%2C%224975.68%22%2C%224958.20%22%2C%224596.69%22%2C%224610.73%22%2C%224600.06%22%2C%224545.93%22%2C%224545.06%22%5D%2C%22borderColor%22%3A%22%2336a2eb%22%2C%22backgroundColor%22%3A%22rgba(54%2C162%2C235%2C0.2)%22%2C%22fill%22%3Atrue%7D%5D%7D%2C%22options%22%3A%7B%22scales%22%3A%7B%22yAxes%22%3A%5B%7B%22ticks%22%3A%7B%22min%22%3A4445.06%2C%22max%22%3A5100%7D%7D%5D%7D%7D%7D)
 
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4545.93 |
-| Total Return | **-9.08%** |
-| Days Active | 7 |
+| Current Balance | €4545.06 |
+| Total Return | **-9.10%** |
+| Days Active | 8 |
 
 ## Current Positions
 
 | Asset | Allocation | P/L |
 |-------|------------|-----|
-| 📈 VOO | 45.3% (€2264.81) | -2.23% |
-| 💵 CASH | 25.0% (€1252.29) | — |
-| 🥇 GLD | 20.6% (€1028.84) | -1.46% |
+| 📊 SXR8 | 27.2% (€1361.44) | -0.04% |
+| ₿ BTC | 18.2% (€910.18) | +0.12% |
+| 📊 VWCE | 18.2% (€909.68) | +0.00% |
+| 📊 ETH | 9.1% (€455.61) | +0.16% |
+| 💵 CASH | 9.1% (€454.58) | — |
+| 📊 SGLD | 9.1% (€453.57) | +0.00% |
 
-> **Day 7 Close:** GLD -1.46%, VOO -2.23%.
+> **Day 8 Close:** ETH +0.16%, SXR8 -0.04%.
 
 ## What is this?
 
@@ -69,4 +72,4 @@ makemerich/
 
 ---
 
-*Last updated: 2026-02-05 by HAL 🤖*
+*Last updated: 2026-02-06 by HAL 🤖*

@@ -4,6 +4,29 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 
 ---
 
+## 2026-02-06: Cumplimiento Legal España
+
+**Category:** Strategy / Compliance  
+**Impact:** Reestructuración completa del portfolio
+
+**What happened:** Jose solicitó invertir "de la manera más inteligente y legal en España." Descubrí que los ETFs US (VOO, GLD, QQQ) técnicamente no son accesibles para inversores minoristas en España/UE debido a regulación PRIIPS/MiFID II (falta de documentación KID).
+
+**Lesson:** Verificar siempre la legalidad de los instrumentos antes de usar. Lo que funciona en US no siempre es accesible en España.
+
+**Action:** 
+1. Convertido a ETFs UCITS domiciliados en Irlanda (SXR8, VWCE, SGLD)
+2. Añadida exposición crypto (BTC, ETH) - legal y regulado en España
+3. Actualizado scripts para manejar activos EUR y USD
+4. Documentado en ASSETS.md las opciones legales
+
+**Ventajas del cambio:**
+- 100% legal y conforme
+- Mejor retención fiscal (15% vs 30% en dividendos US)
+- ETFs acumulativos = diferimiento fiscal hasta venta
+- Exposición crypto para potencial 10x
+
+---
+
 ## 2026-01-30: System Design Matters
 
 **Category:** Operations  

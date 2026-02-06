@@ -16,19 +16,33 @@ const path = require("path");
 
 // Asset metadata (for Yahoo symbols)
 const ASSET_CONFIG = {
-  VOO: { yahoo: "VOO", currency: "USD", description: "Vanguard S&P 500 ETF" },
-  GLD: { yahoo: "GLD", currency: "USD", description: "SPDR Gold Trust" },
+  // European UCITS ETFs (legal in Spain, tax-efficient for EU residents)
+  VWCE: { yahoo: "VWCE.DE", currency: "EUR", description: "Vanguard FTSE All-World UCITS (Acc)" },
+  SXR8: { yahoo: "SXR8.DE", currency: "EUR", description: "iShares Core S&P 500 UCITS (Acc)" },
+  CSPX: { yahoo: "CSPX.L", currency: "USD", description: "iShares Core S&P 500 UCITS (Acc)" },
+  EUNL: { yahoo: "EUNL.DE", currency: "EUR", description: "iShares Core MSCI World UCITS" },
+  EQQQ: { yahoo: "EQQQ.DE", currency: "EUR", description: "Invesco NASDAQ-100 UCITS" },
+  MEUD: { yahoo: "MEUD.PA", currency: "EUR", description: "iShares MSCI Europe UCITS" },
+  SGLD: { yahoo: "SGLD.L", currency: "USD", description: "Invesco Physical Gold ETC" },
+  // Crypto (legal in Spain, regulated exchanges)
   BTC: { yahoo: "BTC-USD", currency: "USD", description: "Bitcoin" },
   ETH: { yahoo: "ETH-USD", currency: "USD", description: "Ethereum" },
-  QQQ: { yahoo: "QQQ", currency: "USD", description: "Invesco NASDAQ-100" },
-  VTI: { yahoo: "VTI", currency: "USD", description: "Vanguard Total Stock Market" }
+  SOL: { yahoo: "SOL-USD", currency: "USD", description: "Solana" },
+  // Legacy US ETFs (reference only - not legally accessible to EU retail)
+  VOO: { yahoo: "VOO", currency: "USD", description: "Vanguard S&P 500 ETF (US)" },
+  GLD: { yahoo: "GLD", currency: "USD", description: "SPDR Gold Trust (US)" },
+  QQQ: { yahoo: "QQQ", currency: "USD", description: "Invesco NASDAQ-100 (US)" }
 };
 
 // Market indices for reference
 const INDICES = {
   SP500: { yahoo: "^GSPC" },
   NASDAQ: { yahoo: "^IXIC" },
-  GOLD: { yahoo: "GC=F" }
+  GOLD: { yahoo: "GC=F" },
+  // European indices
+  IBEX35: { yahoo: "^IBEX", region: "EU" },
+  EUROSTOXX50: { yahoo: "^STOXX50E", region: "EU" },
+  DAX: { yahoo: "^GDAXI", region: "EU" }
 };
 
 function httpsGet(url) {

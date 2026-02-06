@@ -13,6 +13,75 @@
 
 ## Daily Log
 
+### Day 8 — February 6, 2026
+
+**Balance:** €4,542.72  
+**Change:** -0.07% (-€3.07 from Day 6)
+
+**🔄 REESTRUCTURACIÓN COMPLETA — Cumplimiento Legal España**
+
+**Posiciones anteriores (liquidadas):**
+- VOO: 4.29 shares @ $623.10 → €2,266.79 (vendido)
+- GLD: 2.74 shares @ $441.88 → €1,026.72 (vendido)
+- CASH: €1,252.29
+
+**Nuevas posiciones (UCITS + Crypto):**
+
+| Asset | Tipo | Cantidad | Precio | Valor | % |
+|-------|------|----------|--------|-------|---|
+| SXR8 | ETF UCITS | 2.19 | €621.88 | €1,361.92 | 30% |
+| VWCE | ETF UCITS | 6.19 | €146.96 | €909.48 | 20% |
+| BTC | Crypto | 0.01602 | $66,920 | €908.52 | 20% |
+| ETH | Crypto | 0.276 | $1,943 | €454.80 | 10% |
+| SGLD | ETC UCITS | 1.13 | $473.34 | €453.42 | 10% |
+| CASH | — | — | — | €454.58 | 10% |
+
+**Contexto:**
+- IBEX 35: 17,903 (+0.89%)
+- Euro Stoxx 50: 5,962 (+0.62%)
+- S&P 500: 6,798 (-1.73% cierre ayer)
+- BTC: $66,920
+- EUR/USD: 0.848
+
+**Decisión:** REESTRUCTURACIÓN TOTAL
+
+**Razonamiento:**  
+Jose solicitó inversión "de la manera más inteligente y legal en España." Los ETFs US (VOO, GLD) no son accesibles legalmente para inversores minoristas UE bajo regulación PRIIPS. Convertido a:
+
+1. **SXR8 (30%)** — iShares S&P 500 UCITS, acumulativo. Misma exposición que VOO, 100% legal, mejor fiscalidad (retención 15% vs 30%).
+
+2. **VWCE (20%)** — Vanguard All-World. Diversificación global, incluyendo emergentes. El ETF más popular entre inversores españoles.
+
+3. **BTC + ETH (30%)** — Para tener opciones reales de 10x, necesitamos exposición crypto. Legal y regulado en España (Kraken registrado en BdE). Split 2:1 BTC/ETH.
+
+4. **SGLD (10%)** — Oro físico ETC (UCITS). Hedge contra volatilidad, legal en UE.
+
+5. **Cash (10%)** — Dry powder para oportunidades.
+
+**Comisiones simuladas:** €4.55 (0.1% de €4,545.79)  
+**Pérdida por cambio:** €2.52 (spread simulado)
+
+---
+
+### Day 7 — February 5, 2026
+
+**Balance:** €4,545.79  
+**Change:** -1.05% (-€48.32 from Day 6)
+
+**Posiciones (sin cambios):**
+- CASH: €1,252.29
+- VOO: €2,266.79 (-2.26%)
+- GLD: €1,026.72 (-1.78%)
+
+**Market Context:**
+- S&P 500: 6,798.40 (-1.73%)
+- NASDAQ: 22,540.59 (-3.07%)
+- Gold: $4,872.30 (+0.22%)
+
+**Decisión:** HOLD (sin acceso a mercados)
+
+---
+
 ### Day 6 — February 4, 2026
 
 **Balance:** €4,594.11  
