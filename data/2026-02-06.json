@@ -2,14 +2,14 @@
   "date": "2026-02-06",
   "day": 8,
   "balance": {
-    "total": 4545.06,
+    "total": 4635.3,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.1,
+  "totalReturn": -7.29,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "iShares S&P 500 UCITS",
       "units": 2.19,
       "entryPriceEUR": 621.88,
-      "currentPriceEUR": 621.66,
-      "value": 1361.44,
-      "pnlPercent": -0.04,
-      "change24h": -0.7947146687093096
+      "currentPriceEUR": 626.18,
+      "value": 1371.33,
+      "pnlPercent": 0.69,
+      "change24h": -0.07340737903741165
     },
     {
       "asset": "VWCE",
@@ -34,10 +34,10 @@
       "description": "Vanguard All-World UCITS",
       "units": 6.19,
       "entryPriceEUR": 146.96,
-      "currentPriceEUR": 146.96,
-      "value": 909.68,
-      "pnlPercent": 0,
-      "change24h": -0.5414185165132532
+      "currentPriceEUR": 147.82,
+      "value": 915.01,
+      "pnlPercent": 0.59,
+      "change24h": 0.040606388738496396
     },
     {
       "asset": "BTC",
@@ -45,10 +45,10 @@
       "description": "Bitcoin",
       "units": 0.01602,
       "entryPriceUSD": 66920,
-      "currentPriceUSD": 66998.875,
-      "value": 910.18,
-      "pnlPercent": 0.12,
-      "change24h": 6.852684578433088
+      "currentPriceUSD": 70567.195,
+      "value": 958.65,
+      "pnlPercent": 5.45,
+      "change24h": 12.543594633787228
     },
     {
       "asset": "ETH",
@@ -56,10 +56,10 @@
       "description": "Ethereum",
       "units": 0.276,
       "entryPriceUSD": 1943.5,
-      "currentPriceUSD": 1946.662,
-      "value": 455.61,
-      "pnlPercent": 0.16,
-      "change24h": 6.860633820483589
+      "currentPriceUSD": 2052.92,
+      "value": 480.48,
+      "pnlPercent": 5.63,
+      "change24h": 12.693591585363647
     },
     {
       "asset": "SGLD",
@@ -67,14 +67,14 @@
       "description": "Invesco Physical Gold ETC",
       "units": 1.13,
       "entryPriceUSD": 473.34,
-      "currentPriceUSD": 473.34,
-      "value": 453.57,
-      "pnlPercent": 0,
-      "change24h": -0.08654353562005805
+      "currentPriceUSD": 475.08,
+      "value": 455.24,
+      "pnlPercent": 0.37,
+      "change24h": 0.28073878627968
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-06T13:39:28.238Z",
+    "generatedAt": "2026-02-06T20:30:14.681Z",
     "eurUsd": 0.848
   }
 }
