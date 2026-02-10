@@ -259,3 +259,22 @@ Conservative entry. 60% cash for flexibility. VOO for broad market. Small BTC fo
 **Reasoning:**  
 Cash drag was costing returns. ETH dipped -4.60% today — bought weakness. VWCE for steady diversification. Keeping ~€100 reserve for fees/volatility. HAL should be making decisions, not asking permission.
 
+
+---
+
+### Day 10 Close — February 10, 2026 21:30 CET
+
+**Balance:** €4,631.56  
+**Total Return:** -7.37%
+
+**Positions:**
+- SXR8: €1,374.84 (+0.95%)
+- VWCE: €1,100.48 (+3.85%)
+- BTC: €926.22 (+2.73%)
+- ETH: €666.38 (+2.34%)
+- SGLD: €459.06 (+2.05%)
+- CASH: €104.58
+
+**Day Summary:**  
+Deployed €350 cash into ETH + VWCE at 09:20. ETH dipped -4.52% today but entry was well-timed. All positions in profit vs entry. Crypto weak, gold strong, indices mixed.
+
