@@ -1,55 +1,55 @@
 {
-  "fetchedAt": "2026-02-09T20:30:13.181Z",
-  "eurUsd": 0.846,
+  "fetchedAt": "2026-02-10T08:00:11.679Z",
+  "eurUsd": 0.841,
   "prices": {
     "SXR8": {
       "priceUSD": 627.9600219726562,
-      "priceEUR": 531.2541785888671,
-      "change": "1.21"
+      "priceEUR": 528.1143784790039,
+      "change": "0.28"
     },
     "VWCE": {
       "priceUSD": 148.5399932861328,
-      "priceEUR": 125.66483432006835,
-      "change": "1.39"
+      "priceEUR": 124.92213435363769,
+      "change": "0.49"
     },
     "BTC": {
-      "priceUSD": 70522.8203125,
-      "priceEUR": 59662.305984375,
-      "change": "0.37"
+      "priceUSD": 68915.2734375,
+      "priceEUR": 57957.744960937496,
+      "change": "-1.72"
     },
     "ETH": {
-      "priceUSD": 2120.589599609375,
-      "priceEUR": 1794.0188012695312,
-      "change": "1.52"
+      "priceUSD": 2006.796875,
+      "priceEUR": 1687.7161718749999,
+      "change": "-4.60"
     },
     "SGLD": {
       "priceUSD": 488.0799865722656,
-      "priceEUR": 412.9156686401367,
-      "change": "4.48"
+      "priceEUR": 410.4752687072754,
+      "change": "2.74"
     },
     "SP500": {
-      "value": 6966.740234375,
-      "change": "2.48"
+      "value": 6964.81982421875,
+      "change": "2.45"
     },
     "NASDAQ": {
-      "value": 23238.705078125,
+      "value": 23238.669921875,
       "change": "3.10"
     },
     "GOLD": {
-      "value": 5101.7001953125,
-      "change": "2.45"
+      "value": 5052.5,
+      "change": "0.03"
     },
     "IBEX35": {
       "value": 18195.099609375,
-      "change": "1.40"
+      "change": "-0.00"
     },
     "EUROSTOXX50": {
       "value": 6059.009765625,
-      "change": "1.01"
+      "change": "-0.00"
     },
     "DAX": {
       "value": 25014.869140625,
-      "change": "2.14"
+      "change": "1.19"
     }
   }
 }

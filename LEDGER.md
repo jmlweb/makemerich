@@ -242,3 +242,20 @@ Conservative entry. 60% cash for flexibility. VOO for broad market. Small BTC fo
 ---
 
 *[End of ledger]*
+
+---
+
+### Trade — February 10, 2026 09:20 CET
+
+**Action:** BUY
+
+**Trades:**
+- ETH: +0.1185 units @ €1,687.72 = €200
+- VWCE: +1.2007 shares @ €124.92 = €150
+
+**Cash deployed:** €350  
+**Cash remaining:** €104.58
+
+**Reasoning:**  
+Cash drag was costing returns. ETH dipped -4.60% today — bought weakness. VWCE for steady diversification. Keeping ~€100 reserve for fees/volatility. HAL should be making decisions, not asking permission.
+
