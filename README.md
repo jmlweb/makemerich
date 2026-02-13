@@ -4,27 +4,27 @@ An AI-driven investment simulation experiment.
 
 ## 📊 Portfolio Performance
 
-![Balance Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Day%201%22%2C%22Day%202%22%2C%22Day%203%22%2C%22Day%204%22%2C%22Day%205%22%2C%22Day%206%22%2C%22Day%207%22%2C%22Day%208%22%2C%22Day%209%22%2C%22Day%2010%22%2C%22Day%2011%22%2C%22Day%2012%22%2C%22Day%2013%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Balance%20%E2%82%AC%22%2C%22data%22%3A%5B%225000.00%22%2C%225000.00%22%2C%224975.68%22%2C%224958.20%22%2C%224596.69%22%2C%224610.73%22%2C%224600.06%22%2C%224545.93%22%2C%224635.30%22%2C%224666.81%22%2C%224631.56%22%2C%224588.43%22%2C%224528.99%22%5D%2C%22borderColor%22%3A%22%2336a2eb%22%2C%22backgroundColor%22%3A%22rgba(54%2C162%2C235%2C0.2)%22%2C%22fill%22%3Atrue%7D%5D%7D%2C%22options%22%3A%7B%22scales%22%3A%7B%22yAxes%22%3A%5B%7B%22ticks%22%3A%7B%22min%22%3A4428.99%2C%22max%22%3A5100%7D%7D%5D%7D%7D%7D)
+![Balance Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Day%201%22%2C%22Day%202%22%2C%22Day%203%22%2C%22Day%204%22%2C%22Day%205%22%2C%22Day%206%22%2C%22Day%207%22%2C%22Day%208%22%2C%22Day%209%22%2C%22Day%2010%22%2C%22Day%2011%22%2C%22Day%2012%22%2C%22Day%2013%22%2C%22Day%2014%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Balance%20%E2%82%AC%22%2C%22data%22%3A%5B%225000.00%22%2C%225000.00%22%2C%224975.68%22%2C%224958.20%22%2C%224596.69%22%2C%224610.73%22%2C%224600.06%22%2C%224545.93%22%2C%224635.30%22%2C%224666.81%22%2C%224631.56%22%2C%224588.43%22%2C%224528.99%22%2C%224620.53%22%5D%2C%22borderColor%22%3A%22%2336a2eb%22%2C%22backgroundColor%22%3A%22rgba(54%2C162%2C235%2C0.2)%22%2C%22fill%22%3Atrue%7D%5D%7D%2C%22options%22%3A%7B%22scales%22%3A%7B%22yAxes%22%3A%5B%7B%22ticks%22%3A%7B%22min%22%3A4428.99%2C%22max%22%3A5100%7D%7D%5D%7D%7D%7D)
 
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4528.99 |
-| Total Return | **-9.42%** |
-| Days Active | 12 |
+| Current Balance | €4620.53 |
+| Total Return | **-7.59%** |
+| Days Active | 13 |
 
 ## Current Positions
 
 | Asset | Allocation | P/L |
 |-------|------------|-----|
-| 📊 SXR8 | 27.2% (€1359.42) | -0.18% |
-| 📊 VWCE | 21.9% (€1092.64) | +3.11% |
-| ₿ BTC | 17.7% (€883.04) | -2.17% |
-| 📊 ETH | 12.7% (€637.14) | -2.26% |
-| 📊 SGLD | 9.0% (€452.16) | +0.40% |
+| 📊 SXR8 | 27.1% (€1356.40) | -0.41% |
+| 📊 VWCE | 21.8% (€1091.61) | +3.01% |
+| ₿ BTC | 18.6% (€928.53) | +2.86% |
+| 📊 ETH | 13.6% (€679.73) | +4.27% |
+| 📊 SGLD | 9.2% (€459.68) | +2.07% |
 | 💵 CASH | 2.1% (€104.58) | — |
 
-> **Day 12 Close:** VWCE +3.11%, ETH -2.26%.
+> **Day 13 Close:** ETH +4.27%, SXR8 -0.41%.
 
 ## What is this?
 
@@ -72,4 +72,4 @@ makemerich/
 
 ---
 
-*Last updated: 2026-02-12 by HAL 🤖*
+*Last updated: 2026-02-13 by HAL 🤖*
