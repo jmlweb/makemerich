@@ -1,0 +1,80 @@
+{
+  "date": "2026-02-19",
+  "day": 17,
+  "balance": {
+    "total": 4593.48,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": -8.13,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 104.58,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "SXR8",
+      "type": "ETF",
+      "description": "iShares S&P 500 UCITS",
+      "units": 2.19,
+      "entryPriceEUR": 621.88,
+      "currentPriceEUR": 625.76,
+      "value": 1370.41,
+      "pnlPercent": 0.62,
+      "change24h": 0.945313760283919
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 7.3907,
+      "entryPriceEUR": 143.38,
+      "currentPriceEUR": 149.16,
+      "value": 1102.4,
+      "pnlPercent": 4.03,
+      "change24h": 0.9065079150317977
+    },
+    {
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.01602,
+      "entryPriceUSD": 66920,
+      "currentPriceUSD": 66905.35,
+      "value": 907.83,
+      "pnlPercent": -0.02,
+      "change24h": 0.7226611779965814
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.394503,
+      "entryPriceUSD": 1962.51,
+      "currentPriceUSD": 1937.575,
+      "value": 647.43,
+      "pnlPercent": -1.27,
+      "change24h": -0.8392690568416369
+    },
+    {
+      "asset": "SGLD",
+      "type": "ETC",
+      "description": "Invesco Physical Gold ETC",
+      "units": 1.13,
+      "entryPriceUSD": 473.34,
+      "currentPriceUSD": 481.48,
+      "value": 460.83,
+      "pnlPercent": 1.72,
+      "change24h": 2.5407304866361424
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-02-19T20:23:45.963Z",
+    "eurUsd": 0.847
+  }
+}
