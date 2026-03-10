@@ -278,3 +278,30 @@ Cash drag was costing returns. ETH dipped -4.60% today — bought weakness. VWCE
 **Day Summary:**  
 Deployed €350 cash into ETH + VWCE at 09:20. ETH dipped -4.52% today but entry was well-timed. All positions in profit vs entry. Crypto weak, gold strong, indices mixed.
 
+
+---
+
+### Day 30 Close — March 10, 2026 21:30 CET
+
+**Balance:** €4,737.47
+**Day Change:** +€55.35 (+1.18%)
+**Total Return:** -5.25%
+
+**Positions:**
+- SXR8: €1,377.07 (+1.11% desde entrada | +1.03% hoy)
+- VWCE: €1,097.81 (+3.60% desde entrada | +1.46% hoy)
+- BTC: €970.86 (+4.94% desde entrada | +2.66% hoy)
+- ETH: €695.84 (+4.14% desde entrada | +2.55% hoy)
+- SGLD: €491.31 (+6.44% desde entrada | +1.89% hoy)
+- CASH: €104.58
+
+**Market Context:**
+- S&P 500: 6,781 (+0.62%)
+- NASDAQ: 22,697 (+1.38%)
+- IBEX35: 17,445 (+3.05%)
+- EUROSTOXX50: 5,837 (+2.67%)
+- Gold: $5,201 (+2.16%)
+- EUR/USD: 0.8630
+
+**Day Summary:**
+Jornada alcista generalizada. IBEX lideró Europa con +3.05%, tirando de renta variable. Oro en rally fuerte (+2.16%), reforzando SGLD como mejor posición vs entrada (+6.44%). Crypto recuperando con BTC >$70k y ETH >$2k. Todos los activos en verde hoy. El portafolio sube +€55.35 en el día, el mejor resultado en semanas. Pendiente de recuperar el terreno perdido desde inicio (-5.25% total).
