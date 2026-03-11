@@ -305,3 +305,30 @@ Deployed €350 cash into ETH + VWCE at 09:20. ETH dipped -4.52% today but entry
 
 **Day Summary:**
 Jornada alcista generalizada. IBEX lideró Europa con +3.05%, tirando de renta variable. Oro en rally fuerte (+2.16%), reforzando SGLD como mejor posición vs entrada (+6.44%). Crypto recuperando con BTC >$70k y ETH >$2k. Todos los activos en verde hoy. El portafolio sube +€55.35 en el día, el mejor resultado en semanas. Pendiente de recuperar el terreno perdido desde inicio (-5.25% total).
+
+---
+
+### Day 31 Close — March 11, 2026 21:30 CET
+
+**Balance:** €4,730.38
+**Day Change:** -€7.43 (-0.16%)
+**Total Return:** -5.39%
+
+**Positions:**
+- SXR8: €1,375.41 (+0.99% desde entrada | -0.12% hoy)
+- VWCE: €1,093.82 (+3.22% desde entrada | -0.36% hoy)
+- BTC: €970.64 (+5.28% desde entrada | +0.75% hoy)
+- ETH: €702.27 (+5.47% desde entrada | +1.61% hoy)
+- SGLD: €483.66 (+5.15% desde entrada | +1.29% hoy)
+- CASH: €104.58
+
+**Market Context:**
+- S&P 500: 6,775.80 (-0.30%)
+- NASDAQ: 22,716.13 (+0.09%)
+- IBEX35: 17,351.90 (-0.53%)
+- EUROSTOXX50: 5,794.68 (-0.73%)
+- Gold: $5,184.20 (-0.87%)
+- EUR/USD: 0.8600
+
+**Day Summary:**
+Jornada bajista leve en renta variable europea e índices globales. Rojo en IBEX, EuroStoxx y S&P500, con oro retrocediendo -0.87% tras el rally del día anterior. ETFs de renta variable (SXR8, VWCE) acompañaron las caídas. Contrapeso parcial del lado crypto: BTC +0.75%, ETH +1.61%. SGLD sigue en positivo diario gracias al oro en niveles altos. El portfolio cede €7.43 en el día, manteniendo el -5.39% acumulado. Sin cambios en posiciones — estrategia buy & hold.
