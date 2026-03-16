@@ -5,9 +5,9 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,594.11 |
-| Total Return | -8.12% |
-| Days Active | 6 |
+| Current Balance | €4,878.69 |
+| Total Return | -2.43% |
+| Days Active | 34 |
 
 ---
 
@@ -359,6 +359,33 @@ Jornada bajista leve en renta variable europea e índices globales. Rojo en IBEX
 
 **Day Summary:**
 Jornada de corrección global. S&P 500 y NASDAQ cedieron más de un 1.6%, arrastrando a SXR8 (-0.53%) y VWCE (-0.70%). El oro retrocedió con fuerza (-1.48%), lo que penalizó SGLD (-2.02% en el día), que sin embargo mantiene +4.29% desde entrada. Crypto aguantó mejor: BTC prácticamente plano (+0.20%) y ETH en ligero positivo (+0.85%). El portfolio pierde €8.15, deslizándose al -5.56% acumulado. Sin cambios en posiciones — estrategia buy & hold.
+
+---
+
+### Day 34 Close — March 16, 2026 21:30 CET
+
+**Balance:** €4,878.69
+**Day Change:** +€132.84 (+2.80%) vs Friday close
+**Total Return:** -2.43%
+
+**Positions:**
+- SXR8: €1,369.54 (+0.56% desde entrada | +0.11% hoy)
+- VWCE: €1,089.24 (+2.79% desde entrada | +0.29% hoy)
+- BTC: €1,037.27 (+10.58% desde entrada | +1.66% hoy)
+- ETH: €804.61 (+18.77% desde entrada | +7.05% hoy)
+- SGLD: €473.45 (+1.16% desde entrada | -3.00% hoy)
+- CASH: €104.58
+
+**Market Context:**
+- S&P 500: 6,699.38 (+0.40%)
+- NASDAQ: 22,374.18 (+0.28%)
+- IBEX35: 17,089.40 (+0.18%)
+- EUROSTOXX50: 5,739.01 (+0.39%)
+- Gold: $5,021.40 (-0.80%)
+- EUR/USD: 0.8750
+
+**Day Summary:**
+Lunes de recuperación tras el fin de semana. El portfolio rebota con fuerza +€132.84 (+2.80%) respecto al cierre del viernes. El gran protagonista es ETH, que dispara un +7.05% en el día (+18.77% acumulado desde entrada), seguido por BTC con +1.66% (+10.58% total). La renta variable europea y americana aguanta bien con subidas moderadas; SXR8 y VWCE suman en línea con el mercado. El oro cede ligeramente (-0.80%), penalizando a SGLD (-3.00% hoy), único activo en rojo hoy. El retorno acumulado mejora significativamente al -2.43%. Sin cambios en posiciones — estrategia buy & hold.
 
 ---
 
