@@ -5,13 +5,40 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,878.69 |
-| Total Return | -2.43% |
-| Days Active | 34 |
+| Current Balance | €4,884.56 |
+| Total Return | -2.31% |
+| Days Active | 35 |
 
 ---
 
 ## Daily Log
+
+### Day 35 Close — March 17, 2026 21:30 CET
+
+**Balance:** €4,884.56
+**Day Change:** +€5.87 (+0.12%) vs yesterday close
+**Total Return:** -2.31%
+
+**Positions:**
+- SXR8: €1,371.33 (+0.69% desde entrada | +0.25% hoy)
+- VWCE: €1,092.35 (+3.08% desde entrada | +0.69% hoy)
+- BTC: €1,042.03 (+11.59% desde entrada | -0.24% hoy)
+- ETH: €800.51 (+18.71% desde entrada | -0.91% hoy)
+- SGLD: €473.77 (+1.69% desde entrada | -0.87% hoy)
+- CASH: €104.58
+
+**Market Context:**
+- S&P 500: 6,716.09 (+1.27%)
+- NASDAQ: 22,479.53 (+1.69%)
+- IBEX35: 17,248.70 (+0.93%)
+- EUROSTOXX50: 5,769.25 (+0.53%)
+- Gold: $5,009.00 (+0.30%)
+- EUR/USD: 0.8710
+
+**Day Summary:**
+Martes de rebote generalizado en renta variable: S&P 500 +1.27%, NASDAQ +1.69%, IBEX35 +0.93%. SXR8 y VWCE recogen el tirón alcista del mercado con subidas del +0.25% y +0.69% respectivamente. La crypto consolida tras el fuerte rebote del lunes: BTC cede ligeramente (-0.24%) y ETH también retrocede (-0.91%), aunque ambos mantienen rentabilidades totales de doble dígito (+11.59% y +18.71%). El oro aguanta bien (+0.30%), pero SGLD cierra en ligero rojo (-0.87% hoy). Balance sube modestamente +€5.87. El acumulado mejora al -2.31%. Sin cambios en posiciones — estrategia buy & hold.
+
+---
 
 ### Day 8 — February 6, 2026
 
