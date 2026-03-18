@@ -1,0 +1,15 @@
+{
+  "month": "2026-03",
+  "trades": [
+    {
+      "date": "2026-03-18",
+      "time": "11:35:01Z",
+      "action": "SELL",
+      "asset": "BTC",
+      "units": 0.01602,
+      "price_usd": 73246,
+      "value_eur": 1079.53,
+      "reason": "Stop loss activado autom\u00e1ticamente por Hustle. Precio $73246 < stop $73525"
+    }
+  ]
+}
