@@ -2,19 +2,19 @@
   "date": "2026-03-18",
   "day": 36,
   "balance": {
-    "total": 4859.1,
+    "total": 4835.59,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -25.46,
-    "percentage": -0.52
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -2.82,
+  "totalReturn": -3.29,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 104.58,
+      "value": 1184.11,
       "pnlPercent": 0
     },
     {
@@ -23,10 +23,10 @@
       "description": "iShares S&P 500 UCITS",
       "units": 2.19,
       "entryPriceEUR": 621.88,
-      "currentPriceEUR": 626.18,
-      "value": 1371.33,
-      "pnlPercent": 0.69,
-      "change24h": 0.13112447230394275
+      "currentPriceEUR": 622.36,
+      "value": 1362.97,
+      "pnlPercent": 0.08,
+      "change24h": -0.47972367916080333
     },
     {
       "asset": "VWCE",
@@ -34,21 +34,10 @@
       "description": "Vanguard All-World UCITS",
       "units": 7.3907,
       "entryPriceEUR": 143.38,
-      "currentPriceEUR": 147.8,
-      "value": 1092.35,
-      "pnlPercent": 3.08,
-      "change24h": 0.2849776089021685
-    },
-    {
-      "asset": "BTC",
-      "type": "Crypto",
-      "description": "Bitcoin",
-      "units": 0.01602,
-      "entryPriceUSD": 66920,
-      "currentPriceUSD": 73888.08,
-      "value": 1026.26,
-      "pnlPercent": 10.41,
-      "change24h": -0.04653523528971726
+      "currentPriceEUR": 146.8,
+      "value": 1084.95,
+      "pnlPercent": 2.39,
+      "change24h": -0.39354050753154024
     },
     {
       "asset": "ETH",
@@ -56,10 +45,10 @@
       "description": "Ethereum",
       "units": 0.394503,
       "entryPriceUSD": 1962.51,
-      "currentPriceUSD": 2318.4587,
-      "value": 792.99,
-      "pnlPercent": 18.14,
-      "change24h": 0.017480183265837043
+      "currentPriceUSD": 2174.838,
+      "value": 743.87,
+      "pnlPercent": 10.82,
+      "change24h": -6.1782655145793575
     },
     {
       "asset": "SGLD",
@@ -67,14 +56,14 @@
       "description": "Invesco Physical Gold ETC",
       "units": 1.13,
       "entryPriceUSD": 473.34,
-      "currentPriceUSD": 481.36,
-      "value": 471.59,
-      "pnlPercent": 1.69,
-      "change24h": 0.5262718235736443
+      "currentPriceUSD": 469.21,
+      "value": 459.69,
+      "pnlPercent": -0.87,
+      "change24h": -2.0111101829421094
     }
   ],
   "metadata": {
-    "generatedAt": "2026-03-18T08:00:17.133Z",
+    "generatedAt": "2026-03-18T20:30:18.939Z",
     "eurUsd": 0.867
   }
 }

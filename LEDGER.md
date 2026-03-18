@@ -5,9 +5,9 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,884.56 |
-| Total Return | -2.31% |
-| Days Active | 35 |
+| Current Balance | €4,835.59 |
+| Total Return | -3.29% |
+| Days Active | 36 |
 
 ---
 
@@ -440,3 +440,29 @@ Lunes de recuperación tras el fin de semana. El portfolio rebota con fuerza +�
 
 **Day Summary:**
 Jornada de corrección intensa en renta variable y metales preciosos. S&P 500 cayó un -2.12% y NASDAQ un -2.69%, arrastrando a SXR8 (-0.02%) y VWCE (-0.12%). El oro se dejó un -1.86%, penalizando a SGLD (-2.44% hoy). Sin embargo, el portfolio cerró en positivo gracias al rebote crypto: BTC +1.20% y ETH +1.82%, que sumaron +€32 entre ambos y compensaron las pérdidas del resto. Balance sube €23.62 en el día. Total acumulado mejora al -5.08%. Sin cambios en posiciones — estrategia buy & hold.
+
+---
+
+### Day 36 Close — March 18, 2026 21:30 CET
+
+**Balance:** €4,835.59
+**Day Change:** -€48.97 (-1.00%)
+**Total Return:** -3.29%
+
+**Positions:**
+- SXR8: €1,362.97 (+0.08% desde entrada | -0.48% hoy)
+- VWCE: €1,084.95 (+2.39% desde entrada | -0.39% hoy)
+- ETH: €743.87 (+10.82% desde entrada | -6.18% hoy)
+- SGLD: €459.69 (-0.87% desde entrada | -2.01% hoy)
+- CASH: €1,184.11 ⚠️ BTC liquidado → cash
+
+**Market Context:**
+- S&P 500: 6,624.70 (-1.11%)
+- NASDAQ: 22,152.42 (-0.99%)
+- IBEX35: 17,299.10 (+0.29%)
+- EUROSTOXX50: 5,736.85 (-0.56%)
+- Gold: $4,824.80 (-3.52%)
+- EUR/USD: 0.8670
+
+**Day Summary:**
+Jornada bajista generalizada. El evento más destacado del día es la liquidación de la posición en BTC (~€1,042 → CASH), que eleva la liquidez hasta €1,184.11 (24.5% del portfolio). Esta decisión protege capital ante la debilidad del mercado, pero implica salir de una posición con +11.59% de ganancia no realizada. En el resto del portfolio, correcciones generalizadas: ETH cede un -6.18% hoy (aunque acumula +10.82% desde entrada), SGLD pierde -2.01% (ahora en -0.87% total), y los ETFs de renta variable bajan modestamente (SXR8 -0.48%, VWCE -0.39%). El mercado americano corrige (-1.11% S&P 500) junto al oro (-3.52%), que marca su peor sesión reciente. El IBEX35 es la excepción con +0.29%. Balance retrocede -€48.97 en el día. Total acumulado empeora al -3.29%.
