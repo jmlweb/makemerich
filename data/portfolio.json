@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-03-18T20:30:18.939Z",
+  "last_updated": "2026-03-18T21:00:06.564579Z",
   "holdings": {
     "CASH": {
-      "amount_eur": 1184.11
+      "amount_eur": 284.11
     },
     "SXR8": {
       "shares": 2.19,
@@ -19,11 +19,11 @@
       "pnl_pct": 2.39
     },
     "ETH": {
-      "units": 0.394503,
-      "entry_price_usd": 1962.51,
-      "current_price_usd": 2174.838,
-      "amount_eur": 743.87,
-      "pnl_pct": 10.82
+      "units": 0.658029,
+      "entry_price_usd": 2052.97,
+      "current_price_usd": 2188.4,
+      "amount_eur": 1248.51,
+      "pnl_pct": 6.6
     },
     "SGLD": {
       "shares": 1.13,
@@ -31,6 +31,14 @@
       "current_price_usd": 469.21,
       "amount_eur": 459.69,
       "pnl_pct": -0.87
+    },
+    "BTC": {
+      "units": 0.006476,
+      "entry_price_usd": 71238,
+      "current_price_usd": 71238,
+      "amount_eur": 400.0,
+      "pnl_pct": 0.0,
+      "stop_loss_usd": 62689.44
     }
   },
   "totals": {
