@@ -5,9 +5,9 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,835.59 |
-| Total Return | -3.29% |
-| Days Active | 36 |
+| Current Balance | €4,754.27 |
+| Total Return | -4.91% |
+| Days Active | 37 |
 
 ---
 
@@ -466,3 +466,31 @@ Jornada de corrección intensa en renta variable y metales preciosos. S&P 500 ca
 
 **Day Summary:**
 Jornada bajista generalizada. El evento más destacado del día es la liquidación de la posición en BTC (~€1,042 → CASH), que eleva la liquidez hasta €1,184.11 (24.5% del portfolio). Esta decisión protege capital ante la debilidad del mercado, pero implica salir de una posición con +11.59% de ganancia no realizada. En el resto del portfolio, correcciones generalizadas: ETH cede un -6.18% hoy (aunque acumula +10.82% desde entrada), SGLD pierde -2.01% (ahora en -0.87% total), y los ETFs de renta variable bajan modestamente (SXR8 -0.48%, VWCE -0.39%). El mercado americano corrige (-1.11% S&P 500) junto al oro (-3.52%), que marca su peor sesión reciente. El IBEX35 es la excepción con +0.29%. Balance retrocede -€48.97 en el día. Total acumulado empeora al -3.29%.
+
+---
+
+### Day 37 Close — March 19, 2026 21:30 CET
+
+**Balance:** €4,754.27
+**Day Change:** -€81.32 (-1.68%)
+**Total Return:** -4.91%
+
+**Positions:**
+- SXR8: €1,343.21 (-1.37% desde entrada | -2.05% hoy)
+- VWCE: €1,066.33 (+0.63% desde entrada | -2.38% hoy)
+- ETH: €1,229.18 (+4.46% desde entrada | -2.68% hoy)
+- SGLD: €434.21 (-6.80% desde entrada | -8.35% hoy)
+- BTC: €397.22 (-1.14% desde entrada | -1.16% hoy)
+- CASH: €284.11
+
+**Market Context:**
+- S&P 500: 6,606.49 (-1.63%)
+- NASDAQ: 22,090.69 (-1.73%)
+- IBEX35: 16,905.90 (-2.27%)
+- EUROSTOXX50: 5,613.83 (-2.14%)
+- DAX: 22,839.56 (-3.76%)
+- Gold: $4,658.60 (-4.73%)
+- EUR/USD: 0.8710
+
+**Day Summary:**
+Jornada de corrección fuerte y generalizada en todos los mercados. La gran noticia del día es el reposicionamiento agresivo del portfolio: se reinvierte la liquidez acumulada (~€900 de los €1,184 en CASH) para re-entrar en BTC (0.0065 unidades a $71,238) y ampliar significativamente la posición en ETH (de 0.3945 a 0.6580 unidades, +66.8% más). El portfolio pasa de 24.5% cash a solo 6% cash, apostando por cripto en un momento de debilidad del mercado. El timing resulta complicado en la sesión: ETH cae -2.68% y BTC -1.16% en el día, mientras los ETFs de renta variable también se desploman (SXR8 -2.05%, VWCE -2.38%). El mayor golpe lo recibe SGLD con un brutal -8.35% en el día (oro cede -4.73% globalmente), llevando a SGLD al -6.80% acumulado. En conjunto, el portfolio pierde -€81.32 en el día y el retorno total retrocede del -3.29% al -4.91%. Jornada de alta convicción en activos de riesgo en plena corrección macro — la apuesta por ETH y BTC necesitará tiempo para demostrar su valor.
