@@ -5,9 +5,9 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,754.27 |
-| Total Return | -4.91% |
-| Days Active | 37 |
+| Current Balance | €4,704.38 |
+| Total Return | -5.91% |
+| Days Active | 40 |
 
 ---
 
@@ -550,3 +550,31 @@ Jornada de corrección moderada que continúa la tendencia bajista de los últim
 
 **Day Summary:**
 Primera sesión de la semana tras el fin de semana. Jornada mixta con protagonismo claro del cripto: ETH sube un notable +5.12% y BTC recupera +4.28%, impulsando la parte más volátil del portfolio. Los mercados europeos abren la semana con moderado optimismo (IBEX35 +1.04%, EUROSTOXX50 +1.33%), mientras que Wall Street cede ligeramente (S&P 500 -0.39%, NASDAQ -0.65%). El oro continúa su corrección severa, cayendo otro -3.64% en el día y arrastrando a SGLD al peor resultado acumulado del portfolio (-10.96%). ETF de renta variable cierran planos a ligeramente negativos (SXR8 -0.52%, VWCE -0.65%). En conjunto, el portfolio recupera +€7.06 respecto al viernes gracias al rally cripto, mejorando ligeramente el retorno total del -5.81% al -5.67%. Sin cambios en posiciones — estrategia buy & hold. ETH sigue siendo el mejor activo del portfolio con +5.12% acumulado y ya supera en valor a SXR8.
+
+---
+
+### Day 40 Close — March 24, 2026 21:30 CET
+
+**Balance:** €4,704.38
+**Day Change:** -€11.99 (-0.25%) vs. lunes 23 Mar
+**Total Return:** -5.91%
+
+**Positions:**
+- SXR8: €1,334.37 (-2.02% desde entrada | +0.13% hoy)
+- VWCE: €1,058.64 (-0.10% desde entrada | +0.42% hoy)
+- ETH: €1,221.06 (+4.86% desde entrada | +0.03% hoy)
+- SGLD: €414.21 (-10.16% desde entrada | -3.61% hoy)
+- BTC: €391.99 (-1.43% desde entrada | -0.98% hoy)
+- CASH: €284.11
+
+**Market Context:**
+- S&P 500: 6,556.37 (+0.77%)
+- NASDAQ: 21,761.89 (+0.53%)
+- IBEX35: 16,910.20 (+0.13%)
+- EUROSTOXX50: 5,581.29 (+0.13%)
+- DAX: 22,636.91 (+1.15%)
+- Gold: $4,410.90 (+0.15%)
+- EUR/USD: 0.8620
+
+**Day Summary:**
+Martes de sesión dividida. Wall Street rebota moderadamente (S&P 500 +0.77%, NASDAQ +0.53%) y Europa cierra con ganancias menores (DAX +1.15% destaca, IBEX35 e EUROSTOXX50 planos en +0.13%). La renta variable del portfolio se beneficia levemente: SXR8 +0.13% y VWCE +0.42%, sin embargo el impacto en valor es modesto. El gran lastre del día es el oro: SGLD cede otro -3.61% acumulando una pérdida desde entrada del -10.16%, la peor posición del portfolio. La crypto se mantiene prácticamente plana (ETH +0.03%, BTC -0.98%). El balance cae -€11.99 respecto al lunes, llevando el retorno total al -5.91%. Sin cambios en posiciones — estrategia buy & hold. El oro sigue siendo el activo más problemático; ETH mantiene el único retorno positivo relevante (+4.86% acumulado).
