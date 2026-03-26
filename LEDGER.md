@@ -578,3 +578,59 @@ Primera sesión de la semana tras el fin de semana. Jornada mixta con protagonis
 
 **Day Summary:**
 Martes de sesión dividida. Wall Street rebota moderadamente (S&P 500 +0.77%, NASDAQ +0.53%) y Europa cierra con ganancias menores (DAX +1.15% destaca, IBEX35 e EUROSTOXX50 planos en +0.13%). La renta variable del portfolio se beneficia levemente: SXR8 +0.13% y VWCE +0.42%, sin embargo el impacto en valor es modesto. El gran lastre del día es el oro: SGLD cede otro -3.61% acumulando una pérdida desde entrada del -10.16%, la peor posición del portfolio. La crypto se mantiene prácticamente plana (ETH +0.03%, BTC -0.98%). El balance cae -€11.99 respecto al lunes, llevando el retorno total al -5.91%. Sin cambios en posiciones — estrategia buy & hold. El oro sigue siendo el activo más problemático; ETH mantiene el único retorno positivo relevante (+4.86% acumulado).
+
+---
+
+### Day 41 Close — March 25, 2026 21:30 CET
+
+**Balance:** €4,753.81
+**Day Change:** +€49.43 (+1.05%) vs. martes 24 Mar
+**Total Return:** -4.92%
+
+**Positions:**
+- SXR8: €1,341.24 (-1.52% desde entrada | +0.37% hoy)
+- VWCE: €1,068.10 (+0.80% desde entrada | +0.82% hoy)
+- ETH: €1,235.38 (+6.09% desde entrada | +1.03% hoy)
+- SGLD: €426.74 (-7.44% desde entrada | +3.95% hoy)
+- BTC: €398.25 (+0.14% desde entrada | +1.17% hoy)
+- CASH: €284.11
+
+**Market Context:**
+- S&P 500: n/d
+- NASDAQ: n/d
+- IBEX35: n/d
+- EUROSTOXX50: n/d
+- DAX: n/d
+- Gold: n/d
+- EUR/USD: 0.8620
+
+**Day Summary:**
+Miércoles de recuperación generalizada. El portfolio rebota con fuerza: +€49.43 en el día, el mejor resultado semanal hasta ahora. ETH lidera con +6.09% acumulado (+1.03% hoy) y alcanza €1,235 en valor — el activo más rentable del portfolio. SGLD se recupera parcialmente con +3.95% en el día, aunque mantiene un retorno acumulado negativo del -7.44%. La renta variable también avanza: VWCE logra cruzar a territorio positivo (+0.80% acumulado) y SXR8 recorta pérdidas a -1.52%. BTC vuelve a positivo con +0.14% acumulado. En conjunto, el retorno total mejora del -5.91% al -4.92%. Sin cambios en posiciones — estrategia buy & hold.
+
+---
+
+### Day 42 Close — March 26, 2026 21:30 CET
+
+**Balance:** €4,644.76
+**Day Change:** -€109.05 (-2.29%) vs. miércoles 25 Mar
+**Total Return:** -7.10%
+
+**Positions:**
+- SXR8: €1,329.77 (-2.36% desde entrada | -0.34% hoy)
+- VWCE: €1,056.57 (-0.29% desde entrada | -0.20% hoy)
+- ETH: €1,175.22 (+0.69% desde entrada | -4.66% hoy)
+- SGLD: €412.31 (-10.78% desde entrada | -0.69% hoy)
+- BTC: €386.78 (-2.96% desde entrada | -3.06% hoy)
+- CASH: €284.11
+
+**Market Context:**
+- S&P 500: 6,477.16 (-1.21%)
+- NASDAQ: 21,408.08 (-1.63%)
+- IBEX35: 16,962.90 (-1.21%)
+- EUROSTOXX50: 5,565.93 (-1.48%)
+- DAX: 22,612.97 (-0.11%)
+- Gold: $4,393.20 (-3.44%)
+- EUR/USD: 0.8640
+
+**Day Summary:**
+Jueves de caídas generalizadas. Todos los mercados cierran en rojo: Wall Street cede (S&P 500 -1.21%, NASDAQ -1.63%) y Europa acompaña (EUROSTOXX50 -1.48%, IBEX35 -1.21%). El oro sufre otra corrección importante (-3.44%), arrastrando a SGLD que cae de nuevo hasta -10.78% acumulado — el peor activo del portfolio por amplio margen. El cripto es el principal lastre del día: ETH pierde -4.66% y BTC -3.06%, deshaciendo prácticamente toda la recuperación de ayer. La renta variable resiste algo mejor (SXR8 -0.34%, VWCE -0.20%). El balance cae -€109.05 en un solo día, el peor resultado en valor absoluto reciente, llevando el retorno total al -7.10%. Sin cambios en posiciones — estrategia buy & hold. ETH mantiene territorio positivo acumulado (+0.69%) por los pelos; el resto de activos de riesgo en rojo.
