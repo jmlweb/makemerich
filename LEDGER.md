@@ -634,3 +634,37 @@ Miércoles de recuperación generalizada. El portfolio rebota con fuerza: +€49
 
 **Day Summary:**
 Jueves de caídas generalizadas. Todos los mercados cierran en rojo: Wall Street cede (S&P 500 -1.21%, NASDAQ -1.63%) y Europa acompaña (EUROSTOXX50 -1.48%, IBEX35 -1.21%). El oro sufre otra corrección importante (-3.44%), arrastrando a SGLD que cae de nuevo hasta -10.78% acumulado — el peor activo del portfolio por amplio margen. El cripto es el principal lastre del día: ETH pierde -4.66% y BTC -3.06%, deshaciendo prácticamente toda la recuperación de ayer. La renta variable resiste algo mejor (SXR8 -0.34%, VWCE -0.20%). El balance cae -€109.05 en un solo día, el peor resultado en valor absoluto reciente, llevando el retorno total al -7.10%. Sin cambios en posiciones — estrategia buy & hold. ETH mantiene territorio positivo acumulado (+0.69%) por los pelos; el resto de activos de riesgo en rojo.
+
+---
+
+### Day 43 — March 27, 2026 09:20 CET (REBALANCE)
+
+**Balance:** €4,646.06
+**Day Change:** +€1.42 (+0.03%) vs. Day 42
+**Total Return:** -7.08%
+
+**Trades executed:**
+- **SELL** 1.13 SGLD @ €370.67/share → Net €418.43 (fee €0.42)
+- **BUY** 3.7704 × 4GLD @ €124.56/unit → Net invested €469.61 (fee €0.47)
+  - Source: €418.43 (SGLD proceeds) + €51.18 (from cash reserve)
+
+**Positions post-trade:**
+- 4GLD:  €469.61 (+0.00% | new position — Xetra-Gold, 1g/unit, TER 0%, EUR)
+- SXR8:  €1,329.77 (-2.36%)
+- VWCE:  €1,056.57 (-0.29%)
+- ETH:   €1,174.17 (+0.33%)
+- BTC:   €383.51 (-3.99%)
+- CASH:  €232.43
+
+**Trade Rationale:**
+SGLD was underperforming the spot gold price due to: (1) USD/EUR FX drag — SGLD priced in USD while portfolio is EUR-based; (2) LBMA PM auction timing lag vs. 24h spot; (3) 0.12% annual TER compounding drag. Gold spot reached $4,473 today (+2.24%) and is up ~+60% in 12 months. Analyst consensus targets $5,000–6,000 by Q4 2026 (JPM, Goldman, ANZ). Tariff environment weakens USD → gold tailwind continues. 4GLD (Xetra-Gold, DE000A0S9GB0) eliminates all FX drag (EUR-denominated), TER 0%, physically backed 1g/unit, trades Deutsche Börse Xetra. Superior instrument for same thesis.
+
+**Market Context:**
+- EUR/USD: 0.8660
+- Gold spot: $4,473.60 (+2.24%)
+- S&P 500: 6,477 (-1.21%) — RSI ~29, technically oversold
+- NASDAQ: 21,408 (-1.63%)
+- Crypto F&G Index: 28 (Fear)
+
+**Outlook:**
+Gold is the strongest asset in this risk-off, tariff-driven environment. Equity positions (SXR8, VWCE) held — no exit signal triggered, RSI oversold but tariff headwinds persist until ~July. Watching EQQQ for tactical entry if NASDAQ confirms support. Crypto stops well placed, no action needed.

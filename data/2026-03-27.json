@@ -1,0 +1,102 @@
+{
+  "date": "2026-03-27",
+  "day": 43,
+  "balance": {
+    "total": 4646.06,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 1.30,
+    "percentage": 0.03
+  },
+  "totalReturn": -7.08,
+  "trades": [
+    {
+      "time": "09:20",
+      "action": "SELL",
+      "asset": "SGLD",
+      "units": 1.13,
+      "priceEUR": 370.67,
+      "totalEUR": 418.43,
+      "fee": 0.42,
+      "reason": "Rotating to 4GLD: same gold exposure but EUR-denominated (no FX drag), TER 0% vs 0.12%, better spot tracking"
+    },
+    {
+      "time": "09:20",
+      "action": "BUY",
+      "asset": "4GLD",
+      "units": 3.7704,
+      "priceEUR": 124.56,
+      "totalEUR": 469.61,
+      "fee": 0.47,
+      "reason": "Gold outlook bullish: spot $4,473, analysts target $5,000-6,000 Q4 2026. Tariffs/USD weakness = gold tailwind. 4GLD = 1g physical gold/unit, EUR-denominated, TER 0%, Deutsche Börse"
+    }
+  ],
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 232.43,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "SXR8",
+      "type": "ETF",
+      "description": "iShares S&P 500 UCITS",
+      "units": 2.19,
+      "entryPriceEUR": 621.88,
+      "currentPriceEUR": 524.71,
+      "value": 1329.77,
+      "pnlPercent": -2.36,
+      "change24h": -0.99
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 7.3907,
+      "entryPriceEUR": 143.38,
+      "currentPriceEUR": 123.80,
+      "value": 1056.57,
+      "pnlPercent": -0.29,
+      "change24h": -1.19
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.658029,
+      "entryPriceUSD": 2052.97,
+      "currentPriceUSD": 2059.63,
+      "value": 1174.17,
+      "pnlPercent": 0.33,
+      "change24h": 0.00
+    },
+    {
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.006476,
+      "entryPriceUSD": 71238,
+      "currentPriceUSD": 68383.41,
+      "value": 383.51,
+      "pnlPercent": -3.99,
+      "change24h": -0.59
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC (1g/unit, EUR, TER 0%)",
+      "units": 3.7704,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 124.56,
+      "value": 469.61,
+      "pnlPercent": 0.0,
+      "change24h": 0.0
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-03-27T09:20:00.000Z",
+    "eurUsd": 0.8660
+  }
+}

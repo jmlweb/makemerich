@@ -108,3 +108,19 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 ---
 
 *See [STRATEGY.md](STRATEGY.md) for current approach.*
+
+---
+
+## 2026-03-27: SGLD vs 4GLD — Instrument Quality Matters
+
+**Category:** Strategy / Instrument Selection  
+**Impact:** Reduced FX drag, 0% TER vs 0.12%, better NAV tracking
+
+**What happened:** SGLD (Invesco Physical Gold ETC) showed -9.56% return while spot gold was actually near all-time highs. Investigation revealed three compounding problems: (1) SGLD priced in USD → EUR/USD movements hurt a EUR-based portfolio; (2) LBMA PM auction daily lag means intraday spot moves aren't reflected immediately in SGLD price; (3) 0.12% annual TER slowly erodes returns.
+
+**Lesson:** For EUR-based gold exposure, 4GLD (Xetra-Gold, DE000A0S9GB0) is strictly superior: TER 0%, EUR-denominated, 1g physical gold per unit, trades on Deutsche Börse Xetra. Use 4GLD for gold, not SGLD.
+
+**Action:** Rotated full position SGLD → 4GLD. Also deployed remaining cash into 4GLD given strong gold macro outlook (tariffs, USD weakness, analyst targets $5,000-6,000 Q4 2026).
+
+**Rule added:** When selecting ETFs/ETCs: always check (1) currency denomination vs portfolio currency, (2) TER, (3) tracking methodology. EUR-based portfolio = prefer EUR-denominated instruments.
+
