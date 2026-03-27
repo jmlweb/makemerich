@@ -697,3 +697,38 @@ Gold is the strongest asset in this risk-off, tariff-driven environment. Equity 
 
 **Decisión autónoma:**
 Mercados en risk-off severo. SXR8 cruzó el stop loss -15%. VWCE en el límite exacto — vendida preventivamente. BTC a 5% del stop, ETH a 10%. 4GLD actúa como hedge efectivo. Se acumula cash (53.4%) para reentrar cuando el mercado se estabilice (aranceles Section 122 expiran ~julio 2026). Crypto se mantiene — sin señal de exit y los stops aún no se han activado.
+
+---
+
+### Day 43 — March 27, 2026 21:30 CET (CIERRE)
+
+**Balance:** €3,768.05
+**Day Change vs apertura:** -€878.01 (-18.9%) — El peor día del portfolio
+**Day Change vs stop-loss 18:43:** -€473.05 (-11.2%) — BTC y ETH continuaron cayendo en tarde
+**Total Return:** -24.64% (vs -15.2% a las 18:43)
+
+**Posiciones cierre:**
+| Asset | Valor | P&L vs entry | 24h |
+|-------|-------|-------------|-----|
+| CASH  | €2,266.71 | — | — |
+| ETH   | €1,131.82 | -3.25% | -3.56% |
+| BTC   | €369.52   | -7.51% | -4.22% |
+| 4GLD  | €475.03   | +1.15% | +3.68% (gold spot) |
+| **TOTAL** | **€3,768.05** | **-24.64%** | |
+
+**Market Context (cierre):**
+- EUR/USD: 0.8660
+- SP500: 6,368.85 (-3.38%) — Caída acelerada tras cierre europeo
+- NASDAQ: 20,948.36 (-4.48%)
+- Gold: $4,536.30 (+3.68%) — Refugio máximo del día
+- BTC: $65,888.27 (-4.22%)
+- ETH: $1,986.16 (-3.56%)
+
+**Balance riesgo (stops activos):**
+- BTC stop $62,689: margen 4.9% 🔴 MUY CERCA
+- ETH stop $1,800: margen 9.4% ⚠️
+- 4GLD stop €105.88: margen 15.9% ✅
+- CASH 60.1%: colchón para reentrar
+
+**Evaluación del día:**
+Jornada histórica negativa. Stops de SXR8 y VWCE ejecutados correctamente a las 18:43 — sin esos cortes el portfolio estaría en -30%+. El hedge 4GLD (+3.68%) y el cash (60%) amortiguan el golpe. BTC en zona crítica para mañana: si rompe $62,689 se ejecuta stop automático. El plan de esperar a julio (expiración aranceles) sigue vigente — no hay señal de panic-sell en crypto aún.

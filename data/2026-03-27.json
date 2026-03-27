@@ -2,42 +2,20 @@
   "date": "2026-03-27",
   "day": 43,
   "balance": {
-    "total": 4077.38,
+    "total": 3768.05,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -18.45,
+  "totalReturn": -24.64,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 232.43,
+      "value": 2266.71,
       "pnlPercent": 0
-    },
-    {
-      "asset": "SXR8",
-      "type": "ETF",
-      "description": "iShares S&P 500 UCITS",
-      "units": 2.19,
-      "entryPriceEUR": 621.88,
-      "currentPriceEUR": 598.14,
-      "value": 1309.93,
-      "pnlPercent": -3.82,
-      "change24h": -2.4655121808042275
-    },
-    {
-      "asset": "VWCE",
-      "type": "ETF",
-      "description": "Vanguard All-World UCITS",
-      "units": 7.3907,
-      "entryPriceEUR": 143.38,
-      "currentPriceEUR": 140.98,
-      "value": 1041.94,
-      "pnlPercent": -1.67,
-      "change24h": -2.5573679845175676
     },
     {
       "asset": "ETH",
@@ -45,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 1972.431,
-      "value": 1124,
-      "pnlPercent": -3.92,
-      "change24h": -4.231303694251927
+      "currentPriceUSD": 1986.162,
+      "value": 1131.82,
+      "pnlPercent": -3.25,
+      "change24h": -3.564613721840102
     },
     {
       "asset": "BTC",
@@ -56,14 +34,14 @@
       "description": "Bitcoin",
       "units": 0.006476,
       "entryPriceUSD": 71238,
-      "currentPriceUSD": 65812.46,
-      "value": 369.09,
-      "pnlPercent": -7.62,
-      "change24h": -4.330708861725528
+      "currentPriceUSD": 65888.266,
+      "value": 369.52,
+      "pnlPercent": -7.51,
+      "change24h": -4.220512308002604
     }
   ],
   "metadata": {
-    "generatedAt": "2026-03-27T14:30:20.806Z",
+    "generatedAt": "2026-03-27T20:30:10.819Z",
     "eurUsd": 0.866
   }
 }
