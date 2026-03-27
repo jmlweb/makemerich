@@ -44,3 +44,12 @@ Technical and fundamental signals under surveillance. Updated each session.
 | EQQQ | S&P RSI < 30 confirmado + tariffs news positivos | NASDAQ oversold táctico — esperar catalizador |
 | SOL | < $80 | Alta beta crypto |
 | SXR8 | Tariffs expiran ~julio, RSI rebote | Ampliar posición US equities cuando macro mejore |
+
+## Actualización 2026-03-27 18:43
+
+| Asset | Type | Trigger | Action | Status |
+|-------|------|---------|--------|--------|
+| SXR8 | Stop Loss | €529 (actual €518) | Vender 100% | ✅ EJECUTADO |
+| VWCE | Stop Loss | €122 (actual €122) | Vender 100% | ✅ EJECUTADO |
+| BTC | Alerta | <$63,500 (5% del stop) | Vigilar — posible stop inminente | 🔴 ACTIVA |
+| ETH | Vigilar | <$1,900 (10% del stop) | Posible reducción | ⚠️ ACTIVA |
