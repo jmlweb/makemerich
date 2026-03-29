@@ -793,3 +793,35 @@ Trigger de reentrada: VIX < 22 AND S&P500 > SMA50 (20d) AND sin aranceles nuevos
 S&P500 en bear market técnico (-3.38% ayer, -15% desde máximos). Aranceles Section 122 activos hasta ~julio. VIX elevado. DXS3 (Xtrackers S&P500 Inverse Daily Swap UCITS, LU0322251520) es el instrumento UCITS correcto para posición corta — legal en España, sin necesidad de derivados ni CFDs. Si el S&P cae otro 10%, DXS3 sube ~10%. Stop loss: -15% en DXS3 (=+15% S&P, señal de recuperación).
 
 Posición conservadora: €500 (13% del portfolio). Si la tesis se confirma en los próximos días, se puede aumentar.
+
+---
+
+### Day 44 — March 29, 2026 16:10 CET (DEFENSA EUROPEA)
+
+**Balance:** €4,251.65
+**Total Return:** -14.97%
+
+**Trade ejecutado:**
+- **BUY** 21.622 × NATO @ €18.50/unit → €400 (fee €0.20)
+  - ISIN: IE000OJ5TQP4 — HANetf Future of Defence UCITS ETF
+  - Fuente: XEON reducido €1,577 → €1,177
+
+**Portfolio completo:**
+| Asset | Valor | % | Tesis |
+|-------|-------|---|-------|
+| XEON  | €1,177 | 27.7% | Cash parking ~3.5% APY |
+| ETH   | €1,137 | 26.7% | Crypto largo plazo |
+| DXS3  | €500   | 11.8% | Short S&P500, bear market |
+| 4GLD  | €475   | 11.2% | Oro, flight to safety |
+| NATO  | €400   |  9.4% | Defensa, rearme europeo |
+| BTC   | €374   |  8.8% | Crypto largo plazo |
+| CASH  | €188   |  4.4% | Reserva táctica |
+
+**Racional NATO:**
+Sector con los catalizadores más claros de 2026: (1) rearme europeo acelerado — Alemania eliminó límite constitucional de deuda para defensa, UE aprobó €800B ReArm Europe; (2) Trump presionando OTAN a gastar 5% PIB; (3) conflicto Ucrania sin resolución; (4) ETF subió +50% en 2025 con estos mismos catalizadores y siguen activos. NAT UCITS (HANetf IE000OJ5TQP4) — 81 holdings, 77% large cap, defensivo dentro del sector. Stop: -15% (€15.72). Take profit parcial: +30% (€24.05).
+
+**Estrategia actual — 3 fuentes de rentabilidad simultáneas:**
+1. XEON: rentabilidad cierta (~3.5% APY sobre €1,177 = ~€41/año)
+2. DXS3: gana si S&P500 sigue cayendo (bear market activo)
+3. NATO: gana si rearme europeo continúa (catalizadores sólidos)
+4. 4GLD: gana si el oro sigue en máximos (flight to safety activo)
