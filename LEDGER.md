@@ -767,3 +767,29 @@ Trigger de reentrada: VIX < 22 AND S&P500 > SMA50 (20d) AND sin aranceles nuevos
 - BTC: $66,621 (+0.45%)  
 - ETH: $1,990 (-0.11%)
 - S&P500: 6,368 — bear market técnico activo
+
+---
+
+### Day 44 — March 29, 2026 15:55 CET (SHORT TÁCTICO)
+
+**Balance:** €4,251.85
+**Total Return:** -14.96%
+
+**Trade ejecutado:**
+- **BUY** 16.949 × DXS3 @ €29.50/unit → €500 (fee €0.25)
+  - Fuente: XEON reducido de €2,077 → €1,577
+
+**Posiciones actualizadas:**
+| Asset | Valor | Tipo | Tesis |
+|-------|-------|------|-------|
+| XEON  | €1,577.46 | Monetario | Cash parking ~3.5% APY |
+| DXS3  | €500.00 | SHORT S&P500 | Bear market activo, aranceles |
+| ETH   | €1,136.91 | Crypto | Stop $1,800 |
+| BTC   | €374.49   | Crypto | Stop $62,689 |
+| 4GLD  | €475.03   | Oro | Hedge inflación |
+| CASH  | €187.96   | Reserva | 5% táctico |
+
+**Racional:**
+S&P500 en bear market técnico (-3.38% ayer, -15% desde máximos). Aranceles Section 122 activos hasta ~julio. VIX elevado. DXS3 (Xtrackers S&P500 Inverse Daily Swap UCITS, LU0322251520) es el instrumento UCITS correcto para posición corta — legal en España, sin necesidad de derivados ni CFDs. Si el S&P cae otro 10%, DXS3 sube ~10%. Stop loss: -15% en DXS3 (=+15% S&P, señal de recuperación).
+
+Posición conservadora: €500 (13% del portfolio). Si la tesis se confirma en los próximos días, se puede aumentar.

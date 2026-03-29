@@ -104,3 +104,49 @@ Tras ejecutar stops de SXR8/VWCE el 27/03, el cash se aparca en XEON hasta que s
 
 **Monetario como posición permanente:**
 Siempre que haya >15% en cash sin uso previsto en <2 semanas → mover a XEON.
+
+---
+
+## Mandato Actualizado — 2026-03-29: Maximización Agresiva
+
+**Objetivo primario: maximizar retorno a toda costa dentro de la legalidad española.**
+
+Esto incluye zonas grises legales. Si es legal en España (aunque controvertido), es válido.
+
+### Universo de inversión expandido
+
+#### ETFs sectoriales "controvertidos" (100% UCITS/legales)
+
+| Sector | Ticker | ISIN | Notas |
+|--------|--------|------|-------|
+| Cannabis medicinal | FLWR | IE00BJXRZ273 | Rize Medical Cannabis UCITS ETF, ~TER 0.65% |
+| Gambling/betting | BETZ | — | No UCITS — buscar alternativa |
+| Defensa | DFEN/NATO | IE disponibles | Sector en auge por rearme europeo |
+| Uranio/nuclear | URNM | — | Buscar UCITS equivalente |
+
+#### ETFs apalancados UCITS (legales en España para minoristas)
+
+| Producto | Apalancamiento | Cuándo usar |
+|----------|---------------|-------------|
+| 2x S&P500 (2SPX) | 2x long | Solo en tendencia alcista confirmada |
+| -1x S&P500 (SPXS equiv UCITS) | 1x short | Bear market activo — NOW |
+| 3x BTC (3BTC) | 3x long | Solo en bull crypto confirmado |
+
+#### Crypto ampliado
+
+| Asset | Riesgo | Tesis |
+|-------|--------|-------|
+| SOL | Muy alto | Alta beta, recuperación fuerte en bull |
+| AVAX | Muy alto | Correlación BTC pero mayor upside |
+| Staking ETH simulado | Medio | +4% APY sobre posición ETH |
+
+#### Derivados/posiciones cortas (UCITS warrants, CFDs simulados)
+
+- **Short S&P500**: con el mercado en bear técnico activo, una posición corta táctica es lo más lógico ahora mismo
+- **Short NASDAQ**: igual — caída -20% desde máximos, aranceles activos hasta julio
+
+### Regla de oro actualizada
+
+> Si el mercado cae, HAL DEBE ganar dinero. Posiciones cortas, inversos, hedges asimétricos.
+> El objetivo es 10x, no preservar capital.
+
