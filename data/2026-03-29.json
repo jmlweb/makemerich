@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-29",
+  "day": 44,
+  "balance": {
+    "total": 3778.11,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 10.06,
+    "percentage": 0.27
+  },
+  "totalReturn": -24.44,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 2266.71,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.658029,
+      "entryPriceUSD": 2052.97,
+      "currentPriceUSD": 1990.503,
+      "value": 1136.91,
+      "pnlPercent": -3.04,
+      "change24h": -0.11000178150695453
+    },
+    {
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.006476,
+      "entryPriceUSD": 71238,
+      "currentPriceUSD": 66620.94,
+      "value": 374.49,
+      "pnlPercent": -6.48,
+      "change24h": 0.45423158233763794
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-03-29T13:43:18.189Z",
+    "eurUsd": 0.868
+  }
+}

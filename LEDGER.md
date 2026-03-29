@@ -732,3 +732,38 @@ Mercados en risk-off severo. SXR8 cruzó el stop loss -15%. VWCE en el límite e
 
 **Evaluación del día:**
 Jornada histórica negativa. Stops de SXR8 y VWCE ejecutados correctamente a las 18:43 — sin esos cortes el portfolio estaría en -30%+. El hedge 4GLD (+3.68%) y el cash (60%) amortiguan el golpe. BTC en zona crítica para mañana: si rompe $62,689 se ejecuta stop automático. El plan de esperar a julio (expiración aranceles) sigue vigente — no hay señal de panic-sell en crypto aún.
+
+---
+
+### Day 44 — March 29, 2026 15:45 CET (REBALANCE — Cash deployment)
+
+**Balance:** €4,252.10
+**Day Change:** +€474.05 vs Day 43 close (reclasificación interna, no P&L real)
+**Total Return:** -14.96%
+
+**Trades ejecutados:**
+- **BUY** 14.788 × XEON @ €140.50/unit → Net €2,077.71 (fee €1.04)
+  - Fuente: €2,078.75 de CASH
+
+**Posiciones post-trade:**
+| Asset | Valor | P&L vs entry | Notas |
+|-------|-------|-------------|-------|
+| XEON  | €2,077.71 | +0.00% | Monetario EUR, ~3.5% anual |
+| ETH   | €1,136.91 | -3.04% | Stop $1,800 activo |
+| BTC   | €374.49   | -6.48% | Stop $62,689 activo |
+| 4GLD  | €475.03   | +1.15% | Hedge oro EUR |
+| CASH  | €187.96   | — | 5% reserva táctica |
+| **TOTAL** | **€4,252.10** | **-14.96%** | |
+
+**Racional:**
+€2,266 en cash a 0% durante semanas/meses mientras se espera reentrada en renta variable (objetivo julio, expiración aranceles Section 122) es capital desperdiciado. XEON (LU1190417599, Lyxor Smart Overnight Return UCITS ETF) replica el índice Euro Short-Term Rate (€STR), actualmente ~3.5% anual. Ventajas: TER 0.07%, liquidez diaria total, sin riesgo de tipos (duración <1 día), domiciliado en Luxemburgo (UCITS), 100% legal en España. Ahorro estimado vs cash puro: ~€18-22 en 3 meses. No es transformador pero es lo correcto — el cash no trabaja gratis.
+
+**Reglas de reentrada en renta variable (añadidas a STRATEGY.md):**
+Trigger de reentrada: VIX < 22 AND S&P500 > SMA50 (20d) AND sin aranceles nuevos activos. En ese momento: liquidar parte XEON y reentrar en SXR8 + VWCE según asignación objetivo.
+
+**Market Context:**
+- EUR/USD: 0.8680
+- Gold: $4,524 (+0.72%)
+- BTC: $66,621 (+0.45%)  
+- ETH: $1,990 (-0.11%)
+- S&P500: 6,368 — bear market técnico activo

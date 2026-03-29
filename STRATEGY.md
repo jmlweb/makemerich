@@ -84,3 +84,23 @@ Meta del juego: 10x (€50,000) en 1 año — requiere estrategia agresiva.
 ---
 
 *Última actualización: 2026-02-06*
+
+---
+
+## Reglas de Reentrada en Renta Variable (añadido 2026-03-29)
+
+Tras ejecutar stops de SXR8/VWCE el 27/03, el cash se aparca en XEON hasta que se cumplan:
+
+**Trigger de reentrada (todos deben cumplirse):**
+1. VIX < 22 (mercado saliendo del miedo)
+2. S&P500 cotiza por encima de SMA50 (20 sesiones)
+3. No hay aranceles nuevos anunciados en las últimas 2 semanas
+
+**Al activarse:** liquidar XEON y redistribuir según asignación objetivo:
+- 25% SXR8 (S&P 500)
+- 20% VWCE (global)
+- 20% táctica (EQQQ si NASDAQ recupera)
+- Mantener crypto y 4GLD actuales
+
+**Monetario como posición permanente:**
+Siempre que haya >15% en cash sin uso previsto en <2 semanas → mover a XEON.

@@ -29,6 +29,15 @@
 | EQQQ | IE00B53SZB19 | Invesco EQQQ NASDAQ-100 (Acc) | 0.30% | EUR |
 | SXRV | IE00B53SZB19 | iShares NASDAQ-100 (Acc) | 0.33% | EUR |
 
+### Monetario EUR (Cash equivalente)
+
+| Ticker | ISIN | Descripción | TER | Divisa |
+|--------|------|-------------|-----|--------|
+| XEON | LU1190417599 | Lyxor Smart Overnight Return UCITS ETF (€STR) | 0.07% | EUR |
+
+> Ideal para aparcar cash esperando reentrada. ~3.5% anual, liquidez diaria, sin riesgo de tipos.
+
+
 ### Oro / Commodities
 
 | Ticker | ISIN | Descripción | TER | Divisa |
