@@ -825,3 +825,18 @@ Sector con los catalizadores más claros de 2026: (1) rearme europeo acelerado �
 2. DXS3: gana si S&P500 sigue cayendo (bear market activo)
 3. NATO: gana si rearme europeo continúa (catalizadores sólidos)
 4. 4GLD: gana si el oro sigue en máximos (flight to safety activo)
+
+---
+
+### Day 44 — March 29, 2026 17:25 CET (AMPLIAR SHORT + TRAILING STOP BTC)
+
+**Balance:** €4,251.50 | **Total Return:** -14.97%
+
+**Operaciones:**
+- **BUY** 10.170 × DXS3 @ €29.50 → +€300 adicionales (DXS3 total: €800)
+- **TRAILING STOP BTC**: $62,689 → $64,500 (BTC actual $66,514, margen 3%)
+
+**Racional:**
+5ª semana consecutiva de caídas. JPMorgan recorta target S&P500 a 7,200 y advierte posible slide a 6,000. Probabilidad subida tipos 2026 cruza 50% por primera vez. DXS3 ampliado de €500 a €800 (18.8% del portfolio) — posición aún conservadora pero más alineada con convicción bajista. BTC a solo $2,000 del stop anterior — trailing ajustado a $64,500 para proteger capital si rompe soporte.
+
+**Posiciones bajistas acumuladas: €800 DXS3 (18.8%)**
