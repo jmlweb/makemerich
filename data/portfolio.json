@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T07:56:56.138Z",
+  "last_updated": "2026-03-30T12:49:22.921683",
   "holdings": {
     "CASH": {
       "amount_eur": 187.96
@@ -32,19 +32,19 @@
       "units": 14.0007,
       "entry_price_eur": 148.4,
       "current_price_eur": 148.76,
-      "amount_eur": 2082.74,
+      "amount_eur": 1682.54,
       "pnl_pct": 0.24,
       "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF — monetario EUR, ~3.5% anual"
+      "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 monetario EUR, ~3.5% anual"
     },
     "DXS3": {
-      "units": 140.5975,
+      "units": 210.8963,
       "entry_price_eur": 5.69,
       "current_price_eur": 5.694,
-      "amount_eur": 800.56,
+      "amount_eur": 1200.56,
       "pnl_pct": 0.07,
       "stop_loss_eur": 4.84,
-      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520) — short táctico bear market"
+      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520) \u2014 short t\u00e1ctico bear market"
     },
     "NATO": {
       "units": 21.6216,
@@ -53,14 +53,14 @@
       "amount_eur": 350.71,
       "pnl_pct": 0,
       "stop_loss_eur": 15.72,
-      "note": "HANetf Future of Defence UCITS ETF (IE000OJ5TQP4) — defensa global, +50% en 2025",
+      "note": "HANetf Future of Defence UCITS ETF (IE000OJ5TQP4) \u2014 defensa global, +50% en 2025",
       "current_price_usd": 18.644
     }
   },
   "totals": {
-    "balance_eur": 5457.2,
+    "balance_eur": 5457.0,
     "initial_eur": 5000,
-    "pnl_eur": 457.2,
+    "pnl_eur": 457.0,
     "pnl_pct": 9.14
   }
 }

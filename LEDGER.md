@@ -840,3 +840,19 @@ Sector con los catalizadores más claros de 2026: (1) rearme europeo acelerado �
 5ª semana consecutiva de caídas. JPMorgan recorta target S&P500 a 7,200 y advierte posible slide a 6,000. Probabilidad subida tipos 2026 cruza 50% por primera vez. DXS3 ampliado de €500 a €800 (18.8% del portfolio) — posición aún conservadora pero más alineada con convicción bajista. BTC a solo $2,000 del stop anterior — trailing ajustado a $64,500 para proteger capital si rompe soporte.
 
 **Posiciones bajistas acumuladas: €800 DXS3 (18.8%)**
+
+---
+
+### Day 45 — March 30, 2026 12:50 CET (PRE-LIBERATION DAY SHORT)
+
+**Balance:** €5,457 | **Total Return:** +9.14%
+
+**Trade:**
+- **BUY** 70.299 × DXS3 @ €5.69 → +€400 (DXS3 total: €1,200, 22% portfolio)
+- Fuente: XEON €2,082 → €1,682
+
+**Racional:**
+"Liberation Day" 2 de abril — Trump anunciará nuevos aranceles masivos. En 2025 el mismo evento causó -12% en S&P500 en 4 días. El mercado ya está en caída (-3.38% S&P, -4.48% NASDAQ hoy). DXS3 es posición corta directa sobre S&P500. Amplío de €800 → €1,200 (22% del portfolio) antes del catalizador. Crypto sube hoy (+2-3%) mientras equities caen — confirmando rotación, mantengo ETH/BTC.
+
+**Catalizador identificado:** 2 abril Liberation Day
+**Riesgo:** Si Trump sorprende con moderación en aranceles, S&P rebota y DXS3 pierde. Stop -15% en DXS3.
