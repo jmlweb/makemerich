@@ -856,3 +856,43 @@ Sector con los catalizadores más claros de 2026: (1) rearme europeo acelerado �
 
 **Catalizador identificado:** 2 abril Liberation Day
 **Riesgo:** Si Trump sorprende con moderación en aranceles, S&P rebota y DXS3 pierde. Stop -15% en DXS3.
+
+---
+
+### Auditoría — March 30, 2026 13:10 CET (CORRECCIÓN CONTABLE)
+
+**Errores encontrados y corregidos:**
+
+#### Error 1: Day 43 balance subestimado
+- LEDGER reportó €3,768.05 excluyendo 4GLD (€475.03)
+- Balance real Day 43: **€4,243.08**
+- El LEDGER del Day 44 indicó "+€474 (reclasificación interna)" como si fuera un ajuste — en realidad era un error previo de contabilización
+
+#### Error 2: XEON precio de entrada incorrecto
+- Al añadir XEON al script de valoración se usó €148.40 como precio de entrada en lugar de €140.50 (precio real de compra)
+- Esto generó unidades infladas y valor inflado
+- Corregido: 14.788 unidades al precio real €140.50, pero el valor contable XEON es €476.91 (lo que queda tras financiar DXS3 y NATO)
+
+#### Error 3: DXS3 precio de entrada incorrecto en LEDGER
+- Los trades del Day 44 se registraron a €29.50/unit (precio incorrecto)
+- Precio real de DXS3 en mercado: ~€5.69/unit
+- Total invertido en DXS3 sigue siendo correcto (€1,200)
+
+**Balance correcto post-auditoría:**
+| Asset | Valor | % | P&L |
+|-------|-------|---|-----|
+| DXS3  | €1,200 | 28.2% | +0.00% |
+| ETH   | €1,178 | 27.7% | +0.25% |
+| 4GLD  | €477   | 11.2% | +1.55% |
+| XEON  | €477   | 11.2% | +5.88% |
+| BTC   | €380   | 8.9%  | -5.31% |
+| NATO  | €350   | 8.2%  | -12.43% |
+| CASH  | €188   | 4.4%  | — |
+| **TOTAL** | **€4,250** | | **-15.0%** |
+
+**Nota de auditoría:** La pérdida real del -15% vs capital inicial refleja principalmente:
+1. Pérdidas realizadas en stops (SXR8, VWCE, SGLD): ~-€475
+2. Pérdida no realizada en crypto desde entradas (BTC -5.3%, ETH pequeña ganancia)
+3. NATO bajó -12.4% desde entrada (comprado en máximo local)
+4. Fees acumulados: ~€5
+

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T12:53:16.506879",
+  "last_updated": "2026-03-30T13:15:40.535952",
   "holdings": {
     "CASH": {
       "amount_eur": 187.96
@@ -40,27 +40,26 @@
     "DXS3": {
       "units": 210.8963,
       "entry_price_eur": 5.69,
-      "current_price_eur": 5.694,
-      "amount_eur": 1200.56,
-      "pnl_pct": 0.07,
+      "current_price_eur": 5.69,
+      "amount_eur": 1200.0,
+      "pnl_pct": 0.0,
       "stop_loss_eur": 4.84,
-      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520) \u2014 short t\u00e1ctico bear market"
+      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520)"
     },
     "NATO": {
       "units": 21.6216,
       "entry_price_eur": 18.5,
-      "current_price_eur": 16.202,
-      "amount_eur": 350.71,
-      "pnl_pct": 0,
+      "current_price_eur": 16.2,
+      "amount_eur": 350.27,
+      "pnl_pct": -12.43,
       "stop_loss_eur": 15.72,
-      "note": "HANetf Future of Defence UCITS ETF (IE000OJ5TQP4) \u2014 defensa global, +50% en 2025",
-      "current_price_usd": 18.644
+      "note": "HANetf Future of Defence UCITS (IE000OJ5TQP4)"
     }
   },
   "totals": {
-    "balance_eur": 4251.37,
+    "balance_eur": 4250.37,
     "initial_eur": 5000,
-    "pnl_eur": -748.63,
-    "pnl_pct": -14.97
+    "pnl_eur": -749.63,
+    "pnl_pct": -14.99
   }
 }
