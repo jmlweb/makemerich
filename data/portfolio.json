@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29T17:24:50.340174",
+  "last_updated": "2026-03-30T07:56:56.138Z",
   "holdings": {
     "CASH": {
       "amount_eur": 187.96
@@ -7,59 +7,60 @@
     "ETH": {
       "units": 0.658029,
       "entry_price_usd": 2052.97,
-      "current_price_usd": 1990.503,
-      "amount_eur": 1136.91,
-      "pnl_pct": -3.04,
+      "current_price_usd": 2058.1294,
+      "amount_eur": 1178.25,
+      "pnl_pct": 0.25,
       "stop_loss_usd": 1800
     },
     "BTC": {
       "units": 0.006476,
       "entry_price_usd": 71238,
-      "current_price_usd": 66620.94,
-      "amount_eur": 374.49,
-      "pnl_pct": -6.48,
+      "current_price_usd": 67457.37,
+      "amount_eur": 380.06,
+      "pnl_pct": -5.31,
       "stop_loss_usd": 64500
     },
     "4GLD": {
       "units": 3.7704,
       "entry_price_eur": 124.56,
-      "current_price_eur": 125.99,
-      "amount_eur": 475.03,
-      "pnl_pct": 1.15,
+      "current_price_eur": 126.49,
+      "amount_eur": 476.92,
+      "pnl_pct": 1.55,
       "stop_loss_eur": 105.88
     },
     "XEON": {
-      "units": 14.788,
-      "entry_price_eur": 140.5,
-      "current_price_eur": 140.5,
-      "amount_eur": 877.11,
-      "pnl_pct": 0.0,
+      "units": 14.0007,
+      "entry_price_eur": 148.4,
+      "current_price_eur": 148.76,
+      "amount_eur": 2082.74,
+      "pnl_pct": 0.24,
       "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 monetario EUR, ~3.5% anual"
+      "note": "Lyxor Smart Overnight Return UCITS ETF — monetario EUR, ~3.5% anual"
     },
     "DXS3": {
-      "units": 27.1187,
-      "entry_price_eur": 29.5,
-      "current_price_eur": 29.5,
-      "amount_eur": 800.0,
-      "pnl_pct": 0.0,
-      "stop_loss_eur": 25.07,
-      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520) \u2014 short t\u00e1ctico bear market"
+      "units": 140.5975,
+      "entry_price_eur": 5.69,
+      "current_price_eur": 5.694,
+      "amount_eur": 800.56,
+      "pnl_pct": 0.07,
+      "stop_loss_eur": 4.84,
+      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520) — short táctico bear market"
     },
     "NATO": {
       "units": 21.6216,
       "entry_price_eur": 18.5,
-      "current_price_eur": 18.5,
-      "amount_eur": 400.0,
-      "pnl_pct": 0.0,
+      "current_price_eur": 16.202,
+      "amount_eur": 350.71,
+      "pnl_pct": 0,
       "stop_loss_eur": 15.72,
-      "note": "HANetf Future of Defence UCITS ETF (IE000OJ5TQP4) \u2014 defensa global, +50% en 2025"
+      "note": "HANetf Future of Defence UCITS ETF (IE000OJ5TQP4) — defensa global, +50% en 2025",
+      "current_price_usd": 18.644
     }
   },
   "totals": {
-    "balance_eur": 4251.5,
+    "balance_eur": 5457.2,
     "initial_eur": 5000,
-    "pnl_eur": -748.5,
-    "pnl_pct": -14.97
+    "pnl_eur": 457.2,
+    "pnl_pct": 9.14
   }
 }

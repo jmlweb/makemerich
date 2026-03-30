@@ -30,6 +30,11 @@ const ASSET_INFO = {
   BTC: { yahoo: "BTC-USD", currency: "USD", description: "Bitcoin", type: "Crypto" },
   ETH: { yahoo: "ETH-USD", currency: "USD", description: "Ethereum", type: "Crypto" },
   SOL: { yahoo: "SOL-USD", currency: "USD", description: "Solana", type: "Crypto" },
+  // New portfolio assets
+  "4GLD": { yahoo: "4GLD.DE", currency: "EUR", description: "Xetra-Gold ETC (1g/unit)", type: "ETC" },
+  XEON: { yahoo: "XEON.DE", currency: "EUR", description: "Lyxor Smart Overnight Return (€STR)", type: "ETF" },
+  DXS3: { yahoo: "DXS3.DE", currency: "EUR", description: "Xtrackers S&P500 Inverse Daily UCITS", type: "ETF" },
+  NATO: { yahoo: "NATO.L", currency: "USD", description: "HANetf Future of Defence UCITS", type: "ETF" },
   // Legacy US ETFs (reference only)
   VOO: { yahoo: "VOO", currency: "USD", description: "Vanguard S&P 500 ETF", type: "ETF" },
   GLD: { yahoo: "GLD", currency: "USD", description: "SPDR Gold Trust", type: "ETF" },

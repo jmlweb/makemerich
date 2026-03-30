@@ -1,0 +1,90 @@
+{
+  "date": "2026-03-30",
+  "day": 45,
+  "balance": {
+    "total": 5457.2,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": 9.14,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 187.96,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.658029,
+      "entryPriceUSD": 2052.97,
+      "currentPriceUSD": 2058.1294,
+      "value": 1178.25,
+      "pnlPercent": 0.25,
+      "change24h": 3.811723803323541
+    },
+    {
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.006476,
+      "entryPriceUSD": 71238,
+      "currentPriceUSD": 67457.37,
+      "value": 380.06,
+      "pnlPercent": -5.31,
+      "change24h": 2.2779953337825245
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 3.7704,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 126.49,
+      "value": 476.92,
+      "pnlPercent": 1.55,
+      "change24h": 3.307742567788302
+    },
+    {
+      "asset": "XEON",
+      "type": "ETF",
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 14.0007,
+      "entryPriceEUR": 148.4,
+      "currentPriceEUR": 148.76,
+      "value": 2082.74,
+      "pnlPercent": 0.24,
+      "change24h": 0.011429109269004867
+    },
+    {
+      "asset": "DXS3",
+      "type": "ETF",
+      "description": "Xtrackers S&P500 Inverse Daily UCITS",
+      "units": 140.5975,
+      "entryPriceEUR": 5.69,
+      "currentPriceEUR": 5.694,
+      "value": 800.56,
+      "pnlPercent": 0.07,
+      "change24h": 2.5207057976233287
+    },
+    {
+      "asset": "NATO",
+      "type": "ETF",
+      "description": "HANetf Future of Defence UCITS",
+      "units": 21.6216,
+      "currentPriceUSD": 18.644,
+      "value": 350.71,
+      "pnlPercent": 0,
+      "change24h": -3.6883975617315947
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-03-30T07:56:56.138Z",
+    "eurUsd": 0.87
+  }
+}
