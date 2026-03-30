@@ -144,3 +144,73 @@ Adicionalmente, el script no estaba rebajando el valor de XEON cuando se usó pa
 3. **Verificar balance antes y después** de cualquier cambio en scripts contables: si el balance salta >5% sin un trade ejecutado, hay un bug
 
 **Rule added:** Antes de hacer commit de cualquier cambio en scripts de valoración, verificar que el balance resultante = balance anterior ± trades ejecutados ± variación de precio razonable. Si no cuadra → investigar antes de commitear.
+
+---
+
+## 2026-03-30: Auditoría completa — lecciones de contabilidad y operaciones
+
+**Category:** Operations / Accounting / Strategy  
+**Impact:** Balance incorrecto durante días, decisiones tomadas sobre datos falsos
+
+---
+
+### Lección 1: Verificar el total del portfolio después de cada trade
+
+**What happened:** El Day 43, tras ejecutar la rotación SGLD→4GLD y los stops de SXR8/VWCE, el LEDGER registró el balance excluyendo 4GLD. El error pasó desapercibido durante días porque no había un check automático de "suma de posiciones = total reportado".
+
+**Rule:** Después de cada trade, calcular `sum(holdings.values())` y comparar con el balance reportado. Si difieren en >€1, hay un error.
+
+---
+
+### Lección 2: Nunca usar el precio de mercado actual como precio de entrada
+
+**What happened:** Al añadir XEON al script de valoración, se usó el precio de mercado del día (€148.40) como `entry_price_eur` en lugar del precio real de compra (€140.50). Esto infló el P&L calculado y confundió el análisis.
+
+**Rule:** `entry_price` = precio al que se ejecutó la orden. Siempre. El script de valoración debe respetar ese precio y calcular P&L como `(current - entry) / entry`.
+
+---
+
+### Lección 3: Dos fuentes de verdad = garantía de error
+
+**What happened:** Los trades se registraban en Python (portfolio.json) pero el script de Node (update-portfolio.js) recalculaba los valores desde `units × current_price`, sobreescribiendo los ajustes manuales. Esto creó una desincronización permanente.
+
+**Rule:** Una sola fuente de verdad. El script de valoración solo debe actualizar `current_price_eur` y recalcular `amount_eur = units × current_price`. El `entry_price` y las `units` son inmutables desde el momento del trade.
+
+---
+
+### Lección 4: El timing de los stops importa — no solo el nivel
+
+**What happened:** El stop de SXR8 se ejecutó al -16.7% (superando el -15% definido) porque el mercado abrió directamente por debajo del nivel. Con un stop market en vez de limit, se habría ejecutado exactamente en el -15%.
+
+**Lesson:** En bear markets con alta volatilidad, los gaps de apertura pueden superar el stop. Considerar reducir el tamaño de posición cuando la volatilidad es alta, no solo ajustar el nivel de stop.
+
+---
+
+### Lección 5: NATO comprado en máximo local — sizing demasiado agresivo
+
+**What happened:** NATO se compró el 29 de marzo a €18.50 y cayó a €16.20 (-12.4%) casi inmediatamente. La tesis es correcta (rearme europeo) pero el timing fue malo — el ETF ya había subido +50% en 2025 y estaba en sobrecompra.
+
+**Lesson:** Para activos con momentum fuerte ya descontado, entrar con sizing reducido (€200 en vez de €400) y escalar si confirma soporte. No perseguir movimientos ya realizados.
+
+---
+
+### Lección 6: El cash inactivo tiene coste real
+
+**What happened:** €2,266 en cash durante días mientras el mercado se movía. La decisión de moverlo a XEON fue correcta pero tardó demasiado.
+
+**Rule:** Cualquier posición en cash >15% del portfolio durante >48h debe moverse a XEON. El coste de oportunidad a 3.5% APY es pequeño, pero es dinero gratis que no se debe dejar sobre la mesa.
+
+---
+
+### Patrón identificado: Los mejores trades fueron los más rápidos
+
+| Trade | Velocidad | Resultado |
+|-------|-----------|-----------|
+| SGLD → 4GLD | Rápido (tesis clara) | Correcto, ahorra FX drag |
+| Stops SXR8/VWCE | Automático | Evitó -30% adicional |
+| XEON deploy | Tardó 2 días | Correcto pero tardío |
+| DXS3 pre-Liberation Day | Inmediato | Por verificar |
+| NATO | Inmediato | Timing malo, sizing excesivo |
+
+**Lesson:** La velocidad es buena cuando la tesis está clara y el instrumento es el correcto. La velocidad sin análisis (NATO en sobrecompra) genera pérdidas. El criterio no es "actuar rápido" sino "actuar cuando hay convicción + instrumento correcto + timing razonable".
+
