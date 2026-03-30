@@ -226,3 +226,16 @@ cd ~/makemerich && git add -A && git commit -m "Day X: [summary]" && git push
 - El coste de no actuar > el coste de actuar y equivocarse
 
 La velocidad de ejecución es ventaja competitiva. Cada hora de delay es dinero perdido.
+
+---
+
+## Flujo de Reporting (2026-03-30)
+
+**El orden correcto es:**
+1. Obtener datos de mercado
+2. Analizar posiciones y oportunidades
+3. Tomar decisiones y ejecutar trades
+4. Emitir reporte con lo que se hizo (incluyendo "no action" si aplica)
+
+**Nunca emitir un reporte con recomendaciones sin haber actuado primero.**
+El reporte es un log de hechos, no una lista de sugerencias.
