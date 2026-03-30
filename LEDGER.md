@@ -907,3 +907,28 @@ Sector con los catalizadores más claros de 2026: (1) rearme europeo acelerado �
 
 **Racional:**
 Crypto subiendo (+3.6% ETH, +2.1% BTC) mientras equities caen. Con el rally, los stops anteriores quedaron demasiado lejos — ajuste de trailing para proteger las ganancias parciales si hay reversión. Cash €188 insuficiente para nueva posición relevante. DXS3 bien posicionado para Liberation Day (2 abril). Sin trades de entrada — concentración máxima ya alcanzada en el short.
+
+---
+
+### Day 45 — March 30, 2026 18:20 CET (BTC → DXS3 ROTACIÓN)
+
+**Balance:** €4,263.75 | **Total Return:** -14.72%
+
+**Trades:**
+- **SELL** 0.006476 BTC @ $67,395 → €379.52 neto (fee €0.19) | P&L: **-5.39% (pérdida realizada)**
+- **BUY** 66.700 × DXS3 @ €5.69 → €379.52
+
+**DXS3 total: €1,573 (36.9% portfolio)**
+
+**Racional:**
+BTC a solo $1,895 del stop ($65,500) con Liberation Day el jueves y volatilidad macro alta. Riesgo asimétrico negativo: si salta el stop, perdemos €383 de golpe. La tesis de BTC (crypto bull) está en conflicto con el entorno macro bajista que estamos jugando con DXS3. Rotación BTC → DXS3: elimina la contradicción táctica, concentra la apuesta bajista antes del catalizador clave, y evita el riesgo de stop-out involuntario en el peor momento.
+
+**Portfolio actual:**
+| Asset | Valor | % |
+|-------|-------|---|
+| DXS3  | €1,574 | 36.9% |
+| ETH   | €1,189 | 27.9% |
+| XEON  | €477   | 11.2% |
+| 4GLD  | €482   | 11.3% |
+| NATO  | €355   | 8.3%  |
+| CASH  | €188   | 4.4%  |

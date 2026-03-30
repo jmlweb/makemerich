@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T16:35:43.143677",
+  "last_updated": "2026-03-30T18:17:17.657154",
   "holdings": {
     "CASH": {
       "amount_eur": 187.96
@@ -11,14 +11,6 @@
       "amount_eur": 1188.52,
       "pnl_pct": 1.13,
       "stop_loss_usd": 1900
-    },
-    "BTC": {
-      "units": 0.006476,
-      "entry_price_usd": 71238,
-      "current_price_usd": 67933.89,
-      "amount_eur": 382.75,
-      "pnl_pct": -4.64,
-      "stop_loss_usd": 65500
     },
     "4GLD": {
       "units": 3.7704,
@@ -38,10 +30,10 @@
       "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 monetario EUR, ~3.5% anual"
     },
     "DXS3": {
-      "units": 210.8963,
+      "units": 277.5958,
       "entry_price_eur": 5.69,
       "current_price_eur": 5.663,
-      "amount_eur": 1194.31,
+      "amount_eur": 1573.83,
       "pnl_pct": -0.47,
       "stop_loss_eur": 4.84,
       "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520)"
@@ -58,9 +50,9 @@
     }
   },
   "totals": {
-    "balance_eur": 4266.97,
+    "balance_eur": 4263.75,
     "initial_eur": 5000,
-    "pnl_eur": -733.03,
-    "pnl_pct": -14.66
+    "pnl_eur": -736.25,
+    "pnl_pct": -14.72
   }
 }
