@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T12:49:22.921683",
+  "last_updated": "2026-03-30T12:53:16.506879",
   "holdings": {
     "CASH": {
       "amount_eur": 187.96
@@ -29,11 +29,11 @@
       "stop_loss_eur": 105.88
     },
     "XEON": {
-      "units": 14.0007,
-      "entry_price_eur": 148.4,
+      "units": 3.2059,
+      "entry_price_eur": 140.5,
       "current_price_eur": 148.76,
-      "amount_eur": 1682.54,
-      "pnl_pct": 0.24,
+      "amount_eur": 476.91,
+      "pnl_pct": 5.88,
       "stop_loss_eur": null,
       "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 monetario EUR, ~3.5% anual"
     },
@@ -58,9 +58,9 @@
     }
   },
   "totals": {
-    "balance_eur": 5457.0,
+    "balance_eur": 4251.37,
     "initial_eur": 5000,
-    "pnl_eur": 457.0,
-    "pnl_pct": 9.14
+    "pnl_eur": -748.63,
+    "pnl_pct": -14.97
   }
 }
