@@ -124,3 +124,23 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 
 **Rule added:** When selecting ETFs/ETCs: always check (1) currency denomination vs portfolio currency, (2) TER, (3) tracking methodology. EUR-based portfolio = prefer EUR-denominated instruments.
 
+
+---
+
+## 2026-03-30: Error contable — XEON precio de entrada incorrecto
+
+**Category:** Operations / Accounting  
+**Impact:** Balance inflado €1,206 (+29% ficticio)
+
+**What happened:** Al añadir XEON al ASSET_INFO del script, se usó el precio de mercado actual (€148.40) como precio de entrada en lugar del precio real de compra (€140.50). Esto generó menos unidades de las reales y cuando el script valoró la posición multiplicó un precio actual más alto × unidades incorrectas, inflando el valor de XEON de €477 real a €1,682.
+
+Adicionalmente, el script no estaba rebajando el valor de XEON cuando se usó para financiar otras posiciones (DXS3, NATO) — esos movimientos se hacían en Python directamente en portfolio.json pero el script de Node los sobreescribía al ejecutar update-portfolio.js.
+
+**Root cause:** Dos fuentes de verdad (Python scripts vs Node script) sin sincronización. El Node script recalcula desde unidades × precio, ignorando los movimientos de caja manuales.
+
+**Lesson:** 
+1. **Siempre usar el precio de compra real** como `entry_price_eur` — nunca el precio de mercado en el momento de añadir al script
+2. **Una sola fuente de verdad**: o el script calcula todo desde trades, o portfolio.json es la fuente y el script solo actualiza precios — no ambas cosas
+3. **Verificar balance antes y después** de cualquier cambio en scripts contables: si el balance salta >5% sin un trade ejecutado, hay un bug
+
+**Rule added:** Antes de hacer commit de cualquier cambio en scripts de valoración, verificar que el balance resultante = balance anterior ± trades ejecutados ± variación de precio razonable. Si no cuadra → investigar antes de commitear.
