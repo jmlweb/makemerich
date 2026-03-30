@@ -932,3 +932,32 @@ BTC a solo $1,895 del stop ($65,500) con Liberation Day el jueves y volatilidad 
 | 4GLD  | €482   | 11.3% |
 | NATO  | €355   | 8.3%  |
 | CASH  | €188   | 4.4%  |
+
+---
+
+### Day 45 — March 30, 2026 21:30 CET (CIERRE DEL DÍA)
+
+**Balance cierre:** €4,235.32 | **Total Return:** -15.29%
+**P&L desde apertura de hoy:** +€457.21 (comparado con balance 29/03: €3,778.11)
+
+**Precios cierre:**
+- ETH: $2,016.19 (+1.70% día)
+- SP500: 6,321.62 (-2.40% día) ← favorable para DXS3
+- NASDAQ: 20,705.26 (-3.28% día)
+- GOLD: $4,526.10 (+0.04% día)
+- EUR/USD: 0.87
+
+**Rendimiento por activo (vs entrada):**
+| Asset | Valor | % Portfolio | P&L entrada |
+|-------|-------|-------------|-------------|
+| DXS3  | €1,582 | 37.4% | +0.16% |
+| ETH   | €1,154 | 27.3% | -1.79% |
+| 4GLD  | €481   | 11.4% | +2.47% |
+| XEON  | €477   | 11.3% | +5.89% |
+| NATO  | €353   | 8.3%  | +0.00% |
+| CASH  | €188   | 4.4%  | — |
+
+**Análisis:**
+Día positivo neto para el portfolio bajista. SP500 -2.4% y NASDAQ -3.3% validan la tesis de DXS3. La rotación BTC→DXS3 de las 18:20 fue acertada. XEON sigue siendo el activo más rentable desde entrada (+5.89%). Con Liberation Day el jueves 2 de abril, el catalizador principal está a 3 días.
+
+**Sin nuevas operaciones en cierre.**

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T18:17:17.657154",
+  "last_updated": "2026-03-30T19:30:11.687Z",
   "holdings": {
     "CASH": {
       "amount_eur": 187.96
@@ -7,34 +7,34 @@
     "ETH": {
       "units": 0.658029,
       "entry_price_usd": 2052.97,
-      "current_price_usd": 2076.068,
-      "amount_eur": 1188.52,
-      "pnl_pct": 1.13,
+      "current_price_usd": 2016.1869,
+      "amount_eur": 1154.24,
+      "pnl_pct": -1.79,
       "stop_loss_usd": 1900
     },
     "4GLD": {
       "units": 3.7704,
       "entry_price_eur": 124.56,
-      "current_price_eur": 127.82,
-      "amount_eur": 481.93,
-      "pnl_pct": 2.62,
+      "current_price_eur": 127.64,
+      "amount_eur": 481.25,
+      "pnl_pct": 2.47,
       "stop_loss_eur": 105.88
     },
     "XEON": {
       "units": 3.2059,
       "entry_price_eur": 140.5,
-      "current_price_eur": 148.765,
-      "amount_eur": 476.93,
-      "pnl_pct": 5.88,
+      "current_price_eur": 148.775,
+      "amount_eur": 476.96,
+      "pnl_pct": 5.89,
       "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 monetario EUR, ~3.5% anual"
+      "note": "Lyxor Smart Overnight Return UCITS ETF — monetario EUR, ~3.5% anual"
     },
     "DXS3": {
       "units": 277.5958,
       "entry_price_eur": 5.69,
-      "current_price_eur": 5.663,
-      "amount_eur": 1573.83,
-      "pnl_pct": -0.47,
+      "current_price_eur": 5.699,
+      "amount_eur": 1582.02,
+      "pnl_pct": 0.16,
       "stop_loss_eur": 4.84,
       "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520)"
     },
@@ -42,17 +42,17 @@
       "units": 21.6216,
       "entry_price_eur": 18.5,
       "current_price_eur": 16.2,
-      "amount_eur": 354.58,
+      "amount_eur": 352.89,
       "pnl_pct": 0,
       "stop_loss_eur": 15.72,
       "note": "HANetf Future of Defence UCITS (IE000OJ5TQP4)",
-      "current_price_usd": 18.85
+      "current_price_usd": 18.76
     }
   },
   "totals": {
-    "balance_eur": 4263.75,
+    "balance_eur": 4235.32,
     "initial_eur": 5000,
-    "pnl_eur": -736.25,
-    "pnl_pct": -14.72
+    "pnl_eur": -764.68,
+    "pnl_pct": -15.29
   }
 }
