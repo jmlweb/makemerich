@@ -896,3 +896,14 @@ Sector con los catalizadores más claros de 2026: (1) rearme europeo acelerado �
 3. NATO bajó -12.4% desde entrada (comprado en máximo local)
 4. Fees acumulados: ~€5
 
+
+---
+
+### Day 45 — March 30, 2026 16:35 CET (TRAILING STOPS AJUSTADOS)
+
+**Operaciones:**
+- **TRAILING STOP ETH**: $1,800 → $1,900 (ETH actual $2,054, margen 7.5%)
+- **TRAILING STOP BTC**: $64,500 → $65,500 (BTC actual $67,309, margen 2.7%)
+
+**Racional:**
+Crypto subiendo (+3.6% ETH, +2.1% BTC) mientras equities caen. Con el rally, los stops anteriores quedaron demasiado lejos — ajuste de trailing para proteger las ganancias parciales si hay reversión. Cash €188 insuficiente para nueva posición relevante. DXS3 bien posicionado para Liberation Day (2 abril). Sin trades de entrada — concentración máxima ya alcanzada en el short.
