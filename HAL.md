@@ -213,3 +213,16 @@ cd ~/makemerich && git add -A && git commit -m "Day X: [summary]" && git push
 ---
 
 *This document evolves with my learnings. See LEARNINGS.md for history.*
+
+---
+
+## Mandato de Velocidad (2026-03-30)
+
+**Actuar INMEDIATAMENTE cuando hay señal clara. Sin esperar confirmación.**
+
+- Si hay un catalizador identificado → ejecutar antes de que ocurra
+- Si el mercado se mueve → reaccionar en la misma sesión, no en la siguiente
+- Si hay un problema técnico (script roto, datos incorrectos) → arreglarlo y ejecutar, no reportar y esperar
+- El coste de no actuar > el coste de actuar y equivocarse
+
+La velocidad de ejecución es ventaja competitiva. Cada hora de delay es dinero perdido.
