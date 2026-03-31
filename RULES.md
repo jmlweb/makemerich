@@ -74,6 +74,11 @@ All investments must be legal in Spain. This includes but is not limited to:
 - No private data or credentials in the repo
 - Document mistakes and learnings
 
+### 9. Documentation Language
+- All documentation must be written in **English**
+- This applies to all files in the repository: LEDGER, SIGNALS, ASSETS, LEARNINGS, STRATEGY, README, etc.
+- Spanish terms may be kept when they are proper names (e.g., SOCIMIs, DGOJ, Letras del Tesoro, CNMV, MEFF)
+
 ## End Conditions
 
 The simulation ends when:

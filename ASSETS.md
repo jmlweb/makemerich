@@ -53,6 +53,16 @@
 
 > European defence sector ETF. Thematic play on European rearmament.
 
+### Leveraged (2x Daily)
+
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
+| DBX0B5 | LU0411078552 | Xtrackers S&P 500 2x Leveraged Daily Swap UCITS | 0.60% | EUR |
+| A0X8ZS | FR0010755611 | Amundi MSCI USA Daily (2x) Leveraged UCITS | 0.50% | EUR |
+| A0LC12 | FR0010342592 | Amundi Nasdaq-100 Daily (2x) Leveraged UCITS | 0.60% | EUR |
+
+> Leverage amplifies gains AND losses. Subject to daily compounding / volatility drag. Only for short-term tactical use. All UCITS-compliant with KID.
+
 ### Gold / Commodities
 
 | Ticker | ISIN | Description | TER | Currency |
@@ -60,8 +70,13 @@
 | 4GLD | DE000A0S9GB0 | Xetra-Gold (physically backed) | 0.00% | EUR |
 | SGLD | IE00B4ND3602 | Invesco Physical Gold ETC | 0.12% | USD |
 | PHAU | JE00B1VS3770 | WisdomTree Physical Gold | 0.39% | USD |
+| PHAG | JE00B1VS3333 | WisdomTree Physical Silver | 0.49% | USD |
+| CRUD | GB00B15KXV33 | WisdomTree WTI Crude Oil | 0.49% | USD |
+| SXRS | IE00BDFL4P12 | iShares Diversified Commodity Swap UCITS | 0.19% | USD |
 
-> For EUR-based portfolios, prefer 4GLD: 0% TER, EUR-denominated, no FX drag.
+> For EUR-based portfolios, prefer 4GLD for gold: 0% TER, EUR-denominated, no FX drag.
+> SXRS tracks the Bloomberg Commodity index (energy, metals, agriculture, livestock).
+> Oil ETCs are futures-based — subject to contango/roll costs over long periods.
 
 ### Emerging Markets
 
@@ -87,6 +102,18 @@ Platforms registered with Banco de Espana:
 
 **Crypto taxation in Spain:** Same as equities (19-28% on gains).
 
+### Staking / Earn
+
+| Platform | Assets | Lock-up | Notes |
+|----------|--------|---------|-------|
+| Kraken | ETH, SOL, DOT, ADA, etc. | Flexible / bonded | Licensed CASP under MiCA via CBI |
+| Coinbase | ETH, SOL, ADA, etc. | Flexible | Regulated via Central Bank of Ireland |
+| Bit2Me | ETH, BTC, ADA, USDC, etc. | No lock-up | First Spanish CASP licensed by CNMV under MiCA (2025) |
+
+> Staking rewards are taxable income in Spain at the moment of accrual (19-28%).
+> Native staking (on-chain) has different risk profile than "Earn" products (counterparty risk).
+> ETH staking yields ~3-4% APY; SOL ~6-7% APY (variable).
+
 ---
 
 ## Fixed Income
@@ -96,6 +123,110 @@ Platforms registered with Banco de Espana:
 | Treasury Bills | tesoro.es | ~3% | No fees, 3/6/12 months |
 | Government Bonds | tesoro.es | ~3.5% | Longer maturities |
 | Bond ETF (AGGH) | Broker | ~4% | iShares Global Aggregate |
+
+---
+
+## Individual Stocks
+
+### SOCIMIs (Spanish REITs)
+
+| Ticker | ISIN | Description | Exchange |
+|--------|------|-------------|----------|
+| MRL | ES0105025003 | Merlin Properties — Offices, logistics, data centres | BME |
+| COL | ES0139140174 | Colonial SFL — Prime offices (Madrid, Barcelona, Paris) | BME |
+
+> SOCIMIs must distribute at least 80% of profits as dividends. Taxation: 19-28% on dividends.
+> Real estate exposure without high minimum capital, with daily liquidity.
+
+### General Stocks
+
+Any stock listed on BME or international markets (via broker) is a legal and measurable instrument. Useful for high-conviction stock picking.
+
+> For US stocks, use brokers with direct access (Interactive Brokers, DEGIRO). 15% US withholding tax (with W-8BEN) deductible against Spanish income tax.
+
+---
+
+## CFDs (Contracts for Difference)
+
+Regulated by ESMA/CNMV. Allow long and short positions with leverage on virtually any asset.
+
+### ESMA Leverage Limits (Retail)
+
+| Asset Class | Max Leverage |
+|-------------|-------------|
+| Forex — major pairs (EUR/USD, GBP/USD) | 30:1 |
+| Forex — minor pairs / Gold / Major indices | 20:1 |
+| Commodities (non-gold) / Minor indices | 10:1 |
+| Individual equities | 5:1 |
+| Cryptocurrencies | 2:1 |
+
+### Regulated Brokers in Spain
+
+| Broker | Regulation | Notes |
+|--------|-----------|-------|
+| IG Markets | BaFin (serves EU) + registered with CNMV | Wide range of markets |
+| XTB | CNMV (EEA investment firm Nº 40) | Transitioning to multi-product model |
+| Plus500 | CySEC + EU passport | Pure CFD broker |
+
+> **Warning:** 70-80% of retail accounts lose money trading CFDs (mandatory ESMA disclosure).
+> Negative balance protection is mandatory for retail in the EU.
+> CNMV prohibits CFD advertising targeted at retail investors since July 2023.
+
+---
+
+## Warrants & Turbos (BME)
+
+Exchange-traded leveraged products listed on BME. Turbos include a knock-out barrier (early termination if the underlying touches the barrier).
+
+### Active Issuers on BME
+
+| Issuer | Products | Access |
+|--------|----------|--------|
+| Société Générale | Warrants, Turbos, Turbos Pro | DEGIRO, Renta 4, Trade Republic |
+| BNP Paribas | Warrants, Turbos | Brokers with BME access |
+
+> Available underlyings: IBEX 35, Spanish/European stocks, international indices, commodities, forex.
+> Require KID (Key Information Document) — supervised by CNMV.
+> Useful for short-term directional positions with risk limited to capital invested.
+
+---
+
+## MEFF Derivatives
+
+MEFF (Spanish Financial Futures Market) — regulated derivatives exchange operated by BME.
+
+### Available Products
+
+| Product | Underlying | Type | Notes |
+|---------|-----------|------|-------|
+| IBEX 35 Futures | IBEX 35 | Future | Multiplier: EUR 10 × index |
+| Mini IBEX 35 Futures | IBEX 35 | Future | Multiplier: EUR 1 × index |
+| Stock Options | Spanish equities | Option (European) | 100 shares per contract |
+| Stock Futures | Spanish equities | Future | |
+| xRolling FX Futures | Currencies | Future | |
+
+> Since September 2025, MEFF offers European-style options settled by cash differences.
+> Custom products also available (non-standard expiries and strikes).
+> For US/international stock options, use Interactive Brokers (access to CBOE, CME, etc.).
+
+---
+
+## Sports Betting (Quantitative Approach)
+
+Legal in Spain under DGOJ (Dirección General de Ordenación del Juego) license. Can be treated as a measurable investment when applying bankroll management and quantitative strategy (value betting, arbitrage).
+
+### DGOJ-Licensed Operators
+
+| Operator | Type | Notes |
+|----------|------|-------|
+| Bet365 | Sports betting | Wide coverage, competitive odds |
+| Betfair | Exchange + betting | Only betting exchange in Spain — allows odds trading |
+| Codere | Sports betting | Veteran Spanish operator |
+
+> Gambling winnings are **exempt** from income tax until they exceed the year's losses.
+> Net gambling losses are NOT deductible against other income.
+> Strict bankroll management: never more than 1-2% of bankroll per bet.
+> Betfair Exchange is most relevant for quantitative strategies (back/lay, in-play trading).
 
 ---
 
@@ -129,4 +260,4 @@ These US ETFs lack a KID document and are not legally accessible:
 
 ---
 
-*Last updated: 2026-03-31*
+*Last updated: 2026-04-01*
