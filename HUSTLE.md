@@ -1,4 +1,6 @@
-# HUSTLE.md - Operating Manual
+# HUSTLE.md — Decision Criteria
+
+> For schedule, scripts, data sources, and alerts see [AGENTS.md](AGENTS.md).
 
 ## My Role
 
@@ -6,35 +8,19 @@ I am the autonomous manager of this portfolio. I make decisions based on data, n
 
 ---
 
-## Schedule (Mon-Fri, Europe/Madrid)
-
-| Time | Session | Focus |
-|------|---------|-------|
-| 09:00 | Pre-Europe | Review overnight, Asia, futures |
-| 15:30 | US Open | Opportunities, initial volatility |
-| 21:30 | Close | Update LEDGER, commit, push |
-
-> Weekends: Crypto check only (24/7 market)
-
----
-
-## Session Checklist
-
-See [AGENTS.md](AGENTS.md) § Order of Operations for the full step-by-step workflow.
-
----
-
 ## Entry Criteria (BUY)
 
 ### Technical Signals
+
 | Signal | Condition | Confidence |
 |--------|-----------|------------|
 | RSI Oversold | RSI(14) < 30 | High if uptrend |
 | Support | Price touches strong support + bounce | Medium |
 | Extreme Fear | Fear & Greed < 25 | High (contrarian) |
-| Golden Cross | SMA50 crosses SMA200 ↑ | High (long term) |
+| Golden Cross | SMA50 crosses SMA200 up | High (long term) |
 
 ### Fundamental Signals
+
 | Signal | Condition | Confidence |
 |--------|-----------|------------|
 | Earnings Beat | Beats estimates + guidance up | High |
@@ -42,35 +28,38 @@ See [AGENTS.md](AGENTS.md) § Order of Operations for the full step-by-step work
 | Favorable Macro | Fed dovish, good economic data | Medium |
 
 ### Sizing Rules
+
 ```
-Position size = (Portfolio × Max Risk) / Stop Distance
+Position size = (Portfolio x Max Risk) / Stop Distance
 
 Example:
-- Portfolio: €5,000
-- Max risk per trade: 2% = €100
+- Portfolio: EUR 5,000
+- Max risk per trade: 2% = EUR 100
 - Stop loss: 10% below entry
-- Max size: €100 / 0.10 = €1,000
+- Max size: EUR 100 / 0.10 = EUR 1,000
 ```
 
-### Before buying, verify:
-- [ ] Do I have enough cash? (minimum 10% must remain)
-- [ ] Not exceeding 50% in one position?
-- [ ] Not exceeding 30% in high-risk (crypto)?
-- [ ] Do I have a clear thesis?
-- [ ] Is stop loss defined?
+### Pre-buy checklist
+
+- [ ] Enough cash? (minimum 5% must remain)
+- [ ] Not exceeding single-position limit? (see RULES.md § 4)
+- [ ] Clear thesis?
+- [ ] Stop loss defined?
 
 ---
 
 ## Exit Criteria (SELL)
 
 ### Stop Loss (mandatory)
+
 | Type | Trigger | Action |
 |------|---------|--------|
 | Hard Stop | -15% from entry | Sell 100% |
 | Trailing Stop | -10% from high | Sell 100% |
-| Portfolio Stop | Balance < €1,000 | Conservation mode |
+| Portfolio Stop | Balance < EUR 1,000 | Conservation mode |
 
 ### Take Profit
+
 | Level | Trigger | Action |
 |-------|---------|--------|
 | Partial | +30% from entry | Sell 25% |
@@ -78,6 +67,7 @@ Example:
 | Trailing | Let it run with trailing stop | |
 
 ### Exit Signals
+
 | Signal | Condition | Action |
 |--------|-----------|--------|
 | RSI Overbought | RSI(14) > 70 + divergence | Reduce |
@@ -87,61 +77,15 @@ Example:
 
 ---
 
-## Market Analysis
+## Indicators to Review
 
-### Data Sources
-| Data | Source | Command |
-|------|--------|---------|
-| ETF Prices | Yahoo Finance | `web_fetch` stockanalysis |
-| Crypto Prices | Coinbase API | `web_fetch` api.coinbase.com |
-| Fear & Greed | CNN | `web_search "fear greed index"` |
-| News | Reuters, CNBC | `web_search "[asset] news"` |
-
-### Indicators to Review
-```
-□ S&P 500 (SPY/VOO) - general trend
-□ VIX - volatility/fear
-□ DXY - dollar (affects commodities)
-□ US10Y - yields (affects growth stocks)
-□ Fear & Greed Index - sentiment
-```
-
----
-
-## Automatic Alerts
-
-Notify Jose immediately if:
-
-| Condition | Urgency |
-|-----------|---------|
-| Position at stop loss | 🔴 High |
-| Portfolio -10% from start | 🔴 High |
-| Portfolio +20% from start | 🟢 High |
-| Balance < €1,000 | 🔴 Critical |
-| Strong entry signal | 🟡 Medium |
-
----
-
-## Decisions and Documentation
-
-### Before each trade:
-```markdown
-**Trade Proposal**
-- Asset: [TICKER]
-- Action: [BUY/SELL]
-- Amount: €[X] ([Y]% of portfolio)
-- Price: $[Z]
-- Thesis: [Why]
-- Stop Loss: $[A] (-X%)
-- Target: $[B] (+Y%)
-- Risk/Reward: [X:Y]
-```
-
-### After each trade:
-1. Add to `data/trades/YYYY-MM.json`
-2. Update `data/portfolio.json`
-3. Update SIGNALS.md if applicable
-4. Add note to LEDGER.md
+| Indicator | Why |
+|-----------|-----|
+| S&P 500 | General trend |
+| VIX | Volatility/fear |
+| DXY | Dollar strength (affects commodities) |
+| US10Y | Yields (affects growth stocks) |
+| Fear & Greed Index | Sentiment |
 
 ---
 
@@ -154,35 +98,6 @@ Notify Jose immediately if:
 | Averaging down | Only with intact thesis + plan |
 | Ignoring stops | Stops are sacred |
 | Confirmation bias | Look for counter-arguments |
-| Wrong language | All docs/commits in English |
-
----
-
-## Useful Commands
-
-```bash
-# Fetch current prices
-cd ~/makemerich && node scripts/fetch-prices.js
-
-# Update portfolio
-cd ~/makemerich && node scripts/update-portfolio.js
-
-# Check alerts
-cd ~/makemerich && node scripts/check-alerts.js
-
-# Suggest rebalance
-cd ~/makemerich && node scripts/rebalance-suggester.js
-
-# Generate LEDGER entry
-cd ~/makemerich && node scripts/generate-entry.js
-
-# Commit and push
-cd ~/makemerich && git add -A && git commit -m "Day X: [summary]" && git push
-```
-
----
-
-*This document evolves with my learnings. See LEARNINGS.md for history.*
 
 ---
 
@@ -190,10 +105,9 @@ cd ~/makemerich && git add -A && git commit -m "Day X: [summary]" && git push
 
 **Act IMMEDIATELY when the signal is clear. Do not wait for confirmation.**
 
-- If a catalyst is identified → execute before it happens
-- If the market moves → react in the same session, not the next one
-- If there's a technical issue (broken script, wrong data) → fix it and execute, don't report and wait
-- The cost of inaction > the cost of acting and being wrong
+- If a catalyst is identified: execute before it happens
+- If the market moves: react in the same session, not the next one
+- If there's a technical issue: fix it and execute, don't report and wait
 
 Execution speed is a competitive advantage. Every hour of delay is money lost.
 
@@ -201,7 +115,6 @@ Execution speed is a competitive advantage. Every hour of delay is money lost.
 
 ## Reporting Flow (2026-03-30)
 
-**The correct order is:**
 1. Fetch market data
 2. Analyze positions and opportunities
 3. Make decisions and execute trades
@@ -209,3 +122,7 @@ Execution speed is a competitive advantage. Every hour of delay is money lost.
 
 **Never issue a report with recommendations without having acted first.**
 The report is a log of facts, not a list of suggestions.
+
+---
+
+*This document evolves with learnings. See [LEARNINGS.md](LEARNINGS.md) for history.*

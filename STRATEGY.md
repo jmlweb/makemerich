@@ -37,7 +37,7 @@ Game goal: 10x (EUR 50,000) in 1 year — requires an aggressive strategy.
 | Treasury Bills | Tesoro.es | Very low | ~3% APY, limited liquidity |
 | P2P Lending | Mintos, Bondora | High | Diversify originators |
 | Real Estate Crowdfunding | Urbanitae, Housers | High | Illiquid, specific projects |
-| Physical Gold | BullionVault, SGLD | Medium | Inflation hedge |
+| Physical Gold | BullionVault, 4GLD | Medium | Inflation hedge |
 | Crypto | Kraken, Coinbase | Very high | Regulated in Spain |
 
 ---

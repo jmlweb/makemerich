@@ -56,14 +56,13 @@ Hustle monitors markets 3x daily (09:00, 15:30, 21:30 CET) and:
 ```
 makemerich/
 ├── README.md         # This file (auto-updated)
+├── AGENTS.md         # Agent entry point (workflow, schedule, tooling)
+├── HUSTLE.md         # Decision criteria (entry/exit/sizing)
+├── RULES.md          # Game rules (immutable)
+├── STRATEGY.md       # Investment philosophy + mandates
 ├── LEDGER.md         # Daily log
-├── STRATEGY.md       # Investment approach
-├── RULES.md          # Game rules
-├── HUSTLE.md         # Operating manual
-├── AGENTS.md         # Agent instructions
+├── SIGNALS.md        # Active signals, alerts, and watchlist
 ├── ASSETS.md         # Available instruments
-├── SIGNALS.md        # Active signals
-├── WATCHLIST.md      # Assets under surveillance
 ├── LEARNINGS.md      # Lessons learned
 ├── data/             # Historical JSON data
 └── scripts/          # Automation scripts

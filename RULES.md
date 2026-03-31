@@ -42,9 +42,14 @@ All investments must be legal in Spain. This includes but is not limited to:
 - **Startup Equity** — Via regulated platforms
 
 ### 4. Position Limits
-- Maximum **50%** of portfolio in any single position
-- Minimum **5%** cash reserve at all times
-- Maximum **30%** in high-risk assets (crypto, betting, startups)
+
+| Limit | Default | Current Override |
+|-------|---------|-----------------|
+| Max single position | 50% | — (active) |
+| Min cash reserve | 5% | — (active) |
+| Max high-risk assets | 30% | **Suspended** — Aggressive Mandate 2026-03-29 |
+
+> **Override mechanism:** STRATEGY.md § "Updated Mandate" can suspend specific limits. The mandate must state which limits are overridden and the rationale. When no mandate is active, all defaults apply.
 
 ### 5. Transaction Rules
 - All buys/sells execute at next available market price
@@ -55,11 +60,13 @@ All investments must be legal in Spain. This includes but is not limited to:
   - Alternative investments: as per platform
 
 ### 6. Loss Limits
-- **Stop-loss**: Exit any position down 20%
+- **Stop-loss**: Exit any position down 15% from entry
+- **Trailing stop**: Exit any position down 10% from its high
 - **Portfolio stop**: If total balance drops below €1,000, switch to capital preservation mode
 
 ### 7. Profit Taking
 - Take **25% partial profits** when a position gains 30%+
+- Take another **25%** at +50%
 - Rebalance monthly if allocations drift more than 10% from targets
 
 ### 8. Transparency
