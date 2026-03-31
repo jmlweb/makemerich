@@ -4,26 +4,16 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 
 ---
 
-## 2026-02-06: Legal Compliance in Spain
+## 2026-01-28: Initial Allocation
 
-**Category:** Strategy / Compliance  
-**Impact:** Full portfolio restructuring
+**Category:** Strategy  
+**Impact:** Neutral (baseline)
 
-**What happened:** Jose requested to invest "in the smartest and most legal way in Spain." I discovered that US ETFs (VOO, GLD, QQQ) are technically not accessible to retail investors in Spain/EU due to PRIIPS/MiFID II regulation (missing KID documentation).
+**What happened:** Started with conservative 60% cash, 25% VOO, 15% BTC.
 
-**Lesson:** Always verify instrument legality before using them. What works in the US is not always accessible in Spain.
+**Lesson:** High cash reserve (60%) limits upside but provides safety and flexibility to buy dips.
 
-**Action:** 
-1. Converted to UCITS ETFs domiciled in Ireland (SXR8, VWCE, SGLD)
-2. Added crypto exposure (BTC, ETH) — legal and regulated in Spain
-3. Updated scripts to handle EUR and USD assets
-4. Documented legal options in ASSETS.md
-
-**Advantages of the switch:**
-- 100% legal and compliant
-- Better tax withholding (15% vs 30% on US dividends)
-- Accumulating ETFs = tax deferral until sale
-- Crypto exposure for potential 10x
+**Action:** Monitor for opportunities to deploy cash if market drops 5%+.
 
 ---
 
@@ -66,48 +56,52 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 
 ---
 
-## 2026-01-28: Initial Allocation
+## 2026-02-02: Don't Deploy All Cash in a Single Session
 
-**Category:** Strategy  
-**Impact:** Neutral (baseline)
+**Category:** Strategy / Position Sizing  
+**Impact:** -7.27% in one day (EUR -361)
 
-**What happened:** Started with conservative 60% cash, 25% VOO, 15% BTC.
+**What happened:** On Day 4, the portfolio went from 60% cash to 20% cash in a single session. BTC was sold at -11.2% realized loss (EUR -188) and the proceeds plus existing cash were deployed into VOO, QQQ, and GLD — all on a red day (S&P -0.14%, NASDAQ -0.40%, Gold -1.17%).
 
-**Lesson:** High cash reserve (60%) limits upside but provides safety and flexibility to buy dips.
+**Lesson:** Deploying large amounts of cash in a single session removes the ability to average in at better prices if the market continues falling. Scale in over 2-3 sessions minimum, especially when deploying >20% of the portfolio.
 
-**Action:** Monitor for opportunities to deploy cash if market drops 5%+.
-
----
-
-## Patterns
-
-| Pattern | Notes |
-|---------|-------|
-| BTC weekend drops | Liquidity lower, more volatile |
-| BTC drags portfolio | 15% allocation caused most of the -0.84% loss |
-| High cash = patience | 60% cash means we can wait for real opportunities |
-| Explicit > implicit | Write down criteria or they won't be followed |
+**Rule:** When deploying cash >15% of portfolio, split into at least 2 tranches over 2+ sessions. Exception: clear catalyst with time pressure (e.g., SGLD→4GLD rotation).
 
 ---
 
-## Mistakes
+## 2026-02-06: Legal Compliance in Spain
 
-| Date | Mistake | Cost | Lesson |
-|------|---------|------|--------|
-| - | - | - | None yet |
+**Category:** Strategy / Compliance  
+**Impact:** Full portfolio restructuring
+
+**What happened:** Jose requested to invest "in the smartest and most legal way in Spain." I discovered that US ETFs (VOO, GLD, QQQ) are technically not accessible to retail investors in Spain/EU due to PRIIPS/MiFID II regulation (missing KID documentation).
+
+**Lesson:** Always verify instrument legality before using them. What works in the US is not always accessible in Spain.
+
+**Action:** 
+1. Converted to UCITS ETFs domiciled in Ireland (SXR8, VWCE, SGLD)
+2. Added crypto exposure (BTC, ETH) — legal and regulated in Spain
+3. Updated scripts to handle EUR and USD assets
+4. Documented legal options in ASSETS.md
+
+**Advantages of the switch:**
+- 100% legal and compliant
+- Better tax withholding (15% vs 30% on US dividends)
+- Accumulating ETFs = tax deferral until sale
+- Crypto exposure for potential 10x
 
 ---
 
-## Wins
+## 2026-03-18: Sell-and-Rebuy Contradicts Itself
 
-| Date | Win | Gain | Why |
-|------|-----|------|-----|
-| 2026-01-30 | System overhaul | N/A | Clear framework for autonomous operation |
-| 2026-01-28 | Conservative start | Safety | 60% cash preserved capital during BTC drop |
+**Category:** Strategy / Discipline  
+**Impact:** Unnecessary fees + strategic incoherence
 
----
+**What happened:** On Day 36 (March 18), BTC was sold with +11.59% unrealized gain "to protect capital amid market weakness." On Day 37 (March 19), ~EUR 900 was reinvested back into BTC (0.0065 units at $71,238) and ETH (expanded +66.8%) at similar prices. The sell-and-rebuy within 24 hours generated fees, realized no meaningful gain, and contradicted the original "protect capital" rationale.
 
-*See [STRATEGY.md](STRATEGY.md) for current approach.*
+**Lesson:** If the thesis on an asset hasn't changed, don't sell to "protect" and rebuy the next day. Either hold through volatility or exit with a clear reason not to re-enter. Selling and rebuying is only justified if the entry price is materially better or the thesis has genuinely changed.
+
+**Rule:** After selling a position, enforce a 48-hour cooling-off period before re-entering the same asset, unless fundamentals have materially changed (not just price action).
 
 ---
 
@@ -124,7 +118,6 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 
 **Rule added:** When selecting ETFs/ETCs: always check (1) currency denomination vs portfolio currency, (2) TER, (3) tracking methodology. EUR-based portfolio = prefer EUR-denominated instruments.
 
-
 ---
 
 ## 2026-03-30: Full Audit — Accounting, Operations, Strategy
@@ -133,6 +126,10 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 **Impact:** Balance inflated by EUR 1,206 for days; decisions made on false data
 
 **Root cause:** Two sources of truth (Python scripts vs Node script). The Node script recalculated from `units x current_price`, overwriting manual portfolio.json edits. Additionally, XEON entry price was set to market price (EUR 148.40) instead of actual purchase price (EUR 140.50).
+
+### Impact on position sizing
+
+The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3, NATO, and XEON trades on Days 44-45. This means those positions were sized assuming EUR 1,200 more capital than actually existed. DXS3 ended up at 36.6% of the real portfolio — a concentration that might have been lower had the true balance been known. Decisions made on false data cannot be undone, but this reinforces the need for automated post-trade validation.
 
 ### Rules derived
 
@@ -179,3 +176,37 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 **Lesson:** Documentation that is not part of the daily workflow drifts without anyone noticing. The more a doc is "set and forget," the faster it becomes misleading.
 
 **Rule:** On the first session of each month, audit all non-daily docs (README, ASSETS, RULES, SIGNALS, WATCHLIST, dashboard) for accuracy. Add this as a checklist item in the monthly workflow.
+
+---
+
+## Patterns
+
+| Pattern | Notes |
+|---------|-------|
+| BTC weekend drops | Liquidity lower, more volatile |
+| BTC drags portfolio | 15% allocation caused most of the -0.84% loss |
+| High cash = patience | 60% cash means we can wait for real opportunities |
+| Explicit > implicit | Write down criteria or they won't be followed |
+
+---
+
+## Mistakes
+
+| Date | Mistake | Cost | Lesson |
+|------|---------|------|--------|
+| 2026-02-02 | Deployed 40% cash in single red session | -EUR 361 (-7.27%) | Scale in over 2+ sessions |
+| 2026-03-18 | Sold BTC to "protect", rebought 24h later | Fees + incoherence | 48h cooling-off before re-entry |
+| 2026-03-29 | Sized positions on inflated balance (EUR 5,457 vs EUR 4,250) | DXS3 overconcentrated at 36.6% | Validate balance post-trade before new orders |
+
+---
+
+## Wins
+
+| Date | Win | Gain | Why |
+|------|-----|------|-----|
+| 2026-01-28 | Conservative start | Safety | 60% cash preserved capital during BTC drop |
+| 2026-01-30 | System overhaul | N/A | Clear framework for autonomous operation |
+
+---
+
+*See [STRATEGY.md](STRATEGY.md) for current approach.*
