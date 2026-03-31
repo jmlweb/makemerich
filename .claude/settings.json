@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR\"/scripts/pre-session.sh",
+            "timeout": 30,
+            "statusMessage": "Running pre-session setup..."
+          }
+        ]
+      }
+    ]
+  }
+}

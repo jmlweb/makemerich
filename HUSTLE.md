@@ -1,4 +1,4 @@
-# HAL.md - Operating Manual
+# HUSTLE.md - Operating Manual
 
 ## My Role
 
@@ -20,37 +20,7 @@ I am the autonomous manager of this portfolio. I make decisions based on data, n
 
 ## Session Checklist
 
-```
-□ 1. Fetch current prices
-      node scripts/fetch-prices.js
-
-□ 2. Update portfolio.json
-      node scripts/update-portfolio.js
-
-□ 3. Check alerts
-      node scripts/check-alerts.js
-      - Any position at stop loss (-15%)?
-      - Any at take profit (+30%)?
-      - Portfolio near limits?
-
-□ 4. Analyze market
-      - General trend (SPY/VOO)
-      - Sentiment (Fear & Greed)
-      - Relevant news
-
-□ 5. Evaluate signals (see SIGNALS.md)
-      - Any active entry signal?
-      - Any exit signal?
-
-□ 6. Decision: HOLD / BUY / SELL
-      - If BUY/SELL: calculate sizing
-      - Record in trades/YYYY-MM.json
-
-□ 7. If 21:30:
-      - Update LEDGER.md
-      - Update README.md (chart)
-      - git add -A && git commit && git push
-```
+See [AGENTS.md](AGENTS.md) § Order of Operations for the full step-by-step workflow.
 
 ---
 
@@ -216,26 +186,26 @@ cd ~/makemerich && git add -A && git commit -m "Day X: [summary]" && git push
 
 ---
 
-## Mandato de Velocidad (2026-03-30)
+## Speed Mandate (2026-03-30)
 
-**Actuar INMEDIATAMENTE cuando hay señal clara. Sin esperar confirmación.**
+**Act IMMEDIATELY when the signal is clear. Do not wait for confirmation.**
 
-- Si hay un catalizador identificado → ejecutar antes de que ocurra
-- Si el mercado se mueve → reaccionar en la misma sesión, no en la siguiente
-- Si hay un problema técnico (script roto, datos incorrectos) → arreglarlo y ejecutar, no reportar y esperar
-- El coste de no actuar > el coste de actuar y equivocarse
+- If a catalyst is identified → execute before it happens
+- If the market moves → react in the same session, not the next one
+- If there's a technical issue (broken script, wrong data) → fix it and execute, don't report and wait
+- The cost of inaction > the cost of acting and being wrong
 
-La velocidad de ejecución es ventaja competitiva. Cada hora de delay es dinero perdido.
+Execution speed is a competitive advantage. Every hour of delay is money lost.
 
 ---
 
-## Flujo de Reporting (2026-03-30)
+## Reporting Flow (2026-03-30)
 
-**El orden correcto es:**
-1. Obtener datos de mercado
-2. Analizar posiciones y oportunidades
-3. Tomar decisiones y ejecutar trades
-4. Emitir reporte con lo que se hizo (incluyendo "no action" si aplica)
+**The correct order is:**
+1. Fetch market data
+2. Analyze positions and opportunities
+3. Make decisions and execute trades
+4. Issue report with what was done (including "no action" if applicable)
 
-**Nunca emitir un reporte con recomendaciones sin haber actuado primero.**
-El reporte es un log de hechos, no una lista de sugerencias.
+**Never issue a report with recommendations without having acted first.**
+The report is a log of facts, not a list of suggestions.

@@ -1,6 +1,6 @@
 # Agent Instructions
 
-> **For HAL:** See [HAL.md](HAL.md) for detailed workflow.
+> **For Hustle:** See [HUSTLE.md](HUSTLE.md) for detailed workflow.
 
 ## Language Rule
 
@@ -17,7 +17,7 @@
 
 | File | Purpose | Update |
 |------|---------|--------|
-| [HAL.md](HAL.md) | **Complete operating manual** | When process changes |
+| [HUSTLE.md](HUSTLE.md) | **Complete operating manual** | When process changes |
 | [SIGNALS.md](SIGNALS.md) | **Active signals and alerts** | Each session |
 | [WATCHLIST.md](WATCHLIST.md) | **Assets under surveillance** | When watchlist changes |
 | [LEDGER.md](LEDGER.md) | Daily log (public) | Daily 21:30 |
@@ -117,7 +117,28 @@ node scripts/analyze-portfolio.js
 
 # Generate dashboard
 node scripts/generate-dashboard.js
+
+# Validate portfolio against RULES.md constraints
+node scripts/validate-rules.js
+
+# Generate signals (stop-loss distances, take-profit triggers)
+node scripts/generate-signals.js
+
+# Run full pre-session prep (all of the above in sequence)
+bash scripts/pre-session.sh
 ```
+
+---
+
+## Subagents
+
+| Agent | Role | Model | Invocation |
+|-------|------|-------|------------|
+| `analyst` | Market analysis, signals, recommendations | haiku | `@analyst` or auto-delegated |
+| `scribe` | Documentation sync (LEDGER, SIGNALS, WATCHLIST) | haiku | `@scribe` or auto-delegated |
+
+The `analyst` reads data and produces analysis. The `scribe` updates documentation files.
+Both are defined in `.claude/agents/`.
 
 ---
 
@@ -136,4 +157,4 @@ Examples:
 
 ---
 
-*See [HAL.md](HAL.md) for detailed decision criteria.*
+*See [HUSTLE.md](HUSTLE.md) for detailed decision criteria.*

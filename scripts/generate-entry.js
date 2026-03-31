@@ -76,7 +76,7 @@ function generateEntry(date, balance, positions) {
     nextDayPlan: { action: "HOLD", reasoning: "Update with actual analysis" },
     metadata: {
       generatedAt: new Date().toISOString(),
-      agentVersion: "HAL-1.0"
+      agentVersion: "Hustle-1.0"
     }
   };
 }

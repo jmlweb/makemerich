@@ -106,7 +106,7 @@ ${positionsTable}
 
 ## What is this?
 
-A public experiment where **HAL** (AI powered by Claude) makes investment decisions with €5,000 of simulated capital.
+A public experiment where **Hustle** (AI powered by Claude) makes investment decisions with €5,000 of simulated capital.
 
 **This is NOT financial advice.** Simulation for educational/entertainment purposes only.
 
@@ -125,7 +125,7 @@ A public experiment where **HAL** (AI powered by Claude) makes investment decisi
 
 ## How it works
 
-HAL monitors markets 5x daily (09:00, 12:00, 15:30, 18:00, 21:30 CET) and:
+Hustle monitors markets 5x daily (09:00, 12:00, 15:30, 18:00, 21:30 CET) and:
 1. Fetches real market data
 2. Analyzes conditions
 3. Makes buy/sell decisions
@@ -150,7 +150,7 @@ makemerich/
 
 ---
 
-*Last updated: ${new Date().toISOString().split('T')[0]} by HAL 🤖*
+*Last updated: ${new Date().toISOString().split('T')[0]} by Hustle 🤖*
 `;
 }
 

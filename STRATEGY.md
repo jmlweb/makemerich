@@ -1,152 +1,139 @@
-# 📊 Investment Strategy
+# Investment Strategy
 
-## Cambios Febrero 2026: Cumplimiento Legal España
+## February 2026 Changes: Spanish Legal Compliance
 
-### Problema identificado
-Los ETFs US (VOO, GLD, QQQ) **no son legalmente accesibles** para inversores minoristas en España/UE debido a la regulación PRIIPS/MiFID II. Los brokers que lo permiten operan en zona gris.
+### Identified Problem
+US ETFs (VOO, GLD, QQQ) **are not legally accessible** to retail investors in Spain/EU due to PRIIPS/MiFID II regulations. Brokers that allow it operate in a grey area.
 
-### Solución: UCITS ETFs
-ETFs domiciliados en Irlanda/Luxemburgo con documentación KID. Ventajas:
-- ✅ 100% legal en España
-- ✅ Retención dividendos US: 15% (vs 30% en ETFs US)
-- ✅ Acumulativos = no tributas hasta vender
-- ✅ Misma exposición, mejor fiscalidad
-
----
-
-## Nuevo Marco de Inversión
-
-### Objetivo
-Maximizar retorno ajustado al riesgo, legalmente en España.
-Meta del juego: 10x (€50,000) en 1 año — requiere estrategia agresiva.
-
-### Asignación Objetivo (Aggressive Growth)
-
-| Categoría | % | Activos | Riesgo |
-|-----------|---|---------|--------|
-| Core Global | 25% | VWCE | Medio |
-| US Growth | 20% | SXR8 / CSPX | Medio |
-| Crypto | 25% | BTC 70%, ETH 30% | Alto |
-| Táctica | 20% | Sectores, momentum | Alto |
-| Cash | 10% | EUR | Bajo |
-
-### Alternativas Legales Consideradas
-
-| Tipo | Ejemplos | Riesgo | Notas |
-|------|----------|--------|-------|
-| Letras del Tesoro | Tesoro.es | Muy bajo | ~3% TAE, liquidez limitada |
-| P2P Lending | Mintos, Bondora | Alto | Diversificar originadores |
-| Crowdfunding inmob. | Urbanitae, Housers | Alto | Ilíquido, proyectos específicos |
-| Oro físico | BullionVault, SGLD | Medio | Hedge inflación |
-| Crypto | Kraken, Coinbase | Muy alto | Regulado en España |
+### Solution: UCITS ETFs
+ETFs domiciled in Ireland/Luxembourg with KID documentation. Advantages:
+- 100% legal in Spain
+- US dividend withholding: 15% (vs 30% on US ETFs)
+- Accumulating = no tax until you sell
+- Same exposure, better tax efficiency
 
 ---
 
-## Reglas de Trading
+## Investment Framework
 
-### Entry
-- RSI < 30: Considerar compra
-- Caída > 5% en una semana: Evaluar acumulación
-- Nuevo máximo con volumen: Momentum play
+### Objective
+Maximize risk-adjusted returns, legally in Spain.
+Game goal: 10x (EUR 50,000) in 1 year — requires an aggressive strategy.
 
-### Exit
-- Stop-loss: -15% (ajustar trailing si sube +10%)
-- Take profit parcial: +25% (vender 25% de posición)
-- RSI > 80: Reducir exposición
+### Target Allocation (Aggressive Growth)
 
-### Rebalanceo
-- Mensual si drift > 10%
-- Trimestral obligatorio
+| Category | % | Assets | Risk |
+|----------|---|--------|------|
+| Core Global | 25% | VWCE | Medium |
+| US Growth | 20% | SXR8 / CSPX | Medium |
+| Crypto | 25% | BTC 70%, ETH 30% | High |
+| Tactical | 20% | Sectors, momentum | High |
+| Cash | 10% | EUR | Low |
 
----
+### Legal Alternatives Considered
 
-## Por Qué Esta Estrategia
-
-1. **Core VWCE (25%)**: Exposición global diversificada, bajo coste (0.22% TER)
-2. **SXR8 (20%)**: S&P 500 puro, acumulativo, TER 0.07%
-3. **Crypto (25%)**: Único activo con potencial 10x realista, regulado en España
-4. **Táctica (20%)**: Flexibilidad para oportunidades (sectores calientes, eventos)
-5. **Cash (10%)**: Dry powder para caídas
-
----
-
-## Fiscalidad España (Referencia)
-
-| Ganancia | Tipo |
-|----------|------|
-| Hasta €6,000 | 19% |
-| €6,000 - €50,000 | 21% |
-| €50,000 - €200,000 | 23% |
-| > €200,000 | 28% |
-
-*Solo tributas al vender. ETFs acumulativos = diferimiento fiscal.*
+| Type | Examples | Risk | Notes |
+|------|----------|------|-------|
+| Treasury Bills | Tesoro.es | Very low | ~3% APY, limited liquidity |
+| P2P Lending | Mintos, Bondora | High | Diversify originators |
+| Real Estate Crowdfunding | Urbanitae, Housers | High | Illiquid, specific projects |
+| Physical Gold | BullionVault, SGLD | Medium | Inflation hedge |
+| Crypto | Kraken, Coinbase | Very high | Regulated in Spain |
 
 ---
 
-*Última actualización: 2026-02-06*
+## Trading Rules
+
+See [HUSTLE.md](HUSTLE.md) for detailed entry/exit criteria and trading rules.
 
 ---
 
-## Reglas de Reentrada en Renta Variable (añadido 2026-03-29)
+## Why This Strategy
 
-Tras ejecutar stops de SXR8/VWCE el 27/03, el cash se aparca en XEON hasta que se cumplan:
+1. **Core VWCE (25%)**: Diversified global exposure, low cost (0.22% TER)
+2. **SXR8 (20%)**: Pure S&P 500, accumulating, TER 0.07%
+3. **Crypto (25%)**: Only asset class with realistic 10x potential, regulated in Spain
+4. **Tactical (20%)**: Flexibility for opportunities (hot sectors, events)
+5. **Cash (10%)**: Dry powder for dips
 
-**Trigger de reentrada (todos deben cumplirse):**
-1. VIX < 22 (mercado saliendo del miedo)
-2. S&P500 cotiza por encima de SMA50 (20 sesiones)
-3. No hay aranceles nuevos anunciados en las últimas 2 semanas
+---
 
-**Al activarse:** liquidar XEON y redistribuir según asignación objetivo:
+## Spain Tax Reference
+
+| Gain | Rate |
+|------|------|
+| Up to EUR 6,000 | 19% |
+| EUR 6,000 - EUR 50,000 | 21% |
+| EUR 50,000 - EUR 200,000 | 23% |
+| > EUR 200,000 | 28% |
+
+*You only pay tax when you sell. Accumulating ETFs = tax deferral.*
+
+---
+
+*Last updated: 2026-03-31*
+
+---
+
+## Equity Re-Entry Rules (added 2026-03-29)
+
+After executing SXR8/VWCE stops on 27/03, cash is parked in XEON until all conditions are met:
+
+**Re-entry trigger (all must be met):**
+1. VIX < 22 (market exiting fear territory)
+2. S&P500 trading above SMA50 (20 sessions)
+3. No new tariffs announced in the last 2 weeks
+
+**On activation:** liquidate XEON and redistribute per target allocation:
 - 25% SXR8 (S&P 500)
 - 20% VWCE (global)
-- 20% táctica (EQQQ si NASDAQ recupera)
-- Mantener crypto y 4GLD actuales
+- 20% tactical (EQQQ if NASDAQ recovers)
+- Keep current crypto and 4GLD positions
 
-**Monetario como posición permanente:**
-Siempre que haya >15% en cash sin uso previsto en <2 semanas → mover a XEON.
+**Money market as permanent position:**
+Whenever >15% is in cash with no planned use within <2 weeks, move to XEON.
 
 ---
 
-## Mandato Actualizado — 2026-03-29: Maximización Agresiva
+## Updated Mandate — 2026-03-29: Aggressive Maximization
 
-**Objetivo primario: maximizar retorno a toda costa dentro de la legalidad española.**
+**Primary objective: maximize returns at all costs within Spanish legality.**
 
-Esto incluye zonas grises legales. Si es legal en España (aunque controvertido), es válido.
+This includes legal grey areas. If it is legal in Spain (even if controversial), it is valid.
 
-### Universo de inversión expandido
+### Expanded Investment Universe
 
-#### ETFs sectoriales "controvertidos" (100% UCITS/legales)
+#### "Controversial" Sector ETFs (100% UCITS/legal)
 
-| Sector | Ticker | ISIN | Notas |
+| Sector | Ticker | ISIN | Notes |
 |--------|--------|------|-------|
-| Cannabis medicinal | FLWR | IE00BJXRZ273 | Rize Medical Cannabis UCITS ETF, ~TER 0.65% |
-| Gambling/betting | BETZ | — | No UCITS — buscar alternativa |
-| Defensa | DFEN/NATO | IE disponibles | Sector en auge por rearme europeo |
-| Uranio/nuclear | URNM | — | Buscar UCITS equivalente |
+| Medical Cannabis | FLWR | IE00BJXRZ273 | Rize Medical Cannabis UCITS ETF, ~TER 0.65% |
+| Gambling/Betting | BETZ | — | No UCITS — find alternative |
+| Defense | DFEN/NATO | IE available | Sector booming due to European rearmament |
+| Uranium/Nuclear | URNM | — | Find UCITS equivalent |
 
-#### ETFs apalancados UCITS (legales en España para minoristas)
+#### Leveraged UCITS ETFs (legal in Spain for retail investors)
 
-| Producto | Apalancamiento | Cuándo usar |
-|----------|---------------|-------------|
-| 2x S&P500 (2SPX) | 2x long | Solo en tendencia alcista confirmada |
-| -1x S&P500 (SPXS equiv UCITS) | 1x short | Bear market activo — NOW |
-| 3x BTC (3BTC) | 3x long | Solo en bull crypto confirmado |
+| Product | Leverage | When to Use |
+|---------|----------|-------------|
+| 2x S&P500 (2SPX) | 2x long | Only in confirmed uptrend |
+| -1x S&P500 (SPXS equiv UCITS) | 1x short | Active bear market — NOW |
+| 3x BTC (3BTC) | 3x long | Only in confirmed crypto bull |
 
-#### Crypto ampliado
+#### Expanded Crypto
 
-| Asset | Riesgo | Tesis |
-|-------|--------|-------|
-| SOL | Muy alto | Alta beta, recuperación fuerte en bull |
-| AVAX | Muy alto | Correlación BTC pero mayor upside |
-| Staking ETH simulado | Medio | +4% APY sobre posición ETH |
+| Asset | Risk | Thesis |
+|-------|------|--------|
+| SOL | Very high | High beta, strong recovery in bull |
+| AVAX | Very high | BTC correlation but higher upside |
+| Simulated ETH Staking | Medium | +4% APY on ETH position |
 
-#### Derivados/posiciones cortas (UCITS warrants, CFDs simulados)
+#### Derivatives/Short Positions (UCITS warrants, simulated CFDs)
 
-- **Short S&P500**: con el mercado en bear técnico activo, una posición corta táctica es lo más lógico ahora mismo
-- **Short NASDAQ**: igual — caída -20% desde máximos, aranceles activos hasta julio
+- **Short S&P500**: with the market in active technical bear, a tactical short position is the most logical move right now
+- **Short NASDAQ**: same — -20% drop from highs, tariffs active until July
 
-### Regla de oro actualizada
+### Updated Golden Rule
 
-> Si el mercado cae, HAL DEBE ganar dinero. Posiciones cortas, inversos, hedges asimétricos.
-> El objetivo es 10x, no preservar capital.
-
+> If the market drops, Hustle MUST make money. Short positions, inverses, asymmetric hedges.
+> The goal is 10x, not capital preservation.
