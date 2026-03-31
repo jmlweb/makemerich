@@ -1,115 +1,132 @@
-# Available Assets (Legal en España)
+# Available Assets (Legal in Spain)
 
-> ⚠️ Solo instrumentos accesibles para inversores minoristas en España/UE
+> Only instruments accessible to retail investors in Spain/EU
 
 ---
 
-## ETFs UCITS (Recomendados)
+## UCITS ETFs (Recommended)
 
-### Renta Variable Global
+### Global Equities
 
-| Ticker | ISIN | Descripción | TER | Divisa |
-|--------|------|-------------|-----|--------|
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
 | VWCE | IE00BK5BQT80 | Vanguard FTSE All-World (Acc) | 0.22% | EUR |
 | SWDA | IE00B4L5Y983 | iShares Core MSCI World (Acc) | 0.20% | USD |
 | EUNL | IE00B4L5Y983 | iShares Core MSCI World (Acc) | 0.20% | EUR |
 
 ### S&P 500
 
-| Ticker | ISIN | Descripción | TER | Divisa |
-|--------|------|-------------|-----|--------|
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
 | SXR8 | IE00B5BMR087 | iShares Core S&P 500 (Acc) | 0.07% | EUR |
 | CSPX | IE00B5BMR087 | iShares Core S&P 500 (Acc) | 0.07% | USD |
 | VUAA | IE00BFMXXD54 | Vanguard S&P 500 (Acc) | 0.07% | USD |
 
 ### NASDAQ / Tech
 
-| Ticker | ISIN | Descripción | TER | Divisa |
-|--------|------|-------------|-----|--------|
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
 | EQQQ | IE00B53SZB19 | Invesco EQQQ NASDAQ-100 (Acc) | 0.30% | EUR |
 | SXRV | IE00B53SZB19 | iShares NASDAQ-100 (Acc) | 0.33% | EUR |
 
-### Monetario EUR (Cash equivalente)
+### EUR Money Market (Cash Equivalent)
 
-| Ticker | ISIN | Descripción | TER | Divisa |
-|--------|------|-------------|-----|--------|
-| XEON | LU1190417599 | Lyxor Smart Overnight Return UCITS ETF (€STR) | 0.07% | EUR |
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
+| XEON | LU1190417599 | Lyxor Smart Overnight Return UCITS ETF (ESTR) | 0.07% | EUR |
 
-> Ideal para aparcar cash esperando reentrada. ~3.5% anual, liquidez diaria, sin riesgo de tipos.
+> Ideal to park cash while waiting for re-entry. ~3.5% annual, daily liquidity, no rate risk.
 
+### Inverse / Short (Tactical)
 
-### Oro / Commodities
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
+| DXS3 | LU0322251520 | Xtrackers S&P 500 Inverse Daily UCITS | 0.50% | EUR |
 
-| Ticker | ISIN | Descripción | TER | Divisa |
-|--------|------|-------------|-----|--------|
+> Daily inverse ETF — profits when S&P 500 falls. Subject to volatility drag over long periods. Use for tactical short positions only.
+
+### Defence / Thematic
+
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
+| NATO | IE000OJ5TQP4 | HANetf Future of Defence UCITS ETF | 0.49% | EUR |
+
+> European defence sector ETF. Thematic play on European rearmament.
+
+### Gold / Commodities
+
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
+| 4GLD | DE000A0S9GB0 | Xetra-Gold (physically backed) | 0.00% | EUR |
 | SGLD | IE00B4ND3602 | Invesco Physical Gold ETC | 0.12% | USD |
-| 4GLD | DE000A0S9GB0 | Xetra-Gold (respaldado físico) | 0.00% | EUR |
 | PHAU | JE00B1VS3770 | WisdomTree Physical Gold | 0.39% | USD |
 
-### Emergentes
+> For EUR-based portfolios, prefer 4GLD: 0% TER, EUR-denominated, no FX drag.
 
-| Ticker | ISIN | Descripción | TER | Divisa |
-|--------|------|-------------|-----|--------|
+### Emerging Markets
+
+| Ticker | ISIN | Description | TER | Currency |
+|--------|------|-------------|-----|----------|
 | EIMI | IE00BKM4GZ66 | iShares Core MSCI EM (Acc) | 0.18% | USD |
 | VFEA | IE00BK5BR733 | Vanguard FTSE Emerging Markets | 0.22% | USD |
 
 ---
 
-## Crypto (Regulado en España)
+## Crypto (Regulated in Spain)
 
-Plataformas registradas en Banco de España:
-- **Kraken** — Bajas comisiones, amplio catálogo
-- **Coinbase** — Más simple, algo más caro
-- **Bit2Me** — Española, buen soporte
+Platforms registered with Banco de Espana:
+- **Kraken** — Low fees, wide selection
+- **Coinbase** — Simpler UX, slightly higher fees
+- **Bit2Me** — Spanish platform, good support
 
-| Asset | Ticker | Riesgo | Notas |
-|-------|--------|--------|-------|
-| Bitcoin | BTC | Alto | 60-70% de asignación crypto recomendada |
-| Ethereum | ETH | Alto | 20-30% de asignación crypto |
-| Solana | SOL | Muy alto | Solo táctica, < 10% |
+| Asset | Ticker | Risk | Notes |
+|-------|--------|------|-------|
+| Bitcoin | BTC | High | 60-70% of crypto allocation recommended |
+| Ethereum | ETH | High | 20-30% of crypto allocation |
+| Solana | SOL | Very High | Tactical only, < 10% |
 
-**Fiscalidad crypto España:** Igual que acciones (19-28% sobre ganancias).
-
----
-
-## Renta Fija
-
-| Tipo | Acceso | Rentabilidad | Notas |
-|------|--------|--------------|-------|
-| Letras del Tesoro | tesoro.es | ~3% | Sin comisiones, 3/6/12 meses |
-| Bonos del Estado | tesoro.es | ~3.5% | Plazos más largos |
-| ETF Bonos (AGGH) | Broker | ~4% | iShares Global Aggregate |
+**Crypto taxation in Spain:** Same as equities (19-28% on gains).
 
 ---
 
-## Alternativos
+## Fixed Income
 
-| Tipo | Plataforma | Riesgo | Min. | Notas |
-|------|------------|--------|------|-------|
-| P2P Lending | Mintos | Alto | €10 | Diversificar originadores |
-| Crowdfunding inmob. | Urbanitae | Alto | €500 | Proyectos específicos |
-| Oro físico | BullionVault | Medio | €50 | Almacenado en Zúrich/Londres |
+| Type | Access | Yield | Notes |
+|------|--------|-------|-------|
+| Treasury Bills | tesoro.es | ~3% | No fees, 3/6/12 months |
+| Government Bonds | tesoro.es | ~3.5% | Longer maturities |
+| Bond ETF (AGGH) | Broker | ~4% | iShares Global Aggregate |
 
 ---
 
-## ❌ NO disponibles (regulación PRIIPS)
+## Alternatives
 
-Estos ETFs US no tienen KID y no son accesibles legalmente:
+| Type | Platform | Risk | Min. | Notes |
+|------|----------|------|------|-------|
+| P2P Lending | Mintos | High | EUR 10 | Diversify across originators |
+| Real Estate Crowdfunding | Urbanitae | High | EUR 500 | Specific projects |
+| Physical Gold | BullionVault | Medium | EUR 50 | Stored in Zurich/London |
+
+---
+
+## Not Available (PRIIPS Regulation)
+
+These US ETFs lack a KID document and are not legally accessible:
 - VOO, VTI, QQQ, SPY, GLD, IAU, VNQ, etc.
 
-*Algunos brokers lo permiten, pero operan en zona gris. Esta simulación usa solo instrumentos 100% legales.*
+*Some brokers allow access, but operate in a gray area. This simulation uses only 100% legal instruments.*
 
 ---
 
-## Brokers Recomendados (España)
+## Recommended Brokers (Spain)
 
-| Broker | Comisiones | Notas |
-|--------|------------|-------|
-| Interactive Brokers | 0.05% (min €1.25) | Más completo |
-| DEGIRO | €2-3/operación | Sencillo, barato |
-| MyInvestor | Gratis (fondos) | Solo fondos indexados |
-| Trade Republic | €1/operación | App móvil, limitado |
+| Broker | Fees | Notes |
+|--------|------|-------|
+| Interactive Brokers | 0.05% (min EUR 1.25) | Most complete |
+| DEGIRO | EUR 2-3/trade | Simple, cheap |
+| MyInvestor | Free (funds) | Index funds only |
+| Trade Republic | EUR 1/trade | Mobile app, limited |
 
 ---
 
-*Última actualización: 2026-02-06*
+*Last updated: 2026-03-31*
