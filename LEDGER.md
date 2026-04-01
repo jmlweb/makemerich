@@ -5,9 +5,9 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,274.53 |
-| Total Return | -14.51% |
-| Days Active | 46 |
+| Current Balance | €4,270.01 |
+| Total Return | -14.60% |
+| Days Active | 48 |
 
 ---
 
@@ -988,5 +988,37 @@ Net positive day for the bearish portfolio. SP500 -2.4% and NASDAQ -3.3% validat
 
 **Analysis:**
 Last day of March with market recovery. SP500 +2.35% and NASDAQ +2.93% penalize DXS3 (-1.02% vs entry), which drags on the portfolio's short position. However, long positions compensate: ETH +3.61% on the day, GOLD +3.94% (best asset of the day). Net positive balance thanks to diversification. With Liberation Day on April 2 as the main catalyst for the bearish DXS3 thesis, the portfolio is positioned for the event.
+
+**No new trades at close.**
+
+---
+
+### Day 47 — April 1, 2026 21:30 CET (DAY CLOSE)
+
+**Closing balance:** €4,267.56 | **Total Return:** -14.65%
+**Day P&L:** -€6.97 (-0.16%) vs 31/03 close (€4,274.53)
+
+**Closing prices:**
+- ETH: $2,134.17 (+1.40% day)
+- SP500: 6,575.32 (+3.65% day) ← unfavorable for DXS3
+- NASDAQ: 21,840.95 (+5.03% day) ← unfavorable for DXS3
+- GOLD: $4,795.00 (+3.17% day) ← favorable for 4GLD
+- EUR/USD: 0.8670
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry |
+|-------|-------|-------------|-------------|
+| DXS3  | €1,514 | 35.5% | -4.19% |
+| ETH   | €1,218 | 28.5% | +3.98% |
+| 4GLD  | €499   | 11.7% | +6.31% |
+| XEON  | €451   | 10.6% | +5.90% |
+| NATO  | €372   | 8.7%  | +0.00% |
+| CASH  | €214   | 5.0%  | — |
+
+**Trades today:**
+- SELL XEON 0.1748u @ €148.77 (€26.00) — cash minimum rule fix (4.4% → 5.0%)
+
+**Analysis:**
+Strong market rally across the board (+3.65% S&P, +5.03% NASDAQ) penalizes DXS3 (-4.19% vs entry). Long positions partially compensate: 4GLD best performer at +6.31%, ETH +3.98%. Net slightly negative day (-0.16%). Liberation Day catalyst (April 2) is the key event for the DXS3 thesis — tariff announcements expected to reverse today's rally.
 
 **No new trades at close.**

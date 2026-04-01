@@ -2,19 +2,19 @@
   "date": "2026-04-01",
   "day": 47,
   "balance": {
-    "total": 4264.94,
+    "total": 4267.56,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -14.7,
+  "totalReturn": -14.65,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 187.96,
+      "value": 213.93,
       "pnlPercent": 0
     },
     {
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2132.6462,
-      "value": 1216.7,
-      "pnlPercent": 3.88,
-      "change24h": 1.3274000962508847
+      "currentPriceUSD": 2134.1655,
+      "value": 1217.57,
+      "pnlPercent": 3.96,
+      "change24h": 1.3995858713533027
     },
     {
       "asset": "4GLD",
@@ -34,21 +34,21 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 130.93,
-      "value": 493.66,
-      "pnlPercent": 5.11,
-      "change24h": 2.577561892823571
+      "currentPriceEUR": 132.46,
+      "value": 499.43,
+      "pnlPercent": 6.34,
+      "change24h": 3.77624569100596
     },
     {
       "asset": "XEON",
       "type": "ETF",
       "description": "Lyxor Smart Overnight Return (€STR)",
-      "units": 3.2059,
+      "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 148.769,
-      "value": 476.94,
-      "pnlPercent": 5.89,
-      "change24h": -0.00403293564106888
+      "currentPriceEUR": 148.787,
+      "value": 450.99,
+      "pnlPercent": 5.9,
+      "change24h": 0.00806587128213776
     },
     {
       "asset": "DXS3",
@@ -56,24 +56,24 @@
       "description": "Xtrackers S&P500 Inverse Daily UCITS",
       "units": 277.5958,
       "entryPriceEUR": 5.69,
-      "currentPriceEUR": 5.487,
-      "value": 1523.17,
-      "pnlPercent": -3.57,
-      "change24h": -3.7199508685734295
+      "currentPriceEUR": 5.454,
+      "value": 1514.01,
+      "pnlPercent": -4.15,
+      "change24h": -4.298999824530622
     },
     {
       "asset": "NATO",
       "type": "ETF",
       "description": "HANetf Future of Defence UCITS",
       "units": 21.6216,
-      "currentPriceUSD": 19.552,
-      "value": 366.52,
+      "currentPriceUSD": 19.825,
+      "value": 371.64,
       "pnlPercent": 0,
-      "change24h": 4.221748400852868
+      "change24h": 5.676972281449881
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-01T10:27:01.607Z",
+    "generatedAt": "2026-04-01T20:33:01.854Z",
     "eurUsd": 0.867
   }
 }
