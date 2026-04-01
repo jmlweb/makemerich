@@ -28,12 +28,8 @@ cd "$REPO_DIR"
 
 echo "[$(date)] Starting daily update..." | tee "$LOG_FILE"
 
-# Check if market was open today (skip if already have today's data)
+# Always run the full close — intra-day sessions may have created the file but LEDGER update is mandatory
 TODAY=$(date +%Y-%m-%d)
-if [ -f "data/$TODAY.json" ]; then
-  echo "[$(date)] data/$TODAY.json already exists — nothing to do." | tee -a "$LOG_FILE"
-  exit 0
-fi
 
 # Fetch prices
 echo "[$(date)] Fetching prices..." | tee -a "$LOG_FILE"
