@@ -1,58 +1,58 @@
 {
-  "last_updated": "2026-03-31T19:30:16.573Z",
-  "holdings": {
-    "CASH": {
-      "amount_eur": 187.96
+    "last_updated": "2026-04-01T10:27:53.404309+00:00",
+    "holdings": {
+        "CASH": {
+            "amount_eur": 213.93
+        },
+        "ETH": {
+            "units": 0.658029,
+            "entry_price_usd": 2052.97,
+            "current_price_usd": 2132.6462,
+            "amount_eur": 1216.7,
+            "pnl_pct": 3.88,
+            "stop_loss_usd": 1900
+        },
+        "4GLD": {
+            "units": 3.7704,
+            "entry_price_eur": 124.56,
+            "current_price_eur": 130.93,
+            "amount_eur": 493.66,
+            "pnl_pct": 5.11,
+            "stop_loss_eur": 105.88
+        },
+        "XEON": {
+            "units": 3.0311,
+            "entry_price_eur": 140.5,
+            "current_price_eur": 148.769,
+            "amount_eur": 450.93,
+            "pnl_pct": 5.89,
+            "stop_loss_eur": null,
+            "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 monetario EUR, ~3.5% anual"
+        },
+        "DXS3": {
+            "units": 277.5958,
+            "entry_price_eur": 5.69,
+            "current_price_eur": 5.487,
+            "amount_eur": 1523.17,
+            "pnl_pct": -3.57,
+            "stop_loss_eur": 4.84,
+            "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520)"
+        },
+        "NATO": {
+            "units": 21.6216,
+            "entry_price_eur": 18.5,
+            "current_price_eur": 16.2,
+            "amount_eur": 366.52,
+            "pnl_pct": 0,
+            "stop_loss_eur": 15.72,
+            "note": "HANetf Future of Defence UCITS (IE000OJ5TQP4)",
+            "current_price_usd": 19.552
+        }
     },
-    "ETH": {
-      "units": 0.658029,
-      "entry_price_usd": 2052.97,
-      "current_price_usd": 2096.575,
-      "amount_eur": 1203.02,
-      "pnl_pct": 2.12,
-      "stop_loss_usd": 1900
-    },
-    "4GLD": {
-      "units": 3.7704,
-      "entry_price_eur": 124.56,
-      "current_price_eur": 128.8,
-      "amount_eur": 485.63,
-      "pnl_pct": 3.4,
-      "stop_loss_eur": 105.88
-    },
-    "XEON": {
-      "units": 3.2059,
-      "entry_price_eur": 140.5,
-      "current_price_eur": 148.786,
-      "amount_eur": 476.99,
-      "pnl_pct": 5.9,
-      "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF — monetario EUR, ~3.5% anual"
-    },
-    "DXS3": {
-      "units": 277.5958,
-      "entry_price_eur": 5.69,
-      "current_price_eur": 5.632,
-      "amount_eur": 1563.42,
-      "pnl_pct": -1.02,
-      "stop_loss_eur": 4.84,
-      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520)"
-    },
-    "NATO": {
-      "units": 21.6216,
-      "entry_price_eur": 18.5,
-      "current_price_eur": 16.2,
-      "amount_eur": 357.51,
-      "pnl_pct": 0,
-      "stop_loss_eur": 15.72,
-      "note": "HANetf Future of Defence UCITS (IE000OJ5TQP4)",
-      "current_price_usd": 18.962
+    "totals": {
+        "balance_eur": 4264.91,
+        "initial_eur": 5000,
+        "pnl_eur": -735.09,
+        "pnl_pct": -14.7
     }
-  },
-  "totals": {
-    "balance_eur": 4274.53,
-    "initial_eur": 5000,
-    "pnl_eur": -725.47,
-    "pnl_pct": -14.51
-  }
 }

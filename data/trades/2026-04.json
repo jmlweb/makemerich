@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-04-01",
+    "time": "10:27 UTC",
+    "action": "SELL",
+    "asset": "XEON",
+    "units": 0.1748,
+    "price_eur": 148.769,
+    "amount_eur": 26.0,
+    "fee_eur": 0.03,
+    "reason": "Fix RULES.md \u00a74 cash minimum violation (4.4% \u2192 5.0%)",
+    "session": "makemerich-1200"
+  }
+]
