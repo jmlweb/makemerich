@@ -1,75 +1,100 @@
 #!/bin/bash
-# makemerich - Daily portfolio update
-# Runs Mon-Fri at 21:30 via cron
-
+# makemerich - Daily close session (21:30 L-V)
+# Flujo: fetch → update → validate → signals → decide → act → LEDGER → commit → report
 set -e
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 GITHUB_TOKEN=$(grep '^GITHUB_TOKEN=' ~/.secrets | cut -d'=' -f2)
 GITHUB_USER=$(grep '^GITHUB_USER=' ~/.secrets | cut -d'=' -f2)
-TELEGRAM_USER_ID=$(grep '^TELEGRAM_USER_ID=' ~/.secrets | cut -d'=' -f2)
 LOG_FILE="/tmp/makemerich-daily.log"
-OPENCLAW_BIN="$HOME/.nvm/versions/node/v25.8.0/bin/openclaw"
+OPENCLAW_CONFIG="$HOME/.openclaw/openclaw.json"
 
 # Load nvm / node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
-notify() {
-  "$OPENCLAW_BIN" agent \
-    --message "$1" \
-    --deliver \
-    --reply-channel telegram \
-    --reply-to "${TELEGRAM_USER_ID}" \
-    2>/dev/null || true
+HOOK_TOKEN=$(python3 -c "import json; print(json.load(open('$OPENCLAW_CONFIG')).get('hooks',{}).get('token',''))" 2>/dev/null || echo "")
+BOT_TOKEN=$(python3 -c "import json; print(json.load(open('$OPENCLAW_CONFIG'))['channels']['telegram']['botToken'])" 2>/dev/null || echo "")
+CHAT_ID="159054208"
+
+send_telegram() {
+  python3 -c "
+import urllib.parse, urllib.request
+data = urllib.parse.urlencode({'chat_id': '$CHAT_ID', 'text': '''$1''', 'parse_mode': 'Markdown'}).encode()
+urllib.request.urlopen(urllib.request.Request('https://api.telegram.org/bot${BOT_TOKEN}/sendMessage', data=data), timeout=10)
+" 2>/dev/null || true
 }
 
 cd "$REPO_DIR"
+echo "[$(date)] Starting daily close..." | tee "$LOG_FILE"
 
-echo "[$(date)] Starting daily update..." | tee "$LOG_FILE"
+# 1. Fetch prices
+echo "[1/5] Fetching prices..." | tee -a "$LOG_FILE"
+node scripts/fetch-prices.js >> "$LOG_FILE" 2>&1 || { send_telegram "⚠️ makemerich: error fetching prices"; exit 1; }
 
-# Always run the full close — intra-day sessions may have created the file but LEDGER update is mandatory
+# 2. Update portfolio
+echo "[2/5] Updating portfolio..." | tee -a "$LOG_FILE"
+node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { send_telegram "⚠️ makemerich: error updating portfolio"; exit 1; }
+
+# 3. Validate rules
+echo "[3/5] Validating rules..." | tee -a "$LOG_FILE"
+VIOLATION_COUNT=$(node scripts/validate-rules.js 2>/dev/null | grep "VIOLATIONS (" | grep -oP '\d+' | head -1 || echo "0")
+
+# 4. Generate signals
+echo "[4/5] Generating signals..." | tee -a "$LOG_FILE"
+SIGNALS_OUTPUT=$(node scripts/generate-signals.js 2>/dev/null)
+NEAR_TRIGGERS=$(echo "$SIGNALS_OUTPUT" | grep -A20 "NEAR TRIGGER:" | grep -v "NEAR TRIGGER:" | grep -v "ACTIVE MONITORS:" | head -5 || true)
+
+# 5. Delegate to agent: decide, execute, update LEDGER, commit, report
+echo "[5/5] Delegating to agent..." | tee -a "$LOG_FILE"
+
+BALANCE=$(python3 -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"balance_eur\"]:.2f}')" 2>/dev/null || echo "?")
+PNL=$(python3 -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"pnl_pct\"]:.1f}')" 2>/dev/null || echo "?")
 TODAY=$(date +%Y-%m-%d)
 
-# Fetch prices
-echo "[$(date)] Fetching prices..." | tee -a "$LOG_FILE"
-if ! node scripts/fetch-prices.js >> "$LOG_FILE" 2>&1; then
-  notify "⚠️ makemerich: error fetching prices — check logs."
-  exit 1
+PRICES_SUMMARY=$(python3 -c "
+import json
+p = json.load(open('data/.prices-latest.json'))
+lines = [f'{k.upper()}: {v}' for k, v in p.items() if k in ('sp500','nasdaq','gold','eth','btc','eurusd')]
+print(', '.join(lines))
+" 2>/dev/null || echo "")
+
+HOLDINGS=$(python3 -c "
+import json
+p = json.load(open('data/portfolio.json'))
+lines = []
+for k, v in p['holdings'].items():
+    if k == 'CASH':
+        lines.append(f'CASH: {v[\"amount_eur\"]:.0f}EUR')
+    else:
+        amt = v.get('amount_eur', 0)
+        pnl = v.get('pnl_pct', 0)
+        stop = v.get('stop_loss_eur') or v.get('stop_loss_usd')
+        lines.append(f'{k}: {amt:.0f}EUR (pnl={pnl}%, stop={stop})')
+print(' | '.join(lines))
+" 2>/dev/null || echo "")
+
+if [ -n "$HOOK_TOKEN" ]; then
+  HOOK_MSG=$(python3 -c "
+import json
+msg = (
+    f'makemerich DAILY CLOSE $TODAY. Balance: EUR $BALANCE ($PNL%). '
+    f'Holdings: $HOLDINGS. Prices: $PRICES_SUMMARY. Violations: $VIOLATION_COUNT. Near triggers: $NEAR_TRIGGERS. '
+    f'MANDATORY FLOW (HUSTLE.md): '
+    f'1) Analyze all positions and signals. '
+    f'2) Make decisions and EXECUTE any trade NOW if warranted — do not suggest, act. '
+    f'3) Append the day entry to LEDGER.md in English following the existing format (Day N, date, balance, prices, performance table, trades, analysis). '
+    f'4) git add -A && git commit with message \"Day N: CLOSE EUR BALANCE (PNL%)\" and git push (use GITHUB_TOKEN from ~/.secrets). '
+    f'5) Report to Jose in Spanish only facts: decisions taken, trades executed (or HOLD + why), balance. Never suggest — past-tense facts only.'
+)
+print(json.dumps({'message': msg, 'name': 'makemerich-close', 'channel': 'telegram', 'deliver': True}))
+")
+  curl -s -X POST http://127.0.0.1:18789/hooks/agent \
+    -H "Authorization: Bearer $HOOK_TOKEN" \
+    -H "Content-Type: application/json" \
+    -d "$HOOK_MSG" >> "$LOG_FILE" 2>&1
+  echo "[$(date)] Agent hook triggered for daily close" | tee -a "$LOG_FILE"
+else
+  echo "WARNING: No hook token" | tee -a "$LOG_FILE"
+  send_telegram "⚠️ makemerich: no hook token — close not delegated to agent"
 fi
-
-# Update portfolio
-echo "[$(date)] Updating portfolio..." | tee -a "$LOG_FILE"
-if ! node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1; then
-  notify "⚠️ makemerich: error updating portfolio — check logs."
-  exit 1
-fi
-
-# Generate signals and validate rules (non-blocking)
-echo "[$(date)] Generating signals..." | tee -a "$LOG_FILE"
-node scripts/generate-signals.js >> "$LOG_FILE" 2>&1 || true
-
-echo "[$(date)] Validating rules..." | tee -a "$LOG_FILE"
-node scripts/validate-rules.js >> "$LOG_FILE" 2>&1 || true
-
-# Regenerate dashboard
-echo "[$(date)] Generating dashboard..." | tee -a "$LOG_FILE"
-node scripts/generate-dashboard.js >> "$LOG_FILE" 2>&1 || true
-
-# Get balance for commit message and notification
-BALANCE=$(node scripts/calculate-balance.js 2>/dev/null | grep "Balance:" | awk '{print $2, $3}')
-DAY=$(node -e "const d=require('./data/$TODAY.json'); console.log(d.day)" 2>/dev/null || echo "?")
-
-# Commit and push
-git add -A
-git commit -m "Daily update: $TODAY - $BALANCE"
-git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER}/makemerich.git"
-git push
-git remote set-url origin "https://github.com/${GITHUB_USER}/makemerich.git"
-
-echo "[$(date)] Done: $BALANCE" | tee -a "$LOG_FILE"
-
-# Notify Jose
-notify "📊 makemerich Day $DAY ($TODAY)
-Balance: $BALANCE
-Commit pushed to GitHub ✅"
