@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-01T20:33:01.854Z",
+  "last_updated": "2026-04-02T18:54:50.025Z",
   "holdings": {
     "CASH": {
       "amount_eur": 213.93
@@ -7,34 +7,34 @@
     "ETH": {
       "units": 0.658029,
       "entry_price_usd": 2052.97,
-      "current_price_usd": 2134.1655,
-      "amount_eur": 1217.57,
-      "pnl_pct": 3.96,
+      "current_price_usd": 2057.7717,
+      "amount_eur": 1167.21,
+      "pnl_pct": 0.23,
       "stop_loss_usd": 1900
     },
     "4GLD": {
       "units": 3.7704,
       "entry_price_eur": 124.56,
-      "current_price_eur": 132.46,
-      "amount_eur": 499.43,
-      "pnl_pct": 6.34,
+      "current_price_eur": 130.1,
+      "amount_eur": 490.53,
+      "pnl_pct": 4.45,
       "stop_loss_eur": 105.88
     },
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 148.787,
-      "amount_eur": 450.99,
-      "pnl_pct": 5.9,
+      "current_price_eur": 148.759,
+      "amount_eur": 450.9,
+      "pnl_pct": 5.88,
       "stop_loss_eur": null,
       "note": "Lyxor Smart Overnight Return UCITS ETF — monetario EUR, ~3.5% anual"
     },
     "DXS3": {
       "units": 277.5958,
       "entry_price_eur": 5.69,
-      "current_price_eur": 5.454,
-      "amount_eur": 1514.01,
-      "pnl_pct": -4.15,
+      "current_price_eur": 5.495,
+      "amount_eur": 1525.39,
+      "pnl_pct": -3.43,
       "stop_loss_eur": 4.84,
       "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520)"
     },
@@ -42,17 +42,17 @@
       "units": 21.6216,
       "entry_price_eur": 18.5,
       "current_price_eur": 16.2,
-      "amount_eur": 371.64,
+      "amount_eur": 371.38,
       "pnl_pct": 0,
       "stop_loss_eur": 15.72,
       "note": "HANetf Future of Defence UCITS (IE000OJ5TQP4)",
-      "current_price_usd": 19.825
+      "current_price_usd": 19.926
     }
   },
   "totals": {
-    "balance_eur": 4267.56,
+    "balance_eur": 4219.34,
     "initial_eur": 5000,
-    "pnl_eur": -732.44,
-    "pnl_pct": -14.65
+    "pnl_eur": -780.66,
+    "pnl_pct": -15.61
   }
 }

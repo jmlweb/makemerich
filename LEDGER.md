@@ -1022,3 +1022,34 @@ Last day of March with market recovery. SP500 +2.35% and NASDAQ +2.93% penalize 
 Strong market rally across the board (+3.65% S&P, +5.03% NASDAQ) penalizes DXS3 (-4.19% vs entry). Long positions partially compensate: 4GLD best performer at +6.31%, ETH +3.98%. Net slightly negative day (-0.16%). Liberation Day catalyst (April 2) is the key event for the DXS3 thesis — tariff announcements expected to reverse today's rally.
 
 **No new trades at close.**
+
+---
+
+### Day 48 — April 2, 2026 21:30 CET (DAY CLOSE)
+
+**Closing balance:** €4,219.34 | **Total Return:** -15.61%
+**Day P&L:** -€48.22 (-1.13%) vs 01/04 close (€4,267.56)
+
+**Closing prices:**
+- ETH: $2,057.77 (-3.76% day)
+- SP500: 6,572.45 (+0.67% day) ← unfavorable for DXS3
+- NASDAQ: 21,823.72 (+1.08% day) ← unfavorable for DXS3
+- GOLD: $4,687.90 (-1.99% day)
+- EUR/USD: 0.8620
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry |
+|-------|-------|-------------|-------------|
+| DXS3  | €1,525 | 36.1% | -3.43% |
+| ETH   | €1,167 | 27.7% | +0.26% |
+| 4GLD  | €491   | 11.6% | +4.45% |
+| XEON  | €451   | 10.7% | +5.88% |
+| NATO  | €371   | 8.8%  | +0.00% |
+| CASH  | €214   | 5.1%  | — |
+
+**Trades today:** None.
+
+**Analysis:**
+Liberation Day (April 2 US tariff announcements) was a non-event for DXS3. Markets closed nearly flat (S&P +0.67%, NASDAQ +1.08%), not the crash the bearish thesis required. DXS3 remains at -3.43% vs entry. ETH dropped -3.76% on the day but stays above stop ($1,900). NATO approaching stop ($15.72, 3% margin). 4GLD and XEON continue as the strongest performers. Tariff thesis still intact — market reaction may be delayed.
+
+**HOLD — all positions maintained.**
