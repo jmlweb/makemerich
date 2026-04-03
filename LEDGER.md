@@ -1092,3 +1092,45 @@ Strong market rally across the board (+3.65% S&P, +5.03% NASDAQ) penalizes DXS3 
 Liberation Day (April 2 US tariff announcements) was a non-event for DXS3. Markets closed nearly flat (S&P +0.67%, NASDAQ +1.08%), not the crash the bearish thesis required. DXS3 remains at -3.43% vs entry. ETH dropped -3.76% on the day but stays above stop ($1,900). NATO approaching stop ($15.72, 3% margin). 4GLD and XEON continue as the strongest performers. Tariff thesis still intact — market reaction may be delayed.
 
 **HOLD — all positions maintained.**
+
+---
+
+### Day 49 — April 3, 2026 12:00 CET (MIDDAY CHECK)
+
+**Balance:** €4,228.13 | **Total Return:** -15.4%
+**Day P&L:** +€8.79 (+0.21%) vs 02/04 close (€4,219.34)
+
+**Current prices:**
+- ETH: ~$2,061 (-2.6% vs prior close; -0.0% vs entry stop $1,900 is 7.8% away)
+- SP500 last close: 6,582.69 (+0.11%) — US MARKET CLOSED (Good Friday)
+- NASDAQ last close: 21,879.18 (+0.18%) — US MARKET CLOSED (Good Friday)
+- GOLD: ~$4,651 (-0.8% vs prior) | EUR/USD: 0.8660
+- IBEX35: 17,555.90 (-0.14%) | DAX: 23,168.08 (+2.15%) — XETRA CLOSED (Good Friday)
+
+**Holiday status:** Good Friday / Viernes Santo 2026
+- NYSE, NASDAQ: CLOSED — reopens Monday April 6
+- XETRA / Frankfurt: CLOSED — reopens Monday April 6
+- Crypto (ETH): OPEN 24/7
+
+**Performance by asset (vs entry):**
+| Asset | Value    | % Portfolio | P&L entry |
+|-------|----------|-------------|-----------|
+| DXS3  | €1,525   | 36.1%       | -3.43%    |
+| ETH   | ~€1,182  | 28.0%       | +0.67%    |
+| 4GLD  | ~€491    | 11.6%       | +4.45%    |
+| XEON  | €451     | 10.7%       | +5.88%    |
+| NATO  | ~€373    | 8.8%        | +0.00%    |
+| CASH  | €214     | 5.1%        | —         |
+
+**Trades today:** None.
+
+**Analysis:**
+Good Friday — all European ETF positions (DXS3, 4GLD, NATO, XEON) cannot be traded: XETRA and Frankfurt are closed. NYSE/NASDAQ also closed. Only crypto is active.
+
+ETH at ~$2,061. Stop at $1,900 (7.8% away). Fear & Greed Index at 9 (extreme fear). ETH is above stop and extreme fear is a contrarian bullish signal — not a reason to panic-sell.
+
+NATO remains the highest risk position: stop at €15.72 with last price €16.2 (only 3% margin). Cannot act today; will be the first priority to monitor on Monday April 6 open.
+
+DXS3 bearish thesis challenged: Liberation Day (April 2) was a non-event for markets. S&P has remained resilient. Will reassess Monday — if no new downside catalyst materializes over the weekend, the thesis may need revision and position reduction.
+
+**HOLD — no trades possible (markets closed for Good Friday). Monitor NATO and DXS3 for Monday open.**
