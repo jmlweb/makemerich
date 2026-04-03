@@ -1172,3 +1172,35 @@ Near triggers reviewed:
 No stops triggered. No actionable signal for ETH.
 
 **HOLD — no trades possible or warranted. Monitor NATO and DXS3 on Monday April 6 open.**
+
+---
+
+### Day 49 — April 3, 2026 18:00 CET (CLOSE CHECK)
+
+**Balance:** €4,223.07 | **Total Return:** -15.5%
+
+**Current prices:**
+- ETH: $2,051.78 / €1,780.03 (stop $1,900 — 7.4% away)
+- 4GLD: €130.1 (stop €105.88 — 18.6% away)
+- DXS3: €5.495 (stop €4.84 — 11.9% away)
+- NATO: €16.2 (stop €15.72 — 3.0% away)
+- XEON: ~€10.69/unit
+
+**Performance by asset (vs entry):**
+| Asset | Value    | % Portfolio | P&L entry |
+|-------|----------|-------------|-----------|
+| DXS3  | €1,525   | 36.1%       | -3.43%    |
+| ETH   | €1,169   | 27.7%       | -0.06%    |
+| XEON  | €451     | 10.7%       | +5.88%    |
+| 4GLD  | €491     | 11.6%       | +4.45%    |
+| NATO  | €373     | 8.8%        | 0.00%     |
+| CASH  | €214     | 5.1%        | —         |
+
+**Trades today:** None.
+
+**Analysis:**
+Good Friday close — all European and US markets closed. Only ETH tradeable; no signal to act. ETH stable at ~$2,052, well above stop at $1,900. Fear & Greed at 9 (Extreme Fear) — contrarian bullish signal, not an exit trigger.
+
+Near triggers unchanged from 15:30 check. NATO remains the highest priority for Monday open (3.0% from stop). DXS3 thesis under review for Monday.
+
+**HOLD — markets closed. Full review at Monday April 6 open.**
