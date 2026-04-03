@@ -1134,3 +1134,41 @@ NATO remains the highest risk position: stop at €15.72 with last price €16.2
 DXS3 bearish thesis challenged: Liberation Day (April 2) was a non-event for markets. S&P has remained resilient. Will reassess Monday — if no new downside catalyst materializes over the weekend, the thesis may need revision and position reduction.
 
 **HOLD — no trades possible (markets closed for Good Friday). Monitor NATO and DXS3 for Monday open.**
+
+---
+
+### Day 49 — April 3, 2026 15:30 CET (AFTERNOON CHECK)
+
+**Balance:** €4,221.37 | **Total Return:** -15.6%
+
+**Current prices:**
+- ETH: $2,048.8 (stop $1,900 — 7.3% away)
+- 4GLD: €130.1 (stop €105.88 — 18.6% away)
+- DXS3: €5.495 (stop €4.84 — 11.9% away)
+- NATO: €16.2 (stop €15.72 — 3.0% away)
+- XEON: ~€10.69/unit
+- ETH/EUR: ~€1,774.99
+
+**Performance by asset (vs entry):**
+| Asset | Value    | % Portfolio | P&L entry |
+|-------|----------|-------------|-----------|
+| DXS3  | €1,525   | 36.1%       | -3.43%    |
+| ETH   | €1,168   | 27.7%       | -0.2%     |
+| XEON  | €451     | 10.7%       | +5.88%    |
+| 4GLD  | €491     | 11.6%       | +4.45%    |
+| NATO  | €373     | 8.8%        | 0.00%     |
+| CASH  | €214     | 5.1%        | —         |
+
+**Trades today:** None.
+
+**Analysis:**
+Good Friday — European (XETRA/Frankfurt) and US (NYSE/NASDAQ) markets closed. DXS3, 4GLD, NATO, and XEON are untradeable. Only ETH is active.
+
+Near triggers reviewed:
+- **NATO**: only 3.0% from stop (€16.2 → €15.72). Cannot act today. #1 priority at Monday open.
+- **ETH**: 7.3% from stop. No signal to exit — price stable, extreme fear is a contrarian bullish signal.
+- **DXS3**: 11.9% from stop. Bearish thesis challenged by market resilience post-Liberation Day anniversary. Will reassess Monday.
+
+No stops triggered. No actionable signal for ETH.
+
+**HOLD — no trades possible or warranted. Monitor NATO and DXS3 on Monday April 6 open.**
