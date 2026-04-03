@@ -5,13 +5,52 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,270.01 |
-| Total Return | -14.60% |
-| Days Active | 48 |
+| Current Balance | €4,229.38 |
+| Total Return | -15.41% |
+| Days Active | 49 |
 
 ---
 
 ## Daily Log
+
+### Day 49 — April 3, 2026 09:00 CET (MORNING SESSION)
+
+**Balance:** €4,229.38 | **Total Return:** -15.41%
+**Day P&L:** +€10.04 (+0.24%) vs 02/04 close (€4,219.34)
+
+**Prices at session open:**
+- ETH: $2,062.86 / €1,788.49 (EUR/USD: 1.1541)
+- S&P 500 Futures: 6,605.25 (-0.26%)
+- DXS3: €5.495 (unchanged)
+- 4GLD: €130.10
+- XEON: €148.759
+- NATO: €16.20
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry |
+|-------|-------|-------------|-------------|
+| DXS3  | €1,525 | 36.1% | -3.43% |
+| ETH   | €1,176 | 27.8% | +0.48% |
+| 4GLD  | €491   | 11.6% | +4.45% |
+| XEON  | €451   | 10.7% | +5.88% |
+| NATO  | €373   | 8.8%  | +0.00% |
+| CASH  | €214   | 5.1%  | — |
+
+**Near triggers:**
+- NATO [STOP_LOSS]: €16.20 → stop €15.72 (3.0% away) — WATCH
+- ETH [STOP_LOSS]: $2,062.86 → stop $1,900 (7.9% away)
+- DXS3 [STOP_LOSS]: €5.495 → stop €4.84 (11.9% away)
+- 4GLD [STOP_LOSS]: €130.10 → stop €105.88 (18.6% away)
+- PORTFOLIO [DRAWDOWN]: -15.41% from start
+
+**Trades:** None.
+
+**Decision: HOLD — all positions.**
+
+**Analysis:**
+Morning session on a Friday. S&P 500 futures slightly negative (-0.26%) — marginally favorable for DXS3 inverse thesis. No stops triggered. NATO is the highest-risk position at 3% from its hard stop (€15.72); the defense/rearmament thesis remains structurally intact despite price weakness from peak entry. Stops are sacred per RULES.md — no pre-emptive exit above stop level; let the stop do its job if triggered. DXS3 thesis (S&P500 bear, tariff uncertainty) still valid with flat-to-negative futures. ETH recovering from Liberation Day selloff. 4GLD and XEON remain the portfolio's strongest performers. No new opportunities warrant deploying the €214 cash reserve above the 5% minimum. Friday volume typically light — no major moves expected without news catalyst.
+
+---
 
 ### Day 35 Close — March 17, 2026 21:30 CET
 

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-02T19:32:52.320Z",
+  "last_updated": "2026-04-03T07:00:04.383Z",
   "holdings": {
     "CASH": {
       "amount_eur": 213.93
@@ -7,9 +7,9 @@
     "ETH": {
       "units": 0.658029,
       "entry_price_usd": 2052.97,
-      "current_price_usd": 2059.961,
-      "amount_eur": 1168.45,
-      "pnl_pct": 0.34,
+      "current_price_usd": 2062.8557,
+      "amount_eur": 1175.52,
+      "pnl_pct": 0.48,
       "stop_loss_usd": 1900
     },
     "4GLD": {
@@ -42,7 +42,7 @@
       "units": 21.6216,
       "entry_price_eur": 18.5,
       "current_price_eur": 16.2,
-      "amount_eur": 371.38,
+      "amount_eur": 373.1,
       "pnl_pct": 0,
       "stop_loss_eur": 15.72,
       "note": "HANetf Future of Defence UCITS (IE000OJ5TQP4)",
@@ -50,9 +50,9 @@
     }
   },
   "totals": {
-    "balance_eur": 4220.58,
+    "balance_eur": 4229.38,
     "initial_eur": 5000,
-    "pnl_eur": -779.42,
-    "pnl_pct": -15.59
+    "pnl_eur": -770.62,
+    "pnl_pct": -15.41
   }
 }
