@@ -89,12 +89,27 @@ msg = (
 )
 print(json.dumps({'message': msg, 'name': 'makemerich-close', 'channel': 'telegram', 'deliver': True}))
 ")
-  curl -s -X POST http://127.0.0.1:18789/hooks/agent \
+  HOOK_RESULT=$(curl -s -o /tmp/makemerich-hook-result.txt -w "%{http_code}" \
+    -X POST http://127.0.0.1:18789/hooks/agent \
     -H "Authorization: Bearer $HOOK_TOKEN" \
     -H "Content-Type: application/json" \
-    -d "$HOOK_MSG" >> "$LOG_FILE" 2>&1
-  echo "[$(date)] Agent hook triggered for daily close" | tee -a "$LOG_FILE"
+    -d "$HOOK_MSG" 2>&1)
+  echo "[$(date)] Agent hook result: $HOOK_RESULT" | tee -a "$LOG_FILE"
+
+  # Fallback: always send a direct Telegram summary regardless of hook result
+  # This ensures Jose always gets a close notification
+  DAY_NUM=$(node -e "try{const d=require('./data/$TODAY.json');console.log(d.day||'?')}catch(e){console.log('?')}" 2>/dev/null || echo "?")
+  NEAR=$(node scripts/generate-signals.js 2>/dev/null | grep "NEAR TRIGGER" -A5 | grep "STOP_LOSS\|DRAWDOWN" | head -2 | sed 's/^  //' | tr '\n' ' ' || echo "")
+
+  send_telegram "📊 *makemerich Día $DAY_NUM — Cierre $TODAY*
+
+💰 Balance: €$BALANCE ($PNL%)
+$HOLDINGS
+
+$NEAR"
 else
   echo "WARNING: No hook token" | tee -a "$LOG_FILE"
-  send_telegram "⚠️ makemerich: no hook token — close not delegated to agent"
+  # Send direct summary
+  send_telegram "📊 *makemerich — Cierre $TODAY*
+💰 Balance: €$BALANCE ($PNL%)"
 fi
