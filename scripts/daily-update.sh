@@ -43,7 +43,7 @@ VIOLATION_COUNT=$(node scripts/validate-rules.js 2>/dev/null | grep "VIOLATIONS 
 # 4. Generate signals
 echo "[4/5] Generating signals..." | tee -a "$LOG_FILE"
 SIGNALS_OUTPUT=$(node scripts/generate-signals.js 2>/dev/null)
-NEAR_TRIGGERS=$(echo "$SIGNALS_OUTPUT" | grep -A20 "NEAR TRIGGER:" | grep -v "NEAR TRIGGER:" | grep -v "ACTIVE MONITORS:" | head -5 || true)
+NEAR_TRIGGERS=$(echo "$SIGNALS_OUTPUT" | grep -A20 "NEAR TRIGGER:" | grep -v "NEAR TRIGGER:" | grep -v "ACTIVE MONITORS:" | head -5 | tr '\n' ' ' | sed "s/'//g" || true)
 
 # 5. Delegate to agent: decide, execute, update LEDGER, commit, report
 echo "[5/5] Delegating to agent..." | tee -a "$LOG_FILE"
@@ -75,11 +75,20 @@ print(' | '.join(lines))
 " 2>/dev/null || echo "")
 
 if [ -n "$HOOK_TOKEN" ]; then
-  HOOK_MSG=$(python3 -c "
-import json
+  HOOK_MSG=$(TODAY="$TODAY" BALANCE="$BALANCE" PNL="$PNL" HOLDINGS="$HOLDINGS" \
+    PRICES_SUMMARY="$PRICES_SUMMARY" VIOLATION_COUNT="$VIOLATION_COUNT" NEAR_TRIGGERS="$NEAR_TRIGGERS" \
+    python3 -c "
+import json, os
+today = os.environ.get('TODAY','?')
+balance = os.environ.get('BALANCE','?')
+pnl = os.environ.get('PNL','?')
+holdings = os.environ.get('HOLDINGS','')
+prices = os.environ.get('PRICES_SUMMARY','')
+violations = os.environ.get('VIOLATION_COUNT','0')
+near = os.environ.get('NEAR_TRIGGERS','')
 msg = (
-    f'makemerich DAILY CLOSE $TODAY. Balance: EUR $BALANCE ($PNL%). '
-    f'Holdings: $HOLDINGS. Prices: $PRICES_SUMMARY. Violations: $VIOLATION_COUNT. Near triggers: $NEAR_TRIGGERS. '
+    f'makemerich DAILY CLOSE {today}. Balance: EUR {balance} ({pnl}%). '
+    f'Holdings: {holdings}. Prices: {prices}. Violations: {violations}. Near triggers: {near}. '
     f'MANDATORY FLOW (HUSTLE.md): '
     f'1) Analyze all positions and signals. '
     f'2) Make decisions and EXECUTE any trade NOW if warranted — do not suggest, act. '
