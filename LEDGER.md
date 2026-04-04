@@ -5,13 +5,53 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,229.38 |
-| Total Return | -15.41% |
-| Days Active | 49 |
+| Current Balance | €4,225.38 |
+| Total Return | -15.49% |
+| Days Active | 50 |
 
 ---
 
 ## Daily Log
+
+### Day 50 — April 4, 2026 10:00 CET (WEEKEND SESSION)
+
+**Balance:** €4,225.38 | **Total Return:** -15.49%
+**Day P&L:** -€3.00 (-0.07%) vs 03/04 close (€4,229.38)
+
+**Prices at session time:**
+- ETH: $2,053.74 / €1,782.69 (24h: -0.76%) — stop $1,900
+- BTC: $66,990 (reference, not held)
+- DXS3: €5.495 (Friday close — XETRA closed weekends)
+- 4GLD: €130.10 (Friday close — XETRA closed weekends)
+- XEON: €148.759 (Friday close — XETRA closed weekends)
+- NATO: €16.20 (Friday close — XETRA closed weekends)
+- Gold spot: ~$4,720/oz (down -11.6% from $5,338 monthly high)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry |
+|-------|-------|-------------|------------|
+| DXS3  | €1,525 | 36.1% | -3.43% |
+| ETH   | €1,171 | 27.7% | -0.01% |
+| 4GLD  | €491   | 11.6% | +4.45% |
+| XEON  | €451   | 10.7% | +5.88% |
+| NATO  | €374   | 8.8%  | 0.00% |
+| CASH  | €214   | 5.1%  | — |
+
+**Near triggers:**
+- NATO [STOP_LOSS]: €16.20 → stop €15.72 (3.0% away) — ⚠️ HIGH PRIORITY MONDAY
+- PORTFOLIO [DRAWDOWN]: -15.49% from start — monitoring
+- ETH [STOP_LOSS]: $2,053.74 → stop $1,900 (7.4% away)
+- DXS3 [STOP_LOSS]: €5.495 → stop €4.84 (11.9% away)
+- 4GLD [STOP_LOSS]: €130.10 → stop €105.88 (18.6% away)
+
+**Trades:** None.
+
+**Decision: HOLD — European markets closed (weekend). No action possible or warranted.**
+
+**Analysis:**
+Weekend session. All European ETFs (DXS3, 4GLD, XEON, NATO) are non-tradeable — XETRA closed until Monday. ETH is live and stable at $2,053.74 (-0.76% 24h), well above the $1,900 stop. No stop triggered. Macro context: S&P 500 logged one of its worst weeks of 2026 on tariff fears. DXS3 (inverse S&P) thesis remains structurally sound. Gold pulled back from its $5,338 peak to ~$4,720 — 4GLD still in profitable territory (+4.45%) and far from stop. NATO remains the most exposed position at 3% from its hard stop (€15.72); to be monitored at Monday open. Cash at €214 (5.1%) — minimum reserve, no dry powder for new entries. Primary action for Monday: confirm NATO price at open; if €16.20 holds, maintain. If NATO opens at or below €15.72, stop-loss executes immediately.
+
+---
 
 ### Day 49 — April 3, 2026 09:00 CET (MORNING SESSION)
 
