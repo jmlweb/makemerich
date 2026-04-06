@@ -5,13 +5,53 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,225.38 |
-| Total Return | -15.49% |
-| Days Active | 50 |
+| Current Balance | €4,216.34 |
+| Total Return | -15.67% |
+| Days Active | 51 |
 
 ---
 
 ## Daily Log
+
+### Day 51 — April 5, 2026 10:00 CET (WEEKEND SESSION)
+
+**Balance:** €4,216.34 | **Total Return:** -15.67%
+**Day P&L:** -€9.04 (-0.21%) vs Day 50 (€4,225.38)
+
+**Prices at session time:**
+- ETH: $2,036.86 / €1,765.96 (24h: -1.38%) — stop $1,900
+- DXS3: €5.495 (Friday close — XETRA closed weekends)
+- 4GLD: €130.10 (Friday close — XETRA closed weekends)
+- XEON: €148.759 (Friday close — XETRA closed weekends)
+- NATO: €16.20 (Friday close — XETRA closed weekends)
+- Gold spot: $4,702.70 (+1.10%)
+- S&P 500: 6,582.69 (+0.83%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry |
+|-------|-------|-------------|------------|
+| DXS3  | €1,525 | 36.2% | -3.43% |
+| ETH   | €1,162 | 27.6% | -0.78% |
+| 4GLD  | €491   | 11.6% | +4.45% |
+| XEON  | €451   | 10.7% | +5.88% |
+| NATO  | €374   | 8.9%  | 0.00% |
+| CASH  | €214   | 5.1%  | — |
+
+**Near triggers:**
+- NATO [STOP_LOSS]: €16.20 → stop €15.72 (3.0% away) — ⚠️ MONITOR MONDAY OPEN
+- PORTFOLIO [DRAWDOWN]: -15.67% from start — monitoring
+- ETH [STOP_LOSS]: $2,036.86 → stop $1,900 (6.7% away)
+- DXS3 [STOP_LOSS]: €5.495 → stop €4.84 (11.9% away)
+- 4GLD [STOP_LOSS]: €130.10 → stop €105.88 (18.6% away)
+
+**Trades:** None.
+
+**Decision: HOLD — European markets closed (weekend). No action possible or warranted.**
+
+**Analysis:**
+Weekend session. All European ETFs (DXS3, 4GLD, XEON, NATO) non-tradeable — XETRA closed until Monday. ETH live at $2,036.86, drifting lower (-1.38% 24h) but still 6.7% above the $1,900 stop — no concern. Day P&L of -€9.04 entirely from ETH softness. Macro: S&P 500 closed Friday at +0.83%, Gold at +1.10% — mixed signals as markets digest tariff news from the week. DXS3 inverse S&P thesis under pressure if equities stabilize, but position still within risk tolerance. NATO remains highest priority for Monday — 3.0% from hard stop at €15.72. Cash at €214 (5.1%), no dry powder for new entries. Monday plan: check NATO at open, confirm ETH trend, reassess DXS3 if S&P rallies further.
+
+---
 
 ### Day 50 — April 4, 2026 10:00 CET (WEEKEND SESSION)
 
