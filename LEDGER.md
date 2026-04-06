@@ -5,13 +5,53 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,216.34 |
-| Total Return | -15.67% |
-| Days Active | 51 |
+| Current Balance | €4,277.96 |
+| Total Return | -14.44% |
+| Days Active | 52 |
 
 ---
 
 ## Daily Log
+
+### Day 52 — April 6, 2026 18:00 CET
+
+**Balance:** €4,277.96 | **Total Return:** -14.44%
+**Day P&L:** +€61.62 (+1.46%) vs Day 51 (€4,216.34)
+
+**Prices at session time:**
+- ETH: $2,141.66 / €1,858.96 (+1.55%) — stop $1,900
+- DXS3: €5.495 (unchanged from Friday close — XETRA closed)
+- 4GLD: €130.10 (unchanged — XETRA closed)
+- XEON: €148.759 (unchanged — XETRA closed)
+- NATO: $19.93 / €16.20 (unchanged — XETRA closed)
+- Gold spot: $4,679.10 (-0.01%)
+- S&P 500: 6,605.78 (+0.46%)
+- DAX: 23,168.08 (+2.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry |
+|-------|-------|-------------|------------|
+| DXS3  | €1,525 | 35.7% | -3.43% |
+| ETH   | €1,223 | 28.6% | +4.32% |
+| 4GLD  | €491   | 11.5% | +4.45% |
+| XEON  | €451   | 10.5% | +5.88% |
+| NATO  | €374   | 8.7%  | 0.00% |
+| CASH  | €214   | 5.0%  | — |
+
+**Near triggers:**
+- NATO [STOP_LOSS]: €16.20 → stop €15.72 (3.0% away) — MONITOR
+- PORTFOLIO [DRAWDOWN]: -14.44% from start — monitoring
+- ETH [STOP_LOSS]: $2,141.66 → stop $1,900 (11.3% away)
+- DXS3 [STOP_LOSS]: €5.495 → stop €4.84 (11.9% away)
+- 4GLD [STOP_LOSS]: €130.10 → stop €105.88 (18.6% away)
+
+**Trades:** None.
+
+**Decision: HOLD — Monday session, European markets closed by 18:00. Crypto up modestly (+1.55%). No stop losses triggered. All positions within acceptable ranges. Portfolio recovering from last week's drawdown (-14.44% vs -15.67% yesterday).**
+
+**Note:** Automated sessions ran via fallback (static report) due to incorrect Claude CLI path in cron scripts. Path corrected for future sessions.
+
+---
 
 ### Day 51 — April 5, 2026 10:00 CET (WEEKEND SESSION)
 
