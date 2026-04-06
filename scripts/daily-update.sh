@@ -110,15 +110,31 @@ print(json.dumps({'message': msg, 'name': 'makemerich-close', 'channel': 'telegr
   DAY_NUM=$(node -e "try{const d=require('./data/$TODAY.json');console.log(d.day||'?')}catch(e){console.log('?')}" 2>/dev/null || echo "?")
   NEAR=$(node scripts/generate-signals.js 2>/dev/null | grep "NEAR TRIGGER" -A5 | grep "STOP_LOSS\|DRAWDOWN" | head -2 | sed 's/^  //' | tr '\n' ' ' || echo "")
 
-  send_telegram "📊 *makemerich Día $DAY_NUM — Cierre $TODAY*
+  # Build compact holdings
+  HOLDINGS_COMPACT=$(python3 -c "
+import json
+p = json.load(open('data/portfolio.json'))
+lines = []
+for k, v in sorted(p['holdings'].items(), key=lambda x: -x[1].get('amount_eur', 0)):
+    if k == 'CASH':
+        lines.append(f'CASH  EUR {v[\"amount_eur\"]:.0f}')
+    else:
+        amt = v.get('amount_eur', 0)
+        pnl = v.get('pnl_pct', 0)
+        sign = '+' if pnl > 0 else ''
+        lines.append(f'{k:<5} *EUR {amt:>5.0f}*  {sign}{pnl:.1f}%')
+print(chr(10).join(lines))
+" 2>/dev/null || echo "$HOLDINGS")
 
-💰 Balance: €$BALANCE ($PNL%)
-$HOLDINGS
+  NEAR_FMT=$(echo "$NEAR" | sed 's/^/⚠️ /' | head -3)
 
-$NEAR"
+  send_telegram "📊 *Day $DAY_NUM* | *EUR $BALANCE* ($PNL%)
+
+$HOLDINGS_COMPACT
+
+$NEAR_FMT"
 else
   echo "WARNING: No hook token" | tee -a "$LOG_FILE"
   # Send direct summary
-  send_telegram "📊 *makemerich — Cierre $TODAY*
-💰 Balance: €$BALANCE ($PNL%)"
+  send_telegram "📊 *Cierre $TODAY* | *EUR $BALANCE* ($PNL%)"
 fi
