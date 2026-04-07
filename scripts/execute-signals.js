@@ -47,7 +47,7 @@ const ASSET_META = {
   '4GLD': { type: 'ETC', risk: 'medium' },
   SGLD: { type: 'ETC', risk: 'medium' },
   XEON: { type: 'ETF', risk: 'low' },
-  DXS3: { type: 'ETF', risk: 'high', inverse: true },
+  DXS3: { type: 'ETF', risk: 'high', inverse: true, leveraged: true },
   NATO: { type: 'ETF', risk: 'high' },
   VWCE: { type: 'ETF', risk: 'medium' },
   SXR8: { type: 'ETF', risk: 'medium' },
@@ -226,6 +226,7 @@ function generateOrders(portfolio, signals) {
   }
 
   // --- Limit violation corrections ---
+
   // If inverse position exceeds limit, generate SELL order to bring it within limits
   if (state.inversePct > LIMITS.MAX_INVERSE_LEVERAGED) {
     for (const [symbol, pos] of Object.entries(state.positions)) {
@@ -247,6 +248,43 @@ function generateOrders(portfolio, signals) {
           });
         }
       }
+    }
+  }
+
+  // If high-risk allocation exceeds limit, generate SELL orders for high-risk positions
+  // Priority: sell the largest high-risk position first (excluding any with active BUY signal)
+  if (state.highRiskPct > LIMITS.MAX_HIGH_RISK) {
+    let excess = state.highRiskValue - state.balance * LIMITS.MAX_HIGH_RISK;
+
+    // Sort high-risk positions by value (largest first)
+    const highRiskPositions = Object.entries(state.positions)
+      .filter(([symbol]) => isHighRisk(symbol))
+      .sort((a, b) => b[1].value - a[1].value);
+
+    for (const [symbol, pos] of highRiskPositions) {
+      if (excess <= 0) break;
+      const alreadyOrdered = orders.find((o) => o.symbol === symbol && o.action === 'SELL');
+      if (alreadyOrdered) {
+        excess -= alreadyOrdered.estimatedValueEur;
+        continue;
+      }
+
+      const sellAmount = Math.min(excess, pos.value * 0.5); // Max 50% per order
+      if (sellAmount < 50) continue; // Skip tiny orders
+
+      orders.push({
+        action: 'SELL',
+        symbol,
+        signal: 'LIMIT_VIOLATION',
+        score: 0,
+        sellPct: +((sellAmount / pos.value) * 100).toFixed(1),
+        estimatedValueEur: +sellAmount.toFixed(2),
+        estimatedFeeEur: +(sellAmount * getFeeRate(symbol)).toFixed(2),
+        reason: `High-risk at ${(state.highRiskPct * 100).toFixed(1)}%, limit is ${LIMITS.MAX_HIGH_RISK * 100}%. Reducing ${symbol} (largest high-risk position)`,
+        priority: 'HIGH',
+      });
+
+      excess -= sellAmount;
     }
   }
 

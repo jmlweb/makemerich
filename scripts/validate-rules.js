@@ -19,11 +19,12 @@ const path = require('path');
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const PORTFOLIO_PATH = path.join(DATA_DIR, 'portfolio.json');
 
-// Hard rules from RULES.md
+// Hard rules from RULES.md (all absolute — no override mechanism)
 const RULES = {
   MAX_SINGLE_POSITION_PCT: 50,
   MIN_CASH_RESERVE_PCT: 5,
   MAX_HIGH_RISK_PCT: 30,
+  MAX_INVERSE_LEVERAGED_PCT: 15,
   STOP_LOSS_PCT: -15,
   TRAILING_STOP_PCT: -10,
   TAKE_PROFIT_PARTIAL_PCT: 30,
@@ -32,7 +33,10 @@ const RULES = {
 };
 
 // Classification of assets by risk level
-const HIGH_RISK_ASSETS = new Set(['BTC', 'ETH', 'SOL']);
+const HIGH_RISK_ASSETS = new Set(['BTC', 'ETH', 'SOL', 'DXS3', 'NATO']);
+
+// Inverse/leveraged assets
+const INVERSE_LEVERAGED_ASSETS = new Set(['DXS3']);
 
 function loadPortfolio() {
   if (!fs.existsSync(PORTFOLIO_PATH)) {
@@ -79,10 +83,24 @@ function validate(portfolio) {
   }
   const highRiskPct = (highRiskTotal / balance) * 100;
   if (highRiskPct > RULES.MAX_HIGH_RISK_PCT) {
-    // Check if aggressive mandate overrides this
-    warnings.push({
+    violations.push({
       rule: 'MAX_HIGH_RISK',
-      detail: `High-risk assets at ${highRiskPct.toFixed(1)}% (default limit: ${RULES.MAX_HIGH_RISK_PCT}%). Check if aggressive mandate is active.`,
+      detail: `High-risk assets at ${highRiskPct.toFixed(1)}% (limit: ${RULES.MAX_HIGH_RISK_PCT}%). Position limits are absolute — reduce exposure.`,
+    });
+  }
+
+  // 3b. Check inverse/leveraged allocation (max 15%)
+  let inverseTotal = 0;
+  for (const [asset, data] of Object.entries(holdings)) {
+    if (INVERSE_LEVERAGED_ASSETS.has(asset)) {
+      inverseTotal += data.amount_eur;
+    }
+  }
+  const inversePct = (inverseTotal / balance) * 100;
+  if (inversePct > RULES.MAX_INVERSE_LEVERAGED_PCT) {
+    violations.push({
+      rule: 'MAX_INVERSE_LEVERAGED',
+      detail: `Inverse/leveraged at ${inversePct.toFixed(1)}% (limit: ${RULES.MAX_INVERSE_LEVERAGED_PCT}%). Reduce immediately.`,
     });
   }
 
@@ -143,7 +161,7 @@ function validate(portfolio) {
     }
   }
 
-  return { violations, warnings, balance, cashPct, highRiskPct };
+  return { violations, warnings, balance, cashPct, highRiskPct, inversePct };
 }
 
 function format(result, json = false) {
@@ -154,6 +172,7 @@ function format(result, json = false) {
   lines.push(`Balance: EUR ${result.balance.toFixed(2)}`);
   lines.push(`Cash: ${result.cashPct.toFixed(1)}%`);
   lines.push(`High-risk: ${result.highRiskPct.toFixed(1)}%`);
+  lines.push(`Inverse/leveraged: ${result.inversePct.toFixed(1)}%`);
   lines.push('');
 
   if (result.violations.length === 0 && result.warnings.length === 0) {

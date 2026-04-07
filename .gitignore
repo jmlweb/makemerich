@@ -12,5 +12,7 @@ Thumbs.db
 .local/
 notes.md
 
-# Historical price cache (regenerable)
+# Regenerable cache files
 data/history/
+data/.quant-signals-latest.json
+data/.trade-orders.json
