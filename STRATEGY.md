@@ -18,7 +18,7 @@ ETFs domiciled in Ireland/Luxembourg with KID documentation. Advantages:
 
 ### Objective
 Maximize risk-adjusted returns, legally in Spain.
-Game goal: 10x (EUR 50,000) in 1 year — requires an aggressive strategy.
+No fixed target — the goal is the best possible outcome over the full year while respecting all risk limits.
 
 ### Target Allocation (Aggressive Growth)
 
@@ -52,7 +52,7 @@ See [HUSTLE.md](HUSTLE.md) for detailed entry/exit criteria and trading rules.
 
 1. **Core VWCE (25%)**: Diversified global exposure, low cost (0.22% TER)
 2. **SXR8 (20%)**: Pure S&P 500, accumulating, TER 0.07%
-3. **Crypto (25%)**: Only asset class with realistic 10x potential, regulated in Spain
+3. **Crypto (25%)**: High-growth potential, regulated in Spain
 4. **Tactical (20%)**: Flexibility for opportunities (hot sectors, events)
 5. **Cash (10%)**: Dry powder for dips
 

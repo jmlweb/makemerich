@@ -55,7 +55,8 @@ All investments must be legal in Spain. This includes but is not limited to:
 ### 5. Transaction Rules
 - All buys/sells execute at next available market price
 - Simulate realistic spreads and fees:
-  - Stocks/ETFs: 0.1% fee
+  - Stocks: 0.1% fee (EU blue chips via DEGIRO/IB)
+  - ETFs/ETCs: 0.1% fee
   - Crypto: 0.5% fee
   - Forex: spread included in price
   - Alternative investments: as per platform
@@ -85,7 +86,12 @@ All investments must be legal in Spain. This includes but is not limited to:
 The simulation ends when:
 - 📉 **Balance reaches €0** — Game Over
 - 📅 **One year passes** (January 27, 2027) — Final tally
-- 🏆 **Balance reaches €50,000** — Victory condition (10x)
+
+## Objective
+
+**Maximize total return** while respecting all position limits and risk rules. There is no fixed target — the goal is the best possible risk-adjusted outcome over the full year.
+
+> **Previous objective (revoked 2026-04-07):** 10x (€50,000). Removed because an unrealistic target incentivizes excessive risk-taking — concentrated bets, narrative-driven trades, and position limit overrides — which are the exact behaviors that caused a -15% drawdown. The quantitative system is designed for sustainable alpha, not moonshots. See LEARNINGS.md for the full rationale.
 
 ## Scoring
 
