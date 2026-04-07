@@ -24,6 +24,10 @@ const ASSET_CONFIG = {
   EQQQ: { yahoo: "EQQQ.DE", currency: "EUR", description: "Invesco NASDAQ-100 UCITS" },
   MEUD: { yahoo: "MEUD.PA", currency: "EUR", description: "iShares MSCI Europe UCITS" },
   SGLD: { yahoo: "SGLD.L", currency: "USD", description: "Invesco Physical Gold ETC" },
+  "4GLD": { yahoo: "4GLD.DE", currency: "EUR", description: "Xetra-Gold ETC (1g/unit)" },
+  XEON: { yahoo: "XEON.DE", currency: "EUR", description: "Lyxor Smart Overnight Return (€STR)" },
+  DXS3: { yahoo: "DXS3.DE", currency: "EUR", description: "Xtrackers S&P500 Inverse Daily UCITS" },
+  NATO: { yahoo: "NATO.L", currency: "USD", description: "HANetf Future of Defence UCITS" },
   // Crypto (legal in Spain, regulated exchanges)
   BTC: { yahoo: "BTC-USD", currency: "USD", description: "Bitcoin" },
   ETH: { yahoo: "ETH-USD", currency: "USD", description: "Ethereum" },

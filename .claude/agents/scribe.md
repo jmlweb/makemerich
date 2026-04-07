@@ -15,11 +15,12 @@ Keep all project documentation synchronized, accurate, and in English.
 ## Inputs You Should Read
 
 1. `data/portfolio.json` — current portfolio state (source of truth for positions)
-2. `data/.signals-latest.json` — pre-computed alerts from generate-signals.js
-3. `data/trades/YYYY-MM.json` — trades executed this month
-4. `LEDGER.md` — read last entry to understand format and current day number
-5. `SIGNALS.md` — current state to update
-6. `WATCHLIST.md` — current watchlist
+2. `data/.signals-latest.json` — threshold alerts from generate-signals.js
+3. `data/.quant-signals-latest.json` — quantitative signals (BUY/SELL/HOLD per asset)
+4. `data/.trade-orders.json` — binding trade orders from execute-signals.js
+5. `data/trades/YYYY-MM.json` — trades executed this month
+6. `LEDGER.md` — read last entry to understand format and current day number
+7. `SIGNALS.md` — current state to update
 
 ## Tasks
 
@@ -51,20 +52,14 @@ Data sources:
 
 ### 2. SIGNALS.md Update
 
-Update the Active Alerts table to match `.signals-latest.json`:
-- Add new alerts
+Update the Active Alerts table to match `.signals-latest.json` and `.quant-signals-latest.json`:
+- Add threshold alerts (stop-loss, take-profit) from `.signals-latest.json`
+- Add quantitative signal summary (BUY/SELL/HOLD scores) from `.quant-signals-latest.json`
+- Include any pending trade orders from `.trade-orders.json`
 - Remove executed/expired alerts
-- Update prices and distances
 - Keep Entry Signals and Exit Signals sections for historical record (only add, never remove executed entries)
 
-### 3. WATCHLIST.md Sync
-
-Verify watchlist matches current strategy:
-- Remove assets we already bought
-- Update trigger prices based on current conditions
-- Add new candidates if mentioned in analyst output
-
-### 4. Cross-file Validation
+### 3. Cross-file Validation
 
 Check consistency between:
 - `portfolio.json` positions vs LEDGER.md latest entry

@@ -4,10 +4,12 @@
 
 When documents conflict, authority flows top-down:
 
-1. **RULES.md** — Immutable game rules (only overridden by explicit mandate in STRATEGY.md)
-2. **STRATEGY.md** — Investment philosophy + active mandates/overrides
-3. **HUSTLE.md** — Decision criteria (entry/exit/sizing)
+1. **RULES.md** — Immutable game rules. Position limits are absolute and cannot be overridden
+2. **STRATEGY.md** — Investment philosophy + active mandates
+3. **HUSTLE.md** — Decision criteria (quantitative signals only, no narrative trading)
 4. **This file (AGENTS.md)** — Operational workflow, schedule, tooling
+
+> **Important (2026-04-07):** No mandate in STRATEGY.md may suspend RULES.md position limits. This was changed after the Aggressive Maximization mandate caused a -15% drawdown.
 
 ---
 
@@ -39,6 +41,9 @@ Only exception: direct messages to Jose (Spanish is fine).
 | `data/trades/YYYY-MM.json` | Transaction log | On each trade |
 | `data/summary.json` | Monthly totals | End of day |
 | `data/.prices-latest.json` | Price cache | Each fetch |
+| `data/history/{SYMBOL}.json` | Historical OHLCV (1y) | Each session (cached) |
+| `data/.quant-signals-latest.json` | Quantitative signals | Each session |
+| `data/.trade-orders.json` | Binding trade orders | Each session |
 
 ---
 
@@ -59,14 +64,18 @@ Only exception: direct messages to Jose (Spanish is fine).
 ## Order of Operations
 
 ```
-1. Fetch prices       -> node scripts/fetch-prices.js
-2. Update portfolio   -> node scripts/update-portfolio.js
-3. Check alerts       -> node scripts/check-alerts.js
-4. Review SIGNALS.md  -> Any active signal?
-5. Decide             -> HOLD / BUY / SELL (see HUSTLE.md for criteria)
-6. If trade           -> Record in trades.json, update SIGNALS.md
-7. If 21:30           -> Update LEDGER, commit, push
+1. Fetch prices          -> node scripts/fetch-prices.js
+2. Fetch history         -> node scripts/fetch-history.js
+3. Update portfolio      -> node scripts/update-portfolio.js
+4. Check alerts          -> node scripts/check-alerts.js
+5. Generate signals      -> node scripts/generate-signals.js
+6. Generate quant signals -> node scripts/generate-quant-signals.js
+7. Compute trade orders  -> node scripts/execute-signals.js
+8. Execute orders        -> ONLY execute what execute-signals.js outputs
+9. If 21:30              -> Update LEDGER, commit, push
 ```
+
+> **Critical:** Step 8 is mechanical. The agent executes the orders from step 7 — it does NOT analyze the market or override signals with its own judgment. If there are no orders, the action is HOLD.
 
 ---
 
@@ -85,17 +94,27 @@ Only exception: direct messages to Jose (Spanish is fine).
 ## Available Scripts
 
 ```bash
-node scripts/fetch-prices.js        # Get current prices
-node scripts/update-portfolio.js     # Update portfolio with current prices
-node scripts/check-alerts.js         # Check alerts (stop loss, take profit)
-node scripts/rebalance-suggester.js  # Suggest rebalancing
-node scripts/calculate-balance.js    # Calculate current balance
-node scripts/generate-entry.js       # Generate LEDGER entry
-node scripts/analyze-portfolio.js    # Analyze portfolio
-node scripts/generate-dashboard.js   # Generate dashboard
-node scripts/validate-rules.js       # Validate portfolio against RULES.md
-node scripts/generate-signals.js     # Generate signals
-bash scripts/pre-session.sh          # Run full pre-session prep (all above)
+# Core pipeline (run in order via pre-session.sh)
+node scripts/fetch-prices.js            # Get current prices from Yahoo Finance
+node scripts/fetch-history.js           # Fetch/cache 1y OHLCV data for all assets
+node scripts/update-portfolio.js        # Update portfolio with current prices
+node scripts/check-alerts.js            # Check stop-loss/take-profit alerts
+node scripts/generate-signals.js        # Generate threshold-based signals
+node scripts/generate-quant-signals.js  # Generate quantitative BUY/SELL/HOLD signals
+node scripts/execute-signals.js         # Convert quant signals into binding trade orders
+node scripts/validate-rules.js          # Validate portfolio against RULES.md
+
+# Analysis & reporting
+node scripts/analyze-portfolio.js       # Portfolio analytics (volatility, Sharpe, correlation)
+node scripts/backtest.js                # Backtest signal strategy against historical data
+node scripts/calculate-balance.js       # Calculate current balance
+node scripts/generate-entry.js          # Generate LEDGER entry template
+node scripts/generate-dashboard.js      # Generate HTML dashboard
+node scripts/rebalance-suggester.js     # Suggest rebalancing
+
+# Orchestration
+bash scripts/pre-session.sh             # Full pre-session prep (all core pipeline scripts)
+bash scripts/daily-update.sh            # Daily close (21:30) — pipeline + agent + commit
 ```
 
 ---
@@ -144,9 +163,10 @@ Examples:
 Review all non-daily docs for accuracy:
 - [ ] README.md — balance, positions, dates
 - [ ] ASSETS.md — instruments match current holdings
-- [ ] RULES.md — override table current
-- [ ] SIGNALS.md — no stale entries
+- [ ] RULES.md — position limits table current
+- [ ] SIGNALS.md — alerts match `.signals-latest.json` and `.quant-signals-latest.json`
 - [ ] STRATEGY.md — mandates still active
+- [ ] Run `node scripts/backtest.js --all` — verify strategy still outperforms or explain why not
 - [ ] dashboard.html — not stale
 
 ---

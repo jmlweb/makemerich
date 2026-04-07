@@ -43,13 +43,14 @@ All investments must be legal in Spain. This includes but is not limited to:
 
 ### 4. Position Limits
 
-| Limit | Default | Current Override |
-|-------|---------|-----------------|
-| Max single position | 50% | — (active) |
-| Min cash reserve | 5% | — (active) |
-| Max high-risk assets | 30% | **Suspended** — Aggressive Mandate 2026-03-29 |
+| Limit | Value | Status |
+|-------|-------|--------|
+| Max single position | 50% | Active |
+| Min cash reserve | 5% | Active |
+| Max high-risk assets | 30% | **Active** — restored 2026-04-07 |
+| Max inverse/leveraged | 15% | Active — added 2026-04-07 |
 
-> **Override mechanism:** STRATEGY.md § "Updated Mandate" can suspend specific limits. The mandate must state which limits are overridden and the rationale. When no mandate is active, all defaults apply.
+> **Override mechanism:** Removed. Position limits are absolute and cannot be suspended by any mandate. This was changed after the Aggressive Maximization mandate (2026-03-29 to 2026-04-07) led to a -15% drawdown from concentrated directional bets.
 
 ### 5. Transaction Rules
 - All buys/sells execute at next available market price

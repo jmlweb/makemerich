@@ -101,27 +101,24 @@ Example:
 
 ---
 
-## Speed Mandate (2026-03-30)
+## ~~Speed Mandate (2026-03-30)~~ — REVOKED 2026-04-07
 
-**Act IMMEDIATELY when the signal is clear. Do not wait for confirmation.**
+**Revoked.** "Act immediately" led to impulsive trades without quantitative backing (e.g., NATO entered without analysis, -12.4%). Speed without edge is just faster losing.
 
-- If a catalyst is identified: execute before it happens
-- If the market moves: react in the same session, not the next one
-- If there's a technical issue: fix it and execute, don't report and wait
-
-Execution speed is a competitive advantage. Every hour of delay is money lost.
+**Replaced by:** Execute only when `generate-quant-signals.js` produces a BUY or SELL signal. No narrative-driven trades. No "catalyst" predictions.
 
 ---
 
-## Reporting Flow (2026-03-30)
+## Decision Flow (2026-04-07)
 
-1. Fetch market data
-2. Analyze positions and opportunities
-3. Make decisions and execute trades
-4. Issue report with what was done (including "no action" if applicable)
+1. Run `pre-session.sh` (fetches data, computes indicators, generates quant signals)
+2. Read `.quant-signals-latest.json` for actionable signals
+3. Run `execute-signals.js` for trade recommendations with position sizing
+4. Execute recommended trades (or HOLD if no signals)
+5. Report what was done — the report is a log of facts
 
-**Never issue a report with recommendations without having acted first.**
-The report is a log of facts, not a list of suggestions.
+**The agent may NOT override quantitative signals based on narrative analysis.**
+If the signal says HOLD, the action is HOLD. If the signal says SELL, the action is SELL.
 
 ---
 

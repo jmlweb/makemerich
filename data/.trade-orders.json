@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-04-07T20:15:03.039Z",
+  "portfolioBalance": 4261.1,
+  "orders": [
+    {
+      "action": "SELL",
+      "symbol": "DXS3",
+      "signal": "LIMIT_VIOLATION",
+      "score": 0,
+      "sellPct": 58.2,
+      "estimatedValueEur": 889.83,
+      "estimatedFeeEur": 0.89,
+      "reason": "Inverse position at 35.9%, limit is 15%",
+      "priority": "HIGH"
+    }
+  ],
+  "warnings": [
+    "Inverse/leveraged at 35.9% (limit: 15%). Reduce inverse positions.",
+    "High-risk assets at 64.2% (limit: 30%). Reduce high-risk positions."
+  ],
+  "summary": {
+    "totalBuyEur": 0,
+    "totalSellEur": 889.83,
+    "orderCount": 1
+  }
+}

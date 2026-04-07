@@ -11,3 +11,6 @@ Thumbs.db
 # Local notes (if any)
 .local/
 notes.md
+
+# Historical price cache (regenerable)
+data/history/

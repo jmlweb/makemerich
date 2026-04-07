@@ -7,7 +7,11 @@
     "balance": "node scripts/calculate-balance.js",
     "generate": "node scripts/generate-entry.js",
     "fetch": "node scripts/fetch-prices.js",
-    "update": "node scripts/update-portfolio.js"
+    "update": "node scripts/update-portfolio.js",
+    "history": "node scripts/fetch-history.js",
+    "quant": "node scripts/generate-quant-signals.js",
+    "backtest": "node scripts/backtest.js",
+    "execute": "node scripts/execute-signals.js"
   },
   "keywords": [
     "investment",

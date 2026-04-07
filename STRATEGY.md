@@ -95,45 +95,28 @@ Whenever >15% is in cash with no planned use within <2 weeks, move to XEON.
 
 ---
 
-## Updated Mandate — 2026-03-29: Aggressive Maximization
+## Mandate History
 
-**Primary objective: maximize returns at all costs within Spanish legality.**
+### ~~Aggressive Maximization (2026-03-29)~~ — REVOKED 2026-04-07
 
-This includes legal grey areas. If it is legal in Spain (even if controversial), it is valid.
+**Revoked.** This mandate suspended position limits and authorized concentrated directional bets based on narrative analysis. Result: -15% drawdown in 53 days, underperforming cash. The mandate encouraged the exact behavior that caused losses.
 
-### Expanded Investment Universe
+**Post-mortem:** Narrative-driven decisions ("tariffs will crash markets") led to a 36% concentration in DXS3 (inverse S&P500) that has not paid off. Position limits exist for a reason.
 
-#### "Controversial" Sector ETFs (100% UCITS/legal)
+---
 
-| Sector | Ticker | ISIN | Notes |
-|--------|--------|------|-------|
-| Medical Cannabis | FLWR | IE00BJXRZ273 | Rize Medical Cannabis UCITS ETF, ~TER 0.65% |
-| Gambling/Betting | BETZ | — | No UCITS — find alternative |
-| Defense | DFEN/NATO | IE available | Sector booming due to European rearmament |
-| Uranium/Nuclear | URNM | — | Find UCITS equivalent |
+## Updated Mandate — 2026-04-07: Quantitative Discipline
 
-#### Leveraged UCITS ETFs (legal in Spain for retail investors)
+**Primary objective: data-driven decisions only. No narrative trading.**
 
-| Product | Leverage | When to Use |
-|---------|----------|-------------|
-| 2x S&P500 (2SPX) | 2x long | Only in confirmed uptrend |
-| -1x S&P500 (SPXS equiv UCITS) | 1x short | Active bear market — NOW |
-| 3x BTC (3BTC) | 3x long | Only in confirmed crypto bull |
+### Rules
 
-#### Expanded Crypto
+1. **All entry/exit decisions must be backed by quantitative signals** from `generate-quant-signals.js`
+2. **No position limits may be suspended** — the defaults in RULES.md are absolute
+3. **No single thesis** (tariffs, recession, bull run) may drive more than 20% of portfolio allocation
+4. **Leveraged and inverse ETFs** are restricted to max 15% of portfolio and require STRONG_BUY/STRONG_SELL signal
+5. **The LLM's role** is execution, reporting, and monitoring — not market prediction
 
-| Asset | Risk | Thesis |
-|-------|------|--------|
-| SOL | Very high | High beta, strong recovery in bull |
-| AVAX | Very high | BTC correlation but higher upside |
-| Simulated ETH Staking | Medium | +4% APY on ETH position |
+### Allowed Investment Universe
 
-#### Derivatives/Short Positions (UCITS warrants, simulated CFDs)
-
-- **Short S&P500**: with the market in active technical bear, a tactical short position is the most logical move right now
-- **Short NASDAQ**: same — -20% drop from highs, tariffs active until July
-
-### Updated Golden Rule
-
-> If the market drops, Hustle MUST make money. Short positions, inverses, asymmetric hedges.
-> The goal is 10x, not capital preservation.
+All UCITS ETFs, ETCs, and regulated crypto from ASSETS.md. No leveraged products above 1x unless the quantitative signal system produces a STRONG signal AND position sizing rules are respected.

@@ -51,18 +51,28 @@ async function main() {
   console.log(`Mode: ${dryRun ? 'DRY RUN' : 'LIVE'}`);
   console.log('='.repeat(50));
   
-  // Step 1: Update portfolio
-  console.log('\n📊 Step 1: Updating portfolio...');
+  // Step 1: Fetch historical data
+  console.log('\n📊 Step 1: Updating historical data...');
+  const historyResult = run('fetch-history.js');
+  console.log(historyResult.split('\n').slice(-3).join('\n'));
+
+  // Step 2: Update portfolio
+  console.log('\n📊 Step 2: Updating portfolio...');
   const updateResult = run('update-portfolio.js', dryRun ? '--dry-run' : '');
   console.log(updateResult.split('\n').slice(-5).join('\n'));
-  
-  // Step 2: Check alerts
-  console.log('\n⚠️ Step 2: Checking alerts...');
+
+  // Step 3: Check alerts
+  console.log('\n⚠️ Step 3: Checking alerts...');
   const alertsResult = run('check-alerts.js');
   console.log(alertsResult);
-  
-  // Step 3: Generate dashboard
-  console.log('📱 Step 3: Generating dashboard...');
+
+  // Step 4: Generate quant signals
+  console.log('\n📈 Step 4: Generating quant signals...');
+  const quantResult = run('generate-quant-signals.js');
+  console.log(quantResult);
+
+  // Step 5: Generate dashboard
+  console.log('📱 Step 5: Generating dashboard...');
   run('generate-dashboard.js');
   console.log('Dashboard updated!');
   

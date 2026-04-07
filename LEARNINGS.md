@@ -26,7 +26,7 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 
 **Lesson:** Autonomous operation requires explicit decision trees, not just schedules. Vague instructions lead to inconsistent behavior.
 
-**Action:** Created comprehensive HAL.md with entry/exit criteria, SIGNALS.md for active alerts, WATCHLIST.md for tracked assets. Crons now have step-by-step instructions.
+**Action:** Created comprehensive HUSTLE.md with entry/exit criteria, SIGNALS.md for active alerts. Crons now have step-by-step instructions.
 
 ---
 
@@ -179,6 +179,40 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 
 ---
 
+## 2026-04-07: LLM Narrative Trading Does Not Work
+
+**Category:** Strategy / Architecture  
+**Impact:** -15.10% portfolio drawdown in 53 days, underperforming cash
+
+**What happened:** From Day 1 to Day 53, the LLM (Claude) made trading decisions based on narrative analysis: reading news, interpreting macro events, predicting market direction. Key failures:
+
+1. **Concentrated inverse bet:** DXS3 (inverse S&P500) grew to 36% of portfolio based on the thesis "tariffs will crash markets." The S&P stayed resilient post-Liberation Day.
+2. **Stopped out of core holdings:** SXR8 and VWCE hit -15% stops on March 27 (-€475 realized loss). These would have recovered.
+3. **NATO entered without analysis:** Bought on "defense sector is booming" narrative, immediately dropped -12.4%.
+4. **Aggressive Maximization mandate:** On March 29, the system suspended its own position limits to go bigger on the bearish thesis. This is the exact opposite of risk management.
+5. **Speed Mandate:** "Act immediately when signal is clear" led to impulsive trades without quantitative backing.
+
+**Root cause:** An LLM has zero predictive edge on markets. It reads news and applies heuristics — the same thing retail traders do before losing money. The "AI" label created a false sense of sophistication over what was discretionary, narrative-driven trading.
+
+**Lesson:** LLMs are excellent at automation, data processing, and rule execution. They are terrible at market prediction. Separate the roles: the LLM executes mechanical rules, quantitative scripts make the trading decisions.
+
+**Action taken (2026-04-07):**
+1. Built quantitative signal system: `indicators.js`, `generate-quant-signals.js`, `backtest.js`
+2. Built execution pipeline: `execute-signals.js` produces binding trade orders
+3. Revoked Aggressive Maximization mandate and Speed Mandate
+4. Restored all position limits as absolute (no override mechanism)
+5. Added 15% cap on inverse/leveraged positions
+6. Agent prompt changed: quant signal orders are binding, agent may not override with narrative analysis
+
+**Rules derived:**
+1. **No narrative trading.** BUY/SELL only when `generate-quant-signals.js` produces a signal
+2. **Position limits are absolute.** No mandate may suspend them
+3. **The LLM does not predict markets.** It executes orders from quantitative scripts
+4. **Backtest before trusting.** Run `backtest.js` on any strategy before deploying capital
+5. **Inverse/leveraged positions capped at 15%.** Never again 36% on a directional bet
+
+---
+
 ## Patterns
 
 | Pattern | Notes |
@@ -187,6 +221,9 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 | BTC drags portfolio | 15% allocation caused most of the -0.84% loss |
 | High cash = patience | 60% cash means we can wait for real opportunities |
 | Explicit > implicit | Write down criteria or they won't be followed |
+| Narrative = losing | Every trade driven by macro narrative (tariffs, defense boom) lost money |
+| Quantitative > discretionary | Rule-based signals avoid emotional/narrative bias |
+| Overriding risk rules = disaster | Suspending position limits led to the worst losses |
 
 ---
 
@@ -196,7 +233,11 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 |------|---------|------|--------|
 | 2026-02-02 | Deployed 40% cash in single red session | -EUR 361 (-7.27%) | Scale in over 2+ sessions |
 | 2026-03-18 | Sold BTC to "protect", rebought 24h later | Fees + incoherence | 48h cooling-off before re-entry |
+| 2026-03-27 | SXR8/VWCE stopped out at -15% | -EUR 475 | Would have recovered — stops too tight without ATR sizing |
+| 2026-03-28 | NATO entered without analysis | -12.4% | Never buy on narrative alone |
 | 2026-03-29 | Sized positions on inflated balance (EUR 5,457 vs EUR 4,250) | DXS3 overconcentrated at 36.6% | Validate balance post-trade before new orders |
+| 2026-03-29 | Suspended position limits (Aggressive Maximization) | -15% drawdown | Position limits are absolute — never suspend |
+| 2026-03-30 | Speed Mandate: "act immediately" | NATO, impulsive trades | Speed without quantitative backing = faster losses |
 
 ---
 
@@ -206,6 +247,8 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 |------|-----|------|-----|
 | 2026-01-28 | Conservative start | Safety | 60% cash preserved capital during BTC drop |
 | 2026-01-30 | System overhaul | N/A | Clear framework for autonomous operation |
+| 2026-03-27 | SGLD → 4GLD rotation | Better instrument | EUR-denominated, 0% TER, no FX drag |
+| 2026-04-07 | Pivot to quantitative signals | N/A | Replaced narrative trading with rule-based system |
 
 ---
 

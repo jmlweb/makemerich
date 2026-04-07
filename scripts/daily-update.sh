@@ -17,24 +17,36 @@ cd "$REPO_DIR"
 echo "[$(date)] Starting daily close..." | tee "$LOG_FILE"
 
 # 1. Fetch prices
-echo "[1/5] Fetching prices..." | tee -a "$LOG_FILE"
+echo "[1/7] Fetching prices..." | tee -a "$LOG_FILE"
 node scripts/fetch-prices.js >> "$LOG_FILE" 2>&1 || { "$VENV_PYTHON" "$SEND_ALERT" "⚠️ makemerich: error fetching prices"; exit 1; }
 
-# 2. Update portfolio
-echo "[2/5] Updating portfolio..." | tee -a "$LOG_FILE"
+# 2. Fetch historical OHLCV data
+echo "[2/7] Updating historical data..." | tee -a "$LOG_FILE"
+node scripts/fetch-history.js >> "$LOG_FILE" 2>&1 || echo "Warning: history fetch failed" >> "$LOG_FILE"
+
+# 3. Update portfolio
+echo "[3/7] Updating portfolio..." | tee -a "$LOG_FILE"
 node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { "$VENV_PYTHON" "$SEND_ALERT" "⚠️ makemerich: error updating portfolio"; exit 1; }
 
-# 3. Validate rules
-echo "[3/5] Validating rules..." | tee -a "$LOG_FILE"
+# 4. Validate rules
+echo "[4/7] Validating rules..." | tee -a "$LOG_FILE"
 VIOLATION_COUNT=$(node scripts/validate-rules.js 2>/dev/null | grep "VIOLATIONS (" | grep -oP '\d+' | head -1 || echo "0")
 
-# 4. Generate signals
-echo "[4/5] Generating signals..." | tee -a "$LOG_FILE"
+# 5. Generate threshold signals
+echo "[5/7] Generating signals..." | tee -a "$LOG_FILE"
 SIGNALS_OUTPUT=$(node scripts/generate-signals.js 2>/dev/null)
+
+# 6. Generate quantitative signals
+echo "[6/7] Generating quant signals..." | tee -a "$LOG_FILE"
+QUANT_OUTPUT=$(node scripts/generate-quant-signals.js 2>/dev/null || echo "Quant signals unavailable")
 NEAR_TRIGGERS=$(echo "$SIGNALS_OUTPUT" | grep -A20 "NEAR TRIGGER:" | grep -v "NEAR TRIGGER:" | grep -v "ACTIVE MONITORS:" | grep "\S" | head -5 | tr '\n' ' ' | tr "'" ' ' || true)
 
-# 5. Delegate to agent: decide, execute, update LEDGER, commit, report
-echo "[5/5] Delegating to agent..." | tee -a "$LOG_FILE"
+# 7. Execute signals — generate binding trade orders
+echo "[7/8] Computing trade orders..." | tee -a "$LOG_FILE"
+TRADE_ORDERS=$(node scripts/execute-signals.js 2>/dev/null || echo "No trade orders")
+
+# 8. Delegate to agent: execute orders, update LEDGER, commit, report
+echo "[8/8] Delegating to agent..." | tee -a "$LOG_FILE"
 
 BALANCE=$("$VENV_PYTHON" -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"balance_eur\"]:.2f}')" 2>/dev/null || echo "?")
 PNL=$("$VENV_PYTHON" -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"pnl_pct\"]:.1f}')" 2>/dev/null || echo "?")
@@ -89,7 +101,7 @@ Line 6: (blank)
 Line 7+: positions table, one per line: TICKER  EUR X.XXX  +/-X,X%
 Last line: CASH  EUR XXX"
 
-PROMPT="makemerich DAILY CLOSE $TODAY. Balance: EUR $BALANCE ($PNL%). Holdings: $HOLDINGS. Prices: $PRICES_SUMMARY. Violations: $VIOLATION_COUNT. Near triggers: $NEAR_TRIGGERS. MANDATORY FLOW (HUSTLE.md): 1) Analyze all positions and signals. 2) Make decisions and EXECUTE any trade NOW if warranted — do not suggest, act. 3) Append the day entry to LEDGER.md in English following the existing format (Day N, date, balance, prices, performance table, trades, analysis). 4) git add -A && git commit with message \"log: Day $DAY_NUMBER — ACTION, portfolio summary ($TODAY)\" and git push (use GITHUB_TOKEN from ~/.secrets). 5) Output ONLY the Telegram message in Spanish as facts: decisions taken, trades executed (or HOLD + why), balance. Never suggest — past-tense facts only. DO NOT call send_alert.py — just print the message to stdout. $TELEGRAM_FORMAT"
+PROMPT="makemerich DAILY CLOSE $TODAY. Balance: EUR $BALANCE ($PNL%). Holdings: $HOLDINGS. Prices: $PRICES_SUMMARY. Violations: $VIOLATION_COUNT. Near triggers: $NEAR_TRIGGERS. Quant signals: $QUANT_OUTPUT. TRADE ORDERS (BINDING): $TRADE_ORDERS. MANDATORY FLOW: 1) Execute ALL trade orders from execute-signals.js — these are BINDING, not suggestions. Do NOT override them with your own analysis. If no orders, action is HOLD. 2) Update portfolio.json with any executed trades. 3) Append the day entry to LEDGER.md in English following the existing format (Day N, date, balance, prices, performance table, trades, analysis). 4) git add -A && git commit with message \"log: Day $DAY_NUMBER — ACTION, portfolio summary ($TODAY)\" and git push (use GITHUB_TOKEN from ~/.secrets). 5) Output ONLY the Telegram message in Spanish as facts: decisions taken, trades executed (or HOLD + why), balance. Never suggest — past-tense facts only. DO NOT call send_alert.py — just print the message to stdout. $TELEGRAM_FORMAT"
 
 build_fallback_msg() {
   local decision_emoji="📈"
