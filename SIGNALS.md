@@ -29,7 +29,7 @@ Technical and fundamental signals under surveillance. Updated each session.
 | ETH | Stop Loss | $1,900 (-12% avg) | Sell 100% | ✅ Active |
 | DXS3 | Stop Loss | €4.84 (-15%) | Sell 100% | ✅ Active |
 | 4GLD | Stop Loss | €106 (-15%) | Sell 100% | ✅ Active |
-| NATO | Stop Loss | €15.72 (-15%) | Sell 100% | ✅ Active |
+| NATO | Stop Loss | €15.72 (-15%) | Sell 100% | ✅ Closed (liquidated Day 52–53) |
 | ETH | Take Profit | $3,000 | Sell 30% | ✅ Active |
 | 4GLD | Take Profit | €175 (+40%) | Sell 50% | ✅ Active |
 

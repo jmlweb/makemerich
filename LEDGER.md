@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,247.12 |
-| Total Return | -15.06% |
+| Current Balance | €4,245.18 |
+| Total Return | -15.10% |
 | Days Active | 53 |
 
 ---
@@ -15,11 +15,11 @@
 
 ### Day 53 — April 7, 2026 21:30 CET
 
-**Balance:** €4,247.12 | **Total Return:** -15.06%
-**Day P&L:** -€30.84 (-0.72%) vs Day 52 (€4,277.96)
+**Balance:** €4,245.18 | **Total Return:** -15.10%
+**Day P&L:** -€32.78 (-0.77%) vs Day 52 (€4,277.96)
 
 **Prices at close:**
-- ETH: $2,095.08 / €1,814.35 (-0.60% 24h) — stop $1,900
+- ETH: $2,091.66 / €1,811.38 (-0.76% 24h) — stop $1,900
 - 4GLD: €129.17 (-2.48% 24h) — stop €105.88
 - XEON: €148.84 (+0.03% 24h) — no stop
 - DXS3: €5.508 (+0.99% 24h) — stop €4.84
@@ -34,14 +34,14 @@
 | Asset | Value    | % Portfolio | P&L entry |
 |-------|----------|-------------|-----------|
 | DXS3  | €1,529   | 36.0%       | -3.20%    |
-| ETH   | €1,194   | 28.1%       | +2.05%    |
+| ETH   | €1,192   | 28.1%       | +1.88%    |
 | CASH  | €586     | 13.8%       | —         |
 | 4GLD  | €487     | 11.5%       | +3.70%    |
 | XEON  | €451     | 10.6%       | +5.93%    |
 
 **Near triggers:**
-- PORTFOLIO [DRAWDOWN]: -15.06% from start — monitoring
-- ETH [STOP_LOSS]: $2,095 → stop $1,900 (9.3% away)
+- PORTFOLIO [DRAWDOWN]: -15.10% from start — monitoring
+- ETH [STOP_LOSS]: $2,091.66 → stop $1,900 (9.2% away)
 - DXS3 [STOP_LOSS]: €5.508 → stop €4.84 (12.1% away)
 - 4GLD [STOP_LOSS]: €129.17 → stop €105.88 (18.0% away)
 
