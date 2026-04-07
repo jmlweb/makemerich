@@ -369,8 +369,8 @@ function getSymbolsToAnalyze(filterSymbol) {
     }
   }
 
-  // Watchlist
-  ['EQQQ', 'SOL', 'SXR8', 'VWCE'].forEach((s) => symbols.add(s));
+  // Watchlist (ETFs + EU stocks)
+  ['EQQQ', 'SOL', 'SXR8', 'VWCE', 'SAP', 'ASML', 'MC', 'ITX', 'SIE', 'AIR', 'NOVO', 'ALV', 'TTE', 'DTE'].forEach((s) => symbols.add(s));
 
   if (filterSymbol) {
     return symbols.has(filterSymbol) ? [filterSymbol] : [filterSymbol];

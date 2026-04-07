@@ -36,6 +36,7 @@ const LIMITS = {
 const FEES = {
   ETF: 0.001,
   ETC: 0.001,
+  Stock: 0.001,
   Crypto: 0.005,
 };
 
@@ -54,6 +55,17 @@ const ASSET_META = {
   EQQQ: { type: 'ETF', risk: 'medium' },
   CSPX: { type: 'ETF', risk: 'medium' },
   EUNL: { type: 'ETF', risk: 'medium' },
+  // EU Stocks (blue chips — medium risk, 0.1% fee)
+  SAP: { type: 'Stock', risk: 'medium' },
+  ASML: { type: 'Stock', risk: 'medium' },
+  MC: { type: 'Stock', risk: 'medium' },
+  ITX: { type: 'Stock', risk: 'medium' },
+  SIE: { type: 'Stock', risk: 'medium' },
+  AIR: { type: 'Stock', risk: 'medium' },
+  NOVO: { type: 'Stock', risk: 'medium' },
+  ALV: { type: 'Stock', risk: 'medium' },
+  TTE: { type: 'Stock', risk: 'medium' },
+  DTE: { type: 'Stock', risk: 'medium' },
 };
 
 function parseArgs() {

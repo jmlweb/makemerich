@@ -35,6 +35,17 @@ const ASSET_INFO = {
   XEON: { yahoo: "XEON.DE", currency: "EUR", description: "Lyxor Smart Overnight Return (€STR)", type: "ETF" },
   DXS3: { yahoo: "DXS3.DE", currency: "EUR", description: "Xtrackers S&P500 Inverse Daily UCITS", type: "ETF" },
   NATO: { yahoo: "NATO.L", currency: "USD", description: "HANetf Future of Defence UCITS", type: "ETF" },
+  // EU Stocks (blue chips, high liquidity)
+  SAP: { yahoo: "SAP.DE", currency: "EUR", description: "SAP SE — Enterprise Software", type: "Stock" },
+  ASML: { yahoo: "ASML.AS", currency: "EUR", description: "ASML Holding — Semiconductor Equipment", type: "Stock" },
+  MC: { yahoo: "MC.PA", currency: "EUR", description: "LVMH — Luxury Goods", type: "Stock" },
+  ITX: { yahoo: "ITX.MC", currency: "EUR", description: "Inditex — Fashion Retail", type: "Stock" },
+  SIE: { yahoo: "SIE.DE", currency: "EUR", description: "Siemens — Industrial Conglomerate", type: "Stock" },
+  AIR: { yahoo: "AIR.PA", currency: "EUR", description: "Airbus — Aerospace & Defence", type: "Stock" },
+  NOVO: { yahoo: "NOVO-B.CO", currency: "DKK", description: "Novo Nordisk — Pharmaceuticals", type: "Stock" },
+  ALV: { yahoo: "ALV.DE", currency: "EUR", description: "Allianz — Insurance & Asset Management", type: "Stock" },
+  TTE: { yahoo: "TTE.PA", currency: "EUR", description: "TotalEnergies — Oil & Gas", type: "Stock" },
+  DTE: { yahoo: "DTE.DE", currency: "EUR", description: "Deutsche Telekom — Telecommunications", type: "Stock" },
   // Legacy US ETFs (reference only)
   VOO: { yahoo: "VOO", currency: "USD", description: "Vanguard S&P 500 ETF", type: "ETF" },
   GLD: { yahoo: "GLD", currency: "USD", description: "SPDR Gold Trust", type: "ETF" },
@@ -107,14 +118,15 @@ async function fetchYahooPrice(symbol) {
   }
 }
 
-async function fetchEURUSD() {
+async function fetchExchangeRates() {
   try {
-    const data = await httpGet('https://api.exchangerate-api.com/v4/latest/USD');
+    const data = await httpGet('https://api.exchangerate-api.com/v4/latest/EUR');
     const json = JSON.parse(data);
-    return json.rates.EUR;
+    // Returns rates relative to EUR (e.g., USD: 1.08, DKK: 7.46)
+    return json.rates;
   } catch (e) {
-    console.error('Error fetching EUR/USD rate:', e.message);
-    return 0.848; // fallback
+    console.error('Error fetching exchange rates:', e.message);
+    return { USD: 1.08, DKK: 7.46 }; // fallback
   }
 }
 
@@ -131,7 +143,8 @@ async function main() {
   const portfolio = loadPortfolio();
   
   console.log("Fetching prices...\n");
-  const eurUsd = await fetchEURUSD();
+  const rates = await fetchExchangeRates();
+  const eurUsd = 1 / rates.USD; // EUR per 1 USD (e.g., 0.92)
   console.log(`EUR/USD: ${eurUsd.toFixed(4)}\n`);
   
   const positions = [];
@@ -184,53 +197,45 @@ async function main() {
     
     // Calculate value in EUR
     let currentValueEUR, pnlPct;
-    
+    const nativePrice = priceData.price;
+
     if (isEurAsset) {
-      // EUR-denominated asset (e.g., VWCE, SXR8)
-      const currentPriceEUR = priceData.price;
-      currentValueEUR = units * currentPriceEUR;
-      pnlPct = entryPriceEUR ? ((currentPriceEUR - entryPriceEUR) / entryPriceEUR * 100) : 0;
-      
-      console.log(`${asset}: ${units.toFixed(4)} × €${currentPriceEUR.toFixed(2)} = €${currentValueEUR.toFixed(2)} (${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%)`);
-      
+      // EUR-denominated asset (e.g., VWCE, SXR8, SAP, ASML)
+      currentValueEUR = units * nativePrice;
+      pnlPct = entryPriceEUR ? ((nativePrice - entryPriceEUR) / entryPriceEUR * 100) : 0;
+
+      console.log(`${asset}: ${units.toFixed(4)} × €${nativePrice.toFixed(2)} = €${currentValueEUR.toFixed(2)} (${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%)`);
+
       positions.push({
-        asset,
-        type: info.type,
-        description: info.description,
-        units,
-        entryPriceEUR,
-        currentPriceEUR,
+        asset, type: info.type, description: info.description, units,
+        entryPriceEUR, currentPriceEUR: nativePrice,
         value: parseFloat(currentValueEUR.toFixed(2)),
         pnlPercent: parseFloat(pnlPct.toFixed(2)),
         change24h: priceData.change24h
       });
-      
-      // Update portfolio
-      holding.current_price_eur = currentPriceEUR;
+
+      holding.current_price_eur = nativePrice;
       holding.amount_eur = parseFloat(currentValueEUR.toFixed(2));
       holding.pnl_pct = parseFloat(pnlPct.toFixed(2));
     } else {
-      // USD-denominated asset (e.g., SGLD, BTC, ETH)
-      const currentPriceUSD = priceData.price;
-      currentValueEUR = units * currentPriceUSD * eurUsd;
-      pnlPct = entryPriceUSD ? ((currentPriceUSD - entryPriceUSD) / entryPriceUSD * 100) : 0;
-      
-      console.log(`${asset}: ${units.toFixed(4)} × $${currentPriceUSD.toFixed(2)} = €${currentValueEUR.toFixed(2)} (${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%)`);
-      
+      // Non-EUR asset: convert to EUR via exchange rates
+      const currencyCode = info.currency; // e.g., "USD", "DKK"
+      const rateToEur = rates[currencyCode] ? (1 / rates[currencyCode]) : eurUsd;
+      currentValueEUR = units * nativePrice * rateToEur;
+      pnlPct = entryPriceUSD ? ((nativePrice - entryPriceUSD) / entryPriceUSD * 100) : 0;
+
+      const currSymbol = currencyCode === 'USD' ? '$' : currencyCode;
+      console.log(`${asset}: ${units.toFixed(4)} × ${currSymbol}${nativePrice.toFixed(2)} = €${currentValueEUR.toFixed(2)} (${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(2)}%)`);
+
       positions.push({
-        asset,
-        type: info.type,
-        description: info.description,
-        units,
-        entryPriceUSD,
-        currentPriceUSD,
+        asset, type: info.type, description: info.description, units,
+        entryPriceUSD, currentPriceUSD: nativePrice,
         value: parseFloat(currentValueEUR.toFixed(2)),
         pnlPercent: parseFloat(pnlPct.toFixed(2)),
         change24h: priceData.change24h
       });
-      
-      // Update portfolio
-      holding.current_price_usd = currentPriceUSD;
+
+      holding.current_price_usd = nativePrice;
       holding.amount_eur = parseFloat(currentValueEUR.toFixed(2));
       holding.pnl_pct = parseFloat(pnlPct.toFixed(2));
     }

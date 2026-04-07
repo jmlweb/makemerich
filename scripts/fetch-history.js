@@ -31,6 +31,17 @@ const ASSET_CONFIG = {
   XEON: { yahoo: 'XEON.DE', currency: 'EUR' },
   DXS3: { yahoo: 'DXS3.DE', currency: 'EUR' },
   NATO: { yahoo: 'NATO.L', currency: 'USD' },
+  // EU Stocks (blue chips, high liquidity)
+  SAP: { yahoo: 'SAP.DE', currency: 'EUR' },
+  ASML: { yahoo: 'ASML.AS', currency: 'EUR' },
+  MC: { yahoo: 'MC.PA', currency: 'EUR' },
+  ITX: { yahoo: 'ITX.MC', currency: 'EUR' },
+  SIE: { yahoo: 'SIE.DE', currency: 'EUR' },
+  AIR: { yahoo: 'AIR.PA', currency: 'EUR' },
+  NOVO: { yahoo: 'NOVO-B.CO', currency: 'DKK' },
+  ALV: { yahoo: 'ALV.DE', currency: 'EUR' },
+  TTE: { yahoo: 'TTE.PA', currency: 'EUR' },
+  DTE: { yahoo: 'DTE.DE', currency: 'EUR' },
   // Crypto
   BTC: { yahoo: 'BTC-USD', currency: 'USD' },
   ETH: { yahoo: 'ETH-USD', currency: 'USD' },
@@ -146,8 +157,8 @@ function getSymbolsToFetch(filterSymbol) {
     }
   }
 
-  // Watchlist (hardcoded from SIGNALS.md)
-  const watchlist = ['EQQQ', 'SOL', 'SXR8', 'VWCE'];
+  // Watchlist (ETFs + EU stocks)
+  const watchlist = ['EQQQ', 'SOL', 'SXR8', 'VWCE', 'SAP', 'ASML', 'MC', 'ITX', 'SIE', 'AIR', 'NOVO', 'ALV', 'TTE', 'DTE'];
   for (const asset of watchlist) {
     if (ASSET_CONFIG[asset]) symbols[asset] = ASSET_CONFIG[asset];
   }
