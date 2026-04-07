@@ -2,19 +2,19 @@
   "date": "2026-04-07",
   "day": 53,
   "balance": {
-    "total": 4257.24,
+    "total": 4257.54,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -14.86,
+  "totalReturn": -14.85,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 1475.17,
+      "value": 2113.55,
       "pnlPercent": 0
     },
     {
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2114.407,
-      "value": 1204.9,
-      "pnlPercent": 2.99,
-      "change24h": 0.3152870948634408
+      "currentPriceUSD": 2116.0425,
+      "value": 1205.83,
+      "pnlPercent": 3.07,
+      "change24h": 0.3928812628943051
     },
     {
       "asset": "4GLD",
@@ -49,21 +49,10 @@
       "value": 451.13,
       "pnlPercent": 5.93,
       "change24h": 0.032260883007253195
-    },
-    {
-      "asset": "DXS3",
-      "type": "ETF",
-      "description": "Xtrackers S&P500 Inverse Daily UCITS",
-      "units": 116.0158,
-      "entryPriceEUR": 5.69,
-      "currentPriceEUR": 5.508,
-      "value": 639.02,
-      "pnlPercent": -3.2,
-      "change24h": 0.9900990099009952
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-07T20:26:59.989Z",
+    "generatedAt": "2026-04-07T20:34:09.356Z",
     "eurUsd": 0.866
   }
 }

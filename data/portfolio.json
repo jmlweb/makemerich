@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-07T20:30:02.116818+00:00",
+  "last_updated": "2026-04-07T20:34:09.356Z",
   "holdings": {
     "CASH": {
       "amount_eur": 2113.55
@@ -7,9 +7,9 @@
     "ETH": {
       "units": 0.658029,
       "entry_price_usd": 2052.97,
-      "current_price_usd": 2114.407,
-      "amount_eur": 1204.9,
-      "pnl_pct": 2.99,
+      "current_price_usd": 2116.0425,
+      "amount_eur": 1205.83,
+      "pnl_pct": 3.07,
       "stop_loss_usd": 1900
     },
     "4GLD": {
@@ -27,13 +27,13 @@
       "amount_eur": 451.13,
       "pnl_pct": 5.93,
       "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 money market EUR, ~3.5% APY"
+      "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
     }
   },
   "totals": {
-    "balance_eur": 4256.6,
+    "balance_eur": 4257.54,
     "initial_eur": 5000,
-    "pnl_eur": -743.4,
-    "pnl_pct": -14.87
+    "pnl_eur": -742.46,
+    "pnl_pct": -14.85
   }
 }
