@@ -1,49 +1,40 @@
 {
-  "generatedAt": "2026-04-06T19:44:34.152Z",
-  "balance": 4277.96,
-  "totalReturn": -14.44,
+  "generatedAt": "2026-04-07T19:06:33.580Z",
+  "balance": 4242.34,
+  "totalReturn": -15.15,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2141.6587,
+      "currentPrice": 2086.6885,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 11.28,
+      "distancePct": 8.95,
       "status": "ACTIVE"
     },
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 130.1,
+      "currentPrice": 129.17,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 18.62,
+      "distancePct": 18.03,
       "status": "ACTIVE"
     },
     {
       "asset": "DXS3",
       "type": "STOP_LOSS",
-      "currentPrice": 5.495,
+      "currentPrice": 5.508,
       "triggerPrice": 4.84,
       "currency": "EUR",
-      "distancePct": 11.92,
+      "distancePct": 12.13,
       "status": "ACTIVE"
     },
     {
-      "asset": "NATO",
-      "type": "STOP_LOSS",
-      "currentPrice": 16.2,
-      "triggerPrice": 15.72,
-      "currency": "EUR",
-      "distancePct": 2.96,
-      "status": "NEAR"
-    },
-    {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -14.44,
+      "pnlPct": -15.15,
       "status": "WARNING",
-      "detail": "Portfolio down -14.4% from start"
+      "detail": "Portfolio down -15.2% from start"
     }
   ]
 }

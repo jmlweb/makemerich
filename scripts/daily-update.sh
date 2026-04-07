@@ -1,40 +1,28 @@
 #!/bin/bash
 # makemerich - Daily close session (21:30 L-V)
-# Flujo: fetch → update → validate → signals → decide → act → LEDGER → commit → report
-set -e
+# Flow: fetch → update → validate → signals → decide → act → LEDGER → commit → report
+set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-GITHUB_TOKEN=$(grep '^GITHUB_TOKEN=' ~/.secrets | cut -d'=' -f2)
-GITHUB_USER=$(grep '^GITHUB_USER=' ~/.secrets | cut -d'=' -f2)
+VENV_PYTHON="/home/hustle/.config/hustle/venv/bin/python3"
+SEND_ALERT="/home/hustle/projects/hustle/core/lib/send_alert.py"
 LOG_FILE="/tmp/makemerich-daily.log"
-OPENCLAW_CONFIG="$HOME/.openclaw/openclaw.json"
+CLAUDE_BIN="/home/hustle/.local/bin/claude"
 
 # Load nvm / node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-
-HOOK_TOKEN=$(python3 -c "import json; print(json.load(open('$OPENCLAW_CONFIG')).get('hooks',{}).get('token',''))" 2>/dev/null || echo "")
-BOT_TOKEN=$(python3 -c "import json; print(json.load(open('$OPENCLAW_CONFIG'))['channels']['telegram']['botToken'])" 2>/dev/null || echo "")
-CHAT_ID="159054208"
-
-send_telegram() {
-  python3 -c "
-import urllib.parse, urllib.request
-data = urllib.parse.urlencode({'chat_id': '$CHAT_ID', 'text': '''$1''', 'parse_mode': 'Markdown'}).encode()
-urllib.request.urlopen(urllib.request.Request('https://api.telegram.org/bot${BOT_TOKEN}/sendMessage', data=data), timeout=10)
-" 2>/dev/null || true
-}
 
 cd "$REPO_DIR"
 echo "[$(date)] Starting daily close..." | tee "$LOG_FILE"
 
 # 1. Fetch prices
 echo "[1/5] Fetching prices..." | tee -a "$LOG_FILE"
-node scripts/fetch-prices.js >> "$LOG_FILE" 2>&1 || { send_telegram "⚠️ makemerich: error fetching prices"; exit 1; }
+node scripts/fetch-prices.js >> "$LOG_FILE" 2>&1 || { "$VENV_PYTHON" "$SEND_ALERT" "⚠️ makemerich: error fetching prices"; exit 1; }
 
 # 2. Update portfolio
 echo "[2/5] Updating portfolio..." | tee -a "$LOG_FILE"
-node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { send_telegram "⚠️ makemerich: error updating portfolio"; exit 1; }
+node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { "$VENV_PYTHON" "$SEND_ALERT" "⚠️ makemerich: error updating portfolio"; exit 1; }
 
 # 3. Validate rules
 echo "[3/5] Validating rules..." | tee -a "$LOG_FILE"
@@ -43,23 +31,23 @@ VIOLATION_COUNT=$(node scripts/validate-rules.js 2>/dev/null | grep "VIOLATIONS 
 # 4. Generate signals
 echo "[4/5] Generating signals..." | tee -a "$LOG_FILE"
 SIGNALS_OUTPUT=$(node scripts/generate-signals.js 2>/dev/null)
-NEAR_TRIGGERS=$(echo "$SIGNALS_OUTPUT" | grep -A20 "NEAR TRIGGER:" | grep -v "NEAR TRIGGER:" | grep -v "ACTIVE MONITORS:" | head -5 | tr '\n' ' ' | sed "s/'//g" || true)
+NEAR_TRIGGERS=$(echo "$SIGNALS_OUTPUT" | grep -A20 "NEAR TRIGGER:" | grep -v "NEAR TRIGGER:" | grep -v "ACTIVE MONITORS:" | grep "\S" | head -5 | tr '\n' ' ' | tr "'" ' ' || true)
 
 # 5. Delegate to agent: decide, execute, update LEDGER, commit, report
 echo "[5/5] Delegating to agent..." | tee -a "$LOG_FILE"
 
-BALANCE=$(python3 -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"balance_eur\"]:.2f}')" 2>/dev/null || echo "?")
-PNL=$(python3 -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"pnl_pct\"]:.1f}')" 2>/dev/null || echo "?")
+BALANCE=$("$VENV_PYTHON" -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"balance_eur\"]:.2f}')" 2>/dev/null || echo "?")
+PNL=$("$VENV_PYTHON" -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"pnl_pct\"]:.1f}')" 2>/dev/null || echo "?")
 TODAY=$(date +%Y-%m-%d)
 
-PRICES_SUMMARY=$(python3 -c "
+PRICES_SUMMARY=$("$VENV_PYTHON" -c "
 import json
 p = json.load(open('data/.prices-latest.json'))
 lines = [f'{k.upper()}: {v}' for k, v in p.items() if k in ('sp500','nasdaq','gold','eth','btc','eurusd')]
 print(', '.join(lines))
 " 2>/dev/null || echo "")
 
-HOLDINGS=$(python3 -c "
+HOLDINGS=$("$VENV_PYTHON" -c "
 import json
 p = json.load(open('data/portfolio.json'))
 lines = []
@@ -74,44 +62,7 @@ for k, v in p['holdings'].items():
 print(' | '.join(lines))
 " 2>/dev/null || echo "")
 
-if [ -n "$HOOK_TOKEN" ]; then
-  HOOK_MSG=$(TODAY="$TODAY" BALANCE="$BALANCE" PNL="$PNL" HOLDINGS="$HOLDINGS" \
-    PRICES_SUMMARY="$PRICES_SUMMARY" VIOLATION_COUNT="$VIOLATION_COUNT" NEAR_TRIGGERS="$NEAR_TRIGGERS" \
-    python3 -c "
-import json, os
-today = os.environ.get('TODAY','?')
-balance = os.environ.get('BALANCE','?')
-pnl = os.environ.get('PNL','?')
-holdings = os.environ.get('HOLDINGS','')
-prices = os.environ.get('PRICES_SUMMARY','')
-violations = os.environ.get('VIOLATION_COUNT','0')
-near = os.environ.get('NEAR_TRIGGERS','')
-msg = (
-    f'makemerich DAILY CLOSE {today}. Balance: EUR {balance} ({pnl}%). '
-    f'Holdings: {holdings}. Prices: {prices}. Violations: {violations}. Near triggers: {near}. '
-    f'MANDATORY FLOW (HUSTLE.md): '
-    f'1) Analyze all positions and signals. '
-    f'2) Make decisions and EXECUTE any trade NOW if warranted — do not suggest, act. '
-    f'3) Append the day entry to LEDGER.md in English following the existing format (Day N, date, balance, prices, performance table, trades, analysis). '
-    f'4) git add -A && git commit with message \"Day N: CLOSE EUR BALANCE (PNL%)\" and git push (use GITHUB_TOKEN from ~/.secrets). '
-    f'5) Report to Jose in Spanish only facts: decisions taken, trades executed (or HOLD + why), balance. Never suggest — past-tense facts only.'
-)
-print(json.dumps({'message': msg, 'name': 'makemerich-close', 'channel': 'telegram', 'deliver': True}))
-")
-  HOOK_RESULT=$(curl -s -o /tmp/makemerich-hook-result.txt -w "%{http_code}" \
-    -X POST http://127.0.0.1:18789/hooks/agent \
-    -H "Authorization: Bearer $HOOK_TOKEN" \
-    -H "Content-Type: application/json" \
-    -d "$HOOK_MSG" 2>&1)
-  echo "[$(date)] Agent hook result: $HOOK_RESULT" | tee -a "$LOG_FILE"
-
-  # Fallback: always send a direct Telegram summary regardless of hook result
-  # This ensures Jose always gets a close notification
-  DAY_NUM=$(node -e "try{const d=require('./data/$TODAY.json');console.log(d.day||'?')}catch(e){console.log('?')}" 2>/dev/null || echo "?")
-  NEAR=$(node scripts/generate-signals.js 2>/dev/null | grep "NEAR TRIGGER" -A5 | grep "STOP_LOSS\|DRAWDOWN" | head -2 | sed 's/^  //' | tr '\n' ' ' || echo "")
-
-  # Build compact holdings
-  HOLDINGS_COMPACT=$(python3 -c "
+HOLDINGS_COMPACT=$("$VENV_PYTHON" -c "
 import json
 p = json.load(open('data/portfolio.json'))
 lines = []
@@ -122,19 +73,52 @@ for k, v in sorted(p['holdings'].items(), key=lambda x: -x[1].get('amount_eur', 
         amt = v.get('amount_eur', 0)
         pnl = v.get('pnl_pct', 0)
         sign = '+' if pnl > 0 else ''
-        lines.append(f'{k:<5} *EUR {amt:>5.0f}*  {sign}{pnl:.1f}%')
+        lines.append(f'{k:<5} EUR {amt:>5.0f}  {sign}{pnl:.1f}%')
 print(chr(10).join(lines))
-" 2>/dev/null || echo "$HOLDINGS")
+" 2>/dev/null || echo "ver portfolio.json")
 
-  NEAR_FMT=$(echo "$NEAR" | sed 's/^/⚠️ /' | head -3)
+DAY_NUMBER=$(( $(ls data/2026-*.json 2>/dev/null | wc -l) - 1 ))
 
-  send_telegram "📊 *Day $DAY_NUM* | *EUR $BALANCE* ($PNL%)
+TELEGRAM_FORMAT="Use EXACTLY this Telegram format (no markdown, no extra lines):
+Line 1: 📊 Day $DAY_NUMBER | EUR X.XXX (PNL%)
+Line 2: 📈 or 📉 +/-EUR XX hoy (+/-X,X%)
+Line 3: (blank)
+Line 4: ✅ DECISION — reason in one sentence
+Line 5+: (only if alerts) ⚠️ alert lines
+Line 6: (blank)
+Line 7+: positions table, one per line: TICKER  EUR X.XXX  +/-X,X%
+Last line: CASH  EUR XXX"
+
+PROMPT="makemerich DAILY CLOSE $TODAY. Balance: EUR $BALANCE ($PNL%). Holdings: $HOLDINGS. Prices: $PRICES_SUMMARY. Violations: $VIOLATION_COUNT. Near triggers: $NEAR_TRIGGERS. MANDATORY FLOW (HUSTLE.md): 1) Analyze all positions and signals. 2) Make decisions and EXECUTE any trade NOW if warranted — do not suggest, act. 3) Append the day entry to LEDGER.md in English following the existing format (Day N, date, balance, prices, performance table, trades, analysis). 4) git add -A && git commit with message \"log: Day $DAY_NUMBER — ACTION, portfolio summary ($TODAY)\" and git push (use GITHUB_TOKEN from ~/.secrets). 5) Output ONLY the Telegram message in Spanish as facts: decisions taken, trades executed (or HOLD + why), balance. Never suggest — past-tense facts only. DO NOT call send_alert.py — just print the message to stdout. $TELEGRAM_FORMAT"
+
+build_fallback_msg() {
+  local decision_emoji="📈"
+  if echo "$PNL" | grep -q "^-"; then decision_emoji="📉"; fi
+  cat <<EOFMSG
+📊 Day $DAY_NUMBER | EUR $BALANCE ($PNL%)
+$decision_emoji Cierre $TODAY
+
+✅ HOLD — Cierre automatico (sin agente)
 
 $HOLDINGS_COMPACT
+EOFMSG
+}
 
-$NEAR_FMT"
+if [ -x "$CLAUDE_BIN" ]; then
+  echo "Delegating to Claude Code CLI..." | tee -a "$LOG_FILE"
+  export PATH="/home/hustle/.local/bin:/home/hustle/.nvm/versions/node/v25.8.0/bin:$PATH"
+  CLAUDE_MSG=$(timeout 180 "$CLAUDE_BIN" --model sonnet -p "$PROMPT" --output-format text --max-turns 15 --allowedTools Bash Read Write Edit 2>>"$LOG_FILE")
+  CLAUDE_EXIT=$?
+  echo "$CLAUDE_MSG" >> "$LOG_FILE"
+  if [ $CLAUDE_EXIT -eq 0 ] && [ -n "$CLAUDE_MSG" ]; then
+    "$VENV_PYTHON" "$SEND_ALERT" "$CLAUDE_MSG"
+  else
+    echo "Claude CLI failed or timed out — sending static report" | tee -a "$LOG_FILE"
+    "$VENV_PYTHON" "$SEND_ALERT" "$(build_fallback_msg)"
+  fi
 else
-  echo "WARNING: No hook token" | tee -a "$LOG_FILE"
-  # Send direct summary
-  send_telegram "📊 *Cierre $TODAY* | *EUR $BALANCE* ($PNL%)"
+  echo "Claude CLI not found — sending static report" | tee -a "$LOG_FILE"
+  "$VENV_PYTHON" "$SEND_ALERT" "$(build_fallback_msg)"
 fi
+
+echo "[$(date)] Daily close complete." | tee -a "$LOG_FILE"
