@@ -866,6 +866,8 @@ Markets in severe risk-off. SXR8 crossed the -15% stop loss. VWCE at the exact l
 **Day Change vs stop-loss 18:43:** -€473.05 (-11.2%) — BTC and ETH continued falling in the afternoon
 **Total Return:** -24.64% (vs -15.2% at 18:43)
 
+> **Audit note:** Balance understated — 4GLD (€475.03) was omitted from the total. Actual close: **€4,243.08** (-15.2%). See [Audit — March 30](#audit--march-30-2026-1310-cet-accounting-correction).
+
 **Closing positions:**
 | Asset | Value | P&L vs entry | 24h |
 |-------|-------|-------------|-----|
@@ -897,7 +899,7 @@ Historically negative session. SXR8 and VWCE stops executed correctly at 18:43 �
 ### Day 44 — March 29, 2026 15:45 CET (REBALANCE — Cash deployment)
 
 **Balance:** €4,252.10
-**Day Change:** +€474.05 vs Day 43 close (internal reclassification, not real P&L)
+**Day Change:** +€474.05 vs Day 43 close (accounting correction — 4GLD was omitted from Day 43 close, not real P&L)
 **Total Return:** -14.96%
 
 **Trades executed:**
@@ -935,7 +937,7 @@ Re-entry trigger: VIX < 22 AND S&P500 > SMA50 (20d) AND no new active tariffs. A
 **Total Return:** -14.96%
 
 **Trade executed:**
-- **BUY** 16.949 × DXS3 @ €29.50/unit → €500 (fee €0.25)
+- **BUY** 87.873 × DXS3 @ €5.69/unit → €500 (fee €0.25) <!-- corrected: originally logged as 16.949 × €29.50 -->
   - Source: XEON reduced from €2,077 → €1,577
 
 **Updated positions:**
@@ -992,7 +994,7 @@ Sector with the clearest catalysts of 2026: (1) accelerated European rearmament 
 **Balance:** €4,251.50 | **Total Return:** -14.97%
 
 **Trades:**
-- **BUY** 10.170 × DXS3 @ €29.50 → +€300 additional (DXS3 total: €800)
+- **BUY** 52.724 × DXS3 @ €5.69 → +€300 additional (DXS3 total: €800) <!-- corrected: originally logged as 10.170 × €29.50 -->
 - **TRAILING STOP BTC**: $62,689 → $64,500 (BTC current $66,514, 3% margin)
 
 **Rationale:**

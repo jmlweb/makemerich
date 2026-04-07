@@ -133,7 +133,7 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 
 ### Rules derived
 
-1. **Verify balance after every trade.** Calculate `sum(holdings)` and compare with reported balance. If they differ by >EUR 1, investigate.
+1. **Verify balance after every trade.** Calculate `sum(holdings)` and compare with reported balance. If they differ by >EUR 1, investigate. Every CLOSE entry must list all positions — no asset may be omitted from the total.
 2. **`entry_price` = execution price. Always.** Never use current market price. The valuation script only updates `current_price_eur`; `entry_price` and `units` are immutable after trade.
 3. **Single source of truth.** One system owns portfolio state. Others read from it, never overwrite.
 4. **Validate before committing.** If balance jumps >5% without an executed trade, there's a bug.
