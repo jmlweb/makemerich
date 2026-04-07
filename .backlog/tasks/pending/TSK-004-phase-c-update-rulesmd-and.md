@@ -23,8 +23,8 @@ Phase C of PLN-001. Documentation updates only after Phase A (or A+B) simulation
 
 ## Acceptance Criteria
 
-- [ ] RULES.md updated: 5% min cash replaced with 5% min XEON+cash combined, regime filter documented
-- [ ] STRATEGY.md updated: three regimes and allowed actions documented
+- [x] RULES.md updated: 5% min cash replaced with 5% min XEON+cash combined, regime filter documented
+- [x] STRATEGY.md updated: three regimes and allowed actions documented
 
 ## Notes
 
@@ -33,3 +33,9 @@ Phase C of PLN-001. Documentation updates only after Phase A (or A+B) simulation
 ## Progress Log
 
 - [2026-04-07] Created
+- [2026-04-07] Updated RULES.md: "Min cash reserve" → "Min XEON + cash combined"
+- [2026-04-07] Added section 8 (Market Regime Awareness) to RULES.md with three regime rules
+- [2026-04-07] Updated STRATEGY.md with regime conditions and BUY rules table
+- [2026-04-07] Added deployment velocity rules (15% daily, 30% 5-day caps) to STRATEGY.md
+- [2026-04-07] Added XEON auto-parking explanation and rationale to STRATEGY.md
+- [2026-04-07] Updated last-modified timestamp in both files

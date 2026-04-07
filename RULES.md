@@ -46,9 +46,11 @@ All investments must be legal in Spain. This includes but is not limited to:
 | Limit | Value | Status |
 |-------|-------|--------|
 | Max single position | 50% | Active |
-| Min cash reserve | 5% | Active |
+| Min XEON + cash combined | 5% | Active — updated 2026-04-07 |
 | Max high-risk assets | 30% | **Active** — restored 2026-04-07 |
 | Max inverse/leveraged | 15% | Active — added 2026-04-07 |
+
+> **Cash base change (2026-04-07):** The 5% reserve is now 5% XEON (Lyxor Smart Overnight Return) + bare cash combined. XEON earns ~3.5% APY and is treated as productive cash rather than idle EUR. This enables better capital efficiency while maintaining the safety floor.
 
 > **Override mechanism:** Removed. Position limits are absolute and cannot be suspended by any mandate. This was changed after the Aggressive Maximization mandate (2026-03-29 to 2026-04-07) led to a -15% drawdown from concentrated directional bets.
 
@@ -71,12 +73,24 @@ All investments must be legal in Spain. This includes but is not limited to:
 - Take another **25%** at +50%
 - Rebalance monthly if allocations drift more than 10% from targets
 
-### 8. Transparency
+### 8. Market Regime Awareness (added 2026-04-07)
+
+Quantitative signals are modulated by market regime to reduce false signals in changing conditions:
+
+| Regime | VIX | SP500 vs SMA50 | Action |
+|--------|-----|---|--------|
+| **risk-on** | < 22 | above SMA50 | Normal signal thresholds apply (BUY @ score ≥ 20) |
+| **risk-off** | 22–30 | OR below SMA50 | Conservative: only STRONG_BUY (score ≥ 50) for defensive assets (XEON, 4GLD) |
+| **crisis** | > 30 | (any) | Blocked: no new BUY signals except XEON |
+
+> **Regime detection:** Updated daily using S&P 500 SMA50 and VIX levels from real market data. Protects against deploying into falling knives during regime changes.
+
+### 9. Transparency
 - All decisions and reasoning must be public
 - No private data or credentials in the repo
 - Document mistakes and learnings
 
-### 9. Documentation Language
+### 10. Documentation Language
 - All documentation must be written in **English**
 - This applies to all files in the repository: LEDGER, SIGNALS, ASSETS, LEARNINGS, STRATEGY, README, etc.
 - Spanish terms may be kept when they are proper names (e.g., SOCIMIs, DGOJ, Letras del Tesoro, CNMV, MEFF)

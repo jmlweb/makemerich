@@ -1,13 +1,14 @@
 ---
 id: TSK-003
 title: Phase B: deployment velocity control + XEON auto-parking
-status: active
+status: complete
 priority: P2
 tags: []
 created: 2026-04-07
 source: plan/PLN-001
 depends-on: []
 started: 2026-04-07
+completed: 2026-04-07
 ---
 
 # Phase B: deployment velocity control + XEON auto-parking
@@ -50,3 +51,4 @@ Phase B of PLN-001. Incremental improvement on top of Phase A regime filter. Add
 - [2026-04-07] Implemented XEON auto-parking (buy when cash > 20%)
 - [2026-04-07] Phase B results: -6.73% return, -9.60% max drawdown (5% improvement vs baseline)
 - [2026-04-07] DECISION GATE PASSED: Targets achieved (max dd < 10%, return > -5%)
+- [2026-04-07] Completed

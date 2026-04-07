@@ -5,9 +5,9 @@
 | Status | Count |
 |--------|-------|
 | Pending | 1 |
-| Active | 1 |
+| Active | 0 |
 | Blocked | 0 |
-| Complete | 2 |
+| Complete | 3 |
 
 ## Active Tasks
 
@@ -25,3 +25,4 @@ _No active tasks._
 |----|-------|-----------|
 | TSK-001 | Prereq: port simulate-history.js to main and verify BTC data | 2026-04-07 |
 | TSK-002 | Phase A: regime filter — implement and validate in isolation | 2026-04-07 |
+| TSK-003 | Phase B: deployment velocity control + XEON auto-parking | 2026-04-07 |
