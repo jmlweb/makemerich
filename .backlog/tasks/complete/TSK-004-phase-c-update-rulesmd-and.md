@@ -1,12 +1,14 @@
 ---
 id: TSK-004
 title: Phase C: update RULES.md and STRATEGY.md with new regime rules
-status: pending
+status: complete
 priority: P3
 tags: []
 created: 2026-04-07
 source: plan/PLN-001
 depends-on: []
+completed: 2026-04-07
+started: 2026-04-07
 ---
 
 # Phase C: update RULES.md and STRATEGY.md with new regime rules
@@ -39,3 +41,4 @@ Phase C of PLN-001. Documentation updates only after Phase A (or A+B) simulation
 - [2026-04-07] Added deployment velocity rules (15% daily, 30% 5-day caps) to STRATEGY.md
 - [2026-04-07] Added XEON auto-parking explanation and rationale to STRATEGY.md
 - [2026-04-07] Updated last-modified timestamp in both files
+- [2026-04-07] Completed
