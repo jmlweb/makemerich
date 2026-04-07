@@ -2,27 +2,27 @@
   "date": "2026-02-24",
   "day": 21,
   "balance": {
-    "total": 4906.78,
+    "total": 5042.34,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 7.01,
-    "percentage": 0.14
+    "absolute": 4.8,
+    "percentage": 0.1
   },
-  "totalReturn": -1.86,
+  "totalReturn": 0.85,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 245.17,
+      "value": 252.13,
       "pnlPercent": 0
     },
     {
       "asset": "MC",
       "type": "Stock",
       "description": "LVMH",
-      "units": 2.9188,
-      "value": 1639.76,
+      "units": 1.3803,
+      "value": 775.48,
       "pnlPercent": 3.5,
       "entryPriceEUR": 542.8,
       "currentPriceEUR": 561.8
@@ -31,8 +31,8 @@
       "asset": "AIR",
       "type": "Stock",
       "description": "Airbus",
-      "units": 10.912,
-      "value": 1995.15,
+      "units": 0.2561,
+      "value": 46.82,
       "pnlPercent": -6.26,
       "entryPriceEUR": 195.06,
       "currentPriceEUR": 182.84
@@ -41,11 +41,74 @@
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 1026.7,
+      "units": 1.9511,
+      "value": 738.48,
       "pnlPercent": -1.02,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 378.5
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex",
+      "units": 13.1979,
+      "value": 759.41,
+      "pnlPercent": 1.48,
+      "entryPriceEUR": 56.7,
+      "currentPriceEUR": 57.54
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 4.9703,
+      "value": 744.16,
+      "pnlPercent": 0.43,
+      "entryPriceEUR": 149.08,
+      "currentPriceEUR": 149.72
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC",
+      "units": 5.4596,
+      "value": 765.7,
+      "pnlPercent": 2.64,
+      "entryPriceEUR": 136.64,
+      "currentPriceEUR": 140.25
+    },
+    {
+      "asset": "SXR8",
+      "type": "ETF",
+      "description": "iShares S&P 500 UCITS",
+      "units": 1.2016,
+      "value": 751.54,
+      "pnlPercent": -0.32,
+      "entryPriceEUR": 627.44,
+      "currentPriceEUR": 625.46
+    },
+    {
+      "asset": "ASML",
+      "type": "Stock",
+      "description": "ASML Holding",
+      "units": 0.1651,
+      "value": 208.62,
+      "pnlPercent": 0,
+      "entryPriceEUR": 1263.4,
+      "currentPriceEUR": 1263.4
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-02-24",
+      "action": "BUY",
+      "asset": "ASML",
+      "units": 0.1651,
+      "price": 1263.4,
+      "amount_eur": 208.83,
+      "fee_eur": 0.21,
+      "reason": "BUY (score: 24)",
+      "session": "close"
     }
   ],
   "metadata": {

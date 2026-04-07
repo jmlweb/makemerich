@@ -2,27 +2,27 @@
   "date": "2026-01-28",
   "day": 2,
   "balance": {
-    "total": 4996.28,
+    "total": 4999.2,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -3.72,
-    "percentage": -0.07
+    "absolute": -0.8,
+    "percentage": -0.02
   },
-  "totalReturn": -0.07,
+  "totalReturn": -0.02,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 1283.48,
+      "value": 4200,
       "pnlPercent": 0
     },
     {
       "asset": "MC",
       "type": "Stock",
       "description": "LVMH",
-      "units": 2.9188,
-      "value": 1584.3,
+      "units": 1.3803,
+      "value": 749.25,
       "pnlPercent": 0,
       "entryPriceEUR": 542.8,
       "currentPriceEUR": 542.8
@@ -31,8 +31,8 @@
       "asset": "AIR",
       "type": "Stock",
       "description": "Airbus",
-      "units": 10.912,
-      "value": 2128.5,
+      "units": 0.2561,
+      "value": 49.95,
       "pnlPercent": 0,
       "entryPriceEUR": 195.06,
       "currentPriceEUR": 195.06
@@ -43,10 +43,10 @@
       "date": "2026-01-28",
       "action": "BUY",
       "asset": "MC",
-      "units": 2.9188,
+      "units": 1.3803,
       "price": 542.8,
-      "amount_eur": 1585.89,
-      "fee_eur": 1.59,
+      "amount_eur": 750,
+      "fee_eur": 0.75,
       "reason": "BUY (score: 32)",
       "session": "close"
     },
@@ -54,10 +54,10 @@
       "date": "2026-01-28",
       "action": "BUY",
       "asset": "AIR",
-      "units": 10.912,
+      "units": 0.2561,
       "price": 195.06,
-      "amount_eur": 2130.63,
-      "fee_eur": 2.13,
+      "amount_eur": 50,
+      "fee_eur": 0.05,
       "reason": "BUY (score: 21)",
       "session": "close"
     }
