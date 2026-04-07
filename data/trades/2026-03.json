@@ -1,35 +1,57 @@
-{
-  "month": "2026-03",
-  "trades": [
-    {
-      "date": "2026-03-18",
-      "time": "11:35:01Z",
-      "action": "SELL",
-      "asset": "BTC",
-      "units": 0.01602,
-      "price_usd": 73246,
-      "value_eur": 1079.53,
-      "reason": "Stop loss activado autom\u00e1ticamente por Hustle. Precio $73246 < stop $73525"
-    },
-    {
-      "date": "2026-03-18",
-      "time": "21:00:06Z",
-      "action": "BUY",
-      "asset": "ETH",
-      "units": 0.263526,
-      "price_usd": 2188.4,
-      "value_eur": 500.0,
-      "reason": "Watchlist signal activada: ETH < $2,200. Ampliaci\u00f3n posici\u00f3n existente. Precio $2188, avg entry $2053"
-    },
-    {
-      "date": "2026-03-18",
-      "time": "21:00:06Z",
-      "action": "BUY",
-      "asset": "BTC",
-      "units": 0.006476,
-      "price_usd": 71238,
-      "value_eur": 400.0,
-      "reason": "Reentrada t\u00e1ctica tras stop loss. Correcci\u00f3n -4.4% hoy. Stop loss ajustado a $62689 (-12%)"
-    }
-  ]
-}
+[
+  {
+    "date": "2026-03-19",
+    "action": "SELL",
+    "asset": "MC",
+    "units": 2.9188,
+    "price": 460.25,
+    "amount_eur": 1343.36,
+    "fee_eur": 1.34,
+    "reason": "STOP_LOSS (-15.2% from entry)",
+    "session": "auto"
+  },
+  {
+    "date": "2026-03-19",
+    "action": "SELL",
+    "asset": "AIR",
+    "units": 10.912,
+    "price": 163.96,
+    "amount_eur": 1789.13,
+    "fee_eur": 1.79,
+    "reason": "STOP_LOSS (-15.9% from entry)",
+    "session": "auto"
+  },
+  {
+    "date": "2026-03-19",
+    "action": "BUY",
+    "asset": "4GLD",
+    "units": 12.2552,
+    "price": 127.91,
+    "amount_eur": 1569.14,
+    "fee_eur": 1.57,
+    "reason": "BUY (score: 21)",
+    "session": "close"
+  },
+  {
+    "date": "2026-03-20",
+    "action": "BUY",
+    "asset": "SIE",
+    "units": 5.2158,
+    "price": 203.75,
+    "amount_eur": 1063.79,
+    "fee_eur": 1.06,
+    "reason": "BUY (score: 26)",
+    "session": "close"
+  },
+  {
+    "date": "2026-03-20",
+    "action": "BUY",
+    "asset": "SXR8",
+    "units": 0.8637,
+    "price": 608.52,
+    "amount_eur": 526.09,
+    "fee_eur": 0.53,
+    "reason": "BUY (score: 21)",
+    "session": "close"
+  }
+]

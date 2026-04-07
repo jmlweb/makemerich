@@ -2,78 +2,65 @@
   "date": "2026-03-31",
   "day": 46,
   "balance": {
-    "total": 4274.53,
+    "total": 4359.81,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
-    "percentage": 0
+    "absolute": 20.93,
+    "percentage": 0.48
   },
-  "totalReturn": -14.51,
+  "totalReturn": -12.8,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 187.96,
+      "value": 215.52,
       "pnlPercent": 0
     },
     {
-      "asset": "ETH",
-      "type": "Crypto",
-      "description": "Ethereum",
-      "units": 0.658029,
-      "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2096.575,
-      "value": 1203.02,
-      "pnlPercent": 2.12,
-      "change24h": 3.6105540908050604
+      "asset": "ALV",
+      "type": "Stock",
+      "description": "Allianz",
+      "units": 2.7125,
+      "value": 974.61,
+      "pnlPercent": -6.04,
+      "entryPriceEUR": 382.4,
+      "currentPriceEUR": 359.3
     },
     {
       "asset": "4GLD",
       "type": "ETC",
-      "description": "Xetra-Gold ETC (1g/unit)",
-      "units": 3.7704,
-      "entryPriceEUR": 124.56,
-      "currentPriceEUR": 128.8,
-      "value": 485.63,
-      "pnlPercent": 3.4,
-      "change24h": 2.181673938913141
+      "description": "Xetra-Gold ETC",
+      "units": 12.2552,
+      "value": 1578.47,
+      "pnlPercent": 0.7,
+      "entryPriceEUR": 127.91,
+      "currentPriceEUR": 128.8
     },
     {
-      "asset": "XEON",
-      "type": "ETF",
-      "description": "Lyxor Smart Overnight Return (€STR)",
-      "units": 3.2059,
-      "entryPriceEUR": 140.5,
-      "currentPriceEUR": 148.786,
-      "value": 476.99,
-      "pnlPercent": 5.9,
-      "change24h": 0.018150162343128978
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens",
+      "units": 5.2158,
+      "value": 1072.89,
+      "pnlPercent": 0.96,
+      "entryPriceEUR": 203.75,
+      "currentPriceEUR": 205.7
     },
     {
-      "asset": "DXS3",
+      "asset": "SXR8",
       "type": "ETF",
-      "description": "Xtrackers S&P500 Inverse Daily UCITS",
-      "units": 277.5958,
-      "entryPriceEUR": 5.69,
-      "currentPriceEUR": 5.632,
-      "value": 1563.42,
-      "pnlPercent": -1.02,
-      "change24h": -0.4067197170645548
-    },
-    {
-      "asset": "NATO",
-      "type": "ETF",
-      "description": "HANetf Future of Defence UCITS",
-      "units": 21.6216,
-      "currentPriceUSD": 18.962,
-      "value": 357.51,
-      "pnlPercent": 0,
-      "change24h": 0.8939023092476283
+      "description": "iShares S&P 500 UCITS",
+      "units": 0.8637,
+      "value": 518.31,
+      "pnlPercent": -1.38,
+      "entryPriceEUR": 608.52,
+      "currentPriceEUR": 600.12
     }
   ],
   "metadata": {
-    "generatedAt": "2026-03-31T19:30:16.573Z",
-    "eurUsd": 0.872
+    "generatedAt": "2026-03-31T21:30:00.000Z",
+    "eurUsd": 0.864,
+    "simulated": true
   }
 }

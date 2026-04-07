@@ -1,39 +1,42 @@
 {
-  "last_updated": "2026-04-07T20:34:09.356Z",
+  "last_updated": "2026-04-07T21:30:00.000Z",
   "holdings": {
     "CASH": {
-      "amount_eur": 2113.55
+      "amount_eur": 215.52
     },
-    "ETH": {
-      "units": 0.658029,
-      "entry_price_usd": 2052.97,
-      "current_price_usd": 2116.0425,
-      "amount_eur": 1205.83,
-      "pnl_pct": 3.07,
-      "stop_loss_usd": 1900
+    "ALV": {
+      "units": 2.7125,
+      "entry_price_eur": 382.4,
+      "amount_eur": 996.04,
+      "pnl_pct": -3.97,
+      "current_price_eur": 367.2
     },
     "4GLD": {
-      "units": 3.7704,
-      "entry_price_eur": 124.56,
-      "current_price_eur": 129.17,
-      "amount_eur": 487.02,
-      "pnl_pct": 3.7,
-      "stop_loss_eur": 105.88
+      "units": 12.2552,
+      "entry_price_eur": 127.91,
+      "amount_eur": 1583.01,
+      "pnl_pct": 0.99,
+      "current_price_eur": 129.17
     },
-    "XEON": {
-      "units": 3.0311,
-      "entry_price_eur": 140.5,
-      "current_price_eur": 148.835,
-      "amount_eur": 451.13,
-      "pnl_pct": 5.93,
-      "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
+    "SIE": {
+      "units": 5.2158,
+      "entry_price_eur": 203.75,
+      "amount_eur": 1095.32,
+      "pnl_pct": 3.07,
+      "current_price_eur": 210
+    },
+    "SXR8": {
+      "units": 0.8637,
+      "entry_price_eur": 608.52,
+      "amount_eur": 525.68,
+      "pnl_pct": 0.02,
+      "current_price_eur": 608.66
     }
   },
   "totals": {
-    "balance_eur": 4257.54,
+    "balance_eur": 4415.58,
     "initial_eur": 5000,
-    "pnl_eur": -742.46,
-    "pnl_pct": -14.85
+    "pnl_eur": -584.42,
+    "pnl_pct": -11.69
   }
 }

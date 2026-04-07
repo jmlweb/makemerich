@@ -1,8 +1,8 @@
 {
   "date": "2026-01-27",
-  "day": 0,
+  "day": 1,
   "balance": {
-    "total": 5000.00,
+    "total": 5000,
     "currency": "EUR"
   },
   "change": {
@@ -14,12 +14,13 @@
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 5000.00,
+      "value": 5000,
       "pnlPercent": 0
     }
   ],
   "metadata": {
     "generatedAt": "2026-01-27T21:30:00.000Z",
-    "note": "Simulation initialized"
+    "eurUsd": 0.842,
+    "simulated": true
   }
 }

@@ -1,58 +1,46 @@
 {
   "date": "2026-02-02",
-  "day": 4,
+  "day": 5,
   "balance": {
-    "total": 4596.69,
+    "total": 4969.4,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
-    "percentage": 0
+    "absolute": -20.74,
+    "percentage": -0.42
   },
-  "totalReturn": -8.07,
+  "totalReturn": -0.61,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 921.89,
+      "value": 1283.48,
       "pnlPercent": 0
     },
     {
-      "asset": "VOO",
-      "type": "ETF",
-      "description": "Vanguard S&P 500 ETF",
-      "units": 4.29,
-      "entryPriceUSD": 637.5,
-      "currentPriceUSD": 639.59,
-      "value": 2313.06,
-      "pnlPercent": 0.33,
-      "change24h": 0.2068090306610134
+      "asset": "MC",
+      "type": "Stock",
+      "description": "LVMH",
+      "units": 2.9188,
+      "value": 1571.17,
+      "pnlPercent": -0.83,
+      "entryPriceEUR": 542.8,
+      "currentPriceEUR": 538.3
     },
     {
-      "asset": "GLD",
-      "type": "ETF",
-      "description": "SPDR Gold Trust",
-      "units": 1.83,
-      "entryPriceUSD": 447.92,
-      "currentPriceUSD": 427.64,
-      "value": 659.72,
-      "pnlPercent": -4.53,
-      "change24h": -13.764871949989915
-    },
-    {
-      "asset": "QQQ",
-      "type": "ETF",
-      "description": "Invesco Nasdaq-100 ETF",
-      "units": 1.33,
-      "entryPriceUSD": 615.33,
-      "currentPriceUSD": 626.14,
-      "value": 702.02,
-      "pnlPercent": 1.76,
-      "change24h": -0.5226951368698607
+      "asset": "AIR",
+      "type": "Stock",
+      "description": "Airbus",
+      "units": 10.912,
+      "value": 2114.75,
+      "pnlPercent": -0.65,
+      "entryPriceEUR": 195.06,
+      "currentPriceEUR": 193.8
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-02T21:03:31.712Z",
-    "eurUsd": 0.843
+    "generatedAt": "2026-02-02T21:30:00.000Z",
+    "eurUsd": 0.844,
+    "simulated": true
   }
 }

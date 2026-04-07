@@ -1,80 +1,56 @@
 {
   "date": "2026-03-17",
-  "day": 35,
+  "day": 36,
   "balance": {
-    "total": 4884.56,
+    "total": 4464.3,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
-    "percentage": 0
+    "absolute": -8.72,
+    "percentage": -0.19
   },
-  "totalReturn": -2.31,
+  "totalReturn": -10.71,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 104.58,
+      "value": 245.17,
       "pnlPercent": 0
     },
     {
-      "asset": "SXR8",
-      "type": "ETF",
-      "description": "iShares S&P 500 UCITS",
-      "units": 2.19,
-      "entryPriceEUR": 621.88,
-      "currentPriceEUR": 626.18,
-      "value": 1371.33,
-      "pnlPercent": 0.69,
-      "change24h": 0.2529618956131808
+      "asset": "MC",
+      "type": "Stock",
+      "description": "LVMH",
+      "units": 2.9188,
+      "value": 1378.39,
+      "pnlPercent": -13,
+      "entryPriceEUR": 542.8,
+      "currentPriceEUR": 472.25
     },
     {
-      "asset": "VWCE",
-      "type": "ETF",
-      "description": "Vanguard All-World UCITS",
-      "units": 7.3907,
-      "entryPriceEUR": 143.38,
-      "currentPriceEUR": 147.8,
-      "value": 1092.35,
-      "pnlPercent": 3.08,
-      "change24h": 0.6949175637007836
+      "asset": "AIR",
+      "type": "Stock",
+      "description": "Airbus",
+      "units": 10.912,
+      "value": 1858.53,
+      "pnlPercent": -12.68,
+      "entryPriceEUR": 195.06,
+      "currentPriceEUR": 170.32
     },
     {
-      "asset": "BTC",
-      "type": "Crypto",
-      "description": "Bitcoin",
-      "units": 0.01602,
-      "entryPriceUSD": 66920,
-      "currentPriceUSD": 74679.125,
-      "value": 1042.03,
-      "pnlPercent": 11.59,
-      "change24h": -0.24306486817462905
-    },
-    {
-      "asset": "ETH",
-      "type": "Crypto",
-      "description": "Ethereum",
-      "units": 0.394503,
-      "entryPriceUSD": 1962.51,
-      "currentPriceUSD": 2329.6826,
-      "value": 800.51,
-      "pnlPercent": 18.71,
-      "change24h": -0.9141552993055321
-    },
-    {
-      "asset": "SGLD",
-      "type": "ETC",
-      "description": "Invesco Physical Gold ETC",
-      "units": 1.13,
-      "entryPriceUSD": 473.34,
-      "currentPriceUSD": 481.36,
-      "value": 473.77,
-      "pnlPercent": 1.69,
-      "change24h": -0.8690637999917563
+      "asset": "ALV",
+      "type": "Stock",
+      "description": "Allianz",
+      "units": 2.7125,
+      "value": 982.21,
+      "pnlPercent": -5.31,
+      "entryPriceEUR": 382.4,
+      "currentPriceEUR": 362.1
     }
   ],
   "metadata": {
-    "generatedAt": "2026-03-17T20:30:09.636Z",
-    "eurUsd": 0.871
+    "generatedAt": "2026-03-17T21:30:00.000Z",
+    "eurUsd": 0.8696,
+    "simulated": true
   }
 }
