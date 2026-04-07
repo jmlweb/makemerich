@@ -60,8 +60,8 @@ const ASSET_META = {
   BTC:  { type: 'Crypto', risk: 'high', currency: 'USD', description: 'Bitcoin' },
   ETH:  { type: 'Crypto', risk: 'high', currency: 'USD', description: 'Ethereum' },
   SOL:  { type: 'Crypto', risk: 'high', currency: 'USD', description: 'Solana' },
-  '4GLD': { type: 'ETC', risk: 'medium', currency: 'EUR', description: 'Xetra-Gold ETC' },
-  XEON: { type: 'ETF', risk: 'low', currency: 'EUR', description: 'Lyxor Smart Overnight Return' },
+  '4GLD': { type: 'ETC', risk: 'medium', currency: 'EUR', description: 'Xetra-Gold ETC', defensive: true },
+  XEON: { type: 'ETF', risk: 'low', currency: 'EUR', description: 'Lyxor Smart Overnight Return', defensive: true },
   DXS3: { type: 'ETF', risk: 'high', currency: 'EUR', inverse: true, leveraged: true, description: 'S&P500 Inverse Daily' },
   EQQQ: { type: 'ETF', risk: 'medium', currency: 'EUR', description: 'Invesco NASDAQ-100 UCITS' },
   SXR8: { type: 'ETF', risk: 'medium', currency: 'EUR', description: 'iShares S&P 500 UCITS' },
@@ -91,6 +91,7 @@ function getFeeRate(symbol) {
 
 function isHighRisk(symbol) { return ASSET_META[symbol]?.risk === 'high'; }
 function isInverse(symbol) { return ASSET_META[symbol]?.inverse === true; }
+function isDefensive(symbol) { return ASSET_META[symbol]?.defensive === true; }
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -98,6 +99,70 @@ function parseArgs() {
     dryRun: args.includes('--dry-run'),
     verbose: args.includes('--verbose'),
   };
+}
+
+// ── Deployment Velocity ────────────────────────────────────────────────────
+
+function computeDeploymentVelocity(allTrades, currentDate, daysBack = 5) {
+  // Sum BUY amounts in the last N trading days
+  let deployedAmount = 0;
+  const lookbackStart = new Date(currentDate);
+  lookbackStart.setDate(lookbackStart.getDate() - daysBack);
+
+  for (const trade of allTrades) {
+    if (trade.action === 'BUY' && trade.date >= lookbackStart.toISOString().split('T')[0]) {
+      deployedAmount += trade.amount_eur || 0;
+    }
+  }
+
+  return deployedAmount;
+}
+
+// ── Market Regime ──────────────────────────────────────────────────────────
+
+function computeMarketRegimeAtDate(sp500History, vixHistory, date) {
+  if (!sp500History || !vixHistory) return 'unknown';
+
+  const sp500Data = sp500History.data;
+  const vixData = vixHistory.data;
+
+  // Find closest SP500 and VIX values as of the date
+  let sp500Close = null;
+  let sp500Idx = -1;
+  for (let i = sp500Data.length - 1; i >= 0; i--) {
+    if (sp500Data[i].date <= date) {
+      sp500Close = sp500Data[i].close;
+      sp500Idx = i;
+      break;
+    }
+  }
+
+  let vixClose = null;
+  for (let i = vixData.length - 1; i >= 0; i--) {
+    if (vixData[i].date <= date) {
+      vixClose = vixData[i].close;
+      break;
+    }
+  }
+
+  if (sp500Idx < 0 || !sp500Close || !vixClose) return 'unknown';
+
+  // Compute SMA50 for SP500
+  const closes = sp500Data.slice(Math.max(0, sp500Idx - 200), sp500Idx + 1).map((d) => d.close);
+  if (closes.length < 50) return 'unknown';
+  const sma50Arr = sma(closes, 50);
+  const sp500Sma50 = sma50Arr[sma50Arr.length - 1];
+
+  if (!sp500Sma50) return 'unknown';
+
+  // Apply regime rules (from plan: VIX < 22 risk-on, 22-30 risk-off, > 30 crisis)
+  if (vixClose > 30) {
+    return 'crisis';
+  } else if (sp500Close < sp500Sma50 || vixClose >= 22) {
+    return 'risk-off';
+  } else {
+    return 'risk-on';
+  }
 }
 
 // ── Data Loading ────────────────────────────────────────────────────────────
@@ -343,10 +408,13 @@ function simulate(verbose) {
   const activeSymbols = Object.keys(historyMap);
   if (verbose) console.log(`Active universe: ${activeSymbols.join(', ')} (${activeSymbols.length})`);
 
-  // Load exchange rates
+  // Load exchange rates and market regime data
   const eurusdHistory = loadHistory('EURUSD');
   const dkkeurHistory = loadHistory('DKKEUR');
   initExchangeRates(eurusdHistory, dkkeurHistory);
+
+  const sp500History = loadHistory('SP500');
+  const vixHistory = loadHistory('VIX');
 
   // Determine game trading days using SAP (European market reference)
   const sapHistory = historyMap.SAP || historyMap.VWCE;
@@ -491,12 +559,40 @@ function simulate(verbose) {
       if (pos.units < 0.0001) delete portfolio.positions[sym];
     }
 
+    // Compute market regime for this day
+    const regime = computeMarketRegimeAtDate(sp500History, vixHistory, date);
+
+    // Compute deployment velocity (sum of BUYs in last 5 days)
+    const deployedIn5Days = computeDeploymentVelocity(allTrades, date, 5);
+    const velocityPct5d = deployedIn5Days / state.balance;
+    const deployedToday = 0; // Will accumulate as we process buys
+    const maxDeploymentPerDay = state.balance * 0.15; // 15% cap per session
+    const maxDeploymentPer5Days = state.balance * 0.30; // 30% cap per 5 days
+    let deploymentCapReached = false;
+
     // Collect buy signals — sort by score descending (best signals first)
+    // Minimal regime filtering: only block crisis except XEON
     const buySignals = Object.entries(signalResults)
       .filter(([sym, sig]) => (sig.signal === 'BUY' || sig.signal === 'STRONG_BUY') && !portfolio.positions[sym])
+      .filter(([sym, sig]) => {
+        // Only block crisis mode (VIX > 30) except for XEON
+        if (regime === 'crisis' && sym !== 'XEON') return false;
+        return true;
+      })
       .sort((a, b) => b[1].score - a[1].score);
 
+    let dailyDeployed = 0;
+
     for (const [sym, sig] of buySignals) {
+      // Check deployment velocity caps
+      if (dailyDeployed + deployedIn5Days >= maxDeploymentPer5Days || deploymentCapReached) {
+        if (!deploymentCapReached) {
+          // Log once per day
+          // console.log(`[${date}] 5-day deployment velocity at ${((dailyDeployed + deployedIn5Days) / state.balance * 100).toFixed(1)}% >= 30% cap`);
+        }
+        deploymentCapReached = true;
+        continue; // Skip remaining buy signals
+      }
       const currentState = computePortfolioState(portfolio, allPrices, date);
       const availableCash = portfolio.cash - currentState.balance * LIMITS.MIN_CASH_RESERVE;
       if (availableCash <= 50) break;
@@ -534,6 +630,12 @@ function simulate(verbose) {
 
       if (buyAmountEur < 50) continue;
 
+      // Check daily deployment cap
+      if (dailyDeployed + buyAmountEur > maxDeploymentPerDay) {
+        buyAmountEur = Math.max(50, maxDeploymentPerDay - dailyDeployed);
+        if (buyAmountEur < 50) continue;
+      }
+
       const fee = buyAmountEur * getFeeRate(sym);
       const netAmountEur = buyAmountEur - fee;
       const units = netAmountEur / priceEur;
@@ -548,11 +650,51 @@ function simulate(verbose) {
         tookProfit2: false,
       };
 
+      dailyDeployed += buyAmountEur;
+
       dayTrades.push({
         date, action: 'BUY', asset: sym, units: round4(units),
         price: round4(price), amount_eur: round2(buyAmountEur), fee_eur: round2(fee),
         reason: `${sig.signal} (score: ${sig.score})`, session: 'close',
       });
+    }
+
+    // ── Step 3b: XEON auto-parking (productive cash base) ──
+    // If cash > 20% of portfolio AND XEON < 15%, buy XEON
+    const stateBeforeXeon = computePortfolioState(portfolio, allPrices, date);
+    if (stateBeforeXeon.cashPct > 0.20 && stateBeforeXeon.cashPct <= 0.95) {
+      const xeonPrice = allPrices['XEON'];
+      if (xeonPrice) {
+        const targetXeonValue = stateBeforeXeon.balance * 0.15;
+        const currentXeonValue = stateBeforeXeon.positionValues['XEON'] || 0;
+
+        if (currentXeonValue < targetXeonValue) {
+          // Buy XEON to reach 15% target with excess cash
+          const excessCash = stateBeforeXeon.cashValue - (stateBeforeXeon.balance * LIMITS.MIN_CASH_RESERVE);
+          const buyAmountXeon = Math.min(excessCash, targetXeonValue - currentXeonValue);
+
+          if (buyAmountXeon > 50) {
+            const feeXeon = buyAmountXeon * getFeeRate('XEON');
+            const netAmountXeon = buyAmountXeon - feeXeon;
+            const unitsXeon = netAmountXeon / xeonPrice;
+
+            portfolio.cash -= buyAmountXeon;
+            if (!portfolio.positions['XEON']) {
+              portfolio.positions['XEON'] = { units: 0, entryPrice: 0, entryDate: date, highPrice: xeonPrice, tookProfit1: false, tookProfit2: false };
+            }
+            // Update existing position or create new one
+            const existingUnits = portfolio.positions['XEON'].units || 0;
+            portfolio.positions['XEON'].units = existingUnits + unitsXeon;
+            if (!portfolio.positions['XEON'].entryPrice) portfolio.positions['XEON'].entryPrice = xeonPrice;
+
+            dayTrades.push({
+              date, action: 'BUY', asset: 'XEON', units: round4(unitsXeon),
+              price: round4(xeonPrice), amount_eur: round2(buyAmountXeon), fee_eur: round2(feeXeon),
+              reason: 'XEON_PARKING (auto)', session: 'auto',
+            });
+          }
+        }
+      }
     }
 
     // ── Step 4: Limit violation corrections ──

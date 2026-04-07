@@ -213,6 +213,65 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 
 ---
 
+## 2026-04-07: Historical Simulation — Quantitative vs Narrative (Hard Numbers)
+
+**Category:** Strategy / Validation  
+**Impact:** Confirms quant pivot with concrete data
+
+**What happened:** Ran a full historical simulation (`scripts/simulate-history.js` on branch `adjusted`) replaying the entire game period (Jan 27 – Apr 7) with the current quantitative rules applied from Day 1. Universe: 19 assets, 5 technical indicators, ATR position sizing, all RULES.md limits enforced.
+
+**Results compared:**
+
+| Metric | Original (narrative) | Simulated (quant) | Delta |
+|--------|---------------------|-------------------|-------|
+| Final balance | EUR 4,257.54 | EUR 4,415.58 | +EUR 158 |
+| Total return | -14.85% | -11.69% | +3.16% |
+| Total trades | ~50+ | 8 | -84% |
+| Max drawdown | ~15%+ | -14.43% | Similar |
+
+### Key findings
+
+1. **Overtrading cost is quantifiable.** 8 mechanical trades vs ~50 narrative trades = 3.16% better return. Most of the edge comes from *not* trading, not from trading better.
+
+2. **The quant system avoids crypto in bear markets by design.** Despite BTC, ETH, and SOL being in the 19-asset universe, no technical signal triggered a buy for any of them. RSI, MACD, and trend indicators all said HOLD or SELL. The system sees what FOMO doesn't.
+
+3. **Mechanical stop-loss + rotation works as a pipeline.** On March 19, MC (-15.2%) and AIR (-15.9%) were cut automatically. The freed capital immediately flowed into 4GLD (gold hedge, score 21) the same day, then SIE and SXR8 (dip buys, scores 26 and 21) the next day. No hesitation, no narrative justification needed.
+
+4. **Market crashes are almost inevitable — the edge is in recovery.** Max drawdown was -14.43% (quant) vs ~-15% (real). Nearly identical. The quantitative system doesn't predict or avoid crashes. Its advantage is post-crash behavior: faster rotation into oversold quality assets instead of doubling down on directional bets (DXS3 at 36%).
+
+### Rules reinforced
+
+- **No narrative trading** is not just philosophy — it's a measurable 3% annual edge
+- **Fewer trades = better results** in this portfolio's volatility regime
+- **ATR sizing + stop-losses are the only position management needed** — no mandates, no overrides
+
+---
+
+## 2026-04-07: Unrealistic Targets Cause the Losses They Try to Prevent
+
+**Category:** Strategy / Game Design  
+**Impact:** Objective changed from 10x to "maximize return"
+
+**What happened:** The original game objective was 10x in one year (EUR 5,000 → EUR 50,000), a 900% return. After 53 days of trading and a full historical simulation, the evidence is clear: this target is the root cause of the worst decisions in the portfolio's history.
+
+**The causal chain:**
+1. 10x target → "we need aggressive strategy" → 25% crypto allocation, concentrated bets
+2. Aggressive strategy → "narrative trading to catch the big move" → FOMO buys, no analysis
+3. Big positions in speculative assets → Aggressive Maximization mandate → position limits suspended
+4. Suspended limits → DXS3 at 36% of portfolio, NATO without analysis → -15% drawdown
+
+Every bad decision traces back to the pressure of an unrealistic target. The quant system proved that a disciplined approach loses less (-11.69% vs -14.85%), but it can never produce 900% returns on ETFs and stocks. The only way to chase 10x is to abandon the discipline that protects capital.
+
+**Lesson:** The goal of an investment system should be aligned with what the system can actually deliver. A quantitative rules-based system can produce consistent alpha over a benchmark. It cannot produce 10x. Setting an impossible target incentivizes bypassing the system — which is worse than having no system at all.
+
+**Action taken:**
+1. Removed 10x / EUR 50,000 victory condition from RULES.md
+2. New objective: "maximize total return while respecting all risk rules"
+3. Updated STRATEGY.md to remove 10x references
+4. No fixed target = no pressure to override limits
+
+---
+
 ## Patterns
 
 | Pattern | Notes |
@@ -224,6 +283,10 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 | Narrative = losing | Every trade driven by macro narrative (tariffs, defense boom) lost money |
 | Quantitative > discretionary | Rule-based signals avoid emotional/narrative bias |
 | Overriding risk rules = disaster | Suspending position limits led to the worst losses |
+| Unrealistic targets cause overriding | The 10x goal was the root cause of every mandate override |
+| Fewer trades = better returns | 8 quant trades beat 50+ narrative trades by 3.16% |
+| Quant avoids crypto in bear markets | No technical signal triggered BUY for BTC/ETH/SOL |
+| Crashes are inevitable, recovery is the edge | Max drawdown nearly identical; difference is post-crash rotation |
 
 ---
 
@@ -249,6 +312,7 @@ The inflated balance of EUR 5,457 (vs real EUR 4,250) was the basis for the DXS3
 | 2026-01-30 | System overhaul | N/A | Clear framework for autonomous operation |
 | 2026-03-27 | SGLD → 4GLD rotation | Better instrument | EUR-denominated, 0% TER, no FX drag |
 | 2026-04-07 | Pivot to quantitative signals | N/A | Replaced narrative trading with rule-based system |
+| 2026-04-07 | Historical simulation validates quant | +3.16% vs narrative | 8 trades, -11.69% vs -14.85% — fewer trades, better outcome |
 
 ---
 

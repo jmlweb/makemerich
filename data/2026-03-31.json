@@ -2,60 +2,90 @@
   "date": "2026-03-31",
   "day": 46,
   "balance": {
-    "total": 4359.81,
+    "total": 4599.51,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 20.93,
-    "percentage": 0.48
+    "absolute": 9.01,
+    "percentage": 0.2
   },
-  "totalReturn": -12.8,
+  "totalReturn": -8.01,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 215.52,
+      "value": 239.18,
       "pnlPercent": 0
     },
     {
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 974.61,
+      "units": 1.9511,
+      "value": 701.02,
       "pnlPercent": -6.04,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 359.3
     },
     {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex",
+      "units": 13.1979,
+      "value": 649.87,
+      "pnlPercent": -13.16,
+      "entryPriceEUR": 56.7,
+      "currentPriceEUR": 49.24
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 4.9703,
+      "value": 704.89,
+      "pnlPercent": -4.87,
+      "entryPriceEUR": 149.08,
+      "currentPriceEUR": 141.82
+    },
+    {
       "asset": "4GLD",
       "type": "ETC",
       "description": "Xetra-Gold ETC",
-      "units": 12.2552,
-      "value": 1578.47,
-      "pnlPercent": 0.7,
-      "entryPriceEUR": 127.91,
+      "units": 5.4596,
+      "value": 703.19,
+      "pnlPercent": -5.74,
+      "entryPriceEUR": 136.64,
       "currentPriceEUR": 128.8
-    },
-    {
-      "asset": "SIE",
-      "type": "Stock",
-      "description": "Siemens",
-      "units": 5.2158,
-      "value": 1072.89,
-      "pnlPercent": 0.96,
-      "entryPriceEUR": 203.75,
-      "currentPriceEUR": 205.7
     },
     {
       "asset": "SXR8",
       "type": "ETF",
       "description": "iShares S&P 500 UCITS",
-      "units": 0.8637,
-      "value": 518.31,
-      "pnlPercent": -1.38,
-      "entryPriceEUR": 608.52,
+      "units": 1.2016,
+      "value": 721.1,
+      "pnlPercent": -4.35,
+      "entryPriceEUR": 627.44,
       "currentPriceEUR": 600.12
+    },
+    {
+      "asset": "ASML",
+      "type": "Stock",
+      "description": "ASML Holding",
+      "units": 0.1651,
+      "value": 184.81,
+      "pnlPercent": -11.41,
+      "entryPriceEUR": 1263.4,
+      "currentPriceEUR": 1119.2
+    },
+    {
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens",
+      "units": 3.3809,
+      "value": 695.46,
+      "pnlPercent": 0.96,
+      "entryPriceEUR": 203.75,
+      "currentPriceEUR": 205.7
     }
   ],
   "metadata": {

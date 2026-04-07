@@ -3,11 +3,66 @@
     "date": "2026-02-03",
     "action": "BUY",
     "asset": "ALV",
-    "units": 2.7125,
+    "units": 1.9511,
     "price": 382.4,
-    "amount_eur": 1038.31,
-    "fee_eur": 1.04,
+    "amount_eur": 746.84,
+    "fee_eur": 0.75,
     "reason": "BUY (score: 29)",
+    "session": "close"
+  },
+  {
+    "date": "2026-02-05",
+    "action": "BUY",
+    "asset": "ITX",
+    "units": 13.1979,
+    "price": 56.7,
+    "amount_eur": 749.07,
+    "fee_eur": 0.75,
+    "reason": "BUY (score: 24)",
+    "session": "close"
+  },
+  {
+    "date": "2026-02-11",
+    "action": "BUY",
+    "asset": "VWCE",
+    "units": 4.9703,
+    "price": 149.08,
+    "amount_eur": 741.72,
+    "fee_eur": 0.74,
+    "reason": "BUY (score: 29)",
+    "session": "close"
+  },
+  {
+    "date": "2026-02-19",
+    "action": "BUY",
+    "asset": "4GLD",
+    "units": 5.4596,
+    "price": 136.64,
+    "amount_eur": 746.74,
+    "fee_eur": 0.75,
+    "reason": "BUY (score: 22)",
+    "session": "close"
+  },
+  {
+    "date": "2026-02-20",
+    "action": "BUY",
+    "asset": "SXR8",
+    "units": 1.2016,
+    "price": 627.44,
+    "amount_eur": 754.68,
+    "fee_eur": 0.75,
+    "reason": "BUY (score: 24)",
+    "session": "close"
+  },
+  {
+    "date": "2026-02-24",
+    "action": "BUY",
+    "asset": "ASML",
+    "units": 0.1651,
+    "price": 1263.4,
+    "amount_eur": 208.83,
+    "fee_eur": 0.21,
+    "reason": "BUY (score: 24)",
     "session": "close"
   }
 ]

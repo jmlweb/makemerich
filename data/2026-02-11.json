@@ -2,27 +2,27 @@
   "date": "2026-02-11",
   "day": 12,
   "balance": {
-    "total": 4815.94,
+    "total": 4944.05,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -113.32,
-    "percentage": -2.3
+    "absolute": -39.15,
+    "percentage": -0.79
   },
-  "totalReturn": -3.68,
+  "totalReturn": -1.12,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 245.17,
+      "value": 1962.37,
       "pnlPercent": 0
     },
     {
       "asset": "MC",
       "type": "Stock",
       "description": "LVMH",
-      "units": 2.9188,
-      "value": 1532.64,
+      "units": 1.3803,
+      "value": 724.82,
       "pnlPercent": -3.26,
       "entryPriceEUR": 542.8,
       "currentPriceEUR": 525.1
@@ -31,8 +31,8 @@
       "asset": "AIR",
       "type": "Stock",
       "description": "Airbus",
-      "units": 10.912,
-      "value": 2043.16,
+      "units": 0.2561,
+      "value": 47.95,
       "pnlPercent": -4.01,
       "entryPriceEUR": 195.06,
       "currentPriceEUR": 187.24
@@ -41,11 +41,44 @@
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 994.96,
+      "units": 1.9511,
+      "value": 715.65,
       "pnlPercent": -4.08,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 366.8
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex",
+      "units": 13.1979,
+      "value": 752.28,
+      "pnlPercent": 0.53,
+      "entryPriceEUR": 56.7,
+      "currentPriceEUR": 57
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 4.9703,
+      "value": 740.98,
+      "pnlPercent": 0,
+      "entryPriceEUR": 149.08,
+      "currentPriceEUR": 149.08
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-02-11",
+      "action": "BUY",
+      "asset": "VWCE",
+      "units": 4.9703,
+      "price": 149.08,
+      "amount_eur": 741.72,
+      "fee_eur": 0.74,
+      "reason": "BUY (score: 29)",
+      "session": "close"
     }
   ],
   "metadata": {

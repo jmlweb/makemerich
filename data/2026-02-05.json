@@ -2,27 +2,27 @@
   "date": "2026-02-05",
   "day": 8,
   "balance": {
-    "total": 4925.71,
+    "total": 4993.06,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 10.66,
-    "percentage": 0.22
+    "absolute": -4.16,
+    "percentage": -0.08
   },
-  "totalReturn": -1.49,
+  "totalReturn": -0.14,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 245.17,
+      "value": 2704.09,
       "pnlPercent": 0
     },
     {
       "asset": "MC",
       "type": "Stock",
       "description": "LVMH",
-      "units": 2.9188,
-      "value": 1570.88,
+      "units": 1.3803,
+      "value": 742.9,
       "pnlPercent": -0.85,
       "entryPriceEUR": 542.8,
       "currentPriceEUR": 538.2
@@ -31,8 +31,8 @@
       "asset": "AIR",
       "type": "Stock",
       "description": "Airbus",
-      "units": 10.912,
-      "value": 2068.04,
+      "units": 0.2561,
+      "value": 48.53,
       "pnlPercent": -2.84,
       "entryPriceEUR": 195.06,
       "currentPriceEUR": 189.52
@@ -41,11 +41,34 @@
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 1041.61,
+      "units": 1.9511,
+      "value": 749.21,
       "pnlPercent": 0.42,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 384
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex",
+      "units": 13.1979,
+      "value": 748.32,
+      "pnlPercent": 0,
+      "entryPriceEUR": 56.7,
+      "currentPriceEUR": 56.7
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-02-05",
+      "action": "BUY",
+      "asset": "ITX",
+      "units": 13.1979,
+      "price": 56.7,
+      "amount_eur": 749.07,
+      "fee_eur": 0.75,
+      "reason": "BUY (score: 24)",
+      "session": "close"
     }
   ],
   "metadata": {

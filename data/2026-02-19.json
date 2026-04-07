@@ -2,27 +2,27 @@
   "date": "2026-02-19",
   "day": 18,
   "balance": {
-    "total": 4850.99,
+    "total": 4977.52,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -152.42,
-    "percentage": -3.05
+    "absolute": -5.35,
+    "percentage": -0.11
   },
-  "totalReturn": -2.98,
+  "totalReturn": -0.45,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 245.17,
+      "value": 1215.63,
       "pnlPercent": 0
     },
     {
       "asset": "MC",
       "type": "Stock",
       "description": "LVMH",
-      "units": 2.9188,
-      "value": 1551.32,
+      "units": 1.3803,
+      "value": 733.65,
       "pnlPercent": -2.08,
       "entryPriceEUR": 542.8,
       "currentPriceEUR": 531.5
@@ -31,8 +31,8 @@
       "asset": "AIR",
       "type": "Stock",
       "description": "Airbus",
-      "units": 10.912,
-      "value": 2041.64,
+      "units": 0.2561,
+      "value": 47.91,
       "pnlPercent": -4.08,
       "entryPriceEUR": 195.06,
       "currentPriceEUR": 187.1
@@ -41,11 +41,54 @@
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 1012.86,
+      "units": 1.9511,
+      "value": 728.53,
       "pnlPercent": -2.35,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 373.4
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex",
+      "units": 13.1979,
+      "value": 764.42,
+      "pnlPercent": 2.15,
+      "entryPriceEUR": 56.7,
+      "currentPriceEUR": 57.92
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 4.9703,
+      "value": 741.37,
+      "pnlPercent": 0.05,
+      "entryPriceEUR": 149.08,
+      "currentPriceEUR": 149.16
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC",
+      "units": 5.4596,
+      "value": 745.99,
+      "pnlPercent": 0,
+      "entryPriceEUR": 136.64,
+      "currentPriceEUR": 136.64
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-02-19",
+      "action": "BUY",
+      "asset": "4GLD",
+      "units": 5.4596,
+      "price": 136.64,
+      "amount_eur": 746.74,
+      "fee_eur": 0.75,
+      "reason": "BUY (score: 22)",
+      "session": "close"
     }
   ],
   "metadata": {

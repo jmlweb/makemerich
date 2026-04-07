@@ -28,6 +28,17 @@ const ASSET_CONFIG = {
   XEON: { yahoo: "XEON.DE", currency: "EUR", description: "Lyxor Smart Overnight Return (€STR)" },
   DXS3: { yahoo: "DXS3.DE", currency: "EUR", description: "Xtrackers S&P500 Inverse Daily UCITS" },
   NATO: { yahoo: "NATO.L", currency: "USD", description: "HANetf Future of Defence UCITS" },
+  // EU Stocks (blue chips, high liquidity)
+  SAP: { yahoo: "SAP.DE", currency: "EUR", description: "SAP SE — Enterprise Software" },
+  ASML: { yahoo: "ASML.AS", currency: "EUR", description: "ASML Holding — Semiconductor Equipment" },
+  MC: { yahoo: "MC.PA", currency: "EUR", description: "LVMH — Luxury Goods" },
+  ITX: { yahoo: "ITX.MC", currency: "EUR", description: "Inditex — Fashion Retail" },
+  SIE: { yahoo: "SIE.DE", currency: "EUR", description: "Siemens — Industrial Conglomerate" },
+  AIR: { yahoo: "AIR.PA", currency: "EUR", description: "Airbus — Aerospace & Defence" },
+  NOVO: { yahoo: "NOVO-B.CO", currency: "DKK", description: "Novo Nordisk — Pharmaceuticals" },
+  ALV: { yahoo: "ALV.DE", currency: "EUR", description: "Allianz — Insurance & Asset Management" },
+  TTE: { yahoo: "TTE.PA", currency: "EUR", description: "TotalEnergies — Oil & Gas" },
+  DTE: { yahoo: "DTE.DE", currency: "EUR", description: "Deutsche Telekom — Telecommunications" },
   // Crypto (legal in Spain, regulated exchanges)
   BTC: { yahoo: "BTC-USD", currency: "USD", description: "Bitcoin" },
   ETH: { yahoo: "ETH-USD", currency: "USD", description: "Ethereum" },

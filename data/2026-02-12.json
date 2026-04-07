@@ -2,27 +2,27 @@
   "date": "2026-02-12",
   "day": 13,
   "balance": {
-    "total": 4849.43,
+    "total": 4944.33,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 33.49,
-    "percentage": 0.7
+    "absolute": 0.28,
+    "percentage": 0.01
   },
-  "totalReturn": -3.01,
+  "totalReturn": -1.11,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 245.17,
+      "value": 1962.37,
       "pnlPercent": 0
     },
     {
       "asset": "MC",
       "type": "Stock",
       "description": "LVMH",
-      "units": 2.9188,
-      "value": 1530.89,
+      "units": 1.3803,
+      "value": 723.99,
       "pnlPercent": -3.37,
       "entryPriceEUR": 542.8,
       "currentPriceEUR": 524.5
@@ -31,8 +31,8 @@
       "asset": "AIR",
       "type": "Stock",
       "description": "Airbus",
-      "units": 10.912,
-      "value": 2077.86,
+      "units": 0.2561,
+      "value": 48.76,
       "pnlPercent": -2.38,
       "entryPriceEUR": 195.06,
       "currentPriceEUR": 190.42
@@ -41,11 +41,31 @@
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 995.5,
+      "units": 1.9511,
+      "value": 716.04,
       "pnlPercent": -4.03,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 367
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex",
+      "units": 13.1979,
+      "value": 758.35,
+      "pnlPercent": 1.34,
+      "entryPriceEUR": 56.7,
+      "currentPriceEUR": 57.46
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 4.9703,
+      "value": 734.81,
+      "pnlPercent": -0.83,
+      "entryPriceEUR": 149.08,
+      "currentPriceEUR": 147.84
     }
   ],
   "metadata": {

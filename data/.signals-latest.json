@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-07T20:14:44.832Z",
-  "balance": 4261.1,
-  "totalReturn": -14.78,
+  "generatedAt": "2026-04-07T21:26:08.353Z",
+  "balance": 4274.03,
+  "totalReturn": -14.52,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2119.609,
+      "currentPrice": 2136.1929,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 10.36,
+      "distancePct": 11.06,
       "status": "ACTIVE"
     },
     {
@@ -22,19 +22,10 @@
       "status": "ACTIVE"
     },
     {
-      "asset": "DXS3",
-      "type": "STOP_LOSS",
-      "currentPrice": 5.508,
-      "triggerPrice": 4.84,
-      "currency": "EUR",
-      "distancePct": 12.13,
-      "status": "ACTIVE"
-    },
-    {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -14.78,
+      "pnlPct": -14.52,
       "status": "WARNING",
-      "detail": "Portfolio down -14.8% from start"
+      "detail": "Portfolio down -14.5% from start"
     }
   ]
 }

@@ -2,27 +2,27 @@
   "date": "2026-02-03",
   "day": 6,
   "balance": {
-    "total": 4902.37,
+    "total": 4978.17,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -67.03,
-    "percentage": -1.35
+    "absolute": -14.5,
+    "percentage": -0.29
   },
-  "totalReturn": -1.95,
+  "totalReturn": -0.44,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 245.17,
+      "value": 3453.16,
       "pnlPercent": 0
     },
     {
       "asset": "MC",
       "type": "Stock",
       "description": "LVMH",
-      "units": 2.9188,
-      "value": 1544.03,
+      "units": 1.3803,
+      "value": 730.2,
       "pnlPercent": -2.54,
       "entryPriceEUR": 542.8,
       "currentPriceEUR": 529
@@ -31,8 +31,8 @@
       "asset": "AIR",
       "type": "Stock",
       "description": "Airbus",
-      "units": 10.912,
-      "value": 2075.9,
+      "units": 0.2561,
+      "value": 48.72,
       "pnlPercent": -2.47,
       "entryPriceEUR": 195.06,
       "currentPriceEUR": 190.24
@@ -41,8 +41,8 @@
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 1037.27,
+      "units": 1.9511,
+      "value": 746.09,
       "pnlPercent": 0,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 382.4
@@ -53,10 +53,10 @@
       "date": "2026-02-03",
       "action": "BUY",
       "asset": "ALV",
-      "units": 2.7125,
+      "units": 1.9511,
       "price": 382.4,
-      "amount_eur": 1038.31,
-      "fee_eur": 1.04,
+      "amount_eur": 746.84,
+      "fee_eur": 0.75,
       "reason": "BUY (score: 29)",
       "session": "close"
     }

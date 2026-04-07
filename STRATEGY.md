@@ -18,7 +18,7 @@ ETFs domiciled in Ireland/Luxembourg with KID documentation. Advantages:
 
 ### Objective
 Maximize risk-adjusted returns, legally in Spain.
-Game goal: 10x (EUR 50,000) in 1 year — requires an aggressive strategy.
+No fixed target — the goal is the best possible outcome over the full year while respecting all risk limits.
 
 ### Target Allocation (Aggressive Growth)
 
@@ -52,7 +52,7 @@ See [HUSTLE.md](HUSTLE.md) for detailed entry/exit criteria and trading rules.
 
 1. **Core VWCE (25%)**: Diversified global exposure, low cost (0.22% TER)
 2. **SXR8 (20%)**: Pure S&P 500, accumulating, TER 0.07%
-3. **Crypto (25%)**: Only asset class with realistic 10x potential, regulated in Spain
+3. **Crypto (25%)**: High-growth potential, regulated in Spain
 4. **Tactical (20%)**: Flexibility for opportunities (hot sectors, events)
 5. **Cash (10%)**: Dry powder for dips
 
@@ -71,7 +71,7 @@ See [HUSTLE.md](HUSTLE.md) for detailed entry/exit criteria and trading rules.
 
 ---
 
-*Last updated: 2026-03-31*
+*Last updated: 2026-04-07 — Added market regimes, deployment velocity caps, XEON auto-parking*
 
 ---
 
@@ -105,17 +105,39 @@ Whenever >15% is in cash with no planned use within <2 weeks, move to XEON.
 
 ---
 
-## Updated Mandate — 2026-04-07: Quantitative Discipline
+## Updated Mandate — 2026-04-07: Quantitative Discipline + Regime Awareness
 
-**Primary objective: data-driven decisions only. No narrative trading.**
+**Primary objective: data-driven decisions only. No narrative trading. Adapt to market regime.**
 
-### Rules
+### Quantitative Signal Rules
 
 1. **All entry/exit decisions must be backed by quantitative signals** from `generate-quant-signals.js`
 2. **No position limits may be suspended** — the defaults in RULES.md are absolute
 3. **No single thesis** (tariffs, recession, bull run) may drive more than 20% of portfolio allocation
 4. **Leveraged and inverse ETFs** are restricted to max 15% of portfolio and require STRONG_BUY/STRONG_SELL signal
 5. **The LLM's role** is execution, reporting, and monitoring — not market prediction
+
+### Market Regimes (2026-04-07 addition)
+
+Three regimes based on VIX and S&P 500 technical position:
+
+| Regime | Condition | BUY Rule | Notes |
+|--------|-----------|----------|-------|
+| **risk-on** | VIX < 22, SP500 > SMA50 | Normal (score ≥ 20) | High confidence environment; deploy more aggressively |
+| **risk-off** | VIX 22–30 OR SP500 < SMA50 | Defensive only (score ≥ 50) | Lower confidence; buy only XEON/4GLD with strong signals |
+| **crisis** | VIX > 30 | Blocked except XEON | Extreme uncertainty; preserve capital, no new equity positions |
+
+**Purpose:** Reduce false signals from technical indicators during regime changes. Prevents deploying into falling knives.
+
+### Deployment Velocity Rules (2026-04-07 addition)
+
+Control the speed at which capital is deployed to avoid concentrated bets:
+
+- **Daily cap:** Max 15% of portfolio deployed per day (prevents all-in on day 1)
+- **5-day brake:** Max 30% deployed in any rolling 5-day window (prevents rapid-fire deployments)
+- **XEON auto-parking:** When cash exceeds 20% of portfolio, auto-BUY XEON (productive cash base earning 3.5% APY)
+
+**Rationale:** Simulation shows that spreading buys across multiple days yields better entry points. The aggressive Day 2 all-in with 74% deployment in baseline lost the most in subsequent drawdowns.
 
 ### Allowed Investment Universe
 

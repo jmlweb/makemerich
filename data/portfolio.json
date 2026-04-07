@@ -2,41 +2,62 @@
   "last_updated": "2026-04-07T21:30:00.000Z",
   "holdings": {
     "CASH": {
-      "amount_eur": 215.52
+      "amount_eur": 239.18
     },
     "ALV": {
-      "units": 2.7125,
+      "units": 1.9511,
       "entry_price_eur": 382.4,
-      "amount_eur": 996.04,
+      "amount_eur": 716.43,
       "pnl_pct": -3.97,
       "current_price_eur": 367.2
     },
+    "ITX": {
+      "units": 13.1979,
+      "entry_price_eur": 56.7,
+      "amount_eur": 662.27,
+      "pnl_pct": -11.5,
+      "current_price_eur": 50.18
+    },
+    "VWCE": {
+      "units": 4.9703,
+      "entry_price_eur": 149.08,
+      "amount_eur": 715.33,
+      "pnl_pct": -3.46,
+      "current_price_eur": 143.92
+    },
     "4GLD": {
-      "units": 12.2552,
-      "entry_price_eur": 127.91,
-      "amount_eur": 1583.01,
-      "pnl_pct": 0.99,
+      "units": 5.4596,
+      "entry_price_eur": 136.64,
+      "amount_eur": 705.21,
+      "pnl_pct": -5.47,
       "current_price_eur": 129.17
     },
+    "SXR8": {
+      "units": 1.2016,
+      "entry_price_eur": 627.44,
+      "amount_eur": 731.36,
+      "pnl_pct": -2.99,
+      "current_price_eur": 608.66
+    },
+    "ASML": {
+      "units": 0.1651,
+      "entry_price_eur": 1263.4,
+      "amount_eur": 183.92,
+      "pnl_pct": -11.84,
+      "current_price_eur": 1113.8
+    },
     "SIE": {
-      "units": 5.2158,
+      "units": 3.3809,
       "entry_price_eur": 203.75,
-      "amount_eur": 1095.32,
+      "amount_eur": 710,
       "pnl_pct": 3.07,
       "current_price_eur": 210
-    },
-    "SXR8": {
-      "units": 0.8637,
-      "entry_price_eur": 608.52,
-      "amount_eur": 525.68,
-      "pnl_pct": 0.02,
-      "current_price_eur": 608.66
     }
   },
   "totals": {
-    "balance_eur": 4415.58,
+    "balance_eur": 4663.7,
     "initial_eur": 5000,
-    "pnl_eur": -584.42,
-    "pnl_pct": -11.69
+    "pnl_eur": -336.3,
+    "pnl_pct": -6.73
   }
 }

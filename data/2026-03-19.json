@@ -2,40 +2,80 @@
   "date": "2026-03-19",
   "day": 38,
   "balance": {
-    "total": 4331.03,
+    "total": 4633.71,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -112.76,
-    "percentage": -2.54
+    "absolute": -111.17,
+    "percentage": -2.34
   },
-  "totalReturn": -13.38,
+  "totalReturn": -7.33,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 1805.4,
+      "value": 928.74,
       "pnlPercent": 0
     },
     {
       "asset": "ALV",
       "type": "Stock",
       "description": "Allianz",
-      "units": 2.7125,
-      "value": 958.07,
+      "units": 1.9511,
+      "value": 689.12,
       "pnlPercent": -7.64,
       "entryPriceEUR": 382.4,
       "currentPriceEUR": 353.2
     },
     {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex",
+      "units": 13.1979,
+      "value": 670.45,
+      "pnlPercent": -10.41,
+      "entryPriceEUR": 56.7,
+      "currentPriceEUR": 50.8
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 4.9703,
+      "value": 717.12,
+      "pnlPercent": -3.22,
+      "entryPriceEUR": 149.08,
+      "currentPriceEUR": 144.28
+    },
+    {
       "asset": "4GLD",
       "type": "ETC",
       "description": "Xetra-Gold ETC",
-      "units": 12.2552,
-      "value": 1567.57,
-      "pnlPercent": 0,
-      "entryPriceEUR": 127.91,
+      "units": 5.4596,
+      "value": 698.33,
+      "pnlPercent": -6.39,
+      "entryPriceEUR": 136.64,
       "currentPriceEUR": 127.91
+    },
+    {
+      "asset": "SXR8",
+      "type": "ETF",
+      "description": "iShares S&P 500 UCITS",
+      "units": 1.2016,
+      "value": 736.98,
+      "pnlPercent": -2.25,
+      "entryPriceEUR": 627.44,
+      "currentPriceEUR": 613.34
+    },
+    {
+      "asset": "ASML",
+      "type": "Stock",
+      "description": "ASML Holding",
+      "units": 0.1651,
+      "value": 192.97,
+      "pnlPercent": -7.5,
+      "entryPriceEUR": 1263.4,
+      "currentPriceEUR": 1168.6
     }
   ],
   "trades": [
@@ -43,10 +83,10 @@
       "date": "2026-03-19",
       "action": "SELL",
       "asset": "MC",
-      "units": 2.9188,
+      "units": 1.3803,
       "price": 460.25,
-      "amount_eur": 1343.36,
-      "fee_eur": 1.34,
+      "amount_eur": 635.3,
+      "fee_eur": 0.64,
       "reason": "STOP_LOSS (-15.2% from entry)",
       "session": "auto"
     },
@@ -54,23 +94,12 @@
       "date": "2026-03-19",
       "action": "SELL",
       "asset": "AIR",
-      "units": 10.912,
+      "units": 0.2561,
       "price": 163.96,
-      "amount_eur": 1789.13,
-      "fee_eur": 1.79,
+      "amount_eur": 41.99,
+      "fee_eur": 0.04,
       "reason": "STOP_LOSS (-15.9% from entry)",
       "session": "auto"
-    },
-    {
-      "date": "2026-03-19",
-      "action": "BUY",
-      "asset": "4GLD",
-      "units": 12.2552,
-      "price": 127.91,
-      "amount_eur": 1569.14,
-      "fee_eur": 1.57,
-      "reason": "BUY (score: 21)",
-      "session": "close"
     }
   ],
   "metadata": {
