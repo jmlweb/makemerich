@@ -1,80 +1,90 @@
 {
   "date": "2026-03-20",
-  "day": 38,
+  "day": 39,
   "balance": {
-    "total": 4709.31,
+    "total": 4309.84,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
-    "percentage": 0
+    "absolute": -21.19,
+    "percentage": -0.49
   },
-  "totalReturn": -5.81,
+  "totalReturn": -13.8,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 284.11,
+      "value": 215.52,
       "pnlPercent": 0
+    },
+    {
+      "asset": "ALV",
+      "type": "Stock",
+      "description": "Allianz",
+      "units": 2.7125,
+      "value": 942.88,
+      "pnlPercent": -9.1,
+      "entryPriceEUR": 382.4,
+      "currentPriceEUR": 347.6
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC",
+      "units": 12.2552,
+      "value": 1563.15,
+      "pnlPercent": -0.28,
+      "entryPriceEUR": 127.91,
+      "currentPriceEUR": 127.55
+    },
+    {
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens",
+      "units": 5.2158,
+      "value": 1062.72,
+      "pnlPercent": 0,
+      "entryPriceEUR": 203.75,
+      "currentPriceEUR": 203.75
     },
     {
       "asset": "SXR8",
       "type": "ETF",
       "description": "iShares S&P 500 UCITS",
-      "units": 2.19,
-      "entryPriceEUR": 621.88,
-      "currentPriceEUR": 608.52,
-      "value": 1332.66,
-      "pnlPercent": -2.15,
-      "change24h": -2.223793302911503
+      "units": 0.8637,
+      "value": 525.56,
+      "pnlPercent": 0,
+      "entryPriceEUR": 608.52,
+      "currentPriceEUR": 608.52
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-03-20",
+      "action": "BUY",
+      "asset": "SIE",
+      "units": 5.2158,
+      "price": 203.75,
+      "amount_eur": 1063.79,
+      "fee_eur": 1.06,
+      "reason": "BUY (score: 26)",
+      "session": "close"
     },
     {
-      "asset": "VWCE",
-      "type": "ETF",
-      "description": "Vanguard All-World UCITS",
-      "units": 7.3907,
-      "entryPriceEUR": 143.38,
-      "currentPriceEUR": 142.64,
-      "value": 1054.21,
-      "pnlPercent": -0.52,
-      "change24h": -2.8337874659400715
-    },
-    {
-      "asset": "ETH",
-      "type": "Crypto",
-      "description": "Ethereum",
-      "units": 0.658029,
-      "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2130.353,
-      "value": 1213.99,
-      "pnlPercent": 3.77,
-      "change24h": -0.330809453885559
-    },
-    {
-      "asset": "SGLD",
-      "type": "ETC",
-      "description": "Invesco Physical Gold ETC",
-      "units": 1.13,
-      "entryPriceUSD": 473.34,
-      "currentPriceUSD": 441.18,
-      "value": 431.73,
-      "pnlPercent": -6.79,
-      "change24h": -5.973870974616903
-    },
-    {
-      "asset": "BTC",
-      "type": "Crypto",
-      "description": "Bitcoin",
-      "units": 0.006476,
-      "entryPriceUSD": 71238,
-      "currentPriceUSD": 70006.875,
-      "value": 392.61,
-      "pnlPercent": -1.73,
-      "change24h": 0.13457480383776188
+      "date": "2026-03-20",
+      "action": "BUY",
+      "asset": "SXR8",
+      "units": 0.8637,
+      "price": 608.52,
+      "amount_eur": 526.09,
+      "fee_eur": 0.53,
+      "reason": "BUY (score: 21)",
+      "session": "close"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-03-20T20:30:12.037Z",
-    "eurUsd": 0.866
+    "generatedAt": "2026-03-20T21:30:00.000Z",
+    "eurUsd": 0.8637,
+    "simulated": true
   }
 }

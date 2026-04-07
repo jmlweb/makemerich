@@ -1,80 +1,81 @@
 {
   "date": "2026-03-19",
-  "day": 37,
+  "day": 38,
   "balance": {
-    "total": 4754.27,
+    "total": 4331.03,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
-    "percentage": 0
+    "absolute": -112.76,
+    "percentage": -2.54
   },
-  "totalReturn": -4.91,
+  "totalReturn": -13.38,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 284.11,
+      "value": 1805.4,
       "pnlPercent": 0
     },
     {
-      "asset": "SXR8",
-      "type": "ETF",
-      "description": "iShares S&P 500 UCITS",
-      "units": 2.19,
-      "entryPriceEUR": 621.88,
-      "currentPriceEUR": 613.34,
-      "value": 1343.21,
-      "pnlPercent": -1.37,
-      "change24h": -2.050528601999412
+      "asset": "ALV",
+      "type": "Stock",
+      "description": "Allianz",
+      "units": 2.7125,
+      "value": 958.07,
+      "pnlPercent": -7.64,
+      "entryPriceEUR": 382.4,
+      "currentPriceEUR": 353.2
     },
     {
-      "asset": "VWCE",
-      "type": "ETF",
-      "description": "Vanguard All-World UCITS",
-      "units": 7.3907,
-      "entryPriceEUR": 143.38,
-      "currentPriceEUR": 144.28,
-      "value": 1066.33,
-      "pnlPercent": 0.63,
-      "change24h": -2.381596752368072
-    },
-    {
-      "asset": "ETH",
-      "type": "Crypto",
-      "description": "Ethereum",
-      "units": 0.658029,
-      "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2144.626,
-      "value": 1229.18,
-      "pnlPercent": 4.46,
-      "change24h": -2.6794192020262875
-    },
-    {
-      "asset": "SGLD",
+      "asset": "4GLD",
       "type": "ETC",
-      "description": "Invesco Physical Gold ETC",
-      "units": 1.13,
-      "entryPriceUSD": 473.34,
-      "currentPriceUSD": 441.17,
-      "value": 434.21,
-      "pnlPercent": -6.8,
-      "change24h": -8.349260428785108
+      "description": "Xetra-Gold ETC",
+      "units": 12.2552,
+      "value": 1567.57,
+      "pnlPercent": 0,
+      "entryPriceEUR": 127.91,
+      "currentPriceEUR": 127.91
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-03-19",
+      "action": "SELL",
+      "asset": "MC",
+      "units": 2.9188,
+      "price": 460.25,
+      "amount_eur": 1343.36,
+      "fee_eur": 1.34,
+      "reason": "STOP_LOSS (-15.2% from entry)",
+      "session": "auto"
     },
     {
-      "asset": "BTC",
-      "type": "Crypto",
-      "description": "Bitcoin",
-      "units": 0.006476,
-      "entryPriceUSD": 71238,
-      "currentPriceUSD": 70422.44,
-      "value": 397.22,
-      "pnlPercent": -1.14,
-      "change24h": -1.155355883129872
+      "date": "2026-03-19",
+      "action": "SELL",
+      "asset": "AIR",
+      "units": 10.912,
+      "price": 163.96,
+      "amount_eur": 1789.13,
+      "fee_eur": 1.79,
+      "reason": "STOP_LOSS (-15.9% from entry)",
+      "session": "auto"
+    },
+    {
+      "date": "2026-03-19",
+      "action": "BUY",
+      "asset": "4GLD",
+      "units": 12.2552,
+      "price": 127.91,
+      "amount_eur": 1569.14,
+      "fee_eur": 1.57,
+      "reason": "BUY (score: 21)",
+      "session": "close"
     }
   ],
   "metadata": {
-    "generatedAt": "2026-03-19T20:30:10.716Z",
-    "eurUsd": 0.871
+    "generatedAt": "2026-03-19T21:30:00.000Z",
+    "eurUsd": 0.8723,
+    "simulated": true
   }
 }

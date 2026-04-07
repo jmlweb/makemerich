@@ -1,47 +1,56 @@
 {
   "date": "2026-02-04",
-  "day": 6,
+  "day": 7,
   "balance": {
-    "total": 4600.06,
+    "total": 4915.05,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
-    "percentage": 0
+    "absolute": 12.68,
+    "percentage": 0.26
   },
-  "totalReturn": -8,
+  "totalReturn": -1.7,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 1252.29,
+      "value": 245.17,
       "pnlPercent": 0
     },
     {
-      "asset": "VOO",
-      "type": "ETF",
-      "description": "Vanguard S&P 500 ETF",
-      "units": 4.29,
-      "entryPriceUSD": 637.5,
-      "currentPriceUSD": 632.41,
-      "value": 2297.94,
-      "pnlPercent": -0.8,
-      "change24h": -1.1365057528764355
+      "asset": "MC",
+      "type": "Stock",
+      "description": "LVMH",
+      "units": 2.9188,
+      "value": 1564.75,
+      "pnlPercent": -1.23,
+      "entryPriceEUR": 542.8,
+      "currentPriceEUR": 536.1
     },
     {
-      "asset": "GLD",
-      "type": "ETF",
-      "description": "SPDR Gold Trust",
-      "units": 2.74,
-      "entryPriceUSD": 449.9,
-      "currentPriceUSD": 452.36,
-      "value": 1049.83,
-      "pnlPercent": 0.55,
-      "change24h": 5.90686676187578
+      "asset": "AIR",
+      "type": "Stock",
+      "description": "Airbus",
+      "units": 10.912,
+      "value": 2054.29,
+      "pnlPercent": -3.49,
+      "entryPriceEUR": 195.06,
+      "currentPriceEUR": 188.26
+    },
+    {
+      "asset": "ALV",
+      "type": "Stock",
+      "description": "Allianz",
+      "units": 2.7125,
+      "value": 1050.84,
+      "pnlPercent": 1.31,
+      "entryPriceEUR": 382.4,
+      "currentPriceEUR": 387.4
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-04T20:30:10.800Z",
-    "eurUsd": 0.847
+    "generatedAt": "2026-02-04T21:30:00.000Z",
+    "eurUsd": 0.8463,
+    "simulated": true
   }
 }

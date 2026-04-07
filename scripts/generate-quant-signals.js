@@ -40,6 +40,41 @@ const WEIGHTS = {
   volatility: 0.15,
 };
 
+// Market regime detection (risk-on / risk-off / crisis)
+function computeMarketRegime(sp500History, vixHistory) {
+  if (!sp500History || !vixHistory) return null;
+
+  const sp500Data = sp500History.data;
+  const vixData = vixHistory.data;
+  if (sp500Data.length < 50 || vixData.length < 1) return null;
+
+  const sp500Closes = sp500Data.map((d) => d.close);
+  const sp500Sma50 = sma(sp500Closes, 50);
+  const sp500Latest = sp500Closes[sp500Closes.length - 1];
+  const sp500Sma50Latest = sp500Sma50[sp500Sma50.length - 1];
+
+  const vixLatest = vixData[vixData.length - 1].close;
+
+  const sp500vsSma50 = sp500Sma50Latest ? ((sp500Latest - sp500Sma50Latest) / sp500Sma50Latest) * 100 : 0;
+
+  let regime;
+  if (vixLatest > 30) {
+    regime = 'crisis';
+  } else if (sp500Latest < sp500Sma50Latest || vixLatest >= 22) {
+    regime = 'risk-off';
+  } else {
+    regime = 'risk-on';
+  }
+
+  return {
+    regime,
+    sp500: Math.round(sp500Latest * 100) / 100,
+    sp500Sma50: Math.round(sp500Sma50Latest * 100) / 100,
+    sp500vsSma50Pct: Math.round(sp500vsSma50 * 100) / 100,
+    vix: Math.round(vixLatest * 100) / 100,
+  };
+}
+
 function parseArgs() {
   const args = process.argv.slice(2);
   return {
@@ -370,7 +405,7 @@ function getSymbolsToAnalyze(filterSymbol) {
   }
 
   // Watchlist (ETFs + EU stocks)
-  ['EQQQ', 'SOL', 'SXR8', 'VWCE', 'SAP', 'ASML', 'MC', 'ITX', 'SIE', 'AIR', 'NOVO', 'ALV', 'TTE', 'DTE'].forEach((s) => symbols.add(s));
+  ['BTC', 'EQQQ', 'SOL', 'SXR8', 'VWCE', 'SAP', 'ASML', 'MC', 'ITX', 'SIE', 'AIR', 'NOVO', 'ALV', 'TTE', 'DTE'].forEach((s) => symbols.add(s));
 
   if (filterSymbol) {
     return symbols.has(filterSymbol) ? [filterSymbol] : [filterSymbol];
@@ -383,6 +418,9 @@ function formatOutput(result) {
   const lines = [];
   lines.push('=== MakeMeRich Quantitative Signals ===');
   lines.push(`Generated: ${result.generatedAt}`);
+  if (result.marketRegime && result.marketRegime.regime !== 'unknown') {
+    lines.push(`Market Regime: ${result.marketRegime.regime.toUpperCase()} (SP500 ${result.marketRegime.sp500vsSma50Pct > 0 ? '+' : ''}${result.marketRegime.sp500vsSma50Pct}% vs SMA50, VIX ${result.marketRegime.vix})`);
+  }
   lines.push('');
 
   // Summary table
@@ -429,8 +467,14 @@ function main() {
   const symbols = getSymbolsToAnalyze(symbol);
   const portfolio = loadPortfolio();
 
+  // Compute market regime
+  const sp500History = loadHistory('SP500');
+  const vixHistory = loadHistory('VIX');
+  const marketRegime = computeMarketRegime(sp500History, vixHistory);
+
   const result = {
     generatedAt: new Date().toISOString(),
+    marketRegime: marketRegime || { regime: 'unknown' },
     assets: {},
     summary: { STRONG_BUY: [], BUY: [], HOLD: [], SELL: [], STRONG_SELL: [] },
   };

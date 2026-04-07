@@ -1,9 +1,12 @@
 ---
 id: PLN-001
-title: Quant system v2: regime filter, deployment control, XEON base
-status: pending
+title: "Quant system v2: regime filter, deployment control, XEON base"
+status: approved
 created: 2026-04-07
+revised: 2026-04-07
 complexity: high
+reviewed: 2026-04-07
+task-id: TSK-001
 ---
 
 ## Why
@@ -19,9 +22,21 @@ Secondary improvements: XEON as productive cash base (3.5% APY) and regime-gated
 
 ---
 
-## Changes
+## Prerequisites
 
-### 1. Market Regime Filter — `generate-quant-signals.js`
+### 0. Port `simulate-history.js` to main
+
+`simulate-history.js` (873 LOC) only exists on the `adjusted` branch. Cherry-pick or merge it into `main` before starting any implementation — it's the validation engine for everything else.
+
+### 0b. Verify BTC data coverage
+
+BTC is missing from the latest `.quant-signals-latest.json`. Check `data/history/BTC.json` completeness and ensure `generate-quant-signals.js` includes it. Fix before simulating.
+
+---
+
+## Phase A — Regime Filter (validate in isolation)
+
+### A1. Market Regime Filter — `generate-quant-signals.js`
 
 Add a `computeMarketRegime()` function that runs before asset analysis:
 
@@ -41,10 +56,10 @@ Regime rules:
 
 Output the regime in `.quant-signals-latest.json` root so `execute-signals.js` can read it.
 
-**Defensive assets** (allowed to receive BUY in risk-off): `XEON`, `4GLD`  
+**Defensive assets** (allowed to receive BUY in risk-off): `XEON`, `4GLD`
 **All assets** blocked from new BUY in `crisis` except `XEON`
 
-### 2. Regime-Gated Signal Thresholds — `execute-signals.js`
+### A2. Regime-Gated Signal Thresholds — `execute-signals.js`
 
 Adjust BUY threshold based on regime read from signals file:
 
@@ -56,7 +71,28 @@ Adjust BUY threshold based on regime read from signals file:
 
 No change to SELL thresholds — exits always execute.
 
-### 3. Deployment Speed Control — `execute-signals.js`
+### A3. Wire regime into `simulate-history.js`
+
+Add regime computation per simulated day:
+- Load SP500 + VIX history
+- Compute regime for each day
+- Apply regime-gated thresholds from A2
+
+### A4. Simulate and measure Phase A impact
+
+Run simulation, compare vs -11.69% baseline. Record:
+- Max drawdown
+- Final return
+- How many BUYs were blocked by regime filter
+- Which days triggered risk-off / crisis
+
+**Decision gate:** If Phase A alone achieves < 10% drawdown and > -5% return, Phase B becomes optional optimization. If not, proceed to Phase B. If results are worse than baseline, revisit VIX/SMA50 thresholds before continuing.
+
+---
+
+## Phase B — Deployment Control + XEON Parking (incremental)
+
+### B1. Deployment Speed Control — `execute-signals.js`
 
 Add a `computeDeploymentVelocity()` function:
 
@@ -73,7 +109,9 @@ Rules:
 
 Store deployment velocity in the output `.trade-orders.json` for transparency.
 
-### 4. XEON as Productive Cash Base — `execute-signals.js`
+Note: trade history is stored monthly in `data/trades/YYYY-MM.json` — velocity function must handle cross-month date ranges.
+
+### B2. XEON as Productive Cash Base — `execute-signals.js`
 
 Add auto-parking logic after processing all other orders:
 
@@ -86,40 +124,54 @@ Add auto-parking logic after processing all other orders:
 
 XEON replaces the "bare cash" concept — the 5% min cash reserve becomes 5% XEON floor (not bare cash).
 
-### 5. Update `simulate-history.js` for Validation
+Caution: this adds two-step order logic (sell XEON → buy target). Simulation must handle intra-day order sequencing correctly.
 
-Add regime filter and deployment velocity to the simulation engine so we can validate the full improvement before deploying to production. The simulation should:
-- Load SP500 + VIX history
-- Compute regime per day
-- Apply regime-gated thresholds
-- Track deployment velocity across days
-- Include XEON auto-parking
+### B3. Wire velocity + XEON into `simulate-history.js`
 
-Run on `adjusted` branch after implementation, compare results.
+- Track deployment velocity across simulated days
+- Include XEON auto-parking logic
+- Handle intra-day order sequencing (XEON sell before target buy)
 
-### 6. Documentation
+### B4. Simulate Phase A+B combined, compare vs Phase A-only
+
+Record incremental improvement (or regression) from velocity cap and XEON parking separately.
+
+---
+
+## Phase C — Documentation
 
 - `RULES.md`: Update position limits — replace "5% min cash" with "5% min XEON + cash combined". Add regime filter as a new rule.
 - `STRATEGY.md`: Document the three regimes and their allowed actions.
+
+Only after Phase A (or A+B) simulation results are confirmed.
 
 ---
 
 ## Implementation Order
 
-1. `generate-quant-signals.js` — add `computeMarketRegime()`, include in output
-2. `execute-signals.js` — read regime, apply thresholds, add deployment velocity, add XEON auto-parking
-3. `simulate-history.js` — add regime + velocity + XEON to validate full system
-4. Run simulation, compare vs -11.69% baseline
-5. `RULES.md` + `STRATEGY.md` — document new rules
+1. **Prereq**: Port `simulate-history.js` to main, verify BTC data
+2. **Phase A**: Regime filter → simulate → measure (decision gate)
+3. **Phase B**: Velocity + XEON → simulate incrementally → measure
+4. **Phase C**: Documentation (after validation)
 
 ---
 
 ## Acceptance Criteria
 
+### Phase A
 - [ ] `generate-quant-signals.js` outputs `marketRegime: { regime, sp500vsSma50, vix }` in signals file
 - [ ] `execute-signals.js` blocks non-defensive BUYs in risk-off, all BUYs in crisis
+- [ ] `simulate-history.js` applies regime filter per day
+- [ ] Phase A simulation shows measurable improvement vs -11.69% baseline (record exact numbers)
+
+### Phase B
 - [ ] `execute-signals.js` caps daily deployment at 15% of portfolio
 - [ ] `execute-signals.js` pauses BUYs when 5-day velocity > 30%
 - [ ] `execute-signals.js` auto-generates BUY XEON when idle cash > 20%
-- [ ] Updated `simulate-history.js` shows max drawdown < 10% and return > -5%
+- [ ] Phase A+B simulation shows max drawdown < 10% and return > -5%
+
+### Phase C
 - [ ] `RULES.md` and `STRATEGY.md` updated to reflect new rules
+
+## Revision History
+- [2026-04-07] Split into Phase A (regime) and Phase B (velocity + XEON) for isolated validation. Added prerequisites (port simulate-history.js to main, verify BTC data). Added decision gate after Phase A. Noted cross-month trade parsing for velocity and intra-day order sequencing for XEON parking.

@@ -1,58 +1,66 @@
 {
   "date": "2026-04-07",
-  "day": 53,
+  "day": 49,
   "balance": {
-    "total": 4257.54,
+    "total": 4415.58,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
-    "percentage": 0
+    "absolute": -33.29,
+    "percentage": -0.75
   },
-  "totalReturn": -14.85,
+  "totalReturn": -11.69,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 2113.55,
+      "value": 215.52,
       "pnlPercent": 0
     },
     {
-      "asset": "ETH",
-      "type": "Crypto",
-      "description": "Ethereum",
-      "units": 0.658029,
-      "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2116.0425,
-      "value": 1205.83,
-      "pnlPercent": 3.07,
-      "change24h": 0.3928812628943051
+      "asset": "ALV",
+      "type": "Stock",
+      "description": "Allianz",
+      "units": 2.7125,
+      "value": 996.04,
+      "pnlPercent": -3.97,
+      "entryPriceEUR": 382.4,
+      "currentPriceEUR": 367.2
     },
     {
       "asset": "4GLD",
       "type": "ETC",
-      "description": "Xetra-Gold ETC (1g/unit)",
-      "units": 3.7704,
-      "entryPriceEUR": 124.56,
-      "currentPriceEUR": 129.17,
-      "value": 487.02,
-      "pnlPercent": 3.7,
-      "change24h": -2.4837686848860185
+      "description": "Xetra-Gold ETC",
+      "units": 12.2552,
+      "value": 1583.01,
+      "pnlPercent": 0.99,
+      "entryPriceEUR": 127.91,
+      "currentPriceEUR": 129.17
     },
     {
-      "asset": "XEON",
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens",
+      "units": 5.2158,
+      "value": 1095.32,
+      "pnlPercent": 3.07,
+      "entryPriceEUR": 203.75,
+      "currentPriceEUR": 210
+    },
+    {
+      "asset": "SXR8",
       "type": "ETF",
-      "description": "Lyxor Smart Overnight Return (€STR)",
-      "units": 3.0311,
-      "entryPriceEUR": 140.5,
-      "currentPriceEUR": 148.835,
-      "value": 451.13,
-      "pnlPercent": 5.93,
-      "change24h": 0.032260883007253195
+      "description": "iShares S&P 500 UCITS",
+      "units": 0.8637,
+      "value": 525.68,
+      "pnlPercent": 0.02,
+      "entryPriceEUR": 608.52,
+      "currentPriceEUR": 608.66
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-07T20:34:09.356Z",
-    "eurUsd": 0.866
+    "generatedAt": "2026-04-07T21:30:00.000Z",
+    "eurUsd": 0.862,
+    "simulated": true
   }
 }

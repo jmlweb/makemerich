@@ -45,9 +45,9 @@ const ASSET_META = {
   BTC: { type: 'Crypto', risk: 'high' },
   ETH: { type: 'Crypto', risk: 'high' },
   SOL: { type: 'Crypto', risk: 'high' },
-  '4GLD': { type: 'ETC', risk: 'medium' },
+  '4GLD': { type: 'ETC', risk: 'medium', defensive: true },
   SGLD: { type: 'ETC', risk: 'medium' },
-  XEON: { type: 'ETF', risk: 'low' },
+  XEON: { type: 'ETF', risk: 'low', defensive: true },
   DXS3: { type: 'ETF', risk: 'high', inverse: true, leveraged: true },
   NATO: { type: 'ETF', risk: 'high' },
   VWCE: { type: 'ETF', risk: 'medium' },
@@ -67,6 +67,10 @@ const ASSET_META = {
   TTE: { type: 'Stock', risk: 'medium' },
   DTE: { type: 'Stock', risk: 'medium' },
 };
+
+function isDefensive(symbol) {
+  return ASSET_META[symbol]?.defensive === true;
+}
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -129,6 +133,9 @@ function generateOrders(portfolio, signals) {
   const orders = [];
   const warnings = [];
 
+  // Get market regime
+  const regime = signals.marketRegime?.regime || 'unknown';
+
   // Check portfolio-level constraints
   if (state.inversePct > LIMITS.MAX_INVERSE_LEVERAGED + 0.001) {
     warnings.push(
@@ -142,10 +149,15 @@ function generateOrders(portfolio, signals) {
     );
   }
 
+  if (regime !== 'unknown') {
+    warnings.push(`Market Regime: ${regime.toUpperCase()}`);
+  }
+
   // Process each asset's signal
   for (const [symbol, data] of Object.entries(signals.assets)) {
     if (data.error) continue;
     const signal = data.composite?.signal;
+    const score = data.composite?.score || 0;
     if (!signal) continue;
 
     const currentPosition = state.positions[symbol];
@@ -171,8 +183,32 @@ function generateOrders(portfolio, signals) {
       });
     }
 
-    // --- BUY signals ---
+    // --- BUY signals (regime-gated) ---
+    // Regime filters:
+    // - crisis: block all except XEON
+    // - risk-off: STRONG_BUY only (score >= 50), defensive assets only (XEON, 4GLD)
+    // - risk-on: normal (score >= 20 for BUY, >= 50 for STRONG_BUY)
     if ((signal === 'BUY' || signal === 'STRONG_BUY') && !hasPosition) {
+      let blocked = false;
+      let blockReason = '';
+
+      if (regime === 'crisis' && symbol !== 'XEON') {
+        blocked = true;
+        blockReason = 'CRISIS: BUY blocked for non-XEON';
+      } else if (regime === 'risk-off') {
+        if (score < 50) {
+          blocked = true;
+          blockReason = 'RISK-OFF: need STRONG_BUY (score >= 50)';
+        } else if (!isDefensive(symbol)) {
+          blocked = true;
+          blockReason = 'RISK-OFF: defensive assets only (XEON, 4GLD)';
+        }
+      }
+
+      if (blocked) {
+        warnings.push(`${symbol}: ${blockReason} (${signal}, score: ${score})`);
+        continue;
+      }
       // Check if we can buy (cash available, limits respected)
       const availableCash = state.cashValue - state.balance * LIMITS.MIN_CASH_RESERVE;
       if (availableCash <= 0) {
