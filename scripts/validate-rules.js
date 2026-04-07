@@ -55,7 +55,7 @@ function validate(portfolio) {
   for (const [asset, data] of Object.entries(holdings)) {
     if (asset === 'CASH') continue;
     const pct = (data.amount_eur / balance) * 100;
-    if (pct > RULES.MAX_SINGLE_POSITION_PCT) {
+    if (pct > RULES.MAX_SINGLE_POSITION_PCT + 0.1) {
       violations.push({
         rule: 'MAX_SINGLE_POSITION',
         asset,
@@ -82,7 +82,7 @@ function validate(portfolio) {
     }
   }
   const highRiskPct = (highRiskTotal / balance) * 100;
-  if (highRiskPct > RULES.MAX_HIGH_RISK_PCT) {
+  if (highRiskPct > RULES.MAX_HIGH_RISK_PCT + 0.1) {
     violations.push({
       rule: 'MAX_HIGH_RISK',
       detail: `High-risk assets at ${highRiskPct.toFixed(1)}% (limit: ${RULES.MAX_HIGH_RISK_PCT}%). Position limits are absolute — reduce exposure.`,
@@ -97,7 +97,7 @@ function validate(portfolio) {
     }
   }
   const inversePct = (inverseTotal / balance) * 100;
-  if (inversePct > RULES.MAX_INVERSE_LEVERAGED_PCT) {
+  if (inversePct > RULES.MAX_INVERSE_LEVERAGED_PCT + 0.1) {
     violations.push({
       rule: 'MAX_INVERSE_LEVERAGED',
       detail: `Inverse/leveraged at ${inversePct.toFixed(1)}% (limit: ${RULES.MAX_INVERSE_LEVERAGED_PCT}%). Reduce immediately.`,

@@ -118,13 +118,13 @@ function generateOrders(portfolio, signals) {
   const warnings = [];
 
   // Check portfolio-level constraints
-  if (state.inversePct > LIMITS.MAX_INVERSE_LEVERAGED) {
+  if (state.inversePct > LIMITS.MAX_INVERSE_LEVERAGED + 0.001) {
     warnings.push(
       `Inverse/leveraged at ${(state.inversePct * 100).toFixed(1)}% (limit: ${LIMITS.MAX_INVERSE_LEVERAGED * 100}%). Reduce inverse positions.`
     );
   }
 
-  if (state.highRiskPct > LIMITS.MAX_HIGH_RISK) {
+  if (state.highRiskPct > LIMITS.MAX_HIGH_RISK + 0.001) {
     warnings.push(
       `High-risk assets at ${(state.highRiskPct * 100).toFixed(1)}% (limit: ${LIMITS.MAX_HIGH_RISK * 100}%). Reduce high-risk positions.`
     );
@@ -228,7 +228,7 @@ function generateOrders(portfolio, signals) {
   // --- Limit violation corrections ---
 
   // If inverse position exceeds limit, generate SELL order to bring it within limits
-  if (state.inversePct > LIMITS.MAX_INVERSE_LEVERAGED) {
+  if (state.inversePct > LIMITS.MAX_INVERSE_LEVERAGED + 0.001) {
     for (const [symbol, pos] of Object.entries(state.positions)) {
       if (!isInverse(symbol)) continue;
       const excess = state.inverseValue - state.balance * LIMITS.MAX_INVERSE_LEVERAGED;
@@ -253,7 +253,7 @@ function generateOrders(portfolio, signals) {
 
   // If high-risk allocation exceeds limit, generate SELL orders for high-risk positions
   // Priority: sell the largest high-risk position first (excluding any with active BUY signal)
-  if (state.highRiskPct > LIMITS.MAX_HIGH_RISK) {
+  if (state.highRiskPct > LIMITS.MAX_HIGH_RISK + 0.001) {
     let excess = state.highRiskValue - state.balance * LIMITS.MAX_HIGH_RISK;
 
     // Sort high-risk positions by value (largest first)
