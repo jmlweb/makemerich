@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-04-07T20:26:59.989Z",
+  "last_updated": "2026-04-07T20:30:02.116818+00:00",
   "holdings": {
     "CASH": {
-      "amount_eur": 1475.17
+      "amount_eur": 2113.55
     },
     "ETH": {
       "units": 0.658029,
@@ -27,22 +27,13 @@
       "amount_eur": 451.13,
       "pnl_pct": 5.93,
       "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
-    },
-    "DXS3": {
-      "units": 116.0158,
-      "entry_price_eur": 5.69,
-      "current_price_eur": 5.508,
-      "amount_eur": 639.02,
-      "pnl_pct": -3.2,
-      "stop_loss_eur": 4.84,
-      "note": "Xtrackers S&P500 Inverse Daily UCITS (LU0322251520)"
+      "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 money market EUR, ~3.5% APY"
     }
   },
   "totals": {
-    "balance_eur": 4257.24,
+    "balance_eur": 4256.6,
     "initial_eur": 5000,
-    "pnl_eur": -742.76,
-    "pnl_pct": -14.86
+    "pnl_eur": -743.4,
+    "pnl_pct": -14.87
   }
 }
