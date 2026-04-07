@@ -107,8 +107,10 @@ EOFMSG
 if [ -x "$CLAUDE_BIN" ]; then
   echo "Delegating to Claude Code CLI..." | tee -a "$LOG_FILE"
   export PATH="/home/hustle/.local/bin:/home/hustle/.nvm/versions/node/v25.8.0/bin:$PATH"
+  set +e
   CLAUDE_MSG=$(timeout 180 "$CLAUDE_BIN" --model sonnet -p "$PROMPT" --output-format text --max-turns 15 --allowedTools Bash Read Write Edit 2>>"$LOG_FILE")
   CLAUDE_EXIT=$?
+  set -e
   echo "$CLAUDE_MSG" >> "$LOG_FILE"
   if [ $CLAUDE_EXIT -eq 0 ] && [ -n "$CLAUDE_MSG" ]; then
     "$VENV_PYTHON" "$SEND_ALERT" "$CLAUDE_MSG"
