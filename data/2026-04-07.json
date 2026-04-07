@@ -2,14 +2,14 @@
   "date": "2026-04-07",
   "day": 53,
   "balance": {
-    "total": 4242.34,
+    "total": 4247.12,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -15.15,
+  "totalReturn": -15.06,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2086.6885,
-      "value": 1189.11,
-      "pnlPercent": 1.64,
-      "change24h": -0.9997810473338593
+      "currentPriceUSD": 2095.0833,
+      "value": 1193.89,
+      "pnlPercent": 2.05,
+      "change24h": -0.6015006916105208
     },
     {
       "asset": "4GLD",
@@ -63,7 +63,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-07T19:06:33.505Z",
+    "generatedAt": "2026-04-07T19:30:42.410Z",
     "eurUsd": 0.866
   }
 }

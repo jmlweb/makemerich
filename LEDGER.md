@@ -5,13 +5,58 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,277.96 |
-| Total Return | -14.44% |
-| Days Active | 52 |
+| Current Balance | €4,247.12 |
+| Total Return | -15.06% |
+| Days Active | 53 |
 
 ---
 
 ## Daily Log
+
+### Day 53 — April 7, 2026 21:30 CET
+
+**Balance:** €4,247.12 | **Total Return:** -15.06%
+**Day P&L:** -€30.84 (-0.72%) vs Day 52 (€4,277.96)
+
+**Prices at close:**
+- ETH: $2,095.08 / €1,814.35 (-0.60% 24h) — stop $1,900
+- 4GLD: €129.17 (-2.48% 24h) — stop €105.88
+- XEON: €148.84 (+0.03% 24h) — no stop
+- DXS3: €5.508 (+0.99% 24h) — stop €4.84
+- Gold spot: $4,717.20 (+1.30%)
+- S&P 500: 6,589.50 (+0.10%)
+- NASDAQ: 21,879.40 (+0.00%)
+- DAX: 22,921.59 (-1.62%)
+- EUROSTOXX50: 5,633.22 (-1.05%)
+- EUR/USD: 0.8660
+
+**Performance by asset (vs entry):**
+| Asset | Value    | % Portfolio | P&L entry |
+|-------|----------|-------------|-----------|
+| DXS3  | €1,529   | 36.0%       | -3.20%    |
+| ETH   | €1,194   | 28.1%       | +2.05%    |
+| CASH  | €586     | 13.8%       | —         |
+| 4GLD  | €487     | 11.5%       | +3.70%    |
+| XEON  | €451     | 10.6%       | +5.93%    |
+
+**Near triggers:**
+- PORTFOLIO [DRAWDOWN]: -15.06% from start — monitoring
+- ETH [STOP_LOSS]: $2,095 → stop $1,900 (9.3% away)
+- DXS3 [STOP_LOSS]: €5.508 → stop €4.84 (12.1% away)
+- 4GLD [STOP_LOSS]: €129.17 → stop €105.88 (18.0% away)
+
+**Trades:** None.
+
+**Note — NATO closure:** NATO position (~€374 at Day 52) is no longer in the portfolio. Cash increased from €214 (Day 52) to €586 (+€372), consistent with NATO being liquidated at approximately the last known price of €16.20/unit. NATO had been flagged as highest priority (3% from stop at €15.72). Exact timing and execution price not recorded in ledger; inferred from balance reconciliation.
+
+**Analysis:**
+S&P500 essentially flat on the day (+0.10%), NASDAQ unchanged. European markets continued to show weakness (DAX -1.62%, EUROSTOXX50 -1.05%). DXS3 (S&P500 inverse) responded correctly with +0.99% on the day, though still -3.2% from entry at €5.508 (stop €4.84, 12.1% buffer). ETH down slightly (-0.60%) but well above its stop at $1,900 (9.3% margin). Gold up +1.30% — supporting 4GLD, though 4GLD itself showed -2.48% 24h (timing/conversion). XEON (€STR overnight) continues its steady accumulation.
+
+With NATO out, the portfolio has simplified to 4 positions + cash. Cash at 13.8% is healthy (well above the 5% floor). No stops triggered. No new entry signal (no RSI<30 or clear Fear & Greed extreme on tradeable assets). Portfolio drawdown at -15.06% is near the monitoring threshold but above the -20% conservation stop.
+
+**Decision: HOLD — no stops triggered, no actionable entry signal. Monitor DXS3 stop (€4.84) as primary risk; thesis remains valid (bearish macro for US equities) but challenged by S&P resilience. NATO elimination reduces tail risk.**
+
+---
 
 ### Day 52 — April 6, 2026 18:00 CET
 
