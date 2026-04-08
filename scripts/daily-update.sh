@@ -74,17 +74,7 @@ for k, v in sorted(p['holdings'].items(), key=lambda x: -x[1].get('amount_eur', 
 print(chr(10).join(lines))
 " 2>/dev/null || echo "ver portfolio.json")
 
-TELEGRAM_FORMAT="Use EXACTLY this Telegram format (no markdown, no extra lines):
-Line 1: 📊 Day $DAY_NUMBER | EUR X.XXX (PNL%)
-Line 2: 📈 or 📉 +/-EUR XX hoy (+/-X,X%)
-Line 3: (blank)
-Line 4: ✅ DECISION — reason in one sentence
-Line 5+: (only if alerts) ⚠️ alert lines
-Line 6: (blank)
-Line 7+: positions table, one per line: TICKER  EUR X.XXX  +/-X,X%
-Last line: CASH  EUR XXX"
-
-# Claude's ONLY job: text-only — produce analysis + Telegram from the draft (no tools needed)
+# Claude's ONLY job: text-only — produce analysis + decision (no Telegram, no tools)
 DRAFT=$(cat data/.ledger-draft.md 2>/dev/null || echo "")
 PROMPT="makemerich DAILY CLOSE $TODAY. Here is today's LEDGER draft with all data:
 
@@ -92,27 +82,62 @@ PROMPT="makemerich DAILY CLOSE $TODAY. Here is today's LEDGER draft with all dat
 $DRAFT
 ---
 
-YOUR TASK (output ONLY these two blocks, nothing else):
+YOUR TASK (output ONLY these two lines, nothing else):
+ANALYSIS: 2-3 sentences of market analysis in English.
+DECISION: One word (HOLD/BUY/SELL) + one-sentence reason in Spanish."
 
-BLOCK 1 — LEDGER ANALYSIS (in English):
-Write 2-3 sentences of market analysis for the Analysis section, and a one-line decision (e.g. 'HOLD — all positions maintained.'). Format exactly:
-ANALYSIS: <your analysis text>
-DECISION: <your decision text>
-
-BLOCK 2 — TELEGRAM (in Spanish):
-The Telegram message as facts only. $TELEGRAM_FORMAT"
-
-build_fallback_msg() {
+# Build Telegram message from portfolio data + decision (no Claude needed)
+build_telegram_msg() {
+  local decision="$1"
+  local reason="$2"
   local decision_emoji="📈"
   if echo "$PNL" | grep -q "^-"; then decision_emoji="📉"; fi
-  cat <<EOFMSG
-📊 Day $DAY_NUMBER | EUR $BALANCE ($PNL%)
-$decision_emoji Cierre $TODAY
 
-✅ HOLD — Cierre automatico (sin agente)
+  local prev_balance
+  prev_balance=$("$VENV_PYTHON" -c "
+import json, glob
+files = sorted(glob.glob('data/2026-*.json'))
+today_f = 'data/$TODAY.json'
+prev = [f for f in files if f < today_f]
+if prev: print(json.load(open(prev[-1]))['balance']['total'])
+else: print('$BALANCE')
+" 2>/dev/null || echo "$BALANCE")
+  local day_change
+  day_change=$("$VENV_PYTHON" -c "print(f'{$BALANCE - $prev_balance:.0f}')" 2>/dev/null || echo "0")
+  local day_change_pct
+  day_change_pct=$("$VENV_PYTHON" -c "print(f'{($BALANCE - $prev_balance) / $prev_balance * 100:.1f}')" 2>/dev/null || echo "0")
 
-$HOLDINGS_COMPACT
-EOFMSG
+  local sign=""
+  if [ "$(echo "$day_change" | grep -c "^-")" -eq 0 ]; then sign="+"; fi
+
+  # Build alerts from signals
+  local alerts
+  alerts=$("$VENV_PYTHON" -c "
+import json
+s = json.load(open('data/.signals-latest.json'))
+for a in s.get('alerts', []):
+    if a.get('type') == 'STOP_LOSS':
+        print(f'⚠️ {a[\"asset\"]} stop {a[\"currency\"]} {a[\"triggerPrice\"]:.0f} ({a[\"distancePct\"]:.0f}% margen)')
+    elif a.get('type') == 'PORTFOLIO_DRAWDOWN':
+        print(f'⚠️ Drawdown cartera {a[\"pnlPct\"]:.1f}%')
+" 2>/dev/null || true)
+
+  local msg
+  msg="📊 Day $DAY_NUMBER | EUR ${BALANCE} (${PNL}%)
+${decision_emoji} ${sign}EUR ${day_change} hoy (${sign}${day_change_pct}%)
+
+✅ ${decision} — ${reason}"
+
+  if [ -n "$alerts" ]; then
+    msg="$msg
+$alerts"
+  fi
+
+  msg="$msg
+
+$HOLDINGS_COMPACT"
+
+  echo "$msg"
 }
 
 fill_and_append_ledger() {
@@ -127,46 +152,40 @@ fill_and_append_ledger() {
   fi
 }
 
-# --- Agent: analysis + Telegram (pure text, no tools) ---
+# --- Agent: analysis only (pure text, no tools) ---
 ANALYSIS_TEXT="Automated close — agent unavailable."
-DECISION_TEXT="HOLD — automated close, no agent analysis."
+DECISION_WORD="HOLD"
+DECISION_REASON="cierre automatico, sin analisis de agente"
 
 if [ -x "$CLAUDE_BIN" ]; then
-  echo "Delegating to Claude Code CLI..." | tee -a "$LOG_FILE"
+  echo "Delegating to Claude Code CLI (text-only)..." | tee -a "$LOG_FILE"
   export PATH="/home/hustle/.local/bin:/home/hustle/.nvm/versions/node/v25.8.0/bin:$PATH"
   set +e
-  CLAUDE_MSG=$(timeout 60 "$CLAUDE_BIN" --model sonnet -p "$PROMPT" --output-format text --max-turns 2 --allowedTools '' 2>>"$LOG_FILE")
+  CLAUDE_MSG=$(timeout 45 "$CLAUDE_BIN" --model sonnet -p "$PROMPT" --output-format text --max-turns 1 --allowedTools '' 2>>"$LOG_FILE")
   CLAUDE_EXIT=$?
   set -e
   echo "$CLAUDE_MSG" >> "$LOG_FILE"
   if [ $CLAUDE_EXIT -eq 0 ] && [ -n "$CLAUDE_MSG" ]; then
-    # Parse analysis and decision from Claude's output
     ANALYSIS_TEXT=$(echo "$CLAUDE_MSG" | grep -oP '(?<=^ANALYSIS: ).*' | head -1 || echo "$ANALYSIS_TEXT")
-    DECISION_TEXT=$(echo "$CLAUDE_MSG" | grep -oP '(?<=^DECISION: ).*' | head -1 || echo "$DECISION_TEXT")
-    # Telegram is everything after the --- separator
-    TELEGRAM_MSG=$(echo "$CLAUDE_MSG" | sed -n '/^---$/,$ { /^---$/d; p; }' | sed '/^$/d; 1 { /^$/d }')
-    if [ -z "$TELEGRAM_MSG" ]; then
-      TELEGRAM_MSG="$(build_fallback_msg)"
-    fi
+    DECISION_LINE=$(echo "$CLAUDE_MSG" | grep -oP '(?<=^DECISION: ).*' | head -1 || echo "$DECISION_WORD — $DECISION_REASON")
+    DECISION_WORD=$(echo "$DECISION_LINE" | grep -oP '^\S+' | head -1 || echo "HOLD")
+    DECISION_REASON=$(echo "$DECISION_LINE" | sed 's/^[A-Z]* — //' | sed 's/^[A-Z]* //' || echo "$DECISION_REASON")
   else
-    echo "Claude CLI failed or timed out — sending static report" | tee -a "$LOG_FILE"
-    TELEGRAM_MSG="$(build_fallback_msg)"
+    echo "Claude CLI failed or timed out — using fallback" | tee -a "$LOG_FILE"
   fi
 else
-  echo "Claude CLI not found — sending static report" | tee -a "$LOG_FILE"
-  TELEGRAM_MSG="$(build_fallback_msg)"
+  echo "Claude CLI not found — using fallback" | tee -a "$LOG_FILE"
 fi
 
 # Append completed LEDGER entry (always — even if agent failed, uses fallback text)
-fill_and_append_ledger "$ANALYSIS_TEXT" "$DECISION_TEXT"
+fill_and_append_ledger "$ANALYSIS_TEXT" "$DECISION_WORD — $DECISION_REASON"
 
 # --- Post-agent: git commit + push ---
 echo "Committing and pushing..." | tee -a "$LOG_FILE"
 set +e
 if ! git diff --quiet HEAD 2>/dev/null || [ -n "$(git ls-files --others --exclude-standard)" ]; then
-  ACTION=$(echo "$TELEGRAM_MSG" | grep -oP '(?<=✅ )\S+' | head -1 || echo "HOLD")
   git add -A >> "$LOG_FILE" 2>&1
-  git commit -m "log: Day $DAY_NUMBER — $ACTION, portfolio summary ($TODAY)" >> "$LOG_FILE" 2>&1
+  git commit -m "log: Day $DAY_NUMBER — $DECISION_WORD, portfolio summary ($TODAY)" >> "$LOG_FILE" 2>&1
   git push >> "$LOG_FILE" 2>&1 \
     || echo "Warning: git push failed" | tee -a "$LOG_FILE"
 else
@@ -174,7 +193,8 @@ else
 fi
 set -e
 
-# --- Post-agent: send Telegram report ---
+# --- Post-agent: send Telegram (built from template, no Claude) ---
+TELEGRAM_MSG=$(build_telegram_msg "$DECISION_WORD" "$DECISION_REASON")
 "$VENV_PYTHON" "$SEND_ALERT" "$TELEGRAM_MSG"
 
 echo "[$(date)] Daily close complete." | tee -a "$LOG_FILE"
