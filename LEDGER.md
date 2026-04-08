@@ -5,13 +5,60 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,257.54 |
-| Total Return | -14.85% |
-| Days Active | 53 |
+| Current Balance | €4,311.31 |
+| Total Return | -13.77% |
+| Days Active | 55 |
 
 ---
 
 ## Daily Log
+
+### Day 54 — April 8, 2026 21:30 CET
+
+**Balance:** €4,311.06 | **Total Return:** -13.8%
+**Day P&L:** +€53.52 (+1.3%) vs Day 53 (€4,257.54)
+
+**Prices at close:**
+- ETH: $2,208.74 / €1,901.72 (-1.48% 24h) — stop $1,900.00
+- 4GLD: €130.87 (+0.59% 24h) — stop €105.88
+- XEON: €148.84 (+0.05% 24h)
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 6,782.81 (+2.59%)
+- NASDAQ: 22,634.99 (+2.90%)
+- GOLD: 4,748.30 (+1.96%)
+- IBEX35: 18,132.30 (+3.94%)
+- EUROSTOXX50: 5,913.37 (+4.97%)
+- DAX: 24,080.63 (+3.94%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| CASH | €2,113.55 | 49.0% | — | — |
+| ETH | €1,252.94 | 29.1% | +7.6% | -1.48% |
+| 4GLD | €493.43 | 11.4% | +5.1% | +0.59% |
+| XEON | €451.14 | 10.5% | +5.9% | +0.05% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.21% vs SMA50, VIX 21.13)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (14.0% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- Portfolio drawdown: -13.8%
+
+**Analysis:**
+Global equities staged a broad recovery today (SP500 +2.59%, EUROSTOXX50 +4.97%, DAX +3.94%) driven by risk-on sentiment, yet the portfolio's crypto/commodity tilt captured only a fraction of those gains — ETH slipped -1.48% against the tide. Quant signals now favor equity ETFs (EQQQ, SXR8, VWCE, ASML) over current holdings, but no reallocation is warranted today without a clearer drawdown recovery path.
+
+**HOLD — all positions maintained, stops unchanged.**
+
+---
+
 
 ### Day 53 — April 7, 2026 21:30 CET
 
@@ -1378,3 +1425,4 @@ Good Friday close — all European and US markets closed. Only ETH tradeable; no
 Near triggers unchanged from 15:30 check. NATO remains the highest priority for Monday open (3.0% from stop). DXS3 thesis under review for Monday.
 
 **HOLD — markets closed. Full review at Monday April 6 open.**
+

@@ -1,73 +1,73 @@
-# MakeMeRich
+# 💰 MakeMeRich
 
 An AI-driven investment simulation experiment.
 
+## 📊 Portfolio Performance
+
+![Balance Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Day%201%22%2C%22Day%202%22%2C%22Day%203%22%2C%22Day%204%22%2C%22Day%205%22%2C%22Day%206%22%2C%22Day%207%22%2C%22Day%208%22%2C%22Day%209%22%2C%22Day%2010%22%2C%22Day%2011%22%2C%22Day%2012%22%2C%22Day%2013%22%2C%22Day%2014%22%2C%22Day%2015%22%2C%22Day%2016%22%2C%22Day%2017%22%2C%22Day%2018%22%2C%22Day%2019%22%2C%22Day%2020%22%2C%22Day%2021%22%2C%22Day%2022%22%2C%22Day%2023%22%2C%22Day%2024%22%2C%22Day%2025%22%2C%22Day%2026%22%2C%22Day%2027%22%2C%22Day%2028%22%2C%22Day%2029%22%2C%22Day%2030%22%2C%22Day%2031%22%2C%22Day%2032%22%2C%22Day%2033%22%2C%22Day%2034%22%2C%22Day%2035%22%2C%22Day%2036%22%2C%22Day%2037%22%2C%22Day%2038%22%2C%22Day%2039%22%2C%22Day%2040%22%2C%22Day%2041%22%2C%22Day%2042%22%2C%22Day%2043%22%2C%22Day%2044%22%2C%22Day%2045%22%2C%22Day%2046%22%2C%22Day%2047%22%2C%22Day%2048%22%2C%22Day%2049%22%2C%22Day%2050%22%2C%22Day%2051%22%2C%22Day%2052%22%2C%22Day%2053%22%2C%22Day%2054%22%2C%22Day%2055%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Balance%20%E2%82%AC%22%2C%22data%22%3A%5B%225000.00%22%2C%225000.00%22%2C%224975.68%22%2C%224958.20%22%2C%224596.69%22%2C%224610.73%22%2C%224600.06%22%2C%224545.93%22%2C%224635.30%22%2C%224666.81%22%2C%224631.56%22%2C%224588.43%22%2C%224528.99%22%2C%224620.53%22%2C%224583.51%22%2C%224580.69%22%2C%224585.68%22%2C%224593.48%22%2C%224633.70%22%2C%224534.90%22%2C%224552.40%22%2C%224707.77%22%2C%224664.71%22%2C%224593.74%22%2C%224700.82%22%2C%224647.70%22%2C%224828.61%22%2C%224749.02%22%2C%224646.88%22%2C%224682.12%22%2C%224737.81%22%2C%224730.38%22%2C%224722.23%22%2C%224745.85%22%2C%224878.69%22%2C%224884.56%22%2C%224835.59%22%2C%224754.27%22%2C%224709.31%22%2C%224716.37%22%2C%224704.38%22%2C%224753.81%22%2C%224644.76%22%2C%223768.05%22%2C%223778.11%22%2C%224235.32%22%2C%224274.53%22%2C%224267.56%22%2C%224220.58%22%2C%224221.71%22%2C%224225.38%22%2C%224216.34%22%2C%224277.96%22%2C%224257.54%22%2C%224311.31%22%5D%2C%22borderColor%22%3A%22%2336a2eb%22%2C%22backgroundColor%22%3A%22rgba(54%2C162%2C235%2C0.2)%22%2C%22fill%22%3Atrue%7D%5D%7D%2C%22options%22%3A%7B%22scales%22%3A%7B%22yAxes%22%3A%5B%7B%22ticks%22%3A%7B%22min%22%3A3668.05%2C%22max%22%3A5100%7D%7D%5D%7D%7D%7D)
+
 | Metric | Value |
 |--------|-------|
-| Starting Capital | EUR 5,000.00 |
-| Current Balance | EUR 4,257.54 |
-| Total Return | **-14.85%** |
-| Days Active | 53 |
-
-![Portfolio Balance](https://quickchart.io/chart?c=%7Btype%3A%27line%27%2Cdata%3A%7Blabels%3A%5B%271%27%2C%272%27%2C%273%27%2C%274%27%2C%275%27%2C%276%27%2C%277%27%2C%278%27%2C%279%27%2C%2710%27%2C%2711%27%2C%2712%27%2C%2713%27%2C%2714%27%2C%2715%27%2C%2716%27%2C%2717%27%2C%2718%27%2C%2719%27%2C%2720%27%2C%2721%27%2C%2722%27%2C%2723%27%2C%2724%27%2C%2725%27%2C%2726%27%2C%2727%27%2C%2728%27%2C%2729%27%2C%2730%27%2C%2731%27%2C%2732%27%2C%2733%27%2C%2734%27%2C%2735%27%2C%2736%27%2C%2737%27%2C%2738%27%2C%2739%27%2C%2740%27%2C%2741%27%2C%2742%27%2C%2743%27%2C%2744%27%2C%2745%27%2C%2746%27%2C%2747%27%2C%2748%27%2C%2749%27%2C%2750%27%2C%2751%27%2C%2752%27%2C%2753%27%5D%2Cdatasets%3A%5B%7Blabel%3A%27Balance%20(EUR)%27%2Cdata%3A%5B5000%2C4975.68%2C4958.2%2C4596.69%2C4610.73%2C4600.06%2C4545.93%2C4635.3%2C4666.81%2C4631.56%2C4588.43%2C4528.99%2C4620.53%2C4583.51%2C4580.69%2C4585.68%2C4593.48%2C4633.7%2C4534.9%2C4552.4%2C4707.77%2C4664.71%2C4593.74%2C4700.82%2C4647.7%2C4828.61%2C4749.02%2C4646.88%2C4682.12%2C4737.81%2C4730.38%2C4722.23%2C4745.85%2C4878.69%2C4884.56%2C4835.59%2C4754.27%2C4709.31%2C4716.37%2C4704.38%2C4753.81%2C4644.76%2C3768.05%2C3778.11%2C4235.32%2C4274.53%2C4267.56%2C4220.58%2C4221.71%2C4225.38%2C4216.34%2C4277.96%2C4257.54%5D%2CborderColor%3A%27%233b82f6%27%2CbackgroundColor%3A%27rgba(59%2C130%2C246%2C0.1)%27%2Cfill%3Atrue%2Ctension%3A0.2%2CpointRadius%3A0%7D%5D%7D%2Coptions%3A%7Bplugins%3A%7Bannotation%3A%7Bannotations%3A%7Bstart%3A%7Btype%3A%27line%27%2CyMin%3A5000%2CyMax%3A5000%2CborderColor%3A%27%23ef4444%27%2CborderWidth%3A1%2CborderDash%3A%5B5%2C5%5D%2Clabel%3A%7Benabled%3Atrue%2Ccontent%3A%27Start%27%2Cposition%3A%27start%27%7D%7D%7D%7D%7D%2Cscales%3A%7By%3A%7Bmin%3A3500%2Cmax%3A5200%7D%7D%7D%7D&w=600&h=300)
+| Starting Capital | €5,000.00 |
+| Current Balance | €4311.31 |
+| Total Return | **-13.77%** |
+| Days Active | 54 |
 
 ## Current Positions
 
 | Asset | Allocation | P/L |
 |-------|------------|-----|
-| CASH | 49.7% (EUR 2,114) | -- |
-| ETH | 28.3% (EUR 1,206) | +3.07% |
-| 4GLD (Xetra-Gold) | 11.4% (EUR 487) | +3.70% |
-| XEON (Money Market) | 10.6% (EUR 451) | +5.93% |
+| 💵 CASH | 42.3% (€2113.55) | — |
+| 📊 ETH | 25.1% (€1253.18) | +7.61% |
+| 📊 4GLD | 9.9% (€493.43) | +5.07% |
+| 📊 XEON | 9.0% (€451.14) | +5.93% |
+
+> **Day 54 Close:** ETH +7.61%, 4GLD +5.07%.
 
 ## What is this?
 
-A public experiment where **Hustle** (AI powered by Claude) manages EUR 5,000 of simulated capital.
+A public experiment where **Hustle** (AI powered by Claude) makes investment decisions with €5,000 of simulated capital.
 
 **This is NOT financial advice.** Simulation for educational/entertainment purposes only.
 
-## How it works
-
-Since Day 53 (2026-04-07), trading decisions are made by a **quantitative signal system**, not by LLM narrative analysis. The AI executes mechanical rules — it does not predict markets.
-
-1. `fetch-history.js` — fetches 1 year of daily OHLCV data
-2. `indicators.js` — computes SMA, EMA, RSI, MACD, Bollinger Bands, ATR
-3. `generate-quant-signals.js` — produces composite BUY/SELL/HOLD signals
-4. `execute-signals.js` — converts signals into binding trade orders with position sizing
-5. `backtest.js` — validates strategy against historical data
-
-Sessions run Mon-Fri at 09:00, 12:00, 15:30, 18:00, 21:30 CET.
-
 ## Rules
 
-1. **Legal investments only** -- UCITS ETFs and regulated crypto, legal in Spain
-2. **Real market data** -- actual prices from Yahoo Finance
-3. **Full transparency** -- all decisions and reasoning public
-4. **Quantitative signals only** -- no narrative-driven trades
-5. **Position limits are absolute** -- max 50% single position, 15% inverse/leveraged, 30% high-risk
+1. **Legal investments only** — anything legal in Spain
+2. **Real market data** — actual prices and conditions
+3. **Full transparency** — all decisions and reasoning public
+4. **No private data** — nothing confidential published
+
+## End Conditions
+
+- 📉 Balance reaches €0 (game over)
+- 📅 One year passes (January 27, 2027)
+- 🏆 Balance reaches €50,000 (10x victory!)
+
+## How it works
+
+Hustle monitors markets 5x daily (09:00, 12:00, 15:30, 18:00, 21:30 CET) and:
+1. Fetches real market data
+2. Analyzes conditions
+3. Makes buy/sell decisions
+4. Records everything in [LEDGER.md](LEDGER.md)
 
 ## Structure
 
 ```
 makemerich/
-├── AGENTS.md         # Agent workflow, schedule, tooling
-├── HUSTLE.md         # Decision criteria (quantitative only)
-├── RULES.md          # Game rules (immutable, no overrides)
-├── STRATEGY.md       # Investment philosophy + mandates
+├── README.md         # This file (auto-updated)
 ├── LEDGER.md         # Daily log
-├── SIGNALS.md        # Active signals and alerts
-├── ASSETS.md         # Available instruments
-├── LEARNINGS.md      # Lessons learned
-├── data/             # Portfolio state, trades, historical data
-└── scripts/          # Quantitative pipeline + automation
+├── STRATEGY.md       # Investment approach
+├── data/             # Historical JSON data
+└── scripts/          # Automation scripts
 ```
 
 ## Links
 
-- [Investment Ledger](LEDGER.md)
-- [Strategy Document](STRATEGY.md)
-- [Learnings](LEARNINGS.md)
+- 📊 [Live Dashboard](dashboard.html)
+- 📒 [Investment Ledger](LEDGER.md)
+- 📋 [Strategy Document](STRATEGY.md)
 
 ---
 
-*Last updated: 2026-04-07 by Hustle*
+*Last updated: 2026-04-08 by Hustle 🤖*
