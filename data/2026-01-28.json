@@ -1,70 +1,45 @@
 {
   "date": "2026-01-28",
-  "day": 2,
+  "day": 1,
   "balance": {
-    "total": 4999.2,
+    "total": 5000.00,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -0.8,
-    "percentage": -0.02
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -0.02,
+  "totalReturn": 0,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 4200,
+      "value": 3000.00,
       "pnlPercent": 0
     },
     {
-      "asset": "MC",
-      "type": "Stock",
-      "description": "LVMH",
-      "units": 1.3803,
-      "value": 749.25,
-      "pnlPercent": 0,
-      "entryPriceEUR": 542.8,
-      "currentPriceEUR": 542.8
+      "asset": "VOO",
+      "type": "ETF",
+      "description": "Vanguard S&P 500 ETF",
+      "units": 1.954,
+      "entryPriceUSD": 639.60,
+      "currentPriceUSD": 639.60,
+      "value": 1250.00,
+      "pnlPercent": 0
     },
     {
-      "asset": "AIR",
-      "type": "Stock",
-      "description": "Airbus",
-      "units": 0.2561,
-      "value": 49.95,
-      "pnlPercent": 0,
-      "entryPriceEUR": 195.06,
-      "currentPriceEUR": 195.06
-    }
-  ],
-  "trades": [
-    {
-      "date": "2026-01-28",
-      "action": "BUY",
-      "asset": "MC",
-      "units": 1.3803,
-      "price": 542.8,
-      "amount_eur": 750,
-      "fee_eur": 0.75,
-      "reason": "BUY (score: 32)",
-      "session": "close"
-    },
-    {
-      "date": "2026-01-28",
-      "action": "BUY",
-      "asset": "AIR",
-      "units": 0.2561,
-      "price": 195.06,
-      "amount_eur": 50,
-      "fee_eur": 0.05,
-      "reason": "BUY (score: 21)",
-      "session": "close"
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.00867,
+      "entryPriceUSD": 86500,
+      "currentPriceUSD": 86500,
+      "value": 750.00,
+      "pnlPercent": 0
     }
   ],
   "metadata": {
     "generatedAt": "2026-01-28T21:30:00.000Z",
-    "eurUsd": 0.8321,
-    "simulated": true
+    "eurUsd": 0.845
   }
 }

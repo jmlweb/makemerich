@@ -1,46 +1,45 @@
 {
   "date": "2026-01-30",
-  "day": 4,
+  "day": 3,
   "balance": {
-    "total": 5004.43,
+    "total": 4958.20,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 6.05,
-    "percentage": 0.12
+    "absolute": -17.48,
+    "percentage": -0.35
   },
-  "totalReturn": 0.09,
+  "totalReturn": -0.84,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 4200,
+      "value": 3000.00,
       "pnlPercent": 0
     },
     {
-      "asset": "MC",
-      "type": "Stock",
-      "description": "LVMH",
-      "units": 1.3803,
-      "value": 754.91,
-      "pnlPercent": 0.76,
-      "entryPriceEUR": 542.8,
-      "currentPriceEUR": 546.9
+      "asset": "VOO",
+      "type": "ETF",
+      "description": "Vanguard S&P 500 ETF",
+      "units": 1.954,
+      "entryPriceUSD": 639.60,
+      "currentPriceUSD": 635.82,
+      "value": 1242.61,
+      "pnlPercent": -0.59
     },
     {
-      "asset": "AIR",
-      "type": "Stock",
-      "description": "Airbus",
-      "units": 0.2561,
-      "value": 49.52,
-      "pnlPercent": -0.85,
-      "entryPriceEUR": 195.06,
-      "currentPriceEUR": 193.4
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.00867,
+      "entryPriceUSD": 86500,
+      "currentPriceUSD": 82536,
+      "value": 715.59,
+      "pnlPercent": -4.59
     }
   ],
   "metadata": {
     "generatedAt": "2026-01-30T21:30:00.000Z",
-    "eurUsd": 0.8357,
-    "simulated": true
+    "eurUsd": 0.845
   }
 }

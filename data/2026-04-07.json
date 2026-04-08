@@ -1,96 +1,58 @@
 {
   "date": "2026-04-07",
-  "day": 49,
+  "day": 53,
   "balance": {
-    "total": 4663.7,
+    "total": 4257.54,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -41.33,
-    "percentage": -0.88
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -6.73,
+  "totalReturn": -14.85,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 239.18,
+      "value": 2113.55,
       "pnlPercent": 0
     },
     {
-      "asset": "ALV",
-      "type": "Stock",
-      "description": "Allianz",
-      "units": 1.9511,
-      "value": 716.43,
-      "pnlPercent": -3.97,
-      "entryPriceEUR": 382.4,
-      "currentPriceEUR": 367.2
-    },
-    {
-      "asset": "ITX",
-      "type": "Stock",
-      "description": "Inditex",
-      "units": 13.1979,
-      "value": 662.27,
-      "pnlPercent": -11.5,
-      "entryPriceEUR": 56.7,
-      "currentPriceEUR": 50.18
-    },
-    {
-      "asset": "VWCE",
-      "type": "ETF",
-      "description": "Vanguard All-World UCITS",
-      "units": 4.9703,
-      "value": 715.33,
-      "pnlPercent": -3.46,
-      "entryPriceEUR": 149.08,
-      "currentPriceEUR": 143.92
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.658029,
+      "entryPriceUSD": 2052.97,
+      "currentPriceUSD": 2116.0425,
+      "value": 1205.83,
+      "pnlPercent": 3.07,
+      "change24h": 0.3928812628943051
     },
     {
       "asset": "4GLD",
       "type": "ETC",
-      "description": "Xetra-Gold ETC",
-      "units": 5.4596,
-      "value": 705.21,
-      "pnlPercent": -5.47,
-      "entryPriceEUR": 136.64,
-      "currentPriceEUR": 129.17
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 3.7704,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 129.17,
+      "value": 487.02,
+      "pnlPercent": 3.7,
+      "change24h": -2.4837686848860185
     },
     {
-      "asset": "SXR8",
+      "asset": "XEON",
       "type": "ETF",
-      "description": "iShares S&P 500 UCITS",
-      "units": 1.2016,
-      "value": 731.36,
-      "pnlPercent": -2.99,
-      "entryPriceEUR": 627.44,
-      "currentPriceEUR": 608.66
-    },
-    {
-      "asset": "ASML",
-      "type": "Stock",
-      "description": "ASML Holding",
-      "units": 0.1651,
-      "value": 183.92,
-      "pnlPercent": -11.84,
-      "entryPriceEUR": 1263.4,
-      "currentPriceEUR": 1113.8
-    },
-    {
-      "asset": "SIE",
-      "type": "Stock",
-      "description": "Siemens",
-      "units": 3.3809,
-      "value": 710,
-      "pnlPercent": 3.07,
-      "entryPriceEUR": 203.75,
-      "currentPriceEUR": 210
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 148.835,
+      "value": 451.13,
+      "pnlPercent": 5.93,
+      "change24h": 0.032260883007253195
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-07T21:30:00.000Z",
-    "eurUsd": 0.862,
-    "simulated": true
+    "generatedAt": "2026-04-07T20:34:09.356Z",
+    "eurUsd": 0.866
   }
 }

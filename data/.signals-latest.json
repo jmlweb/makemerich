@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-04-07T21:26:08.353Z",
-  "balance": 4274.03,
-  "totalReturn": -14.52,
+  "generatedAt": "2026-04-08T20:34:17.581Z",
+  "balance": 4313.89,
+  "totalReturn": -13.72,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2136.1929,
+      "currentPrice": 2213.708,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 11.06,
+      "distancePct": 14.17,
       "status": "ACTIVE"
     },
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 129.17,
+      "currentPrice": 130.87,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 18.03,
+      "distancePct": 19.1,
       "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -14.52,
+      "pnlPct": -13.72,
       "status": "WARNING",
-      "detail": "Portfolio down -14.5% from start"
+      "detail": "Portfolio down -13.7% from start"
     }
   ]
 }

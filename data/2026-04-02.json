@@ -2,95 +2,78 @@
   "date": "2026-04-02",
   "day": 48,
   "balance": {
-    "total": 4705.03,
+    "total": 4220.58,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -30.3,
-    "percentage": -0.64
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -5.9,
+  "totalReturn": -15.59,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 239.18,
+      "value": 213.93,
       "pnlPercent": 0
     },
     {
-      "asset": "ALV",
-      "type": "Stock",
-      "description": "Allianz",
-      "units": 1.9511,
-      "value": 717.8,
-      "pnlPercent": -3.79,
-      "entryPriceEUR": 382.4,
-      "currentPriceEUR": 367.9
-    },
-    {
-      "asset": "ITX",
-      "type": "Stock",
-      "description": "Inditex",
-      "units": 13.1979,
-      "value": 670.45,
-      "pnlPercent": -10.41,
-      "entryPriceEUR": 56.7,
-      "currentPriceEUR": 50.8
-    },
-    {
-      "asset": "VWCE",
-      "type": "ETF",
-      "description": "Vanguard All-World UCITS",
-      "units": 4.9703,
-      "value": 719.41,
-      "pnlPercent": -2.91,
-      "entryPriceEUR": 149.08,
-      "currentPriceEUR": 144.74
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.658029,
+      "entryPriceUSD": 2052.97,
+      "currentPriceUSD": 2059.961,
+      "value": 1168.45,
+      "pnlPercent": 0.34,
+      "change24h": -3.683295328037075
     },
     {
       "asset": "4GLD",
       "type": "ETC",
-      "description": "Xetra-Gold ETC",
-      "units": 5.4596,
-      "value": 710.29,
-      "pnlPercent": -4.79,
-      "entryPriceEUR": 136.64,
-      "currentPriceEUR": 130.1
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 3.7704,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 130.1,
+      "value": 490.53,
+      "pnlPercent": 4.45,
+      "change24h": 1.009316770186322
     },
     {
-      "asset": "SXR8",
+      "asset": "XEON",
       "type": "ETF",
-      "description": "iShares S&P 500 UCITS",
-      "units": 1.2016,
-      "value": 734.87,
-      "pnlPercent": -2.53,
-      "entryPriceEUR": 627.44,
-      "currentPriceEUR": 611.58
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 148.759,
+      "value": 450.9,
+      "pnlPercent": 5.88,
+      "change24h": -0.01814686865700754
     },
     {
-      "asset": "ASML",
-      "type": "Stock",
-      "description": "ASML Holding",
-      "units": 0.1651,
-      "value": 191.71,
-      "pnlPercent": -8.11,
-      "entryPriceEUR": 1263.4,
-      "currentPriceEUR": 1161
+      "asset": "DXS3",
+      "type": "ETF",
+      "description": "Xtrackers S&P500 Inverse Daily UCITS",
+      "units": 277.5958,
+      "entryPriceEUR": 5.69,
+      "currentPriceEUR": 5.495,
+      "value": 1525.39,
+      "pnlPercent": -3.43,
+      "change24h": -2.4325284090909016
     },
     {
-      "asset": "SIE",
-      "type": "Stock",
-      "description": "Siemens",
-      "units": 3.3809,
-      "value": 721.32,
-      "pnlPercent": 4.71,
-      "entryPriceEUR": 203.75,
-      "currentPriceEUR": 213.35
+      "asset": "NATO",
+      "type": "ETF",
+      "description": "HANetf Future of Defence UCITS",
+      "units": 21.6216,
+      "currentPriceUSD": 19.926,
+      "value": 371.38,
+      "pnlPercent": 0,
+      "change24h": 5.0838519143550185
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-02T21:30:00.000Z",
-    "eurUsd": 0.8664,
-    "simulated": true
+    "generatedAt": "2026-04-02T19:32:52.320Z",
+    "eurUsd": 0.862
   }
 }

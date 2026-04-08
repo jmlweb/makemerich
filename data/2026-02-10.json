@@ -1,66 +1,80 @@
 {
   "date": "2026-02-10",
-  "day": 11,
+  "day": 10,
   "balance": {
-    "total": 4983.2,
+    "total": 4631.56,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -23.06,
-    "percentage": -0.46
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -0.34,
+  "totalReturn": -7.37,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 2704.09,
+      "value": 104.58,
       "pnlPercent": 0
     },
     {
-      "asset": "MC",
-      "type": "Stock",
-      "description": "LVMH",
-      "units": 1.3803,
-      "value": 742.21,
-      "pnlPercent": -0.94,
-      "entryPriceEUR": 542.8,
-      "currentPriceEUR": 537.7
+      "asset": "SXR8",
+      "type": "ETF",
+      "description": "iShares S&P 500 UCITS",
+      "units": 2.19,
+      "entryPriceEUR": 621.88,
+      "currentPriceEUR": 627.78,
+      "value": 1374.84,
+      "pnlPercent": 0.95,
+      "change24h": 0.2555175828036703
     },
     {
-      "asset": "AIR",
-      "type": "Stock",
-      "description": "Airbus",
-      "units": 0.2561,
-      "value": 49.07,
-      "pnlPercent": -1.76,
-      "entryPriceEUR": 195.06,
-      "currentPriceEUR": 191.62
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 7.3907,
+      "entryPriceEUR": 143.38,
+      "currentPriceEUR": 148.9,
+      "value": 1100.48,
+      "pnlPercent": 3.85,
+      "change24h": 0.7306183195778735
     },
     {
-      "asset": "ALV",
-      "type": "Stock",
-      "description": "Allianz",
-      "units": 1.9511,
-      "value": 736.34,
-      "pnlPercent": -1.31,
-      "entryPriceEUR": 382.4,
-      "currentPriceEUR": 377.4
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.01602,
+      "entryPriceUSD": 66920,
+      "currentPriceUSD": 68747.61,
+      "value": 926.22,
+      "pnlPercent": 2.73,
+      "change24h": -1.9582925346808726
     },
     {
-      "asset": "ITX",
-      "type": "Stock",
-      "description": "Inditex",
-      "units": 13.1979,
-      "value": 751.49,
-      "pnlPercent": 0.42,
-      "entryPriceEUR": 56.7,
-      "currentPriceEUR": 56.94
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.394503,
+      "entryPriceUSD": 1962.51,
+      "currentPriceUSD": 2008.5232,
+      "value": 666.38,
+      "pnlPercent": 2.34,
+      "change24h": -4.518247951717823
+    },
+    {
+      "asset": "SGLD",
+      "type": "ETC",
+      "description": "Invesco Physical Gold ETC",
+      "units": 1.13,
+      "entryPriceUSD": 473.34,
+      "currentPriceUSD": 483.05,
+      "value": 459.06,
+      "pnlPercent": 2.05,
+      "change24h": 1.677612191630889
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-10T21:30:00.000Z",
-    "eurUsd": 0.8401,
-    "simulated": true
+    "generatedAt": "2026-02-10T20:30:19.830Z",
+    "eurUsd": 0.841
   }
 }

@@ -1,79 +1,47 @@
 {
   "date": "2026-02-05",
-  "day": 8,
+  "day": 7,
   "balance": {
-    "total": 4993.06,
+    "total": 4545.93,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -4.16,
-    "percentage": -0.08
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -0.14,
+  "totalReturn": -9.08,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 2704.09,
+      "value": 1252.29,
       "pnlPercent": 0
     },
     {
-      "asset": "MC",
-      "type": "Stock",
-      "description": "LVMH",
-      "units": 1.3803,
-      "value": 742.9,
-      "pnlPercent": -0.85,
-      "entryPriceEUR": 542.8,
-      "currentPriceEUR": 538.2
+      "asset": "VOO",
+      "type": "ETF",
+      "description": "Vanguard S&P 500 ETF",
+      "units": 4.29,
+      "entryPriceUSD": 637.5,
+      "currentPriceUSD": 623.29,
+      "value": 2264.81,
+      "pnlPercent": -2.23,
+      "change24h": -1.7125285815658777
     },
     {
-      "asset": "AIR",
-      "type": "Stock",
-      "description": "Airbus",
-      "units": 0.2561,
-      "value": 48.53,
-      "pnlPercent": -2.84,
-      "entryPriceEUR": 195.06,
-      "currentPriceEUR": 189.52
-    },
-    {
-      "asset": "ALV",
-      "type": "Stock",
-      "description": "Allianz",
-      "units": 1.9511,
-      "value": 749.21,
-      "pnlPercent": 0.42,
-      "entryPriceEUR": 382.4,
-      "currentPriceEUR": 384
-    },
-    {
-      "asset": "ITX",
-      "type": "Stock",
-      "description": "Inditex",
-      "units": 13.1979,
-      "value": 748.32,
-      "pnlPercent": 0,
-      "entryPriceEUR": 56.7,
-      "currentPriceEUR": 56.7
-    }
-  ],
-  "trades": [
-    {
-      "date": "2026-02-05",
-      "action": "BUY",
-      "asset": "ITX",
-      "units": 13.1979,
-      "price": 56.7,
-      "amount_eur": 749.07,
-      "fee_eur": 0.75,
-      "reason": "BUY (score: 24)",
-      "session": "close"
+      "asset": "GLD",
+      "type": "ETF",
+      "description": "SPDR Gold Trust",
+      "units": 2.74,
+      "entryPriceUSD": 449.9,
+      "currentPriceUSD": 443.315,
+      "value": 1028.84,
+      "pnlPercent": -1.46,
+      "change24h": -2.415857712034168
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-05T21:30:00.000Z",
-    "eurUsd": 0.8473,
-    "simulated": true
+    "generatedAt": "2026-02-05T20:30:15.930Z",
+    "eurUsd": 0.847
   }
 }

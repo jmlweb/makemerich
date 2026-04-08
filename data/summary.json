@@ -1,10 +1,37 @@
 {
   "lastUpdated": "2026-04-07",
-  "balance": 4663.7,
-  "totalReturn": -6.73,
-  "totalTrades": 11,
-  "buys": 9,
-  "sells": 2,
-  "positions": 7,
-  "simulated": true
+  "months": [
+    {
+      "month": "2026-01",
+      "start_balance": 5000.00,
+      "end_balance": 4958.20,
+      "pnl_eur": -41.80,
+      "pnl_pct": -0.84,
+      "trades_count": 1
+    },
+    {
+      "month": "2026-02",
+      "start_balance": 4596.69,
+      "end_balance": 4593.74,
+      "pnl_eur": -2.95,
+      "pnl_pct": -0.06,
+      "trades_count": 2
+    },
+    {
+      "month": "2026-03",
+      "start_balance": 4700.82,
+      "end_balance": 4274.53,
+      "pnl_eur": -426.29,
+      "pnl_pct": -9.07,
+      "trades_count": 2
+    }
+  ],
+  "all_time": {
+    "start_date": "2026-01-28",
+    "total_deposited": 5000.00,
+    "total_withdrawn": 0,
+    "current_balance": 4257.54,
+    "pnl_eur": -742.46,
+    "pnl_pct": -14.85
+  }
 }

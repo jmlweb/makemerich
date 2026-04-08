@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,260.21 |
-| Total Return | -14.80% |
+| Current Balance | €4,257.54 |
+| Total Return | -14.85% |
 | Days Active | 53 |
 
 ---

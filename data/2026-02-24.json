@@ -1,119 +1,80 @@
 {
   "date": "2026-02-24",
-  "day": 21,
+  "day": 20,
   "balance": {
-    "total": 5042.34,
+    "total": 4552.4,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 4.8,
-    "percentage": 0.1
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": 0.85,
+  "totalReturn": -8.95,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 252.13,
+      "value": 104.58,
       "pnlPercent": 0
-    },
-    {
-      "asset": "MC",
-      "type": "Stock",
-      "description": "LVMH",
-      "units": 1.3803,
-      "value": 775.48,
-      "pnlPercent": 3.5,
-      "entryPriceEUR": 542.8,
-      "currentPriceEUR": 561.8
-    },
-    {
-      "asset": "AIR",
-      "type": "Stock",
-      "description": "Airbus",
-      "units": 0.2561,
-      "value": 46.82,
-      "pnlPercent": -6.26,
-      "entryPriceEUR": 195.06,
-      "currentPriceEUR": 182.84
-    },
-    {
-      "asset": "ALV",
-      "type": "Stock",
-      "description": "Allianz",
-      "units": 1.9511,
-      "value": 738.48,
-      "pnlPercent": -1.02,
-      "entryPriceEUR": 382.4,
-      "currentPriceEUR": 378.5
-    },
-    {
-      "asset": "ITX",
-      "type": "Stock",
-      "description": "Inditex",
-      "units": 13.1979,
-      "value": 759.41,
-      "pnlPercent": 1.48,
-      "entryPriceEUR": 56.7,
-      "currentPriceEUR": 57.54
-    },
-    {
-      "asset": "VWCE",
-      "type": "ETF",
-      "description": "Vanguard All-World UCITS",
-      "units": 4.9703,
-      "value": 744.16,
-      "pnlPercent": 0.43,
-      "entryPriceEUR": 149.08,
-      "currentPriceEUR": 149.72
-    },
-    {
-      "asset": "4GLD",
-      "type": "ETC",
-      "description": "Xetra-Gold ETC",
-      "units": 5.4596,
-      "value": 765.7,
-      "pnlPercent": 2.64,
-      "entryPriceEUR": 136.64,
-      "currentPriceEUR": 140.25
     },
     {
       "asset": "SXR8",
       "type": "ETF",
       "description": "iShares S&P 500 UCITS",
-      "units": 1.2016,
-      "value": 751.54,
-      "pnlPercent": -0.32,
-      "entryPriceEUR": 627.44,
-      "currentPriceEUR": 625.46
+      "units": 2.19,
+      "entryPriceEUR": 621.88,
+      "currentPriceEUR": 625.46,
+      "value": 1369.76,
+      "pnlPercent": 0.58,
+      "change24h": -0.31556802244039556
     },
     {
-      "asset": "ASML",
-      "type": "Stock",
-      "description": "ASML Holding",
-      "units": 0.1651,
-      "value": 208.62,
-      "pnlPercent": 0,
-      "entryPriceEUR": 1263.4,
-      "currentPriceEUR": 1263.4
-    }
-  ],
-  "trades": [
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 7.3907,
+      "entryPriceEUR": 143.38,
+      "currentPriceEUR": 149.72,
+      "value": 1106.54,
+      "pnlPercent": 4.42,
+      "change24h": -0.10675206832132145
+    },
     {
-      "date": "2026-02-24",
-      "action": "BUY",
-      "asset": "ASML",
-      "units": 0.1651,
-      "price": 1263.4,
-      "amount_eur": 208.83,
-      "fee_eur": 0.21,
-      "reason": "BUY (score: 24)",
-      "session": "close"
+      "asset": "BTC",
+      "type": "Crypto",
+      "description": "Bitcoin",
+      "units": 0.01602,
+      "entryPriceUSD": 66920,
+      "currentPriceUSD": 64495.27,
+      "value": 876.17,
+      "pnlPercent": -3.62,
+      "change24h": -0.18798534249793655
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.394503,
+      "entryPriceUSD": 1962.51,
+      "currentPriceUSD": 1857.576,
+      "value": 621.43,
+      "pnlPercent": -5.35,
+      "change24h": 0.11173251799997513
+    },
+    {
+      "asset": "SGLD",
+      "type": "ETC",
+      "description": "Invesco Physical Gold ETC",
+      "units": 1.13,
+      "entryPriceUSD": 473.34,
+      "currentPriceUSD": 494.58,
+      "value": 473.93,
+      "pnlPercent": 4.49,
+      "change24h": 1.4439840833572555
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-24T21:30:00.000Z",
-    "eurUsd": 0.8479,
-    "simulated": true
+    "generatedAt": "2026-02-24T20:30:13.578Z",
+    "eurUsd": 0.848
   }
 }

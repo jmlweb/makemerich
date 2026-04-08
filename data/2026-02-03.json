@@ -1,69 +1,58 @@
 {
   "date": "2026-02-03",
-  "day": 6,
+  "day": 5,
   "balance": {
-    "total": 4978.17,
+    "total": 4610.73,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -14.5,
-    "percentage": -0.29
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -0.44,
+  "totalReturn": -7.79,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 3453.16,
+      "value": 921.89,
       "pnlPercent": 0
     },
     {
-      "asset": "MC",
-      "type": "Stock",
-      "description": "LVMH",
-      "units": 1.3803,
-      "value": 730.2,
-      "pnlPercent": -2.54,
-      "entryPriceEUR": 542.8,
-      "currentPriceEUR": 529
+      "asset": "VOO",
+      "type": "ETF",
+      "description": "Vanguard S&P 500 ETF",
+      "units": 4.29,
+      "entryPriceUSD": 637.5,
+      "currentPriceUSD": 632.43,
+      "value": 2295.3,
+      "pnlPercent": -0.8,
+      "change24h": -0.595705887900424
     },
     {
-      "asset": "AIR",
-      "type": "Stock",
-      "description": "Airbus",
-      "units": 0.2561,
-      "value": 48.72,
-      "pnlPercent": -2.47,
-      "entryPriceEUR": 195.06,
-      "currentPriceEUR": 190.24
+      "asset": "GLD",
+      "type": "ETF",
+      "description": "SPDR Gold Trust",
+      "units": 1.83,
+      "entryPriceUSD": 447.92,
+      "currentPriceUSD": 453.94,
+      "value": 702.78,
+      "pnlPercent": 1.34,
+      "change24h": 2.0204517361501315
     },
     {
-      "asset": "ALV",
-      "type": "Stock",
-      "description": "Allianz",
-      "units": 1.9511,
-      "value": 746.09,
-      "pnlPercent": 0,
-      "entryPriceEUR": 382.4,
-      "currentPriceEUR": 382.4
-    }
-  ],
-  "trades": [
-    {
-      "date": "2026-02-03",
-      "action": "BUY",
-      "asset": "ALV",
-      "units": 1.9511,
-      "price": 382.4,
-      "amount_eur": 746.84,
-      "fee_eur": 0.75,
-      "reason": "BUY (score: 29)",
-      "session": "close"
+      "asset": "QQQ",
+      "type": "ETF",
+      "description": "Invesco Nasdaq-100 ETF",
+      "units": 1.33,
+      "entryPriceUSD": 615.33,
+      "currentPriceUSD": 613.91,
+      "value": 690.76,
+      "pnlPercent": -0.23,
+      "change24h": -1.2800102915400382
     }
   ],
   "metadata": {
-    "generatedAt": "2026-02-03T21:30:00.000Z",
-    "eurUsd": 0.8475,
-    "simulated": true
+    "generatedAt": "2026-02-03T20:30:14.790Z",
+    "eurUsd": 0.846
   }
 }

@@ -1,24 +1,32 @@
-[
-  {
-    "date": "2026-01-28",
-    "action": "BUY",
-    "asset": "MC",
-    "units": 1.3803,
-    "price": 542.8,
-    "amount_eur": 750,
-    "fee_eur": 0.75,
-    "reason": "BUY (score: 32)",
-    "session": "close"
-  },
-  {
-    "date": "2026-01-28",
-    "action": "BUY",
-    "asset": "AIR",
-    "units": 0.2561,
-    "price": 195.06,
-    "amount_eur": 50,
-    "fee_eur": 0.05,
-    "reason": "BUY (score: 21)",
-    "session": "close"
-  }
-]
+{
+  "trades": [
+    {
+      "id": 1,
+      "timestamp": "2026-01-28T09:00:00Z",
+      "action": "deposit",
+      "asset": "CASH",
+      "amount_eur": 5000.00,
+      "note": "Initial capital"
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-01-28T09:30:00Z",
+      "action": "buy",
+      "asset": "VOO",
+      "amount_eur": 1250.00,
+      "price_usd": 639.60,
+      "shares": 1.954,
+      "note": "Initial allocation 25%"
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-01-28T09:30:00Z",
+      "action": "buy",
+      "asset": "BTC",
+      "amount_eur": 750.00,
+      "price_usd": 86500,
+      "units": 0.00867,
+      "note": "Initial allocation 15%"
+    }
+  ]
+}

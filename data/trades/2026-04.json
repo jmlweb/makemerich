@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-04-01",
+    "time": "10:27 UTC",
+    "action": "SELL",
+    "asset": "XEON",
+    "units": 0.1748,
+    "price_eur": 148.769,
+    "amount_eur": 26.0,
+    "fee_eur": 0.03,
+    "reason": "Fix RULES.md §4 cash minimum violation (4.4% → 5.0%)",
+    "session": "makemerich-1200"
+  },
+  {
+    "date": "2026-04-07",
+    "time": "21:30 UTC",
+    "action": "SELL",
+    "asset": "DXS3",
+    "units": 161.58,
+    "price_eur": 5.508,
+    "amount_eur": 889.98,
+    "fee_eur": 0.89,
+    "reason": "LIMIT_VIOLATION: inverse position at 35.9%, limit is 15%. Quantitative signal system order (execute-signals.js)",
+    "session": "makemerich-2130"
+  }
+]
