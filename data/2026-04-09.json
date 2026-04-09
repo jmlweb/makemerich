@@ -1,0 +1,58 @@
+{
+  "date": "2026-04-09",
+  "day": 55,
+  "balance": {
+    "total": 4284.53,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": -26.78,
+    "percentage": -0.62
+  },
+  "totalReturn": -14.31,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 2113.55,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "ETH",
+      "type": "Crypto",
+      "description": "Ethereum",
+      "units": 0.658029,
+      "entryPriceUSD": 2052.97,
+      "currentPriceUSD": 2180.5947,
+      "value": 1226.41,
+      "pnlPercent": 6.22,
+      "change24h": -0.4447127138610751
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 3.7704,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 130.87,
+      "value": 493.43,
+      "pnlPercent": 5.07,
+      "change24h": 1.3160950685143744
+    },
+    {
+      "asset": "XEON",
+      "type": "ETF",
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 148.838,
+      "value": 451.14,
+      "pnlPercent": 5.93,
+      "change24h": 0.002015654919868245
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-04-09T07:00:18.688Z",
+    "eurUsd": 0.8547008547008548
+  }
+}
