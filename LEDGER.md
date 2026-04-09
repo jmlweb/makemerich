@@ -5,13 +5,60 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,288.96 |
-| Total Return | -14.22% |
+| Current Balance | €4,282.41 |
+| Total Return | -14.35% |
 | Days Active | 56 |
 
 ---
 
 ## Daily Log
+
+### Day 55 — April 9, 2026 21:30 CET
+
+**Balance:** €4,282.41 | **Total Return:** -14.3%
+**Day P&L:** €28.90 (-0.7%) vs Day 54 (€4,311.31)
+
+**Prices at close:**
+- ETH: $2,177.05 / €1,863.56 (-0.61% 24h) — stop $1,900.00
+- 4GLD: €130.83 (+1.29% 24h) — stop €105.88
+- XEON: €148.85 (+0.01% 24h)
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 6,782.81 (+2.51%)
+- NASDAQ: 22,634.99 (+2.80%)
+- GOLD: 4,778.80 (+0.62%)
+- IBEX35: 17,990.80 (-0.78%)
+- EUROSTOXX50: 5,860.79 (-0.89%)
+- DAX: 23,759.18 (+3.65%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| CASH | €2,113.55 | 49.4% | — | — |
+| ETH | €1,224.41 | 28.6% | +6.0% | -0.61% |
+| 4GLD | €493.28 | 11.5% | +5.0% | +1.29% |
+| XEON | €451.17 | 10.5% | +5.9% | +0.01% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.24% vs SMA50, VIX 21.45)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (12.7% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- Portfolio drawdown: -14.3%
+
+**Analysis:**
+US markets surged strongly (SP500 +2.51%, NASDAQ +2.80%, DAX +3.65%) while European indices lagged (IBEX35 -0.78%, EUROSTOXX50 -0.89%), suggesting a risk-on rotation led by US tech. Portfolio positions are all above entry (+5-6%) despite the overall drawdown being driven by early cash drag. Quant signals flip BUY on EQQQ/SXR8/VWCE/ASML, but with VIX at 21.45 and EUR/USD at 0.856, deploying cash now carries currency and volatility risk.
+
+**HOLD — Con el mercado en modo risk-on pero la volatilidad todavía elevada (VIX 21.45) y las posiciones actuales en positivo, se mantiene la cartera a la espera de una señal de entrada más clara antes de desplegar el 49% en efectivo.**
+
+---
+
 
 ### Day 55 — April 9, 2026 21:30 CET
 
