@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-09T16:00:06.607Z",
-  "balance": 4310.47,
-  "totalReturn": -13.79,
+  "generatedAt": "2026-04-09T19:30:04.647Z",
+  "balance": 4302.1,
+  "totalReturn": -13.96,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2220.8716,
+      "currentPrice": 2205.9841,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 14.45,
+      "distancePct": 13.87,
       "status": "ACTIVE"
     },
     {
@@ -23,9 +23,9 @@
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -13.79,
+      "pnlPct": -13.96,
       "status": "WARNING",
-      "detail": "Portfolio down -13.8% from start"
+      "detail": "Portfolio down -14.0% from start"
     }
   ]
 }
