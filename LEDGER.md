@@ -5,13 +5,60 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,309.55 |
-| Total Return | -13.81% |
+| Current Balance | €4,322.76 |
+| Total Return | -13.54% |
 | Days Active | 57 |
 
 ---
 
 ## Daily Log
+
+### Day 56 — April 10, 2026 21:30 CET
+
+**Balance:** €4,322.76 | **Total Return:** -13.5%
+**Day P&L:** +€20.66 (+0.5%) vs Day 55 (€4,302.10)
+
+**Prices at close:**
+- ETH: $2,249.06 / €1,922.94 (+2.74% 24h) — stop $1,900.00
+- 4GLD: €130.77 (-0.08% 24h) — stop €105.88
+- XEON: €148.87 (+0.02% 24h)
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 6,820.08 (+0.55%)
+- NASDAQ: 22,916.96 (+1.25%)
+- GOLD: 4,793.30 (+0.02%)
+- IBEX35: 18,204.30 (+0.55%)
+- EUROSTOXX50: 5,926.11 (+0.51%)
+- DAX: 23,803.95 (-1.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| CASH | €2,113.55 | 48.9% | — | — |
+| ETH | €1,264.91 | 29.3% | +9.6% | +2.74% |
+| 4GLD | €493.06 | 11.4% | +5.0% | -0.08% |
+| XEON | €451.24 | 10.4% | +6.0% | +0.02% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.17% vs SMA50, VIX 19.45)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.5% away)
+- 4GLD: stop EUR 105.88 (19.0% away)
+- Portfolio drawdown: -13.5%
+
+**Analysis:**
+Risk-on regime continues with SP500 and NASDAQ both up, but DAX lagged (-1.15%) suggesting regional divergence. ETH recovered +2.74% today contributing the day's +0.5% P{{ANALYSIS}}L gain; all positions remain well above their stop levels. Portfolio drawdown of -13.5% from start remains the key watch metric, though quant signals confirm HOLD across all current holdings.
+
+**HOLD — El régimen sigue siendo risk-on y todas las posiciones están por encima de sus stops, por lo que no hay motivo para actuar.**
+
+---
+
 
 ### Day 56 — April 10, 2026 21:30 CET
 
