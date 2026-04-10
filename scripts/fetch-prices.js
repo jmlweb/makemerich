@@ -127,11 +127,15 @@ async function main() {
   const eurUsd = await fetchEURUSD();
   console.log(`EUR/USD: ${eurUsd.toFixed(4)}\n`);
   
-  // Load portfolio to see what we need to fetch
+  // Load portfolio + watchlist to see what we need to fetch
   const portfolio = loadPortfolio();
-  const assetsToFetch = portfolio 
-    ? Object.keys(portfolio.holdings).filter(a => a !== 'CASH' && ASSET_CONFIG[a])
-    : ['VOO', 'GLD'];
+  const assetSet = new Set();
+  if (portfolio) {
+    Object.keys(portfolio.holdings).filter(a => a !== 'CASH' && ASSET_CONFIG[a]).forEach(a => assetSet.add(a));
+  }
+  // Watchlist — must match generate-quant-signals.js
+  ['BTC', 'EQQQ', 'SOL', 'SXR8', 'VWCE', 'SAP', 'ASML', 'MC', 'ITX', 'SIE', 'AIR', 'NOVO', 'ALV', 'TTE', 'DTE'].forEach(a => assetSet.add(a));
+  const assetsToFetch = [...assetSet];
   
   // Fetch asset prices
   for (const asset of assetsToFetch) {
@@ -140,8 +144,24 @@ async function main() {
     
     const data = await fetchYahooPrice(config.yahoo);
     if (!data.error) {
-      const priceUSD = data.price;
-      const priceEUR = priceUSD * eurUsd;
+      const nativePrice = data.price;
+      const assetCurrency = ASSET_CONFIG[asset]?.currency || data.currency || 'USD';
+      let priceUSD, priceEUR;
+
+      if (assetCurrency === 'EUR') {
+        priceEUR = nativePrice;
+        priceUSD = nativePrice / eurUsd;
+      } else if (assetCurrency === 'DKK') {
+        // DKK pegged ~7.46 per EUR
+        const dkkPerEur = 7.46;
+        priceEUR = nativePrice / dkkPerEur;
+        priceUSD = priceEUR / eurUsd;
+      } else {
+        // USD (default)
+        priceUSD = nativePrice;
+        priceEUR = nativePrice * eurUsd;
+      }
+
       prices[asset] = {
         priceUSD,
         priceEUR,

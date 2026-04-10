@@ -157,8 +157,8 @@ function getSymbolsToFetch(filterSymbol) {
     }
   }
 
-  // Watchlist (ETFs + EU stocks)
-  const watchlist = ['EQQQ', 'SOL', 'SXR8', 'VWCE', 'SAP', 'ASML', 'MC', 'ITX', 'SIE', 'AIR', 'NOVO', 'ALV', 'TTE', 'DTE'];
+  // Watchlist — must match generate-quant-signals.js
+  const watchlist = ['BTC', 'EQQQ', 'SOL', 'SXR8', 'VWCE', 'SAP', 'ASML', 'MC', 'ITX', 'SIE', 'AIR', 'NOVO', 'ALV', 'TTE', 'DTE'];
   for (const asset of watchlist) {
     if (ASSET_CONFIG[asset]) symbols[asset] = ASSET_CONFIG[asset];
   }

@@ -32,12 +32,12 @@ const LIMITS = {
   MAX_RISK_PER_TRADE: 0.02,   // 2% risk per trade
 };
 
-// Fee structure
+// Fee structure (Bitpanda: 0.1% all asset classes)
 const FEES = {
   ETF: 0.001,
   ETC: 0.001,
   Stock: 0.001,
-  Crypto: 0.005,
+  Crypto: 0.001,
 };
 
 // Asset classifications
@@ -153,6 +153,9 @@ function generateOrders(portfolio, signals) {
     warnings.push(`Market Regime: ${regime.toUpperCase()}`);
   }
 
+  // Track cash spent on BUY orders to avoid over-committing
+  let cashSpent = 0;
+
   // Process each asset's signal
   for (const [symbol, data] of Object.entries(signals.assets)) {
     if (data.error) continue;
@@ -210,7 +213,7 @@ function generateOrders(portfolio, signals) {
         continue;
       }
       // Check if we can buy (cash available, limits respected)
-      const availableCash = state.cashValue - state.balance * LIMITS.MIN_CASH_RESERVE;
+      const availableCash = state.cashValue - cashSpent - state.balance * LIMITS.MIN_CASH_RESERVE;
       if (availableCash <= 0) {
         warnings.push(`${symbol}: BUY signal but insufficient cash (${state.cashValue.toFixed(0)} EUR, need ${(state.balance * LIMITS.MIN_CASH_RESERVE).toFixed(0)} EUR reserve)`);
         continue;
@@ -257,6 +260,8 @@ function generateOrders(portfolio, signals) {
       }
 
       const fee = buyAmount * feeRate;
+
+      cashSpent += buyAmount + fee;
 
       orders.push({
         action: 'BUY',
