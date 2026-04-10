@@ -25,7 +25,7 @@ function getAllEntries() {
 
 function generateChartUrl(entries) {
   const labels = entries.map((_, i) => `Day ${i + 1}`);
-  const data = entries.map(e => e.balance.total.toFixed(2));
+  const data = entries.map(e => Number(e.balance.total.toFixed(2)));
 
   const config = {
     type: 'line',
@@ -51,7 +51,11 @@ function generateChartUrl(entries) {
     }
   };
 
-  return `https://quickchart.io/chart?c=${encodeURIComponent(JSON.stringify(config))}`;
+  // encodeURIComponent leaves parentheses unescaped; escape them too so Markdown URLs stay valid.
+  const encodedConfig = encodeURIComponent(JSON.stringify(config))
+    .replace(/\(/g, '%28')
+    .replace(/\)/g, '%29');
+  return `https://quickchart.io/chart?c=${encodedConfig}`;
 }
 
 function formatPosition(pos) {
@@ -102,7 +106,7 @@ let readme = fs.readFileSync(README_PATH, 'utf8');
 
 // Update chart image
 readme = readme.replace(
-  /!\[Balance Chart\]\(.*?\)/,
+  /^!\[Balance Chart\]\(.*\)$/m,
   `![Balance Chart](${chartUrl})`
 );
 
