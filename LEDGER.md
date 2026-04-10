@@ -5,13 +5,60 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,291.85 |
-| Total Return | -14.16% |
+| Current Balance | €4,307.30 |
+| Total Return | -13.85% |
 | Days Active | 57 |
 
 ---
 
 ## Daily Log
+
+### Day 56 — April 10, 2026 21:30 CET
+
+**Balance:** €4,307.30 | **Total Return:** -13.8%
+**Day P&L:** +€5.20 (+0.1%) vs Day 55 (€4,302.10)
+
+**Prices at close:**
+- ETH: $2,221.00 / €1,898.96 (+1.46% 24h) — stop $1,900.00
+- 4GLD: €130.88 (+0.01% 24h) — stop €105.88
+- XEON: €148.84 (+0.00% 24h)
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 6,841.33 (+0.86%)
+- NASDAQ: 22,822.42 (+0.83%)
+- GOLD: 4,795.20 (+0.06%)
+- IBEX35: 18,240.50 (+0.75%)
+- EUROSTOXX50: 5,948.02 (+0.88%)
+- DAX: 23,972.82 (-0.45%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| CASH | €2,113.55 | 49.1% | — | — |
+| ETH | €1,249.13 | 29.0% | +8.2% | +1.46% |
+| 4GLD | €493.47 | 11.5% | +5.1% | +0.01% |
+| XEON | €451.15 | 10.5% | +5.9% | +0.00% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.17% vs SMA50, VIX 19.45)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (14.4% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- Portfolio drawdown: -13.8%
+
+**Analysis:**
+Markets ended broadly higher on risk-on momentum — SP500 +0.86%, NASDAQ +0.83%, EUROSTOXX50 +0.88% — with DAX the lone outlier at -0.45%. Portfolio gained a marginal €5.20 on the day, driven by ETH's +1.46% move; 4GLD and XEON were essentially flat. All positions remain well above their stop levels, and quant signals confirm RISK-ON regime with HOLD on all current holdings.
+
+**HOLD — Las posiciones están en verde desde entrada, el régimen sigue siendo RISK-ON y no hay señales de venta activas.**
+
+---
+
 
 ### Day 56 — April 10, 2026 21:30 CET
 
