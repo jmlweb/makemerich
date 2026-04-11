@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,322.76 |
-| Total Return | -13.54% |
-| Days Active | 57 |
+| Current Balance | €4,311.64 |
+| Total Return | -13.77% |
+| Days Active | 58 |
 
 ---
 
 ## Daily Log
+
+### Day 57 — April 11, 2026 21:30 CET
+
+**Balance:** €4,311.64 | **Total Return:** -13.8%
+**Day P&L:** €11.12 (-0.3%) vs Day 56 (€4,322.76)
+
+**Prices at close:**
+- ETH: $2,232.66 / €1,904.46 (-0.56% 24h) — stop $1,900.00
+- 4GLD: €130.77 (-0.08% 24h) — stop €105.88
+- XEON: €148.87 (+0.02% 24h)
+- EQQQ: €524.60 (+0.88% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 6,816.89 (+0.50%)
+- NASDAQ: 22,902.89 (+1.18%)
+- GOLD: 4,761.90 (-0.63%)
+- IBEX35: 18,204.30 (+0.55%)
+- EUROSTOXX50: 5,926.11 (+0.51%)
+- DAX: 23,803.95 (-1.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,897.87 | 44.0% | +0.0% | +0.88% |
+| ETH | €1,255.69 | 29.1% | +8.8% | -0.56% |
+| 4GLD | €493.06 | 11.4% | +5.0% | -0.08% |
+| XEON | €451.24 | 10.5% | +6.0% | +0.02% |
+| CASH | €213.78 | 5.0% | — | — |
+
+**Trades:**
+- **BUY EQQQ**: 3.617747 units @ EUR 524.60 = EUR 1,897.87 (fee EUR 1.90)
+  Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.81% vs SMA50, VIX 19.23)
+- BUY: EQQQ, SXR8, VWCE
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (14.9% away)
+- 4GLD: stop EUR 105.88 (19.0% away)
+- Portfolio drawdown: -13.7%
+
+**Analysis:**
+Markets closed mixed on Day 57 with US indices rebounding (NASDAQ +1.18%, SP500 +0.50%) while DAX lagged (-1.15%) and gold pulled back slightly (-0.63%). The EQQQ buy executed as signaled, bringing portfolio to 44% allocation in equities. Portfolio drawdown remains near the -13.7% trigger threshold, but quant regime stays RISK-ON with all positions holding above stop levels.
+
+**HOLD — El portafolio está estabilizado tras la compra de EQQQ y todos los activos mantienen sus stops con margen suficiente para aguantar sin intervención el fin de semana.**
+
+---
+
 
 ### Day 56 — April 10, 2026 21:30 CET
 
