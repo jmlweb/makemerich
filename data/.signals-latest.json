@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-11T08:00:24.014Z",
-  "balance": 4313.53,
-  "totalReturn": -13.73,
+  "generatedAt": "2026-04-12T08:00:26.106Z",
+  "balance": 4304.97,
+  "totalReturn": -13.9,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2232.658,
+      "currentPrice": 2220.811,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 14.9,
+      "distancePct": 14.45,
       "status": "ACTIVE"
     },
     {
@@ -22,10 +22,19 @@
       "status": "ACTIVE"
     },
     {
+      "asset": "EQQQ",
+      "type": "STOP_LOSS",
+      "currentPrice": 524.6,
+      "triggerPrice": 508.7824,
+      "currency": "EUR",
+      "distancePct": 3.02,
+      "status": "NEAR"
+    },
+    {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -13.73,
+      "pnlPct": -13.9,
       "status": "WARNING",
-      "detail": "Portfolio down -13.7% from start"
+      "detail": "Portfolio down -13.9% from start"
     }
   ]
 }

@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,311.64 |
-| Total Return | -13.77% |
-| Days Active | 58 |
+| Current Balance | €4,304.97 |
+| Total Return | -13.90% |
+| Days Active | 59 |
 
 ---
 
 ## Daily Log
+
+### Day 58 — April 12, 2026 21:30 CET
+
+**Balance:** €4,304.97 | **Total Return:** -13.9%
+**Day P&L:** €8.56 (-0.2%) vs Day 57 (€4,313.53)
+
+**Prices at close:**
+- ETH: $2,220.81 / €1,894.35 (-2.83% 24h) — stop $1,900.00
+- 4GLD: €130.77 (-0.08% 24h) — stop €105.88
+- XEON: €148.87 (+0.02% 24h)
+- EQQQ: €524.60 (+0.88% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 6,816.89 (+0.50%)
+- NASDAQ: 22,902.89 (+1.18%)
+- GOLD: 4,787.40 (+0.54%)
+- IBEX35: 18,204.30 (+0.55%)
+- EUROSTOXX50: 5,926.11 (+0.51%)
+- DAX: 23,803.95 (-1.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,897.87 | 44.1% | +0.0% | +0.88% |
+| ETH | €1,249.02 | 29.0% | +8.2% | -2.83% |
+| 4GLD | €493.06 | 11.5% | +5.0% | -0.08% |
+| XEON | €451.24 | 10.5% | +6.0% | +0.02% |
+| CASH | €213.78 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.81% vs SMA50, VIX 19.23)
+- BUY: EQQQ, SXR8, VWCE
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (14.4% away)
+- 4GLD: stop EUR 105.88 (19.0% away)
+- EQQQ: stop EUR 508.78 (3.0% away)
+- Portfolio drawdown: -13.9%
+
+**Analysis:**
+Markets showed mixed signals on Day 58 — US equities gained (SP500 +0.50%, NASDAQ +1.18%) while DAX dropped -1.15%, and ETH continued its 24h decline of -2.83% though remains well above its stop. The quantitative model is RISK-ON and flags EQQQ/SXR8/VWCE as BUY candidates, but EQQQ's stop at €508.78 is only 3.0% away, warranting caution. Portfolio drawdown holds at -13.9% with no new entries triggered today.
+
+**HOLD — El régimen sigue RISK-ON y todas las posiciones están por encima de sus stops, pero la cercanía del stop de EQQQ (3%) y el drawdown acumulado aconsejan no ampliar exposición hasta confirmar dirección.**
+
+---
+
 
 ### Day 57 — April 11, 2026 21:30 CET
 
