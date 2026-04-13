@@ -2,14 +2,14 @@
   "date": "2026-04-13",
   "day": 59,
   "balance": {
-    "total": 4292.86,
+    "total": 4273.23,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -12.11,
-    "percentage": -0.28
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -14.14,
+  "totalReturn": -14.54,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2199.282,
-      "value": 1236.92,
-      "pnlPercent": 7.13,
-      "change24h": 0.3229995494939142
+      "currentPriceUSD": 2188.164,
+      "value": 1230.66,
+      "pnlPercent": 6.59,
+      "change24h": -0.1841619282025645
     },
     {
       "asset": "4GLD",
@@ -34,10 +34,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 130.77,
-      "value": 493.06,
-      "pnlPercent": 4.99,
-      "change24h": -0.743833017077791
+      "currentPriceEUR": 129.71,
+      "value": 489.06,
+      "pnlPercent": 4.13,
+      "change24h": -1.5483870967741875
     },
     {
       "asset": "XEON",
@@ -45,10 +45,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 148.87,
-      "value": 451.24,
+      "currentPriceEUR": 148.877,
+      "value": 451.26,
       "pnlPercent": 5.96,
-      "change24h": 0.028220496143199932
+      "change24h": 0.03292391216706977
     },
     {
       "asset": "EQQQ",
@@ -56,14 +56,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 524.6,
-      "value": 1897.87,
-      "pnlPercent": 0,
-      "change24h": 0.6137322593018882
+      "currentPriceEUR": 522,
+      "value": 1888.46,
+      "pnlPercent": -0.5,
+      "change24h": 0.11507479861910677
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-13T07:00:22.321Z",
+    "generatedAt": "2026-04-13T10:00:19.434Z",
     "eurUsd": 0.8547008547008548
   }
 }

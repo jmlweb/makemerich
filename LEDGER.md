@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,292.86 |
-| Total Return | -14.14% |
+| Current Balance | €4,273.23 |
+| Total Return | -14.54% |
 | Days Active | 60 |
 
 ---
 
 ## Daily Log
+
+### Day 59 — April 13, 2026 21:30 CET
+
+**Balance:** €4,273.23 | **Total Return:** -14.5%
+**Day P&L:** €31.74 (-0.7%) vs Day 58 (€4,304.97)
+
+**Prices at close:**
+- ETH: $2,188.16 / €1,873.07 (-0.18% 24h) — stop $1,900.00
+- 4GLD: €129.71 (-1.55% 24h) — stop €105.88
+- XEON: €148.88 (+0.03% 24h)
+- EQQQ: €522.00 (+0.12% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 6,816.89 (+0.50%)
+- NASDAQ: 22,902.89 (+1.18%)
+- GOLD: 4,735.60 (-1.08%)
+- IBEX35: 17,951.30 (-1.39%)
+- EUROSTOXX50: 5,869.98 (-0.95%)
+- DAX: 23,563.00 (-1.02%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,888.46 | 44.2% | -0.5% | +0.12% |
+| ETH | €1,230.66 | 28.8% | +6.6% | -0.18% |
+| 4GLD | €489.06 | 11.4% | +4.1% | -1.55% |
+| XEON | €451.26 | 10.6% | +6.0% | +0.03% |
+| CASH | €213.78 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.81% vs SMA50, VIX 21.21)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (13.2% away)
+- 4GLD: stop EUR 105.88 (18.4% away)
+- EQQQ: stop EUR 508.78 (2.5% away)
+- Portfolio drawdown: -14.5%
+
+**Analysis:**
+Mixed session with US tech outperforming (NASDAQ +1.18%) while European indices and gold sold off sharply; quant regime remains RISK-ON but EQQQ stop is only 2.5% away, warranting caution. ETH held relatively flat (-0.18%) while 4GLD gave back gains (-1.55%), consistent with the gold pullback. Portfolio drawdown at -14.5% is at the near-trigger threshold, no new entries justified.
+
+**HOLD — El régimen sigue en RISK-ON pero el stop de EQQQ está muy cerca (2.5%) y el drawdown del portfolio en -14.5% no permite añadir riesgo.**
+
+---
+
 
 ### Day 59 — April 13, 2026 21:30 CET
 
