@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,273.23 |
-| Total Return | -14.54% |
+| Current Balance | €4,282.91 |
+| Total Return | -14.34% |
 | Days Active | 60 |
 
 ---
 
 ## Daily Log
+
+### Day 59 — April 13, 2026 21:30 CET
+
+**Balance:** €4,282.91 | **Total Return:** -14.3%
+**Day P&L:** €22.06 (-0.5%) vs Day 58 (€4,304.97)
+
+**Prices at close:**
+- ETH: $2,197.76 / €1,881.28 (+0.25% 24h) — stop $1,900.00
+- 4GLD: €130.17 (-1.20% 24h) — stop €105.88
+- XEON: €148.88 (+0.04% 24h)
+- EQQQ: €522.70 (+0.25% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 6,801.77 (-0.34%)
+- NASDAQ: 22,902.89 (+0.35%)
+- GOLD: 4,758.80 (-0.60%)
+- IBEX35: 17,939.90 (-1.45%)
+- EUROSTOXX50: 5,866.23 (-1.01%)
+- DAX: 23,564.25 (-1.02%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,891.00 | 44.2% | -0.4% | +0.25% |
+| ETH | €1,236.06 | 28.9% | +7.0% | +0.25% |
+| 4GLD | €490.79 | 11.5% | +4.5% | -1.20% |
+| XEON | €451.28 | 10.5% | +6.0% | +0.04% |
+| CASH | €213.78 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.65% vs SMA50, VIX 21.21)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (13.6% away)
+- 4GLD: stop EUR 105.88 (18.7% away)
+- EQQQ: stop EUR 508.78 (2.7% away)
+- Portfolio drawdown: -14.3%
+
+**Analysis:**
+Markets showed divergence today with NASDAQ gaining +0.35% while European indices sold off sharply (IBEX35 -1.45%, EUROSTOXX50 -1.01%), suggesting rotation dynamics rather than broad risk-off. GOLD pulled back -0.60% weighing on 4GLD, while ETH held ground with a modest +0.25% gain. Quant regime remains RISK-ON with EQQQ approaching its stop at 2.7% distance — the key risk to monitor heading into the week.
+
+**HOLD — El régimen sigue en RISK-ON y ninguna posición ha tocado su stop, pero la cercanía de EQQQ al nivel €508.78 exige vigilancia activa esta semana.**
+
+---
+
 
 ### Day 59 — April 13, 2026 21:30 CET
 
