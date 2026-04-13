@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,304.97 |
-| Total Return | -13.90% |
-| Days Active | 59 |
+| Current Balance | €4,292.86 |
+| Total Return | -14.14% |
+| Days Active | 60 |
 
 ---
 
 ## Daily Log
+
+### Day 59 — April 13, 2026 21:30 CET
+
+**Balance:** €4,292.86 | **Total Return:** -14.1%
+**Day P&L:** €12.11 (-0.3%) vs Day 58 (€4,304.97)
+
+**Prices at close:**
+- ETH: $2,199.28 / €1,882.59 (+0.32% 24h) — stop $1,900.00
+- 4GLD: €130.77 (-0.74% 24h) — stop €105.88
+- XEON: €148.87 (+0.03% 24h)
+- EQQQ: €524.60 (+0.61% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 6,816.89 (+0.50%)
+- NASDAQ: 22,902.89 (+1.18%)
+- GOLD: 4,743.40 (-0.92%)
+- IBEX35: 18,204.30 (+0.00%)
+- EUROSTOXX50: 5,926.11 (+-0.00%)
+- DAX: 23,803.95 (-1.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,897.87 | 44.2% | +0.0% | +0.61% |
+| ETH | €1,236.92 | 28.8% | +7.1% | +0.32% |
+| 4GLD | €493.06 | 11.5% | +5.0% | -0.74% |
+| XEON | €451.24 | 10.5% | +6.0% | +0.03% |
+| CASH | €213.78 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.81% vs SMA50, VIX 19.23)
+- BUY: EQQQ, SXR8, VWCE
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (13.6% away)
+- 4GLD: stop EUR 105.88 (19.0% away)
+- EQQQ: stop EUR 508.78 (3.0% away)
+- Portfolio drawdown: -14.1%
+
+**Analysis:**
+Markets show a mixed picture with US equities rallying (NASDAQ +1.18%, SP500 +0.50%) while European indices and gold pulled back. Portfolio is down slightly on the day (-0.28%) but all positions remain well above their stop levels except EQQQ which is only 3% from its stop. Quant regime is RISK-ON with BUY signals on EQQQ/SXR8/VWCE, but portfolio drawdown of -14.1% warrants caution before adding exposure.
+
+**HOLD — El mercado US sigue fuerte pero el drawdown acumulado del -14.1% y la proximidad del stop de EQQQ (3%) aconsejan no añadir posiciones hasta confirmar estabilización.**
+
+---
+
 
 ### Day 58 — April 12, 2026 21:30 CET
 
