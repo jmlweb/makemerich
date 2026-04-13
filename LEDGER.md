@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,282.91 |
-| Total Return | -14.34% |
+| Current Balance | €4,295.66 |
+| Total Return | -14.09% |
 | Days Active | 60 |
 
 ---
 
 ## Daily Log
+
+### Day 59 — April 13, 2026 21:30 CET
+
+**Balance:** €4,295.66 | **Total Return:** -14.1%
+**Day P&L:** €9.31 (-0.2%) vs Day 58 (€4,304.97)
+
+**Prices at close:**
+- ETH: $2,208.88 / €1,890.80 (+0.76% 24h) — stop $1,900.00
+- 4GLD: €129.40 (-1.78% 24h) — stop €105.88
+- XEON: €148.88 (+0.03% 24h)
+- EQQQ: €525.30 (+0.75% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 6,818.72 (-0.09%)
+- NASDAQ: 22,957.71 (+0.59%)
+- GOLD: 4,737.40 (-1.04%)
+- IBEX35: 18,023.80 (-0.99%)
+- EUROSTOXX50: 5,905.02 (-0.36%)
+- DAX: 23,742.44 (-0.27%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,900.40 | 44.2% | +0.1% | +0.75% |
+| ETH | €1,242.32 | 28.9% | +7.6% | +0.76% |
+| 4GLD | €487.89 | 11.4% | +3.9% | -1.78% |
+| XEON | €451.27 | 10.5% | +6.0% | +0.03% |
+| CASH | €213.78 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.65% vs SMA50, VIX 21.21)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (14.0% away)
+- 4GLD: stop EUR 105.88 (18.2% away)
+- EQQQ: stop EUR 508.78 (3.1% away)
+- Portfolio drawdown: -14.1%
+
+**Analysis:**
+Mixed session with NASDAQ outperforming (+0.59%) while European indices and gold pulled back; risk-on regime holds with SP500 above SMA50 and VIX at 21.21. ETH and EQQQ recovered slightly (+0.76%, +0.75%) but gold weakness dragged 4GLD down -1.78%. Portfolio drawdown remains at -14.1%, and EQQQ stop is now only 3.1% away — the tightest alert in the book.
+
+**HOLD — Los stops siguen alejados excepto EQQQ, el régimen cuantitativo es RISK-ON y no hay señal de entrada ni salida que justifique movimiento hoy.**
+
+---
+
 
 ### Day 59 — April 13, 2026 21:30 CET
 
