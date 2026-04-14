@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,314.02 |
-| Total Return | -13.72% |
-| Days Active | 60 |
+| Current Balance | €4,388.26 |
+| Total Return | -12.23% |
+| Days Active | 61 |
 
 ---
 
 ## Daily Log
+
+### Day 60 — April 14, 2026 21:30 CET
+
+**Balance:** €4,388.26 | **Total Return:** -12.2%
+**Day P&L:** +€74.24 (+1.7%) vs Day 59 (€4,314.02)
+
+**Prices at close:**
+- ETH: $2,373.54 / €2,022.26 (+0.14% 24h) — stop $1,900.00
+- 4GLD: €129.40 (-1.05% 24h) — stop €105.88
+- XEON: €148.88 (+0.01% 24h)
+- EQQQ: €525.30 (+0.13% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 6,886.24 (+0.90%)
+- NASDAQ: 23,183.74 (+1.58%)
+- GOLD: 4,795.60 (+1.12%)
+- IBEX35: 18,023.80 (+0.00%)
+- EUROSTOXX50: 5,905.02 (+0.00%)
+- DAX: 23,742.44 (-0.26%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,900.40 | 43.3% | +0.1% | +0.13% |
+| ETH | €1,334.92 | 30.4% | +15.6% | +0.14% |
+| 4GLD | €487.89 | 11.1% | +3.9% | -1.05% |
+| XEON | €451.27 | 10.3% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.86% vs SMA50, VIX 19.12)
+- BUY: EQQQ, SXR8, VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, BTC, SOL, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.9% away)
+- 4GLD: stop EUR 105.88 (18.2% away)
+- EQQQ: stop EUR 508.78 (3.1% away)
+- Portfolio drawdown: -12.2%
+
+**Analysis:**
+Day 60 closes with a modest +1.7% daily gain, recovering slightly from the -12.2% total drawdown. Markets are RISK-ON with SP500 and NASDAQ both advancing, and GOLD hitting new highs at $4,795; however, EQQQ's stop is now just 3.1% away, warranting close attention. Quant signals flip EQQQ to BUY but the portfolio drawdown trigger remains near, and no position change is warranted without clearing the drawdown threshold.
+
+**HOLD — El régimen sigue en RISK-ON y todos los activos están por encima de sus stops, pero el drawdown acumulado del -12.2% y la cercanía del stop de EQQQ aconsejan mantener sin añadir exposición.**
+
+---
+
 
 ### Day 59 — April 13, 2026 21:30 CET
 
