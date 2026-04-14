@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,388.26 |
-| Total Return | -12.23% |
+| Current Balance | €4,410.74 |
+| Total Return | -11.79% |
 | Days Active | 61 |
 
 ---
 
 ## Daily Log
+
+### Day 60 — April 14, 2026 21:30 CET
+
+**Balance:** €4,410.74 | **Total Return:** -11.8%
+**Day P&L:** +€96.72 (+2.2%) vs Day 59 (€4,314.02)
+
+**Prices at close:**
+- ETH: $2,388.19 / €2,034.74 (+0.74% 24h) — stop $1,900.00
+- 4GLD: €130.29 (-0.37% 24h) — stop €105.88
+- XEON: €148.89 (+0.01% 24h)
+- EQQQ: €528.30 (+0.71% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 6,886.24 (+0.90%)
+- NASDAQ: 23,183.74 (+1.58%)
+- GOLD: 4,799.30 (+1.20%)
+- IBEX35: 18,137.80 (+0.63%)
+- EUROSTOXX50: 5,961.49 (+0.96%)
+- DAX: 23,966.08 (+0.68%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,911.26 | 43.3% | +0.7% | +0.71% |
+| ETH | €1,343.16 | 30.5% | +16.3% | +0.74% |
+| 4GLD | €491.25 | 11.1% | +4.6% | -0.37% |
+| XEON | €451.30 | 10.2% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.86% vs SMA50, VIX 18.62)
+- BUY: 4GLD
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.4% away)
+- 4GLD: stop EUR 105.88 (18.7% away)
+- EQQQ: stop EUR 508.78 (3.7% away)
+- Portfolio drawdown: -11.8%
+
+**Analysis:**
+Markets staged a broad risk-on recovery with SP500 +0.90% and NASDAQ +1.58%, supporting ETH's continued outperformance (+16.3% from entry) and EQQQ's modest gain. GOLD's 1.20% advance validates the 4GLD position despite today's minor dip. The EQQQ stop at 508.78 (3.7% away) is the nearest risk trigger and warrants monitoring, but no breach occurred.
+
+**HOLD — Todos los activos mantienen su tendencia positiva con el régimen RISK-ON intacto y sin señales de venta activas.**
+
+---
+
 
 ### Day 60 — April 14, 2026 21:30 CET
 
