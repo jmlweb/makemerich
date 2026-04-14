@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,405.68 |
-| Total Return | -11.89% |
+| Current Balance | €4,416.18 |
+| Total Return | -11.68% |
 | Days Active | 61 |
 
 ---
 
 ## Daily Log
+
+### Day 60 — April 14, 2026 21:30 CET
+
+**Balance:** €4,416.18 | **Total Return:** -11.7%
+**Day P&L:** +€102.16 (+2.4%) vs Day 59 (€4,314.02)
+
+**Prices at close:**
+- ETH: $2,365.90 / €2,015.75 (-0.20% 24h) — stop $1,900.00
+- 4GLD: €131.12 (+0.27% 24h) — stop €105.88
+- XEON: €148.89 (+0.02% 24h)
+- EQQQ: €532.40 (+1.49% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 6,952.92 (+2.00%)
+- NASDAQ: 23,547.28 (+2.81%)
+- GOLD: 4,831.50 (+1.88%)
+- IBEX35: 18,286.10 (+1.46%)
+- EUROSTOXX50: 5,984.51 (+1.35%)
+- DAX: 24,044.22 (+1.01%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,926.09 | 43.6% | +1.5% | +1.49% |
+| ETH | €1,330.62 | 30.1% | +15.2% | -0.20% |
+| 4GLD | €494.37 | 11.2% | +5.3% | +0.27% |
+| XEON | €451.31 | 10.2% | +6.0% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.27% vs SMA50, VIX 18.62)
+- BUY: 4GLD
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.7% away)
+- 4GLD: stop EUR 105.88 (19.3% away)
+- EQQQ: stop EUR 508.78 (4.4% away)
+- Portfolio drawdown: -11.7%
+
+**Analysis:**
+Global risk-on sentiment dominated Day 60, with SP500 +2.00%, NASDAQ +2.81%, and GOLD +1.88% confirming broad market strength. Portfolio recovered +€102 on the day driven by EQQQ (+1.49%) and continued ETH/4GLD gains vs entry. EQQQ stop-loss tightening to 4.4% away warrants monitoring, but all positions remain comfortably above triggers.
+
+**HOLD — El mercado sigue en tendencia alcista y todas las posiciones están por encima de sus stops, sin señal clara de entrada adicional con el portfolio aún en drawdown del -11.7%.**
+
+---
+
 
 ### Day 60 — April 14, 2026 21:30 CET
 
