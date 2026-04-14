@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,416.18 |
-| Total Return | -11.68% |
+| Current Balance | €4,387.99 |
+| Total Return | -12.24% |
 | Days Active | 61 |
 
 ---
 
 ## Daily Log
+
+### Day 60 — April 14, 2026 21:30 CET
+
+**Balance:** €4,387.99 | **Total Return:** -12.2%
+**Day P&L:** +€73.97 (+1.7%) vs Day 59 (€4,314.02)
+
+**Prices at close:**
+- ETH: $2,315.78 / €1,973.04 (-2.32% 24h) — stop $1,900.00
+- 4GLD: €131.12 (+0.27% 24h) — stop €105.88
+- XEON: €148.89 (+0.02% 24h)
+- EQQQ: €532.40 (+1.49% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 6,966.52 (+2.19%)
+- NASDAQ: 23,618.56 (+3.12%)
+- GOLD: 4,865.00 (+2.59%)
+- IBEX35: 18,286.10 (+1.46%)
+- EUROSTOXX50: 5,984.51 (+1.35%)
+- DAX: 24,044.22 (+1.01%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,926.09 | 43.9% | +1.5% | +1.49% |
+| ETH | €1,302.44 | 29.7% | +12.8% | -2.32% |
+| 4GLD | €494.37 | 11.3% | +5.3% | +0.27% |
+| XEON | €451.31 | 10.3% | +6.0% | +0.02% |
+| CASH | €213.78 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.27% vs SMA50, VIX 18.62)
+- BUY: 4GLD
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.9% away)
+- 4GLD: stop EUR 105.88 (19.3% away)
+- EQQQ: stop EUR 508.78 (4.4% away)
+- Portfolio drawdown: -12.2%
+
+**Analysis:**
+Broad risk-on rally across equities (NASDAQ +3.12%, SP500 +2.19%) and gold (+2.59%) lifted the portfolio +1.7% on the day, with EQQQ and 4GLD leading gains; ETH was the sole laggard at -2.32% despite the bullish macro backdrop, likely digesting recent outperformance. All stop-losses remain well clear except EQQQ's trailing stop at 4.4% distance, warranting monitoring. Quant model flags a 4GLD BUY signal in a confirmed RISK-ON regime, but portfolio drawdown of -12.2% from start counsels caution on adding exposure.
+
+**HOLD — el mercado acompaña pero el drawdown acumulado (-12.2%) no justifica ampliar posición hasta recuperar más terreno.**
+
+---
+
 
 ### Day 60 — April 14, 2026 21:30 CET
 
