@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,408.41 |
-| Total Return | -11.83% |
+| Current Balance | €4,427.82 |
+| Total Return | -11.44% |
 | Days Active | 62 |
 
 ---
 
 ## Daily Log
+
+### Day 61 — April 15, 2026 21:30 CET
+
+**Balance:** €4,427.82 | **Total Return:** -11.4%
+**Day P&L:** +€39.83 (+0.9%) vs Day 60 (€4,387.99)
+
+**Prices at close:**
+- ETH: $2,366.37 / €2,006.68 (+1.83% 24h) — stop $1,900.00
+- 4GLD: €130.80 (+1.08% 24h) — stop €105.88
+- XEON: €148.89 (+0.01% 24h)
+- EQQQ: €539.00 (+2.61% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 7,023.38 (+1.99%)
+- NASDAQ: 23,982.58 (+3.45%)
+- GOLD: 4,823.30 (-0.04%)
+- IBEX35: 18,185.80 (-0.55%)
+- EUROSTOXX50: 5,940.34 (-0.74%)
+- DAX: 24,066.70 (+1.37%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,949.97 | 44.0% | +2.7% | +2.61% |
+| ETH | €1,319.61 | 29.8% | +15.3% | +1.83% |
+| 4GLD | €493.17 | 11.1% | +5.0% | +1.08% |
+| XEON | €451.30 | 10.2% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.19% vs SMA50, VIX 18.3)
+- BUY: 4GLD, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.7% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- EQQQ: stop EUR 508.78 (5.6% away)
+- Portfolio drawdown: -11.4%
+
+**Analysis:**
+Strong recovery day driven by US tech (NASDAQ +3.45%) lifting EQQQ and ETH, while European indices lagged. Gold flat as risk-on sentiment reduced safe-haven demand. Portfolio gains +0.9% on the day but remains -11.4% from start; all stop-losses remain well-buffered except EQQQ at 5.6% away.
+
+**HOLD — El mercado tech muestra fortaleza renovada pero el drawdown acumulado y la proximidad del stop de EQQQ aconsejan mantener sin nuevas entradas.**
+
+---
+
 
 ### Day 61 — April 15, 2026 21:30 CET
 
