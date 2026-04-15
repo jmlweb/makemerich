@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,394.96 |
-| Total Return | -12.10% |
+| Current Balance | €4,408.41 |
+| Total Return | -11.83% |
 | Days Active | 62 |
 
 ---
 
 ## Daily Log
+
+### Day 61 — April 15, 2026 21:30 CET
+
+**Balance:** €4,408.41 | **Total Return:** -11.8%
+**Day P&L:** +€20.42 (+0.5%) vs Day 60 (€4,387.99)
+
+**Prices at close:**
+- ETH: $2,331.55 / €1,977.15 (+0.40% 24h) — stop $1,900.00
+- 4GLD: €130.80 (+1.08% 24h) — stop €105.88
+- XEON: €148.89 (+0.01% 24h)
+- EQQQ: €539.00 (+2.61% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 6,993.24 (+1.55%)
+- NASDAQ: 23,876.81 (+2.99%)
+- GOLD: 4,826.20 (+0.02%)
+- IBEX35: 18,185.80 (-0.55%)
+- EUROSTOXX50: 5,940.34 (-0.74%)
+- DAX: 24,066.70 (+1.37%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,949.97 | 44.2% | +2.7% | +2.61% |
+| ETH | €1,300.19 | 29.5% | +13.6% | +0.40% |
+| 4GLD | €493.17 | 11.2% | +5.0% | +1.08% |
+| XEON | €451.30 | 10.2% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.19% vs SMA50, VIX 18.3)
+- BUY: 4GLD, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.5% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- EQQQ: stop EUR 508.78 (5.6% away)
+- Portfolio drawdown: -11.8%
+
+**Analysis:**
+Markets show a bifurcated session — US tech (NASDAQ +2.99%, SP500 +1.55%) and DAX (+1.37%) rallied strongly while European indices (EUROSTOXX50 -0.74%, IBEX35 -0.55%) lagged. All portfolio positions are well above their stops, with EQQQ delivering a strong 2.61% daily gain reflecting the NASDAQ surge. Quant signals remain RISK-ON with 4GLD flagged as a BUY, but portfolio drawdown at -11.8% keeps the near-trigger active.
+
+**HOLD — Las posiciones están rindiendo bien hoy y todas se mantienen lejos de sus stops, por lo que no hay motivo para actuar.**
+
+---
+
 
 ### Day 61 — April 15, 2026 21:30 CET
 
