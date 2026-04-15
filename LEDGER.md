@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,390.37 |
-| Total Return | -12.19% |
+| Current Balance | €4,394.96 |
+| Total Return | -12.10% |
 | Days Active | 62 |
 
 ---
 
 ## Daily Log
+
+### Day 61 — April 15, 2026 21:30 CET
+
+**Balance:** €4,394.96 | **Total Return:** -12.1%
+**Day P&L:** +€6.97 (+0.2%) vs Day 60 (€4,387.99)
+
+**Prices at close:**
+- ETH: $2,323.59 / €1,970.40 (+0.38% 24h) — stop $1,900.00
+- 4GLD: €131.38 (+1.53% 24h) — stop €105.88
+- XEON: €148.90 (+0.01% 24h)
+- EQQQ: €535.90 (+1.94% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 6,978.69 (+1.34%)
+- NASDAQ: 23,685.43 (+2.16%)
+- GOLD: 4,842.20 (+0.36%)
+- IBEX35: 18,194.40 (-0.50%)
+- EUROSTOXX50: 5,960.74 (-0.40%)
+- DAX: 24,061.67 (+1.34%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,938.75 | 44.1% | +2.1% | +1.94% |
+| ETH | €1,295.75 | 29.5% | +13.2% | +0.38% |
+| 4GLD | €495.36 | 11.3% | +5.5% | +1.53% |
+| XEON | €451.32 | 10.3% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.19% vs SMA50, VIX 18.3)
+- BUY: 4GLD, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.2% away)
+- 4GLD: stop EUR 105.88 (19.4% away)
+- EQQQ: stop EUR 508.78 (5.1% away)
+- Portfolio drawdown: -12.1%
+
+**Analysis:**
+US markets closed strongly (S{{ANALYSIS}}P500 +1.34%, NASDAQ +2.16%) while European indices lagged (IBEX35 -0.50%, EUROSTOXX50 -0.40%), reflecting continued divergence. Quant signals upgraded 4GLD to BUY alongside DTE, consistent with gold's ongoing strength (+0.36% to $4,842). Portfolio recovered slightly (+€6.97) but remains in drawdown territory at -12.1%, with EQQQ stop at 5.1% distance warranting close monitoring.
+
+**HOLD — El portafolio se recupera levemente con señales positivas en 4GLD, pero la proximidad del stop de EQQQ (5.1%) y el drawdown general aconsejan mantener sin nuevas entradas.**
+
+---
+
 
 ### Day 61 — April 15, 2026 21:30 CET
 
