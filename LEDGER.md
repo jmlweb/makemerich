@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,387.99 |
-| Total Return | -12.24% |
-| Days Active | 61 |
+| Current Balance | €4,379.02 |
+| Total Return | -12.42% |
+| Days Active | 62 |
 
 ---
 
 ## Daily Log
+
+### Day 61 — April 15, 2026 21:30 CET
+
+**Balance:** €4,379.02 | **Total Return:** -12.4%
+**Day P&L:** €8.97 (-0.2%) vs Day 60 (€4,387.99)
+
+**Prices at close:**
+- ETH: $2,319.49 / €1,966.93 (-0.22% 24h) — stop $1,900.00
+- 4GLD: €131.12 (+1.33% 24h) — stop €105.88
+- XEON: €148.89 (+0.01% 24h)
+- EQQQ: €532.40 (+1.35% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 6,967.38 (+2.21%)
+- NASDAQ: 23,639.08 (+3.21%)
+- GOLD: 4,843.50 (+0.38%)
+- IBEX35: 18,286.10 (+-0.00%)
+- EUROSTOXX50: 5,984.51 (+-0.00%)
+- DAX: 24,044.22 (+1.27%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,926.09 | 44.0% | +1.5% | +1.35% |
+| ETH | €1,293.47 | 29.5% | +13.0% | -0.22% |
+| 4GLD | €494.37 | 11.3% | +5.3% | +1.33% |
+| XEON | €451.31 | 10.3% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.05% vs SMA50, VIX 18.36)
+- BUY: 4GLD, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.1% away)
+- 4GLD: stop EUR 105.88 (19.3% away)
+- EQQQ: stop EUR 508.78 (4.4% away)
+- Portfolio drawdown: -12.4%
+
+**Analysis:**
+Markets showed strong risk-on momentum with SP500 +2.21% and NASDAQ +3.21%, but portfolio remains down -12.4% overall with ETH dragging relative to indices. Quant signals upgraded 4GLD to BUY alongside DTE, while EQQQ stop at 4.4% away warrants attention given day's mild +1.35% gain. No stop levels were breached today; all positions stable.
+
+**HOLD — El mercado muestra impulso positivo pero el drawdown del portfolio y la proximidad del stop de EQQQ aconsejan no añadir exposición hasta confirmar continuidad.**
+
+---
+
 
 ### Day 60 — April 14, 2026 21:30 CET
 
