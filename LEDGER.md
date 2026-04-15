@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,379.02 |
-| Total Return | -12.42% |
+| Current Balance | €4,390.37 |
+| Total Return | -12.19% |
 | Days Active | 62 |
 
 ---
 
 ## Daily Log
+
+### Day 61 — April 15, 2026 21:30 CET
+
+**Balance:** €4,390.37 | **Total Return:** -12.2%
+**Day P&L:** +€2.38 (+0.1%) vs Day 60 (€4,387.99)
+
+**Prices at close:**
+- ETH: $2,319.21 / €1,966.69 (-0.13% 24h) — stop $1,900.00
+- 4GLD: €130.91 (+1.17% 24h) — stop €105.88
+- XEON: €148.89 (+0.01% 24h)
+- EQQQ: €535.80 (+2.00% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 6,967.38 (+2.21%)
+- NASDAQ: 23,639.08 (+3.21%)
+- GOLD: 4,818.40 (-0.14%)
+- IBEX35: 18,182.20 (-0.57%)
+- EUROSTOXX50: 5,966.08 (-0.31%)
+- DAX: 24,050.55 (+1.30%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,938.39 | 44.2% | +2.1% | +2.00% |
+| ETH | €1,293.31 | 29.5% | +13.0% | -0.13% |
+| 4GLD | €493.58 | 11.2% | +5.1% | +1.17% |
+| XEON | €451.31 | 10.3% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.05% vs SMA50, VIX 18.3)
+- BUY: 4GLD, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.1% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- EQQQ: stop EUR 508.78 (5.0% away)
+- Portfolio drawdown: -12.2%
+
+**Analysis:**
+US markets surged strongly (SP500 +2.21%, NASDAQ +3.21%) while European indices showed divergence with DAX gaining +1.30% but IBEX35 and EUROSTOXX50 slightly negative, confirming a risk-on regime. Portfolio gained only +€2.38 on the day as EQQQ's +2.00% move was partially offset by ETH weakness and small position sizes. Quant signals flag BUY for 4GLD (already held) and DTE, but all current stops remain comfortably distant except EQQQ at 5.0%.
+
+**HOLD — todas las posiciones están dentro de límites y el régimen RISK-ON soporta mantener sin cambios hasta que haya una señal de entrada clara en DTE o un deterioro del mercado.**
+
+---
+
 
 ### Day 61 — April 15, 2026 21:30 CET
 
