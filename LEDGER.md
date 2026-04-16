@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,427.82 |
-| Total Return | -11.44% |
-| Days Active | 62 |
+| Current Balance | €4,421.66 |
+| Total Return | -11.57% |
+| Days Active | 63 |
 
 ---
 
 ## Daily Log
+
+### Day 62 — April 16, 2026 21:30 CET
+
+**Balance:** €4,421.66 | **Total Return:** -11.6%
+**Day P&L:** €6.16 (-0.1%) vs Day 61 (€4,427.82)
+
+**Prices at close:**
+- ETH: $2,355.32 / €1,997.31 (-0.11% 24h) — stop $1,900.00
+- 4GLD: €130.80 (-0.24% 24h) — stop €105.88
+- XEON: €148.89 (+-0.00% 24h)
+- EQQQ: €539.00 (+1.24% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 7,022.95 (+1.99%)
+- NASDAQ: 24,016.02 (+3.59%)
+- GOLD: 4,850.10 (+1.04%)
+- IBEX35: 18,185.80 (+0.00%)
+- EUROSTOXX50: 5,940.34 (+-0.00%)
+- DAX: 24,066.70 (+0.09%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,949.97 | 44.1% | +2.7% | +1.24% |
+| ETH | €1,313.45 | 29.7% | +14.7% | -0.11% |
+| 4GLD | €493.17 | 11.2% | +5.0% | -0.24% |
+| XEON | €451.30 | 10.2% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.86% vs SMA50, VIX 18.17)
+- BUY: 4GLD, ASML, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.3% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- EQQQ: stop EUR 508.78 (5.6% away)
+- Portfolio drawdown: -11.6%
+
+**Analysis:**
+Markets showed strong risk-on momentum with NASDAQ +3.59% and SP500 +1.99%, driven by tech recovery, while European indices were flat. ETH slipped slightly (-0.11%) and 4GLD retreated (-0.24%) despite gold at all-time highs ($4,850), suggesting crypto and leveraged gold are lagging the broader rally. Portfolio remains in drawdown (-11.6%) but all stops are well clear.
+
+**HOLD — Las señales cuantitativas confirman régimen RISK-ON y ninguna posición ha tocado su stop, por lo que se mantiene sin cambios.**
+
+---
+
 
 ### Day 61 — April 15, 2026 21:30 CET
 
