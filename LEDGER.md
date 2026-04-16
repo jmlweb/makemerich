@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,438.95 |
-| Total Return | -11.22% |
+| Current Balance | €4,442.82 |
+| Total Return | -11.14% |
 | Days Active | 63 |
 
 ---
 
 ## Daily Log
+
+### Day 62 — April 16, 2026 21:30 CET
+
+**Balance:** €4,442.82 | **Total Return:** -11.1%
+**Day P&L:** +€15.00 (+0.3%) vs Day 61 (€4,427.82)
+
+**Prices at close:**
+- ETH: $2,350.06 / €1,992.85 (-0.41% 24h) — stop $1,900.00
+- 4GLD: €131.52 (+0.31% 24h) — stop €105.88
+- XEON: €148.90 (+0.00% 24h)
+- EQQQ: €544.90 (+2.35% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 7,039.06 (+1.03%)
+- NASDAQ: 24,016.02 (+1.59%)
+- GOLD: 4,840.60 (+0.85%)
+- IBEX35: 18,230.90 (+0.25%)
+- EUROSTOXX50: 5,970.61 (+0.51%)
+- DAX: 24,235.55 (+0.80%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,971.31 | 44.4% | +3.9% | +2.35% |
+| ETH | €1,310.51 | 29.5% | +14.5% | -0.41% |
+| 4GLD | €495.88 | 11.2% | +5.6% | +0.31% |
+| XEON | €451.33 | 10.2% | +6.0% | +0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.05% vs SMA50, VIX 18.11)
+- BUY: 4GLD, ASML, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.1% away)
+- 4GLD: stop EUR 105.88 (19.5% away)
+- EQQQ: stop EUR 508.78 (6.6% away)
+- Portfolio drawdown: -11.1%
+
+**Analysis:**
+Markets closed broadly positive with SP500 +1.03% and NASDAQ +1.59%, maintaining a RISK-ON regime. Portfolio gained +€15 on the day driven by EQQQ's strong +2.35% session; ETH remains flat to slightly negative. Quant signals now flag 4GLD and ASML as BUY opportunities, but portfolio drawdown at -11.1% keeps risk discipline front of mind.
+
+**HOLD — El régimen sigue en RISK-ON y las posiciones actuales están dentro de sus stop-loss con margen suficiente, por lo que no hay motivo para actuar hoy.**
+
+---
+
 
 ### Day 62 — April 16, 2026 21:30 CET
 
