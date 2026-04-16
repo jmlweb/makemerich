@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,442.77 |
-| Total Return | -11.14% |
+| Current Balance | €4,446.11 |
+| Total Return | -11.08% |
 | Days Active | 63 |
 
 ---
 
 ## Daily Log
+
+### Day 62 — April 16, 2026 21:30 CET
+
+**Balance:** €4,446.11 | **Total Return:** -11.1%
+**Day P&L:** +€18.29 (+0.4%) vs Day 61 (€4,427.82)
+
+**Prices at close:**
+- ETH: $2,346.09 / €1,989.48 (-0.57% 24h) — stop $1,900.00
+- 4GLD: €131.15 (+0.02% 24h) — stop €105.88
+- XEON: €148.91 (+0.01% 24h)
+- EQQQ: €546.80 (+2.70% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 7,033.41 (+0.95%)
+- NASDAQ: 24,056.03 (+1.76%)
+- GOLD: 4,814.40 (+0.30%)
+- IBEX35: 18,089.50 (-0.53%)
+- EUROSTOXX50: 5,933.28 (-0.12%)
+- DAX: 24,154.47 (+0.46%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,978.18 | 44.5% | +4.2% | +2.70% |
+| ETH | €1,308.30 | 29.4% | +14.3% | -0.57% |
+| 4GLD | €494.49 | 11.1% | +5.3% | +0.02% |
+| XEON | €451.36 | 10.2% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.05% vs SMA50, VIX 18.11)
+- BUY: 4GLD, ASML, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.0% away)
+- 4GLD: stop EUR 105.88 (19.3% away)
+- EQQQ: stop EUR 508.78 (7.0% away)
+- Portfolio drawdown: -11.1%
+
+**Analysis:**
+US markets closed strongly with NASDAQ +1.76% and SP500 +0.95%, confirming the RISK-ON regime (SP500 +4.05% vs SMA50). EQQQ led the portfolio with +2.70% today, driving the +€18.29 day P{{ANALYSIS}}L. ETH retraced slightly (-0.57%) but remains well above its stop at $1,900 (19% away); quant signals flag 4GLD and ASML as actionable BUY candidates.
+
+**HOLD — El portafolio avanza con solidez y todos los activos mantienen margen holgado sobre sus stops; sin catalizador urgente para operar en el cierre.**
+
+---
+
 
 ### Day 62 — April 16, 2026 21:30 CET
 
