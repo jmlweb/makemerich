@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,421.66 |
-| Total Return | -11.57% |
+| Current Balance | €4,438.95 |
+| Total Return | -11.22% |
 | Days Active | 63 |
 
 ---
 
 ## Daily Log
+
+### Day 62 — April 16, 2026 21:30 CET
+
+**Balance:** €4,438.95 | **Total Return:** -11.2%
+**Day P&L:** +€11.13 (+0.3%) vs Day 61 (€4,427.82)
+
+**Prices at close:**
+- ETH: $2,338.74 / €1,983.25 (-0.89% 24h) — stop $1,900.00
+- 4GLD: €131.40 (+0.21% 24h) — stop €105.88
+- XEON: €148.90 (+0.00% 24h)
+- EQQQ: €545.70 (+2.50% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 7,022.95 (+1.99%)
+- NASDAQ: 24,016.02 (+3.59%)
+- GOLD: 4,835.00 (+0.73%)
+- IBEX35: 18,181.50 (-0.02%)
+- EUROSTOXX50: 5,960.93 (+0.35%)
+- DAX: 24,147.09 (+0.43%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,974.20 | 44.5% | +4.0% | +2.50% |
+| ETH | €1,304.20 | 29.4% | +13.9% | -0.89% |
+| 4GLD | €495.43 | 11.2% | +5.5% | +0.21% |
+| XEON | €451.33 | 10.2% | +6.0% | +0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.86% vs SMA50, VIX 18.11)
+- BUY: 4GLD, ASML, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.8% away)
+- 4GLD: stop EUR 105.88 (19.4% away)
+- EQQQ: stop EUR 508.78 (6.8% away)
+- Portfolio drawdown: -11.2%
+
+**Analysis:**
+US equities staged a strong recovery with NASDAQ +3.59% and SP500 +1.99%, confirming the RISK-ON regime and lifting EQQQ +2.50% to lead the portfolio. ETH remains under pressure (-0.89%) but all stops are comfortably distant (6.8–19.4%). Quant signals flag 4GLD as a BUY candidate alongside ASML and DTE, though portfolio drawdown at -11.2% warrants caution before adding exposure.
+
+**HOLD — El rebote del mercado es prometedor pero el drawdown del -11.2% en cartera aconseja no añadir posiciones hasta confirmar continuidad alcista.**
+
+---
+
 
 ### Day 62 — April 16, 2026 21:30 CET
 
