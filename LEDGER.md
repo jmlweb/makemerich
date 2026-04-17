@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,446.11 |
-| Total Return | -11.08% |
-| Days Active | 63 |
+| Current Balance | €4,438.88 |
+| Total Return | -11.22% |
+| Days Active | 64 |
 
 ---
 
 ## Daily Log
+
+### Day 63 — April 17, 2026 21:30 CET
+
+**Balance:** €4,438.88 | **Total Return:** -11.2%
+**Day P&L:** €7.23 (-0.2%) vs Day 62 (€4,446.11)
+
+**Prices at close:**
+- ETH: $2,333.13 / €1,980.83 (-0.70% 24h) — stop $1,900.00
+- 4GLD: €131.15 (+0.27% 24h) — stop €105.88
+- XEON: €148.91 (+0.01% 24h)
+- EQQQ: €546.80 (+1.45% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,041.28 (+1.06%)
+- NASDAQ: 24,102.70 (+1.96%)
+- GOLD: 4,805.90 (+0.43%)
+- IBEX35: 18,089.50 (+0.00%)
+- EUROSTOXX50: 5,933.28 (+-0.00%)
+- DAX: 24,154.47 (+0.36%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,978.18 | 44.6% | +4.2% | +1.45% |
+| ETH | €1,301.07 | 29.3% | +13.7% | -0.70% |
+| 4GLD | €494.49 | 11.1% | +5.3% | +0.27% |
+| XEON | €451.36 | 10.2% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.09% vs SMA50, VIX 17.94)
+- BUY: 4GLD, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.6% away)
+- 4GLD: stop EUR 105.88 (19.3% away)
+- EQQQ: stop EUR 508.78 (7.0% away)
+- Portfolio drawdown: -11.2%
+
+**Analysis:**
+Markets showed broad risk-on momentum with SP500 +1.06% and NASDAQ +1.96%, though ETH lagged with a -0.70% daily loss. Portfolio remains in drawdown at -11.2% but all positions are comfortably above stop levels, with EQQQ as the closest concern at 7.0% buffer. Quant signals flag 4GLD as a BUY opportunity alongside ASML, while EQQQ continues recovering on tech tailwinds.
+
+**HOLD — El portafolio está estable con todas las posiciones por encima de sus stops y el régimen RISK-ON intacto, por lo que no hay urgencia de actuar hoy.**
+
+---
+
 
 ### Day 62 — April 16, 2026 21:30 CET
 
