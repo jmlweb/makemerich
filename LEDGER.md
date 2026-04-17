@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,438.88 |
-| Total Return | -11.22% |
+| Current Balance | €4,449.38 |
+| Total Return | -11.01% |
 | Days Active | 64 |
 
 ---
 
 ## Daily Log
+
+### Day 63 — April 17, 2026 21:30 CET
+
+**Balance:** €4,449.38 | **Total Return:** -11.0%
+**Day P&L:** +€3.27 (+0.1%) vs Day 62 (€4,446.11)
+
+**Prices at close:**
+- ETH: $2,358.10 / €2,002.03 (+0.49% 24h) — stop $1,900.00
+- 4GLD: €130.72 (-0.06% 24h) — stop €105.88
+- XEON: €148.91 (+0.01% 24h)
+- EQQQ: €546.30 (+1.35% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,041.28 (+1.06%)
+- NASDAQ: 24,102.70 (+1.96%)
+- GOLD: 4,814.30 (+0.60%)
+- IBEX35: 18,173.80 (+0.47%)
+- EUROSTOXX50: 5,965.17 (+0.54%)
+- DAX: 24,325.75 (+1.08%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,976.38 | 44.4% | +4.1% | +1.35% |
+| ETH | €1,315.00 | 29.6% | +14.9% | +0.49% |
+| 4GLD | €492.87 | 11.1% | +5.0% | -0.06% |
+| XEON | €451.36 | 10.1% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.09% vs SMA50, VIX 18.13)
+- BUY: 4GLD, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.4% away)
+- 4GLD: stop EUR 105.88 (19.0% away)
+- EQQQ: stop EUR 508.78 (6.9% away)
+- Portfolio drawdown: -11.0%
+
+**Analysis:**
+Markets rebounded broadly with NASDAQ +1.96% and SP500 +1.06%, confirming the RISK-ON regime; EQQQ led the portfolio with +1.35% while ETH held gains. Portfolio P{{ANALYSIS}}L is essentially flat on the day (+0.1%) as the -11% drawdown from entry persists, though all stops remain well-distant. Quant signals issue a BUY on 4GLD, which already has a 5% gain from entry and an active stop, so no action is warranted without a new entry trigger.
+
+**HOLD — los mercados recuperan bien y todas las posiciones mantienen margen cómodo sobre sus stops, sin señal clara de entrada nueva.**
+
+---
+
 
 ### Day 63 — April 17, 2026 21:30 CET
 

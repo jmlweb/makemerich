@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-17T07:00:23.132Z",
+  "last_updated": "2026-04-17T10:00:19.191Z",
   "holdings": {
     "CASH": {
       "amount_eur": 213.78
@@ -7,17 +7,17 @@
     "ETH": {
       "units": 0.658029,
       "entry_price_usd": 2052.97,
-      "current_price_usd": 2333.13,
-      "amount_eur": 1301.07,
-      "pnl_pct": 13.65,
+      "current_price_usd": 2358.1,
+      "amount_eur": 1315,
+      "pnl_pct": 14.86,
       "stop_loss_usd": 1900
     },
     "4GLD": {
       "units": 3.7704,
       "entry_price_eur": 124.56,
-      "current_price_eur": 131.15,
-      "amount_eur": 494.49,
-      "pnl_pct": 5.29,
+      "current_price_eur": 130.72,
+      "amount_eur": 492.87,
+      "pnl_pct": 4.95,
       "stop_loss_eur": 105.88
     },
     "XEON": {
@@ -32,16 +32,16 @@
     "EQQQ": {
       "units": 3.617747,
       "entry_price_eur": 524.6,
-      "current_price_eur": 546.8,
-      "amount_eur": 1978.18,
-      "pnl_pct": 4.23,
+      "current_price_eur": 546.3,
+      "amount_eur": 1976.38,
+      "pnl_pct": 4.14,
       "stop_loss_eur": 508.7824
     }
   },
   "totals": {
-    "balance_eur": 4438.88,
+    "balance_eur": 4449.38,
     "initial_eur": 5000,
-    "pnl_eur": -561.12,
-    "pnl_pct": -11.22
+    "pnl_eur": -550.62,
+    "pnl_pct": -11.01
   }
 }
