@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,449.38 |
-| Total Return | -11.01% |
+| Current Balance | €4,496.51 |
+| Total Return | -10.07% |
 | Days Active | 64 |
 
 ---
 
 ## Daily Log
+
+### Day 63 — April 17, 2026 21:30 CET
+
+**Balance:** €4,496.51 | **Total Return:** -10.1%
+**Day P&L:** +€50.40 (+1.1%) vs Day 62 (€4,446.11)
+
+**Prices at close:**
+- ETH: $2,405.87 / €2,042.58 (+2.44% 24h) — stop $1,900.00
+- 4GLD: €132.61 (+1.38% 24h) — stop €105.88
+- XEON: €148.90 (+0.01% 24h)
+- EQQQ: €550.00 (+2.04% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,085.49 (+0.89%)
+- NASDAQ: 24,102.70 (+0.36%)
+- GOLD: 4,882.90 (+2.04%)
+- IBEX35: 18,439.90 (+1.94%)
+- EUROSTOXX50: 6,055.41 (+2.06%)
+- DAX: 24,686.42 (+2.58%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,989.76 | 44.3% | +4.8% | +2.04% |
+| ETH | €1,341.64 | 29.8% | +17.2% | +2.44% |
+| 4GLD | €499.99 | 11.1% | +6.5% | +1.38% |
+| XEON | €451.34 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.65% vs SMA50, VIX 18.13)
+- BUY: 4GLD, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (21.0% away)
+- 4GLD: stop EUR 105.88 (20.2% away)
+- EQQQ: stop EUR 508.78 (7.5% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+Markets staged a broad recovery today with European indices leading (+2.06% EuroStoxx50, +2.58% DAX) while gold hit $4,882 reinforcing safe-haven demand alongside risk assets. ETH outperformed (+2.44%) and EQQQ recovered +2.04%, narrowing the portfolio drawdown slightly to -10.1%. Quant signals remain RISK-ON with 4GLD and ASML flagged as BUY, but portfolio drawdown is at the near-trigger threshold.
+
+**HOLD — El rebote es alentador pero el drawdown sigue en -10.1% (umbral crítico) y las stops están lejos, por lo que se mantiene posición a la espera de confirmación de tendencia.**
+
+---
+
 
 ### Day 63 — April 17, 2026 21:30 CET
 
