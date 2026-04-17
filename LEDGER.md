@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,496.51 |
-| Total Return | -10.07% |
+| Current Balance | €4,528.84 |
+| Total Return | -9.42% |
 | Days Active | 64 |
 
 ---
 
 ## Daily Log
+
+### Day 63 — April 17, 2026 21:30 CET
+
+**Balance:** €4,528.84 | **Total Return:** -9.4%
+**Day P&L:** +€82.73 (+1.9%) vs Day 62 (€4,446.11)
+
+**Prices at close:**
+- ETH: $2,444.04 / €2,074.99 (+4.03% 24h) — stop $1,900.00
+- 4GLD: €132.66 (+1.42% 24h) — stop €105.88
+- XEON: €148.90 (+0.01% 24h)
+- EQQQ: €553.00 (+2.60% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,130.81 (+1.54%)
+- NASDAQ: 24,453.54 (+1.82%)
+- GOLD: 4,886.30 (+2.11%)
+- IBEX35: 18,484.50 (+2.18%)
+- EUROSTOXX50: 6,057.71 (+2.10%)
+- DAX: 24,702.24 (+2.64%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,000.61 | 44.2% | +5.4% | +2.60% |
+| ETH | €1,362.92 | 30.1% | +19.1% | +4.03% |
+| 4GLD | €500.18 | 11.0% | +6.5% | +1.42% |
+| XEON | €451.34 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.65% vs SMA50, VIX 18.13)
+- BUY: 4GLD, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (22.3% away)
+- 4GLD: stop EUR 105.88 (20.2% away)
+- EQQQ: stop EUR 508.78 (8.0% away)
+
+**Analysis:**
+Strong broad risk-on session with all major indices up 1.5–2.6% and gold hitting new highs; portfolio recovered +€82.73 (+1.9%) driven by ETH (+4.03%) and EQQQ (+2.60%). Quant signals flag BUY on 4GLD and ASML/ITX, but with only €214 cash available no meaningful new position can be sized. All stops remain well below current prices, with EQQQ the closest at 8% distance.
+
+**HOLD — Con solo €214 en caja y las posiciones actuales en positivo, no hay acción rentable que tomar hoy.**
+
+---
+
 
 ### Day 63 — April 17, 2026 21:30 CET
 
