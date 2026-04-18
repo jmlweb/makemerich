@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,518.94 |
-| Total Return | -9.62% |
-| Days Active | 64 |
+| Current Balance | €4,506.51 |
+| Total Return | -9.87% |
+| Days Active | 65 |
 
 ---
 
 ## Daily Log
+
+### Day 64 — April 18, 2026 21:30 CET
+
+**Balance:** €4,506.51 | **Total Return:** -9.9%
+**Day P&L:** €12.43 (-0.3%) vs Day 63 (€4,518.94)
+
+**Prices at close:**
+- ETH: $2,404.00 / €2,038.59 (-0.68% 24h) — stop $1,900.00
+- 4GLD: €132.66 (+1.42% 24h) — stop €105.88
+- XEON: €148.90 (+0.01% 24h)
+- EQQQ: €553.00 (+2.60% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8480
+- SP500: 7,126.06 (+1.47%)
+- NASDAQ: 24,468.48 (+1.88%)
+- GOLD: 4,857.60 (+1.51%)
+- IBEX35: 18,484.50 (+2.18%)
+- EUROSTOXX50: 6,057.71 (+2.10%)
+- DAX: 24,702.24 (+2.64%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,000.61 | 44.4% | +5.4% | +2.60% |
+| ETH | €1,340.59 | 29.7% | +17.1% | -0.68% |
+| 4GLD | €500.18 | 11.1% | +6.5% | +1.42% |
+| XEON | €451.34 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.27% vs SMA50, VIX 17.48)
+- BUY: 4GLD, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (21.0% away)
+- 4GLD: stop EUR 105.88 (20.2% away)
+- EQQQ: stop EUR 508.78 (8.0% away)
+
+**Analysis:**
+Global equities staged a broad recovery with European indices leading (+2.1–2.6%) and SP500/NASDAQ adding ~1.5–1.9%, reinforcing the RISK-ON regime. ETH lagged slightly (-0.68%) while GOLD hit new highs (+1.51%), validating 4GLD's continued BUY signal. All positions remain well above stop levels, with EQQQ the tightest at 8% cushion.
+
+**HOLD — el efectivo disponible (€213) es insuficiente para una posición relevante en 4GLD o ASML, y todas las posiciones actuales están sanas y alejadas de sus stops.**
+
+---
+
 
 ### Day 63 — April 17, 2026 21:30 CET
 
