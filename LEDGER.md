@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,506.51 |
-| Total Return | -9.87% |
-| Days Active | 65 |
+| Current Balance | €4,456.71 |
+| Total Return | -10.87% |
+| Days Active | 66 |
 
 ---
 
 ## Daily Log
+
+### Day 65 — April 19, 2026 21:30 CET
+
+**Balance:** €4,456.71 | **Total Return:** -10.9%
+**Day P&L:** €49.80 (-1.1%) vs Day 64 (€4,506.51)
+
+**Prices at close:**
+- ETH: $2,314.70 / €1,965.18 (-1.45% 24h) — stop $1,900.00
+- 4GLD: €132.66 (+1.42% 24h) — stop €105.88
+- XEON: €148.90 (+0.01% 24h)
+- EQQQ: €553.00 (+2.60% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,126.06 (+1.47%)
+- NASDAQ: 24,468.48 (+1.88%)
+- GOLD: 4,879.60 (+0.45%)
+- IBEX35: 18,484.50 (+2.18%)
+- EUROSTOXX50: 6,057.71 (+2.10%)
+- DAX: 24,702.24 (+2.64%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,000.61 | 44.9% | +5.4% | +2.60% |
+| ETH | €1,290.80 | 29.0% | +12.8% | -1.45% |
+| 4GLD | €500.18 | 11.2% | +6.5% | +1.42% |
+| XEON | €451.34 | 10.1% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.27% vs SMA50, VIX 17.48)
+- BUY: 4GLD, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.9% away)
+- 4GLD: stop EUR 105.88 (20.2% away)
+- EQQQ: stop EUR 508.78 (8.0% away)
+- Portfolio drawdown: -10.9%
+
+**Analysis:**
+Global equities posted broad gains on the session — DAX +2.64%, IBEX35 +2.18%, SP500 +1.47% — confirming the RISK-ON regime with SP500 trading 5.27% above its SMA50. ETH diverged from the risk-on move, slipping -1.45% while all equity and gold positions advanced, suggesting crypto-specific pressure rather than macro weakness. Portfolio drawdown sits at -10.9%, near the trigger threshold, but all stop-losses remain comfortably distant (ETH 17.9%, 4GLD 20.2%, EQQQ 8.0%).
+
+**HOLD — El mercado está en régimen risk-on y todas las posiciones mantienen colchón suficiente respecto a sus stops, por lo que no hay acción justificada este fin de semana.**
+
+---
+
 
 ### Day 64 — April 18, 2026 21:30 CET
 
