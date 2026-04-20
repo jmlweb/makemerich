@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-04-20T07:00:24.964Z",
-  "balance": 4452.67,
-  "totalReturn": -10.95,
+  "generatedAt": "2026-04-20T10:00:23.261Z",
+  "balance": 4454.48,
+  "totalReturn": -10.91,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2287.9,
+      "currentPrice": 2310.15,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 16.95,
+      "distancePct": 17.75,
       "status": "ACTIVE"
     },
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 132.66,
+      "currentPrice": 130.97,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 20.19,
+      "distancePct": 19.16,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 553,
+      "currentPrice": 551.8,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 8,
+      "distancePct": 7.8,
       "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -10.95,
+      "pnlPct": -10.91,
       "status": "WARNING",
       "detail": "Portfolio down -10.9% from start"
     }

@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,452.67 |
-| Total Return | -10.95% |
+| Current Balance | €4,454.48 |
+| Total Return | -10.91% |
 | Days Active | 67 |
 
 ---
 
 ## Daily Log
+
+### Day 66 — April 20, 2026 21:30 CET
+
+**Balance:** €4,454.48 | **Total Return:** -10.9%
+**Day P&L:** €2.23 (-0.1%) vs Day 65 (€4,456.71)
+
+**Prices at close:**
+- ETH: $2,310.15 / €1,965.94 (+2.04% 24h) — stop $1,900.00
+- 4GLD: €130.97 (-0.14% 24h) — stop €105.88
+- XEON: €148.91 (+-0.00% 24h)
+- EQQQ: €551.80 (+0.91% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,126.06 (+1.47%)
+- NASDAQ: 24,468.48 (+1.88%)
+- GOLD: 4,814.80 (-1.33%)
+- IBEX35: 18,282.10 (-1.09%)
+- EUROSTOXX50: 5,979.62 (-1.29%)
+- DAX: 24,379.30 (+0.93%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,996.27 | 44.8% | +5.2% | +0.91% |
+| ETH | €1,299.27 | 29.2% | +12.5% | +2.04% |
+| 4GLD | €493.81 | 11.1% | +5.2% | -0.14% |
+| XEON | €451.35 | 10.1% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.27% vs SMA50, VIX 19.53)
+- BUY: 4GLD, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.8% away)
+- 4GLD: stop EUR 105.88 (19.2% away)
+- EQQQ: stop EUR 508.78 (7.8% away)
+- Portfolio drawdown: -10.9%
+
+**Analysis:**
+Risk-on session with US indices leading (SP500 +1.47%, NASDAQ +1.88%) while European and gold retreated, confirming rotation into equities. ETH outperformed at +2.04%, recovering toward recent highs with stop still 17.8% away. All positions remain above entry with healthy margins to stops, and quant signals reinforce holding existing exposure.
+
+**HOLD — todas las posiciones están por encima de entrada, los stops están lejos y el régimen sigue siendo risk-on, sin motivo para actuar.**
+
+---
+
 
 ### Day 66 — April 20, 2026 21:30 CET
 
