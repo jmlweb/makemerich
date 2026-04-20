@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,456.71 |
-| Total Return | -10.87% |
-| Days Active | 66 |
+| Current Balance | €4,452.67 |
+| Total Return | -10.95% |
+| Days Active | 67 |
 
 ---
 
 ## Daily Log
+
+### Day 66 — April 20, 2026 21:30 CET
+
+**Balance:** €4,452.67 | **Total Return:** -10.9%
+**Day P&L:** €4.04 (-0.1%) vs Day 65 (€4,456.71)
+
+**Prices at close:**
+- ETH: $2,287.90 / €1,947.00 (+0.98% 24h) — stop $1,900.00
+- 4GLD: €132.66 (+1.15% 24h) — stop €105.88
+- XEON: €148.90 (+-0.00% 24h)
+- EQQQ: €553.00 (+1.13% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,126.06 (+1.47%)
+- NASDAQ: 24,468.48 (+1.88%)
+- GOLD: 4,813.30 (-1.36%)
+- IBEX35: 18,484.50 (+0.00%)
+- EUROSTOXX50: 6,057.71 (+-0.00%)
+- DAX: 24,702.24 (+2.27%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,000.61 | 44.9% | +5.4% | +1.13% |
+| ETH | €1,286.76 | 28.9% | +11.4% | +0.98% |
+| 4GLD | €500.18 | 11.2% | +6.5% | +1.15% |
+| XEON | €451.34 | 10.1% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.27% vs SMA50, VIX 17.48)
+- BUY: 4GLD, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.9% away)
+- 4GLD: stop EUR 105.88 (20.2% away)
+- EQQQ: stop EUR 508.78 (8.0% away)
+- Portfolio drawdown: -10.9%
+
+**Analysis:**
+Risk-on day across the board — SP500 +1.47%, NASDAQ +1.88%, DAX +2.27% — with gold pulling back -1.36% as expected in this regime; VIX at 17.48 confirms low fear. Portfolio was essentially flat (+€4.04) despite the rally, dragged by XEON unchanged; all positions remain profitable from entry with stops well away (8–20%). Quant model flags 4GLD as BUY but available cash (€213) is insufficient for a meaningful addition without touching existing positions.
+
+**HOLD — Todos los activos en positivo, el régimen sigue siendo risk-on y los stops están suficientemente lejos como para no requerir acción.**
+
+---
+
 
 ### Day 65 — April 19, 2026 21:30 CET
 
