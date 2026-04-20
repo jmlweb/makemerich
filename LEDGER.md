@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,454.48 |
-| Total Return | -10.91% |
+| Current Balance | €4,462.65 |
+| Total Return | -10.75% |
 | Days Active | 67 |
 
 ---
 
 ## Daily Log
+
+### Day 66 — April 20, 2026 21:30 CET
+
+**Balance:** €4,462.65 | **Total Return:** -10.8%
+**Day P&L:** +€5.94 (+0.1%) vs Day 65 (€4,456.71)
+
+**Prices at close:**
+- ETH: $2,316.60 / €1,971.43 (+2.38% 24h) — stop $1,900.00
+- 4GLD: €131.60 (+0.34% 24h) — stop €105.88
+- XEON: €148.90 (+-0.00% 24h)
+- EQQQ: €552.40 (+1.02% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,117.11 (+1.08%)
+- NASDAQ: 24,468.48 (+1.52%)
+- GOLD: 4,836.10 (-0.89%)
+- IBEX35: 18,284.00 (-1.08%)
+- EUROSTOXX50: 5,986.24 (-1.18%)
+- DAX: 24,413.40 (+1.07%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,998.44 | 44.8% | +5.3% | +1.02% |
+| ETH | €1,302.90 | 29.2% | +12.8% | +2.38% |
+| 4GLD | €496.18 | 11.1% | +5.7% | +0.34% |
+| XEON | €451.34 | 10.1% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.06% vs SMA50, VIX 19.53)
+- BUY: 4GLD, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.0% away)
+- 4GLD: stop EUR 105.88 (19.5% away)
+- EQQQ: stop EUR 508.78 (7.9% away)
+- Portfolio drawdown: -10.8%
+
+**Analysis:**
+US tech and German markets rallied strongly (NASDAQ +1.52%, DAX +1.07%) while European indices sold off (EUROSTOXX50 -1.18%), suggesting rotation rather than broad risk-on. Gold pulled back -0.89% as risk appetite favored equities. Portfolio gained marginally (+€5.94) with all positions above entry, though the -10.8% drawdown from start remains a near-trigger concern.
+
+**HOLD — el portafolio sigue en territorio de drawdown límite y sin señales de entrada claras para nuevas posiciones con el efectivo disponible.**
+
+---
+
 
 ### Day 66 — April 20, 2026 21:30 CET
 
