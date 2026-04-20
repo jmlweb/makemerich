@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,451.57 |
-| Total Return | -10.97% |
+| Current Balance | €4,459.79 |
+| Total Return | -10.80% |
 | Days Active | 67 |
 
 ---
 
 ## Daily Log
+
+### Day 66 — April 20, 2026 21:30 CET
+
+**Balance:** €4,459.79 | **Total Return:** -10.8%
+**Day P&L:** +€3.08 (+0.1%) vs Day 65 (€4,456.71)
+
+**Prices at close:**
+- ETH: $2,330.11 / €1,982.92 (+2.90% 24h) — stop $1,900.00
+- 4GLD: €131.13 (-0.02% 24h) — stop €105.88
+- XEON: €148.90 (+-0.00% 24h)
+- EQQQ: €550.00 (+0.59% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,104.30 (+0.90%)
+- NASDAQ: 24,382.65 (+1.16%)
+- GOLD: 4,839.40 (-0.82%)
+- IBEX35: 18,260.90 (-1.21%)
+- EUROSTOXX50: 5,982.63 (-1.24%)
+- DAX: 24,417.80 (+1.09%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,989.76 | 44.6% | +4.8% | +0.59% |
+| ETH | €1,310.50 | 29.4% | +13.5% | +2.90% |
+| 4GLD | €494.41 | 11.1% | +5.3% | -0.02% |
+| XEON | €451.34 | 10.1% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.06% vs SMA50, VIX 19.53)
+- BUY: 4GLD, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.5% away)
+- 4GLD: stop EUR 105.88 (19.3% away)
+- EQQQ: stop EUR 508.78 (7.5% away)
+- Portfolio drawdown: -10.8%
+
+**Analysis:**
+US markets closed broadly higher (SP500 +0.90%, NASDAQ +1.16%) while European indices diverged with DAX gaining +1.09% but IBEX35 and EUROSTOXX50 down over 1.2%, reflecting continued regional divergence. ETH led portfolio gains at +2.90% 24h as the risk-on regime holds with VIX at 19.53 and SP500 well above its 50-day SMA. Quant signals flash BUY on 4GLD, ASML, and ITX, but available cash (€213) is insufficient for a meaningful new position.
+
+**HOLD — Con solo €213 disponibles en liquidez, no tiene sentido abrir nuevas posiciones; se mantiene el portafolio actual mientras los stops siguen bien alejados.**
+
+---
+
 
 ### Day 66 — April 20, 2026 21:30 CET
 
