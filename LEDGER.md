@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,447.59 |
-| Total Return | -11.05% |
+| Current Balance | €4,443.65 |
+| Total Return | -11.13% |
 | Days Active | 68 |
 
 ---
 
 ## Daily Log
+
+### Day 67 — April 21, 2026 21:30 CET
+
+**Balance:** €4,443.65 | **Total Return:** -11.1%
+**Day P&L:** €16.14 (-0.4%) vs Day 66 (€4,459.79)
+
+**Prices at close:**
+- ETH: $2,311.89 / €1,962.79 (-0.17% 24h) — stop $1,900.00
+- 4GLD: €129.79 (-2.16% 24h) — stop €105.88
+- XEON: €148.92 (+0.01% 24h)
+- EQQQ: €552.80 (-0.04% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,092.25 (-0.47%)
+- NASDAQ: 24,377.15 (-0.37%)
+- GOLD: 4,763.20 (-0.90%)
+- IBEX35: 18,142.60 (-0.65%)
+- EUROSTOXX50: 5,930.25 (-0.88%)
+- DAX: 24,270.87 (-1.75%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,999.89 | 45.0% | +5.4% | -0.04% |
+| ETH | €1,289.23 | 29.0% | +12.6% | -0.17% |
+| 4GLD | €489.36 | 11.0% | +4.2% | -2.16% |
+| XEON | €451.39 | 10.2% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.15% vs SMA50, VIX 19.06)
+- BUY: 4GLD, VWCE, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.8% away)
+- 4GLD: stop EUR 105.88 (18.4% away)
+- EQQQ: stop EUR 508.78 (8.0% away)
+- Portfolio drawdown: -11.1%
+
+**Analysis:**
+Broad market weakness across equities (DAX -1.75%, EUROSTOXX -0.88%, SP500 -0.47%) and gold (-0.90%) drove a negative session, with 4GLD bearing the sharpest intraday hit at -2.16%. Despite the red day, all positions remain well above their stop levels and the quant regime stays RISK-ON with SP500 holding +5.15% above SMA50 and VIX at 19.06. Portfolio drawdown at -11.1% is brushing the near-trigger threshold but no stop has been breached.
+
+**HOLD — El régimen cuantitativo sigue en RISK-ON, todos los stops están lejos y no hay señales de ruptura que justifiquen mover posiciones al cierre.**
+
+---
+
 
 ### Day 67 — April 21, 2026 21:30 CET
 
