@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,462.31 |
-| Total Return | -10.75% |
+| Current Balance | €4,447.59 |
+| Total Return | -11.05% |
 | Days Active | 68 |
 
 ---
 
 ## Daily Log
+
+### Day 67 — April 21, 2026 21:30 CET
+
+**Balance:** €4,447.59 | **Total Return:** -11.1%
+**Day P&L:** €12.20 (-0.3%) vs Day 66 (€4,459.79)
+
+**Prices at close:**
+- ETH: $2,307.76 / €1,959.29 (-0.33% 24h) — stop $1,900.00
+- 4GLD: €130.30 (-1.78% 24h) — stop €105.88
+- XEON: €148.91 (+0.01% 24h)
+- EQQQ: €554.00 (+0.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,109.14 (+0.96%)
+- NASDAQ: 24,404.39 (-0.26%)
+- GOLD: 4,786.50 (-0.42%)
+- IBEX35: 18,300.50 (+0.22%)
+- EUROSTOXX50: 5,976.08 (-0.11%)
+- DAX: 24,433.28 (-1.09%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,004.23 | 45.1% | +5.6% | +0.18% |
+| ETH | €1,286.93 | 28.9% | +12.4% | -0.33% |
+| 4GLD | €491.28 | 11.0% | +4.6% | -1.78% |
+| XEON | €451.37 | 10.1% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.15% vs SMA50, VIX 19.06)
+- BUY: 4GLD, VWCE, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.7% away)
+- 4GLD: stop EUR 105.88 (18.7% away)
+- EQQQ: stop EUR 508.78 (8.2% away)
+- Portfolio drawdown: -11.1%
+
+**Analysis:**
+Markets closed mixed with SP500 gaining +0.96% while NASDAQ slipped -0.26%, reflecting sector rotation rather than broad risk-off. Gold and European indices were weak today (-0.42% and -0.11% respectively), consistent with profit-taking after recent highs. Portfolio positions remain well above their stop-loss levels; the -11.1% total return is driven by the portfolio drawdown trigger, not imminent stop hits.
+
+**HOLD — El portafolio está estable con todas las posiciones por encima de sus stops y el régimen de mercado sigue en RISK-ON, por lo que no hay motivo para actuar.**
+
+---
+
 
 ### Day 67 — April 21, 2026 21:30 CET
 
