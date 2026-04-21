@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,441.26 |
-| Total Return | -11.17% |
+| Current Balance | €4,462.31 |
+| Total Return | -10.75% |
 | Days Active | 68 |
 
 ---
 
 ## Daily Log
+
+### Day 67 — April 21, 2026 21:30 CET
+
+**Balance:** €4,462.31 | **Total Return:** -10.8%
+**Day P&L:** +€2.52 (+0.1%) vs Day 66 (€4,459.79)
+
+**Prices at close:**
+- ETH: $2,326.54 / €1,975.23 (+0.46% 24h) — stop $1,900.00
+- 4GLD: €130.95 (-1.31% 24h) — stop €105.88
+- XEON: €148.91 (+0.01% 24h)
+- EQQQ: €554.50 (+0.27% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,109.14 (+0.96%)
+- NASDAQ: 24,404.39 (+1.25%)
+- GOLD: 4,804.10 (-0.05%)
+- IBEX35: 18,344.50 (+0.46%)
+- EUROSTOXX50: 6,007.59 (+0.42%)
+- DAX: 24,571.40 (-0.53%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,006.04 | 45.0% | +5.7% | +0.27% |
+| ETH | €1,297.40 | 29.1% | +13.3% | +0.46% |
+| 4GLD | €493.73 | 11.1% | +5.1% | -1.31% |
+| XEON | €451.36 | 10.1% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.93% vs SMA50, VIX 19.06)
+- BUY: 4GLD, VWCE, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.3% away)
+- 4GLD: stop EUR 105.88 (19.1% away)
+- EQQQ: stop EUR 508.78 (8.2% away)
+- Portfolio drawdown: -10.8%
+
+**Analysis:**
+Markets posted a constructive session with SP500 +0.96% and NASDAQ +1.25%, confirming the RISK-ON regime (SP500 +4.93% above SMA50, VIX at 19.06). All four positions remain comfortably above stop levels — EQQQ is the closest at 8.2% buffer — while ETH (+13.3% from entry) and EQQQ (+5.7%) continue to carry the portfolio. The quant model issues a BUY on 4GLD despite today's -1.31% dip, suggesting the pullback is noise within the broader trend.
+
+**HOLD — todas las posiciones están por encima de sus stops con holgura y el régimen de mercado sigue siendo RISK-ON, por lo que no hay motivo para actuar hoy.**
+
+---
+
 
 ### Day 67 — April 21, 2026 21:30 CET
 
