@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,451.46 |
-| Total Return | -10.97% |
-| Days Active | 68 |
+| Current Balance | €4,500.49 |
+| Total Return | -9.99% |
+| Days Active | 69 |
 
 ---
 
 ## Daily Log
+
+### Day 68 — April 22, 2026 21:30 CET
+
+**Balance:** €4,500.49 | **Total Return:** -10.0%
+**Day P&L:** +€49.03 (+1.1%) vs Day 67 (€4,451.46)
+
+**Prices at close:**
+- ETH: $2,393.35 / €2,036.74 (+2.77% 24h) — stop $1,900.00
+- 4GLD: €129.79 (-1.02% 24h) — stop €105.88
+- XEON: €148.92 (+0.01% 24h)
+- EQQQ: €552.80 (+0.51% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,064.01 (-0.87%)
+- NASDAQ: 24,259.96 (-0.85%)
+- GOLD: 4,784.60 (+1.83%)
+- IBEX35: 18,142.60 (+-0.00%)
+- EUROSTOXX50: 5,930.25 (+0.00%)
+- DAX: 24,270.87 (-1.75%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €1,999.89 | 44.4% | +5.4% | +0.51% |
+| ETH | €1,346.06 | 29.9% | +16.6% | +2.77% |
+| 4GLD | €489.36 | 10.9% | +4.2% | -1.02% |
+| XEON | €451.39 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.22% vs SMA50, VIX 19.5)
+- BUY: 4GLD, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.6% away)
+- 4GLD: stop EUR 105.88 (18.4% away)
+- EQQQ: stop EUR 508.78 (8.0% away)
+
+**Analysis:**
+Portfolio gained +1.1% on a day when US equities fell (-0.87% SP500, -0.85% NASDAQ), led by ETH strength (+2.77%); the divergence between gold spot (+1.83%) and 4GLD (-1.02%) likely reflects currency effects (EUR/USD). Quant regime remains RISK-ON with BUY signals on 4GLD, ASML, and ITX, but available cash is only €214 — insufficient for a meaningful new position. All stop levels remain comfortably distant (8–20%).
+
+**HOLD — las señales quant marcan BUY en 4GLD y activos que no tenemos, pero con solo €214 en caja no hay tamaño de posición suficiente para actuar con sentido.**
+
+---
+
 
 ### Day 67 — April 21, 2026 21:30 CET
 
