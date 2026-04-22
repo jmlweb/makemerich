@@ -161,7 +161,7 @@ if [ -x "$CLAUDE_BIN" ]; then
   echo "Delegating to Claude Code CLI (text-only)..." | tee -a "$LOG_FILE"
   export PATH="/home/hustle/.local/bin:/home/hustle/.nvm/versions/node/v25.8.0/bin:$PATH"
   set +e
-  CLAUDE_MSG=$(timeout 45 "$CLAUDE_BIN" --model sonnet -p "$PROMPT" --output-format text --max-turns 1 --allowedTools '' 2>>"$LOG_FILE")
+  CLAUDE_MSG=$(timeout 90 "$CLAUDE_BIN" --model sonnet -p "$PROMPT" --output-format text --max-turns 1 --allowedTools '' 2>>"$LOG_FILE")
   CLAUDE_EXIT=$?
   set -e
   echo "$CLAUDE_MSG" >> "$LOG_FILE"
