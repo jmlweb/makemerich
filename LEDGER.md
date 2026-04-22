@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,532.87 |
-| Total Return | -9.34% |
+| Current Balance | €4,532.05 |
+| Total Return | -9.36% |
 | Days Active | 69 |
 
 ---
 
 ## Daily Log
+
+### Day 68 — April 22, 2026 21:30 CET
+
+**Balance:** €4,532.05 | **Total Return:** -9.4%
+**Day P&L:** +€80.59 (+1.8%) vs Day 67 (€4,451.46)
+
+**Prices at close:**
+- ETH: $2,405.40 / €2,047.00 (+3.34% 24h) — stop $1,900.00
+- 4GLD: €129.75 (-1.05% 24h) — stop €105.88
+- XEON: €148.91 (+0.01% 24h)
+- EQQQ: €559.70 (+1.76% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,128.45 (+0.27%)
+- NASDAQ: 24,610.30 (+0.84%)
+- GOLD: 4,760.00 (+1.31%)
+- IBEX35: 18,006.40 (-0.75%)
+- EUROSTOXX50: 5,906.22 (-0.41%)
+- DAX: 24,194.90 (-0.91%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,024.85 | 44.7% | +6.7% | +1.76% |
+| ETH | €1,352.84 | 29.9% | +17.2% | +3.34% |
+| 4GLD | €489.21 | 10.8% | +4.2% | -1.05% |
+| XEON | €451.37 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.95% vs SMA50, VIX 19.01)
+- BUY: 4GLD, VWCE, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (21.0% away)
+- 4GLD: stop EUR 105.88 (18.4% away)
+- EQQQ: stop EUR 508.78 (9.1% away)
+
+**Analysis:**
+Portfolio gained +1.8% on the day, led by ETH (+3.34%) and EQQQ (+1.76%), while 4GLD gave back -1.05% amid gold's modest session. US indices closed green with NASDAQ outperforming, but European markets ended in the red across the board — a divergence worth watching given EQQQ's European listing. All stop-losses remain well off current prices (ETH 21%, 4GLD 18.4%, EQQQ 9.1%), and the quant regime stays RISK-ON with VIX at 19.01.
+
+**HOLD — Con solo €213 de caja disponible y todas las posiciones en positivo frente a la entrada, no hay urgencia de actuar; el régimen RISK-ON favorece mantener la exposición actual hasta que el mercado europeo confirme dirección.**
+
+---
+
 
 ### Day 68 — April 22, 2026 21:30 CET
 
