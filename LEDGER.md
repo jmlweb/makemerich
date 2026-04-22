@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,500.49 |
-| Total Return | -9.99% |
+| Current Balance | €4,509.73 |
+| Total Return | -9.81% |
 | Days Active | 69 |
 
 ---
 
 ## Daily Log
+
+### Day 68 — April 22, 2026 21:30 CET
+
+**Balance:** €4,509.73 | **Total Return:** -9.8%
+**Day P&L:** +€58.27 (+1.3%) vs Day 67 (€4,451.46)
+
+**Prices at close:**
+- ETH: $2,388.41 / €2,032.54 (+2.58% 24h) — stop $1,900.00
+- 4GLD: €130.29 (-0.64% 24h) — stop €105.88
+- XEON: €148.92 (+0.01% 24h)
+- EQQQ: €555.60 (+1.02% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,064.01 (-0.87%)
+- NASDAQ: 24,259.96 (-0.85%)
+- GOLD: 4,776.40 (+1.66%)
+- IBEX35: 18,077.10 (-0.36%)
+- EUROSTOXX50: 5,933.88 (+0.06%)
+- DAX: 24,283.29 (-0.55%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,010.02 | 44.6% | +5.9% | +1.02% |
+| ETH | €1,343.28 | 29.8% | +16.3% | +2.58% |
+| 4GLD | €491.25 | 10.9% | +4.6% | -0.64% |
+| XEON | €451.40 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.22% vs SMA50, VIX 19.01)
+- BUY: 4GLD, VWCE, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.4% away)
+- 4GLD: stop EUR 105.88 (18.7% away)
+- EQQQ: stop EUR 508.78 (8.4% away)
+
+**Analysis:**
+Equity markets retreated modestly (SP500 -0.87%, NASDAQ -0.85%) while gold surged +1.66%, signaling bifurcated risk sentiment — traditional markets pricing caution while the RISK-ON quant regime holds (SP500 +4.22% vs SMA50, VIX 19.01). ETH led portfolio gains at +2.58%, with EQQQ adding +1.02%, producing a clean +1.3% day despite the broader equity softness. Quantitative signals flag 4GLD as BUY alongside the existing gold momentum, but available cash (€213) is insufficient for a meaningful addition at current prices.
+
+**HOLD — con solo €213 en caja, no hay margen para ejecutar una compra relevante de 4GLD, y todas las posiciones mantienen stops holgados (mínimo 8.4% de distancia).**
+
+---
+
 
 ### Day 68 — April 22, 2026 21:30 CET
 
