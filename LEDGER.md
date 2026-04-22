@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,509.73 |
-| Total Return | -9.81% |
+| Current Balance | €4,521.98 |
+| Total Return | -9.56% |
 | Days Active | 69 |
 
 ---
 
 ## Daily Log
+
+### Day 68 — April 22, 2026 21:30 CET
+
+**Balance:** €4,521.98 | **Total Return:** -9.6%
+**Day P&L:** +€70.52 (+1.6%) vs Day 67 (€4,451.46)
+
+**Prices at close:**
+- ETH: $2,409.01 / €2,050.07 (+3.51% 24h) — stop $1,900.00
+- 4GLD: €130.08 (-0.80% 24h) — stop €105.88
+- XEON: €148.93 (+0.01% 24h)
+- EQQQ: €556.00 (+1.09% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,116.26 (+0.10%)
+- NASDAQ: 24,259.96 (-0.59%)
+- GOLD: 4,759.70 (+1.30%)
+- IBEX35: 18,073.60 (-0.38%)
+- EUROSTOXX50: 5,927.37 (-0.05%)
+- DAX: 24,242.46 (-0.72%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,011.47 | 44.5% | +6.0% | +1.09% |
+| ETH | €1,354.87 | 30.0% | +17.3% | +3.51% |
+| 4GLD | €490.45 | 10.8% | +4.4% | -0.80% |
+| XEON | €451.41 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.95% vs SMA50, VIX 19.01)
+- BUY: 4GLD, VWCE, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (21.1% away)
+- 4GLD: stop EUR 105.88 (18.6% away)
+- EQQQ: stop EUR 508.78 (8.5% away)
+
+**Analysis:**
+Mixed session with US indices diverging (SP500 flat, NASDAQ -0.59%) while gold hit $4,759 (+1.30%), supporting the 4GLD position despite its -0.80% 24h dip. ETH led the portfolio with a strong +3.51% day, and the RISK-ON regime remains intact with SP500 well above SMA50. Quant model issues BUY on 4GLD and new names (VWCE, ASML, ITX), but available cash (€214) is insufficient for meaningful new exposure.
+
+**HOLD — el régimen sigue en RISK-ON, todas las posiciones están lejos de sus stops y el cash disponible es demasiado bajo para abrir posición nueva con tamaño relevante.**
+
+---
+
 
 ### Day 68 — April 22, 2026 21:30 CET
 
