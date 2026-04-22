@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,521.98 |
-| Total Return | -9.56% |
+| Current Balance | €4,532.87 |
+| Total Return | -9.34% |
 | Days Active | 69 |
 
 ---
 
 ## Daily Log
+
+### Day 68 — April 22, 2026 21:30 CET
+
+**Balance:** €4,532.87 | **Total Return:** -9.3%
+**Day P&L:** +€81.41 (+1.8%) vs Day 67 (€4,451.46)
+
+**Prices at close:**
+- ETH: $2,406.86 / €2,048.24 (+3.34% 24h) — stop $1,900.00
+- 4GLD: €129.75 (-1.05% 24h) — stop €105.88
+- XEON: €148.91 (+0.01% 24h)
+- EQQQ: €559.70 (+1.76% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,123.02 (+0.20%)
+- NASDAQ: 24,565.85 (+0.66%)
+- GOLD: 4,746.30 (+1.02%)
+- IBEX35: 18,006.40 (-0.75%)
+- EUROSTOXX50: 5,906.22 (-0.41%)
+- DAX: 24,194.90 (-0.91%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,024.85 | 44.7% | +6.7% | +1.76% |
+| ETH | €1,353.66 | 29.9% | +17.2% | +3.34% |
+| 4GLD | €489.21 | 10.8% | +4.2% | -1.05% |
+| XEON | €451.37 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.95% vs SMA50, VIX 19.01)
+- BUY: 4GLD, VWCE, ASML, ITX
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (21.1% away)
+- 4GLD: stop EUR 105.88 (18.4% away)
+- EQQQ: stop EUR 508.78 (9.1% away)
+
+**Analysis:**
+Strong session for the portfolio with ETH (+3.34%) and EQQQ (+1.76%) driving a +1.8% day gain; US markets maintained RISK-ON momentum while European indices (DAX -0.91%, EUROSTOXX50 -0.41%) diverged negatively. Quant signals flag 4GLD as BUY but available cash (€214) is insufficient for a meaningful addition, and all stops remain comfortably distant (min 9.1% on EQQQ).
+
+**HOLD — el efectivo disponible es demasiado bajo para ejecutar nuevas entradas y todas las posiciones actuales mantienen margen suficiente respecto a sus stops.**
+
+---
+
 
 ### Day 68 — April 22, 2026 21:30 CET
 
