@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,506.66 |
-| Total Return | -9.87% |
+| Current Balance | €4,495.88 |
+| Total Return | -10.08% |
 | Days Active | 70 |
 
 ---
 
 ## Daily Log
+
+### Day 69 — April 23, 2026 21:30 CET
+
+**Balance:** €4,495.88 | **Total Return:** -10.1%
+**Day P&L:** €36.17 (-0.8%) vs Day 68 (€4,532.05)
+
+**Prices at close:**
+- ETH: $2,314.91 / €1,974.62 (-2.59% 24h) — stop $1,900.00
+- 4GLD: €129.97 (+0.14% 24h) — stop €105.88
+- XEON: €148.96 (+0.03% 24h)
+- EQQQ: €563.50 (+1.94% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,107.51 (+0.62%)
+- NASDAQ: 24,429.02 (+0.70%)
+- GOLD: 4,715.00 (-0.37%)
+- IBEX35: 17,885.90 (-0.67%)
+- EUROSTOXX50: 5,894.73 (-0.19%)
+- DAX: 24,155.45 (-0.48%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,038.60 | 45.3% | +7.4% | +1.94% |
+| ETH | €1,301.95 | 29.0% | +12.8% | -2.59% |
+| 4GLD | €490.04 | 10.9% | +4.3% | +0.14% |
+| XEON | €451.52 | 10.0% | +6.0% | +0.03% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.95% vs SMA50, VIX 19.73)
+- BUY: VWCE, ASML, ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.9% away)
+- 4GLD: stop EUR 105.88 (18.5% away)
+- EQQQ: stop EUR 508.78 (9.7% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+US markets closed in positive territory (S{{ANALYSIS}}P500 +0.62%, NASDAQ +0.70%) but European indices dragged lower, with ETH's -2.59% drop being the main portfolio headwind for the day. The portfolio sits at exactly the -10.1% drawdown warning threshold, though all individual stop-losses remain comfortably distant (9.7–18.5% away). Market regime remains RISK-ON, and quant signals confirm HOLD across all current positions; available cash (€213.78) is insufficient for the BUY signals on VWCE, ASML, ITX, or ALV without trimming existing holdings.
+
+**HOLD — Las posiciones están intactas, el régimen sigue siendo RISK-ON y los stops están lejos, por lo que no hay motivo para actuar con solo €213 de liquidez disponible.**
+
+---
+
 
 ### Day 69 — April 23, 2026 21:30 CET
 
