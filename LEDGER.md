@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,504.82 |
-| Total Return | -9.90% |
+| Current Balance | €4,482.63 |
+| Total Return | -10.35% |
 | Days Active | 70 |
 
 ---
 
 ## Daily Log
+
+### Day 69 — April 23, 2026 21:30 CET
+
+**Balance:** €4,482.63 | **Total Return:** -10.3%
+**Day P&L:** €49.42 (-1.1%) vs Day 68 (€4,532.05)
+
+**Prices at close:**
+- ETH: $2,316.77 / €1,976.20 (-2.48% 24h) — stop $1,900.00
+- 4GLD: €129.25 (-0.42% 24h) — stop €105.88
+- XEON: €148.96 (+0.03% 24h)
+- EQQQ: €560.30 (+1.36% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,137.90 (+0.40%)
+- NASDAQ: 24,657.57 (+1.04%)
+- GOLD: 4,714.80 (-0.37%)
+- IBEX35: 17,793.30 (-1.18%)
+- EUROSTOXX50: 5,861.76 (-0.75%)
+- DAX: 24,074.60 (-0.81%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,027.02 | 45.2% | +6.8% | +1.36% |
+| ETH | €1,302.99 | 29.1% | +12.8% | -2.48% |
+| 4GLD | €487.32 | 10.9% | +3.8% | -0.42% |
+| XEON | €451.51 | 10.1% | +6.0% | +0.03% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.26% vs SMA50, VIX 19.73)
+- BUY: VWCE, ASML, ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.0% away)
+- 4GLD: stop EUR 105.88 (18.1% away)
+- EQQQ: stop EUR 508.78 (9.2% away)
+- Portfolio drawdown: -10.3%
+
+**Analysis:**
+US markets led gains with NASDAQ up +1.04% and SP500 +0.40%, while European indices sold off broadly (DAX -0.81%, EUROSTOXX50 -0.75%), reflecting divergent sentiment. ETH's -2.48% 24h decline dragged portfolio P{{ANALYSIS}}L; all stops remain well-padded except EQQQ's 9.2% buffer which warrants monitoring. Quant regime stays RISK-ON with new BUY signals on VWCE, ASML, ITX, and ALV, but no current position triggers were breached.
+
+**HOLD — todos los activos están dentro de sus rangos de stop y el régimen sigue siendo RISK-ON, por lo que se mantiene la cartera sin cambios hasta que aparezca una señal de entrada o se active algún stop.**
+
+---
+
 
 ### Day 69 — April 23, 2026 21:30 CET
 
