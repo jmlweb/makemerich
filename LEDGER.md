@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,532.05 |
-| Total Return | -9.36% |
-| Days Active | 69 |
+| Current Balance | €4,504.82 |
+| Total Return | -9.90% |
+| Days Active | 70 |
 
 ---
 
 ## Daily Log
+
+### Day 69 — April 23, 2026 21:30 CET
+
+**Balance:** €4,504.82 | **Total Return:** -9.9%
+**Day P&L:** €27.23 (-0.6%) vs Day 68 (€4,532.05)
+
+**Prices at close:**
+- ETH: $2,356.98 / €2,010.50 (-0.83% 24h) — stop $1,900.00
+- 4GLD: €129.75 (-0.03% 24h) — stop €105.88
+- XEON: €148.91 (+-0.00% 24h)
+- EQQQ: €559.70 (+1.25% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,137.90 (+0.40%)
+- NASDAQ: 24,657.57 (+1.04%)
+- GOLD: 4,733.70 (+0.03%)
+- IBEX35: 18,006.40 (+0.00%)
+- EUROSTOXX50: 5,906.22 (+0.00%)
+- DAX: 24,194.90 (-0.31%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,024.85 | 44.9% | +6.7% | +1.25% |
+| ETH | €1,325.61 | 29.4% | +14.8% | -0.83% |
+| 4GLD | €489.21 | 10.9% | +4.2% | -0.03% |
+| XEON | €451.37 | 10.0% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.26% vs SMA50, VIX 18.92)
+- BUY: 4GLD, VWCE, ASML, ITX, ALV, DTE
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, TTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.4% away)
+- 4GLD: stop EUR 105.88 (18.4% away)
+- EQQQ: stop EUR 508.78 (9.1% away)
+
+**Analysis:**
+US markets continued their recovery with NASDAQ leading (+1.04%) on positive tech sentiment, while European indices were flat to slightly negative. ETH's -0.83% drop was the main portfolio drag, offsetting EQQQ gains (+1.25%) and resulting in a small net loss of €27. Regime stays firmly RISK-ON with SP500 holding +5.26% above SMA50 and VIX at 18.92.
+
+**HOLD — todos los activos están lejos de sus stops, el régimen sigue en RISK-ON y con solo €213 en caja no hay margen significativo para nuevas entradas.**
+
+---
+
 
 ### Day 68 — April 22, 2026 21:30 CET
 

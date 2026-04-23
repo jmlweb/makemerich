@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T19:30:07.975Z",
+  "last_updated": "2026-04-23T07:00:24.970Z",
   "holdings": {
     "CASH": {
       "amount_eur": 213.78
@@ -7,9 +7,9 @@
     "ETH": {
       "units": 0.658029,
       "entry_price_usd": 2052.97,
-      "current_price_usd": 2405.4,
-      "amount_eur": 1352.84,
-      "pnl_pct": 17.17,
+      "current_price_usd": 2356.98,
+      "amount_eur": 1325.61,
+      "pnl_pct": 14.81,
       "stop_loss_usd": 1900
     },
     "4GLD": {
@@ -39,9 +39,9 @@
     }
   },
   "totals": {
-    "balance_eur": 4532.05,
+    "balance_eur": 4504.82,
     "initial_eur": 5000,
-    "pnl_eur": -467.95,
-    "pnl_pct": -9.36
+    "pnl_eur": -495.18,
+    "pnl_pct": -9.9
   }
 }
