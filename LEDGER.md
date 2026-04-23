@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,494.62 |
-| Total Return | -10.11% |
+| Current Balance | €4,506.66 |
+| Total Return | -9.87% |
 | Days Active | 70 |
 
 ---
 
 ## Daily Log
+
+### Day 69 — April 23, 2026 21:30 CET
+
+**Balance:** €4,506.66 | **Total Return:** -9.9%
+**Day P&L:** €25.39 (-0.6%) vs Day 68 (€4,532.05)
+
+**Prices at close:**
+- ETH: $2,334.06 / €1,990.95 (-1.75% 24h) — stop $1,900.00
+- 4GLD: €129.97 (+0.14% 24h) — stop €105.88
+- XEON: €148.96 (+0.03% 24h)
+- EQQQ: €563.50 (+1.94% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,135.59 (+1.01%)
+- NASDAQ: 24,589.33 (+1.36%)
+- GOLD: 4,741.60 (+0.19%)
+- IBEX35: 17,885.90 (-0.67%)
+- EUROSTOXX50: 5,894.73 (-0.19%)
+- DAX: 24,155.45 (-0.48%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,038.60 | 45.2% | +7.4% | +1.94% |
+| ETH | €1,312.72 | 29.1% | +13.7% | -1.75% |
+| 4GLD | €490.04 | 10.9% | +4.3% | +0.14% |
+| XEON | €451.52 | 10.0% | +6.0% | +0.03% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.95% vs SMA50, VIX 19.73)
+- BUY: VWCE, ASML, ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.6% away)
+- 4GLD: stop EUR 105.88 (18.5% away)
+- EQQQ: stop EUR 508.78 (9.7% away)
+
+**Analysis:**
+US markets extended their recovery with SP500 +1.01% and NASDAQ +1.36%, reinforcing the RISK-ON regime (SP500 +4.95% above SMA50, VIX 19.73), while European indices diverged negatively (DAX -0.48%, IBEX35 -0.67%). ETH pulled back -1.75% but remains well above its $1,900 stop at 18.6% distance, and EQQQ gained +1.94% tracking Nasdaq strength. Quant signals flag BUY for VWCE, ASML, ITX, and ALV, but available cash (€213.78, 4.7%) limits meaningful new entries without trimming an existing position.
+
+**HOLD — Con solo €213 en caja y todas las posiciones en positivo desde entrada, no hay acción urgente; se monitorizan las señales BUY (VWCE, ASML, ITX, ALV) para valorar una entrada parcial si mejora la liquidez.**
+
+---
+
 
 ### Day 69 — April 23, 2026 21:30 CET
 
