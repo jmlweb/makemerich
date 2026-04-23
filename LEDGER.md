@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,482.63 |
-| Total Return | -10.35% |
+| Current Balance | €4,494.62 |
+| Total Return | -10.11% |
 | Days Active | 70 |
 
 ---
 
 ## Daily Log
+
+### Day 69 — April 23, 2026 21:30 CET
+
+**Balance:** €4,494.62 | **Total Return:** -10.1%
+**Day P&L:** €37.43 (-0.8%) vs Day 68 (€4,532.05)
+
+**Prices at close:**
+- ETH: $2,323.04 / €1,981.55 (-2.17% 24h) — stop $1,900.00
+- 4GLD: €130.07 (+0.22% 24h) — stop €105.88
+- XEON: €148.94 (+0.01% 24h)
+- EQQQ: €561.80 (+1.63% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,122.38 (+0.83%)
+- NASDAQ: 24,657.57 (+1.64%)
+- GOLD: 4,743.70 (+0.24%)
+- IBEX35: 17,843.80 (-0.90%)
+- EUROSTOXX50: 5,881.43 (-0.42%)
+- DAX: 24,109.49 (-0.66%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,032.45 | 45.2% | +7.1% | +1.63% |
+| ETH | €1,306.52 | 29.1% | +13.2% | -2.17% |
+| 4GLD | €490.42 | 10.9% | +4.4% | +0.22% |
+| XEON | €451.46 | 10.0% | +6.0% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.95% vs SMA50, VIX 19.73)
+- BUY: VWCE, ASML, ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.2% away)
+- 4GLD: stop EUR 105.88 (18.6% away)
+- EQQQ: stop EUR 508.78 (9.4% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+US equities rallied strongly (NASDAQ +1.64%, SP500 +0.83%) keeping the regime firmly RISK-ON, while European indices diverged lower (IBEX -0.90%, DAX -0.66%), consistent with ongoing transatlantic divergence. ETH gave back -2.17% intraday but all stop levels remain well clear, with EQQQ the closest at 9.4% above its stop. Quant signals confirm HOLD on all current positions with no new entries warranted given the -10.1% portfolio drawdown approaching the near-trigger threshold.
+
+**HOLD — El portafolio roza el umbral de drawdown del -10.1% y las señales cuantitativas indican mantener todas las posiciones sin añadir riesgo hasta que el balance recupere terreno.**
+
+---
+
 
 ### Day 69 — April 23, 2026 21:30 CET
 
