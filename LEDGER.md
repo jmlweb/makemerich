@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,495.88 |
-| Total Return | -10.08% |
-| Days Active | 70 |
+| Current Balance | €4,493.14 |
+| Total Return | -10.14% |
+| Days Active | 71 |
 
 ---
 
 ## Daily Log
+
+### Day 70 — April 24, 2026 21:30 CET
+
+**Balance:** €4,493.14 | **Total Return:** -10.1%
+**Day P&L:** €2.74 (-0.1%) vs Day 69 (€4,495.88)
+
+**Prices at close:**
+- ETH: $2,310.03 / €1,975.08 (-0.93% 24h) — stop $1,900.00
+- 4GLD: €129.97 (+0.17% 24h) — stop €105.88
+- XEON: €148.96 (+0.03% 24h)
+- EQQQ: €563.50 (+0.68% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 7,108.40 (+0.63%)
+- NASDAQ: 24,438.50 (+0.74%)
+- GOLD: 4,684.90 (-0.43%)
+- IBEX35: 17,885.90 (+0.00%)
+- EUROSTOXX50: 5,894.73 (+-0.00%)
+- DAX: 24,155.45 (-0.16%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,038.60 | 45.4% | +7.4% | +0.68% |
+| ETH | €1,299.20 | 28.9% | +12.5% | -0.93% |
+| 4GLD | €490.04 | 10.9% | +4.3% | +0.17% |
+| XEON | €451.52 | 10.0% | +6.0% | +0.03% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.77% vs SMA50, VIX 19.31)
+- BUY: 4GLD, VWCE, ASML, ITX, ALV
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.8% away)
+- 4GLD: stop EUR 105.88 (18.5% away)
+- EQQQ: stop EUR 508.78 (9.7% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+US equities posted modest gains (SP500 +0.63%, NASDAQ +0.74%) while European markets were flat to slightly negative, consistent with a risk-on regime (VIX 19.31, SP500 +4.77% vs SMA50). All portfolio positions remain above entry and comfortably above stops, with ETH slightly down on the day but holding well above its $1,900 stop. The portfolio drawdown of -10.1% is a near-trigger but driven by earlier losses already baked in, not today's session.
+
+**HOLD — todas las posiciones están por encima del precio de entrada con stops alejados, el régimen sigue siendo risk-on y no hay señal de salida ni capital suficiente en caja para nuevas compras relevantes.**
+
+---
+
 
 ### Day 69 — April 23, 2026 21:30 CET
 
