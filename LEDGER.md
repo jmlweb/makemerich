@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,493.14 |
-| Total Return | -10.14% |
+| Current Balance | €4,490.00 |
+| Total Return | -10.20% |
 | Days Active | 71 |
 
 ---
 
 ## Daily Log
+
+### Day 70 — April 24, 2026 21:30 CET
+
+**Balance:** €4,490.00 | **Total Return:** -10.2%
+**Day P&L:** €5.88 (-0.1%) vs Day 69 (€4,495.88)
+
+**Prices at close:**
+- ETH: $2,308.99 / €1,974.19 (-0.88% 24h) — stop $1,900.00
+- 4GLD: €128.91 (-0.65% 24h) — stop €105.88
+- XEON: €148.96 (+0.03% 24h)
+- EQQQ: €563.90 (+0.75% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 7,108.40 (+0.63%)
+- NASDAQ: 24,438.50 (+0.74%)
+- GOLD: 4,700.20 (-0.10%)
+- IBEX35: 17,655.00 (-1.29%)
+- EUROSTOXX50: 5,856.80 (-0.64%)
+- DAX: 24,053.20 (-0.59%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,040.05 | 45.4% | +7.5% | +0.75% |
+| ETH | €1,298.62 | 28.9% | +12.5% | -0.88% |
+| 4GLD | €486.04 | 10.8% | +3.5% | -0.65% |
+| XEON | €451.51 | 10.1% | +6.0% | +0.03% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.77% vs SMA50, VIX 19.23)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.7% away)
+- 4GLD: stop EUR 105.88 (17.9% away)
+- EQQQ: stop EUR 508.78 (9.8% away)
+- Portfolio drawdown: -10.2%
+
+**Analysis:**
+US equity markets closed positive (SP500 +0.63%, NASDAQ +0.74%) while European indices underperformed (IBEX35 -1.29%, DAX -0.59%), reflecting a divergent session. The portfolio drawdown sits at the -10.2% near-trigger threshold, though all held positions remain above their entry prices with stops well-distanced (minimum 9.8% away). Quant regime remains RISK-ON with no sell signals on current holdings.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales, los stops están suficientemente alejados y el régimen sigue siendo alcista.**
+
+---
+
 
 ### Day 70 — April 24, 2026 21:30 CET
 
