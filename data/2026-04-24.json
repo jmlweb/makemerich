@@ -2,14 +2,14 @@
   "date": "2026-04-24",
   "day": 70,
   "balance": {
-    "total": 4490,
+    "total": 4513.47,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.2,
+  "totalReturn": -9.73,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2308.99,
-      "value": 1298.62,
-      "pnlPercent": 12.47,
-      "change24h": -0.9660675423780574
+      "currentPriceUSD": 2321.82,
+      "value": 1305.83,
+      "pnlPercent": 13.1,
+      "change24h": -0.4157813335026064
     },
     {
       "asset": "4GLD",
@@ -34,10 +34,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 128.91,
-      "value": 486.04,
-      "pnlPercent": 3.49,
-      "change24h": -0.6473988439306385
+      "currentPriceEUR": 129.65,
+      "value": 488.83,
+      "pnlPercent": 4.09,
+      "change24h": -0.07707129094411894
     },
     {
       "asset": "XEON",
@@ -45,10 +45,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 148.96,
-      "value": 451.51,
-      "pnlPercent": 6.02,
-      "change24h": 0.03156205301081641
+      "currentPriceEUR": 148.986,
+      "value": 451.59,
+      "pnlPercent": 6.04,
+      "change24h": 0.04902191212317197
     },
     {
       "asset": "EQQQ",
@@ -56,14 +56,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 563.9,
-      "value": 2040.05,
-      "pnlPercent": 7.49,
-      "change24h": 0.7504020010719906
+      "currentPriceEUR": 567.6,
+      "value": 2053.43,
+      "pnlPercent": 8.2,
+      "change24h": 1.4114704305878107
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-24T10:00:21.994Z",
+    "generatedAt": "2026-04-24T19:31:06.547Z",
     "eurUsd": 0.8547008547008548
   }
 }

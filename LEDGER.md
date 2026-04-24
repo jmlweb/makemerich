@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,490.00 |
-| Total Return | -10.20% |
+| Current Balance | €4,513.47 |
+| Total Return | -9.73% |
 | Days Active | 71 |
 
 ---
 
 ## Daily Log
+
+### Day 70 — April 24, 2026 21:30 CET
+
+**Balance:** €4,513.47 | **Total Return:** -9.7%
+**Day P&L:** +€17.59 (+0.4%) vs Day 69 (€4,495.88)
+
+**Prices at close:**
+- ETH: $2,321.82 / €1,985.16 (-0.45% 24h) — stop $1,900.00
+- 4GLD: €129.65 (-0.08% 24h) — stop €105.88
+- XEON: €148.99 (+0.05% 24h)
+- EQQQ: €567.60 (+1.41% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 7,160.15 (+0.31%)
+- NASDAQ: 24,816.38 (+0.64%)
+- GOLD: 4,736.80 (+0.67%)
+- IBEX35: 17,691.30 (-1.09%)
+- EUROSTOXX50: 5,883.48 (-0.19%)
+- DAX: 24,128.98 (-0.27%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,053.43 | 45.5% | +8.2% | +1.41% |
+| ETH | €1,305.83 | 28.9% | +13.1% | -0.45% |
+| 4GLD | €488.83 | 10.8% | +4.1% | -0.08% |
+| XEON | €451.59 | 10.0% | +6.0% | +0.05% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.11% vs SMA50, VIX 19.23)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.2% away)
+- 4GLD: stop EUR 105.88 (18.3% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+
+**Analysis:**
+EQQQ led gains today (+1.41%) driven by US tech strength (NASDAQ +0.64%), while European indices lagged with IBEX35 notably weak (-1.09%). Gold continues its uptrend (+0.67%), supporting the 4GLD position. All three stop-loss levels remain comfortably distant (10–18%) with the regime firmly RISK-ON.
+
+**HOLD — todas las posiciones están por encima de sus stops con señales cuantitativas en HOLD y sin catalizador intradiario que justifique movimiento.**
+
+---
+
 
 ### Day 70 — April 24, 2026 21:30 CET
 
