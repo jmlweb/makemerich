@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,513.47 |
-| Total Return | -9.73% |
-| Days Active | 71 |
+| Current Balance | €4,482.66 |
+| Total Return | -10.35% |
+| Days Active | 74 |
 
 ---
 
 ## Daily Log
+
+### Day 73 — April 27, 2026 21:30 CET
+
+**Balance:** €4,482.66 | **Total Return:** -10.3%
+**Day P&L:** €36.73 (-0.8%) vs Day 72 (€4,519.39)
+
+**Prices at close:**
+- ETH: $2,279.77 / €1,946.92 (-3.78% 24h) — stop $1,900.00
+- 4GLD: €128.23 (-1.34% 24h) — stop €105.88
+- XEON: €148.99 (+0.02% 24h)
+- EQQQ: €567.10 (+0.64% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,174.49 (+0.93%)
+- NASDAQ: 24,871.21 (+1.77%)
+- GOLD: 4,696.60 (-0.93%)
+- IBEX35: 17,692.90 (+0.01%)
+- EUROSTOXX50: 5,860.32 (-0.39%)
+- DAX: 24,083.53 (-0.30%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,051.62 | 45.8% | +8.1% | +0.64% |
+| ETH | €1,282.18 | 28.6% | +11.1% | -3.78% |
+| 4GLD | €483.48 | 10.8% | +3.0% | -1.34% |
+| XEON | €451.59 | 10.1% | +6.0% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.32% vs SMA50, VIX 19.06)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.7% away)
+- 4GLD: stop EUR 105.88 (17.4% away)
+- EQQQ: stop EUR 508.78 (10.3% away)
+- Portfolio drawdown: -10.3%
+
+**Analysis:**
+Risk-on regime holds with US equities strong (NASDAQ +1.77%, SP500 +0.93%), but ETH's -3.78% pullback drove today's -€36.73 loss; European indices diverged negative. All stops remain comfortably distant (10-17%), and quant signals confirm HOLD across all current positions.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones con stops aún alejados y el régimen de mercado favorable.**
+
+---
+
 
 ### Day 70 — April 24, 2026 21:30 CET
 
