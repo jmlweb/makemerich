@@ -4,10 +4,16 @@
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-VENV_PYTHON="/home/hustle/.config/hustle/venv/bin/python3"
-SEND_ALERT="/home/hustle/projects/hustle/core/lib/send_alert.py"
+SCRIPT_DIR="$REPO_DIR/scripts"
+PYTHON="${PYTHON:-/usr/bin/python3}"
+VENV_PYTHON="$PYTHON"  # legacy var name kept for the rest of the script
+SEND_TG="$SCRIPT_DIR/_send-telegram.js"
 LOG_FILE="/tmp/makemerich-daily.log"
-CLAUDE_BIN="/home/hustle/.local/bin/claude"
+CLAUDE_BIN="${CLAUDE_BIN:-/home/hustle/.local/bin/claude}"
+
+send_tg() {
+  node "$SEND_TG" "$1" || echo "Warning: telegram send failed"
+}
 
 # Load nvm / node
 export NVM_DIR="$HOME/.nvm"
@@ -19,7 +25,7 @@ echo "[$(date)] Starting daily close..." | tee "$LOG_FILE"
 
 # 1. Fetch prices
 echo "[1/9] Fetching prices..." | tee -a "$LOG_FILE"
-node scripts/fetch-prices.js >> "$LOG_FILE" 2>&1 || { "$VENV_PYTHON" "$SEND_ALERT" "⚠️ makemerich: error fetching prices"; exit 1; }
+node scripts/fetch-prices.js >> "$LOG_FILE" 2>&1 || { send_tg "⚠️ makemerich: error fetching prices"; exit 1; }
 
 # 2. Fetch historical OHLCV data
 echo "[2/9] Updating historical data..." | tee -a "$LOG_FILE"
@@ -27,7 +33,7 @@ node scripts/fetch-history.js >> "$LOG_FILE" 2>&1 || echo "Warning: history fetc
 
 # 3. Update portfolio (recalc at current prices)
 echo "[3/9] Updating portfolio..." | tee -a "$LOG_FILE"
-node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { "$VENV_PYTHON" "$SEND_ALERT" "⚠️ makemerich: error updating portfolio"; exit 1; }
+node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { send_tg "⚠️ makemerich: error updating portfolio"; exit 1; }
 
 # 4. Validate rules
 echo "[4/9] Validating rules..." | tee -a "$LOG_FILE"
@@ -195,6 +201,6 @@ set -e
 
 # --- Post-agent: send Telegram (built from template, no Claude) ---
 TELEGRAM_MSG=$(build_telegram_msg "$DECISION_WORD" "$DECISION_REASON")
-"$VENV_PYTHON" "$SEND_ALERT" "$TELEGRAM_MSG"
+send_tg "$TELEGRAM_MSG"
 
 echo "[$(date)] Daily close complete." | tee -a "$LOG_FILE"
