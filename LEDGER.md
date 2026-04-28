@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,482.66 |
-| Total Return | -10.35% |
-| Days Active | 74 |
+| Current Balance | €4,481.40 |
+| Total Return | -10.37% |
+| Days Active | 75 |
 
 ---
 
 ## Daily Log
+
+### Day 74 — April 28, 2026 21:30 CET
+
+**Balance:** €4,481.40 | **Total Return:** -10.4%
+**Day P&L:** €1.26 (-0.0%) vs Day 73 (€4,482.66)
+
+**Prices at close:**
+- ETH: $2,277.52 / €1,942.72 (-1.11% 24h) — stop $1,900.00
+- 4GLD: €128.23 (-1.10% 24h) — stop €105.88
+- XEON: €148.99 (+0.00% 24h)
+- EQQQ: €567.10 (-0.09% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,173.91 (+0.92%)
+- NASDAQ: 24,887.10 (+1.84%)
+- GOLD: 4,639.60 (-0.77%)
+- IBEX35: 17,692.90 (+0.00%)
+- EUROSTOXX50: 5,860.32 (+-0.00%)
+- DAX: 24,083.53 (-0.19%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,051.62 | 45.8% | +8.1% | -0.09% |
+| ETH | €1,280.92 | 28.6% | +10.9% | -1.11% |
+| 4GLD | €483.48 | 10.8% | +3.0% | -1.10% |
+| XEON | €451.59 | 10.1% | +6.0% | +0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.56% vs SMA50, VIX 18.02)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, SAP, ASML, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.6% away)
+- 4GLD: stop EUR 105.88 (17.4% away)
+- EQQQ: stop EUR 508.78 (10.3% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Market regime remains RISK-ON with SP500 well above SMA50 and VIX at 18.02, though daily action showed mixed signals — US tech outperformed (+1.84% NASDAQ) while ETH and gold both pulled back ~1.1%. All positions sit comfortably above stops (10-17% cushion), and quant signals confirm HOLD across the entire current portfolio with no defensive flags triggered.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales sin cambios, con el régimen de mercado en RISK-ON y los stops a distancia segura.**
+
+---
+
 
 ### Day 73 — April 27, 2026 21:30 CET
 
