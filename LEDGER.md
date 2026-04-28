@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,481.40 |
-| Total Return | -10.37% |
+| Current Balance | €4,481.08 |
+| Total Return | -10.38% |
 | Days Active | 75 |
 
 ---
 
 ## Daily Log
+
+### Day 74 — April 28, 2026 21:30 CET
+
+**Balance:** €4,481.08 | **Total Return:** -10.4%
+**Day P&L:** €1.58 (-0.0%) vs Day 73 (€4,482.66)
+
+**Prices at close:**
+- ETH: $2,282.08 / €1,946.61 (-0.91% 24h) — stop $1,900.00
+- 4GLD: €126.89 (-2.13% 24h) — stop €105.88
+- XEON: €148.99 (+-0.00% 24h)
+- EQQQ: €567.70 (+0.02% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,173.91 (+0.92%)
+- NASDAQ: 24,887.10 (+1.84%)
+- GOLD: 4,623.60 (-1.11%)
+- IBEX35: 17,859.60 (+0.94%)
+- EUROSTOXX50: 5,878.92 (+0.32%)
+- DAX: 24,124.79 (-0.02%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,053.79 | 45.8% | +8.2% | +0.02% |
+| ETH | €1,283.48 | 28.6% | +11.2% | -0.91% |
+| 4GLD | €478.43 | 10.7% | +1.9% | -2.13% |
+| XEON | €451.59 | 10.1% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.56% vs SMA50, VIX 18.33)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, SAP, ASML, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: SOL, MC, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.7% away)
+- 4GLD: stop EUR 105.88 (16.6% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Risk-on regime confirmed — NASDAQ +1.84% and SP500 +0.92% signal continued equity strength, while Gold -1.11% reflects typical risk-on rotation away from safe havens. All positions hold 10-16% cushion above stops; ETH's minor -0.91% dip is noise within the broader bullish macro context. Quant signals align: HOLD across all current holdings, no stop proximity requiring action.
+
+**HOLD — Régimen risk-on activo, todas las posiciones por encima de stops con margen amplio y señales cuantitativas confirman mantener.**
+
+---
+
 
 ### Day 74 — April 28, 2026 21:30 CET
 
