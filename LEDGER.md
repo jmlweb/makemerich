@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,481.08 |
-| Total Return | -10.38% |
-| Days Active | 75 |
+| Current Balance | €4,446.05 |
+| Total Return | -11.08% |
+| Days Active | 76 |
 
 ---
 
 ## Daily Log
+
+### Day 75 — April 29, 2026 21:30 CET
+
+**Balance:** €4,446.05 | **Total Return:** -11.1%
+**Day P&L:** €35.03 (-0.8%) vs Day 74 (€4,481.08)
+
+**Prices at close:**
+- ETH: $2,231.91 / €1,906.05 (-2.44% 24h) — stop $1,900.00
+- 4GLD: €125.08 (-2.46% 24h) — stop €105.88
+- XEON: €148.99 (+0.00% 24h)
+- EQQQ: €567.70 (+0.11% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,131.85 (-0.59%)
+- NASDAQ: 24,671.02 (-0.87%)
+- GOLD: 4,561.80 (-0.65%)
+- IBEX35: 17,642.80 (-0.74%)
+- EUROSTOXX50: 5,816.48 (-0.34%)
+- DAX: 23,954.56 (-0.54%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,053.79 | 46.2% | +8.2% | +0.11% |
+| ETH | €1,255.27 | 28.2% | +8.7% | -2.44% |
+| 4GLD | €471.60 | 10.6% | +0.4% | -2.46% |
+| XEON | €451.61 | 10.2% | +6.0% | +0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.75% vs SMA50, VIX 18.28)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (14.9% away)
+- 4GLD: stop EUR 105.88 (15.3% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -11.1%
+
+**Analysis:**
+Broad risk-off session — SP500 -0.59%, NASDAQ -0.87%, GOLD -0.65% — dragging ETH (-2.44%) and 4GLD (-2.46%) and producing a -0.8% day. EQQQ held near flat (+0.11%), providing relative stability. All stops remain 10-15% away and quant regime stays RISK-ON; no structural damage.
+
+**HOLD — Las señales cuantitativas confirman HOLD para todas las posiciones y los stops siguen alejados, sin motivo para actuar.**
+
+---
+
 
 ### Day 74 — April 28, 2026 21:30 CET
 
