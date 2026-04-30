@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,488.11 |
-| Total Return | -10.24% |
+| Current Balance | €4,472.19 |
+| Total Return | -10.56% |
 | Days Active | 77 |
 
 ---
 
 ## Daily Log
+
+### Day 76 — April 30, 2026 21:30 CET
+
+**Balance:** €4,472.19 | **Total Return:** -10.6%
+**Day P&L:** +€26.14 (+0.6%) vs Day 75 (€4,446.05)
+
+**Prices at close:**
+- ETH: $2,265.36 / €1,939.15 (+0.52% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+0.88% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,168.77 (+0.42%)
+- NASDAQ: 24,697.52 (+0.14%)
+- GOLD: 4,627.20 (+1.80%)
+- IBEX35: 17,781.00 (+0.78%)
+- EUROSTOXX50: 5,881.51 (+1.12%)
+- DAX: 24,292.38 (+1.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 45.9% | +8.3% | +1.18% |
+| ETH | €1,274.08 | 28.5% | +10.3% | +0.52% |
+| 4GLD | €477.75 | 10.7% | +1.7% | +0.88% |
+| XEON | €451.71 | 10.1% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.20% vs SMA50, VIX 18.36)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.1% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.6%
+
+**Analysis:**
+All major indices closed green with gold surging +1.80%, lifting 4GLD and reinforcing the risk-on regime. EQQQ leads portfolio performance at +8.3% from entry while ETH holds +10.3%; all stops remain 10-16% away with no immediate threat. Quant signals confirm HOLD across all current positions.
+
+**HOLD — todas las posiciones están en positivo respecto a entrada, el régimen es risk-on y las señales cuantitativas no indican cambio de postura.**
+
+---
+
 
 ### Day 76 — April 30, 2026 21:30 CET
 
