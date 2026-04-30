@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,446.05 |
-| Total Return | -11.08% |
-| Days Active | 76 |
+| Current Balance | €4,454.69 |
+| Total Return | -10.91% |
+| Days Active | 77 |
 
 ---
 
 ## Daily Log
+
+### Day 76 — April 30, 2026 21:30 CET
+
+**Balance:** €4,454.69 | **Total Return:** -10.9%
+**Day P&L:** +€8.64 (+0.2%) vs Day 75 (€4,446.05)
+
+**Prices at close:**
+- ETH: $2,247.27 / €1,923.66 (-0.28% 24h) — stop $1,900.00
+- 4GLD: €125.08 (-0.41% 24h) — stop €105.88
+- XEON: €148.99 (+-0.00% 24h)
+- EQQQ: €567.70 (+1.12% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,135.95 (-0.53%)
+- NASDAQ: 24,673.24 (-0.86%)
+- GOLD: 4,590.10 (+0.99%)
+- IBEX35: 17,642.80 (+0.00%)
+- EUROSTOXX50: 5,816.48 (+-0.00%)
+- DAX: 23,954.56 (-0.27%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,053.79 | 46.1% | +8.2% | +1.12% |
+| ETH | €1,263.90 | 28.4% | +9.5% | -0.28% |
+| 4GLD | €471.60 | 10.6% | +0.4% | -0.41% |
+| XEON | €451.61 | 10.1% | +6.0% | +-0.00% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.82% vs SMA50, VIX 18.81)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.4% away)
+- 4GLD: stop EUR 105.88 (15.3% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.9%
+
+**Analysis:**
+Risk-on regime intact — SP500 sits +4.82% above SMA50 with VIX at 18.81, though today's session showed mild tech softness (NASDAQ -0.86%, SP500 -0.53%). EQQQ bucked the trend (+1.12%), ETH slipped marginally (-0.28%), and gold continued its run (+0.99%), reinforcing the mixed-but-constructive macro picture. All stops remain 10-15% away with no positions under pressure.
+
+**HOLD — El régimen de mercado sigue siendo alcista, todas las posiciones están en positivo desde entrada y las señales cuantitativas confirman mantener sin cambios.**
+
+---
+
 
 ### Day 75 — April 29, 2026 21:30 CET
 
