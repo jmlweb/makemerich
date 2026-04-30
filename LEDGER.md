@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,454.69 |
-| Total Return | -10.91% |
+| Current Balance | €4,480.34 |
+| Total Return | -10.39% |
 | Days Active | 77 |
 
 ---
 
 ## Daily Log
+
+### Day 76 — April 30, 2026 21:30 CET
+
+**Balance:** €4,480.34 | **Total Return:** -10.4%
+**Day P&L:** +€34.29 (+0.8%) vs Day 75 (€4,446.05)
+
+**Prices at close:**
+- ETH: $2,262.20 / €1,936.44 (+0.36% 24h) — stop $1,900.00
+- 4GLD: €127.05 (+1.15% 24h) — stop €105.88
+- XEON: €149.01 (+0.01% 24h)
+- EQQQ: €570.40 (+1.60% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,135.95 (-0.53%)
+- NASDAQ: 24,673.24 (-0.86%)
+- GOLD: 4,635.50 (+1.99%)
+- IBEX35: 17,571.10 (-0.41%)
+- EUROSTOXX50: 5,796.37 (-0.35%)
+- DAX: 23,984.97 (-0.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,063.56 | 46.1% | +8.7% | +1.60% |
+| ETH | €1,272.30 | 28.4% | +10.2% | +0.36% |
+| 4GLD | €479.03 | 10.7% | +2.0% | +1.15% |
+| XEON | €451.66 | 10.1% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +4.82% vs SMA50, VIX 18.36)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.0% away)
+- 4GLD: stop EUR 105.88 (16.7% away)
+- EQQQ: stop EUR 508.78 (10.8% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Risk-on regime persists with SP500 well above SMA50, but US indices closed negative today while gold surged +2%, signaling rotation toward safe havens. All positions comfortably above stops (10-17% buffer). Portfolio drawdown at -10.4% warrants monitoring but no technical breach yet.
+
+**HOLD — Todas las posiciones están por encima de sus stops con margen suficiente y el régimen sigue siendo alcista, por lo que no hay motivo para actuar hoy.**
+
+---
+
 
 ### Day 76 — April 30, 2026 21:30 CET
 
