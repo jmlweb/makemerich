@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,480.34 |
-| Total Return | -10.39% |
+| Current Balance | €4,488.11 |
+| Total Return | -10.24% |
 | Days Active | 77 |
 
 ---
 
 ## Daily Log
+
+### Day 76 — April 30, 2026 21:30 CET
+
+**Balance:** €4,488.11 | **Total Return:** -10.2%
+**Day P&L:** +€42.06 (+0.9%) vs Day 75 (€4,446.05)
+
+**Prices at close:**
+- ETH: $2,256.10 / €1,931.22 (+0.21% 24h) — stop $1,900.00
+- 4GLD: €127.61 (+1.60% 24h) — stop €105.88
+- XEON: €149.03 (+0.02% 24h)
+- EQQQ: €572.90 (+2.05% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,166.56 (+0.39%)
+- NASDAQ: 24,673.24 (+0.04%)
+- GOLD: 4,651.00 (+2.33%)
+- IBEX35: 17,665.60 (+0.13%)
+- EUROSTOXX50: 5,845.01 (+0.49%)
+- DAX: 24,191.29 (+0.72%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,072.61 | 46.2% | +9.2% | +2.05% |
+| ETH | €1,268.87 | 28.3% | +9.9% | +0.21% |
+| 4GLD | €481.14 | 10.7% | +2.5% | +1.60% |
+| XEON | €451.71 | 10.1% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.20% vs SMA50, VIX 18.36)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.8% away)
+- 4GLD: stop EUR 105.88 (17.0% away)
+- EQQQ: stop EUR 508.78 (11.2% away)
+- Portfolio drawdown: -10.2%
+
+**Analysis:**
+Strong close with +0.9% day gain driven by EQQQ (+2.05%) and 4GLD (+1.60%), both riding GOLD's 2.33% surge and broad equity recovery. All positions profitable vs entry; quant regime is RISK-ON with VWCE flagged as BUY but no cash available to act. Portfolio drawdown at -10.2% remains the key watch metric with all stops comfortably distant.
+
+**HOLD — Todas las posiciones muestran beneficio respecto a entrada, el régimen es RISK-ON y los stops están suficientemente alejados para mantener sin cambios.**
+
+---
+
 
 ### Day 76 — April 30, 2026 21:30 CET
 
