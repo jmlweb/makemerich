@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,472.19 |
+| Current Balance | €4,471.97 |
 | Total Return | -10.56% |
 | Days Active | 77 |
 
 ---
 
 ## Daily Log
+
+### Day 76 — April 30, 2026 21:30 CET
+
+**Balance:** €4,471.97 | **Total Return:** -10.6%
+**Day P&L:** +€25.92 (+0.6%) vs Day 75 (€4,446.05)
+
+**Prices at close:**
+- ETH: $2,264.96 / €1,938.81 (+0.52% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+0.88% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,213.97 (+1.05%)
+- NASDAQ: 24,911.65 (+1.00%)
+- GOLD: 4,634.40 (+1.96%)
+- IBEX35: 17,781.00 (+0.78%)
+- EUROSTOXX50: 5,881.51 (+1.12%)
+- DAX: 24,292.38 (+1.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 46.0% | +8.3% | +1.18% |
+| ETH | €1,273.85 | 28.5% | +10.3% | +0.52% |
+| 4GLD | €477.75 | 10.7% | +1.7% | +0.88% |
+| XEON | €451.71 | 10.1% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.20% vs SMA50, VIX 18.36)
+- BUY: VWCE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.1% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.6%
+
+**Analysis:**
+Broad-based risk-on rally with SP500 +1.05%, NASDAQ +1.00%, and all major European indices up 0.78–1.14%; simultaneous gold surge (+1.96%) signals some macro uncertainty underneath equity strength. Portfolio gains +0.6% on the day with all four positions positive from entry; stops remain 10–16% away with no pressure. Quant regime confirmed RISK-ON, VWCE flags a BUY opportunity but no current position requires action.
+
+**HOLD — todas las posiciones están en positivo desde entrada, las señales cuantitativas confirman mantener y los stops están suficientemente alejados para aguantar volatilidad.**
+
+---
+
 
 ### Day 76 — April 30, 2026 21:30 CET
 
