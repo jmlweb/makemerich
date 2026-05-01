@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,481.23 |
-| Total Return | -10.38% |
+| Current Balance | €4,495.28 |
+| Total Return | -10.09% |
 | Days Active | 78 |
 
 ---
 
 ## Daily Log
+
+### Day 77 — May 1, 2026 21:30 CET
+
+**Balance:** €4,495.28 | **Total Return:** -10.1%
+**Day P&L:** +€23.31 (+0.5%) vs Day 76 (€4,471.97)
+
+**Prices at close:**
+- ETH: $2,306.41 / €1,967.37 (+2.28% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+0.88% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,236.86 (+1.41%)
+- NASDAQ: 24,892.31 (+0.93%)
+- GOLD: 4,601.60 (-0.28%)
+- IBEX35: 17,781.00 (+0.78%)
+- EUROSTOXX50: 5,881.51 (+1.12%)
+- DAX: 24,292.38 (+1.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 45.7% | +8.3% | +1.18% |
+| ETH | €1,297.17 | 28.9% | +12.3% | +2.28% |
+| 4GLD | €477.75 | 10.6% | +1.7% | +0.88% |
+| XEON | €451.71 | 10.0% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.06% vs SMA50, VIX 17.07)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.6% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+Risk-on session across all major indices (SP500 +1.41%, DAX +1.14%) lifted portfolio +€23.31 on ETH strength (+2.28%) and EQQQ (+1.18%). All positions remain profitable from entry with stops 10–17% below current prices. Quant regime confirms RISK-ON; no current holdings flagged for exit.
+
+**HOLD — todas las posiciones en beneficio desde entrada, stops lejanos y el régimen de mercado sigue siendo alcista.**
+
+---
+
 
 ### Day 77 — May 1, 2026 21:30 CET
 
