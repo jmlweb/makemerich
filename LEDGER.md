@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,495.28 |
-| Total Return | -10.09% |
+| Current Balance | €4,497.76 |
+| Total Return | -10.04% |
 | Days Active | 78 |
 
 ---
 
 ## Daily Log
+
+### Day 77 — May 1, 2026 21:30 CET
+
+**Balance:** €4,497.76 | **Total Return:** -10.0%
+**Day P&L:** +€25.79 (+0.6%) vs Day 76 (€4,471.97)
+
+**Prices at close:**
+- ETH: $2,310.81 / €1,971.12 (+2.27% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+0.88% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,257.35 (+1.70%)
+- NASDAQ: 25,185.85 (+2.08%)
+- GOLD: 4,655.30 (+0.88%)
+- IBEX35: 17,781.00 (+0.78%)
+- EUROSTOXX50: 5,881.51 (+1.12%)
+- DAX: 24,292.38 (+1.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 45.7% | +8.3% | +1.18% |
+| ETH | €1,299.64 | 28.9% | +12.6% | +2.27% |
+| 4GLD | €477.75 | 10.6% | +1.7% | +0.88% |
+| XEON | €451.71 | 10.0% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.06% vs SMA50, VIX 17.07)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.8% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.0%
+
+**Analysis:**
+Strong risk-on session globally — NASDAQ +2.08%, SP500 +1.70% led recovery, dragging ETH (+2.27%) and EQQQ (+1.18%) higher. All portfolio positions gained on the day; stops remain well clear (10-18% away). Portfolio sits exactly at the -10% drawdown threshold but trajectory is improving with +0.6% day gain.
+
+**HOLD — señales quant confirman HOLD en todas las posiciones y el momentum positivo del día reduce la presión del drawdown acumulado.**
+
+---
+
 
 ### Day 77 — May 1, 2026 21:30 CET
 
