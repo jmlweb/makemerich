@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,497.76 |
-| Total Return | -10.04% |
+| Current Balance | €4,495.00 |
+| Total Return | -10.10% |
 | Days Active | 78 |
 
 ---
 
 ## Daily Log
+
+### Day 77 — May 1, 2026 21:30 CET
+
+**Balance:** €4,495.00 | **Total Return:** -10.1%
+**Day P&L:** +€23.03 (+0.5%) vs Day 76 (€4,471.97)
+
+**Prices at close:**
+- ETH: $2,305.91 / €1,966.94 (+2.21% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+0.88% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,247.29 (+1.56%)
+- NASDAQ: 25,174.84 (+2.03%)
+- GOLD: 4,638.90 (+0.52%)
+- IBEX35: 17,781.00 (+0.78%)
+- EUROSTOXX50: 5,881.51 (+1.12%)
+- DAX: 24,292.38 (+1.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 45.7% | +8.3% | +1.18% |
+| ETH | €1,296.89 | 28.9% | +12.3% | +2.21% |
+| 4GLD | €477.75 | 10.6% | +1.7% | +0.88% |
+| XEON | €451.71 | 10.0% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.06% vs SMA50, VIX 17.07)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.6% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+Broad risk-on rally with SP500 +1.56% and NASDAQ +2.03% lifted all positions; ETH leads at +2.21% while EQQQ extends gains to +8.3% vs entry. Quant regime remains RISK-ON with VIX at 17.07 and SP500 well above SMA50; all held assets confirmed HOLD by quantitative signals. Stops remain distant (10-18% away) with no technical pressure to act.
+
+**HOLD — todas las posiciones con momentum positivo, señales cuantitativas confirman HOLD y los stops están lejos del precio actual.**
+
+---
+
 
 ### Day 77 — May 1, 2026 21:30 CET
 
