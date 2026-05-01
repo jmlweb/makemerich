@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,479.09 |
-| Total Return | -10.42% |
+| Current Balance | €4,481.23 |
+| Total Return | -10.38% |
 | Days Active | 78 |
 
 ---
 
 ## Daily Log
+
+### Day 77 — May 1, 2026 21:30 CET
+
+**Balance:** €4,481.23 | **Total Return:** -10.4%
+**Day P&L:** +€9.26 (+0.2%) vs Day 76 (€4,471.97)
+
+**Prices at close:**
+- ETH: $2,281.43 / €1,946.06 (+1.13% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+0.88% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,209.01 (+0.98%)
+- NASDAQ: 24,892.31 (+0.93%)
+- GOLD: 4,578.50 (-0.78%)
+- IBEX35: 17,781.00 (+0.78%)
+- EUROSTOXX50: 5,881.51 (+1.12%)
+- DAX: 24,292.38 (+1.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 45.9% | +8.3% | +1.18% |
+| ETH | €1,283.12 | 28.6% | +11.1% | +1.13% |
+| 4GLD | €477.75 | 10.7% | +1.7% | +0.88% |
+| XEON | €451.71 | 10.1% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.79% vs SMA50, VIX 17.07)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.7% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Broad risk-on session with equities up ~1% across US and European indices; ETH and EQQQ both captured gains while gold pulled back -0.78%, slightly pressuring 4GLD. All stops remain well clear (10-17% buffer), and quant signals confirm HOLD across the entire current portfolio. Portfolio drawdown at -10.4% is the only active violation but no stop triggers are imminent.
+
+**HOLD — todas las posiciones siguen por encima de sus stops con margen suficiente y las señales cuantitativas no justifican ningún movimiento hoy.**
+
+---
+
 
 ### Day 77 — May 1, 2026 21:30 CET
 
