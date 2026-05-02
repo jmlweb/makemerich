@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,495.00 |
-| Total Return | -10.10% |
-| Days Active | 78 |
+| Current Balance | €4,491.29 |
+| Total Return | -10.17% |
+| Days Active | 79 |
 
 ---
 
 ## Daily Log
+
+### Day 78 — May 2, 2026 21:30 CET
+
+**Balance:** €4,491.29 | **Total Return:** -10.2%
+**Day P&L:** €3.71 (-0.1%) vs Day 77 (€4,495.00)
+
+**Prices at close:**
+- ETH: $2,299.31 / €1,961.31 (+0.24% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+0.88% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8530
+- SP500: 7,230.12 (+1.32%)
+- NASDAQ: 25,114.44 (+1.79%)
+- GOLD: 4,629.90 (+0.33%)
+- IBEX35: 17,781.00 (+0.78%)
+- EUROSTOXX50: 5,881.51 (+1.12%)
+- DAX: 24,292.38 (+1.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 45.8% | +8.3% | +1.18% |
+| ETH | €1,293.17 | 28.8% | +12.0% | +0.24% |
+| 4GLD | €477.75 | 10.6% | +1.7% | +0.88% |
+| XEON | €451.71 | 10.1% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.8% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.98% vs SMA50, VIX 16.99)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.4% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+- Portfolio drawdown: -10.2%
+
+**Analysis:**
+Weekend close with broad risk-on momentum — SP500 +1.32%, NASDAQ +1.79%, European indices all green, gold steady. All portfolio positions gained on the day; ETH +0.24%, EQQQ +1.18%, 4GLD +0.88%. Quant regime confirms RISK-ON with VIX at 16.99; all holdings signal HOLD, BUY signals only for VWCE/ASML (not in portfolio).
+
+**HOLD — todos los activos en tendencia positiva, señales cuantitativas confirman mantener, y los stops están suficientemente alejados para no requerir acción.**
+
+---
+
 
 ### Day 77 — May 1, 2026 21:30 CET
 
