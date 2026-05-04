@@ -2,14 +2,14 @@
   "date": "2026-05-04",
   "day": 80,
   "balance": {
-    "total": 4548.41,
+    "total": 4543.63,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.03,
+  "totalReturn": -9.13,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2338.85,
-      "value": 1315.41,
-      "pnlPercent": 13.93,
-      "change24h": 0.7414729192870395
+      "currentPriceUSD": 2349.7,
+      "value": 1321.51,
+      "pnlPercent": 14.45,
+      "change24h": 1.2088158361796386
     },
     {
       "asset": "4GLD",
@@ -34,10 +34,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 125.58,
-      "value": 473.49,
-      "pnlPercent": 0.82,
-      "change24h": 0.3997441637352095
+      "currentPriceEUR": 124.62,
+      "value": 469.87,
+      "pnlPercent": 0.05,
+      "change24h": -0.3677646306363877
     },
     {
       "asset": "XEON",
@@ -45,10 +45,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.048,
-      "value": 451.78,
+      "currentPriceEUR": 149.039,
+      "value": 451.75,
       "pnlPercent": 6.08,
-      "change24h": 0.038257344403345134
+      "change24h": 0.03221671107649012
     },
     {
       "asset": "EQQQ",
@@ -56,14 +56,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 578.8,
-      "value": 2093.95,
-      "pnlPercent": 10.33,
-      "change24h": 1.9552580588338748
+      "currentPriceEUR": 576.8,
+      "value": 2086.72,
+      "pnlPercent": 9.95,
+      "change24h": 1.6029593094944352
     }
   ],
   "metadata": {
-    "generatedAt": "2026-05-04T13:30:08.914Z",
+    "generatedAt": "2026-05-04T16:00:06.248Z",
     "eurUsd": 0.8547008547008548
   }
 }
