@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,543.63 |
-| Total Return | -9.13% |
+| Current Balance | €4,547.56 |
+| Total Return | -9.05% |
 | Days Active | 81 |
 
 ---
 
 ## Daily Log
+
+### Day 80 — May 4, 2026 21:30 CET
+
+**Balance:** €4,547.56 | **Total Return:** -9.1%
+**Day P&L:** +€50.88 (+1.1%) vs Day 79 (€4,496.68)
+
+**Prices at close:**
+- ETH: $2,356.69 / €2,007.90 (+1.51% 24h) — stop $1,900.00
+- 4GLD: €124.62 (-0.37% 24h) — stop €105.88
+- XEON: €149.04 (+0.03% 24h)
+- EQQQ: €576.80 (+1.60% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,200.42 (-0.12%)
+- NASDAQ: 25,074.51 (+0.73%)
+- GOLD: 4,530.80 (-2.45%)
+- IBEX35: 17,356.10 (-2.39%)
+- EUROSTOXX50: 5,763.61 (-2.00%)
+- DAX: 23,991.27 (+0.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,086.72 | 45.9% | +9.9% | +1.60% |
+| ETH | €1,325.44 | 29.1% | +14.8% | +1.51% |
+| 4GLD | €469.87 | 10.3% | +0.1% | -0.37% |
+| XEON | €451.75 | 9.9% | +6.1% | +0.03% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.78% vs SMA50, VIX 17.48)
+- BUY: TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, ALV, DTE
+- SELL: NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.4% away)
+- 4GLD: stop EUR 105.88 (15.0% away)
+- EQQQ: stop EUR 508.78 (11.8% away)
+
+**Analysis:**
+Portfolio gained +1.1% on EQQQ (+1.60%) and ETH (+1.51%) strength, while European indices sold off sharply (IBEX -2.39%, EUROSTOXX50 -2.00%) and gold dropped -2.45% — classic risk-on rotation into US tech. All four positions remain profitable from entry with stops 12-19% away, and the quant regime stays RISK-ON with no sell signals on held assets.
+
+**HOLD — Las cuatro posiciones están en positivo desde entrada, el régimen es RISK-ON y las señales cuantitativas no justifican ningún cambio.**
+
+---
+
 
 ### Day 80 — May 4, 2026 21:30 CET
 
