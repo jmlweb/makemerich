@@ -2,14 +2,14 @@
   "date": "2026-05-04",
   "day": 80,
   "balance": {
-    "total": 4568.97,
+    "total": 4548.41,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -8.62,
+  "totalReturn": -9.03,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2368.54,
-      "value": 1332.11,
-      "pnlPercent": 15.37,
-      "change24h": 2.0203126614567544
+      "currentPriceUSD": 2338.85,
+      "value": 1315.41,
+      "pnlPercent": 13.93,
+      "change24h": 0.7414729192870395
     },
     {
       "asset": "4GLD",
@@ -34,10 +34,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 125.75,
-      "value": 474.13,
-      "pnlPercent": 0.96,
-      "change24h": 0.5356571794051821
+      "currentPriceEUR": 125.58,
+      "value": 473.49,
+      "pnlPercent": 0.82,
+      "change24h": 0.3997441637352095
     },
     {
       "asset": "XEON",
@@ -45,10 +45,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.035,
-      "value": 451.74,
-      "pnlPercent": 6.07,
-      "change24h": 0.029531985153454048
+      "currentPriceEUR": 149.048,
+      "value": 451.78,
+      "pnlPercent": 6.08,
+      "change24h": 0.038257344403345134
     },
     {
       "asset": "EQQQ",
@@ -56,14 +56,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 579.7,
-      "value": 2097.21,
-      "pnlPercent": 10.5,
-      "change24h": 2.113792496036639
+      "currentPriceEUR": 578.8,
+      "value": 2093.95,
+      "pnlPercent": 10.33,
+      "change24h": 1.9552580588338748
     }
   ],
   "metadata": {
-    "generatedAt": "2026-05-04T10:00:19.986Z",
+    "generatedAt": "2026-05-04T13:30:08.914Z",
     "eurUsd": 0.8547008547008548
   }
 }

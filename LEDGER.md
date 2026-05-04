@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,568.97 |
-| Total Return | -8.62% |
+| Current Balance | €4,548.41 |
+| Total Return | -9.03% |
 | Days Active | 81 |
 
 ---
 
 ## Daily Log
+
+### Day 80 — May 4, 2026 21:30 CET
+
+**Balance:** €4,548.41 | **Total Return:** -9.0%
+**Day P&L:** +€51.73 (+1.2%) vs Day 79 (€4,496.68)
+
+**Prices at close:**
+- ETH: $2,338.85 / €1,992.70 (+0.74% 24h) — stop $1,900.00
+- 4GLD: €125.58 (+0.40% 24h) — stop €105.88
+- XEON: €149.05 (+0.04% 24h)
+- EQQQ: €578.80 (+1.96% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,230.12 (+1.32%)
+- NASDAQ: 25,114.44 (+1.79%)
+- GOLD: 4,575.60 (-1.48%)
+- IBEX35: 17,477.20 (-1.71%)
+- EUROSTOXX50: 5,817.41 (-1.09%)
+- DAX: 24,219.18 (+1.10%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,093.95 | 46.0% | +10.3% | +1.96% |
+| ETH | €1,315.41 | 28.9% | +13.9% | +0.74% |
+| 4GLD | €473.49 | 10.4% | +0.8% | +0.40% |
+| XEON | €451.78 | 9.9% | +6.1% | +0.04% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.78% vs SMA50, VIX 17.48)
+- BUY: TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, ALV, DTE
+- SELL: NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.8% away)
+- 4GLD: stop EUR 105.88 (15.7% away)
+- EQQQ: stop EUR 508.78 (12.1% away)
+
+**Analysis:**
+US equities led a broad risk-on rally (NASDAQ +1.79%, SP500 +1.32%) while European indices diverged sharply (IBEX -1.71%, EUROSTOXX -1.09%), and gold's -1.48% drop confirms capital rotation into growth assets. Portfolio recovered +1.2% on the day driven by EQQQ strength (+1.96%), with all three active positions showing positive P{{ANALYSIS}}L from entry and stops comfortably distant (12-18%). Quant model remains RISK-ON with HOLD on all current holdings.
+
+**HOLD — todas las posiciones muestran P{{DECISION}}L positivo desde entrada, las distancias a los stops son amplias y el modelo cuantitativo confirma mantener sin cambios.**
+
+---
+
 
 ### Day 80 — May 4, 2026 21:30 CET
 
