@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,529.22 |
-| Total Return | -9.42% |
+| Current Balance | €4,568.97 |
+| Total Return | -8.62% |
 | Days Active | 81 |
 
 ---
 
 ## Daily Log
+
+### Day 80 — May 4, 2026 21:30 CET
+
+**Balance:** €4,568.97 | **Total Return:** -8.6%
+**Day P&L:** +€72.29 (+1.6%) vs Day 79 (€4,496.68)
+
+**Prices at close:**
+- ETH: $2,368.54 / €2,018.00 (+2.00% 24h) — stop $1,900.00
+- 4GLD: €125.75 (+0.54% 24h) — stop €105.88
+- XEON: €149.04 (+0.02% 24h)
+- EQQQ: €579.70 (+2.11% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,230.12 (+1.32%)
+- NASDAQ: 25,114.44 (+1.79%)
+- GOLD: 4,593.30 (-1.10%)
+- IBEX35: 17,602.60 (-1.00%)
+- EUROSTOXX50: 5,853.95 (-0.47%)
+- DAX: 24,380.70 (+1.78%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,097.21 | 45.9% | +10.5% | +2.11% |
+| ETH | €1,332.11 | 29.2% | +15.4% | +2.00% |
+| 4GLD | €474.13 | 10.4% | +1.0% | +0.54% |
+| XEON | €451.74 | 9.9% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.98% vs SMA50, VIX 17.48)
+- BUY: TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, ALV, DTE
+- SELL: NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.8% away)
+- 4GLD: stop EUR 105.88 (15.8% away)
+- EQQQ: stop EUR 508.78 (12.2% away)
+
+**Analysis:**
+Strong risk-on session driven by US tech recovery — SP500 +1.32%, NASDAQ +1.79%, DAX +1.78% — lifted EQQQ and ETH meaningfully while gold sold off -1.10%, confirming rotation back into growth assets. Portfolio recovered €72 on the day, with all three active positions well above their stops (12-20% buffer). Quant regime stays RISK-ON and all held assets signal HOLD; TTE flags as a new BUY candidate but no position exists yet.
+
+**HOLD — todas las posiciones están en territorio positivo con stops holgados y las señales cuantitativas confirman mantener sin cambios.**
+
+---
+
 
 ### Day 80 — May 4, 2026 21:30 CET
 
