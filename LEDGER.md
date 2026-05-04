@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,496.68 |
-| Total Return | -10.07% |
-| Days Active | 80 |
+| Current Balance | €4,529.22 |
+| Total Return | -9.42% |
+| Days Active | 81 |
 
 ---
 
 ## Daily Log
+
+### Day 80 — May 4, 2026 21:30 CET
+
+**Balance:** €4,529.22 | **Total Return:** -9.4%
+**Day P&L:** +€32.54 (+0.7%) vs Day 79 (€4,496.68)
+
+**Prices at close:**
+- ETH: $2,366.76 / €2,016.48 (+1.99% 24h) — stop $1,900.00
+- 4GLD: €126.71 (+1.30% 24h) — stop €105.88
+- XEON: €149.02 (+0.02% 24h)
+- EQQQ: €568.00 (+0.05% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,230.12 (+1.32%)
+- NASDAQ: 25,114.44 (+1.79%)
+- GOLD: 4,600.90 (-0.94%)
+- IBEX35: 17,781.00 (+0.00%)
+- EUROSTOXX50: 5,881.51 (+-0.00%)
+- DAX: 24,292.38 (+1.41%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,054.88 | 45.4% | +8.3% | +0.05% |
+| ETH | €1,331.11 | 29.4% | +15.3% | +1.99% |
+| 4GLD | €477.75 | 10.5% | +1.7% | +1.30% |
+| XEON | €451.71 | 10.0% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.98% vs SMA50, VIX 16.99)
+- BUY: VWCE, ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, SAP, MC, ITX, SIE, AIR, ALV, TTE, DTE
+- SELL: NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.7% away)
+- 4GLD: stop EUR 105.88 (16.4% away)
+- EQQQ: stop EUR 508.78 (10.4% away)
+
+**Analysis:**
+US equities led a broad risk-on rally (S{{ANALYSIS}}P500 +1.32%, NASDAQ +1.79%, DAX +1.41%) with VIX at 16.99, confirming the established risk-on regime. ETH gained nearly 2% intraday, extending its entry-basis gain to +15.3%, while gold pulled back -0.94% and European indices stalled. All four portfolio positions remain well above their stops (nearest: EQQQ at 10.4% cushion) with quant signals uniformly confirming HOLD.
+
+**HOLD — todas las posiciones muestran beneficio frente a entrada, las señales cuantitativas confirman mantener y los stops están suficientemente alejados para no requerir acción.**
+
+---
+
 
 ### Day 79 — May 3, 2026 21:30 CET
 
