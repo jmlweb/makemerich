@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,559.47 |
-| Total Return | -8.81% |
+| Current Balance | €4,574.54 |
+| Total Return | -8.51% |
 | Days Active | 82 |
 
 ---
 
 ## Daily Log
+
+### Day 81 — May 5, 2026 21:30 CET
+
+**Balance:** €4,574.54 | **Total Return:** -8.5%
+**Day P&L:** +€26.98 (+0.6%) vs Day 80 (€4,547.56)
+
+**Prices at close:**
+- ETH: $2,369.10 / €2,025.58 (+0.97% 24h) — stop $1,900.00
+- 4GLD: €125.32 (-1.10% 24h) — stop €105.88
+- XEON: €149.04 (+0.01% 24h)
+- EQQQ: €581.60 (+2.39% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 7,200.75 (-0.11%)
+- NASDAQ: 25,067.80 (+0.70%)
+- GOLD: 4,564.30 (+0.99%)
+- IBEX35: 17,568.70 (+1.22%)
+- EUROSTOXX50: 5,838.09 (+1.29%)
+- DAX: 24,260.15 (-0.13%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,104.08 | 46.0% | +10.9% | +2.39% |
+| ETH | €1,332.42 | 29.1% | +15.4% | +0.97% |
+| 4GLD | €472.51 | 10.3% | +0.6% | -1.10% |
+| XEON | €451.74 | 9.9% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.46% vs SMA50, VIX 17.71)
+- BUY: TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, ALV, DTE
+- SELL: BTC, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (19.8% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (12.5% away)
+
+**Analysis:**
+Market regime stays RISK-ON (VIX 17.71, SP500 +5.46% vs SMA50); EQQQ led portfolio today (+2.39%) on NASDAQ strength, ETH held gains, and gold's +0.99% supports 4GLD despite its slight intraday dip. All four holdings carry HOLD signals from quant engine with stops 12-20% below current prices, providing comfortable cushion. Only actionable quant BUY is TTE, not in portfolio; no urgency to act.
+
+**HOLD — Todas las posiciones mantienen señal cuantitativa HOLD con el régimen en RISK-ON y stops alejados, por lo que no hay motivo para operar hoy.**
+
+---
+
 
 ### Day 81 — May 5, 2026 21:30 CET
 
