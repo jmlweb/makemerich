@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,547.56 |
-| Total Return | -9.05% |
-| Days Active | 81 |
+| Current Balance | €4,559.47 |
+| Total Return | -8.81% |
+| Days Active | 82 |
 
 ---
 
 ## Daily Log
+
+### Day 81 — May 5, 2026 21:30 CET
+
+**Balance:** €4,559.47 | **Total Return:** -8.8%
+**Day P&L:** +€11.91 (+0.3%) vs Day 80 (€4,547.56)
+
+**Prices at close:**
+- ETH: $2,377.86 / €2,033.07 (+1.39% 24h) — stop $1,900.00
+- 4GLD: €124.62 (-1.65% 24h) — stop €105.88
+- XEON: €149.04 (+0.01% 24h)
+- EQQQ: €576.80 (+1.55% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 7,200.75 (-0.11%)
+- NASDAQ: 25,067.80 (+0.70%)
+- GOLD: 4,558.30 (+0.86%)
+- IBEX35: 17,356.10 (+-0.00%)
+- EUROSTOXX50: 5,763.61 (+-0.00%)
+- DAX: 23,991.27 (-1.24%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,086.72 | 45.8% | +9.9% | +1.55% |
+| ETH | €1,337.35 | 29.3% | +15.8% | +1.39% |
+| 4GLD | €469.87 | 10.3% | +0.1% | -1.65% |
+| XEON | €451.75 | 9.9% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.46% vs SMA50, VIX 18.29)
+- BUY: VWCE, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, SAP, ASML, MC, ITX, SIE, AIR, ALV, DTE
+- SELL: BTC, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.1% away)
+- 4GLD: stop EUR 105.88 (15.0% away)
+- EQQQ: stop EUR 508.78 (11.8% away)
+
+**Analysis:**
+Portfolio gained +0.3% on the day, led by ETH (+1.39%) and EQQQ (+1.55%) while 4GLD pulled back slightly (-1.65%). Market regime remains RISK-ON with NASDAQ outperforming and all stops comfortably distant (12-20%). Quant signals confirm HOLD across all current holdings with no structural changes warranted.
+
+**HOLD — todas las posiciones muestran señales de mantenimiento y los stops están lejos, sin catalizadores para actuar hoy.**
+
+---
+
 
 ### Day 80 — May 4, 2026 21:30 CET
 
