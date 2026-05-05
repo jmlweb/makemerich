@@ -2,14 +2,14 @@
   "date": "2026-05-05",
   "day": 81,
   "balance": {
-    "total": 4574.54,
+    "total": 4584.39,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -8.51,
+  "totalReturn": -8.31,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2369.1,
-      "value": 1332.42,
-      "pnlPercent": 15.4,
-      "change24h": 0.9675685742864475
+      "currentPriceUSD": 2376.99,
+      "value": 1336.86,
+      "pnlPercent": 15.78,
+      "change24h": 1.303828806463691
     },
     {
       "asset": "4GLD",
@@ -34,10 +34,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 125.32,
-      "value": 472.51,
-      "pnlPercent": 0.61,
-      "change24h": -1.0969931339278673
+      "currentPriceEUR": 125.89,
+      "value": 474.66,
+      "pnlPercent": 1.07,
+      "change24h": -0.6471470286480887
     },
     {
       "asset": "XEON",
@@ -45,10 +45,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.036,
-      "value": 451.74,
+      "currentPriceEUR": 149.04,
+      "value": 451.76,
       "pnlPercent": 6.08,
-      "change24h": 0.008052394245222552
+      "change24h": 0.010736525660290378
     },
     {
       "asset": "EQQQ",
@@ -56,14 +56,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 581.6,
-      "value": 2104.08,
-      "pnlPercent": 10.87,
-      "change24h": 2.3943661971831025
+      "currentPriceEUR": 582.5,
+      "value": 2107.34,
+      "pnlPercent": 11.04,
+      "change24h": 2.552816901408451
     }
   ],
   "metadata": {
-    "generatedAt": "2026-05-05T10:00:21.390Z",
+    "generatedAt": "2026-05-05T13:30:06.821Z",
     "eurUsd": 0.8547008547008548
   }
 }

@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,574.54 |
-| Total Return | -8.51% |
+| Current Balance | €4,584.39 |
+| Total Return | -8.31% |
 | Days Active | 82 |
 
 ---
 
 ## Daily Log
+
+### Day 81 — May 5, 2026 21:30 CET
+
+**Balance:** €4,584.39 | **Total Return:** -8.3%
+**Day P&L:** +€36.83 (+0.8%) vs Day 80 (€4,547.56)
+
+**Prices at close:**
+- ETH: $2,376.99 / €2,032.33 (+1.30% 24h) — stop $1,900.00
+- 4GLD: €125.89 (-0.65% 24h) — stop €105.88
+- XEON: €149.04 (+0.01% 24h)
+- EQQQ: €582.50 (+2.55% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8550
+- SP500: 7,233.62 (+0.05%)
+- NASDAQ: 25,067.80 (-0.19%)
+- GOLD: 4,590.90 (+1.58%)
+- IBEX35: 17,581.70 (+1.30%)
+- EUROSTOXX50: 5,847.33 (+1.45%)
+- DAX: 24,350.54 (+0.24%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,107.34 | 46.0% | +11.0% | +2.55% |
+| ETH | €1,336.86 | 29.2% | +15.8% | +1.30% |
+| 4GLD | €474.66 | 10.4% | +1.1% | -0.65% |
+| XEON | €451.76 | 9.9% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.91% vs SMA50, VIX 17.71)
+- BUY: TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, ALV, DTE
+- SELL: BTC, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.1% away)
+- 4GLD: stop EUR 105.88 (15.9% away)
+- EQQQ: stop EUR 508.78 (12.7% away)
+
+**Analysis:**
+European indices outperformed US today (EUROSTOXX50 +1.45%, IBEX35 +1.30%) while NASDAQ dipped slightly, suggesting rotation into European equities that benefits EQQQ directly. Gold's +1.58% alongside risk-on regime indicates hedging demand coexisting with equity strength — supportive for 4GLD recovery after its small dip. All portfolio stops remain well away (ETH 20.1%, EQQQ 12.7%), and quant signals confirm HOLD across all current holdings.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales y el cash disponible (€213.78) es insuficiente para abrir una posición relevante en TTE.**
+
+---
+
 
 ### Day 81 — May 5, 2026 21:30 CET
 
