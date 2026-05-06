@@ -26,6 +26,56 @@
 
 **Market context:**
 - EUR/USD: 0.8540
+- SP500: 7,362.21 (+2.24%)
+- NASDAQ: 25,806.79 (+2.95%)
+- GOLD: 4,708.60 (+3.35%)
+- IBEX35: 18,104.30 (+2.47%)
+- EUROSTOXX50: 6,027.13 (+2.68%)
+- DAX: 24,918.69 (+3.87%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,140.98 | 46.3% | +12.8% | +2.60% |
+| ETH | €1,336.86 | 28.9% | +15.8% | +-0.00% |
+| 4GLD | €483.97 | 10.5% | +3.0% | +3.00% |
+| XEON | €451.80 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.75% vs SMA50, VIX 16.76)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, VWCE, SAP, ITX, ALV, TTE, DTE
+- SELL: BTC, MC, SIE, AIR, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.1% away)
+- 4GLD: stop EUR 105.88 (17.5% away)
+- EQQQ: stop EUR 508.78 (14.0% away)
+
+**Analysis:**
+Broad risk-on surge across all major indices (SP500 +2.24%, NASDAQ +2.95%, DAX +3.87%) with gold +3.35% adding unusual safe-haven strength alongside equities — likely post-event relief rally. Portfolio gained +€35 driven by EQQQ and 4GLD; ETH flat but holds well above stop. All three active stops remain 14-20% away with no threat.
+
+**HOLD — señales cuantitativas confirman mantener todas las posiciones; el mercado en régimen RISK-ON respalda la cartera actual sin necesidad de cambios.**
+
+---
+
+
+### Day 82 — May 6, 2026 21:30 CET
+
+**Balance:** €4,627.39 | **Total Return:** -7.5%
+**Day P&L:** +€35.02 (+0.8%) vs Day 81 (€4,592.37)
+
+**Prices at close:**
+- ETH: $2,376.99 / €2,029.95 (+-0.00% 24h) — stop $1,900.00
+- 4GLD: €128.36 (+3.00% 24h) — stop €105.88
+- XEON: €149.05 (+0.01% 24h)
+- EQQQ: €591.80 (+2.60% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
 - SP500: 7,341.00 (+1.95%)
 - NASDAQ: 25,696.04 (+2.51%)
 - GOLD: 4,704.70 (+3.27%)
