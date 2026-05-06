@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,615.62 |
-| Total Return | -7.69% |
+| Current Balance | €4,627.39 |
+| Total Return | -7.45% |
 | Days Active | 83 |
 
 ---
 
 ## Daily Log
+
+### Day 82 — May 6, 2026 21:30 CET
+
+**Balance:** €4,627.39 | **Total Return:** -7.5%
+**Day P&L:** +€35.02 (+0.8%) vs Day 81 (€4,592.37)
+
+**Prices at close:**
+- ETH: $2,376.99 / €2,029.95 (+-0.00% 24h) — stop $1,900.00
+- 4GLD: €128.36 (+3.00% 24h) — stop €105.88
+- XEON: €149.05 (+0.01% 24h)
+- EQQQ: €591.80 (+2.60% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,341.00 (+1.95%)
+- NASDAQ: 25,696.04 (+2.51%)
+- GOLD: 4,704.70 (+3.27%)
+- IBEX35: 18,104.30 (+2.47%)
+- EUROSTOXX50: 6,027.13 (+2.68%)
+- DAX: 24,918.69 (+3.87%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,140.98 | 46.3% | +12.8% | +2.60% |
+| ETH | €1,336.86 | 28.9% | +15.8% | +-0.00% |
+| 4GLD | €483.97 | 10.5% | +3.0% | +3.00% |
+| XEON | €451.80 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.75% vs SMA50, VIX 16.76)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, VWCE, SAP, ITX, ALV, TTE, DTE
+- SELL: BTC, MC, SIE, AIR, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.1% away)
+- 4GLD: stop EUR 105.88 (17.5% away)
+- EQQQ: stop EUR 508.78 (14.0% away)
+
+**Analysis:**
+Strong risk-on day across all markets — SP500 +1.95%, DAX +3.87%, GOLD +3.27% — with all portfolio holdings posting gains and stops remaining comfortably distant (14-20%). Quant regime confirms RISK-ON; all current positions rated HOLD, with ASML as the only actionable BUY but only €213 cash available for deployment. Portfolio recovered +€35 today but remains -7.5% from starting capital, with EQQQ and ETH as the two largest drivers of recovery trajectory.
+
+**HOLD — posiciones actuales bien posicionadas en entorno risk-on, sin liquidez suficiente para entrar en ASML con tamaño relevante.**
+
+---
+
 
 ### Day 82 — May 6, 2026 21:30 CET
 
