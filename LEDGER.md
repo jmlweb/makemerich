@@ -7,11 +7,61 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,592.37 |
 | Total Return | -8.15% |
-| Days Active | 82 |
+| Days Active | 83 |
 
 ---
 
 ## Daily Log
+
+### Day 82 — May 6, 2026 21:30 CET
+
+**Balance:** €4,592.37 | **Total Return:** -8.2%
+**Day P&L:** +€0.00 (+0.0%) vs Day 81 (€4,592.37)
+
+**Prices at close:**
+- ETH: $2,376.99 / €2,029.95 (+-0.00% 24h) — stop $1,900.00
+- 4GLD: €125.70 (+0.87% 24h) — stop €105.88
+- XEON: €149.05 (+0.00% 24h)
+- EQQQ: €584.90 (+1.40% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,259.22 (+0.40%)
+- NASDAQ: 25,326.13 (+0.84%)
+- GOLD: 4,675.30 (+2.62%)
+- IBEX35: 17,667.70 (+-0.00%)
+- EUROSTOXX50: 5,869.63 (+-0.00%)
+- DAX: 24,401.70 (+0.45%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,116.02 | 46.1% | +11.5% | +1.40% |
+| ETH | €1,336.86 | 29.1% | +15.8% | +-0.00% |
+| 4GLD | €473.94 | 10.3% | +0.9% | +0.87% |
+| XEON | €451.77 | 9.8% | +6.1% | +0.00% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.19% vs SMA50, VIX 17.38)
+- BUY: TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, ALV, DTE
+- SELL: BTC, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.1% away)
+- 4GLD: stop EUR 105.88 (15.8% away)
+- EQQQ: stop EUR 508.78 (13.0% away)
+
+**Analysis:**
+Markets closed broadly positive with NASDAQ +0.84% and gold surging +2.62%, confirming the RISK-ON regime despite mixed European closes. All portfolio positions hold healthy P{{ANALYSIS}}L vs entry with stops 13–20% below current prices, providing ample cushion. Quant signals flag TTE as a new BUY candidate while existing holdings remain HOLD.
+
+**HOLD — todas las posiciones están en positivo con stops alejados y el régimen de mercado sigue siendo favorable; sin urgencia de cambios.**
+
+---
+
 
 ### Day 81 — May 5, 2026 21:30 CET
 
