@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,592.37 |
-| Total Return | -8.15% |
+| Current Balance | €4,618.59 |
+| Total Return | -7.63% |
 | Days Active | 83 |
 
 ---
 
 ## Daily Log
+
+### Day 82 — May 6, 2026 21:30 CET
+
+**Balance:** €4,618.59 | **Total Return:** -7.6%
+**Day P&L:** +€26.22 (+0.6%) vs Day 81 (€4,592.37)
+
+**Prices at close:**
+- ETH: $2,376.99 / €2,029.95 (+-0.00% 24h) — stop $1,900.00
+- 4GLD: €128.33 (+2.98% 24h) — stop €105.88
+- XEON: €149.05 (+0.01% 24h)
+- EQQQ: €589.40 (+2.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,259.22 (+0.40%)
+- NASDAQ: 25,326.13 (+0.84%)
+- GOLD: 4,712.60 (+3.44%)
+- IBEX35: 18,060.50 (+2.22%)
+- EUROSTOXX50: 6,011.26 (+2.41%)
+- DAX: 25,008.99 (+4.24%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,132.30 | 46.2% | +12.3% | +2.18% |
+| ETH | €1,336.86 | 28.9% | +15.8% | +-0.00% |
+| 4GLD | €483.86 | 10.5% | +3.0% | +2.98% |
+| XEON | €451.79 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.19% vs SMA50, VIX 16.76)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, VWCE, SAP, ITX, ALV, TTE, DTE
+- SELL: BTC, MC, SIE, AIR, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.1% away)
+- 4GLD: stop EUR 105.88 (17.5% away)
+- EQQQ: stop EUR 508.78 (13.7% away)
+
+**Analysis:**
+Broad global rally led by European equities (DAX +4.24%, EUROSTOXX50 +2.41%) alongside gold surging +3.44% signals simultaneous risk-on and safe-haven demand — likely trade/geopolitical resolution tailwinds. Portfolio gained +0.6% driven by EQQQ and 4GLD; ETH flat but maintains strongest gain from entry (+15.8%). Quant regime remains RISK-ON with VIX at 16.76 and all held positions rated HOLD.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales y el régimen de mercado sigue siendo favorable.**
+
+---
+
 
 ### Day 82 — May 6, 2026 21:30 CET
 
