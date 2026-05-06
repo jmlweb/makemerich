@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,618.59 |
-| Total Return | -7.63% |
+| Current Balance | €4,615.62 |
+| Total Return | -7.69% |
 | Days Active | 83 |
 
 ---
 
 ## Daily Log
+
+### Day 82 — May 6, 2026 21:30 CET
+
+**Balance:** €4,615.62 | **Total Return:** -7.7%
+**Day P&L:** +€23.25 (+0.5%) vs Day 81 (€4,592.37)
+
+**Prices at close:**
+- ETH: $2,376.99 / €2,029.95 (+-0.00% 24h) — stop $1,900.00
+- 4GLD: €128.03 (+2.74% 24h) — stop €105.88
+- XEON: €149.04 (+0.00% 24h)
+- EQQQ: €588.90 (+2.10% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,259.22 (+0.81%)
+- NASDAQ: 25,326.13 (+1.03%)
+- GOLD: 4,693.80 (+3.03%)
+- IBEX35: 18,082.50 (+2.35%)
+- EUROSTOXX50: 6,010.96 (+2.41%)
+- DAX: 24,917.16 (+3.86%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,130.49 | 46.2% | +12.3% | +2.10% |
+| ETH | €1,336.86 | 29.0% | +15.8% | +-0.00% |
+| 4GLD | €482.72 | 10.5% | +2.8% | +2.74% |
+| XEON | €451.77 | 9.8% | +6.1% | +0.00% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.75% vs SMA50, VIX 16.76)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, SOL, SXR8, VWCE, SAP, ITX, ALV, TTE, DTE
+- SELL: BTC, MC, SIE, AIR, NOVO
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (20.1% away)
+- 4GLD: stop EUR 105.88 (17.3% away)
+- EQQQ: stop EUR 508.78 (13.6% away)
+
+**Analysis:**
+Strong broad rally led by European equities (DAX +3.86%, EUROSTOXX50 +2.41%) alongside gold (+3.03%), signaling simultaneous risk-on and safe-haven demand — consistent with macro uncertainty unwinding. All four portfolio positions held or gained, with EQQQ and 4GLD capturing the equity and gold moves directly. Quant regime is RISK-ON, all holdings rated HOLD, and stops are 13-20% away with no near triggers.
+
+**HOLD — señales cuantitativas confirman HOLD en todas las posiciones actuales y el efectivo disponible (4.6%, €213) es insuficiente para abrir una posición significativa en ASML, el único BUY señalado.**
+
+---
+
 
 ### Day 82 — May 6, 2026 21:30 CET
 
