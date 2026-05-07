@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,602.18 |
-| Total Return | -7.96% |
+| Current Balance | €4,599.55 |
+| Total Return | -8.01% |
 | Days Active | 84 |
 
 ---
 
 ## Daily Log
+
+### Day 83 — May 7, 2026 21:30 CET
+
+**Balance:** €4,599.55 | **Total Return:** -8.0%
+**Day P&L:** €27.84 (-0.6%) vs Day 82 (€4,627.39)
+
+**Prices at close:**
+- ETH: $2,323.33 / €1,977.15 (-1.10% 24h) — stop $1,900.00
+- 4GLD: €129.23 (+2.81% 24h) — stop €105.88
+- XEON: €149.06 (+0.01% 24h)
+- EQQQ: €594.60 (+1.66% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,376.78 (+1.62%)
+- NASDAQ: 25,838.94 (+2.02%)
+- GOLD: 4,750.40 (+1.46%)
+- IBEX35: 18,142.80 (+0.21%)
+- EUROSTOXX50: 6,027.24 (+0.00%)
+- DAX: 24,861.12 (+1.88%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,151.11 | 46.8% | +13.3% | +1.66% |
+| ETH | €1,295.61 | 28.2% | +13.2% | -1.10% |
+| 4GLD | €487.25 | 10.6% | +3.8% | +2.81% |
+| XEON | €451.80 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.60% vs SMA50, VIX 17.48)
+- BUY: 4GLD
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, NOVO, ALV, TTE, DTE
+- SELL: SIE, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.2% away)
+- 4GLD: stop EUR 105.88 (18.1% away)
+- EQQQ: stop EUR 508.78 (14.4% away)
+
+**Analysis:**
+Risk-on regime confirmed with SP500 +1.62% and NASDAQ +2.02% on strong momentum; gold also advancing +1.46%, supporting 4GLD's quant BUY signal. ETH underperforms slightly at -1.10% but remains well above stop. Cash position of €213.78 (4.6%) is available for deployment into the flagged opportunity.
+
+**BUY — El sistema cuantitativo mantiene señal de compra en 4GLD con oro subiendo +1.46% y régimen de mercado risk-on confirmado; usar el efectivo disponible para comprar 1 acción a ~€129.23.**
+
+---
+
 
 ### Day 83 — May 7, 2026 21:30 CET
 

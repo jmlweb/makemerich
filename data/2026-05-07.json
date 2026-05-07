@@ -2,14 +2,14 @@
   "date": "2026-05-07",
   "day": 83,
   "balance": {
-    "total": 4602.18,
+    "total": 4599.55,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -7.96,
+  "totalReturn": -8.01,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2327.32,
-      "value": 1297.83,
-      "pnlPercent": 13.36,
-      "change24h": -0.9988931437015951
+      "currentPriceUSD": 2323.33,
+      "value": 1295.61,
+      "pnlPercent": 13.17,
+      "change24h": -1.1686224531032474
     },
     {
       "asset": "4GLD",
@@ -34,10 +34,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 129.43,
-      "value": 488,
-      "pnlPercent": 3.91,
-      "change24h": 2.9673826571201305
+      "currentPriceEUR": 129.23,
+      "value": 487.25,
+      "pnlPercent": 3.75,
+      "change24h": 2.8082736674622013
     },
     {
       "asset": "XEON",
@@ -45,10 +45,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.06,
-      "value": 451.82,
+      "currentPriceEUR": 149.055,
+      "value": 451.8,
       "pnlPercent": 6.09,
-      "change24h": 0.010064074608349679
+      "change24h": 0.006709383072239477
     },
     {
       "asset": "EQQQ",
@@ -56,14 +56,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 594.5,
-      "value": 2150.75,
-      "pnlPercent": 13.32,
-      "change24h": 1.641306206189096
+      "currentPriceEUR": 594.6,
+      "value": 2151.11,
+      "pnlPercent": 13.34,
+      "change24h": 1.6584031458369028
     }
   ],
   "metadata": {
-    "generatedAt": "2026-05-07T10:00:20.803Z",
+    "generatedAt": "2026-05-07T13:30:08.083Z",
     "eurUsd": 0.8474576271186441
   }
 }
