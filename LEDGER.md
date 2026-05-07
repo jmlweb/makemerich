@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,627.39 |
-| Total Return | -7.45% |
-| Days Active | 83 |
+| Current Balance | €4,593.76 |
+| Total Return | -8.12% |
+| Days Active | 84 |
 
 ---
 
 ## Daily Log
+
+### Day 83 — May 7, 2026 21:30 CET
+
+**Balance:** €4,593.76 | **Total Return:** -8.1%
+**Day P&L:** €33.63 (-0.7%) vs Day 82 (€4,627.39)
+
+**Prices at close:**
+- ETH: $2,337.00 / €1,988.79 (-0.58% 24h) — stop $1,900.00
+- 4GLD: €128.36 (+2.12% 24h) — stop €105.88
+- XEON: €149.05 (+0.01% 24h)
+- EQQQ: €591.80 (+1.18% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,365.12 (+2.28%)
+- NASDAQ: 25,838.94 (+3.08%)
+- GOLD: 4,747.40 (+1.40%)
+- IBEX35: 18,104.30 (+0.00%)
+- EUROSTOXX50: 6,027.13 (+-0.00%)
+- DAX: 24,918.69 (+2.12%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,140.98 | 46.6% | +12.8% | +1.18% |
+| ETH | €1,303.23 | 28.4% | +13.8% | -0.58% |
+| 4GLD | €483.97 | 10.5% | +3.0% | +2.12% |
+| XEON | €451.80 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.59% vs SMA50, VIX 17.39)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, ITX, NOVO, ALV, TTE, DTE
+- SELL: MC, SIE, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.7% away)
+- 4GLD: stop EUR 105.88 (17.5% away)
+- EQQQ: stop EUR 508.78 (14.0% away)
+
+**Analysis:**
+Strong risk-on session globally — SP500 +2.28%, NASDAQ +3.08%, DAX +2.12% — but ETH underperformed (-0.58% in USD, amplified by EUR strength at 0.8510) dragging day P{{ANALYSIS}}L negative despite EQQQ and 4GLD gains. All portfolio positions well above their stops (14–18% cushion) and quant signals confirm HOLD across all holdings.
+
+**HOLD — todas las posiciones muestran señales cuantitativas de mantenimiento, los stops están lejos y el régimen de mercado sigue siendo RISK-ON.**
+
+---
+
 
 ### Day 82 — May 6, 2026 21:30 CET
 
