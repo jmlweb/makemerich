@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,593.76 |
-| Total Return | -8.12% |
+| Current Balance | €4,602.18 |
+| Total Return | -7.96% |
 | Days Active | 84 |
 
 ---
 
 ## Daily Log
+
+### Day 83 — May 7, 2026 21:30 CET
+
+**Balance:** €4,602.18 | **Total Return:** -8.0%
+**Day P&L:** €25.21 (-0.5%) vs Day 82 (€4,627.39)
+
+**Prices at close:**
+- ETH: $2,327.32 / €1,980.55 (-0.96% 24h) — stop $1,900.00
+- 4GLD: €129.43 (+2.97% 24h) — stop €105.88
+- XEON: €149.06 (+0.01% 24h)
+- EQQQ: €594.50 (+1.64% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,365.12 (+2.28%)
+- NASDAQ: 25,838.94 (+3.08%)
+- GOLD: 4,745.20 (+1.35%)
+- IBEX35: 18,104.00 (+-0.00%)
+- EUROSTOXX50: 6,036.44 (+0.15%)
+- DAX: 24,914.53 (+2.10%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,150.75 | 46.7% | +13.3% | +1.64% |
+| ETH | €1,297.83 | 28.2% | +13.4% | -0.96% |
+| 4GLD | €488.00 | 10.6% | +3.9% | +2.97% |
+| XEON | €451.82 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.59% vs SMA50, VIX 17.48)
+- BUY: 4GLD
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, NOVO, ALV, TTE, DTE
+- SELL: SIE, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.4% away)
+- 4GLD: stop EUR 105.88 (18.2% away)
+- EQQQ: stop EUR 508.78 (14.4% away)
+
+**Analysis:**
+US equities surged (SP500 +2.28%, NASDAQ +3.08%) on broad risk-on sentiment, but ETH's -0.96% decline offset EQQQ and 4GLD gains, leaving the portfolio down €25.21 on the day. Quant regime confirms RISK-ON with 4GLD as the sole BUY signal, supported by gold spot +1.35% and the ETF's +2.97% daily move. All stops remain 14-18% away; €213.78 cash sits idle with one actionable signal available.
+
+**BUY — Compra 1 acción de 4GLD (~€129) con el efectivo disponible, aprovechando la señal cuantitativa de compra y el momentum alcista del oro.**
+
+---
+
 
 ### Day 83 — May 7, 2026 21:30 CET
 
