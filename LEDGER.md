@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,599.55 |
-| Total Return | -8.01% |
+| Current Balance | €4,594.92 |
+| Total Return | -8.10% |
 | Days Active | 84 |
 
 ---
 
 ## Daily Log
+
+### Day 83 — May 7, 2026 21:30 CET
+
+**Balance:** €4,594.92 | **Total Return:** -8.1%
+**Day P&L:** €32.47 (-0.7%) vs Day 82 (€4,627.39)
+
+**Prices at close:**
+- ETH: $2,292.60 / €1,951.00 (-2.42% 24h) — stop $1,900.00
+- 4GLD: €129.66 (+3.15% 24h) — stop €105.88
+- XEON: €149.06 (+0.01% 24h)
+- EQQQ: €597.60 (+2.17% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,362.57 (+1.42%)
+- NASDAQ: 25,907.38 (+2.30%)
+- GOLD: 4,744.10 (+1.33%)
+- IBEX35: 18,060.80 (-0.24%)
+- EUROSTOXX50: 5,972.65 (-0.90%)
+- DAX: 24,663.61 (+1.07%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,161.97 | 47.1% | +13.9% | +2.17% |
+| ETH | €1,278.47 | 27.8% | +11.7% | -2.42% |
+| 4GLD | €488.87 | 10.6% | +4.1% | +3.15% |
+| XEON | €451.83 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.60% vs SMA50, VIX 17.48)
+- BUY: 4GLD
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, NOVO, ALV, TTE, DTE
+- SELL: SIE, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.1% away)
+- 4GLD: stop EUR 105.88 (18.3% away)
+- EQQQ: stop EUR 508.78 (14.9% away)
+
+**Analysis:**
+US equities surged (NASDAQ +2.30%, SP500 +1.42%) while European indices diverged (EUROSTOXX50 -0.90%), confirming a US-led risk-on session. Portfolio is net positive today despite ETH's -2.42% pullback, with EQQQ and 4GLD both outperforming. Cash sits at 4.7% (€213.78) and the only quant BUY signal is 4GLD, which is up +3.15% on the day with momentum intact.
+
+**BUY — Desplegamos el cash restante (€213.78) en 4GLD, única señal BUY del sistema en régimen RISK-ON con momentum positivo y stop cómodo al 18.3%.**
+
+---
+
 
 ### Day 83 — May 7, 2026 21:30 CET
 
