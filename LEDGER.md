@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,592.12 |
-| Total Return | -8.16% |
+| Current Balance | €4,624.50 |
+| Total Return | -7.51% |
 | Days Active | 85 |
 
 ---
 
 ## Daily Log
+
+### Day 84 — May 8, 2026 21:30 CET
+
+**Balance:** €4,624.50 | **Total Return:** -7.5%
+**Day P&L:** +€30.85 (+0.7%) vs Day 83 (€4,593.65)
+
+**Prices at close:**
+- ETH: $2,293.41 / €1,951.69 (+0.07% 24h) — stop $1,900.00
+- 4GLD: €128.71 (+0.27% 24h) — stop €105.88
+- XEON: €149.09 (+0.02% 24h)
+- EQQQ: €603.60 (+1.99% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,391.35 (+0.36%)
+- NASDAQ: 26,133.73 (+1.14%)
+- GOLD: 4,719.10 (+0.41%)
+- IBEX35: 17,889.40 (-0.95%)
+- EUROSTOXX50: 5,911.53 (-1.02%)
+- DAX: 24,338.63 (-2.33%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,183.67 | 47.2% | +15.1% | +1.99% |
+| ETH | €1,289.85 | 27.9% | +11.7% | +0.07% |
+| 4GLD | €485.29 | 10.5% | +3.3% | +0.27% |
+| XEON | €451.91 | 9.8% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.40% vs SMA50, VIX 17.07)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.1% away)
+- 4GLD: stop EUR 105.88 (17.7% away)
+- EQQQ: stop EUR 508.78 (15.7% away)
+
+**Analysis:**
+US markets led gains (NASDAQ +1.14%, SP500 +0.36%) while European indices sold off sharply (DAX -2.33%, EUROSTOXX50 -1.02%), a divergence that favored EQQQ (+1.99%) and reinforced the RISK-ON regime signal. All portfolio positions remain above their stops with comfortable buffers (15-17% away), and quant signals emit a BUY on ASML but HOLD on all current holdings. Cash reserves (€213.78, 4.6%) are too thin for a meaningful ASML entry without trimming an existing position.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales y aunque hay señal de compra en ASML, el efectivo disponible es insuficiente para una entrada significativa.**
+
+---
+
 
 ### Day 84 — May 8, 2026 21:30 CET
 
