@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,593.65 |
-| Total Return | -8.13% |
-| Days Active | 84 |
+| Current Balance | €4,595.28 |
+| Total Return | -8.09% |
+| Days Active | 85 |
 
 ---
 
 ## Daily Log
+
+### Day 84 — May 8, 2026 21:30 CET
+
+**Balance:** €4,595.28 | **Total Return:** -8.1%
+**Day P&L:** +€1.63 (+0.0%) vs Day 83 (€4,593.65)
+
+**Prices at close:**
+- ETH: $2,273.82 / €1,935.02 (-0.75% 24h) — stop $1,900.00
+- 4GLD: €129.66 (+1.01% 24h) — stop €105.88
+- XEON: €149.06 (+0.01% 24h)
+- EQQQ: €597.60 (+0.98% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,337.11 (+1.07%)
+- NASDAQ: 25,806.20 (+1.90%)
+- GOLD: 4,734.00 (+0.73%)
+- IBEX35: 18,060.80 (+0.00%)
+- EUROSTOXX50: 5,972.65 (+-0.00%)
+- DAX: 24,663.61 (-1.02%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,161.97 | 47.0% | +13.9% | +0.98% |
+| ETH | €1,278.83 | 27.8% | +10.8% | -0.75% |
+| 4GLD | €488.87 | 10.6% | +4.1% | +1.01% |
+| XEON | €451.83 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.06% vs SMA50, VIX 17.08)
+- BUY: 4GLD, ASML
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.4% away)
+- 4GLD: stop EUR 105.88 (18.3% away)
+- EQQQ: stop EUR 508.78 (14.9% away)
+
+**Analysis:**
+Markets broadly risk-on with SP500 +1.07% and NASDAQ +1.90%; quant model confirms RISK-ON regime (SP500 +7.06% vs SMA50, VIX 17.08). EQQQ and 4GLD both gaining today while ETH pulls back slightly but remains well above its stop. Available cash at 4.7% provides a small deployment opportunity aligned with the BUY signal on 4GLD.
+
+**BUY — El modelo cuantitativo señala compra en 4GLD con régimen RISK-ON confirmado y hay €213 en cash disponible para desplegar.**
+
+---
+
 
 ### Day 83 — May 7, 2026 21:30 CET
 
