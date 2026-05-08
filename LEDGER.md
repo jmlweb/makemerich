@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,595.28 |
-| Total Return | -8.09% |
+| Current Balance | €4,595.76 |
+| Total Return | -8.08% |
 | Days Active | 85 |
 
 ---
 
 ## Daily Log
+
+### Day 84 — May 8, 2026 21:30 CET
+
+**Balance:** €4,595.76 | **Total Return:** -8.1%
+**Day P&L:** +€2.11 (+0.0%) vs Day 83 (€4,593.65)
+
+**Prices at close:**
+- ETH: $2,283.00 / €1,942.83 (-0.35% 24h) — stop $1,900.00
+- 4GLD: €128.79 (+0.33% 24h) — stop €105.88
+- XEON: €149.08 (+0.02% 24h)
+- EQQQ: €597.20 (+0.91% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,337.11 (+1.07%)
+- NASDAQ: 25,806.20 (+1.90%)
+- GOLD: 4,720.00 (+0.43%)
+- IBEX35: 18,005.50 (-0.31%)
+- EUROSTOXX50: 5,935.11 (-0.63%)
+- DAX: 24,504.62 (-1.66%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,160.52 | 47.0% | +13.8% | +0.91% |
+| ETH | €1,284.00 | 27.9% | +11.2% | -0.35% |
+| 4GLD | €485.59 | 10.6% | +3.4% | +0.33% |
+| XEON | €451.87 | 9.8% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.06% vs SMA50, VIX 17.07)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.8% away)
+- 4GLD: stop EUR 105.88 (17.8% away)
+- EQQQ: stop EUR 508.78 (14.8% away)
+
+**Analysis:**
+US markets rallied strongly (SP500 +1.07%, NASDAQ +1.90%) while European indices sold off (DAX -1.66%, EUROSTOXX50 -0.63%), creating a transatlantic divergence that benefits EQQQ exposure but dampens ASML entry appeal. Quant flags ASML as the sole BUY in a RISK-ON regime, but available cash (€213.78, 4.7%) is too thin for a meaningful position. All held assets are performing well above entry with stops comfortably distant (14-17%).
+
+**HOLD — el efectivo disponible es insuficiente para abrir una posición significativa en ASML, y todas las posiciones actuales muestran señales de mantenimiento con stops alejados.**
+
+---
+
 
 ### Day 84 — May 8, 2026 21:30 CET
 
