@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,595.76 |
-| Total Return | -8.08% |
+| Current Balance | €4,592.12 |
+| Total Return | -8.16% |
 | Days Active | 85 |
 
 ---
 
 ## Daily Log
+
+### Day 84 — May 8, 2026 21:30 CET
+
+**Balance:** €4,592.12 | **Total Return:** -8.2%
+**Day P&L:** €1.53 (-0.0%) vs Day 83 (€4,593.65)
+
+**Prices at close:**
+- ETH: $2,273.70 / €1,934.92 (-0.76% 24h) — stop $1,900.00
+- 4GLD: €128.93 (+0.44% 24h) — stop €105.88
+- XEON: €149.07 (+0.01% 24h)
+- EQQQ: €597.50 (+0.96% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,370.22 (+0.07%)
+- NASDAQ: 25,806.20 (-0.13%)
+- GOLD: 4,735.40 (+0.76%)
+- IBEX35: 17,938.80 (-0.68%)
+- EUROSTOXX50: 5,912.37 (-1.01%)
+- DAX: 24,391.10 (-2.12%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,161.60 | 47.1% | +13.9% | +0.96% |
+| ETH | €1,278.77 | 27.8% | +10.8% | -0.76% |
+| 4GLD | €486.12 | 10.6% | +3.5% | +0.44% |
+| XEON | €451.85 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.40% vs SMA50, VIX 17.07)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.4% away)
+- 4GLD: stop EUR 105.88 (17.9% away)
+- EQQQ: stop EUR 508.78 (14.8% away)
+
+**Analysis:**
+US markets nearly flat while European indices fell sharply (DAX -2.12%, EUROSTOXX50 -1.01%), but EQQQ's US tech exposure cushioned the impact with a +0.96% session. Portfolio holds well above all stop levels with EQQQ leading at +13.9% from entry. Quant model signals RISK-ON and flags ASML as the sole BUY opportunity while all current positions remain on HOLD.
+
+**BUY — Ejecutar posición pequeña en ASML con el efectivo disponible (€213.78) aprovechando la señal cuantitativa y el régimen RISK-ON, asumiendo que los mínimos de las acciones europeas no invalidan la tesis.**
+
+---
+
 
 ### Day 84 — May 8, 2026 21:30 CET
 
