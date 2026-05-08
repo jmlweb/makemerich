@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,624.50 |
-| Total Return | -7.51% |
+| Current Balance | €4,636.90 |
+| Total Return | -7.26% |
 | Days Active | 85 |
 
 ---
 
 ## Daily Log
+
+### Day 84 — May 8, 2026 21:30 CET
+
+**Balance:** €4,636.90 | **Total Return:** -7.3%
+**Day P&L:** +€43.25 (+0.9%) vs Day 83 (€4,593.65)
+
+**Prices at close:**
+- ETH: $2,315.45 / €1,970.45 (+1.06% 24h) — stop $1,900.00
+- 4GLD: €128.71 (+0.27% 24h) — stop €105.88
+- XEON: €149.09 (+0.02% 24h)
+- EQQQ: €603.60 (+1.99% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8510
+- SP500: 7,388.72 (+0.32%)
+- NASDAQ: 26,182.13 (+1.33%)
+- GOLD: 4,733.40 (+0.71%)
+- IBEX35: 17,889.40 (-0.95%)
+- EUROSTOXX50: 5,911.53 (-1.02%)
+- DAX: 24,338.63 (-2.33%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,183.67 | 47.1% | +15.1% | +1.99% |
+| ETH | €1,302.25 | 28.1% | +12.8% | +1.06% |
+| 4GLD | €485.29 | 10.5% | +3.3% | +0.27% |
+| XEON | €451.91 | 9.7% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.40% vs SMA50, VIX 17.07)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.9% away)
+- 4GLD: stop EUR 105.88 (17.7% away)
+- EQQQ: stop EUR 508.78 (15.7% away)
+
+**Analysis:**
+US markets led the session — NASDAQ +1.33% and SP500 +0.32% drove EQQQ (+1.99%) and ETH (+1.06%) higher while European indices diverged sharply (DAX -2.33%, EUROSTOXX50 -1.02%). All four positions remain in profit from entry (EQQQ +15.1%, ETH +12.8%, XEON +6.1%, 4GLD +3.3%) with stops 15-18% away. Regime stays RISK-ON; quant signals flag ASML as a new BUY candidate but no existing position requires action.
+
+**HOLD — Todas las posiciones siguen en beneficio con stops bien alejados y el régimen de mercado en riesgo, por lo que se mantiene la cartera sin cambios.**
+
+---
+
 
 ### Day 84 — May 8, 2026 21:30 CET
 
