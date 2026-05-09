@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,636.90 |
-| Total Return | -7.26% |
-| Days Active | 85 |
+| Current Balance | €4,625.00 |
+| Total Return | -7.50% |
+| Days Active | 86 |
 
 ---
 
 ## Daily Log
+
+### Day 85 — May 9, 2026 21:30 CET
+
+**Balance:** €4,625.00 | **Total Return:** -7.5%
+**Day P&L:** €11.90 (-0.3%) vs Day 84 (€4,636.90)
+
+**Prices at close:**
+- ETH: $2,313.90 / €1,964.50 (+0.33% 24h) — stop $1,900.00
+- 4GLD: €128.71 (+0.27% 24h) — stop €105.88
+- XEON: €149.09 (+0.02% 24h)
+- EQQQ: €603.60 (+1.99% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,398.93 (+0.46%)
+- NASDAQ: 26,247.08 (+1.58%)
+- GOLD: 4,720.40 (+0.44%)
+- IBEX35: 17,889.40 (-0.95%)
+- EUROSTOXX50: 5,911.53 (-1.02%)
+- DAX: 24,338.63 (-2.33%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,183.67 | 47.2% | +15.1% | +1.99% |
+| ETH | €1,290.35 | 27.9% | +12.7% | +0.33% |
+| 4GLD | €485.29 | 10.5% | +3.3% | +0.27% |
+| XEON | €451.91 | 9.8% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.80% vs SMA50, VIX 17.19)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.9% away)
+- 4GLD: stop EUR 105.88 (17.7% away)
+- EQQQ: stop EUR 508.78 (15.7% away)
+
+**Analysis:**
+US markets led gains with NASDAQ +1.58% and SP500 +0.46%, supporting EQQQ and risk-on regime, while European indices (DAX -2.33%, EUROSTOXX50 -1.02%) diverged sharply — likely EUR strength and regional factors. All portfolio positions remain comfortably above stops (15-18% cushion) with positive entry P{{ANALYSIS}}L across the board. Weekend session with no new quant buy signals; cash reserve at 4.6% provides optionality but no trigger to deploy.
+
+**HOLD — todas las posiciones muestran señal de mantenimiento, los stops están lejos y no hay catalizador claro para nuevas entradas este fin de semana.**
+
+---
+
 
 ### Day 84 — May 8, 2026 21:30 CET
 
