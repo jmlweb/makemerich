@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,625.00 |
-| Total Return | -7.50% |
-| Days Active | 86 |
+| Current Balance | €4,632.25 |
+| Total Return | -7.36% |
+| Days Active | 87 |
 
 ---
 
 ## Daily Log
+
+### Day 86 — May 10, 2026 21:30 CET
+
+**Balance:** €4,632.25 | **Total Return:** -7.4%
+**Day P&L:** +€7.25 (+0.2%) vs Day 85 (€4,625.00)
+
+**Prices at close:**
+- ETH: $2,326.90 / €1,975.54 (+0.02% 24h) — stop $1,900.00
+- 4GLD: €128.71 (+0.27% 24h) — stop €105.88
+- XEON: €149.09 (+0.02% 24h)
+- EQQQ: €603.60 (+1.99% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8490
+- SP500: 7,398.93 (+0.46%)
+- NASDAQ: 26,247.08 (+1.58%)
+- GOLD: 4,730.70 (+0.22%)
+- IBEX35: 17,889.40 (-0.95%)
+- EUROSTOXX50: 5,911.53 (-1.02%)
+- DAX: 24,338.63 (-2.33%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,183.67 | 47.1% | +15.1% | +1.99% |
+| ETH | €1,297.60 | 28.0% | +13.3% | +0.02% |
+| 4GLD | €485.29 | 10.5% | +3.3% | +0.27% |
+| XEON | €451.91 | 9.8% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.80% vs SMA50, VIX 17.19)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.4% away)
+- 4GLD: stop EUR 105.88 (17.7% away)
+- EQQQ: stop EUR 508.78 (15.7% away)
+
+**Analysis:**
+US markets closed strong led by NASDAQ (+1.58%), maintaining risk-on regime, while European indices diverged sharply negative (DAX -2.33%, EUROSTOXX50 -1.02%) — a transatlantic split worth watching. All four portfolio positions sit well above entry with stops 15-18% away, leaving no trigger conditions active. Weekend session with zero trades and quant signals uniformly HOLD across held assets.
+
+**HOLD — todas las posiciones en positivo, régimen risk-on confirmado y ninguna señal de salida activa.**
+
+---
+
 
 ### Day 85 — May 9, 2026 21:30 CET
 
