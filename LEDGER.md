@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,640.91 |
-| Total Return | -7.18% |
+| Current Balance | €4,652.45 |
+| Total Return | -6.95% |
 | Days Active | 88 |
 
 ---
 
 ## Daily Log
+
+### Day 87 — May 11, 2026 21:30 CET
+
+**Balance:** €4,652.45 | **Total Return:** -7.0%
+**Day P&L:** +€20.20 (+0.4%) vs Day 86 (€4,632.25)
+
+**Prices at close:**
+- ETH: $2,332.24 / €1,982.40 (-1.52% 24h) — stop $1,900.00
+- 4GLD: €129.14 (-0.40% 24h) — stop €105.88
+- XEON: €149.11 (+0.03% 24h)
+- EQQQ: €607.90 (+1.72% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,423.69 (+1.18%)
+- NASDAQ: 26,341.57 (+2.07%)
+- GOLD: 4,738.90 (+0.17%)
+- IBEX35: 17,852.50 (-0.21%)
+- EUROSTOXX50: 5,895.45 (-0.27%)
+- DAX: 24,350.28 (-1.27%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,199.23 | 47.3% | +15.9% | +1.72% |
+| ETH | €1,300.58 | 28.0% | +13.6% | -1.52% |
+| 4GLD | €486.91 | 10.5% | +3.7% | -0.40% |
+| XEON | €451.95 | 9.7% | +6.1% | +0.03% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.47% vs SMA50, VIX 18.08)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.5% away)
+- 4GLD: stop EUR 105.88 (18.0% away)
+- EQQQ: stop EUR 508.78 (16.3% away)
+
+**Analysis:**
+US markets surged strongly (SP500 +1.18%, NASDAQ +2.07%) driving EQQQ to +1.72%, while ETH pulled back -1.52% and European indices underperformed (DAX -1.27%). Quant regime stays RISK-ON with SP500 well above SMA50 and VIX at 18.08; all portfolio assets hold HOLD signal with stops 16-18% away. Cash at 4.6% provides optionality but no entry signal justifies deployment today.
+
+**HOLD — el régimen cuantitativo sigue en RISK-ON, todas las posiciones mantienen señal HOLD y los stops están lejos, sin catalizador para actuar.**
+
+---
+
 
 ### Day 87 — May 11, 2026 21:30 CET
 
