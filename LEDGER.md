@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,635.21 |
-| Total Return | -7.30% |
+| Current Balance | €4,643.99 |
+| Total Return | -7.12% |
 | Days Active | 88 |
 
 ---
 
 ## Daily Log
+
+### Day 87 — May 11, 2026 21:30 CET
+
+**Balance:** €4,643.99 | **Total Return:** -7.1%
+**Day P&L:** +€11.74 (+0.3%) vs Day 86 (€4,632.25)
+
+**Prices at close:**
+- ETH: $2,335.40 / €1,985.09 (-1.43% 24h) — stop $1,900.00
+- 4GLD: €127.40 (-1.74% 24h) — stop €105.88
+- XEON: €149.09 (+0.02% 24h)
+- EQQQ: €606.90 (+1.56% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,398.93 (+0.46%)
+- NASDAQ: 26,247.08 (+1.58%)
+- GOLD: 4,670.80 (-1.27%)
+- IBEX35: 17,906.20 (+0.09%)
+- EUROSTOXX50: 5,895.73 (-0.27%)
+- DAX: 24,339.40 (-1.31%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,195.61 | 47.3% | +15.7% | +1.56% |
+| ETH | €1,302.34 | 28.0% | +13.8% | -1.43% |
+| 4GLD | €480.35 | 10.3% | +2.3% | -1.74% |
+| XEON | €451.91 | 9.7% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.80% vs SMA50, VIX 18.08)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.6% away)
+- 4GLD: stop EUR 105.88 (16.9% away)
+- EQQQ: stop EUR 508.78 (16.2% away)
+
+**Analysis:**
+NASDAQ surged +1.58% and SP500 +0.46%, pulling EQQQ to a solid +1.56% gain that offset ETH and 4GLD weakness. Gold retreating -1.27% while European indices mixed-to-negative signals rotation toward US tech. All stops remain 16-18% away with quant regime firmly RISK-ON.
+
+**HOLD — todas las posiciones están bien posicionadas con el régimen de mercado en RISK-ON y los stops suficientemente alejados para aguantar la volatilidad diaria.**
+
+---
+
 
 ### Day 87 — May 11, 2026 21:30 CET
 
