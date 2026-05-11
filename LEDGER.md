@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,643.99 |
-| Total Return | -7.12% |
+| Current Balance | €4,640.91 |
+| Total Return | -7.18% |
 | Days Active | 88 |
 
 ---
 
 ## Daily Log
+
+### Day 87 — May 11, 2026 21:30 CET
+
+**Balance:** €4,640.91 | **Total Return:** -7.2%
+**Day P&L:** +€8.66 (+0.2%) vs Day 86 (€4,632.25)
+
+**Prices at close:**
+- ETH: $2,326.72 / €1,977.71 (-1.79% 24h) — stop $1,900.00
+- 4GLD: €128.82 (-0.65% 24h) — stop €105.88
+- XEON: €149.10 (+0.02% 24h)
+- EQQQ: €605.90 (+1.39% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,398.93 (+0.46%)
+- NASDAQ: 26,247.08 (+1.71%)
+- GOLD: 4,737.10 (+0.14%)
+- IBEX35: 17,844.70 (-0.25%)
+- EUROSTOXX50: 5,894.68 (-0.29%)
+- DAX: 24,292.68 (-1.50%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,191.99 | 47.2% | +15.5% | +1.39% |
+| ETH | €1,297.50 | 28.0% | +13.3% | -1.79% |
+| 4GLD | €485.70 | 10.5% | +3.4% | -0.65% |
+| XEON | €451.93 | 9.7% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.47% vs SMA50, VIX 18.08)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.3% away)
+- 4GLD: stop EUR 105.88 (17.8% away)
+- EQQQ: stop EUR 508.78 (16.0% away)
+
+**Analysis:**
+US tech surged (NASDAQ +1.71%) lifting EQQQ to +15.5% from entry, while ETH gave back 1.79% on the day but remains solidly above stop at 18.3% clearance. European indices lagged (DAX -1.50%), confirming the US/EU divergence that benefits the portfolio's EQQQ-heavy tilt. Quant regime stays RISK-ON with all held positions on HOLD signal and stops comfortably distant.
+
+**HOLD — todas las posiciones muestran beneficios desde entrada, el régimen cuantitativo es RISK-ON y ningún stop está en riesgo inmediato.**
+
+---
+
 
 ### Day 87 — May 11, 2026 21:30 CET
 
