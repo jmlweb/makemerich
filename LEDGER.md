@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,632.25 |
-| Total Return | -7.36% |
-| Days Active | 87 |
+| Current Balance | €4,635.21 |
+| Total Return | -7.30% |
+| Days Active | 88 |
 
 ---
 
 ## Daily Log
+
+### Day 87 — May 11, 2026 21:30 CET
+
+**Balance:** €4,635.21 | **Total Return:** -7.3%
+**Day P&L:** +€2.96 (+0.1%) vs Day 86 (€4,632.25)
+
+**Prices at close:**
+- ETH: $2,332.21 / €1,982.38 (-1.51% 24h) — stop $1,900.00
+- 4GLD: €128.71 (-0.73% 24h) — stop €105.88
+- XEON: €149.09 (+0.02% 24h)
+- EQQQ: €603.60 (+1.00% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,398.93 (+0.46%)
+- NASDAQ: 26,247.08 (+1.58%)
+- GOLD: 4,681.90 (-1.03%)
+- IBEX35: 17,889.40 (+0.00%)
+- EUROSTOXX50: 5,911.53 (+-0.00%)
+- DAX: 24,338.63 (-1.32%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,183.67 | 47.1% | +15.1% | +1.00% |
+| ETH | €1,300.56 | 28.1% | +13.6% | -1.51% |
+| 4GLD | €485.29 | 10.5% | +3.3% | -0.73% |
+| XEON | €451.91 | 9.7% | +6.1% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.80% vs SMA50, VIX 17.19)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.5% away)
+- 4GLD: stop EUR 105.88 (17.7% away)
+- EQQQ: stop EUR 508.78 (15.7% away)
+
+**Analysis:**
+Risk-on regime holds firm with NASDAQ up 1.58% and VIX at 17.19, supporting tech-heavy EQQQ (+1.00%) which now anchors 47% of portfolio. ETH dips 1.51% on the day but remains 18.5% above stop, while gold weakness (-1.03%) drags 4GLD slightly. All quant signals confirm HOLD across portfolio with no near-trigger alerts.
+
+**HOLD — el régimen de mercado sigue en risk-on y todas las posiciones están alejadas de sus stops con señales cuantitativas confirmando mantener.**
+
+---
+
 
 ### Day 86 — May 10, 2026 21:30 CET
 
