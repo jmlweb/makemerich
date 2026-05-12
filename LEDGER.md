@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,580.10 |
-| Total Return | -8.40% |
+| Current Balance | €4,592.50 |
+| Total Return | -8.15% |
 | Days Active | 89 |
 
 ---
 
 ## Daily Log
+
+### Day 88 — May 12, 2026 21:30 CET
+
+**Balance:** €4,592.50 | **Total Return:** -8.2%
+**Day P&L:** €62.51 (-1.3%) vs Day 87 (€4,655.01)
+
+**Prices at close:**
+- ETH: $2,282.56 / €1,940.18 (-2.46% 24h) — stop $1,900.00
+- 4GLD: €127.78 (-0.72% 24h) — stop €105.88
+- XEON: €149.11 (+0.01% 24h)
+- EQQQ: €600.40 (-0.53% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,392.65 (-0.08%)
+- NASDAQ: 26,010.65 (-0.90%)
+- GOLD: 4,709.30 (-0.20%)
+- IBEX35: 17,573.60 (-1.56%)
+- EUROSTOXX50: 5,808.45 (-1.48%)
+- DAX: 23,954.93 (-1.58%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,172.10 | 47.3% | +14.4% | -0.53% |
+| ETH | €1,272.87 | 27.7% | +11.2% | -2.46% |
+| 4GLD | €481.78 | 10.5% | +2.6% | -0.72% |
+| XEON | €451.97 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.39% vs SMA50, VIX 18.95)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.8% away)
+- 4GLD: stop EUR 105.88 (17.1% away)
+- EQQQ: stop EUR 508.78 (15.3% away)
+
+**Analysis:**
+European indices sold off sharply today (DAX -1.58%, EUROSTOXX50 -1.48%, IBEX35 -1.56%) while US markets held relatively steady, suggesting regional weakness rather than systemic risk. ETH led losses at -2.46% but all three stopped positions remain 15-17% above their stop levels. Market regime stays RISK-ON (SP500 +7.39% vs SMA50, VIX 18.95) and quant signals confirm HOLD across all current holdings.
+
+**HOLD — todas las posiciones están bien por encima de sus stops y el régimen de mercado sigue siendo RISK-ON pese a la debilidad europea de hoy.**
+
+---
+
 
 ### Day 88 — May 12, 2026 21:30 CET
 
