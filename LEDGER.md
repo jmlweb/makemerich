@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,620.55 |
-| Total Return | -7.59% |
+| Current Balance | €4,615.68 |
+| Total Return | -7.69% |
 | Days Active | 89 |
 
 ---
 
 ## Daily Log
+
+### Day 88 — May 12, 2026 21:30 CET
+
+**Balance:** €4,615.68 | **Total Return:** -7.7%
+**Day P&L:** €39.33 (-0.8%) vs Day 87 (€4,655.01)
+
+**Prices at close:**
+- ETH: $2,284.27 / €1,941.63 (-2.36% 24h) — stop $1,900.00
+- 4GLD: €128.40 (-0.24% 24h) — stop €105.88
+- XEON: €149.11 (+0.01% 24h)
+- EQQQ: €605.90 (+0.38% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,394.37 (-0.06%)
+- NASDAQ: 26,274.13 (+0.10%)
+- GOLD: 4,694.90 (-0.50%)
+- IBEX35: 17,642.70 (-1.18%)
+- EUROSTOXX50: 5,838.30 (-0.97%)
+- DAX: 24,097.70 (-0.99%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,191.99 | 47.5% | +15.5% | +0.38% |
+| ETH | €1,273.83 | 27.6% | +11.3% | -2.36% |
+| 4GLD | €484.12 | 10.5% | +3.1% | -0.24% |
+| XEON | €451.96 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.39% vs SMA50, VIX 18.95)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.8% away)
+- 4GLD: stop EUR 105.88 (17.5% away)
+- EQQQ: stop EUR 508.78 (16.0% away)
+
+**Analysis:**
+European markets sold off broadly (DAX -0.99%, EUROSTOXX50 -0.97%) while US indices held nearly flat, signaling regional divergence with domestic exposure dragging the day. ETH's -2.36% 24h move is the main drag, though all positions remain well above their stops (16-17% buffer). Market regime stays RISK-ON with SP500 +7.39% above SMA50 and quant signals issuing HOLD across all current holdings.
+
+**HOLD — El régimen sigue en RISK-ON y todas las posiciones mantienen señal HOLD, con stops alejados y sin catalizador claro para actuar con solo €213 de caja disponible.**
+
+---
+
 
 ### Day 88 — May 12, 2026 21:30 CET
 
