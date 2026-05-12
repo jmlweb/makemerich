@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,615.68 |
-| Total Return | -7.69% |
+| Current Balance | €4,580.10 |
+| Total Return | -8.40% |
 | Days Active | 89 |
 
 ---
 
 ## Daily Log
+
+### Day 88 — May 12, 2026 21:30 CET
+
+**Balance:** €4,580.10 | **Total Return:** -8.4%
+**Day P&L:** €74.91 (-1.6%) vs Day 87 (€4,655.01)
+
+**Prices at close:**
+- ETH: $2,260.32 / €1,921.27 (-3.37% 24h) — stop $1,900.00
+- 4GLD: €127.78 (-0.72% 24h) — stop €105.88
+- XEON: €149.11 (+0.01% 24h)
+- EQQQ: €600.40 (-0.53% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,345.88 (-0.72%)
+- NASDAQ: 25,821.35 (-1.62%)
+- GOLD: 4,673.60 (-0.96%)
+- IBEX35: 17,573.60 (-1.56%)
+- EUROSTOXX50: 5,808.45 (-1.48%)
+- DAX: 23,954.93 (-1.58%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,172.10 | 47.4% | +14.4% | -0.53% |
+| ETH | €1,260.47 | 27.5% | +10.1% | -3.37% |
+| 4GLD | €481.78 | 10.5% | +2.6% | -0.72% |
+| XEON | €451.97 | 9.9% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.39% vs SMA50, VIX 18.95)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.9% away)
+- 4GLD: stop EUR 105.88 (17.1% away)
+- EQQQ: stop EUR 508.78 (15.3% away)
+
+**Analysis:**
+Broad risk-off day across European and US indices (DAX -1.58%, NASDAQ -1.62%) with ETH leading portfolio losses at -3.37%. All positions remain well above entry (EQQQ +14.4%, ETH +10.1%) and stops are 15-17% away, so no defensive action triggered. Quant regime stays RISK-ON; ASML shows a BUY signal but available cash (€213.78) is too thin for a meaningful position.
+
+**HOLD — todas las posiciones mantienen colchón suficiente sobre entrada y los stops están lejos, sin señal de salida justificada.**
+
+---
+
 
 ### Day 88 — May 12, 2026 21:30 CET
 
