@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,635.92 |
-| Total Return | -7.28% |
+| Current Balance | €4,620.55 |
+| Total Return | -7.59% |
 | Days Active | 89 |
 
 ---
 
 ## Daily Log
+
+### Day 88 — May 12, 2026 21:30 CET
+
+**Balance:** €4,620.55 | **Total Return:** -7.6%
+**Day P&L:** €34.46 (-0.7%) vs Day 87 (€4,655.01)
+
+**Prices at close:**
+- ETH: $2,291.40 / €1,947.69 (-2.04% 24h) — stop $1,900.00
+- 4GLD: €128.54 (-0.13% 24h) — stop €105.88
+- XEON: €149.11 (+0.01% 24h)
+- EQQQ: €606.00 (+0.40% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8500
+- SP500: 7,412.84 (+1.03%)
+- NASDAQ: 26,274.13 (+1.81%)
+- GOLD: 4,709.30 (-0.20%)
+- IBEX35: 17,697.10 (-0.87%)
+- EUROSTOXX50: 5,843.80 (-0.88%)
+- DAX: 24,139.58 (-0.82%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,192.35 | 47.4% | +15.5% | +0.40% |
+| ETH | €1,277.80 | 27.7% | +11.6% | -2.04% |
+| 4GLD | €484.65 | 10.5% | +3.2% | -0.13% |
+| XEON | €451.96 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.84% vs SMA50, VIX 18.95)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.1% away)
+- 4GLD: stop EUR 105.88 (17.6% away)
+- EQQQ: stop EUR 508.78 (16.0% away)
+
+**Analysis:**
+US equity markets diverged sharply from European peers today — NASDAQ +1.81% vs DAX/EUROSTOXX50 ~-0.88% — while ETH's -2.04% drop drove the portfolio's €34.46 daily loss despite EQQQ strength. Quant system maintains RISK-ON regime and issues a fresh BUY signal on ASML; all current holdings remain well above their stops (16-17% cushion). Cash at 4.6% (€213.78) limits position size but supports a small new entry.
+
+**BUY — Comprar ASML con el efectivo disponible (~€213) aprovechando el régimen RISK-ON y la señal cuantitativa activa, manteniendo el resto de posiciones sin cambios.**
+
+---
+
 
 ### Day 88 — May 12, 2026 21:30 CET
 
