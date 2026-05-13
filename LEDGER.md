@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,673.22 |
-| Total Return | -6.54% |
+| Current Balance | €4,637.26 |
+| Total Return | -7.25% |
 | Days Active | 90 |
 
 ---
 
 ## Daily Log
+
+### Day 89 — May 13, 2026 21:30 CET
+
+**Balance:** €4,637.26 | **Total Return:** -7.3%
+**Day P&L:** +€44.76 (+1.0%) vs Day 88 (€4,592.50)
+
+**Prices at close:**
+- ETH: $2,276.50 / €1,939.58 (+0.20% 24h) — stop $1,900.00
+- 4GLD: €128.84 (-0.22% 24h) — stop €105.88
+- XEON: €149.12 (+0.01% 24h)
+- EQQQ: €609.60 (+0.28% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,404.77 (-0.11%)
+- NASDAQ: 26,088.20 (-0.71%)
+- GOLD: 4,699.50 (+0.47%)
+- IBEX35: 17,519.10 (-0.31%)
+- EUROSTOXX50: 5,820.14 (+0.20%)
+- DAX: 24,083.08 (-1.10%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,205.38 | 47.6% | +16.2% | +0.28% |
+| ETH | €1,280.34 | 27.6% | +10.9% | +0.20% |
+| 4GLD | €485.78 | 10.5% | +3.4% | -0.22% |
+| XEON | €451.98 | 9.7% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.38% vs SMA50, VIX 17.88)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP, MC
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.5% away)
+- 4GLD: stop EUR 105.88 (17.8% away)
+- EQQQ: stop EUR 508.78 (16.5% away)
+
+**Analysis:**
+Risk-on regime holds (VIX 17.88, SP500 well above SMA50) despite mild intraday weakness in US tech (NASDAQ -0.71%) and European blue chips (DAX -1.10%). All portfolio positions are 16-18% above their stops with solid unrealized gains; gold's +0.47% supports 4GLD despite its small daily dip. Quant signals flag ASML as BUY but available cash (€213.78, 4.6%) limits meaningful position sizing.
+
+**HOLD — Las posiciones están bien asentadas, los stops lejos y el efectivo disponible es insuficiente para una entrada significativa en ASML.**
+
+---
+
 
 ### Day 89 — May 13, 2026 21:30 CET
 
