@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,592.50 |
-| Total Return | -8.15% |
-| Days Active | 89 |
+| Current Balance | €4,614.41 |
+| Total Return | -7.71% |
+| Days Active | 90 |
 
 ---
 
 ## Daily Log
+
+### Day 89 — May 13, 2026 21:30 CET
+
+**Balance:** €4,614.41 | **Total Return:** -7.7%
+**Day P&L:** +€21.91 (+0.5%) vs Day 88 (€4,592.50)
+
+**Prices at close:**
+- ETH: $2,302.18 / €1,961.46 (+1.16% 24h) — stop $1,900.00
+- 4GLD: €127.78 (-1.05% 24h) — stop €105.88
+- XEON: €149.11 (+0.00% 24h)
+- EQQQ: €600.40 (-1.23% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,400.96 (+0.03%)
+- NASDAQ: 26,088.20 (-0.61%)
+- GOLD: 4,716.10 (+0.82%)
+- IBEX35: 17,573.60 (+-0.00%)
+- EUROSTOXX50: 5,808.45 (+0.00%)
+- DAX: 23,954.93 (-1.62%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,172.10 | 47.1% | +14.4% | -1.23% |
+| ETH | €1,294.79 | 28.1% | +12.1% | +1.16% |
+| 4GLD | €481.78 | 10.4% | +2.6% | -1.05% |
+| XEON | €451.97 | 9.8% | +6.1% | +0.00% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.50% vs SMA50, VIX 17.99)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.5% away)
+- 4GLD: stop EUR 105.88 (17.1% away)
+- EQQQ: stop EUR 508.78 (15.3% away)
+
+**Analysis:**
+Portfolio gained +0.5% on a mixed day — ETH outperformed (+1.16%) while EQQQ and 4GLD dragged slightly; DAX dropped -1.62% but broader regime remains RISK-ON with SP500 holding above SMA50. Quant signals a BUY on ASML but all current holdings score HOLD, and available cash (€213.78, 4.6%) limits new position sizing meaningfully. Stops remain well below current prices (15-17% cushion), so no defensive action required.
+
+**HOLD — Las posiciones actuales mantienen señal HOLD con el régimen en RISK-ON, y el capital libre es insuficiente para una entrada relevante en ASML sin deshacer algo que también tiene señal de mantener.**
+
+---
+
 
 ### Day 88 — May 12, 2026 21:30 CET
 
