@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,614.41 |
-| Total Return | -7.71% |
+| Current Balance | €4,673.22 |
+| Total Return | -6.54% |
 | Days Active | 90 |
 
 ---
 
 ## Daily Log
+
+### Day 89 — May 13, 2026 21:30 CET
+
+**Balance:** €4,673.22 | **Total Return:** -6.5%
+**Day P&L:** +€80.72 (+1.8%) vs Day 88 (€4,592.50)
+
+**Prices at close:**
+- ETH: $2,320.70 / €1,977.24 (+2.01% 24h) — stop $1,900.00
+- 4GLD: €129.00 (-0.11% 24h) — stop €105.88
+- XEON: €149.12 (+0.01% 24h)
+- EQQQ: €612.50 (+0.76% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,400.96 (+0.03%)
+- NASDAQ: 26,088.20 (-0.61%)
+- GOLD: 4,704.90 (+0.58%)
+- IBEX35: 17,529.10 (-0.25%)
+- EUROSTOXX50: 5,829.37 (+0.36%)
+- DAX: 24,100.96 (-1.02%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,215.87 | 47.4% | +16.8% | +0.76% |
+| ETH | €1,305.20 | 27.9% | +13.0% | +2.01% |
+| 4GLD | €486.38 | 10.4% | +3.6% | -0.11% |
+| XEON | €451.99 | 9.7% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.50% vs SMA50, VIX 17.88)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP, MC
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (18.1% away)
+- 4GLD: stop EUR 105.88 (17.9% away)
+- EQQQ: stop EUR 508.78 (16.9% away)
+
+**Analysis:**
+Portfolio gained +1.8% on the day led by ETH (+2.01%) and EQQQ (+0.76%), continuing a risk-on session with SP500 holding near highs despite NASDAQ and DAX weakness. All stops remain wide (17-19% buffer), reducing near-term risk. Quant signals flag ASML as a buy opportunity but cash reserves at €213.78 are too thin for a meaningful position.
+
+**HOLD — todas las posiciones muestran señales de retención y la liquidez disponible es insuficiente para ejecutar la señal de compra en ASML con tamaño relevante.**
+
+---
+
 
 ### Day 89 — May 13, 2026 21:30 CET
 
