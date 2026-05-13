@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,614.88 |
-| Total Return | -7.70% |
+| Current Balance | €4,625.07 |
+| Total Return | -7.50% |
 | Days Active | 90 |
 
 ---
 
 ## Daily Log
+
+### Day 89 — May 13, 2026 21:30 CET
+
+**Balance:** €4,625.07 | **Total Return:** -7.5%
+**Day P&L:** +€32.57 (+0.7%) vs Day 88 (€4,592.50)
+
+**Prices at close:**
+- ETH: $2,253.09 / €1,919.63 (-0.95% 24h) — stop $1,900.00
+- 4GLD: €128.90 (-0.19% 24h) — stop €105.88
+- XEON: €149.12 (+0.01% 24h)
+- EQQQ: €609.80 (+0.31% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,456.31 (+0.59%)
+- NASDAQ: 26,441.32 (+0.64%)
+- GOLD: 4,696.40 (+0.40%)
+- IBEX35: 17,654.90 (+0.46%)
+- EUROSTOXX50: 5,861.07 (+0.91%)
+- DAX: 24,136.81 (-0.88%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,206.10 | 47.7% | +16.2% | +0.31% |
+| ETH | €1,267.18 | 27.4% | +9.8% | -0.95% |
+| 4GLD | €486.00 | 10.5% | +3.5% | -0.19% |
+| XEON | €452.00 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.38% vs SMA50, VIX 17.88)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP, MC
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.7% away)
+- 4GLD: stop EUR 105.88 (17.9% away)
+- EQQQ: stop EUR 508.78 (16.6% away)
+
+**Analysis:**
+Broad risk-on session with SP500 +0.59% and NASDAQ +0.64%; DAX outlier at -0.88% likely index-specific drag, not macro reversal. EQQQ leads portfolio at +16.2% from entry with momentum intact; ETH dipped -0.95% intraday but remains +9.8% from entry with stop 15.7% away. Quant regime confirms RISK-ON, ASML flagged BUY but not in current allocation scope.
+
+**HOLD — todas las posiciones mantienen márgenes amplios sobre sus stops y el régimen de mercado sigue favorable al riesgo.**
+
+---
+
 
 ### Day 89 — May 13, 2026 21:30 CET
 
