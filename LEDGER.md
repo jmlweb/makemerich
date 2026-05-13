@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,637.26 |
-| Total Return | -7.25% |
+| Current Balance | €4,614.88 |
+| Total Return | -7.70% |
 | Days Active | 90 |
 
 ---
 
 ## Daily Log
+
+### Day 89 — May 13, 2026 21:30 CET
+
+**Balance:** €4,614.88 | **Total Return:** -7.7%
+**Day P&L:** +€22.38 (+0.5%) vs Day 88 (€4,592.50)
+
+**Prices at close:**
+- ETH: $2,234.97 / €1,904.19 (-1.73% 24h) — stop $1,900.00
+- 4GLD: €128.90 (-0.19% 24h) — stop €105.88
+- XEON: €149.12 (+0.01% 24h)
+- EQQQ: €609.80 (+0.31% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8520
+- SP500: 7,418.44 (+0.08%)
+- NASDAQ: 26,267.61 (-0.02%)
+- GOLD: 4,706.20 (+0.61%)
+- IBEX35: 17,654.90 (+0.46%)
+- EUROSTOXX50: 5,861.07 (+0.91%)
+- DAX: 24,136.81 (-0.88%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,206.10 | 47.8% | +16.2% | +0.31% |
+| ETH | €1,256.99 | 27.2% | +8.9% | -1.73% |
+| 4GLD | €486.00 | 10.5% | +3.5% | -0.19% |
+| XEON | €452.00 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.38% vs SMA50, VIX 17.88)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP, MC
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.0% away)
+- 4GLD: stop EUR 105.88 (17.9% away)
+- EQQQ: stop EUR 508.78 (16.6% away)
+
+**Analysis:**
+Market regime stays RISK-ON (SP500 +7.38% vs SMA50, VIX 17.88) with broad European and US indices positive on the day. Portfolio gained +0.5% led by EQQQ (+0.31%); ETH lagged at -1.73% but all stops remain 15-18% away. Quant flags ASML as new BUY opportunity while current holdings hold their signals intact.
+
+**HOLD — Todas las posiciones están alejadas de sus stops y el régimen de mercado sigue siendo favorable; evaluar entrada en ASML en próxima sesión con liquidez disponible.**
+
+---
+
 
 ### Day 89 — May 13, 2026 21:30 CET
 
