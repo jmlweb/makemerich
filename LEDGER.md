@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,625.07 |
-| Total Return | -7.50% |
-| Days Active | 90 |
+| Current Balance | €4,633.01 |
+| Total Return | -7.34% |
+| Days Active | 91 |
 
 ---
 
 ## Daily Log
+
+### Day 90 — May 14, 2026 21:30 CET
+
+**Balance:** €4,633.01 | **Total Return:** -7.3%
+**Day P&L:** +€7.94 (+0.2%) vs Day 89 (€4,625.07)
+
+**Prices at close:**
+- ETH: $2,267.21 / €1,936.20 (+0.41% 24h) — stop $1,900.00
+- 4GLD: €128.90 (+0.88% 24h) — stop €105.88
+- XEON: €149.12 (+0.01% 24h)
+- EQQQ: €609.80 (+1.57% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,444.25 (+0.42%)
+- NASDAQ: 26,402.34 (+0.49%)
+- GOLD: 4,702.30 (+0.10%)
+- IBEX35: 17,654.90 (+0.00%)
+- EUROSTOXX50: 5,861.07 (+0.91%)
+- DAX: 24,136.81 (+0.76%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,206.10 | 47.6% | +16.2% | +1.57% |
+| ETH | €1,275.12 | 27.5% | +10.4% | +0.41% |
+| 4GLD | €486.00 | 10.5% | +3.5% | +0.88% |
+| XEON | €452.00 | 9.8% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.94% vs SMA50, VIX 17.87)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: MC
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (16.2% away)
+- 4GLD: stop EUR 105.88 (17.9% away)
+- EQQQ: stop EUR 508.78 (16.6% away)
+
+**Analysis:**
+Market regime firmly RISK-ON — SP500 +7.94% above SMA50, VIX 17.87. All held positions gained on the day, led by EQQQ (+1.57%) now at 47.6% portfolio weight; stops remain 16-18% away providing solid buffer. Quant signals unanimous HOLD across all current holdings; MC SELL signal irrelevant (not held).
+
+**HOLD — Todas las posiciones tienen señal cuantitativa de HOLD, el régimen sigue siendo RISK-ON y los stops están suficientemente alejados para aguantar sin cambios.**
+
+---
+
 
 ### Day 89 — May 13, 2026 21:30 CET
 
