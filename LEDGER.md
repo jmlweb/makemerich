@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,644.36 |
-| Total Return | -7.11% |
+| Current Balance | €4,691.15 |
+| Total Return | -6.18% |
 | Days Active | 91 |
 
 ---
 
 ## Daily Log
+
+### Day 90 — May 14, 2026 21:30 CET
+
+**Balance:** €4,691.15 | **Total Return:** -6.2%
+**Day P&L:** +€66.08 (+1.4%) vs Day 89 (€4,625.07)
+
+**Prices at close:**
+- ETH: $2,299.74 / €1,963.98 (+1.80% 24h) — stop $1,900.00
+- 4GLD: €129.10 (+1.03% 24h) — stop €105.88
+- XEON: €149.13 (+0.01% 24h)
+- EQQQ: €620.60 (+3.36% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,513.96 (+1.53%)
+- NASDAQ: 26,679.17 (+2.27%)
+- GOLD: 4,689.00 (-0.19%)
+- IBEX35: 17,809.20 (+0.87%)
+- EUROSTOXX50: 5,934.96 (+2.18%)
+- DAX: 24,456.26 (+2.09%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,245.17 | 47.9% | +18.3% | +3.36% |
+| ETH | €1,293.42 | 27.6% | +12.0% | +1.80% |
+| 4GLD | €486.76 | 10.4% | +3.6% | +1.03% |
+| XEON | €452.02 | 9.6% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +8.02% vs SMA50, VIX 17.91)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: MC, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (17.4% away)
+- 4GLD: stop EUR 105.88 (18.0% away)
+- EQQQ: stop EUR 508.78 (18.0% away)
+
+**Analysis:**
+Strong risk-on day across the board — NASDAQ +2.27%, EUROSTOXX50 +2.18% lifted EQQQ to +3.36% (now +18.3% from entry), while ETH continued its recovery at +1.80%. All stops remain 17-18% below current prices with quant regime firmly RISK-ON. Portfolio at €4,691 recovering steadily from the -6.2% total drawdown with no actionable signals.
+
+**HOLD — todas las posiciones muestran momentum positivo con el régimen cuantitativo en RISK-ON y los stops bien alejados, sin motivo para actuar.**
+
+---
+
 
 ### Day 90 — May 14, 2026 21:30 CET
 
