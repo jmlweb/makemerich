@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,643.31 |
-| Total Return | -7.13% |
+| Current Balance | €4,644.36 |
+| Total Return | -7.11% |
 | Days Active | 91 |
 
 ---
 
 ## Daily Log
+
+### Day 90 — May 14, 2026 21:30 CET
+
+**Balance:** €4,644.36 | **Total Return:** -7.1%
+**Day P&L:** +€19.29 (+0.4%) vs Day 89 (€4,625.07)
+
+**Prices at close:**
+- ETH: $2,259.78 / €1,929.85 (+0.14% 24h) — stop $1,900.00
+- 4GLD: €129.27 (+1.17% 24h) — stop €105.88
+- XEON: €149.13 (+0.01% 24h)
+- EQQQ: €613.70 (+2.22% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,462.72 (+0.83%)
+- NASDAQ: 26,402.34 (+0.49%)
+- GOLD: 4,698.30 (+0.01%)
+- IBEX35: 17,804.40 (+0.85%)
+- EUROSTOXX50: 5,861.07 (+0.91%)
+- DAX: 24,437.54 (+2.01%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,220.21 | 47.8% | +17.0% | +2.22% |
+| ETH | €1,270.94 | 27.4% | +10.1% | +0.14% |
+| 4GLD | €487.40 | 10.5% | +3.8% | +1.17% |
+| XEON | €452.03 | 9.7% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +8.02% vs SMA50, VIX 17.91)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: MC, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.9% away)
+- 4GLD: stop EUR 105.88 (18.1% away)
+- EQQQ: stop EUR 508.78 (17.1% away)
+
+**Analysis:**
+Risk-on regime holds firm with SP500 +8% above SMA50 and VIX at 17.91; broad equity strength today (DAX +2.01%, EUROSTOXX50 +0.91%) confirms momentum. EQQQ leading portfolio at +17% from entry and +2.22% today; all stops remain 15-18% below current prices with no imminent triggers. Quant signals HOLD across all current positions; SELL flags on MC and AIR are watchlist items not held.
+
+**HOLD — todas las posiciones muestran momentum positivo, stops alejados y régimen de mercado favorable sin señales de reversión.**
+
+---
+
 
 ### Day 90 — May 14, 2026 21:30 CET
 
