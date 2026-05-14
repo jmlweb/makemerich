@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,633.01 |
-| Total Return | -7.34% |
+| Current Balance | €4,643.31 |
+| Total Return | -7.13% |
 | Days Active | 91 |
 
 ---
 
 ## Daily Log
+
+### Day 90 — May 14, 2026 21:30 CET
+
+**Balance:** €4,643.31 | **Total Return:** -7.1%
+**Day P&L:** +€18.24 (+0.4%) vs Day 89 (€4,625.07)
+
+**Prices at close:**
+- ETH: $2,256.98 / €1,927.46 (-0.03% 24h) — stop $1,900.00
+- 4GLD: €129.03 (+0.95% 24h) — stop €105.88
+- XEON: €149.13 (+0.01% 24h)
+- EQQQ: €614.10 (+2.28% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8540
+- SP500: 7,444.25 (+0.42%)
+- NASDAQ: 26,402.34 (+0.49%)
+- GOLD: 4,706.40 (+0.19%)
+- IBEX35: 17,765.40 (+0.63%)
+- EUROSTOXX50: 5,861.07 (+0.91%)
+- DAX: 24,431.71 (+1.99%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,221.66 | 47.8% | +17.1% | +2.28% |
+| ETH | €1,269.37 | 27.3% | +9.9% | -0.03% |
+| 4GLD | €486.49 | 10.5% | +3.6% | +0.95% |
+| XEON | €452.01 | 9.7% | +6.1% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.94% vs SMA50, VIX 17.91)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: MC, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.8% away)
+- 4GLD: stop EUR 105.88 (17.9% away)
+- EQQQ: stop EUR 508.78 (17.1% away)
+
+**Analysis:**
+Market firmly risk-on — SP500 +7.94% above SMA50, VIX at 17.91, broad equity rally across US and European indices today. EQQQ leading portfolio at +2.28% intraday and +17.1% since entry, all stops well below current prices (15-18% cushion). Quant signals confirm HOLD across all holdings; MC and AIR (not in portfolio) flagged SELL.
+
+**HOLD — todas las posiciones muestran momentum positivo con stops alejados y el régimen de mercado sigue siendo risk-on.**
+
+---
+
 
 ### Day 90 — May 14, 2026 21:30 CET
 
