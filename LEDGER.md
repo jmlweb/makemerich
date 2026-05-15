@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,665.68 |
-| Total Return | -6.69% |
+| Current Balance | €4,622.21 |
+| Total Return | -7.56% |
 | Days Active | 92 |
 
 ---
 
 ## Daily Log
+
+### Day 91 — May 15, 2026 21:30 CET
+
+**Balance:** €4,622.21 | **Total Return:** -7.6%
+**Day P&L:** €67.97 (-1.4%) vs Day 90 (€4,690.18)
+
+**Prices at close:**
+- ETH: $2,253.26 / €1,928.79 (-1.18% 24h) — stop $1,900.00
+- 4GLD: €125.72 (-2.47% 24h) — stop €105.88
+- XEON: €149.12 (+-0.00% 24h)
+- EQQQ: €612.30 (+0.41% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,501.24 (+1.35%)
+- NASDAQ: 26,635.22 (+2.10%)
+- GOLD: 4,539.90 (-2.95%)
+- IBEX35: 17,557.00 (-1.42%)
+- EUROSTOXX50: 5,828.64 (-0.55%)
+- DAX: 24,036.24 (-0.42%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,215.15 | 47.9% | +16.7% | +0.41% |
+| ETH | €1,267.27 | 27.4% | +9.8% | -1.18% |
+| 4GLD | €474.01 | 10.3% | +0.9% | -2.47% |
+| XEON | €452.00 | 9.8% | +6.1% | +-0.00% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +8.56% vs SMA50, VIX 18.8)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SAP, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (15.7% away)
+- 4GLD: stop EUR 105.88 (15.8% away)
+- EQQQ: stop EUR 508.78 (16.9% away)
+
+**Analysis:**
+US markets surged (S{{ANALYSIS}}P +1.35%, NASDAQ +2.10%) confirming RISK-ON regime, but portfolio dragged by gold's -2.95% drop hitting 4GLD (-2.47%) and ETH pulling back -1.18%. EQQQ partially offset losses with +0.41%, while all stops remain 15%+ away. Quant signals HOLD all current positions with no new entries aligned to existing holdings.
+
+**HOLD — todas las señales cuantitativas confirman mantener las posiciones actuales y los stops siguen lejos de activarse.**
+
+---
+
 
 ### Day 91 — May 15, 2026 21:30 CET
 
