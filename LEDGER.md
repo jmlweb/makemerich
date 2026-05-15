@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,616.04 |
-| Total Return | -7.68% |
+| Current Balance | €4,617.48 |
+| Total Return | -7.65% |
 | Days Active | 92 |
 
 ---
 
 ## Daily Log
+
+### Day 91 — May 15, 2026 21:30 CET
+
+**Balance:** €4,617.48 | **Total Return:** -7.7%
+**Day P&L:** €72.70 (-1.6%) vs Day 90 (€4,690.18)
+
+**Prices at close:**
+- ETH: $2,223.85 / €1,903.62 (-2.51% 24h) — stop $1,900.00
+- 4GLD: €125.76 (-2.44% 24h) — stop €105.88
+- XEON: €149.15 (+0.02% 24h)
+- EQQQ: €615.50 (+0.93% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,420.62 (-0.32%)
+- NASDAQ: 26,281.67 (-0.46%)
+- GOLD: 4,556.20 (-2.61%)
+- IBEX35: 17,622.70 (-1.05%)
+- EUROSTOXX50: 5,827.76 (-0.57%)
+- DAX: 23,950.57 (-0.77%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,226.72 | 48.2% | +17.3% | +0.93% |
+| ETH | €1,250.73 | 27.1% | +8.3% | -2.51% |
+| 4GLD | €474.17 | 10.3% | +1.0% | -2.44% |
+| XEON | €452.07 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.45% vs SMA50, VIX 18.8)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SAP, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (14.6% away)
+- 4GLD: stop EUR 105.88 (15.8% away)
+- EQQQ: stop EUR 508.78 (17.3% away)
+
+**Analysis:**
+Broad risk-off session across European and US equities with gold down 2.61% dragging ETH and 4GLD; EQQQ bucked the trend at +0.93%, remaining the portfolio's primary driver at 48.2% weight and +17.3% from entry. Market regime stays RISK-ON (SP500 +7.45% vs SMA50, VIX 18.8) so today's pullback reads as noise rather than regime shift. All stops remain 14–17% below current prices, no position under pressure.
+
+**HOLD — todas las posiciones mantienen colchón amplio sobre sus stops y el régimen macro sigue siendo favorable, sin catalizador que justifique mover ficha hoy.**
+
+---
+
 
 ### Day 91 — May 15, 2026 21:30 CET
 
