@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,617.48 |
-| Total Return | -7.65% |
-| Days Active | 92 |
+| Current Balance | €4,611.26 |
+| Total Return | -7.77% |
+| Days Active | 93 |
 
 ---
 
 ## Daily Log
+
+### Day 92 — May 16, 2026 21:30 CET
+
+**Balance:** €4,611.26 | **Total Return:** -7.8%
+**Day P&L:** €6.22 (-0.1%) vs Day 91 (€4,617.48)
+
+**Prices at close:**
+- ETH: $2,193.88 / €1,886.74 (-1.33% 24h) — stop $1,900.00
+- 4GLD: €125.76 (-2.44% 24h) — stop €105.88
+- XEON: €149.15 (+0.02% 24h)
+- EQQQ: €615.50 (+0.93% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,408.50 (-0.48%)
+- NASDAQ: 26,225.14 (-0.67%)
+- GOLD: 4,555.80 (-2.61%)
+- IBEX35: 17,622.70 (-1.05%)
+- EUROSTOXX50: 5,827.76 (-0.57%)
+- DAX: 23,950.57 (-0.77%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,226.72 | 48.3% | +17.3% | +0.93% |
+| ETH | €1,244.51 | 27.0% | +6.9% | -1.33% |
+| 4GLD | €474.17 | 10.3% | +1.0% | -2.44% |
+| XEON | €452.07 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.04% vs SMA50, VIX 18.43)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SOL, SAP, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (13.4% away)
+- 4GLD: stop EUR 105.88 (15.8% away)
+- EQQQ: stop EUR 508.78 (17.3% away)
+
+**Analysis:**
+Markets pulled back broadly Friday with SP500 -0.48% and NASDAQ -0.67%, gold sold off sharply -2.61% dragging 4GLD lower, while EQQQ held best at +0.93%. All portfolio positions remain well above stops (13–17% buffer), quant signals HOLD for all holdings, and RISK-ON regime intact despite intraday weakness. Quant flags ASML and TTE as BUY candidates but cash at 4.6% is thin for new positions.
+
+**HOLD — todas las posiciones están lejos de sus stops y las señales cuantitativas confirman mantener sin acción requerida.**
+
+---
+
 
 ### Day 91 — May 15, 2026 21:30 CET
 
