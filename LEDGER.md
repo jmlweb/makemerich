@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,611.26 |
-| Total Return | -7.77% |
-| Days Active | 93 |
+| Current Balance | €4,606.84 |
+| Total Return | -7.86% |
+| Days Active | 94 |
 
 ---
 
 ## Daily Log
+
+### Day 93 — May 17, 2026 21:30 CET
+
+**Balance:** €4,606.84 | **Total Return:** -7.9%
+**Day P&L:** €4.42 (-0.1%) vs Day 92 (€4,611.26)
+
+**Prices at close:**
+- ETH: $2,186.10 / €1,880.05 (+0.27% 24h) — stop $1,900.00
+- 4GLD: €125.76 (-2.44% 24h) — stop €105.88
+- XEON: €149.15 (+0.02% 24h)
+- EQQQ: €615.50 (+0.93% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,408.50 (-0.48%)
+- NASDAQ: 26,225.14 (-0.67%)
+- GOLD: 4,561.90 (+0.13%)
+- IBEX35: 17,622.70 (-1.05%)
+- EUROSTOXX50: 5,827.76 (-0.57%)
+- DAX: 23,950.57 (-0.77%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,226.72 | 48.3% | +17.3% | +0.93% |
+| ETH | €1,240.10 | 26.9% | +6.5% | +0.27% |
+| 4GLD | €474.17 | 10.3% | +1.0% | -2.44% |
+| XEON | €452.07 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.04% vs SMA50, VIX 18.43)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SAP, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (13.1% away)
+- 4GLD: stop EUR 105.88 (15.8% away)
+- EQQQ: stop EUR 508.78 (17.3% away)
+
+**Analysis:**
+Weekend session with broad equity weakness across EU and US indices, but portfolio held well — EQQQ gained +0.93% offsetting 4GLD's -2.44% pullback. All stops remain comfortably distant (13-17%), quant regime stays RISK-ON, and all current holdings score HOLD in quantitative signals. Net day result nearly flat at +€4.42 despite negative macro backdrop.
+
+**HOLD — todas las posiciones están por encima de sus stops con margen amplio y los señales cuantitativos no justifican ningún cambio en fin de semana.**
+
+---
+
 
 ### Day 92 — May 16, 2026 21:30 CET
 
