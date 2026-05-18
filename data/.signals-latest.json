@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-18T16:00:06.743Z",
-  "balance": 4530.24,
-  "totalReturn": -9.4,
+  "generatedAt": "2026-05-18T19:30:06.685Z",
+  "balance": 4528.95,
+  "totalReturn": -9.42,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2105.41,
+      "currentPrice": 2103.14,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 9.76,
+      "distancePct": 9.66,
       "status": "ACTIVE"
     },
     {

@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,530.24 |
-| Total Return | -9.40% |
+| Current Balance | €4,528.95 |
+| Total Return | -9.42% |
 | Days Active | 95 |
 
 ---
 
 ## Daily Log
+
+### Day 94 — May 18, 2026 21:30 CET
+
+**Balance:** €4,528.95 | **Total Return:** -9.4%
+**Day P&L:** €77.89 (-1.7%) vs Day 93 (€4,606.84)
+
+**Prices at close:**
+- ETH: $2,103.14 / €1,810.80 (-1.12% 24h) — stop $1,900.00
+- 4GLD: €125.34 (-2.91% 24h) — stop €105.88
+- XEON: €149.16 (+0.02% 24h)
+- EQQQ: €607.40 (-2.13% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,373.68 (-1.70%)
+- NASDAQ: 25,958.43 (-2.54%)
+- GOLD: 4,556.10 (-0.13%)
+- IBEX35: 17,755.10 (+0.75%)
+- EUROSTOXX50: 5,849.00 (+0.36%)
+- DAX: 24,307.92 (-0.61%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,197.42 | 48.5% | +15.8% | -2.13% |
+| ETH | €1,193.04 | 26.3% | +2.4% | -1.12% |
+| 4GLD | €472.58 | 10.4% | +0.6% | -2.91% |
+| XEON | €452.13 | 10.0% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.96% vs SMA50, VIX 18.97)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, ITX, SIE, NOVO, ALV, DTE
+- SELL: SOL, SAP, MC, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (9.7% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (16.2% away)
+
+**Analysis:**
+US equities sold off sharply (SP500 -1.70%, NASDAQ -2.54%) while European indices showed resilience, suggesting rotation rather than broad risk-off. Portfolio took a -1.7% hit driven by EQQQ and 4GLD weakness, but all positions remain well above entry and stops are 9.7–16.2% away. Quant regime stays RISK-ON with VIX at 18.97, and all current holdings signal HOLD.
+
+**HOLD — Todas las posiciones mantienen plusvalías respecto al precio de entrada, las señales cuantitativas confirman HOLD y los stops están suficientemente alejados para absorber la volatilidad actual.**
+
+---
+
 
 ### Day 94 — May 18, 2026 21:30 CET
 
