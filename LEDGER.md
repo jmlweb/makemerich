@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,521.48 |
-| Total Return | -9.57% |
+| Current Balance | €4,522.40 |
+| Total Return | -9.55% |
 | Days Active | 96 |
 
 ---
 
 ## Daily Log
+
+### Day 95 — May 19, 2026 21:30 CET
+
+**Balance:** €4,522.40 | **Total Return:** -9.6%
+**Day P&L:** €6.55 (-0.1%) vs Day 94 (€4,528.95)
+
+**Prices at close:**
+- ETH: $2,110.60 / €1,810.89 (-0.84% 24h) — stop $1,900.00
+- 4GLD: €124.79 (-0.77% 24h) — stop €105.88
+- XEON: €149.15 (+0.01% 24h)
+- EQQQ: €605.00 (-1.71% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,365.72 (-0.58%)
+- NASDAQ: 25,921.65 (-1.16%)
+- GOLD: 4,495.80 (-1.25%)
+- IBEX35: 17,670.10 (-0.48%)
+- EUROSTOXX50: 5,851.16 (+0.04%)
+- DAX: 24,400.65 (+1.88%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,188.74 | 48.4% | +15.3% | -1.71% |
+| ETH | €1,197.27 | 26.5% | +2.8% | -0.84% |
+| 4GLD | €470.51 | 10.4% | +0.2% | -0.77% |
+| XEON | €452.10 | 10.0% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.08% vs SMA50, VIX 18.35)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.0% away)
+- 4GLD: stop EUR 105.88 (15.2% away)
+- EQQQ: stop EUR 508.78 (15.9% away)
+
+**Analysis:**
+US equities retreated led by tech (NASDAQ -1.16%, SP500 -0.58%) while European markets diverged — DAX surged +1.88% and EUROSTOXX50 held flat, cushioning EQQQ exposure. Gold sold off -1.25% compressing 4GLD gains to near-breakeven. Portfolio impact minimal at -0.1% day P{{ANALYSIS}}L; all positions remain above entry with stops 10-16% away and quant regime firmly RISK-ON.
+
+**HOLD — señales cuantitativas confirman régimen RISK-ON, todas las posiciones sobre precio de entrada y stops alejados; sin catalizador para actuar.**
+
+---
+
 
 ### Day 95 — May 19, 2026 21:30 CET
 
