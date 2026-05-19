@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,522.29 |
-| Total Return | -9.55% |
+| Current Balance | €4,521.48 |
+| Total Return | -9.57% |
 | Days Active | 96 |
 
 ---
 
 ## Daily Log
+
+### Day 95 — May 19, 2026 21:30 CET
+
+**Balance:** €4,521.48 | **Total Return:** -9.6%
+**Day P&L:** €7.47 (-0.2%) vs Day 94 (€4,528.95)
+
+**Prices at close:**
+- ETH: $2,108.99 / €1,809.51 (-0.96% 24h) — stop $1,900.00
+- 4GLD: €124.79 (-0.77% 24h) — stop €105.88
+- XEON: €149.15 (+0.01% 24h)
+- EQQQ: €605.00 (-1.71% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,347.13 (-0.83%)
+- NASDAQ: 25,792.97 (-1.65%)
+- GOLD: 4,507.70 (-0.98%)
+- IBEX35: 17,670.10 (-0.48%)
+- EUROSTOXX50: 5,851.16 (+0.04%)
+- DAX: 24,400.65 (+1.88%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,188.74 | 48.4% | +15.3% | -1.71% |
+| ETH | €1,196.36 | 26.5% | +2.7% | -0.96% |
+| 4GLD | €470.51 | 10.4% | +0.2% | -0.77% |
+| XEON | €452.10 | 10.0% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.08% vs SMA50, VIX 18.35)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (9.9% away)
+- 4GLD: stop EUR 105.88 (15.2% away)
+- EQQQ: stop EUR 508.78 (15.9% away)
+
+**Analysis:**
+US markets sold off sharply (NASDAQ -1.65%, SP500 -0.83%) while European indices diverged — DAX gained +1.88% offsetting EUROSTOXX50 flat close. All positions remain well above stop levels (closest: ETH at 9.9% buffer), and quant regime stays RISK-ON with VIX at 18.35. Portfolio absorbed the dip with minimal damage (+€7.47 day P{{ANALYSIS}}L) confirming defensive structure holds.
+
+**HOLD — El régimen cuantitativo sigue en RISK-ON con VIX bajo y todas las posiciones con amplio margen sobre sus stops, por lo que no hay motivo para actuar.**
+
+---
+
 
 ### Day 95 — May 19, 2026 21:30 CET
 
