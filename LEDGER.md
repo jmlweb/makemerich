@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,547.25 |
-| Total Return | -9.05% |
+| Current Balance | €4,528.35 |
+| Total Return | -9.43% |
 | Days Active | 96 |
 
 ---
 
 ## Daily Log
+
+### Day 95 — May 19, 2026 21:30 CET
+
+**Balance:** €4,528.35 | **Total Return:** -9.4%
+**Day P&L:** €0.60 (-0.0%) vs Day 94 (€4,528.95)
+
+**Prices at close:**
+- ETH: $2,112.76 / €1,812.75 (-0.75% 24h) — stop $1,900.00
+- 4GLD: €125.65 (-0.09% 24h) — stop €105.88
+- XEON: €149.17 (+0.01% 24h)
+- EQQQ: €605.40 (-1.64% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,403.05 (-1.31%)
+- NASDAQ: 26,090.73 (-2.04%)
+- GOLD: 4,544.10 (-0.18%)
+- IBEX35: 17,807.00 (+0.29%)
+- EUROSTOXX50: 5,884.30 (+0.60%)
+- DAX: 24,581.77 (+2.64%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,190.18 | 48.4% | +15.4% | -1.64% |
+| ETH | €1,198.50 | 26.5% | +2.9% | -0.75% |
+| 4GLD | €473.75 | 10.5% | +0.9% | -0.09% |
+| XEON | €452.13 | 10.0% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.76% vs SMA50, VIX 18.35)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.1% away)
+- 4GLD: stop EUR 105.88 (15.7% away)
+- EQQQ: stop EUR 508.78 (16.0% away)
+
+**Analysis:**
+US markets sold off sharply (SP500 -1.31%, NASDAQ -2.04%), pulling EQQQ down -1.64% intraday, while European indices diverged positively (DAX +2.64%). Quant regime remains RISK-ON and all held positions sit well above stops (10-16% buffer). Portfolio impact minimal — only €0.60 day P{{ANALYSIS}}L loss given XEON and 4GLD acted as cushions.
+
+**HOLD — señales cuantitativas y stops holgados no justifican cambios; esperar confirmación de dirección en mercados USA mañana.**
+
+---
+
 
 ### Day 95 — May 19, 2026 21:30 CET
 
