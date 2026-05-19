@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,528.95 |
-| Total Return | -9.42% |
-| Days Active | 95 |
+| Current Balance | €4,547.25 |
+| Total Return | -9.05% |
+| Days Active | 96 |
 
 ---
 
 ## Daily Log
+
+### Day 95 — May 19, 2026 21:30 CET
+
+**Balance:** €4,547.25 | **Total Return:** -9.1%
+**Day P&L:** +€18.30 (+0.4%) vs Day 94 (€4,528.95)
+
+**Prices at close:**
+- ETH: $2,135.40 / €1,832.17 (+0.34% 24h) — stop $1,900.00
+- 4GLD: €125.34 (-0.33% 24h) — stop €105.88
+- XEON: €149.16 (+0.01% 24h)
+- EQQQ: €607.40 (-1.32% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,403.05 (-1.31%)
+- NASDAQ: 26,090.73 (-2.04%)
+- GOLD: 4,546.60 (-0.13%)
+- IBEX35: 17,755.10 (+-0.00%)
+- EUROSTOXX50: 5,849.00 (+0.00%)
+- DAX: 24,307.92 (+1.49%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,197.42 | 48.3% | +15.8% | -1.32% |
+| ETH | €1,211.34 | 26.6% | +4.0% | +0.34% |
+| 4GLD | €472.58 | 10.4% | +0.6% | -0.33% |
+| XEON | €452.13 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.76% vs SMA50, VIX 17.82)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (11.0% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (16.2% away)
+
+**Analysis:**
+US markets sold off sharply (SP500 -1.31%, NASDAQ -2.04%) while European indices diverged — DAX gained +1.49%, IBEX and EUROSTOXX flat. EQQQ absorbed the NASDAQ decline but all positions remain well above their stops (11-16% buffer). Quant regime stays RISK-ON with VIX at 17.82, and signals confirm HOLD across all current holdings.
+
+**HOLD — la corrección en NASDAQ no amenaza ningún stop y el régimen RISK-ON sigue intacto.**
+
+---
+
 
 ### Day 94 — May 18, 2026 21:30 CET
 
