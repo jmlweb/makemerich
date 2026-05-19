@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,528.35 |
-| Total Return | -9.43% |
+| Current Balance | €4,522.29 |
+| Total Return | -9.55% |
 | Days Active | 96 |
 
 ---
 
 ## Daily Log
+
+### Day 95 — May 19, 2026 21:30 CET
+
+**Balance:** €4,522.29 | **Total Return:** -9.6%
+**Day P&L:** €6.66 (-0.1%) vs Day 94 (€4,528.95)
+
+**Prices at close:**
+- ETH: $2,106.53 / €1,807.40 (-1.06% 24h) — stop $1,900.00
+- 4GLD: €125.17 (-0.47% 24h) — stop €105.88
+- XEON: €149.17 (+0.02% 24h)
+- EQQQ: €605.20 (-1.67% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,371.26 (-0.50%)
+- NASDAQ: 26,090.73 (-0.51%)
+- GOLD: 4,520.70 (-0.70%)
+- IBEX35: 17,812.90 (+0.33%)
+- EUROSTOXX50: 5,892.15 (+0.74%)
+- DAX: 24,599.98 (+2.71%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,189.46 | 48.4% | +15.4% | -1.67% |
+| ETH | €1,194.96 | 26.4% | +2.6% | -1.06% |
+| 4GLD | €471.94 | 10.4% | +0.5% | -0.47% |
+| XEON | €452.14 | 10.0% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.08% vs SMA50, VIX 18.35)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (9.8% away)
+- 4GLD: stop EUR 105.88 (15.4% away)
+- EQQQ: stop EUR 508.78 (15.9% away)
+
+**Analysis:**
+US markets pulled back modestly (-0.5%) while European indices diverged positively, with DAX surging +2.71% — a transatlantic rotation signal worth monitoring. RISK-ON regime holds (SP500 +6.08% vs SMA50, VIX 18.35), and all portfolio stops remain comfortably distant (9.8–15.9%). Quantitative signals confirm HOLD across all current holdings; the SELL on SOL is irrelevant as it's not held.
+
+**HOLD — régimen RISK-ON intacto, todos los activos bien por encima de sus stops y sin señales de entrada nuevas justificadas.**
+
+---
+
 
 ### Day 95 — May 19, 2026 21:30 CET
 
