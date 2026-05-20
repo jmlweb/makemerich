@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,522.40 |
-| Total Return | -9.55% |
-| Days Active | 96 |
+| Current Balance | €4,534.21 |
+| Total Return | -9.32% |
+| Days Active | 97 |
 
 ---
 
 ## Daily Log
+
+### Day 96 — May 20, 2026 21:30 CET
+
+**Balance:** €4,534.21 | **Total Return:** -9.3%
+**Day P&L:** +€11.81 (+0.3%) vs Day 95 (€4,522.40)
+
+**Prices at close:**
+- ETH: $2,131.42 / €1,835.15 (+1.03% 24h) — stop $1,900.00
+- 4GLD: €124.79 (-0.44% 24h) — stop €105.88
+- XEON: €149.15 (-0.01% 24h)
+- EQQQ: €605.00 (-0.40% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,353.61 (-0.74%)
+- NASDAQ: 25,870.71 (-1.35%)
+- GOLD: 4,476.30 (-0.67%)
+- IBEX35: 17,670.10 (+-0.00%)
+- EUROSTOXX50: 5,851.16 (+0.00%)
+- DAX: 24,400.65 (+0.38%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,188.74 | 48.3% | +15.3% | -0.40% |
+| ETH | €1,209.08 | 26.7% | +3.8% | +1.03% |
+| 4GLD | €470.51 | 10.4% | +0.2% | -0.44% |
+| XEON | €452.10 | 10.0% | +6.2% | -0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.88% vs SMA50, VIX 18.06)
+- BUY: TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.9% away)
+- 4GLD: stop EUR 105.88 (15.2% away)
+- EQQQ: stop EUR 508.78 (15.9% away)
+
+**Analysis:**
+Portfolio gained +0.3% despite broad market weakness (SP500 -0.74%, NASDAQ -1.35%), led by ETH +1.03% 24h. All stops remain comfortably distant (ETH 10.9%, 4GLD 15.2%, EQQQ 15.9%) and quant regime stays RISK-ON with VIX 18.06. TTE flagged BUY by quant but not in current portfolio; no existing position requires action.
+
+**HOLD — Todas las posiciones están por encima de sus stops con el régimen RISK-ON intacto y las señales cuantitativas confirman mantener todos los activos actuales.**
+
+---
+
 
 ### Day 95 — May 19, 2026 21:30 CET
 
