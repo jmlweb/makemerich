@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,555.99 |
-| Total Return | -8.88% |
+| Current Balance | €4,574.17 |
+| Total Return | -8.52% |
 | Days Active | 97 |
 
 ---
 
 ## Daily Log
+
+### Day 96 — May 20, 2026 21:30 CET
+
+**Balance:** €4,574.17 | **Total Return:** -8.5%
+**Day P&L:** +€51.77 (+1.1%) vs Day 95 (€4,522.40)
+
+**Prices at close:**
+- ETH: $2,134.99 / €1,838.23 (+1.17% 24h) — stop $1,900.00
+- 4GLD: €125.43 (+0.07% 24h) — stop €105.88
+- XEON: €149.18 (+0.01% 24h)
+- EQQQ: €614.80 (+1.22% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,421.11 (+0.24%)
+- NASDAQ: 26,213.57 (+0.47%)
+- GOLD: 4,540.90 (+0.77%)
+- IBEX35: 18,051.70 (+2.16%)
+- EUROSTOXX50: 5,976.07 (+2.13%)
+- DAX: 24,737.24 (+1.77%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,224.19 | 48.6% | +17.2% | +1.22% |
+| ETH | €1,211.11 | 26.5% | +4.0% | +1.17% |
+| 4GLD | €472.92 | 10.3% | +0.7% | +0.07% |
+| XEON | €452.17 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.01% vs SMA50, VIX 18)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (11.0% away)
+- 4GLD: stop EUR 105.88 (15.6% away)
+- EQQQ: stop EUR 508.78 (17.2% away)
+
+**Analysis:**
+European equities led today's session with IBEX +2.16%, EUROSTOXX +2.13%, and DAX +1.77%, while US markets posted modest gains (SP500 +0.24%, NASDAQ +0.47%). Portfolio recovered +1.1% driven by EQQQ and ETH both up ~1.2%, with all positions comfortably above their stops. Quant regime remains RISK-ON and no signals trigger action on current holdings.
+
+**HOLD — todas las posiciones mantienen tendencia positiva con el régimen RISK-ON confirmado y stops alejados, sin catalizador para cambios.**
+
+---
+
 
 ### Day 96 — May 20, 2026 21:30 CET
 
