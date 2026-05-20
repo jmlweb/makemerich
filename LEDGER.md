@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,554.33 |
-| Total Return | -8.91% |
+| Current Balance | €4,555.99 |
+| Total Return | -8.88% |
 | Days Active | 97 |
 
 ---
 
 ## Daily Log
+
+### Day 96 — May 20, 2026 21:30 CET
+
+**Balance:** €4,555.99 | **Total Return:** -8.9%
+**Day P&L:** +€33.59 (+0.7%) vs Day 95 (€4,522.40)
+
+**Prices at close:**
+- ETH: $2,124.76 / €1,829.42 (+0.71% 24h) — stop $1,900.00
+- 4GLD: €124.74 (-0.48% 24h) — stop €105.88
+- XEON: €149.17 (+0.01% 24h)
+- EQQQ: €612.10 (+0.77% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,353.61 (-0.74%)
+- NASDAQ: 25,870.71 (-1.35%)
+- GOLD: 4,502.80 (-0.08%)
+- IBEX35: 17,762.30 (+0.52%)
+- EUROSTOXX50: 5,897.40 (+0.79%)
+- DAX: 24,489.19 (+0.75%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,214.42 | 48.6% | +16.7% | +0.77% |
+| ETH | €1,205.30 | 26.5% | +3.5% | +0.71% |
+| 4GLD | €470.32 | 10.3% | +0.1% | -0.48% |
+| XEON | €452.16 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.01% vs SMA50, VIX 18)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.6% away)
+- 4GLD: stop EUR 105.88 (15.1% away)
+- EQQQ: stop EUR 508.78 (16.9% away)
+
+**Analysis:**
+Portfolio gained +0.7% despite US weakness (SP500 -0.74%, NASDAQ -1.35%), carried by European strength and ETH resilience. Divergence between US and EU markets persists — EQQQ tracks Nasdaq but held well today, suggesting relative strength. All stops remain comfortably distant (10–17%), quant regime stays RISK-ON, no position at risk.
+
+**HOLD — todas las posiciones siguen sólidas con el régimen en RISK-ON y los stops alejados, sin señal de venta en ningún activo de la cartera.**
+
+---
+
 
 ### Day 96 — May 20, 2026 21:30 CET
 
