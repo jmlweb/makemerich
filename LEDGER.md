@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,534.21 |
-| Total Return | -9.32% |
+| Current Balance | €4,554.33 |
+| Total Return | -8.91% |
 | Days Active | 97 |
 
 ---
 
 ## Daily Log
+
+### Day 96 — May 20, 2026 21:30 CET
+
+**Balance:** €4,554.33 | **Total Return:** -8.9%
+**Day P&L:** +€31.93 (+0.7%) vs Day 95 (€4,522.40)
+
+**Prices at close:**
+- ETH: $2,127.49 / €1,831.77 (+0.82% 24h) — stop $1,900.00
+- 4GLD: €124.37 (-0.74% 24h) — stop €105.88
+- XEON: €149.17 (+0.01% 24h)
+- EQQQ: €611.60 (+0.69% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,353.61 (-0.74%)
+- NASDAQ: 25,870.71 (-1.35%)
+- GOLD: 4,485.80 (-0.45%)
+- IBEX35: 17,734.90 (+0.37%)
+- EUROSTOXX50: 5,882.65 (+0.54%)
+- DAX: 24,474.34 (+0.68%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,212.61 | 48.6% | +16.6% | +0.69% |
+| ETH | €1,206.85 | 26.5% | +3.6% | +0.82% |
+| 4GLD | €468.92 | 10.3% | -0.1% | -0.74% |
+| XEON | €452.16 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.88% vs SMA50, VIX 18)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.7% away)
+- 4GLD: stop EUR 105.88 (14.9% away)
+- EQQQ: stop EUR 508.78 (16.8% away)
+
+**Analysis:**
+US equities pulled back sharply (SP500 -0.74%, NASDAQ -1.35%) while European indices advanced, reflecting divergent macro sentiment; EUR/USD at 0.8610 continues to compress ETH/crypto USD gains when converted. All portfolio stops remain 10-17% away with regime still RISK-ON (SP500 +5.88% vs SMA50, VIX 18), and quant signals confirm HOLD across all holdings.
+
+**HOLD — todas las posiciones están bien protegidas por sus stops y las señales cuantitativas no indican ninguna acción necesaria.**
+
+---
+
 
 ### Day 96 — May 20, 2026 21:30 CET
 
