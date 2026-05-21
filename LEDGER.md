@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,556.01 |
-| Total Return | -8.88% |
+| Current Balance | €4,571.64 |
+| Total Return | -8.57% |
 | Days Active | 98 |
 
 ---
 
 ## Daily Log
+
+### Day 97 — May 21, 2026 21:30 CET
+
+**Balance:** €4,571.64 | **Total Return:** -8.6%
+**Day P&L:** €3.00 (-0.1%) vs Day 96 (€4,574.64)
+
+**Prices at close:**
+- ETH: $2,130.43 / €1,834.30 (+0.16% 24h) — stop $1,900.00
+- 4GLD: €125.16 (+0.30% 24h) — stop €105.88
+- XEON: €149.17 (+0.01% 24h)
+- EQQQ: €615.10 (+1.67% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,410.48 (+0.77%)
+- NASDAQ: 26,165.11 (+1.14%)
+- GOLD: 4,512.40 (-0.42%)
+- IBEX35: 17,975.20 (-0.42%)
+- EUROSTOXX50: 5,960.32 (-0.26%)
+- DAX: 24,606.77 (+0.84%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,225.28 | 48.7% | +17.3% | +1.67% |
+| ETH | €1,208.52 | 26.4% | +3.8% | +0.16% |
+| 4GLD | €471.90 | 10.3% | +0.5% | +0.30% |
+| XEON | €452.16 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.12% vs SMA50, VIX 17.71)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.8% away)
+- 4GLD: stop EUR 105.88 (15.4% away)
+- EQQQ: stop EUR 508.78 (17.3% away)
+
+**Analysis:**
+US markets led risk-on session (NASDAQ +1.14%, SP500 +0.77%) while European indices diverged — DAX gained but IBEX35 and EUROSTOXX50 declined; gold softened -0.42% consistent with equity strength. EQQQ captured the tech rally (+1.67%) and all portfolio positions sit well above stops. Quant signals flag ASML and TTE as BUY but available cash (€213.78 / 4.7%) is too thin for meaningful new entries.
+
+**HOLD — Todas las posiciones actuales mantienen señal HOLD con margen suficiente sobre stops, y el efectivo disponible es insuficiente para una entrada relevante en ASML o TTE.**
+
+---
+
 
 ### Day 97 — May 21, 2026 21:30 CET
 
