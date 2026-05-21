@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,571.64 |
-| Total Return | -8.57% |
+| Current Balance | €4,572.50 |
+| Total Return | -8.55% |
 | Days Active | 98 |
 
 ---
 
 ## Daily Log
+
+### Day 97 — May 21, 2026 21:30 CET
+
+**Balance:** €4,572.50 | **Total Return:** -8.6%
+**Day P&L:** €2.14 (-0.0%) vs Day 96 (€4,574.64)
+
+**Prices at close:**
+- ETH: $2,131.95 / €1,835.61 (+0.22% 24h) — stop $1,900.00
+- 4GLD: €125.16 (+0.30% 24h) — stop €105.88
+- XEON: €149.17 (+0.01% 24h)
+- EQQQ: €615.10 (+1.67% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,444.13 (+1.23%)
+- NASDAQ: 26,290.20 (+1.62%)
+- GOLD: 4,542.90 (+0.26%)
+- IBEX35: 17,975.20 (-0.42%)
+- EUROSTOXX50: 5,960.32 (-0.26%)
+- DAX: 24,606.77 (+0.84%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,225.28 | 48.7% | +17.3% | +1.67% |
+| ETH | €1,209.38 | 26.4% | +3.9% | +0.22% |
+| 4GLD | €471.90 | 10.3% | +0.5% | +0.30% |
+| XEON | €452.16 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.12% vs SMA50, VIX 17.71)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.9% away)
+- 4GLD: stop EUR 105.88 (15.4% away)
+- EQQQ: stop EUR 508.78 (17.3% away)
+
+**Analysis:**
+US markets rallied strongly (SP500 +1.23%, NASDAQ +1.62%) while European indices pulled back, with EUR/USD at 0.8610 dampening EQQQ gains in euro terms — portfolio net gain just €2.14 despite EQQQ's +1.67% session. All positions remain well above stops (10.9–17.3% buffers) and quant signals confirm HOLD across all holdings in a RISK-ON regime. ASML and TTE flagged as BUY but not currently held; no rebalancing triggers met.
+
+**HOLD — Todas las posiciones mantienen buffers amplios sobre sus stops y las señales cuantitativas confirman mantener el portafolio sin cambios.**
+
+---
+
 
 ### Day 97 — May 21, 2026 21:30 CET
 
