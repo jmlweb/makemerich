@@ -5,13 +5,57 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,574.64 |
-| Total Return | -8.51% |
-| Days Active | 97 |
+| Current Balance | €4,556.01 |
+| Total Return | -8.88% |
+| Days Active | 98 |
 
 ---
 
 ## Daily Log
+
+### Day 97 — May 21, 2026 21:30 CET
+
+**Balance:** €4,556.01 | **Total Return:** -8.9%
+**Day P&L:** €18.63 (-0.4%) vs Day 96 (€4,574.64)
+
+**Prices at close:**
+- ETH: $2,110.31 / €1,941.49 () — stop $1,900.00
+- 4GLD: €124.80 () — stop €105.88
+- XEON: €149.19 ()
+- EQQQ: €614.30 () — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.9200
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,222.38 | 48.8% | +17.1% | n/a |
+| ETH | €1,197.11 | 26.3% | +2.8% | n/a |
+| 4GLD | €470.55 | 10.3% | +0.2% | n/a |
+| XEON | €452.19 | 9.9% | +6.2% | n/a |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.12% vs SMA50, VIX 17.71)
+- BUY: ASML, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, MC, ITX, SIE, NOVO, ALV, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.0% away)
+- 4GLD: stop EUR 105.88 (15.2% away)
+- EQQQ: stop EUR 508.78 (17.2% away)
+
+**Analysis:**
+Risk-on regime confirmed (SP500 +6.12% vs SMA50, VIX 17.71) with all four positions well above their stops — ETH 10%, 4GLD 15.2%, EQQQ 17.2% cushion. Quant signals HOLD across the entire portfolio; day P{{ANALYSIS}}L slightly negative (-0.4%) but no structural deterioration. Quant flags BUY on ASML and TTE but cash position (4.7%) is insufficient for new entries without rebalancing.
+
+**HOLD — las señales cuantitativas confirman mantener todas las posiciones con el régimen de mercado en risk-on y stops alejados.**
+
+---
+
 
 ### Day 96 — May 20, 2026 21:30 CET
 
