@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,593.58 |
-| Total Return | -8.13% |
+| Current Balance | €4,597.59 |
+| Total Return | -8.05% |
 | Days Active | 99 |
 
 ---
 
 ## Daily Log
+
+### Day 98 — May 22, 2026 21:30 CET
+
+**Balance:** €4,597.59 | **Total Return:** -8.1%
+**Day P&L:** +€25.09 (+0.5%) vs Day 97 (€4,572.50)
+
+**Prices at close:**
+- ETH: $2,117.01 / €1,822.75 (-0.67% 24h) — stop $1,900.00
+- 4GLD: €125.31 (-0.10% 24h) — stop €105.88
+- XEON: €149.20 (+0.01% 24h)
+- EQQQ: €624.20 (+1.53% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,494.43 (+0.83%)
+- NASDAQ: 26,459.82 (+0.72%)
+- GOLD: 4,515.90 (-0.53%)
+- IBEX35: 17,985.30 (+0.06%)
+- EUROSTOXX50: 6,019.45 (+0.99%)
+- DAX: 24,888.56 (+0.61%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,258.20 | 49.1% | +19.0% | +1.53% |
+| ETH | €1,200.91 | 26.1% | +3.1% | -0.67% |
+| 4GLD | €472.47 | 10.3% | +0.6% | -0.10% |
+| XEON | €452.23 | 9.8% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.99% vs SMA50, VIX 17.05)
+- BUY: ALV, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, DTE
+- SELL: AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.3% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (18.5% away)
+
+**Analysis:**
+Market remains firmly risk-on with SP500 and NASDAQ both posting solid gains; EQQQ led the portfolio with +1.53%, accounting for the day's €25 gain. ETH dipped -0.67% but remains well above its $1,900 stop with 10.3% cushion. Gold softened slightly (-0.53%) but 4GLD's stop at €105.88 sits 15.5% below current price, no concern.
+
+**HOLD — todas las posiciones están por encima de sus stops con margen amplio y el régimen de mercado sigue siendo risk-on, sin señales de salida en los activos actuales.**
+
+---
+
 
 ### Day 98 — May 22, 2026 21:30 CET
 
