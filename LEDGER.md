@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,597.59 |
-| Total Return | -8.05% |
+| Current Balance | €4,577.65 |
+| Total Return | -8.45% |
 | Days Active | 99 |
 
 ---
 
 ## Daily Log
+
+### Day 98 — May 22, 2026 21:30 CET
+
+**Balance:** €4,577.65 | **Total Return:** -8.4%
+**Day P&L:** +€5.15 (+0.1%) vs Day 97 (€4,572.50)
+
+**Prices at close:**
+- ETH: $2,081.86 / €1,792.48 (-2.29% 24h) — stop $1,900.00
+- 4GLD: €125.31 (-0.10% 24h) — stop €105.88
+- XEON: €149.20 (+0.01% 24h)
+- EQQQ: €624.20 (+1.53% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,472.98 (+0.54%)
+- NASDAQ: 26,326.81 (+0.21%)
+- GOLD: 4,510.40 (-0.65%)
+- IBEX35: 17,985.30 (+0.06%)
+- EUROSTOXX50: 6,019.45 (+0.99%)
+- DAX: 24,888.56 (+0.61%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,258.20 | 49.3% | +19.0% | +1.53% |
+| ETH | €1,180.97 | 25.8% | +1.4% | -2.29% |
+| 4GLD | €472.47 | 10.3% | +0.6% | -0.10% |
+| XEON | €452.23 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.99% vs SMA50, VIX 17.05)
+- BUY: ALV, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, DTE
+- SELL: AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (8.7% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (18.5% away)
+
+**Analysis:**
+US equities led gains with SP500 +0.54% and EQQQ surging +1.53%, pushing it to 49.3% of portfolio and +19% above entry — the main driver of the day's +€5.15 gain. ETH pulled back -2.29% on the day but remains +1.4% above entry with stop still 8.7% away; gold weakness dragged 4GLD slightly. Quant regime stays RISK-ON with VIX at 17.05 and SP500 well above SMA50, but all held positions are rated HOLD — no in-portfolio actionable signals.
+
+**HOLD — todas las posiciones están en zona segura con señales cuantitativas de HOLD y stops alejados, sin catalizadores hoy para actuar.**
+
+---
+
 
 ### Day 98 — May 22, 2026 21:30 CET
 
