@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,572.50 |
-| Total Return | -8.55% |
-| Days Active | 98 |
+| Current Balance | €4,567.46 |
+| Total Return | -8.65% |
+| Days Active | 99 |
 
 ---
 
 ## Daily Log
+
+### Day 98 — May 22, 2026 21:30 CET
+
+**Balance:** €4,567.46 | **Total Return:** -8.7%
+**Day P&L:** €5.04 (-0.1%) vs Day 97 (€4,572.50)
+
+**Prices at close:**
+- ETH: $2,123.06 / €1,827.95 (-0.38% 24h) — stop $1,900.00
+- 4GLD: €125.16 (-0.22% 24h) — stop €105.88
+- XEON: €149.17 (+-0.00% 24h)
+- EQQQ: €615.10 (+0.05% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,445.72 (+1.25%)
+- NASDAQ: 26,293.10 (+1.63%)
+- GOLD: 4,527.80 (-0.26%)
+- IBEX35: 17,975.20 (+-0.00%)
+- EUROSTOXX50: 5,960.32 (+-0.00%)
+- DAX: 24,606.77 (-0.53%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,225.28 | 48.7% | +17.3% | +0.05% |
+| ETH | €1,204.34 | 26.4% | +3.4% | -0.38% |
+| 4GLD | €471.90 | 10.3% | +0.5% | -0.22% |
+| XEON | €452.16 | 9.9% | +6.2% | +-0.00% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.80% vs SMA50, VIX 16.76)
+- BUY: ASML, ALV, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, NOVO, DTE
+- SELL: AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.5% away)
+- 4GLD: stop EUR 105.88 (15.4% away)
+- EQQQ: stop EUR 508.78 (17.3% away)
+
+**Analysis:**
+US equities surged (SP500 +1.25%, NASDAQ +1.63%) but portfolio assets underperformed — ETH and 4GLD dipped slightly while EQQQ was nearly flat, resulting in a minor -€5.04 day. Quant regime stays RISK-ON and all current holdings signal HOLD with stops 10-17% away. Portfolio overall remains healthy with EQQQ carrying the bulk at +17.3% from entry.
+
+**HOLD — todas las posiciones muestran P{{DECISION}}L positivo desde entrada, las señales cuantitativas confirman HOLD y los stops están suficientemente alejados para no actuar.**
+
+---
+
 
 ### Day 97 — May 21, 2026 21:30 CET
 
