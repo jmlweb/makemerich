@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,587.37 |
-| Total Return | -8.25% |
+| Current Balance | €4,593.58 |
+| Total Return | -8.13% |
 | Days Active | 99 |
 
 ---
 
 ## Daily Log
+
+### Day 98 — May 22, 2026 21:30 CET
+
+**Balance:** €4,593.58 | **Total Return:** -8.1%
+**Day P&L:** +€21.08 (+0.5%) vs Day 97 (€4,572.50)
+
+**Prices at close:**
+- ETH: $2,125.48 / €1,830.04 (-0.22% 24h) — stop $1,900.00
+- 4GLD: €125.48 (+0.04% 24h) — stop €105.88
+- XEON: €149.18 (+0.00% 24h)
+- EQQQ: €621.60 (+1.11% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,468.82 (+0.48%)
+- NASDAQ: 26,293.10 (+0.09%)
+- GOLD: 4,528.50 (-0.25%)
+- IBEX35: 18,077.40 (+0.57%)
+- EUROSTOXX50: 6,031.00 (+1.19%)
+- DAX: 24,923.28 (+0.75%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,248.79 | 49.0% | +18.5% | +1.11% |
+| ETH | €1,205.71 | 26.2% | +3.5% | -0.22% |
+| 4GLD | €473.11 | 10.3% | +0.7% | +0.04% |
+| XEON | €452.19 | 9.8% | +6.2% | +0.00% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.99% vs SMA50, VIX 17.05)
+- BUY: ALV, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, DTE
+- SELL: AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.6% away)
+- 4GLD: stop EUR 105.88 (15.6% away)
+- EQQQ: stop EUR 508.78 (18.1% away)
+
+**Analysis:**
+Market regime firmly RISK-ON with SP500 well above SMA50 and VIX at 17; European indices outperformed with EUROSTOXX50 +1.19% and DAX +0.75%, lifting EQQQ to +18.5% above entry. ETH edged down slightly while gold retreated -0.25%, but all position stops remain far (10-18%) with quant model confirming HOLD across all holdings.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales sin acción requerida.**
+
+---
+
 
 ### Day 98 — May 22, 2026 21:30 CET
 
