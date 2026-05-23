@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,577.65 |
-| Total Return | -8.45% |
-| Days Active | 99 |
+| Current Balance | €4,546.31 |
+| Total Return | -9.07% |
+| Days Active | 100 |
 
 ---
 
 ## Daily Log
+
+### Day 99 — May 23, 2026 21:30 CET
+
+**Balance:** €4,546.31 | **Total Return:** -9.1%
+**Day P&L:** €31.34 (-0.7%) vs Day 98 (€4,577.65)
+
+**Prices at close:**
+- ETH: $2,026.61 / €1,746.94 (-1.86% 24h) — stop $1,900.00
+- 4GLD: €125.31 (-0.10% 24h) — stop €105.88
+- XEON: €149.20 (+0.01% 24h)
+- EQQQ: €624.20 (+1.53% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8620
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,521.00 (-0.41%)
+- IBEX35: 17,985.30 (+0.06%)
+- EUROSTOXX50: 6,019.45 (+0.99%)
+- DAX: 24,888.56 (+0.61%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,258.20 | 49.7% | +19.0% | +1.53% |
+| ETH | €1,149.63 | 25.3% | -1.3% | -1.86% |
+| 4GLD | €472.47 | 10.4% | +0.6% | -0.10% |
+| XEON | €452.23 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.7)
+- BUY: ALV, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, DTE
+- SELL: AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (6.3% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (18.5% away)
+
+**Analysis:**
+Market regime firmly RISK-ON with SP500 +6.95% above SMA50 and VIX at 16.7; EU equities (EUROSTOXX50 +0.99%, DAX +0.61%) also strong. ETH weakness (-1.86%) drags portfolio -0.7% on the day but remains 6.3% above stop; EQQQ continues leading at +19% vs entry. Quant signals confirm HOLD on all current positions with no new entries flagged for held assets.
+
+**HOLD — todas las posiciones están lejos de sus stops y las señales cuantitativas confirman mantener sin cambios.**
+
+---
+
 
 ### Day 98 — May 22, 2026 21:30 CET
 
