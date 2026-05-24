@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,546.31 |
-| Total Return | -9.07% |
-| Days Active | 100 |
+| Current Balance | €4,598.61 |
+| Total Return | -8.03% |
+| Days Active | 101 |
 
 ---
 
 ## Daily Log
+
+### Day 100 — May 24, 2026 21:30 CET
+
+**Balance:** €4,598.61 | **Total Return:** -8.0%
+**Day P&L:** +€52.30 (+1.2%) vs Day 99 (€4,546.31)
+
+**Prices at close:**
+- ETH: $2,118.82 / €1,826.42 (+0.11% 24h) — stop $1,900.00
+- 4GLD: €125.31 (-0.10% 24h) — stop €105.88
+- XEON: €149.20 (+0.01% 24h)
+- EQQQ: €624.20 (+1.53% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8620
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,523.20 (+0.05%)
+- IBEX35: 17,985.30 (+0.06%)
+- EUROSTOXX50: 6,019.45 (+0.99%)
+- DAX: 24,888.56 (+0.61%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,258.20 | 49.1% | +19.0% | +1.53% |
+| ETH | €1,201.94 | 26.1% | +3.2% | +0.11% |
+| 4GLD | €472.47 | 10.3% | +0.6% | -0.10% |
+| XEON | €452.23 | 9.8% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.7)
+- BUY: ALV, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, DTE
+- SELL: BTC, SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.3% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (18.5% away)
+
+**Analysis:**
+Risk-on regime intact with SP500 +6.95% above SMA50 and VIX at 16.7; EQQQ leads portfolio at +1.53% 24h and +19% from entry, confirming trend strength. ETH and 4GLD drift sideways while all stops remain 10-18% away, providing comfortable cushion. No quant signals triggered for current holdings.
+
+**HOLD — fin de semana sin catalizadores, todas las posiciones dentro de rango seguro y el régimen sigue siendo alcista.**
+
+---
+
 
 ### Day 99 — May 23, 2026 21:30 CET
 
