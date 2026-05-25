@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,598.61 |
-| Total Return | -8.03% |
-| Days Active | 101 |
+| Current Balance | €4,591.82 |
+| Total Return | -8.16% |
+| Days Active | 102 |
 
 ---
 
 ## Daily Log
+
+### Day 101 — May 25, 2026 21:30 CET
+
+**Balance:** €4,591.82 | **Total Return:** -8.2%
+**Day P&L:** €6.79 (-0.1%) vs Day 100 (€4,598.61)
+
+**Prices at close:**
+- ETH: $2,106.84 / €1,811.88 (+0.41% 24h) — stop $1,900.00
+- 4GLD: €125.31 (+0.12% 24h) — stop €105.88
+- XEON: €149.20 (+0.02% 24h)
+- EQQQ: €624.20 (+1.48% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,523.20 (+0.05%)
+- IBEX35: 17,985.30 (+0.00%)
+- EUROSTOXX50: 6,019.45 (+0.99%)
+- DAX: 24,888.56 (+1.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,258.20 | 49.2% | +19.0% | +1.48% |
+| ETH | €1,195.14 | 26.0% | +2.6% | +0.41% |
+| 4GLD | €472.47 | 10.3% | +0.6% | +0.12% |
+| XEON | €452.23 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.7)
+- BUY: ALV, TTE
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, DTE
+- SELL: SOL, AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (9.8% away)
+- 4GLD: stop EUR 105.88 (15.5% away)
+- EQQQ: stop EUR 508.78 (18.5% away)
+
+**Analysis:**
+European markets led gains today (DAX +1.15%, EUROSTOXX50 +0.99%) while NASDAQ lagged (+0.28%), suggesting rotation toward European equities. Quant model flags RISK-ON regime with BUY signals on ALV and TTE — both European large-caps aligned with today's regional outperformance. Portfolio is healthy with all positions above entry; €213 cash available for deployment.
+
+**BUY — El régimen RISK-ON y la fortaleza del mercado europeo respaldan entrada en ALV o TTE con el efectivo disponible.**
+
+---
+
 
 ### Day 100 — May 24, 2026 21:30 CET
 
