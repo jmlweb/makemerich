@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,609.98 |
-| Total Return | -7.80% |
+| Current Balance | €4,616.00 |
+| Total Return | -7.68% |
 | Days Active | 102 |
 
 ---
 
 ## Daily Log
+
+### Day 101 — May 25, 2026 21:30 CET
+
+**Balance:** €4,616.00 | **Total Return:** -7.7%
+**Day P&L:** +€17.39 (+0.4%) vs Day 100 (€4,598.61)
+
+**Prices at close:**
+- ETH: $2,125.50 / €1,827.93 (+1.28% 24h) — stop $1,900.00
+- 4GLD: €126.23 (+0.85% 24h) — stop €105.88
+- XEON: €149.20 (+0.02% 24h)
+- EQQQ: €627.00 (+1.93% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,523.20 (+0.05%)
+- IBEX35: 18,387.40 (+2.24%)
+- EUROSTOXX50: 6,136.66 (+2.96%)
+- DAX: 25,389.10 (+3.18%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,268.33 | 49.1% | +19.5% | +1.93% |
+| ETH | €1,205.72 | 26.1% | +3.5% | +1.28% |
+| 4GLD | €475.94 | 10.3% | +1.3% | +0.85% |
+| XEON | €452.23 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.68)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.6% away)
+- 4GLD: stop EUR 105.88 (16.1% away)
+- EQQQ: stop EUR 508.78 (18.9% away)
+
+**Analysis:**
+European equities surged (DAX +3.18%, EUROSTOXX50 +2.96%) while US indices gained modestly; regime remains RISK-ON with quant buy signals on ITX and ALV. All portfolio positions closed green on the day, with EQQQ leading at +1.93% and stops comfortably distant (10–19% cushion). Cash reserves at 4.6% are too thin for meaningful new entries without trimming an existing position.
+
+**HOLD — todas las posiciones siguen en señal HOLD cuantitativa y los stops están lejos, por lo que no hay motivo para actuar hoy.**
+
+---
+
 
 ### Day 101 — May 25, 2026 21:30 CET
 
