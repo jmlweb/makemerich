@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,612.28 |
-| Total Return | -7.75% |
+| Current Balance | €4,609.98 |
+| Total Return | -7.80% |
 | Days Active | 102 |
 
 ---
 
 ## Daily Log
+
+### Day 101 — May 25, 2026 21:30 CET
+
+**Balance:** €4,609.98 | **Total Return:** -7.8%
+**Day P&L:** +€11.37 (+0.2%) vs Day 100 (€4,598.61)
+
+**Prices at close:**
+- ETH: $2,113.78 / €1,817.85 (+0.73% 24h) — stop $1,900.00
+- 4GLD: €126.10 (+0.75% 24h) — stop €105.88
+- XEON: €149.21 (+0.02% 24h)
+- EQQQ: €627.30 (+1.98% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,523.20 (+0.05%)
+- IBEX35: 18,375.80 (+2.17%)
+- EUROSTOXX50: 6,123.83 (+2.74%)
+- DAX: 25,276.25 (+2.72%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,269.41 | 49.2% | +19.6% | +1.98% |
+| ETH | €1,199.08 | 26.0% | +3.0% | +0.73% |
+| 4GLD | €475.45 | 10.3% | +1.2% | +0.75% |
+| XEON | €452.27 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.68)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.1% away)
+- 4GLD: stop EUR 105.88 (16.0% away)
+- EQQQ: stop EUR 508.78 (18.9% away)
+
+**Analysis:**
+European equities surged broadly (DAX +2.72%, EUROSTOXX50 +2.74%, IBEX35 +2.17%) while US markets lagged (SP500 +0.54%, NASDAQ +0.28%), suggesting rotation into EU risk assets. Market regime firmly RISK-ON with VIX at 16.68 and SP500 well above SMA50. All current holdings show HOLD signals; quant BUY flags on ITX and ALV but available cash (€213.78, 4.6%) is too thin for a meaningful new position.
+
+**HOLD — todas las posiciones tienen señal HOLD del sistema cuantitativo, los stops están lejos y el efectivo disponible es insuficiente para abrir una nueva posición relevante.**
+
+---
+
 
 ### Day 101 — May 25, 2026 21:30 CET
 
