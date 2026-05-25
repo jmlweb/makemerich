@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,591.82 |
-| Total Return | -8.16% |
+| Current Balance | €4,612.28 |
+| Total Return | -7.75% |
 | Days Active | 102 |
 
 ---
 
 ## Daily Log
+
+### Day 101 — May 25, 2026 21:30 CET
+
+**Balance:** €4,612.28 | **Total Return:** -7.8%
+**Day P&L:** +€13.67 (+0.3%) vs Day 100 (€4,598.61)
+
+**Prices at close:**
+- ETH: $2,114.72 / €1,818.66 (+0.80% 24h) — stop $1,900.00
+- 4GLD: €126.09 (+0.74% 24h) — stop €105.88
+- XEON: €149.21 (+0.02% 24h)
+- EQQQ: €627.80 (+2.06% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,523.20 (+0.05%)
+- IBEX35: 18,297.90 (+1.74%)
+- EUROSTOXX50: 6,106.24 (+2.45%)
+- DAX: 25,230.28 (+2.53%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,271.22 | 49.2% | +19.7% | +2.06% |
+| ETH | €1,199.61 | 26.0% | +3.0% | +0.80% |
+| 4GLD | €475.41 | 10.3% | +1.2% | +0.74% |
+| XEON | €452.26 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.68)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.2% away)
+- 4GLD: stop EUR 105.88 (16.0% away)
+- EQQQ: stop EUR 508.78 (19.0% away)
+
+**Analysis:**
+European equities surged today (DAX +2.53%, EUROSTOXX50 +2.45%), with EQQQ +2.06% driving most of the +€13.67 daily gain. Risk-on regime intact — SP500 sits 6.95% above SMA50 and VIX at 16.68. Quant flags ITX and ALV as BUY candidates, but with only €213.78 cash (4.6%) a meaningful entry is not viable.
+
+**HOLD — con solo €213 en caja no hay margen para abrir posición en ITX ni ALV, y todas las posiciones actuales están en positivo con stops lejanos.**
+
+---
+
 
 ### Day 101 — May 25, 2026 21:30 CET
 
