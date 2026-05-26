@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,606.53 |
-| Total Return | -7.87% |
+| Current Balance | €4,598.20 |
+| Total Return | -8.04% |
 | Days Active | 103 |
 
 ---
 
 ## Daily Log
+
+### Day 102 — May 26, 2026 21:30 CET
+
+**Balance:** €4,598.20 | **Total Return:** -8.0%
+**Day P&L:** €16.66 (-0.4%) vs Day 101 (€4,614.86)
+
+**Prices at close:**
+- ETH: $2,085.60 / €1,791.53 (-1.27% 24h) — stop $1,900.00
+- 4GLD: €124.71 (-0.48% 24h) — stop €105.88
+- XEON: €149.22 (+0.02% 24h)
+- EQQQ: €629.90 (+0.91% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,506.91 (+0.82%)
+- NASDAQ: 26,549.46 (+0.97%)
+- GOLD: 4,506.60 (-0.37%)
+- IBEX35: 18,290.90 (-0.52%)
+- EUROSTOXX50: 6,064.15 (+0.74%)
+- DAX: 25,184.89 (+1.19%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,278.82 | 49.6% | +20.1% | +0.91% |
+| ETH | €1,183.09 | 25.7% | +1.6% | -1.27% |
+| 4GLD | €470.21 | 10.2% | +0.1% | -0.48% |
+| XEON | €452.31 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.30% vs SMA50, VIX 16.7)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (8.9% away)
+- 4GLD: stop EUR 105.88 (15.1% away)
+- EQQQ: stop EUR 508.78 (19.2% away)
+
+**Analysis:**
+US equity indices closed strong (S{{ANALYSIS}}P500 +0.82%, NASDAQ +0.97%, DAX +1.19%) confirming the RISK-ON regime, but ETH's -1.27% drag offset EQQQ gains and pushed the portfolio slightly negative on the day (-€16.66). All three stop-losses remain comfortable (8.9–19.2% buffer), and quant signals confirm HOLD across all open positions. Quant BUY signals on ITX and ALV cannot be acted on with only €213.78 cash (4.6%) without first reducing an existing position.
+
+**HOLD — el mercado sigue en modo risk-on pero la caja es insuficiente para abrir nuevas posiciones sin liquidar algo, y los stops están suficientemente lejos como para no actuar.**
+
+---
+
 
 ### Day 102 — May 26, 2026 21:30 CET
 
