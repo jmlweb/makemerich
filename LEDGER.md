@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,614.86 |
-| Total Return | -7.70% |
-| Days Active | 102 |
+| Current Balance | €4,601.46 |
+| Total Return | -7.97% |
+| Days Active | 103 |
 
 ---
 
 ## Daily Log
+
+### Day 102 — May 26, 2026 21:30 CET
+
+**Balance:** €4,601.46 | **Total Return:** -8.0%
+**Day P&L:** €13.40 (-0.3%) vs Day 101 (€4,614.86)
+
+**Prices at close:**
+- ETH: $2,099.87 / €1,803.79 (-0.55% 24h) — stop $1,900.00
+- 4GLD: €126.23 (+0.73% 24h) — stop €105.88
+- XEON: €149.20 (+0.00% 24h)
+- EQQQ: €627.00 (+0.45% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,530.30 (+0.16%)
+- IBEX35: 18,387.40 (+0.00%)
+- EUROSTOXX50: 6,136.66 (+1.95%)
+- DAX: 25,389.10 (+2.01%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,268.33 | 49.3% | +19.5% | +0.45% |
+| ETH | €1,191.19 | 25.9% | +2.3% | -0.55% |
+| 4GLD | €475.94 | 10.3% | +1.3% | +0.73% |
+| XEON | €452.23 | 9.8% | +6.2% | +0.00% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.59)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (9.5% away)
+- 4GLD: stop EUR 105.88 (16.1% away)
+- EQQQ: stop EUR 508.78 (18.9% away)
+
+**Analysis:**
+European markets led gains today (DAX +2.01%, EUROSTOXX50 +1.95%) while US indices were more muted; risk-on regime remains intact with VIX at 16.59. Portfolio down marginally (-0.3%) dragged by ETH -0.55%, offset by 4GLD +0.73% and EQQQ +0.45%. All positions remain well above stops (9.5%–18.9% buffer) with positive P{{ANALYSIS}}L from entry across the board.
+
+**HOLD — todas las posiciones muestran P{{DECISION}}L positivo desde entrada y las señales cuantitativas confirman mantener; no hay catalizador para actuar hoy.**
+
+---
+
 
 ### Day 101 — May 25, 2026 21:30 CET
 

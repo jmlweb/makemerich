@@ -1,96 +1,96 @@
 {
-  "fetchedAt": "2026-05-25T19:30:05.073Z",
-  "eurUsd": 0.86,
+  "fetchedAt": "2026-05-26T07:00:05.255Z",
+  "eurUsd": 0.859,
   "prices": {
     "ETH": {
-      "priceUSD": 2123.489990234375,
-      "priceEUR": 1826.2013916015624,
-      "change": "1.22"
+      "priceUSD": 2099.68994140625,
+      "priceEUR": 1803.6336596679687,
+      "change": "-0.55"
     },
     "4GLD": {
-      "priceUSD": 146.77907367085302,
+      "priceUSD": 146.9499457007376,
       "priceEUR": 126.2300033569336,
-      "change": "0.85"
+      "change": "0.73"
     },
     "XEON": {
-      "priceUSD": 173.48604424055233,
+      "priceUSD": 173.6880070394354,
       "priceEUR": 149.197998046875,
-      "change": "0.02"
+      "change": "0.00"
     },
     "EQQQ": {
-      "priceUSD": 729.0697674418604,
+      "priceUSD": 729.918509895227,
       "priceEUR": 627,
-      "change": "1.93"
+      "change": "0.45"
     },
     "BTC": {
-      "priceUSD": 77447.6171875,
-      "priceEUR": 66604.95078125,
-      "change": "0.61"
+      "priceUSD": 76817.546875,
+      "priceEUR": 65986.27276562499,
+      "change": "-0.60"
     },
     "SOL": {
-      "priceUSD": 85.83999633789062,
-      "priceEUR": 73.82239685058593,
-      "change": "0.69"
+      "priceUSD": 84.5199966430664,
+      "priceEUR": 72.60267711639405,
+      "change": "-0.58"
     },
     "SXR8": {
-      "priceUSD": 809.9302070085392,
+      "priceUSD": 810.8730826860813,
       "priceEUR": 696.5399780273438,
-      "change": "1.35"
+      "change": "0.25"
     },
     "VWCE": {
-      "priceUSD": 189.27906834801962,
+      "priceUSD": 189.4994165067484,
       "priceEUR": 162.77999877929688,
-      "change": "1.79"
+      "change": "0.72"
     },
     "SAP": {
-      "priceUSD": 179.62790200876634,
+      "priceUSD": 179.83701481669274,
       "priceEUR": 154.47999572753906,
-      "change": "2.37"
+      "change": "1.78"
     },
     "ASML": {
-      "priceUSD": 1663.4883437045785,
+      "priceUSD": 1665.4248842676805,
       "priceEUR": 1430.5999755859375,
-      "change": "1.53"
+      "change": "-0.00"
     },
     "MC": {
-      "priceUSD": 555.6976673214934,
+      "priceUSD": 556.3445796233812,
       "priceEUR": 477.8999938964844,
-      "change": "1.12"
+      "change": "-0.00"
     },
     "ITX": {
-      "priceUSD": 59.9999982257222,
+      "priceUSD": 60.06984688489068,
       "priceEUR": 51.599998474121094,
-      "change": "1.61"
+      "change": "-0.00"
     },
     "SIE": {
-      "priceUSD": 321.80232558139534,
+      "priceUSD": 322.17694994179277,
       "priceEUR": 276.75,
-      "change": "4.81"
+      "change": "3.03"
     },
     "AIR": {
-      "priceUSD": 202.6279005893441,
+      "priceUSD": 202.86378871575778,
       "priceEUR": 174.25999450683594,
-      "change": "2.80"
+      "change": "-0.00"
     },
     "NOVO": {
-      "priceUSD": 45.04644927988029,
+      "priceUSD": 45.0988898494727,
       "priceEUR": 38.73994638069705,
-      "change": "1.71"
+      "change": "0.00"
     },
     "ALV": {
-      "priceUSD": 454.6511627906977,
+      "priceUSD": 455.18044237485447,
       "priceEUR": 391,
-      "change": "1.32"
+      "change": "1.40"
     },
     "TTE": {
-      "priceUSD": 90.31395135923874,
+      "priceUSD": 90.41908983579198,
       "priceEUR": 77.66999816894531,
-      "change": "-1.25"
+      "change": "-0.00"
     },
     "DTE": {
-      "priceUSD": 34.244186933650525,
+      "priceUSD": 34.28405211052323,
       "priceEUR": 29.450000762939453,
-      "change": "1.10"
+      "change": "0.48"
     },
     "SP500": {
       "value": 7473.47021484375,
@@ -101,20 +101,20 @@
       "change": "0.28"
     },
     "GOLD": {
-      "value": 4523.2001953125,
-      "change": "0.05"
+      "value": 4530.2998046875,
+      "change": "0.16"
     },
     "IBEX35": {
       "value": 18387.400390625,
-      "change": "2.24"
+      "change": "0.00"
     },
     "EUROSTOXX50": {
       "value": 6136.66015625,
-      "change": "2.96"
+      "change": "1.95"
     },
     "DAX": {
       "value": 25389.099609375,
-      "change": "3.18"
+      "change": "2.01"
     }
   }
 }
