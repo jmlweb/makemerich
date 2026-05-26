@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,598.20 |
-| Total Return | -8.04% |
+| Current Balance | €4,588.06 |
+| Total Return | -8.24% |
 | Days Active | 103 |
 
 ---
 
 ## Daily Log
+
+### Day 102 — May 26, 2026 21:30 CET
+
+**Balance:** €4,588.06 | **Total Return:** -8.2%
+**Day P&L:** €26.80 (-0.6%) vs Day 101 (€4,614.86)
+
+**Prices at close:**
+- ETH: $2,067.72 / €1,776.17 (-2.07% 24h) — stop $1,900.00
+- 4GLD: €124.71 (-0.48% 24h) — stop €105.88
+- XEON: €149.22 (+0.02% 24h)
+- EQQQ: €629.90 (+0.91% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,513.24 (+0.91%)
+- NASDAQ: 26,615.21 (+1.23%)
+- GOLD: 4,502.20 (-0.46%)
+- IBEX35: 18,290.90 (-0.52%)
+- EUROSTOXX50: 6,064.15 (+0.74%)
+- DAX: 25,184.89 (+1.19%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,278.82 | 49.7% | +20.1% | +0.91% |
+| ETH | €1,172.95 | 25.6% | +0.7% | -2.07% |
+| 4GLD | €470.21 | 10.2% | +0.1% | -0.48% |
+| XEON | €452.31 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.30% vs SMA50, VIX 16.7)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (8.1% away)
+- 4GLD: stop EUR 105.88 (15.1% away)
+- EQQQ: stop EUR 508.78 (19.2% away)
+
+**Analysis:**
+US equities closed strong (SP500 +0.91%, NASDAQ +1.23%), confirming RISK-ON regime with SP500 +7.30% above SMA50. ETH pulled back -2.07% but remains 8.1% above stop; all portfolio positions retain HOLD signal from quant model. EQQQ continues leading at +20.1% from entry while gold softened slightly, consistent with risk-on rotation out of safe havens.
+
+**HOLD — todas las posiciones mantienen señal HOLD del modelo cuantitativo con stops ampliamente alejados y el régimen de mercado RISK-ON respalda mantener la exposición actual.**
+
+---
+
 
 ### Day 102 — May 26, 2026 21:30 CET
 
