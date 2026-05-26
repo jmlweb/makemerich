@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,601.46 |
-| Total Return | -7.97% |
+| Current Balance | €4,585.06 |
+| Total Return | -8.30% |
 | Days Active | 103 |
 
 ---
 
 ## Daily Log
+
+### Day 102 — May 26, 2026 21:30 CET
+
+**Balance:** €4,585.06 | **Total Return:** -8.3%
+**Day P&L:** €29.80 (-0.6%) vs Day 101 (€4,614.86)
+
+**Prices at close:**
+- ETH: $2,093.51 / €1,798.33 (-0.81% 24h) — stop $1,900.00
+- 4GLD: €124.74 (-0.49% 24h) — stop €105.88
+- XEON: €149.22 (+0.01% 24h)
+- EQQQ: €625.00 (+0.13% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,473.47 (+0.54%)
+- NASDAQ: 26,343.97 (+0.28%)
+- GOLD: 4,519.30 (-0.09%)
+- IBEX35: 18,362.00 (-0.14%)
+- EUROSTOXX50: 6,085.03 (+1.09%)
+- DAX: 25,210.10 (+1.29%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,261.09 | 49.3% | +19.1% | +0.13% |
+| ETH | €1,187.58 | 25.9% | +2.0% | -0.81% |
+| 4GLD | €470.32 | 10.3% | +0.1% | -0.49% |
+| XEON | €452.29 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.95% vs SMA50, VIX 16.7)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (9.2% away)
+- 4GLD: stop EUR 105.88 (15.1% away)
+- EQQQ: stop EUR 508.78 (18.6% away)
+
+**Analysis:**
+European markets led gains today (DAX +1.29%, EUROSTOXX50 +1.09%) while crypto lagged with ETH -0.81%, dragging the portfolio down modestly. Regime remains RISK-ON with VIX at 16.7 and SP500 well above SMA50; all stops are comfortably distant (9-18% away). Quant signals flag ITX and ALV as new BUY candidates, with 4.7% cash available for deployment.
+
+**HOLD — el mercado sigue en modo risk-on y todas las posiciones están dentro de parámetros, pero conviene revisar ITX y ALV como posibles entradas con el efectivo disponible.**
+
+---
+
 
 ### Day 102 — May 26, 2026 21:30 CET
 
