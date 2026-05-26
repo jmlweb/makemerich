@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,585.06 |
-| Total Return | -8.30% |
+| Current Balance | €4,606.53 |
+| Total Return | -7.87% |
 | Days Active | 103 |
 
 ---
 
 ## Daily Log
+
+### Day 102 — May 26, 2026 21:30 CET
+
+**Balance:** €4,606.53 | **Total Return:** -7.9%
+**Day P&L:** €8.33 (-0.2%) vs Day 101 (€4,614.86)
+
+**Prices at close:**
+- ETH: $2,113.30 / €1,815.32 (+0.09% 24h) — stop $1,900.00
+- 4GLD: €124.96 (-0.28% 24h) — stop €105.88
+- XEON: €149.22 (+0.01% 24h)
+- EQQQ: €627.60 (+0.54% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,516.90 (+0.96%)
+- NASDAQ: 26,343.97 (+0.19%)
+- GOLD: 4,520.60 (-0.06%)
+- IBEX35: 18,402.20 (+0.08%)
+- EUROSTOXX50: 6,099.49 (+1.33%)
+- DAX: 25,272.67 (+1.54%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,270.50 | 49.3% | +19.6% | +0.54% |
+| ETH | €1,198.80 | 26.0% | +2.9% | +0.09% |
+| 4GLD | €471.15 | 10.2% | +0.3% | -0.28% |
+| XEON | €452.29 | 9.8% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.30% vs SMA50, VIX 16.7)
+- BUY: ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (10.1% away)
+- 4GLD: stop EUR 105.88 (15.3% away)
+- EQQQ: stop EUR 508.78 (18.9% away)
+
+**Analysis:**
+European indices led gains (DAX +1.54%, EUROSTOXX50 +1.33%) in a broad risk-on session; EQQQ captured this momentum while ETH and 4GLD remained flat. Portfolio in good shape with all stops 10-19% below current prices and no positions near triggers. Quant signals flag BUY on ITX and ALV but current holdings all HOLD — no rotation pressure.
+
+**HOLD — el portafolio está bien posicionado con stops amplios y sin señales de salida en ninguna posición actual.**
+
+---
+
 
 ### Day 102 — May 26, 2026 21:30 CET
 
