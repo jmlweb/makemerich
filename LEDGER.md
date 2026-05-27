@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,603.56 |
-| Total Return | -7.93% |
+| Current Balance | €4,590.43 |
+| Total Return | -8.19% |
 | Days Active | 104 |
 
 ---
 
 ## Daily Log
+
+### Day 103 — May 27, 2026 21:30 CET
+
+**Balance:** €4,590.43 | **Total Return:** -8.2%
+**Day P&L:** +€2.37 (+0.1%) vs Day 102 (€4,588.06)
+
+**Prices at close:**
+- ETH: $2,066.01 / €1,776.77 (-0.23% 24h) — stop $1,900.00
+- 4GLD: €121.94 (-3.40% 24h) — stop €105.88
+- XEON: €149.23 (+0.02% 24h)
+- EQQQ: €633.70 (+1.07% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,519.12 (+0.61%)
+- NASDAQ: 26,656.18 (+1.19%)
+- GOLD: 4,441.60 (-1.31%)
+- IBEX35: 18,420.10 (+0.71%)
+- EUROSTOXX50: 6,105.47 (+0.68%)
+- DAX: 25,272.31 (-0.46%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,292.57 | 49.9% | +20.8% | +1.07% |
+| ETH | €1,171.98 | 25.5% | +0.6% | -0.23% |
+| 4GLD | €459.76 | 10.0% | -2.1% | -3.40% |
+| XEON | €452.34 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.14% vs SMA50, VIX 16.94)
+- BUY: ITX, SIE, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (8.0% away)
+- 4GLD: stop EUR 105.88 (13.2% away)
+- EQQQ: stop EUR 508.78 (19.7% away)
+
+**Analysis:**
+Risk-ON regime persists with SP500 +7.14% above SMA50 and VIX at 16.94; NASDAQ +1.19% lifts EQQQ further from entry while gold's -1.31% drop pressures 4GLD, now -2.1% vs entry. All current positions remain in HOLD territory per quant signals, with stops comfortably distant (8–19.7%). No actionable triggers today despite 4GLD softness.
+
+**HOLD — todas las señales cuantitativas confirman mantener posiciones actuales y ningún stop está en riesgo inmediato.**
+
+---
+
 
 ### Day 103 — May 27, 2026 21:30 CET
 
