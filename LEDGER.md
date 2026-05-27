@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,593.42 |
-| Total Return | -8.13% |
+| Current Balance | €4,603.56 |
+| Total Return | -7.93% |
 | Days Active | 104 |
 
 ---
 
 ## Daily Log
+
+### Day 103 — May 27, 2026 21:30 CET
+
+**Balance:** €4,603.56 | **Total Return:** -7.9%
+**Day P&L:** +€15.50 (+0.3%) vs Day 102 (€4,588.06)
+
+**Prices at close:**
+- ETH: $2,081.23 / €1,789.86 (+0.47% 24h) — stop $1,900.00
+- 4GLD: €124.00 (-1.77% 24h) — stop €105.88
+- XEON: €149.23 (+0.01% 24h)
+- EQQQ: €632.80 (+0.93% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,519.12 (+0.99%)
+- NASDAQ: 26,656.18 (+1.38%)
+- GOLD: 4,521.10 (+0.46%)
+- IBEX35: 18,385.60 (+0.52%)
+- EUROSTOXX50: 6,112.09 (+0.79%)
+- DAX: 25,364.42 (-0.10%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,289.31 | 49.7% | +20.6% | +0.93% |
+| ETH | €1,180.61 | 25.6% | +1.4% | +0.47% |
+| 4GLD | €467.53 | 10.2% | -0.5% | -1.77% |
+| XEON | €452.33 | 9.8% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.6% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.33% vs SMA50, VIX 16.94)
+- BUY: ITX, SIE, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (8.7% away)
+- 4GLD: stop EUR 105.88 (14.6% away)
+- EQQQ: stop EUR 508.78 (19.6% away)
+
+**Analysis:**
+Risk-on regime intact with SP500 +0.99% and NASDAQ +1.38% leading broad gains; ETH and EQQQ follow strength while 4GLD lags (-1.77%), likely profit-taking against gold's YTD rally. All positions sit comfortably above stops (8.7–19.6% buffer), and quant signals confirm HOLD across entire portfolio. No actionable entry signals for existing cash position given BUY candidates (ITX, SIE, ALV) fall outside current strategy scope.
+
+**HOLD — todas las posiciones están por encima de sus stops con señales cuantitativas confirmando mantener, sin catalizadores para actuar hoy.**
+
+---
+
 
 ### Day 103 — May 27, 2026 21:30 CET
 
