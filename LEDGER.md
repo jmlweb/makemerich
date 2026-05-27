@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,572.59 |
-| Total Return | -8.55% |
+| Current Balance | €4,564.69 |
+| Total Return | -8.71% |
 | Days Active | 104 |
 
 ---
 
 ## Daily Log
+
+### Day 103 — May 27, 2026 21:30 CET
+
+**Balance:** €4,564.69 | **Total Return:** -8.7%
+**Day P&L:** €23.37 (-0.5%) vs Day 102 (€4,588.06)
+
+**Prices at close:**
+- ETH: $2,053.64 / €1,766.13 (-0.82% 24h) — stop $1,900.00
+- 4GLD: €122.65 (-2.84% 24h) — stop €105.88
+- XEON: €149.22 (+0.01% 24h)
+- EQQQ: €627.80 (+0.13% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,522.67 (+0.66%)
+- NASDAQ: 26,662.25 (+1.21%)
+- GOLD: 4,481.40 (-0.42%)
+- IBEX35: 18,380.90 (+0.49%)
+- EUROSTOXX50: 6,070.54 (+0.11%)
+- DAX: 25,177.80 (-0.83%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,271.22 | 49.8% | +19.7% | +0.13% |
+| ETH | €1,164.96 | 25.5% | +0.0% | -0.82% |
+| 4GLD | €462.44 | 10.1% | -1.5% | -2.84% |
+| XEON | €452.29 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.14% vs SMA50, VIX 16.94)
+- BUY: ITX, SIE, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (7.5% away)
+- 4GLD: stop EUR 105.88 (13.7% away)
+- EQQQ: stop EUR 508.78 (19.0% away)
+
+**Analysis:**
+US equities closed strong (SP500 +0.66%, NASDAQ +1.21%) confirming risk-on regime, but ETH (-0.82%) and gold (-2.84%) dragged the portfolio to a small daily loss of €23. All positions remain well above their stops, with EQQQ continuing to carry the portfolio at +19.7% from entry while ETH has stalled at breakeven.
+
+**HOLD — Todos los activos siguen por encima de sus niveles de stop y el régimen de mercado sigue siendo alcista, sin señales de venta para ninguna posición actual.**
+
+---
+
 
 ### Day 103 — May 27, 2026 21:30 CET
 
