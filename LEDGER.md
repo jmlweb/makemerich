@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,590.43 |
-| Total Return | -8.19% |
+| Current Balance | €4,572.59 |
+| Total Return | -8.55% |
 | Days Active | 104 |
 
 ---
 
 ## Daily Log
+
+### Day 103 — May 27, 2026 21:30 CET
+
+**Balance:** €4,572.59 | **Total Return:** -8.6%
+**Day P&L:** €15.47 (-0.3%) vs Day 102 (€4,588.06)
+
+**Prices at close:**
+- ETH: $2,067.57 / €1,778.11 (-0.16% 24h) — stop $1,900.00
+- 4GLD: €122.65 (-2.84% 24h) — stop €105.88
+- XEON: €149.22 (+0.01% 24h)
+- EQQQ: €627.80 (+0.13% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,507.27 (+0.45%)
+- NASDAQ: 26,575.80 (+0.88%)
+- GOLD: 4,464.30 (-0.80%)
+- IBEX35: 18,380.90 (+0.49%)
+- EUROSTOXX50: 6,070.54 (+0.11%)
+- DAX: 25,177.80 (-0.83%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,271.22 | 49.7% | +19.7% | +0.13% |
+| ETH | €1,172.86 | 25.6% | +0.7% | -0.16% |
+| 4GLD | €462.44 | 10.1% | -1.5% | -2.84% |
+| XEON | €452.29 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.14% vs SMA50, VIX 16.94)
+- BUY: ITX, SIE, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, ASML, MC, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (8.1% away)
+- 4GLD: stop EUR 105.88 (13.7% away)
+- EQQQ: stop EUR 508.78 (19.0% away)
+
+**Analysis:**
+US equities closed positive (SP500 +0.45%, NASDAQ +0.88%) supporting RISK-ON regime, but gold weakness (-0.80%) dragged 4GLD down 2.84% — the session's only notable drag. All four holdings remain well above stops (closest: ETH at 8.1% buffer) and quant model signals HOLD across the board.
+
+**HOLD — todos los activos en cartera mantienen señal HOLD del modelo cuantitativo y los stops están lejos, sin catalizador para actuar.**
+
+---
+
 
 ### Day 103 — May 27, 2026 21:30 CET
 
