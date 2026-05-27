@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,588.06 |
-| Total Return | -8.24% |
-| Days Active | 103 |
+| Current Balance | €4,593.42 |
+| Total Return | -8.13% |
+| Days Active | 104 |
 
 ---
 
 ## Daily Log
+
+### Day 103 — May 27, 2026 21:30 CET
+
+**Balance:** €4,593.42 | **Total Return:** -8.1%
+**Day P&L:** +€5.36 (+0.1%) vs Day 102 (€4,588.06)
+
+**Prices at close:**
+- ETH: $2,077.17 / €1,786.37 (+0.27% 24h) — stop $1,900.00
+- 4GLD: €124.71 (-1.20% 24h) — stop €105.88
+- XEON: €149.22 (+0.02% 24h)
+- EQQQ: €629.90 (+0.46% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,519.12 (+0.99%)
+- NASDAQ: 26,656.18 (+1.38%)
+- GOLD: 4,487.30 (-0.29%)
+- IBEX35: 18,290.90 (+0.00%)
+- EUROSTOXX50: 6,064.15 (+-0.00%)
+- DAX: 25,184.89 (-0.80%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,278.82 | 49.6% | +20.1% | +0.46% |
+| ETH | €1,178.31 | 25.7% | +1.2% | +0.27% |
+| 4GLD | €470.21 | 10.2% | +0.1% | -1.20% |
+| XEON | €452.31 | 9.8% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.33% vs SMA50, VIX 17.01)
+- BUY: ASML, ITX, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (8.5% away)
+- 4GLD: stop EUR 105.88 (15.1% away)
+- EQQQ: stop EUR 508.78 (19.2% away)
+
+**Analysis:**
+US markets surged (SP500 +0.99%, NASDAQ +1.38%) in RISK-ON regime, lifting EQQQ to +20.1% from entry and keeping ETH steady; European indices diverged with DAX -0.80% and EUROSTOXX50 flat, consistent with ongoing transatlantic spread. Gold pulled back -0.29% putting mild pressure on 4GLD which is barely above entry (+0.1%), though all stops remain well clear (15%+ buffer).
+
+**HOLD — todas las posiciones mantienen señal HOLD del modelo cuantitativo con stops lejanos y sin catalizador claro para rotar el pequeño efectivo disponible.**
+
+---
+
 
 ### Day 102 — May 26, 2026 21:30 CET
 
