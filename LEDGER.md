@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,523.52 |
-| Total Return | -9.53% |
+| Current Balance | €4,529.22 |
+| Total Return | -9.42% |
 | Days Active | 105 |
 
 ---
 
 ## Daily Log
+
+### Day 104 — May 28, 2026 21:30 CET
+
+**Balance:** €4,529.22 | **Total Return:** -9.4%
+**Day P&L:** €35.47 (-0.8%) vs Day 103 (€4,564.69)
+
+**Prices at close:**
+- ETH: $1,990.50 / €1,711.83 (-1.56% 24h) — stop $1,900.00
+- 4GLD: €121.58 (-2.51% 24h) — stop €105.88
+- XEON: €149.23 (+0.01% 24h)
+- EQQQ: €629.00 (-0.14% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,520.36 (+0.63%)
+- NASDAQ: 26,674.73 (+1.26%)
+- GOLD: 4,423.20 (-0.55%)
+- IBEX35: 18,293.70 (-0.47%)
+- EUROSTOXX50: 6,057.27 (-0.22%)
+- DAX: 25,117.67 (-0.27%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,275.56 | 50.2% | +19.9% | -0.14% |
+| ETH | €1,129.14 | 24.9% | -3.0% | -1.56% |
+| 4GLD | €458.41 | 10.1% | -2.4% | -2.51% |
+| XEON | €452.33 | 10.0% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.10% vs SMA50, VIX 16.7)
+- BUY: 4GLD, ASML, ALV
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.5% away)
+- 4GLD: stop EUR 105.88 (12.9% away)
+- EQQQ: stop EUR 508.78 (19.1% away)
+
+**Analysis:**
+US equities closed strong (SP500 +0.63%, NASDAQ +1.26%) confirming RISK-ON regime, but European indices and gold weakened, dragging ETH (-1.56%) and 4GLD (-2.51%). Portfolio down €35 on the day, all positions above stops with healthy buffers (ETH 4.5%, 4GLD 12.9%, EQQQ 19.1%). Quant signals flag 4GLD as BUY despite today's dip, suggesting accumulation opportunity if gold stabilizes.
+
+**HOLD — Todas las posiciones están por encima de sus stops con margen suficiente y el régimen sigue siendo RISK-ON, por lo que no hay urgencia de actuar.**
+
+---
+
 
 ### Day 104 — May 28, 2026 21:30 CET
 
