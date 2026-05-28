@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,531.89 |
-| Total Return | -9.36% |
+| Current Balance | €4,552.98 |
+| Total Return | -8.94% |
 | Days Active | 105 |
 
 ---
 
 ## Daily Log
+
+### Day 104 — May 28, 2026 21:30 CET
+
+**Balance:** €4,552.98 | **Total Return:** -8.9%
+**Day P&L:** €11.71 (-0.3%) vs Day 103 (€4,564.69)
+
+**Prices at close:**
+- ETH: $1,986.41 / €1,708.31 (-1.74% 24h) — stop $1,900.00
+- 4GLD: €123.70 (-0.81% 24h) — stop €105.88
+- XEON: €149.23 (+0.01% 24h)
+- EQQQ: €634.00 (+0.65% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,557.89 (+0.52%)
+- NASDAQ: 26,846.11 (+0.71%)
+- GOLD: 4,510.30 (+1.41%)
+- IBEX35: 18,279.30 (-0.55%)
+- EUROSTOXX50: 6,055.11 (-0.25%)
+- DAX: 25,092.25 (-0.37%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,293.65 | 50.4% | +20.9% | +0.65% |
+| ETH | €1,126.82 | 24.7% | -3.2% | -1.74% |
+| 4GLD | €466.40 | 10.2% | -0.7% | -0.81% |
+| XEON | €452.33 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.82% vs SMA50, VIX 16.7)
+- BUY: 4GLD, ASML, ALV
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.3% away)
+- 4GLD: stop EUR 105.88 (14.4% away)
+- EQQQ: stop EUR 508.78 (19.8% away)
+
+**Analysis:**
+US markets closed positive (SP500 +0.52%, NASDAQ +0.71%) while European indices retreated, creating a divergence that reflects EQQQ's outperformance (+20.9% vs entry) against ETH's continued drag (-1.74% 24h, -3.2% vs entry). Gold surged +1.41% supporting the quant BUY signal on 4GLD, but with only €213.78 cash available, adding exposure is minimal impact. All stops remain safe with comfortable margins (ETH 4.3%, 4GLD 14.4%, EQQQ 19.8%).
+
+**HOLD — Con solo €213.78 en efectivo y el mercado cripto debilitándose, no hay operación con suficiente impacto para justificar acción; las posiciones existentes mantienen márgenes de stop seguros.**
+
+---
+
 
 ### Day 104 — May 28, 2026 21:30 CET
 
