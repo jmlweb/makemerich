@@ -52,8 +52,13 @@ node scripts/validate-rules.js || true
 echo ""
 
 # 8. Generate trade orders from quant signals
-echo "[8/8] Computing trade orders..."
+echo "[8/9] Computing trade orders..."
 node scripts/execute-signals.js
+echo ""
+
+# 9. Refresh summary.json + .daily-summary.txt from updated daily files
+echo "[9/9] Regenerating summaries..."
+node scripts/generate-summary.js || true
 echo ""
 
 echo "=== Pre-session complete. Ready for Hustle. ==="

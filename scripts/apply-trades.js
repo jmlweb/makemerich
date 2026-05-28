@@ -231,7 +231,10 @@ function main() {
     const tradesFile = path.join(TRADES_DIR, `${month}.json`);
     let existing = [];
     if (fs.existsSync(tradesFile)) {
-      existing = load(tradesFile);
+      const loaded = load(tradesFile);
+      // Canonical schema is a bare array. Tolerate legacy {trades:[...]} files
+      // by unwrapping so appends never clobber prior history.
+      existing = Array.isArray(loaded) ? loaded : (loaded.trades || []);
     }
     existing.push(...tradesLog);
     save(tradesFile, existing);

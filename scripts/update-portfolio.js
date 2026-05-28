@@ -178,7 +178,13 @@ async function main() {
     const entryPriceEUR = holding.entry_price_eur;
     const entryPriceUSD = holding.entry_price_usd;
     const isEurAsset = info.currency === "EUR";
-    
+
+    // Guard: a held position must carry an entry price, otherwise P&L silently
+    // reports 0% (this is how NATO shipped 8 daily files with pnlPercent stuck at 0).
+    if (isEurAsset ? entryPriceEUR == null : entryPriceUSD == null) {
+      console.warn(`⚠ ${asset}: missing entry price (entry_price_${isEurAsset ? "eur" : "usd"}) — P&L will report 0%. Fix portfolio.json holding before relying on pnlPercent.`);
+    }
+
     if (!priceData) {
       console.warn(`⚠ Could not fetch ${asset}, using last known value`);
       const lastValue = holding.amount_eur;

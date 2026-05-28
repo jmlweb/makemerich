@@ -1,0 +1,30 @@
+{
+  "description": "Maps historical/legacy tickers to their current canonical symbol so trades and holdings reconcile across instrument renames and US->UCITS migrations. 'resolve' gives the flat old->current lookup (use this for reconciliation). 'history' documents the full rename chain and the reason.",
+  "resolve": {
+    "VOO": "SXR8",
+    "CSPX": "SXR8",
+    "QQQ": "EQQQ",
+    "GLD": "4GLD",
+    "SGLD": "4GLD"
+  },
+  "history": [
+    {
+      "exposure": "S&P 500",
+      "chain": ["VOO", "SXR8"],
+      "current": "SXR8",
+      "reason": "Migrated US-domiciled VOO to iShares S&P 500 UCITS (SXR8.DE) for Spain/UCITS compliance"
+    },
+    {
+      "exposure": "Nasdaq-100",
+      "chain": ["QQQ", "EQQQ"],
+      "current": "EQQQ",
+      "reason": "Migrated US-domiciled QQQ to Invesco NASDAQ-100 UCITS (EQQQ.DE)"
+    },
+    {
+      "exposure": "Gold",
+      "chain": ["GLD", "SGLD", "4GLD"],
+      "current": "4GLD",
+      "reason": "SPDR Gold Trust (GLD) -> Invesco Physical Gold ETC (SGLD.L) -> Xetra-Gold ETC (4GLD.DE)"
+    }
+  ]
+}

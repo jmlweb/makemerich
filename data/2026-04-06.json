@@ -66,9 +66,10 @@
       "type": "ETF",
       "description": "HANetf Future of Defence UCITS",
       "units": 21.6216,
+      "entryPriceUSD": 21.31,
       "currentPriceUSD": 19.926,
       "value": 373.96,
-      "pnlPercent": 0,
+      "pnlPercent": -6.49,
       "change24h": 5.0838519143550185
     }
   ],

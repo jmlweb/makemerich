@@ -55,8 +55,12 @@ node scripts/execute-signals.js >> "$LOG_FILE" 2>&1 || echo "No trade orders" >>
 echo "[8/9] Applying trades..." | tee -a "$LOG_FILE"
 node scripts/apply-trades.js >> "$LOG_FILE" 2>&1 || echo "Warning: apply-trades failed" >> "$LOG_FILE"
 
-# 9. Generate LEDGER draft (data portion only)
-echo "[9/9] Generating LEDGER draft..." | tee -a "$LOG_FILE"
+# 9. Regenerate summary.json + .daily-summary.txt from the freshly-updated daily files
+echo "[9/10] Regenerating summaries..." | tee -a "$LOG_FILE"
+node scripts/generate-summary.js >> "$LOG_FILE" 2>&1 || echo "Warning: generate-summary failed" >> "$LOG_FILE"
+
+# 10. Generate LEDGER draft (data portion only)
+echo "[10/10] Generating LEDGER draft..." | tee -a "$LOG_FILE"
 LEDGER_DRAFT=$(node scripts/generate-ledger-entry.js --date "$TODAY" 2>>"$LOG_FILE")
 echo "$LEDGER_DRAFT" >> "$LOG_FILE"
 

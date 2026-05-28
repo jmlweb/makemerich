@@ -44,6 +44,39 @@ Only exception: direct messages to Jose (Spanish is fine).
 | `data/history/{SYMBOL}.json` | Historical OHLCV (1y) | Each session (cached) |
 | `data/.quant-signals-latest.json` | Quantitative signals | Each session |
 | `data/.trade-orders.json` | Binding trade orders | Each session |
+| `data/summary.json` | Monthly + all-time totals | Daily close (`generate-summary.js`) |
+| `data/.daily-summary.txt` | Telegram notification block | Daily close (`generate-summary.js`) |
+| `data/.ticker-aliases.json` | Legacy → canonical ticker map | When an instrument is renamed |
+
+---
+
+## Trade Log Schema (canonical)
+
+`data/trades/YYYY-MM.json` is a **bare JSON array** of trade objects (one file per
+month). This is the format `apply-trades.js` writes; all months use it. Do **not**
+wrap it in `{ "month": ..., "trades": [...] }` — that legacy shape is deprecated.
+
+```jsonc
+[
+  {
+    "date": "2026-02-04",        // YYYY-MM-DD
+    "time": "19:20 UTC",         // HH:MM UTC
+    "action": "BUY",             // BUY | SELL | deposit
+    "asset": "GLD",              // ticker (record under the ticker held at the time)
+    "units": 0.91,               // omitted for deposits
+    "price_usd": 453.89,         // price in native currency: price_usd OR price_eur
+    "amount_eur": 350.0,         // gross trade value in EUR
+    "fee_eur": 0,                // fee in EUR (0 if not recorded)
+    "reason": "…",               // free text
+    "session": "makemerich-2130" // cron session id, or "seed"/"reconstructed"
+  }
+]
+```
+
+**Ticker renames:** instruments were migrated over time (VOO→SXR8, QQQ→EQQQ,
+GLD→SGLD→4GLD). Trades stay recorded under the ticker that was held at trade time.
+`data/.ticker-aliases.json` (`resolve` map) collapses legacy tickers to the current
+canonical symbol so trades and holdings reconcile across renames.
 
 ---
 
@@ -108,6 +141,7 @@ node scripts/validate-rules.js          # Validate portfolio against RULES.md
 node scripts/analyze-portfolio.js       # Portfolio analytics (volatility, Sharpe, correlation)
 node scripts/backtest.js                # Backtest signal strategy against historical data
 node scripts/calculate-balance.js       # Calculate current balance
+node scripts/generate-summary.js        # Regenerate summary.json + .daily-summary.txt from daily files
 node scripts/generate-entry.js          # Generate LEDGER entry template
 node scripts/generate-dashboard.js      # Generate HTML dashboard
 node scripts/rebalance-suggester.js     # Suggest rebalancing
