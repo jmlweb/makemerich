@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,564.69 |
-| Total Return | -8.71% |
-| Days Active | 104 |
+| Current Balance | €4,523.52 |
+| Total Return | -9.53% |
+| Days Active | 105 |
 
 ---
 
 ## Daily Log
+
+### Day 104 — May 28, 2026 21:30 CET
+
+**Balance:** €4,523.52 | **Total Return:** -9.5%
+**Day P&L:** €41.17 (-0.9%) vs Day 103 (€4,564.69)
+
+**Prices at close:**
+- ETH: $1,981.07 / €1,703.72 (-2.06% 24h) — stop $1,900.00
+- 4GLD: €122.65 (-1.65% 24h) — stop €105.88
+- XEON: €149.22 (+-0.00% 24h)
+- EQQQ: €627.80 (-0.33% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,520.36 (+0.63%)
+- NASDAQ: 26,674.73 (+1.26%)
+- GOLD: 4,412.90 (-0.78%)
+- IBEX35: 18,380.90 (+0.00%)
+- EUROSTOXX50: 6,070.54 (+0.00%)
+- DAX: 25,177.80 (-0.03%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,271.22 | 50.2% | +19.7% | -0.33% |
+| ETH | €1,123.79 | 24.8% | -3.5% | -2.06% |
+| 4GLD | €462.44 | 10.2% | -1.5% | -1.65% |
+| XEON | €452.29 | 10.0% | +6.2% | +-0.00% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.10% vs SMA50, VIX 16.29)
+- BUY: ASML, ALV
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.1% away)
+- 4GLD: stop EUR 105.88 (13.7% away)
+- EQQQ: stop EUR 508.78 (19.0% away)
+
+**Analysis:**
+US markets continue risk-on with NASDAQ +1.26% and SP500 +0.63%, but ETH dropped 2.06% and sits only 4.1% above stop — closest it's been to trigger. European indices flat; gold declining in line with risk-on rotation away from safe havens. Quant signals confirm HOLD on all current positions with no new entries warranted despite BUY signals on ASML/ALV outside portfolio.
+
+**HOLD — las señales cuantitativas confirman mantener todas las posiciones; vigilar ETH de cerca dado que el stop en $1,900 está a solo 4.1% del precio actual.**
+
+---
+
 
 ### Day 103 — May 27, 2026 21:30 CET
 
