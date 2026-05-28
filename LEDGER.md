@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,529.22 |
-| Total Return | -9.42% |
+| Current Balance | €4,531.89 |
+| Total Return | -9.36% |
 | Days Active | 105 |
 
 ---
 
 ## Daily Log
+
+### Day 104 — May 28, 2026 21:30 CET
+
+**Balance:** €4,531.89 | **Total Return:** -9.4%
+**Day P&L:** €32.80 (-0.7%) vs Day 103 (€4,564.69)
+
+**Prices at close:**
+- ETH: $1,982.26 / €1,704.74 (-1.92% 24h) — stop $1,900.00
+- 4GLD: €122.38 (-1.87% 24h) — stop €105.88
+- XEON: €149.23 (+0.00% 24h)
+- EQQQ: €630.20 (+0.05% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,518.52 (-0.01%)
+- NASDAQ: 26,674.73 (+0.07%)
+- GOLD: 4,463.80 (+0.37%)
+- IBEX35: 18,260.90 (-0.65%)
+- EUROSTOXX50: 6,042.15 (-0.47%)
+- DAX: 25,043.75 (-0.56%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,279.90 | 50.3% | +20.1% | +0.05% |
+| ETH | €1,124.47 | 24.8% | -3.4% | -1.92% |
+| 4GLD | €461.42 | 10.2% | -1.8% | -1.87% |
+| XEON | €452.32 | 10.0% | +6.2% | +0.00% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.82% vs SMA50, VIX 16.7)
+- BUY: 4GLD, ASML, ALV
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.2% away)
+- 4GLD: stop EUR 105.88 (13.5% away)
+- EQQQ: stop EUR 508.78 (19.3% away)
+
+**Analysis:**
+European equities soft today (DAX -0.56%, EUROSTOXX50 -0.47%) and ETH extending weakness (-1.92%), but US indices flat and RISK-ON regime intact; EQQQ remains the portfolio anchor at +20.1% from entry. Quant emits BUY on 4GLD but position already held and -1.87% today suggests no urgency to add. All stops remain distant (4.2–19.3%) with no triggers threatened.
+
+**HOLD — el régimen sigue en RISK-ON, ningún stop amenazado y sin catalizador claro para operar hoy.**
+
+---
+
 
 ### Day 104 — May 28, 2026 21:30 CET
 
