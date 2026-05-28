@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,552.98 |
-| Total Return | -8.94% |
+| Current Balance | €4,571.98 |
+| Total Return | -8.56% |
 | Days Active | 105 |
 
 ---
 
 ## Daily Log
+
+### Day 104 — May 28, 2026 21:30 CET
+
+**Balance:** €4,571.98 | **Total Return:** -8.6%
+**Day P&L:** +€7.29 (+0.2%) vs Day 103 (€4,564.69)
+
+**Prices at close:**
+- ETH: $2,019.90 / €1,737.11 (-0.12% 24h) — stop $1,900.00
+- 4GLD: €123.70 (-0.81% 24h) — stop €105.88
+- XEON: €149.23 (+0.01% 24h)
+- EQQQ: €634.00 (+0.65% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,564.67 (+0.61%)
+- NASDAQ: 26,915.44 (+0.97%)
+- GOLD: 4,531.70 (+1.89%)
+- IBEX35: 18,279.30 (-0.55%)
+- EUROSTOXX50: 6,055.11 (-0.25%)
+- DAX: 25,092.25 (-0.37%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,293.65 | 50.2% | +20.9% | +0.65% |
+| ETH | €1,145.82 | 25.1% | -1.6% | -0.12% |
+| 4GLD | €466.40 | 10.2% | -0.7% | -0.81% |
+| XEON | €452.33 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.82% vs SMA50, VIX 16.7)
+- BUY: 4GLD, ASML, ALV
+- HOLD: ETH, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (5.9% away)
+- 4GLD: stop EUR 105.88 (14.4% away)
+- EQQQ: stop EUR 508.78 (19.8% away)
+
+**Analysis:**
+US markets extended gains (NASDAQ +0.97%, SP500 +0.61%) in a confirmed RISK-ON regime with VIX at 16.7, while European indices diverged sharply (DAX -0.37%, EUROSTOXX50 -0.25%). Gold surged +1.89%, supporting the quant BUY signal on 4GLD, though the position is already held near breakeven with only €213 cash available for deployment.
+
+**HOLD — Señales alcistas en EE.UU. pero el efectivo limitado y la debilidad europea justifican esperar confirmación antes de ampliar exposición.**
+
+---
+
 
 ### Day 104 — May 28, 2026 21:30 CET
 
