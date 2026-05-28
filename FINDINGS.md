@@ -125,9 +125,19 @@ chain with reasons) and documented it in AGENTS.md.
 4. Portfolio ↔ latest-daily sync — match (€4552.98, 5 holdings) ✓
 5. Trades ↔ holdings reconciliation — no unexplained same-ticker unit changes ✓
 
-The 10 informational lines are asset add/remove rebalance boundaries from the seeded
+The informational lines are asset add/remove rebalance boundaries from the seeded
 history (no per-trade records); per the task these are intentional and were **not**
 back-filled with fabricated trades.
+
+## Recurrence guards (added after fix)
+
+- **Commit gate:** `daily-update.sh` runs `validate-data.js` before `git add`; a
+  non-zero exit skips commit/push and fires a Telegram alert. Bad data can no longer
+  ship silently.
+- **Holdings change ⇒ trade record:** check 5 now FAILs when an asset is added without
+  a BUY or removed without a SELL in the window — forcing every future holdings change
+  through the trade log. The 16 known seed-restructuring gaps are whitelisted in
+  `SEED_REBALANCES` (validate-data.js) so they pass; anything new fails.
 
 ## Out of scope / pre-existing (untouched)
 

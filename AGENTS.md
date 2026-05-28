@@ -136,6 +136,7 @@ node scripts/generate-signals.js        # Generate threshold-based signals
 node scripts/generate-quant-signals.js  # Generate quantitative BUY/SELL/HOLD signals
 node scripts/execute-signals.js         # Convert quant signals into binding trade orders
 node scripts/validate-rules.js          # Validate portfolio against RULES.md
+node scripts/validate-data.js           # Validate data integrity (continuity, accounting, trades↔holdings) — gates daily commit
 
 # Analysis & reporting
 node scripts/analyze-portfolio.js       # Portfolio analytics (volatility, Sharpe, correlation)

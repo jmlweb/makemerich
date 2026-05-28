@@ -23,6 +23,20 @@ const DATA_DIR = path.join(__dirname, "..", "data");
 const TRADES_DIR = path.join(DATA_DIR, "trades");
 const TOL = 0.05;
 
+// Known seed restructurings: holdings added/removed by simulate-history.js with no
+// per-trade record. Whitelisted so they don't FAIL (per the data-integrity task, these
+// are not back-filled with fabricated trades). Keyed `${curDate}:${asset}`. Any add/
+// remove NOT listed here and lacking a matching BUY/SELL is a real FAIL — this is what
+// forces every future holdings change through the trade log. See FINDINGS.md.
+const SEED_REBALANCES = new Set([
+  "2026-02-06:SXR8", "2026-02-06:VWCE", "2026-02-06:BTC", "2026-02-06:ETH",
+  "2026-02-06:SGLD", "2026-02-06:VOO", "2026-02-06:GLD",
+  "2026-03-27:SXR8", "2026-03-27:VWCE", "2026-03-27:SGLD",
+  "2026-03-30:4GLD", "2026-03-30:XEON", "2026-03-30:DXS3", "2026-03-30:NATO",
+  "2026-03-30:BTC",
+  "2026-04-07:NATO",
+]);
+
 let fails = 0;
 let infos = 0;
 const fail = (m) => { console.log(`  ❌ ${m}`); fails++; };
@@ -147,14 +161,28 @@ console.log("\n[5] Trades ↔ holdings reconciliation");
         bad++;
       }
     }
-    // rebalance boundaries (assets added/removed) — informational only
+    // rebalance boundaries: an added asset needs a BUY, a removed asset needs a SELL,
+    // dated in [prevDate, curDate]. Missing + not a known seed gap = FAIL.
     const added = [...curPos.keys()].filter((a) => a !== "CASH" && !prevPos.has(a));
     const removed = [...prevPos.keys()].filter((a) => a !== "CASH" && !curPos.has(a));
-    if (added.length || removed.length) {
-      info(`${prev.date}->${cur.date} rebalance: +[${added.join(",")}] -[${removed.join(",")}] (seed restructuring, no per-trade records)`);
+    const tradeIn = (asset, action) =>
+      (tradesByAsset.get(asset) || []).some(
+        (t) => t.action === action && t.date >= prev.date && t.date <= cur.date
+      );
+    for (const a of added) {
+      if (tradeIn(a, "BUY")) continue;
+      if (SEED_REBALANCES.has(`${cur.date}:${a}`)) { info(`${cur.date}: +${a} (whitelisted seed restructuring)`); continue; }
+      fail(`${a} appeared on ${cur.date} (was absent ${prev.date}) with no BUY logged`);
+      bad++;
+    }
+    for (const a of removed) {
+      if (tradeIn(a, "SELL")) continue;
+      if (SEED_REBALANCES.has(`${cur.date}:${a}`)) { info(`${cur.date}: -${a} (whitelisted seed restructuring)`); continue; }
+      fail(`${a} disappeared on ${cur.date} (was present ${prev.date}) with no SELL logged`);
+      bad++;
     }
   }
-  if (!bad) ok("no unexplained same-ticker unit changes");
+  if (!bad) ok("no unexplained unit changes or rebalance boundaries");
 }
 
 console.log(`\n${"=".repeat(50)}`);

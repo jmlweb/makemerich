@@ -190,6 +190,18 @@ fi
 # Append completed LEDGER entry (always — even if agent failed, uses fallback text)
 fill_and_append_ledger "$ANALYSIS_TEXT" "$DECISION_WORD — $DECISION_REASON"
 
+# --- Gate: data integrity must pass before anything is committed/pushed ---
+echo "Validating data integrity..." | tee -a "$LOG_FILE"
+set +e
+node scripts/validate-data.js >> "$LOG_FILE" 2>&1
+VALIDATE_EXIT=$?
+set -e
+if [ $VALIDATE_EXIT -ne 0 ]; then
+  echo "Data validation FAILED — skipping commit/push" | tee -a "$LOG_FILE"
+  send_tg "⚠️ makemerich Day $DAY_NUMBER: data validation FAILED — commit/push skipped. See $LOG_FILE"
+  exit 1
+fi
+
 # --- Post-agent: git commit + push ---
 echo "Committing and pushing..." | tee -a "$LOG_FILE"
 set +e
