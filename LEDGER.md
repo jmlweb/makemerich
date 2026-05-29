@@ -5,13 +5,61 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,588.88 |
-| Total Return | -8.22% |
+| Current Balance | €4,579.51 |
+| Total Return | -8.41% |
 | Days Active | 106 |
 
 ---
 
 ## Daily Log
+
+### Day 105 — May 29, 2026 21:30 CET
+
+**Balance:** €4,579.51 | **Total Return:** -8.4%
+**Day P&L:** +€7.53 (+0.2%) vs Day 104 (€4,571.98)
+
+**Prices at close:**
+- ETH: $2,008.70 / €1,725.47 (+0.04% 24h) — stop $1,900.00
+- 4GLD: €126.02 (+2.75% 24h) — stop €105.88
+- XEON: €149.25 (+0.03% 24h)
+- EQQQ: €635.40 (+1.21% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,586.82 (+0.88%)
+- NASDAQ: 26,982.42 (+1.15%)
+- GOLD: 4,589.00 (+1.99%)
+- IBEX35: 18,362.90 (+0.46%)
+- EUROSTOXX50: 6,050.54 (-0.08%)
+- DAX: 25,104.70 (-0.29%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,298.72 | 50.2% | +21.1% | +1.21% |
+| ETH | €1,139.47 | 24.9% | -2.2% | +0.04% |
+| 4GLD | €475.15 | 10.4% | +1.2% | +2.75% |
+| XEON | €452.40 | 9.9% | +6.2% | +0.03% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.35% vs SMA50, VIX 15.85)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (5.4% away)
+- 4GLD: stop EUR 105.88 (16.0% away)
+- EQQQ: stop EUR 508.78 (19.9% away)
+
+**Analysis:**
+US markets led gains with NASDAQ +1.15% and SP500 +0.88% sustaining risk-on regime, while European indices underperformed (DAX -0.29%, EUROSTOXX50 -0.08%). Gold surge (+1.99%) boosted 4GLD position +2.75%, and EQQQ continues as the portfolio's strongest contributor at +21.1% vs entry. All stops remain well below current prices (5-20% buffers), with ETH the only position still underwater at -2.2%.
+
+**HOLD — El régimen de mercado sigue en risk-on con señales cuantitativas confirmando mantener todas las posiciones sin cambios.**
+
+---
+
 
 ### Day 105 — May 29, 2026 21:30 CET
 
