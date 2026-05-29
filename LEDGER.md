@@ -5,13 +5,61 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,569.36 |
-| Total Return | -8.61% |
+| Current Balance | €4,580.36 |
+| Total Return | -8.39% |
 | Days Active | 106 |
 
 ---
 
 ## Daily Log
+
+### Day 105 — May 29, 2026 21:30 CET
+
+**Balance:** €4,580.36 | **Total Return:** -8.4%
+**Day P&L:** +€8.38 (+0.2%) vs Day 104 (€4,571.98)
+
+**Prices at close:**
+- ETH: $2,011.75 / €1,728.09 (+0.23% 24h) — stop $1,900.00
+- 4GLD: €125.23 (+2.10% 24h) — stop €105.88
+- XEON: €149.23 (+0.02% 24h)
+- EQQQ: €636.00 (+1.31% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,563.63 (+0.59%)
+- NASDAQ: 26,917.47 (+0.98%)
+- GOLD: 4,567.70 (+1.52%)
+- IBEX35: 18,455.50 (+0.96%)
+- EUROSTOXX50: 6,100.37 (+0.75%)
+- DAX: 25,178.48 (+0.00%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,300.89 | 50.2% | +21.2% | +1.31% |
+| ETH | €1,141.20 | 24.9% | -2.0% | +0.23% |
+| 4GLD | €472.17 | 10.3% | +0.5% | +2.10% |
+| XEON | €452.33 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.45% vs SMA50, VIX 15.85)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (5.5% away)
+- 4GLD: stop EUR 105.88 (15.4% away)
+- EQQQ: stop EUR 508.78 (20.0% away)
+
+**Analysis:**
+Risk-on regime holds firm with SP500 +0.59% and NASDAQ +0.98%, both equity positions (EQQQ +21.2%, XEON +6.2%) well above entry. Gold surge +1.52% lifts 4GLD into marginal profit; ETH remains the weak link at -2.0% entry with the tightest stop cushion at 5.5%.
+
+**HOLD — todas las señales cuantitativas confirman mantener posiciones con el régimen de mercado en risk-on y stops alejados del precio actual.**
+
+---
+
 
 ### Day 105 — May 29, 2026 21:30 CET
 

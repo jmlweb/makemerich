@@ -2,14 +2,14 @@
   "date": "2026-05-29",
   "day": 105,
   "balance": {
-    "total": 4569.36,
+    "total": 4580.36,
     "currency": "EUR"
   },
   "change": {
-    "absolute": -2.62,
-    "percentage": -0.06
+    "absolute": 0,
+    "percentage": 0
   },
-  "totalReturn": -8.61,
+  "totalReturn": -8.39,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Ethereum",
       "units": 0.658029,
       "entryPriceUSD": 2052.97,
-      "currentPriceUSD": 2015.27,
-      "value": 1143.19,
-      "pnlPercent": -1.84,
-      "change24h": 0.3843983197454747
+      "currentPriceUSD": 2011.75,
+      "value": 1141.2,
+      "pnlPercent": -2.01,
+      "change24h": 0.2090604830856216
     },
     {
       "asset": "4GLD",
@@ -34,10 +34,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 123.7,
-      "value": 466.4,
-      "pnlPercent": -0.69,
-      "change24h": 0.8560945780676699
+      "currentPriceEUR": 125.23,
+      "value": 472.17,
+      "pnlPercent": 0.54,
+      "change24h": 2.1035466775377074
     },
     {
       "asset": "XEON",
@@ -56,14 +56,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 634,
-      "value": 2293.65,
-      "pnlPercent": 20.85,
-      "change24h": 0.9875756610385547
+      "currentPriceEUR": 636,
+      "value": 2300.89,
+      "pnlPercent": 21.24,
+      "change24h": 1.306148454921957
     }
   ],
   "metadata": {
-    "generatedAt": "2026-05-29T07:00:23.417Z",
+    "generatedAt": "2026-05-29T10:00:24.590Z",
     "eurUsd": 0.8620689655172414
   }
 }
