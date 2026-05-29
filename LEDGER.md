@@ -5,13 +5,61 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,569.31 |
-| Total Return | -8.61% |
+| Current Balance | €4,588.88 |
+| Total Return | -8.22% |
 | Days Active | 106 |
 
 ---
 
 ## Daily Log
+
+### Day 105 — May 29, 2026 21:30 CET
+
+**Balance:** €4,588.88 | **Total Return:** -8.2%
+**Day P&L:** +€16.90 (+0.4%) vs Day 104 (€4,571.98)
+
+**Prices at close:**
+- ETH: $2,025.21 / €1,739.66 (+0.88% 24h) — stop $1,900.00
+- 4GLD: €126.02 (+2.75% 24h) — stop €105.88
+- XEON: €149.25 (+0.03% 24h)
+- EQQQ: €635.40 (+1.21% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,583.78 (+0.84%)
+- NASDAQ: 26,970.67 (+1.11%)
+- GOLD: 4,593.70 (+2.10%)
+- IBEX35: 18,362.90 (+0.46%)
+- EUROSTOXX50: 6,050.54 (-0.08%)
+- DAX: 25,104.70 (-0.29%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,298.72 | 50.1% | +21.1% | +1.21% |
+| ETH | €1,148.83 | 25.0% | -1.4% | +0.88% |
+| 4GLD | €475.15 | 10.4% | +1.2% | +2.75% |
+| XEON | €452.40 | 9.9% | +6.2% | +0.03% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.35% vs SMA50, VIX 15.85)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (6.2% away)
+- 4GLD: stop EUR 105.88 (16.0% away)
+- EQQQ: stop EUR 508.78 (19.9% away)
+
+**Analysis:**
+US markets rallied strongly (SP500 +0.84%, NASDAQ +1.11%) in risk-on regime with VIX at 15.85, while European indices diverged slightly negative (DAX -0.29%). Gold surge +2.10% lifted 4GLD to best single-day gain in portfolio (+2.75%), and all stops remain well below current prices (ETH 6.2% away, EQQQ 19.9% away).
+
+**HOLD — Todas las señales cuantitativas confirman régimen risk-on sin triggers cercanos y el portafolio recupera terreno gradualmente.**
+
+---
+
 
 ### Day 105 — May 29, 2026 21:30 CET
 
