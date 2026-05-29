@@ -5,13 +5,61 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,580.36 |
-| Total Return | -8.39% |
+| Current Balance | €4,569.31 |
+| Total Return | -8.61% |
 | Days Active | 106 |
 
 ---
 
 ## Daily Log
+
+### Day 105 — May 29, 2026 21:30 CET
+
+**Balance:** €4,569.31 | **Total Return:** -8.6%
+**Day P&L:** €2.67 (-0.1%) vs Day 104 (€4,571.98)
+
+**Prices at close:**
+- ETH: $1,993.59 / €1,712.49 (-0.70% 24h) — stop $1,900.00
+- 4GLD: €124.83 (+1.78% 24h) — stop €105.88
+- XEON: €149.24 (+0.02% 24h)
+- EQQQ: €636.20 (+1.34% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,576.96 (+0.75%)
+- NASDAQ: 26,917.47 (+0.91%)
+- GOLD: 4,553.10 (+1.20%)
+- IBEX35: 18,406.10 (+0.69%)
+- EUROSTOXX50: 6,074.00 (+0.31%)
+- DAX: 25,114.45 (-0.25%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,301.61 | 50.4% | +21.3% | +1.34% |
+| ETH | €1,130.90 | 24.7% | -2.9% | -0.70% |
+| 4GLD | €470.66 | 10.3% | +0.2% | +1.78% |
+| XEON | €452.37 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.35% vs SMA50, VIX 15.85)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.7% away)
+- 4GLD: stop EUR 105.88 (15.2% away)
+- EQQQ: stop EUR 508.78 (20.0% away)
+
+**Analysis:**
+Risk-on regime holds firm with SP500 +0.75% and NASDAQ +0.91% closing the day strong; EQQQ (+1.34%) and 4GLD (+1.78%) led portfolio gains while ETH dragged slightly (-0.70%). All stops remain well-defended — ETH nearest at 4.7% away. Portfolio is healthy at 50.4% EQQQ allocation with broad market tailwinds.
+
+**HOLD — Todas las posiciones mantienen stops holgados y el régimen de mercado es alcista, sin señal de entrada ni salida.**
+
+---
+
 
 ### Day 105 — May 29, 2026 21:30 CET
 
