@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,571.98 |
-| Total Return | -8.56% |
-| Days Active | 105 |
+| Current Balance | €4,569.36 |
+| Total Return | -8.61% |
+| Days Active | 106 |
 
 ---
 
 ## Daily Log
+
+### Day 105 — May 29, 2026 21:30 CET
+
+**Balance:** €4,569.36 | **Total Return:** -8.6%
+**Day P&L:** €2.62 (-0.1%) vs Day 104 (€4,571.98)
+
+**Prices at close:**
+- ETH: $2,015.27 / €1,731.12 (+0.38% 24h) — stop $1,900.00
+- 4GLD: €123.70 (+0.86% 24h) — stop €105.88
+- XEON: €149.23 (+0.01% 24h)
+- EQQQ: €634.00 (+0.99% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8590
+- SP500: 7,563.63 (+0.59%)
+- NASDAQ: 26,917.47 (+0.98%)
+- GOLD: 4,548.40 (+1.09%)
+- IBEX35: 18,279.30 (+0.00%)
+- EUROSTOXX50: 6,055.11 (+-0.00%)
+- DAX: 25,092.25 (-0.34%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,293.65 | 50.2% | +20.9% | +0.99% |
+| ETH | €1,143.19 | 25.0% | -1.8% | +0.38% |
+| 4GLD | €466.40 | 10.2% | -0.7% | +0.86% |
+| XEON | €452.33 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.45% vs SMA50, VIX 15.74)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (5.7% away)
+- 4GLD: stop EUR 105.88 (14.4% away)
+- EQQQ: stop EUR 508.78 (19.8% away)
+
+**Analysis:**
+Risk-on regime holds firm (SP500 +7.45% vs SMA50, VIX 15.74) with broad equity strength; NASDAQ +0.98% and GOLD +1.09% confirm appetite for both growth and safe-haven assets. EQQQ leads the portfolio at +20.9% from entry with stops 19.8% away, well-protected. Quant signals a BUY on ASML but available cash (€213.78, 4.7%) is insufficient for a meaningful position, and EQQQ already provides indirect ASML exposure.
+
+**HOLD — El efectivo disponible es insuficiente para abrir una posición relevante en ASML, y EQQQ ya ofrece exposición indirecta al valor; mantener posiciones con stops holgados en mercado risk-on.**
+
+---
+
 
 ### Day 104 — May 28, 2026 21:30 CET
 
