@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,579.51 |
-| Total Return | -8.41% |
-| Days Active | 106 |
+| Current Balance | €4,572.41 |
+| Total Return | -8.55% |
+| Days Active | 107 |
 
 ---
 
 ## Daily Log
+
+### Day 106 — May 30, 2026 21:30 CET
+
+**Balance:** €4,572.41 | **Total Return:** -8.6%
+**Day P&L:** €7.10 (-0.2%) vs Day 105 (€4,579.51)
+
+**Prices at close:**
+- ETH: $2,013.39 / €1,727.49 (+0.08% 24h) — stop $1,900.00
+- 4GLD: €126.02 (+2.75% 24h) — stop €105.88
+- XEON: €149.25 (+0.03% 24h)
+- EQQQ: €635.40 (+1.21% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,580.06 (+0.79%)
+- NASDAQ: 26,972.62 (+1.12%)
+- GOLD: 4,560.50 (+1.36%)
+- IBEX35: 18,362.90 (+0.46%)
+- EUROSTOXX50: 6,050.54 (-0.08%)
+- DAX: 25,104.70 (-0.29%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,298.72 | 50.3% | +21.1% | +1.21% |
+| ETH | €1,132.37 | 24.8% | -1.9% | +0.08% |
+| 4GLD | €475.15 | 10.4% | +1.2% | +2.75% |
+| XEON | €452.40 | 9.9% | +6.2% | +0.03% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.39% vs SMA50, VIX 15.32)
+- BUY: ASML, ITX
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (5.6% away)
+- 4GLD: stop EUR 105.88 (16.0% away)
+- EQQQ: stop EUR 508.78 (19.9% away)
+
+**Analysis:**
+Risk-on regime persists with US equities leading (SP500 +0.79%, NASDAQ +1.12%) while European indices diverged slightly to the downside (DAX -0.29%, EUROSTOXX -0.08%); gold's +1.36% surge reinforces defensive hedging demand alongside equity strength. Portfolio is well-cushioned with all stops 5-20% below current prices, and EQQQ's +21.1% gain from entry anchors overall positioning. Quant signals flag ASML and ITX as buys, but available cash (€213.78, 4.7%) limits meaningful deployment.
+
+**HOLD — Con solo €213 en cash y señales de compra en ASML/ITX pero sin tamaño suficiente para una entrada relevante, lo más sensato es mantener posiciones actuales y esperar una oportunidad de recarga o un pullback que libere liquidez estratégica.**
+
+---
+
 
 ### Day 105 — May 29, 2026 21:30 CET
 
