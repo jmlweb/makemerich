@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,547.72 |
-| Total Return | -9.05% |
+| Current Balance | €4,558.77 |
+| Total Return | -8.82% |
 | Days Active | 109 |
 
 ---
 
 ## Daily Log
+
+### Day 108 — June 1, 2026 21:30 CET
+
+**Balance:** €4,558.77 | **Total Return:** -8.8%
+**Day P&L:** €18.14 (-0.4%) vs Day 107 (€4,576.91)
+
+**Prices at close:**
+- ETH: $1,965.18 / €1,686.12 (-1.96% 24h) — stop $1,900.00
+- 4GLD: €123.83 (+0.11% 24h) — stop €105.88
+- XEON: €149.26 (+0.02% 24h)
+- EQQQ: €641.40 (+1.17% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,583.93 (+0.27%)
+- NASDAQ: 27,036.44 (+0.44%)
+- GOLD: 4,500.10 (-2.02%)
+- IBEX35: 18,184.90 (-0.97%)
+- EUROSTOXX50: 6,034.95 (-0.26%)
+- DAX: 25,003.04 (-0.36%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,320.42 | 50.9% | +22.3% | +1.17% |
+| ETH | €1,105.25 | 24.2% | -4.3% | -1.96% |
+| 4GLD | €466.89 | 10.2% | -0.6% | +0.11% |
+| XEON | €452.42 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.96% vs SMA50, VIX 15.84)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (3.3% away)
+- 4GLD: stop EUR 105.88 (14.5% away)
+- EQQQ: stop EUR 508.78 (20.7% away)
+
+**Analysis:**
+US markets closed positive (SP500 +0.27%, NASDAQ +0.44%) in risk-on regime, but European equities dragged lower and gold dropped -2.02%, pressuring ETH further — now just 3.3% from stop loss. Portfolio net positive on the day (+€18.14) driven by EQQQ strength (+1.17%), partially offset by ETH weakness.
+
+**HOLD — cerca del stop pero no lo ha tocado, EQQQ sigue fuerte y el régimen sigue siendo risk-on; no hay razón para actuar antes de que los niveles clave se rompan.**
+
+---
+
 
 ### Day 108 — June 1, 2026 21:30 CET
 
