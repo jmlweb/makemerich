@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,558.77 |
-| Total Return | -8.82% |
+| Current Balance | €4,578.36 |
+| Total Return | -8.43% |
 | Days Active | 109 |
 
 ---
 
 ## Daily Log
+
+### Day 108 — June 1, 2026 21:30 CET
+
+**Balance:** €4,578.36 | **Total Return:** -8.4%
+**Day P&L:** +€1.45 (+0.0%) vs Day 107 (€4,576.91)
+
+**Prices at close:**
+- ETH: $2,000.01 / €1,716.01 (-0.22% 24h) — stop $1,900.00
+- 4GLD: €123.83 (+0.11% 24h) — stop €105.88
+- XEON: €149.26 (+0.02% 24h)
+- EQQQ: €641.40 (+1.17% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,613.52 (+0.66%)
+- NASDAQ: 27,152.99 (+0.87%)
+- GOLD: 4,515.90 (-1.68%)
+- IBEX35: 18,184.90 (-0.97%)
+- EUROSTOXX50: 6,034.95 (-0.26%)
+- DAX: 25,003.04 (-0.36%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,320.42 | 50.7% | +22.3% | +1.17% |
+| ETH | €1,124.84 | 24.6% | -2.6% | -0.22% |
+| 4GLD | €466.89 | 10.2% | -0.6% | +0.11% |
+| XEON | €452.42 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.96% vs SMA50, VIX 15.84)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (5.0% away)
+- 4GLD: stop EUR 105.88 (14.5% away)
+- EQQQ: stop EUR 508.78 (20.7% away)
+
+**Analysis:**
+US markets led gains (SP500 +0.66%, NASDAQ +0.87%) while European indices closed red across the board, confirming transatlantic divergence. Gold sold off -1.68% consistent with RISK-ON regime. Portfolio nearly flat (+€1.45) with EQQQ the sole meaningful contributor; ETH and 4GLD both marginally underwater vs entry but well above stops.
+
+**HOLD — Quant signals confirman HOLD en todas las posiciones; la única señal BUY (ASML) no está en cartera y no hay condición de entrada activa.**
+
+---
+
 
 ### Day 108 — June 1, 2026 21:30 CET
 
