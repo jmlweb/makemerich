@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,576.91 |
-| Total Return | -8.46% |
-| Days Active | 108 |
+| Current Balance | €4,556.34 |
+| Total Return | -8.87% |
+| Days Active | 109 |
 
 ---
 
 ## Daily Log
+
+### Day 108 — June 1, 2026 21:30 CET
+
+**Balance:** €4,556.34 | **Total Return:** -8.9%
+**Day P&L:** €20.57 (-0.4%) vs Day 107 (€4,576.91)
+
+**Prices at close:**
+- ETH: $1,984.81 / €1,702.97 (-0.95% 24h) — stop $1,900.00
+- 4GLD: €126.02 (+1.88% 24h) — stop €105.88
+- XEON: €149.25 (+0.02% 24h)
+- EQQQ: €635.40 (+0.22% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,580.06 (+0.79%)
+- NASDAQ: 26,972.62 (+1.12%)
+- GOLD: 4,533.80 (-1.29%)
+- IBEX35: 18,362.90 (+0.00%)
+- EUROSTOXX50: 6,050.54 (+0.00%)
+- DAX: 25,104.70 (+0.05%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,298.72 | 50.5% | +21.1% | +0.22% |
+| ETH | €1,116.29 | 24.5% | -3.3% | -0.95% |
+| 4GLD | €475.15 | 10.4% | +1.2% | +1.88% |
+| XEON | €452.40 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.39% vs SMA50, VIX 15.32)
+- BUY: ASML, ITX
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.3% away)
+- 4GLD: stop EUR 105.88 (16.0% away)
+- EQQQ: stop EUR 508.78 (19.9% away)
+
+**Analysis:**
+US markets closed strong (SP500 +0.79%, NASDAQ +1.12%) with risk-on regime intact (VIX 15.32), but ETH's -0.95% drag offset EQQQ and 4GLD gains, leaving the portfolio -0.4% on the day. Gold spot fell -1.29% yet 4GLD printed +1.88%, suggesting a pricing divergence worth monitoring. All three stop-loss levels remain comfortably distant (4.3%–19.9%), and quant model signals HOLD across all current positions.
+
+**HOLD — El modelo cuantitativo mantiene señal HOLD en todos los activos actuales y los stops están suficientemente alejados para no requerir acción.**
+
+---
+
 
 ### Day 107 — May 31, 2026 21:30 CET
 
