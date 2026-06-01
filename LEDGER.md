@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,556.34 |
-| Total Return | -8.87% |
+| Current Balance | €4,560.31 |
+| Total Return | -8.79% |
 | Days Active | 109 |
 
 ---
 
 ## Daily Log
+
+### Day 108 — June 1, 2026 21:30 CET
+
+**Balance:** €4,560.31 | **Total Return:** -8.8%
+**Day P&L:** €16.60 (-0.4%) vs Day 107 (€4,576.91)
+
+**Prices at close:**
+- ETH: $1,986.01 / €1,704.00 (-0.95% 24h) — stop $1,900.00
+- 4GLD: €124.20 (+0.40% 24h) — stop €105.88
+- XEON: €149.27 (+0.02% 24h)
+- EQQQ: €638.20 (+0.66% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,580.06 (+0.79%)
+- NASDAQ: 26,972.62 (+1.12%)
+- GOLD: 4,524.80 (-1.48%)
+- IBEX35: 18,367.70 (+0.03%)
+- EUROSTOXX50: 6,055.93 (+0.09%)
+- DAX: 25,163.91 (+0.29%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,308.85 | 50.6% | +21.6% | +0.66% |
+| ETH | €1,116.97 | 24.5% | -3.3% | -0.95% |
+| 4GLD | €468.28 | 10.3% | -0.3% | +0.40% |
+| XEON | €452.44 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.39% vs SMA50, VIX 15.84)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.3% away)
+- 4GLD: stop EUR 105.88 (14.8% away)
+- EQQQ: stop EUR 508.78 (20.3% away)
+
+**Analysis:**
+US equities closed strong (SP500 +0.79%, NASDAQ +1.12%) confirming risk-on regime, but ETH slipped -0.95% while gold fell -1.48% signaling rotation out of hedges into growth. Portfolio is up on EQQQ (+21.6%) and XEON (+6.2%) but ETH remains underwater (-3.3%) with stop only 4.3% away. Quant signals flag ASML as the sole BUY opportunity; all current holdings show HOLD.
+
+**HOLD — Todas las posiciones actuales tienen señal HOLD y el mercado confirma el régimen risk-on, por lo que no hay acción necesaria hoy.**
+
+---
+
 
 ### Day 108 — June 1, 2026 21:30 CET
 
