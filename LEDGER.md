@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,560.31 |
-| Total Return | -8.79% |
+| Current Balance | €4,547.72 |
+| Total Return | -9.05% |
 | Days Active | 109 |
 
 ---
 
 ## Daily Log
+
+### Day 108 — June 1, 2026 21:30 CET
+
+**Balance:** €4,547.72 | **Total Return:** -9.1%
+**Day P&L:** €29.19 (-0.6%) vs Day 107 (€4,576.91)
+
+**Prices at close:**
+- ETH: $1,974.78 / €1,694.36 (-1.52% 24h) — stop $1,900.00
+- 4GLD: €123.88 (+0.15% 24h) — stop €105.88
+- XEON: €149.26 (+0.02% 24h)
+- EQQQ: €636.80 (+0.36% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,582.29 (+0.25%)
+- NASDAQ: 26,972.62 (+0.20%)
+- GOLD: 4,511.40 (-1.78%)
+- IBEX35: 18,208.80 (-0.84%)
+- EUROSTOXX50: 6,028.54 (-0.36%)
+- DAX: 25,052.64 (-0.16%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,303.78 | 50.7% | +21.4% | +0.36% |
+| ETH | €1,110.65 | 24.4% | -3.8% | -1.52% |
+| 4GLD | €467.08 | 10.3% | -0.6% | +0.15% |
+| XEON | €452.43 | 9.9% | +6.2% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.96% vs SMA50, VIX 15.84)
+- BUY: ASML
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, MC, ITX, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (3.8% away)
+- 4GLD: stop EUR 105.88 (14.5% away)
+- EQQQ: stop EUR 508.78 (20.1% away)
+
+**Analysis:**
+Market regime remains RISK-ON (VIX 15.84, SP500 +6.96% vs SMA50) but European indices closed red today while gold dropped -1.78%, pressuring both 4GLD and ETH. ETH is now only 3.8% from its stop at $1,900 — the most actionable risk in the portfolio. Quant signals are uniformly HOLD for all current positions, with a lone BUY signal on unowned ASML that can't be meaningfully acted on with only €213 cash.
+
+**HOLD — señales cuantitativas confirman mantener todas las posiciones; el único riesgo inmediato es ETH a 3.8% del stop, pero no justifica acción preventiva.**
+
+---
+
 
 ### Day 108 — June 1, 2026 21:30 CET
 
