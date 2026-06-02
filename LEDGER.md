@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,574.33 |
-| Total Return | -8.51% |
+| Current Balance | €4,569.39 |
+| Total Return | -8.61% |
 | Days Active | 110 |
 
 ---
 
 ## Daily Log
+
+### Day 109 — June 2, 2026 21:30 CET
+
+**Balance:** €4,569.39 | **Total Return:** -8.6%
+**Day P&L:** €8.97 (-0.2%) vs Day 108 (€4,578.36)
+
+**Prices at close:**
+- ETH: $1,976.70 / €1,699.96 (-1.32% 24h) — stop $1,900.00
+- 4GLD: €124.59 (-1.13% 24h) — stop €105.88
+- XEON: €149.27 (+0.01% 24h)
+- EQQQ: €639.10 (+0.58% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,590.39 (+0.14%)
+- NASDAQ: 27,086.81 (+0.42%)
+- GOLD: 4,542.90 (+1.51%)
+- IBEX35: 18,229.90 (+0.25%)
+- EUROSTOXX50: 6,076.54 (+0.69%)
+- DAX: 25,114.49 (+0.04%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,312.10 | 50.6% | +21.8% | +0.58% |
+| ETH | €1,121.32 | 24.5% | -3.7% | -1.32% |
+| 4GLD | €469.75 | 10.3% | +0.0% | -1.13% |
+| XEON | €452.44 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.92% vs SMA50, VIX 16.15)
+- BUY: ITX
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (3.9% away)
+- 4GLD: stop EUR 105.88 (15.0% away)
+- EQQQ: stop EUR 508.78 (20.4% away)
+
+**Analysis:**
+Risk-on regime holds firm (SP500 +6.92% vs SMA50, VIX 16.15) with broad index gains and gold surging +1.51%, supporting 4GLD recovery toward breakeven. ETH remains the soft spot at 3.9% from its stop, sliding -1.32% on a day when tech outperformed; quant flags ITX as a BUY but only 4.7% cash limits execution. EQQQ continues to anchor the portfolio at +21.8% from entry with healthy stop distance.
+
+**HOLD — El régimen sigue alcista y ninguna posición ha roto niveles clave, por lo que se mantiene la cartera sin cambios a la espera de que ETH confirme soporte o active el stop.**
+
+---
+
 
 ### Day 109 — June 2, 2026 21:30 CET
 
