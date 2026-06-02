@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,576.53 |
-| Total Return | -8.47% |
+| Current Balance | €4,574.33 |
+| Total Return | -8.51% |
 | Days Active | 110 |
 
 ---
 
 ## Daily Log
+
+### Day 109 — June 2, 2026 21:30 CET
+
+**Balance:** €4,574.33 | **Total Return:** -8.5%
+**Day P&L:** €4.03 (-0.1%) vs Day 108 (€4,578.36)
+
+**Prices at close:**
+- ETH: $1,972.15 / €1,696.05 (-1.56% 24h) — stop $1,900.00
+- 4GLD: €124.95 (-0.85% 24h) — stop €105.88
+- XEON: €149.27 (+0.01% 24h)
+- EQQQ: €640.80 (+0.85% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,599.96 (+0.48%)
+- NASDAQ: 27,086.81 (+0.63%)
+- GOLD: 4,556.00 (+1.81%)
+- IBEX35: 18,281.90 (+0.53%)
+- EUROSTOXX50: 6,089.06 (+0.90%)
+- DAX: 25,234.85 (+0.52%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,318.25 | 50.7% | +22.1% | +0.85% |
+| ETH | €1,118.73 | 24.5% | -3.9% | -1.56% |
+| 4GLD | €471.11 | 10.3% | +0.3% | -0.85% |
+| XEON | €452.46 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.37% vs SMA50, VIX 16.15)
+- BUY: ITX
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (3.7% away)
+- 4GLD: stop EUR 105.88 (15.3% away)
+- EQQQ: stop EUR 508.78 (20.6% away)
+
+**Analysis:**
+Risk-on regime confirmed with VIX at 16.15 and SP500 well above SMA50; equity positions (EQQQ +22.1%) and gold (XEON, 4GLD) both holding up despite ETH weakness (-1.56% today, now 3.7% from stop). Quant model signals HOLD across all current holdings with no sell triggers on portfolio assets. Portfolio is well-diversified across the dominant regime themes, with cash buffer available if ITX entry materializes.
+
+**HOLD — El régimen sigue siendo alcista y todas las posiciones están dentro de los stops, sin señales de venta en activos del portfolio.**
+
+---
+
 
 ### Day 109 — June 2, 2026 21:30 CET
 
