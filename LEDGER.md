@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,578.36 |
-| Total Return | -8.43% |
-| Days Active | 109 |
+| Current Balance | €4,576.53 |
+| Total Return | -8.47% |
+| Days Active | 110 |
 
 ---
 
 ## Daily Log
+
+### Day 109 — June 2, 2026 21:30 CET
+
+**Balance:** €4,576.53 | **Total Return:** -8.5%
+**Day P&L:** €1.83 (-0.0%) vs Day 108 (€4,578.36)
+
+**Prices at close:**
+- ETH: $1,979.70 / €1,702.54 (-1.19% 24h) — stop $1,900.00
+- 4GLD: €123.83 (-1.74% 24h) — stop €105.88
+- XEON: €149.26 (+0.00% 24h)
+- EQQQ: €641.40 (+0.94% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,599.96 (+0.48%)
+- NASDAQ: 27,086.81 (+0.63%)
+- GOLD: 4,563.50 (+1.97%)
+- IBEX35: 18,184.90 (+0.00%)
+- EUROSTOXX50: 6,034.95 (+0.00%)
+- DAX: 25,003.04 (-0.36%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,320.42 | 50.7% | +22.3% | +0.94% |
+| ETH | €1,123.02 | 24.5% | -3.6% | -1.19% |
+| 4GLD | €466.89 | 10.2% | -0.6% | -1.74% |
+| XEON | €452.42 | 9.9% | +6.2% | +0.00% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.37% vs SMA50, VIX 16.05)
+- BUY: ASML, ITX
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (4.0% away)
+- 4GLD: stop EUR 105.88 (14.5% away)
+- EQQQ: stop EUR 508.78 (20.7% away)
+
+**Analysis:**
+Market regime remains RISK-ON with SP500 well above SMA50 and VIX at 16.05, supporting current equity exposure. ETH weakness (-1.19%) puts it only 4% above its stop, the nearest trigger in the portfolio. Quant signals BUY ASML and ITX but cash position (€213.78) is too small for meaningful entry without rebalancing.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales y el régimen RISK-ON protege EQQQ, aunque ETH requiere vigilancia estrecha por su proximidad al stop.**
+
+---
+
 
 ### Day 108 — June 1, 2026 21:30 CET
 

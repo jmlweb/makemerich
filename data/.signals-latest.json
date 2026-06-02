@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-01T19:30:07.224Z",
-  "balance": 4578.36,
-  "totalReturn": -8.43,
+  "generatedAt": "2026-06-02T07:00:24.885Z",
+  "balance": 4576.53,
+  "totalReturn": -8.47,
   "alerts": [
     {
       "asset": "ETH",
       "type": "STOP_LOSS",
-      "currentPrice": 2000.01,
+      "currentPrice": 1979.7,
       "triggerPrice": 1900,
       "currency": "USD",
-      "distancePct": 5,
-      "status": "ACTIVE"
+      "distancePct": 4.03,
+      "status": "NEAR"
     },
     {
       "asset": "4GLD",
