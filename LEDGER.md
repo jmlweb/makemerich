@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,569.39 |
-| Total Return | -8.61% |
+| Current Balance | €4,547.35 |
+| Total Return | -9.05% |
 | Days Active | 110 |
 
 ---
 
 ## Daily Log
+
+### Day 109 — June 2, 2026 21:30 CET
+
+**Balance:** €4,547.35 | **Total Return:** -9.1%
+**Day P&L:** €31.01 (-0.7%) vs Day 108 (€4,578.36)
+
+**Prices at close:**
+- ETH: $1,909.86 / €1,642.48 (-4.60% 24h) — stop $1,900.00
+- 4GLD: €124.58 (-1.14% 24h) — stop €105.88
+- XEON: €149.26 (+0.01% 24h)
+- EQQQ: €643.50 (+1.27% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,614.13 (+0.45%)
+- NASDAQ: 27,143.03 (+0.63%)
+- GOLD: 4,534.80 (+1.33%)
+- IBEX35: 18,272.00 (+0.48%)
+- EUROSTOXX50: 6,107.85 (+1.21%)
+- DAX: 25,124.17 (+0.08%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,328.02 | 51.2% | +22.7% | +1.27% |
+| ETH | €1,083.40 | 23.8% | -7.0% | -4.60% |
+| 4GLD | €469.72 | 10.3% | +0.0% | -1.14% |
+| XEON | €452.43 | 9.9% | +6.2% | +0.01% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.92% vs SMA50, VIX 16.15)
+- BUY: ITX
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+- SELL: SAP
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (0.5% away)
+- 4GLD: stop EUR 105.88 (15.0% away)
+- EQQQ: stop EUR 508.78 (20.9% away)
+
+**Analysis:**
+Markets closed broadly positive with risk-on regime intact (SP500 +0.45%, EUROSTOXX50 +1.21%), but ETH dropped 4.6% intraday and now sits just 0.5% above its stop at $1,900 — the primary risk for tomorrow's open. EQQQ remains the portfolio engine at +22.7% from entry and 51% weight, offsetting ETH's drag. Quant model flags ITX as the only new BUY opportunity; no forced exits triggered today.
+
+**HOLD — está al límite del stop loss y hay que vigilarlo de cerca, pero no se toman acciones hasta que se active el trigger.**
+
+---
+
 
 ### Day 109 — June 2, 2026 21:30 CET
 
