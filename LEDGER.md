@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,542.96 |
-| Total Return | -9.14% |
-| Days Active | 110 |
+| Current Balance | €4,532.40 |
+| Total Return | -9.35% |
+| Days Active | 111 |
 
 ---
 
 ## Daily Log
+
+### Day 110 — June 3, 2026 21:30 CET
+
+**Balance:** €4,532.40 | **Total Return:** -9.3%
+**Day P&L:** €10.56 (-0.2%) vs Day 109 (€4,542.96)
+
+**Prices at close:**
+- ETH: $1,873.80 / €1,611.47 (+0.90% 24h) — stop $1,900.00
+- 4GLD: €123.05 (-0.61% 24h) — stop €105.88
+- XEON: €149.28 (+0.02% 24h)
+- EQQQ: €646.60 (+0.81% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,609.78 (+0.39%)
+- NASDAQ: 27,093.90 (+0.45%)
+- GOLD: 4,475.40 (-0.31%)
+- IBEX35: 18,342.40 (+0.39%)
+- EUROSTOXX50: 6,083.73 (-0.39%)
+- DAX: 24,874.31 (-0.51%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,339.24 | 51.6% | +23.3% | +0.81% |
+| ETH | €1,062.94 | 23.5% | -8.7% | +0.90% |
+| 4GLD | €463.95 | 10.2% | -1.2% | -0.61% |
+| XEON | €452.49 | 10.0% | +6.3% | +0.02% |
+| CASH | €213.78 | 4.7% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +7.18% vs SMA50, VIX 16.08)
+- HOLD: ETH, 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: AIR
+
+**Active alerts:**
+- ETH: stop USD 1,900.00 (-1.4% away)
+- 4GLD: stop EUR 105.88 (13.9% away)
+- EQQQ: stop EUR 508.78 (21.3% away)
+
+**Analysis:**
+Market regime is RISK-ON (SP500 +7.18% above SMA50, VIX 16.08) but US/EU divergence is notable — DAX and EUROSTOXX50 both closed red while US indices gained. ETH has breached its stop level ($1,873.80 vs $1,900 stop), flagging 2 violations, while EQQQ continues to carry the portfolio at +23.3% from entry. No quant signal changes for held positions except AIR (not held).
+
+**HOLD — El régimen sigue siendo RISK-ON y las señales cuantitativas no justifican cambios, pero la violación del stop de ETH requiere revisión manual urgente.**
+
+---
+
 
 ### Day 109 — June 2, 2026 21:30 CET
 
