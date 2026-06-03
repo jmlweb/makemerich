@@ -5,13 +5,59 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,530.01 |
-| Total Return | -9.40% |
+| Current Balance | €4,519.81 |
+| Total Return | -9.60% |
 | Days Active | 111 |
 
 ---
 
 ## Daily Log
+
+### Day 110 — June 3, 2026 21:30 CET
+
+**Balance:** €4,519.81 | **Total Return:** -9.6%
+**Day P&L:** €23.15 (-0.5%) vs Day 109 (€4,542.96)
+
+**Prices at close:**
+- 4GLD: €123.04 (-0.64% 24h) — stop €105.88
+- XEON: €149.28 (+0.01% 24h)
+- EQQQ: €644.60 (+0.50% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,567.72 (-0.42%)
+- NASDAQ: 26,881.17 (-0.76%)
+- GOLD: 4,470.00 (-0.43%)
+- IBEX35: 18,176.00 (-0.53%)
+- EUROSTOXX50: 6,053.57 (-0.89%)
+- DAX: 24,795.94 (-0.83%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,332.00 | 51.6% | +22.9% | +0.50% |
+| CASH | €1,271.41 | 28.1% | — | — |
+| 4GLD | €463.91 | 10.3% | -1.2% | -0.64% |
+| XEON | €452.49 | 10.0% | +6.3% | +0.01% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.72% vs SMA50, VIX 16.08)
+- HOLD: 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: AIR
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.9% away)
+- EQQQ: stop EUR 508.78 (21.1% away)
+
+**Analysis:**
+Broad risk-off session across all major indices (SP500 -0.42%, DAX -0.83%, EUROSTOXX -0.89%) with Gold also sliding -0.43%, suggesting macro rotation rather than sector-specific weakness. Despite today's drawdown, regime remains RISK-ON (VIX 16.08, SP500 well above SMA50), and EQQQ — the dominant 51.6% position — held up relatively well at +0.50%. Quant signals flag AIR as the only sell candidate; all current holdings rated HOLD.
+
+**HOLD — el régimen sigue en RISK-ON, las posiciones actuales están dentro de márgenes seguros y no hay señales que justifiquen movimiento hoy.**
+
+---
+
 
 ### Day 110 — June 3, 2026 21:30 CET
 

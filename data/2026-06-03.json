@@ -2,14 +2,14 @@
   "date": "2026-06-03",
   "day": 110,
   "balance": {
-    "total": 4530.01,
+    "total": 4519.81,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.4,
+  "totalReturn": -9.6,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 123.73,
-      "value": 466.51,
-      "pnlPercent": -0.67,
-      "change24h": -0.08075587498990093
+      "currentPriceEUR": 123.04,
+      "value": 463.91,
+      "pnlPercent": -1.22,
+      "change24h": -0.6379714124202472
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.284,
+      "currentPriceEUR": 149.282,
       "value": 452.49,
       "pnlPercent": 6.25,
-      "change24h": 0.01607932466836454
+      "change24h": 0.01473938094601352
     },
     {
       "asset": "EQQQ",
@@ -45,14 +45,14 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 646.7,
-      "value": 2339.6,
-      "pnlPercent": 23.27,
-      "change24h": 0.8263174306205283
+      "currentPriceEUR": 644.6,
+      "value": 2332,
+      "pnlPercent": 22.87,
+      "change24h": 0.49890863735579133
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-03T13:30:08.354Z",
+    "generatedAt": "2026-06-03T16:00:06.122Z",
     "eurUsd": 0.8620689655172414
   }
 }
