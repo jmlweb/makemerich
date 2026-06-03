@@ -5,13 +5,59 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,532.40 |
-| Total Return | -9.35% |
+| Current Balance | €4,530.01 |
+| Total Return | -9.40% |
 | Days Active | 111 |
 
 ---
 
 ## Daily Log
+
+### Day 110 — June 3, 2026 21:30 CET
+
+**Balance:** €4,530.01 | **Total Return:** -9.4%
+**Day P&L:** €12.95 (-0.3%) vs Day 109 (€4,542.96)
+
+**Prices at close:**
+- 4GLD: €123.73 (-0.08% 24h) — stop €105.88
+- XEON: €149.28 (+0.02% 24h)
+- EQQQ: €646.70 (+0.83% 24h) — stop €508.78
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,600.44 (+0.01%)
+- NASDAQ: 27,093.90 (+0.03%)
+- GOLD: 4,485.90 (-0.07%)
+- IBEX35: 18,316.80 (+0.25%)
+- EUROSTOXX50: 6,069.99 (-0.62%)
+- DAX: 24,898.79 (-0.42%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,339.60 | 51.6% | +23.3% | +0.83% |
+| CASH | €1,271.41 | 28.1% | — | — |
+| 4GLD | €466.51 | 10.3% | -0.7% | -0.08% |
+| XEON | €452.49 | 10.0% | +6.3% | +0.02% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.72% vs SMA50, VIX 16.08)
+- HOLD: 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, ITX, SIE, NOVO, ALV, TTE, DTE
+- SELL: AIR
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (14.4% away)
+- EQQQ: stop EUR 508.78 (21.3% away)
+
+**Analysis:**
+US markets nearly flat on the day while European indices showed mild divergence — IBEX held gains but DAX/EUROSTOXX50 slipped. EQQQ continues to outperform with +23.3% from entry and captured today's +0.83% Nasdaq move. Quant regime stays RISK-ON; only AIR triggers a sell signal but it's not in portfolio.
+
+**HOLD — cartera bien posicionada con EQQQ dominando en régimen alcista y sin señales de venta sobre los activos actuales.**
+
+---
+
 
 ### Day 110 — June 3, 2026 21:30 CET
 
