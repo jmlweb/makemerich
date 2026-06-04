@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,512.52 |
-| Total Return | -9.75% |
+| Current Balance | €4,513.02 |
+| Total Return | -9.74% |
 | Days Active | 112 |
 
 ---
 
 ## Daily Log
+
+### Day 111 — June 4, 2026 21:30 CET
+
+**Balance:** €4,513.02 | **Total Return:** -9.7%
+**Day P&L:** €6.79 (-0.2%) vs Day 110 (€4,519.81)
+
+**Prices at close:**
+- 4GLD: €124.48 (-0.08% 24h) — stop €105.88
+- XEON: €149.28 (+0.01% 24h)
+- EQQQ: €636.00 (-1.17% 24h) — stop €508.78
+- ITX: €54.48 (+1.91% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8620
+- SP500: 7,527.07 (-1.09%)
+- NASDAQ: 26,853.98 (-0.89%)
+- GOLD: 4,535.80 (+2.23%)
+- IBEX35: 18,318.50 (+0.78%)
+- EUROSTOXX50: 6,084.44 (+0.51%)
+- DAX: 24,981.80 (-0.57%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,300.89 | 51.0% | +21.2% | -1.17% |
+| ITX | €1,065.37 | 23.6% | +1.9% | +1.91% |
+| 4GLD | €469.34 | 10.4% | -0.1% | -0.08% |
+| XEON | €452.49 | 10.0% | +6.3% | +0.01% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades:**
+- **BUY ITX**: 19.555182 units @ EUR 53.46 = EUR 1,045.42 (fee EUR 1.05)
+  Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.39% vs SMA50, VIX 16.41)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (14.9% away)
+- EQQQ: stop EUR 508.78 (20.0% away)
+- ITX: stop EUR 50.63 (7.1% away)
+
+**Analysis:**
+US markets sold off ~1% while European indices held positive, creating a divergence that favors the current EU-heavy portfolio tilt. Gold surging +2.23% suggests some safe-haven demand despite the RISK-ON regime — worth monitoring if this persists. Today's ITX buy immediately showed +1.9%, validating the entry signal.
+
+**HOLD — todas las señales cuantitativas confirman mantener posiciones y los stops activos protegen el capital adecuadamente.**
+
+---
+
 
 ### Day 111 — June 4, 2026 21:30 CET
 
