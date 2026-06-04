@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,518.76 |
-| Total Return | -9.62% |
+| Current Balance | €4,512.52 |
+| Total Return | -9.75% |
 | Days Active | 112 |
 
 ---
 
 ## Daily Log
+
+### Day 111 — June 4, 2026 21:30 CET
+
+**Balance:** €4,512.52 | **Total Return:** -9.8%
+**Day P&L:** €7.29 (-0.2%) vs Day 110 (€4,519.81)
+
+**Prices at close:**
+- 4GLD: €123.55 (-0.83% 24h) — stop €105.88
+- XEON: €149.27 (+0.01% 24h)
+- EQQQ: €636.30 (-1.12% 24h) — stop €508.78
+- ITX: €54.58 (+2.10% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8620
+- SP500: 7,553.68 (-0.61%)
+- NASDAQ: 26,853.98 (-0.86%)
+- GOLD: 4,497.90 (+1.38%)
+- IBEX35: 18,287.40 (+0.61%)
+- EUROSTOXX50: 6,073.33 (+0.33%)
+- DAX: 24,928.31 (-0.78%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,301.97 | 51.0% | +21.3% | -1.12% |
+| ITX | €1,067.32 | 23.7% | +2.1% | +2.10% |
+| 4GLD | €465.83 | 10.3% | -0.8% | -0.83% |
+| XEON | €452.46 | 10.0% | +6.2% | +0.01% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades:**
+- **BUY ITX**: 19.555182 units @ EUR 53.46 = EUR 1,045.42 (fee EUR 1.05)
+  Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.10% vs SMA50, VIX 16.41)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (14.3% away)
+- EQQQ: stop EUR 508.78 (20.0% away)
+- ITX: stop EUR 50.63 (7.2% away)
+
+**Analysis:**
+US markets pulled back today (S{{ANALYSIS}}P500 -0.61%, NASDAQ -0.86%) while European indices held firm; gold's +1.38% rise signals mild defensive rotation despite the overall RISK-ON regime. The freshly acquired ITX position delivered +2.10% on day one, validating the bullish technical entry. All active stops remain comfortably distant (7–20%) and quant signals unanimously confirm HOLD across all current holdings.
+
+**HOLD — El régimen de mercado sigue siendo RISK-ON, las señales cuantitativas confirman mantener todas las posiciones y los stops están a distancias seguras.**
+
+---
+
 
 ### Day 111 — June 4, 2026 21:30 CET
 
