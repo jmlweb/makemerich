@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,513.02 |
+| Current Balance | €4,513.20 |
 | Total Return | -9.74% |
 | Days Active | 112 |
 
 ---
 
 ## Daily Log
+
+### Day 111 — June 4, 2026 21:30 CET
+
+**Balance:** €4,513.20 | **Total Return:** -9.7%
+**Day P&L:** €6.61 (-0.1%) vs Day 110 (€4,519.81)
+
+**Prices at close:**
+- 4GLD: €123.74 (-0.67% 24h) — stop €105.88
+- XEON: €149.27 (+0.01% 24h)
+- EQQQ: €639.10 (-0.68% 24h) — stop €508.78
+- ITX: €54.06 (+1.12% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8620
+- SP500: 7,567.38 (-0.56%)
+- NASDAQ: 26,766.56 (-1.21%)
+- GOLD: 4,502.00 (+1.47%)
+- IBEX35: 18,276.00 (+0.55%)
+- EUROSTOXX50: 6,103.33 (+0.82%)
+- DAX: 24,944.95 (-0.71%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,312.10 | 51.2% | +21.8% | -0.68% |
+| ITX | €1,057.15 | 23.4% | +1.1% | +1.12% |
+| 4GLD | €466.55 | 10.3% | -0.7% | -0.67% |
+| XEON | €452.46 | 10.0% | +6.2% | +0.01% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades:**
+- **BUY ITX**: 19.555182 units @ EUR 53.46 = EUR 1,045.42 (fee EUR 1.05)
+  Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.39% vs SMA50, VIX 16.41)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (14.4% away)
+- EQQQ: stop EUR 508.78 (20.4% away)
+- ITX: stop EUR 50.63 (6.3% away)
+
+**Analysis:**
+US tech under pressure (NASDAQ -1.21%) while European indices hold — IBEX +0.55%, EUROSTOXX50 +0.82% — divergence favors ITX entry today. Gold +1.47% signals mild risk hedging despite quant regime staying RISK-ON. Portfolio stable; all stops remain well below current prices.
+
+**HOLD — señales quant confirman régimen RISK-ON sin nuevas entradas válidas y todas las posiciones mantienen stops holgados.**
+
+---
+
 
 ### Day 111 — June 4, 2026 21:30 CET
 
