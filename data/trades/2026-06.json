@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-06-04",
+    "time": "07:00 UTC",
+    "action": "BUY",
+    "asset": "ITX",
+    "units": 19.555182,
+    "price_eur": 53.46,
+    "amount_eur": 1045.42,
+    "fee_eur": 1.05,
+    "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive",
+    "session": "makemerich-2130"
+  }
+]

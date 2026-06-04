@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-03T16:00:06.122Z",
+  "last_updated": "2026-06-04T07:00:25.496Z",
   "holdings": {
     "CASH": {
-      "amount_eur": 1271.41
+      "amount_eur": 224.94
     },
     "4GLD": {
       "units": 3.7704,
@@ -28,12 +28,20 @@
       "amount_eur": 2332,
       "pnl_pct": 22.87,
       "stop_loss_eur": 508.7824
+    },
+    "ITX": {
+      "units": 19.555182,
+      "entry_price_eur": 53.46,
+      "current_price_eur": 53.459999084472656,
+      "amount_eur": 1045.42,
+      "pnl_pct": 0,
+      "stop_loss_eur": 50.6326
     }
   },
   "totals": {
-    "balance_eur": 4519.81,
+    "balance_eur": 4518.76,
     "initial_eur": 5000,
-    "pnl_eur": -480.19,
-    "pnl_pct": -9.6
+    "pnl_eur": -481.24,
+    "pnl_pct": -9.62
   }
 }
