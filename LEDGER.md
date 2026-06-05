@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,519.07 |
-| Total Return | -9.62% |
+| Current Balance | €4,481.66 |
+| Total Return | -10.37% |
 | Days Active | 113 |
 
 ---
 
 ## Daily Log
+
+### Day 112 — June 5, 2026 21:30 CET
+
+**Balance:** €4,481.66 | **Total Return:** -10.4%
+**Day P&L:** €31.54 (-0.7%) vs Day 111 (€4,513.20)
+
+**Prices at close:**
+- 4GLD: €121.12 (-1.56% 24h) — stop €105.88
+- XEON: €149.31 (+0.02% 24h)
+- EQQQ: €628.00 (-2.58% 24h) — stop €508.78
+- ITX: €55.00 (+1.74% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,478.41 (-1.00%)
+- NASDAQ: 26,201.79 (-2.43%)
+- GOLD: 4,364.80 (-2.48%)
+- IBEX35: 18,344.90 (+0.38%)
+- EUROSTOXX50: 6,062.07 (-0.68%)
+- DAX: 24,759.05 (-0.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,271.95 | 50.7% | +19.7% | -2.58% |
+| ITX | €1,075.54 | 24.0% | +2.9% | +1.74% |
+| 4GLD | €456.67 | 10.2% | -2.8% | -1.56% |
+| XEON | €452.57 | 10.1% | +6.3% | +0.02% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.23% vs SMA50, VIX 15.72)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.6% away)
+- EQQQ: stop EUR 508.78 (19.0% away)
+- ITX: stop EUR 50.63 (7.9% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+US markets sold off sharply — NASDAQ -2.43%, Gold -2.48% — dragging EQQQ and 4GLD down while ITX outperformed with +1.74% on IBEX strength. Quant regime stays RISK-ON (SP500 +5.23% above SMA50) and all stops remain well clear: closest is ITX at 7.9% away. Portfolio drawdown at -10.4% is a flag but no stop has been triggered and no quant signal warrants action on held positions.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones y el régimen de mercado sigue siendo RISK-ON a pesar de la caída en Nasdaq.**
+
+---
+
 
 ### Day 112 — June 5, 2026 21:30 CET
 
