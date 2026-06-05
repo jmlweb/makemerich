@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,516.31 |
-| Total Return | -9.67% |
+| Current Balance | €4,519.07 |
+| Total Return | -9.62% |
 | Days Active | 113 |
 
 ---
 
 ## Daily Log
+
+### Day 112 — June 5, 2026 21:30 CET
+
+**Balance:** €4,519.07 | **Total Return:** -9.6%
+**Day P&L:** +€5.87 (+0.1%) vs Day 111 (€4,513.20)
+
+**Prices at close:**
+- 4GLD: €122.50 (-0.44% 24h) — stop €105.88
+- XEON: €149.30 (+0.01% 24h)
+- EQQQ: €632.80 (-1.83% 24h) — stop €508.78
+- ITX: €55.76 (+3.14% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,584.31 (-0.33%)
+- NASDAQ: 26,830.96 (-0.09%)
+- GOLD: 4,442.70 (-0.74%)
+- IBEX35: 18,454.40 (+0.98%)
+- EUROSTOXX50: 6,093.84 (-0.16%)
+- DAX: 24,943.22 (+0.59%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,289.31 | 50.7% | +20.6% | -1.83% |
+| ITX | €1,090.40 | 24.1% | +4.3% | +3.14% |
+| 4GLD | €461.87 | 10.2% | -1.6% | -0.44% |
+| XEON | €452.55 | 10.0% | +6.3% | +0.01% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +5.23% vs SMA50, VIX 15.72)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.6% away)
+- EQQQ: stop EUR 508.78 (19.6% away)
+- ITX: stop EUR 50.63 (9.2% away)
+
+**Analysis:**
+Mixed session across regions — US indices slightly red while IBEX (+0.98%) and DAX (+0.59%) diverged positively; ITX led portfolio with +3.14% while EQQQ retraced -1.83% but remains +20.6% from entry. RISK-ON regime intact (VIX 15.72, SP500 +5.23% vs SMA50) with all stops 9–20% away. Quant signals confirm HOLD across all held positions; DTE SELL signal irrelevant as it's not in portfolio.
+
+**HOLD — régimen RISK-ON confirmado, todas las posiciones en positivo desde entrada y stops holgados, sin señales de salida activas.**
+
+---
+
 
 ### Day 112 — June 5, 2026 21:30 CET
 
