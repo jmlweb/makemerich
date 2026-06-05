@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,513.20 |
-| Total Return | -9.74% |
+| Current Balance | €4,516.31 |
+| Total Return | -9.67% |
 | Days Active | 113 |
 
 ---
 
 ## Daily Log
+
+### Day 112 — June 5, 2026 21:30 CET
+
+**Balance:** €4,516.31 | **Total Return:** -9.7%
+**Day P&L:** +€3.11 (+0.1%) vs Day 111 (€4,513.20)
+
+**Prices at close:**
+- 4GLD: €123.36 (+0.26% 24h) — stop €105.88
+- XEON: €149.30 (+0.01% 24h)
+- EQQQ: €633.20 (-1.77% 24h) — stop €508.78
+- ITX: €55.38 (+2.40% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,584.31 (-0.33%)
+- NASDAQ: 26,830.96 (-0.97%)
+- GOLD: 4,492.40 (+0.37%)
+- IBEX35: 18,430.30 (+0.84%)
+- EUROSTOXX50: 6,093.78 (-0.16%)
+- DAX: 24,955.62 (+0.64%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,290.76 | 50.7% | +20.7% | -1.77% |
+| ITX | €1,082.97 | 24.0% | +3.6% | +2.40% |
+| 4GLD | €465.12 | 10.3% | -1.0% | +0.26% |
+| XEON | €452.53 | 10.0% | +6.3% | +0.01% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +6.22% vs SMA50, VIX 15.72)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (14.2% away)
+- EQQQ: stop EUR 508.78 (19.6% away)
+- ITX: stop EUR 50.63 (8.6% away)
+
+**Analysis:**
+NASDAQ weakness (-0.97%) pressured EQQQ today (-1.77%), but ITX showed strong divergence (+2.40%), reflecting European equity resilience with IBEX35 up +0.84%. Market regime stays RISK-ON with VIX at 15.72 and SP500 holding +6.22% above SMA50; all stops remain distant (8.6–19.6%). Portfolio is essentially flat on the day with no actionable signals.
+
+**HOLD — el régimen sigue en RISK-ON, todas las posiciones mantienen distancia segura a sus stops y las señales cuantitativas confirman mantener sin cambios.**
+
+---
+
 
 ### Day 112 — June 5, 2026 21:30 CET
 
