@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,481.66 |
-| Total Return | -10.37% |
+| Current Balance | €4,439.40 |
+| Total Return | -11.21% |
 | Days Active | 116 |
 
 ---
 
 ## Daily Log
+
+### Day 115 — June 8, 2026 21:30 CET
+
+**Balance:** €4,439.40 | **Total Return:** -11.2%
+**Day P&L:** €42.26 (-0.9%) vs Day 114 (€4,481.66)
+
+**Prices at close:**
+- 4GLD: €119.98 (-2.97% 24h) — stop €105.88
+- XEON: €149.30 (+0.02% 24h)
+- EQQQ: €620.00 (-2.99% 24h) — stop €508.78
+- ITX: €54.54 (-0.76% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8670
+- SP500: 7,383.74 (-2.25%)
+- NASDAQ: 25,709.43 (-4.26%)
+- GOLD: 4,326.40 (-0.89%)
+- IBEX35: 18,273.50 (-0.39%)
+- EUROSTOXX50: 6,032.48 (-0.49%)
+- DAX: 24,615.16 (-1.32%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,243.00 | 50.5% | +18.2% | -2.99% |
+| ITX | €1,066.54 | 24.0% | +2.0% | -0.76% |
+| XEON | €452.55 | 10.2% | +6.3% | +0.02% |
+| 4GLD | €452.37 | 10.2% | -3.7% | -2.97% |
+| CASH | €224.94 | 5.1% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.18% vs SMA50, VIX 19.72)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (11.8% away)
+- EQQQ: stop EUR 508.78 (17.9% away)
+- ITX: stop EUR 50.63 (7.2% away)
+- Portfolio drawdown: -11.2%
+
+**Analysis:**
+Broad risk-off session with NASDAQ down 4.26% and SP500 down 2.25%, dragging EQQQ and 4GLD lower. Despite the selloff, all positions remain well above their stops (ITX 7.2%, 4GLD 11.8%, EQQQ 17.9% buffer), and the quant regime stays RISK-ON with VIX at 19.72. Portfolio drawdown at -11.2% is the main watch point but no technical triggers breached.
+
+**HOLD — todas las posiciones están por encima de sus stops y el régimen cuantitativo sigue en RISK-ON, por lo que no hay justificación técnica para actuar.**
+
+---
+
 
 ### Day 115 — June 8, 2026 21:30 CET
 
