@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,456.70 |
-| Total Return | -10.87% |
+| Current Balance | €4,464.92 |
+| Total Return | -10.70% |
 | Days Active | 116 |
 
 ---
 
 ## Daily Log
+
+### Day 115 — June 8, 2026 21:30 CET
+
+**Balance:** €4,464.92 | **Total Return:** -10.7%
+**Day P&L:** €16.74 (-0.4%) vs Day 114 (€4,481.66)
+
+**Prices at close:**
+- 4GLD: €120.77 (-2.40% 24h) — stop €105.88
+- XEON: €149.33 (+0.04% 24h)
+- EQQQ: €626.10 (-2.03% 24h) — stop €508.78
+- ITX: €54.56 (-0.80% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8670
+- SP500: 7,440.65 (-1.89%)
+- NASDAQ: 26,066.87 (-2.85%)
+- GOLD: 4,360.90 (-0.10%)
+- IBEX35: 18,223.10 (-0.66%)
+- EUROSTOXX50: 6,062.29 (+0.00%)
+- DAX: 24,616.22 (-1.32%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,265.07 | 50.7% | +19.4% | -2.03% |
+| ITX | €1,066.93 | 23.9% | +2.1% | -0.80% |
+| 4GLD | €455.35 | 10.2% | -3.0% | -2.40% |
+| XEON | €452.62 | 10.1% | +6.3% | +0.04% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.73% vs SMA50, VIX 19.72)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.3% away)
+- EQQQ: stop EUR 508.78 (18.7% away)
+- ITX: stop EUR 50.63 (7.2% away)
+- Portfolio drawdown: -10.7%
+
+**Analysis:**
+Broad equity selloff today with NASDAQ -2.85% and SP500 -1.89% pressuring EQQQ (-2.03%) and 4GLD (-2.40%), though quantitative regime remains RISK-ON with SP500 still +3.73% above SMA50. Portfolio dipped -0.4% on the day but all stops remain well clear (7-19% away), and XEON held flat as expected for its defensive role. No technical triggers breached; the drawdown violation is a running flag, not a new event.
+
+**HOLD — las señales cuantitativas confirman régimen RISK-ON y todos los stops siguen lejos, por lo que no hay motivo para actuar tras una jornada de corrección normal.**
+
+---
+
 
 ### Day 115 — June 8, 2026 21:30 CET
 
