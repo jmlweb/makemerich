@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,439.40 |
-| Total Return | -11.21% |
+| Current Balance | €4,456.70 |
+| Total Return | -10.87% |
 | Days Active | 116 |
 
 ---
 
 ## Daily Log
+
+### Day 115 — June 8, 2026 21:30 CET
+
+**Balance:** €4,456.70 | **Total Return:** -10.9%
+**Day P&L:** €24.96 (-0.6%) vs Day 114 (€4,481.66)
+
+**Prices at close:**
+- 4GLD: €120.44 (-2.65% 24h) — stop €105.88
+- XEON: €149.31 (+0.03% 24h)
+- EQQQ: €625.70 (-2.10% 24h) — stop €508.78
+- ITX: €54.28 (-1.27% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8670
+- SP500: 7,442.85 (-1.87%)
+- NASDAQ: 25,709.43 (-4.18%)
+- GOLD: 4,350.00 (-0.35%)
+- IBEX35: 18,296.80 (-0.26%)
+- EUROSTOXX50: 6,057.16 (-0.08%)
+- DAX: 24,647.26 (-1.19%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,263.62 | 50.8% | +19.3% | -2.10% |
+| ITX | €1,061.46 | 23.8% | +1.5% | -1.27% |
+| 4GLD | €454.11 | 10.2% | -3.3% | -2.65% |
+| XEON | €452.57 | 10.2% | +6.3% | +0.03% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.73% vs SMA50, VIX 19.72)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.1% away)
+- EQQQ: stop EUR 508.78 (18.7% away)
+- ITX: stop EUR 50.63 (6.7% away)
+- Portfolio drawdown: -10.9%
+
+**Analysis:**
+Broad risk-off session with NASDAQ down -4.18% and SP500 -1.87%, dragging EQQQ and 4GLD lower; all three equity positions closed in the red while XEON held flat as expected. Portfolio drawdown at -10.9% from start is the key watchpoint, but all stops remain comfortably distant (6.7–18.7% away). Quant regime stays RISK-ON, no stops triggered, no action warranted.
+
+**HOLD — todas las posiciones están por encima de sus stops y el régimen cuantitativo sigue siendo RISK-ON a pesar de la caída intradía.**
+
+---
+
 
 ### Day 115 — June 8, 2026 21:30 CET
 
