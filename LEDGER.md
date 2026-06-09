@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,479.34 |
-| Total Return | -10.41% |
+| Current Balance | €4,487.45 |
+| Total Return | -10.25% |
 | Days Active | 117 |
 
 ---
 
 ## Daily Log
+
+### Day 116 — June 9, 2026 21:30 CET
+
+**Balance:** €4,487.45 | **Total Return:** -10.3%
+**Day P&L:** +€22.53 (+0.5%) vs Day 115 (€4,464.92)
+
+**Prices at close:**
+- 4GLD: €120.61 (-0.42% 24h) — stop €105.88
+- XEON: €149.33 (+0.01% 24h)
+- EQQQ: €627.20 (-0.13% 24h) — stop €508.78
+- ITX: €55.54 (+1.80% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8670
+- SP500: 7,405.73 (+0.30%)
+- NASDAQ: 25,929.66 (+0.86%)
+- GOLD: 4,358.50 (+0.52%)
+- IBEX35: 18,409.20 (+1.02%)
+- EUROSTOXX50: 6,116.80 (+0.90%)
+- DAX: 24,767.57 (+0.03%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,269.05 | 50.6% | +19.6% | -0.13% |
+| ITX | €1,086.09 | 24.2% | +3.9% | +1.80% |
+| 4GLD | €454.75 | 10.1% | -3.2% | -0.42% |
+| XEON | €452.62 | 10.1% | +6.3% | +0.01% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.45% vs SMA50, VIX 18.04)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.2% away)
+- EQQQ: stop EUR 508.78 (18.9% away)
+- ITX: stop EUR 50.63 (8.8% away)
+- Portfolio drawdown: -10.3%
+
+**Analysis:**
+Markets closed broadly positive with IBEX35 +1.02% and EUROSTOXX50 +0.90% leading European gains; SP500 and NASDAQ extended risk-on momentum. ITX outperformed with +1.80%, adding €19.24 to the day's +€22.53 gain. Portfolio drawdown remains at -10.3% but all stops are comfortably distant (8.8–18.9% away) and quant signals confirm RISK-ON regime.
+
+**HOLD — Todas las posiciones muestran señales cuantitativas de mantener con el régimen en RISK-ON y los stops suficientemente alejados para no requerir acción.**
+
+---
+
 
 ### Day 116 — June 9, 2026 21:30 CET
 
