@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,464.92 |
-| Total Return | -10.70% |
+| Current Balance | €4,479.34 |
+| Total Return | -10.41% |
 | Days Active | 117 |
 
 ---
 
 ## Daily Log
+
+### Day 116 — June 9, 2026 21:30 CET
+
+**Balance:** €4,479.34 | **Total Return:** -10.4%
+**Day P&L:** +€14.42 (+0.3%) vs Day 115 (€4,464.92)
+
+**Prices at close:**
+- 4GLD: €120.33 (-0.65% 24h) — stop €105.88
+- XEON: €149.33 (+0.01% 24h)
+- EQQQ: €627.30 (-0.11% 24h) — stop €508.78
+- ITX: €55.16 (+1.06% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8670
+- SP500: 7,405.73 (-2.35%)
+- NASDAQ: 25,929.66 (-3.36%)
+- GOLD: 4,353.90 (+0.42%)
+- IBEX35: 18,400.90 (+0.98%)
+- EUROSTOXX50: 6,122.11 (+0.99%)
+- DAX: 24,802.68 (+0.18%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,269.41 | 50.7% | +19.6% | -0.11% |
+| ITX | €1,078.66 | 24.1% | +3.2% | +1.06% |
+| 4GLD | €453.69 | 10.1% | -3.4% | -0.65% |
+| XEON | €452.63 | 10.1% | +6.3% | +0.01% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.22% vs SMA50, VIX 18.04)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.0% away)
+- EQQQ: stop EUR 508.78 (18.9% away)
+- ITX: stop EUR 50.63 (8.2% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+US markets sold off sharply (SP500 -2.35%, NASDAQ -3.36%) while European indices held firm (IBEX +0.98%, EUROSTOXX +0.99%), creating a divergence that benefits ITX but pressures EQQQ's US tech exposure. GOLD edged up +0.42% suggesting mild safe-haven demand without triggering a full risk-off shift; quant regime stays RISK-ON. All stops remain well-buffered (4GLD 12%, EQQQ 18.9%, ITX 8.2%), and the +0.3% day gain shows the European-weighted portfolio absorbed US weakness adequately.
+
+**HOLD — Las señales cuantitativas mantienen régimen RISK-ON y todos los stops están suficientemente alejados, por lo que no hay motivo para actuar a pesar de la caída en EE.UU.**
+
+---
+
 
 ### Day 116 — June 9, 2026 21:30 CET
 
