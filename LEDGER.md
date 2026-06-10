@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,403.68 |
-| Total Return | -11.93% |
+| Current Balance | €4,386.39 |
+| Total Return | -12.27% |
 | Days Active | 118 |
 
 ---
 
 ## Daily Log
+
+### Day 117 — June 10, 2026 21:30 CET
+
+**Balance:** €4,386.39 | **Total Return:** -12.3%
+**Day P&L:** €38.22 (-0.9%) vs Day 116 (€4,424.61)
+
+**Prices at close:**
+- 4GLD: €114.82 (-4.93% 24h) — stop €105.88
+- XEON: €149.34 (+0.01% 24h)
+- EQQQ: €608.10 (-2.87% 24h) — stop €508.78
+- ITX: €55.02 (-1.22% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,332.29 (-0.99%)
+- NASDAQ: 25,436.95 (-1.90%)
+- GOLD: 4,140.90 (-2.80%)
+- IBEX35: 18,142.70 (-0.18%)
+- EUROSTOXX50: 6,009.95 (-0.66%)
+- DAX: 24,195.31 (-1.71%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,199.95 | 50.2% | +15.9% | -2.87% |
+| ITX | €1,075.93 | 24.5% | +2.9% | -1.22% |
+| XEON | €452.66 | 10.3% | +6.3% | +0.01% |
+| 4GLD | €432.92 | 9.9% | -7.8% | -4.93% |
+| CASH | €224.94 | 5.1% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.87% vs SMA50, VIX 21.09)
+- BUY: 4GLD
+- HOLD: XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: SAP, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (7.8% away)
+- EQQQ: stop EUR 508.78 (16.3% away)
+- ITX: stop EUR 50.63 (8.0% away)
+- Portfolio drawdown: -12.3%
+
+**Analysis:**
+Broad risk-off session with NASDAQ -1.90% and GOLD -2.80% hitting portfolio's two largest exposures hard; 4GLD down -4.93% intraday yet quant still signals BUY — momentum divergence worth watching. All three stops remain intact with adequate buffers (7.8–16.3%), and portfolio drawdown at -12.3% is near threshold but no stop triggered.
+
+**HOLD — Las posiciones siguen por encima de sus stops y la señal cuantitativa RISK-ON no justifica cambios con mercado intradía tan bajista.**
+
+---
+
 
 ### Day 117 — June 10, 2026 21:30 CET
 
