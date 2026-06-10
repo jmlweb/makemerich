@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,424.61 |
-| Total Return | -11.51% |
+| Current Balance | €4,394.71 |
+| Total Return | -12.11% |
 | Days Active | 118 |
 
 ---
 
 ## Daily Log
+
+### Day 117 — June 10, 2026 21:30 CET
+
+**Balance:** €4,394.71 | **Total Return:** -12.1%
+**Day P&L:** €29.90 (-0.7%) vs Day 116 (€4,424.61)
+
+**Prices at close:**
+- 4GLD: €116.04 (-3.92% 24h) — stop €105.88
+- XEON: €149.35 (+0.01% 24h)
+- EQQQ: €607.50 (-2.97% 24h) — stop €508.78
+- ITX: €55.32 (-0.68% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,405.73 (+0.30%)
+- NASDAQ: 25,929.66 (+0.86%)
+- GOLD: 4,190.20 (-1.64%)
+- IBEX35: 18,126.30 (-0.27%)
+- EUROSTOXX50: 6,022.12 (-0.46%)
+- DAX: 24,283.05 (-1.35%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,197.78 | 50.0% | +15.8% | -2.97% |
+| ITX | €1,081.79 | 24.6% | +3.5% | -0.68% |
+| XEON | €452.68 | 10.3% | +6.3% | +0.01% |
+| 4GLD | €437.52 | 10.0% | -6.8% | -3.92% |
+| CASH | €224.94 | 5.1% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.22% vs SMA50, VIX 21.09)
+- BUY: 4GLD
+- HOLD: XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: SAP, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (8.8% away)
+- EQQQ: stop EUR 508.78 (16.3% away)
+- ITX: stop EUR 50.63 (8.5% away)
+- Portfolio drawdown: -12.1%
+
+**Analysis:**
+European markets sold off sharply (DAX -1.35%, EUROSTOXX50 -0.46%) while US indices held firm (NASDAQ +0.86%), suggesting a transatlantic divergence driven by EUR/USD strength at 0.8660 weighing on export-heavy European equities. Gold dropped -1.64% pulling 4GLD further into negative territory (-6.8% vs entry), though quant signals still flag it as BUY given the RISK-ON regime. All stops remain well-buffered; no position is in immediate danger.
+
+**HOLD — Las posiciones están dentro de los stops con el régimen RISK-ON activo, y la volatilidad intradiaria en Europa no justifica cambios hasta confirmar dirección en la apertura de mañana.**
+
+---
+
 
 ### Day 117 — June 10, 2026 21:30 CET
 
