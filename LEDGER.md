@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,394.71 |
-| Total Return | -12.11% |
+| Current Balance | €4,403.68 |
+| Total Return | -11.93% |
 | Days Active | 118 |
 
 ---
 
 ## Daily Log
+
+### Day 117 — June 10, 2026 21:30 CET
+
+**Balance:** €4,403.68 | **Total Return:** -11.9%
+**Day P&L:** €20.93 (-0.5%) vs Day 116 (€4,424.61)
+
+**Prices at close:**
+- 4GLD: €115.46 (-4.36% 24h) — stop €105.88
+- XEON: €149.34 (+0.01% 24h)
+- EQQQ: €610.70 (-2.46% 24h) — stop €508.78
+- ITX: €55.30 (-0.72% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,350.06 (-0.75%)
+- NASDAQ: 25,678.82 (-0.97%)
+- GOLD: 4,157.80 (-2.40%)
+- IBEX35: 18,178.90 (+0.02%)
+- EUROSTOXX50: 6,027.15 (-0.37%)
+- DAX: 24,260.53 (-1.44%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,209.36 | 50.2% | +16.4% | -2.46% |
+| ITX | €1,081.40 | 24.6% | +3.4% | -0.72% |
+| XEON | €452.65 | 10.3% | +6.3% | +0.01% |
+| 4GLD | €435.33 | 9.9% | -7.3% | -4.36% |
+| CASH | €224.94 | 5.1% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.87% vs SMA50, VIX 21.09)
+- BUY: 4GLD
+- HOLD: XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO, ALV, TTE
+- SELL: SAP, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (8.3% away)
+- EQQQ: stop EUR 508.78 (16.7% away)
+- ITX: stop EUR 50.63 (8.4% away)
+- Portfolio drawdown: -11.9%
+
+**Analysis:**
+Broad risk-off session with SP500 -0.75%, NASDAQ -0.97%, DAX -1.44%, and Gold -2.40% — unusual gold weakness alongside equities suggests EUR/USD pressure (0.8660) driving USD-denominated assets down. Quant regime reads RISK-ON based on SMA50 and VIX 21.09, but today's price action contradicts it; 4GLD's -4.36% single-day drop while already -7.3% from entry warrants caution despite the quant BUY signal. All stops remain safely distant (8–17%) and portfolio positions are structurally intact.
+
+**HOLD — Mercado bajista generalizado hoy sin catalizador claro de entrada; mantener posiciones con stops vigentes hasta confirmación de estabilización.**
+
+---
+
 
 ### Day 117 — June 10, 2026 21:30 CET
 
