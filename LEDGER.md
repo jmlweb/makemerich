@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,399.02 |
-| Total Return | -12.02% |
+| Current Balance | €4,398.48 |
+| Total Return | -12.03% |
 | Days Active | 119 |
 
 ---
 
 ## Daily Log
+
+### Day 118 — June 11, 2026 21:30 CET
+
+**Balance:** €4,398.48 | **Total Return:** -12.0%
+**Day P&L:** +€12.09 (+0.3%) vs Day 117 (€4,386.39)
+
+**Prices at close:**
+- 4GLD: €113.87 (-4.26% 24h) — stop €105.88
+- XEON: €149.35 (+0.01% 24h)
+- EQQQ: €610.80 (+0.02% 24h) — stop €508.78
+- ITX: €55.32 (+0.55% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8670
+- SP500: 7,293.33 (-1.26%)
+- NASDAQ: 25,314.05 (-1.42%)
+- GOLD: 4,111.30 (+0.08%)
+- IBEX35: 18,290.10 (+0.81%)
+- EUROSTOXX50: 6,056.96 (+0.78%)
+- DAX: 24,209.71 (-0.91%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,209.72 | 50.2% | +16.4% | +0.02% |
+| ITX | €1,081.79 | 24.6% | +3.5% | +0.55% |
+| XEON | €452.69 | 10.3% | +6.3% | +0.01% |
+| 4GLD | €429.34 | 9.8% | -8.6% | -4.26% |
+| CASH | €224.94 | 5.1% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.00% vs SMA50, VIX 20.63)
+- BUY: 4GLD, ALV, TTE
+- HOLD: XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO
+- SELL: SAP, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (7.0% away)
+- EQQQ: stop EUR 508.78 (16.7% away)
+- ITX: stop EUR 50.63 (8.5% away)
+- Portfolio drawdown: -12.0%
+
+**Analysis:**
+US markets sold off sharply (SP500 -1.26%, NASDAQ -1.42%) while European indices diverged — IBEX and EuroStoxx50 gained while DAX fell 0.91%. Gold ETF 4GLD dropped 4.26% despite spot gold flat, widening losses to -8.6% from entry, while EQQQ and ITX held near breakeven on the day. Portfolio drawdown hits -12.0%, triggering the violation threshold with all three equity stops now active.
+
+**HOLD — El drawdown del portfolio ya ha cruzado el umbral de alerta (-12%) y la caída de 4GLD acelera, por lo que no se abre ni amplía ninguna posición hasta recuperar margen.**
+
+---
+
 
 ### Day 118 — June 11, 2026 21:30 CET
 
