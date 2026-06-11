@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,386.39 |
-| Total Return | -12.27% |
+| Current Balance | €4,406.73 |
+| Total Return | -11.87% |
 | Days Active | 119 |
 
 ---
 
 ## Daily Log
+
+### Day 118 — June 11, 2026 21:30 CET
+
+**Balance:** €4,406.73 | **Total Return:** -11.9%
+**Day P&L:** +€20.34 (+0.5%) vs Day 117 (€4,386.39)
+
+**Prices at close:**
+- 4GLD: €114.05 (-4.11% 24h) — stop €105.88
+- XEON: €149.34 (+0.01% 24h)
+- EQQQ: €611.60 (+0.13% 24h) — stop €508.78
+- ITX: €55.56 (+0.98% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8670
+- SP500: 7,266.99 (-1.87%)
+- NASDAQ: 25,169.50 (-2.93%)
+- GOLD: 4,115.00 (+0.17%)
+- IBEX35: 18,329.50 (+1.03%)
+- EUROSTOXX50: 6,060.34 (+0.84%)
+- DAX: 24,231.85 (-0.82%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,212.61 | 50.2% | +16.6% | +0.13% |
+| ITX | €1,086.49 | 24.7% | +3.9% | +0.98% |
+| XEON | €452.68 | 10.3% | +6.3% | +0.01% |
+| 4GLD | €430.01 | 9.8% | -8.4% | -4.11% |
+| CASH | €224.94 | 5.1% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.74% vs SMA50, VIX 20.63)
+- BUY: 4GLD, ALV, TTE
+- HOLD: XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO
+- SELL: SAP, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (7.2% away)
+- EQQQ: stop EUR 508.78 (16.8% away)
+- ITX: stop EUR 50.63 (8.9% away)
+- Portfolio drawdown: -11.9%
+
+**Analysis:**
+US equities sold off sharply (SP500 -1.87%, NASDAQ -2.93%) while European indices held firm, signaling a transatlantic divergence likely driven by macro/tariff concerns. 4GLD dropped -4.11% despite GOLD flat, which may reflect ETF-specific pressure rather than gold weakness; stop at 7.2% away gives room. Quant regime remains RISK-ON and flags 4GLD as a BUY, but adding to a -8.4% position on a red day with portfolio already at -11.9% drawdown warrants caution.
+
+**HOLD — Con el sell-off en tecnología americana y la cartera ya en -11.9% de drawdown, no es momento de añadir riesgo aunque el régimen cuantitativo sea RISK-ON.**
+
+---
+
 
 ### Day 118 — June 11, 2026 21:30 CET
 

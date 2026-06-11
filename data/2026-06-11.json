@@ -2,14 +2,14 @@
   "date": "2026-06-11",
   "day": 118,
   "balance": {
-    "total": 4386.39,
+    "total": 4406.73,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -12.27,
+  "totalReturn": -11.87,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 114.82,
-      "value": 432.92,
-      "pnlPercent": -7.82,
-      "change24h": -3.4639313939801615
+      "currentPriceEUR": 114.05,
+      "value": 430.01,
+      "pnlPercent": -8.44,
+      "change24h": -4.111316630233732
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.337,
-      "value": 452.66,
+      "currentPriceEUR": 149.344,
+      "value": 452.68,
       "pnlPercent": 6.29,
-      "change24h": 0.0033482441807485687
+      "change24h": 0.008035786033804178
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 608.1,
-      "value": 2199.95,
-      "pnlPercent": 15.92,
-      "change24h": -0.42574095300475234
+      "currentPriceEUR": 611.6,
+      "value": 2212.61,
+      "pnlPercent": 16.58,
+      "change24h": 0.14737186834779387
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 55.02,
-      "value": 1075.93,
-      "pnlPercent": 2.92,
-      "change24h": 0
+      "currentPriceEUR": 55.56,
+      "value": 1086.49,
+      "pnlPercent": 3.93,
+      "change24h": 0.9814612868047967
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-11T07:00:19.772Z",
+    "generatedAt": "2026-06-11T10:00:17.746Z",
     "eurUsd": 0.8695652173913044
   }
 }
