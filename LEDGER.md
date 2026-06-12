@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,398.48 |
-| Total Return | -12.03% |
+| Current Balance | €4,488.68 |
+| Total Return | -10.23% |
 | Days Active | 120 |
 
 ---
 
 ## Daily Log
+
+### Day 119 — June 12, 2026 21:30 CET
+
+**Balance:** €4,488.68 | **Total Return:** -10.2%
+**Day P&L:** +€90.20 (+2.1%) vs Day 118 (€4,398.48)
+
+**Prices at close:**
+- 4GLD: €117.31 (+2.17% 24h) — stop €105.88
+- XEON: €149.36 (+0.01% 24h)
+- EQQQ: €624.90 (+2.76% 24h) — stop €508.78
+- ITX: €56.66 (+2.46% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,394.30 (+0.10%)
+- NASDAQ: 25,809.66 (+0.51%)
+- GOLD: 4,245.30 (+3.79%)
+- IBEX35: 18,754.60 (+2.54%)
+- EUROSTOXX50: 6,190.15 (+2.20%)
+- DAX: 24,672.49 (+1.97%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,260.73 | 50.4% | +19.1% | +2.76% |
+| ITX | €1,108.00 | 24.7% | +6.0% | +2.46% |
+| XEON | €452.71 | 10.1% | +6.3% | +0.01% |
+| 4GLD | €442.31 | 9.9% | -5.8% | +2.17% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.26% vs SMA50, VIX 18.55)
+- BUY: ALV
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, TTE
+- SELL: SAP, MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.7% away)
+- EQQQ: stop EUR 508.78 (18.6% away)
+- ITX: stop EUR 50.63 (10.6% away)
+- Portfolio drawdown: -10.2%
+
+**Analysis:**
+Strong risk-on session across the board — Gold surged +3.79% lifting 4GLD back toward break-even, while EQQQ and ITX hit new session highs alongside broad European and US equity strength. All holdings are well above their stops and quant regime confirms bullish conditions. ALV flashes a fresh BUY signal but available cash is only €224.94 (5%), limiting deployment size.
+
+**HOLD — Con solo €225 de caja disponible y el drawdown aún en -10.2%, mantener posiciones actuales y dejar correr las ganancias sin abrir ALV hasta recuperar más margen.**
+
+---
+
 
 ### Day 119 — June 12, 2026 21:30 CET
 
