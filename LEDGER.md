@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,488.68 |
-| Total Return | -10.23% |
+| Current Balance | €4,468.06 |
+| Total Return | -10.64% |
 | Days Active | 120 |
 
 ---
 
 ## Daily Log
+
+### Day 119 — June 12, 2026 21:30 CET
+
+**Balance:** €4,468.06 | **Total Return:** -10.6%
+**Day P&L:** +€69.58 (+1.6%) vs Day 118 (€4,398.48)
+
+**Prices at close:**
+- 4GLD: €116.70 (+1.64% 24h) — stop €105.88
+- XEON: €149.35 (+0.01% 24h)
+- EQQQ: €622.00 (+2.29% 24h) — stop €508.78
+- ITX: €56.26 (+1.70% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,409.99 (+1.97%)
+- NASDAQ: 25,809.66 (+2.54%)
+- GOLD: 4,222.80 (+3.24%)
+- IBEX35: 18,618.60 (+1.80%)
+- EUROSTOXX50: 6,144.44 (+1.44%)
+- DAX: 24,520.86 (+1.35%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,250.24 | 50.4% | +18.6% | +2.29% |
+| ITX | €1,100.17 | 24.6% | +5.2% | +1.70% |
+| XEON | €452.70 | 10.1% | +6.3% | +0.01% |
+| 4GLD | €440.01 | 9.8% | -6.3% | +1.64% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.20% vs SMA50, VIX 18.55)
+- BUY: ALV
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, TTE
+- SELL: SAP, MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.3% away)
+- EQQQ: stop EUR 508.78 (18.2% away)
+- ITX: stop EUR 50.63 (10.0% away)
+- Portfolio drawdown: -10.6%
+
+**Analysis:**
+Broad risk-on surge across all major indices — SP500 +1.97%, NASDAQ +2.54%, Gold +3.24% — lifted all portfolio positions with EQQQ leading at +2.29%. Quant regime confirms RISK-ON with BUY on ALV, but all held assets signal HOLD and stops remain well-defended (closest is 4GLD at 9.3% away). Portfolio drawdown stays at -10.6%, limiting aggressive new exposure despite the positive tape.
+
+**HOLD — El mercado rebota con fuerza pero el drawdown acumulado del -10.6% y el escaso efectivo disponible (5%) desaconsejan abrir nuevas posiciones hoy.**
+
+---
+
 
 ### Day 119 — June 12, 2026 21:30 CET
 
