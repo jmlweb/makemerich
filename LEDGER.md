@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,468.06 |
-| Total Return | -10.64% |
+| Current Balance | €4,480.41 |
+| Total Return | -10.39% |
 | Days Active | 120 |
 
 ---
 
 ## Daily Log
+
+### Day 119 — June 12, 2026 21:30 CET
+
+**Balance:** €4,480.41 | **Total Return:** -10.4%
+**Day P&L:** +€81.93 (+1.9%) vs Day 118 (€4,398.48)
+
+**Prices at close:**
+- 4GLD: €117.21 (+2.08% 24h) — stop €105.88
+- XEON: €149.37 (+0.02% 24h)
+- EQQQ: €626.60 (+3.04% 24h) — stop €508.78
+- ITX: €55.94 (+1.12% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,398.68 (+1.81%)
+- NASDAQ: 25,729.48 (+2.22%)
+- GOLD: 4,228.70 (+3.38%)
+- IBEX35: 18,764.40 (+2.59%)
+- EUROSTOXX50: 6,187.63 (+2.16%)
+- DAX: 24,635.30 (+1.82%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,266.88 | 50.6% | +19.4% | +3.04% |
+| ITX | €1,093.92 | 24.4% | +4.6% | +1.12% |
+| XEON | €452.74 | 10.1% | +6.3% | +0.02% |
+| 4GLD | €441.93 | 9.9% | -5.9% | +2.08% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.20% vs SMA50, VIX 18.55)
+- BUY: ALV
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, TTE
+- SELL: SAP, MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.7% away)
+- EQQQ: stop EUR 508.78 (18.8% away)
+- ITX: stop EUR 50.63 (9.5% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Broad risk-on rally across all major indices today — SP500 +1.81%, NASDAQ +2.22%, GOLD +3.38% — lifted all portfolio positions. EQQQ and 4GLD led gains; portfolio day P{{ANALYSIS}}L +€81.93 (+1.9%). Stops remain well clear; no triggers breached.
+
+**HOLD — El mercado muestra fortaleza generalizada pero el drawdown acumulado (-10.4%) exige mantener posiciones actuales sin aumentar exposición.**
+
+---
+
 
 ### Day 119 — June 12, 2026 21:30 CET
 
