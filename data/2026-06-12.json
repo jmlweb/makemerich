@@ -1,6 +1,6 @@
 {
-  "date": "2026-06-11",
-  "day": 118,
+  "date": "2026-06-12",
+  "day": 119,
   "balance": {
     "total": 4398.48,
     "currency": "EUR"
@@ -26,7 +26,7 @@
       "currentPriceEUR": 113.87,
       "value": 429.34,
       "pnlPercent": -8.58,
-      "change24h": -4.262653438708587
+      "change24h": -0.8273819892004779
     },
     {
       "asset": "XEON",
@@ -37,7 +37,7 @@
       "currentPriceEUR": 149.35,
       "value": 452.69,
       "pnlPercent": 6.3,
-      "change24h": 0.012053679050706267
+      "change24h": 0.008705143400500366
     },
     {
       "asset": "EQQQ",
@@ -48,7 +48,7 @@
       "currentPriceEUR": 610.8,
       "value": 2209.72,
       "pnlPercent": 16.43,
-      "change24h": 0.016374652038629284
+      "change24h": 0.44400592007892314
     },
     {
       "asset": "ITX",
@@ -59,11 +59,11 @@
       "currentPriceEUR": 55.32,
       "value": 1081.79,
       "pnlPercent": 3.48,
-      "change24h": 0.5452562704471049
+      "change24h": 0
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-11T19:30:06.561Z",
-    "eurUsd": 0.8695652173913044
+    "generatedAt": "2026-06-12T07:00:19.897Z",
+    "eurUsd": 0.8620689655172414
   }
 }

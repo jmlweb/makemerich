@@ -1,115 +1,115 @@
 {
-  "fetchedAt": "2026-06-11T16:00:05.291Z",
-  "eurUsd": 0.867,
+  "fetchedAt": "2026-06-12T07:00:04.724Z",
+  "eurUsd": 0.866,
   "prices": {
     "4GLD": {
-      "priceUSD": 131.33795011139796,
+      "priceUSD": 131.489610561873,
       "priceEUR": 113.87000274658203,
-      "change": "-4.26"
+      "change": "-0.83"
     },
     "XEON": {
-      "priceUSD": 172.26067601328216,
+      "priceUSD": 172.45959134355152,
       "priceEUR": 149.35000610351562,
       "change": "0.01"
     },
     "EQQQ": {
-      "priceUSD": 704.498255816573,
+      "priceUSD": 705.311764195114,
       "priceEUR": 610.7999877929688,
-      "change": "0.02"
+      "change": "0.44"
     },
     "ITX": {
-      "priceUSD": 63.8062280217119,
+      "priceUSD": 63.87990726885014,
       "priceEUR": 55.31999969482422,
-      "change": "0.55"
+      "change": "-0.00"
     },
     "BTC": {
-      "priceUSD": 62680.48828125,
-      "priceEUR": 54343.98333984375,
-      "change": "2.00"
+      "priceUSD": 62899.4609375,
+      "priceEUR": 54470.933171874996,
+      "change": "-1.04"
     },
     "SOL": {
-      "priceUSD": 65.4800033569336,
-      "priceEUR": 56.77116291046143,
-      "change": "3.67"
+      "priceUSD": 66.04000091552734,
+      "priceEUR": 57.19064079284668,
+      "change": "-1.17"
     },
     "SXR8": {
-      "priceUSD": 785.7439333729816,
+      "priceUSD": 786.651258931149,
       "priceEUR": 681.239990234375,
-      "change": "-0.19"
+      "change": "-0.07"
     },
     "VWCE": {
-      "priceUSD": 184.0369060652754,
+      "priceUSD": 184.24941981361866,
       "priceEUR": 159.55999755859375,
-      "change": "0.04"
+      "change": "0.20"
     },
     "SAP": {
-      "priceUSD": 161.36100795442258,
+      "priceUSD": 161.54733706291498,
       "priceEUR": 139.89999389648438,
-      "change": "-9.57"
+      "change": "-6.55"
     },
     "ASML": {
-      "priceUSD": 1817.762399077278,
+      "priceUSD": 1819.8614318706698,
       "priceEUR": 1576,
-      "change": "4.56"
+      "change": "0.00"
     },
     "MC": {
-      "priceUSD": 568.8581455675101,
+      "priceUSD": 569.5150256432231,
       "priceEUR": 493.20001220703125,
-      "change": "1.14"
+      "change": "0.00"
     },
     "SIE": {
-      "priceUSD": 298.15455594002304,
+      "priceUSD": 298.4988452655889,
       "priceEUR": 258.5,
-      "change": "-2.19"
+      "change": "0.04"
     },
     "AIR": {
-      "priceUSD": 202.1453223838938,
+      "priceUSD": 202.37874654369045,
       "priceEUR": 175.25999450683594,
-      "change": "0.17"
+      "change": "-0.00"
     },
     "NOVO": {
-      "priceUSD": 43.6855057489183,
-      "priceEUR": 37.875333484312165,
-      "change": "-0.19"
+      "priceUSD": 43.80560835619068,
+      "priceEUR": 37.93565683646113,
+      "change": "0.16"
     },
     "ALV": {
-      "priceUSD": 442.0991785386029,
+      "priceUSD": 442.60968567317406,
       "priceEUR": 383.29998779296875,
-      "change": "1.43"
+      "change": "0.47"
     },
     "TTE": {
-      "priceUSD": 89.96539792387543,
+      "priceUSD": 90.06928406466513,
       "priceEUR": 78,
-      "change": "0.98"
+      "change": "0.00"
     },
     "DTE": {
-      "priceUSD": 31.995386125857166,
+      "priceUSD": 32.03233229921266,
       "priceEUR": 27.739999771118164,
-      "change": "-0.14"
+      "change": "-3.11"
     },
     "SP500": {
-      "value": 7293.330078125,
-      "change": "-1.26"
+      "value": 7394.2998046875,
+      "change": "0.10"
     },
     "NASDAQ": {
-      "value": 25314.05078125,
-      "change": "-1.42"
+      "value": 25809.66015625,
+      "change": "0.51"
     },
     "GOLD": {
-      "value": 4111.2998046875,
-      "change": "0.08"
+      "value": 4198.10009765625,
+      "change": "2.64"
     },
     "IBEX35": {
       "value": 18290.099609375,
-      "change": "0.81"
+      "change": "-0.00"
     },
     "EUROSTOXX50": {
       "value": 6056.9599609375,
-      "change": "0.78"
+      "change": "-0.00"
     },
     "DAX": {
       "value": 24209.7109375,
-      "change": "-0.91"
+      "change": "0.06"
     }
   }
 }
