@@ -7,11 +7,113 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,480.41 |
 | Total Return | -10.39% |
-| Days Active | 120 |
+| Days Active | 121 |
 
 ---
 
 ## Daily Log
+
+### Day 120 — June 13, 2026 21:30 CET
+
+**Balance:** €4,480.41 | **Total Return:** -10.4%
+**Day P&L:** +€0.00 (+0.0%) vs Day 119 (€4,480.41)
+
+**Prices at close:**
+- 4GLD: €117.21 (+2.08% 24h) — stop €105.88
+- XEON: €149.37 (+0.02% 24h)
+- EQQQ: €626.60 (+3.04% 24h) — stop €508.78
+- ITX: €55.94 (+1.12% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8640
+- SP500: 7,431.46 (+2.26%)
+- NASDAQ: 25,888.84 (+2.86%)
+- GOLD: 4,215.00 (+3.05%)
+- IBEX35: 18,764.40 (+2.59%)
+- EUROSTOXX50: 6,187.63 (+2.16%)
+- DAX: 24,635.30 (+1.82%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,266.88 | 50.6% | +19.4% | +3.04% |
+| ITX | €1,093.92 | 24.4% | +4.6% | +1.12% |
+| XEON | €452.74 | 10.1% | +6.3% | +0.02% |
+| 4GLD | €441.93 | 9.9% | -5.9% | +2.08% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.53% vs SMA50, VIX 17.68)
+- BUY: ALV
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, SIE, AIR, NOVO, TTE
+- SELL: MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.7% away)
+- EQQQ: stop EUR 508.78 (18.8% away)
+- ITX: stop EUR 50.63 (9.5% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Broad risk-on surge across all major indices with SP500 +2.26% and NASDAQ +2.86%, lifting all portfolio positions — EQQQ leads at +3.04% and now up +19.4% from entry. Gold's +3.05% move partially recovered 4GLD but it remains the only position in the red at -5.9% from entry. All stops remain comfortably distant, with EQQQ's stop 18.8% below current price.
+
+**HOLD — señales cuantitativas confirman mantener todas las posiciones y el mercado en modo risk-on da soporte, pero el efectivo disponible (€224.94) es insuficiente para una entrada relevante en ALV.**
+
+---
+
+
+### Day 119 — June 12, 2026 21:30 CET
+
+**Balance:** €4,480.41 | **Total Return:** -10.4%
+**Day P&L:** +€81.93 (+1.9%) vs Day 118 (€4,398.48)
+
+**Prices at close:**
+- 4GLD: €117.21 (+2.08% 24h) — stop €105.88
+- XEON: €149.37 (+0.02% 24h)
+- EQQQ: €626.60 (+3.04% 24h) — stop €508.78
+- ITX: €55.94 (+1.12% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,427.29 (+2.21%)
+- NASDAQ: 25,878.46 (+2.82%)
+- GOLD: 4,236.50 (+3.57%)
+- IBEX35: 18,764.40 (+2.59%)
+- EUROSTOXX50: 6,187.63 (+2.16%)
+- DAX: 24,635.30 (+1.82%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,266.88 | 50.6% | +19.4% | +3.04% |
+| ITX | €1,093.92 | 24.4% | +4.6% | +1.12% |
+| XEON | €452.74 | 10.1% | +6.3% | +0.02% |
+| 4GLD | €441.93 | 9.9% | -5.9% | +2.08% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.20% vs SMA50, VIX 18.55)
+- BUY: ALV
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, TTE
+- SELL: SAP, MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.7% away)
+- EQQQ: stop EUR 508.78 (18.8% away)
+- ITX: stop EUR 50.63 (9.5% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Broad risk-on rally across all major indices (SP500 +2.21%, NASDAQ +2.82%, GOLD +3.57%) lifted all four holdings, with EQQQ and 4GLD leading. Portfolio gained +1.9% on the day, though total return remains -10.4% from entry. Quant regime confirms RISK-ON with a BUY signal on ALV, but all current positions hold well above their stops.
+
+**HOLD — Las posiciones principales (EQQQ, ITX) siguen en tendencia alcista con stops cómodos y el régimen cuantitativo confirma riesgo activo, sin necesidad de cambios.**
+
+---
+
 
 ### Day 119 — June 12, 2026 21:30 CET
 
