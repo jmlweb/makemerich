@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,544.33 |
-| Total Return | -9.11% |
+| Current Balance | €4,547.17 |
+| Total Return | -9.06% |
 | Days Active | 123 |
 
 ---
 
 ## Daily Log
+
+### Day 122 — June 15, 2026 21:30 CET
+
+**Balance:** €4,547.17 | **Total Return:** -9.1%
+**Day P&L:** +€66.76 (+1.5%) vs Day 121 (€4,480.41)
+
+**Prices at close:**
+- 4GLD: €120.39 (+5.73% 24h) — stop €105.88
+- XEON: €149.38 (+0.02% 24h)
+- EQQQ: €637.30 (+4.34% 24h) — stop €508.78
+- ITX: €56.76 (+1.47% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8630
+- SP500: 7,531.69 (+1.86%)
+- NASDAQ: 25,888.84 (+0.31%)
+- GOLD: 4,374.00 (+3.19%)
+- IBEX35: 19,055.30 (+1.55%)
+- EUROSTOXX50: 6,257.62 (+1.13%)
+- DAX: 24,984.90 (+3.20%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,305.59 | 50.7% | +21.5% | +4.34% |
+| ITX | €1,109.95 | 24.4% | +6.2% | +1.47% |
+| 4GLD | €453.92 | 10.0% | -3.4% | +5.73% |
+| XEON | €452.77 | 10.0% | +6.3% | +0.02% |
+| CASH | €224.94 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.63% vs SMA50, VIX 16.85)
+- BUY: TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, ALV
+- SELL: SAP, MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.1% away)
+- EQQQ: stop EUR 508.78 (20.2% away)
+- ITX: stop EUR 50.63 (10.8% away)
+
+**Analysis:**
+Strong risk-on session with broad gains across equities and gold — DAX +3.20%, SP500 +1.86%, gold +3.19% — all three equity positions outperformed. Portfolio +1.5% day, EQQQ now +21.5% from entry with stop 20% below current price, comfortable cushion. Quant regime confirmed RISK-ON; no SELL signals on held positions.
+
+**HOLD — todas las posiciones en tendencia positiva con stops alejados y régimen confirmado alcista; sin catalizador para actuar.**
+
+---
+
 
 ### Day 122 — June 15, 2026 21:30 CET
 
