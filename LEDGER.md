@@ -5,13 +5,63 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,480.41 |
-| Total Return | -10.39% |
+| Current Balance | €4,544.33 |
+| Total Return | -9.11% |
 | Days Active | 123 |
 
 ---
 
 ## Daily Log
+
+### Day 122 — June 15, 2026 21:30 CET
+
+**Balance:** €4,544.33 | **Total Return:** -9.1%
+**Day P&L:** +€63.92 (+1.4%) vs Day 121 (€4,480.41)
+
+**Prices at close:**
+- 4GLD: €120.05 (+5.43% 24h) — stop €105.88
+- XEON: €149.37 (+0.01% 24h)
+- EQQQ: €635.90 (+4.11% 24h) — stop €508.78
+- ITX: €56.94 (+1.75% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8630
+- SP500: 7,431.46 (+2.26%)
+- NASDAQ: 25,888.84 (+2.86%)
+- GOLD: 4,361.30 (+2.89%)
+- IBEX35: 18,976.40 (+1.13%)
+- EUROSTOXX50: 6,244.08 (+0.91%)
+- DAX: 24,903.54 (+2.87%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,300.53 | 50.6% | +21.2% | +4.11% |
+| ITX | €1,113.47 | 24.5% | +6.5% | +1.75% |
+| XEON | €452.75 | 10.0% | +6.3% | +0.01% |
+| 4GLD | €452.64 | 10.0% | -3.6% | +5.43% |
+| CASH | €224.94 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.53% vs SMA50, VIX 16.85)
+- BUY: TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, ALV
+- SELL: SAP, MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (11.8% away)
+- EQQQ: stop EUR 508.78 (20.0% away)
+- ITX: stop EUR 50.63 (11.1% away)
+
+**Analysis:**
+Strong risk-on day across all major markets — SP500 +2.26%, NASDAQ +2.86%, DAX +2.87% — drove broad portfolio gains led by EQQQ (+4.11%) which alone contributed ~€91 in value. Quant signals flag TTE as a BUY opportunity but cash sits at only 4.9% (€224.94), insufficient for a meaningful position without liquidating a HOLD-rated asset. All existing positions remain above their stops with comfortable buffers (11-20% distance).
+
+**HOLD — Con solo el 4.9% en efectivo y todas las posiciones actuales con señal HOLD, no hay margen suficiente para ejecutar la señal BUY de TTE sin comprometer la estructura actual de la cartera.**
+
+---
+
 
 ### Day 122 — June 15, 2026 21:30 CET
 

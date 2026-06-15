@@ -2,14 +2,14 @@
   "date": "2026-06-15",
   "day": 122,
   "balance": {
-    "total": 4480.41,
+    "total": 4544.33,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.39,
+  "totalReturn": -9.11,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 117.21,
-      "value": 441.93,
-      "pnlPercent": -5.9,
-      "change24h": 2.933169403705971
+      "currentPriceEUR": 120.05,
+      "value": 452.64,
+      "pnlPercent": -3.62,
+      "change24h": 5.427241591288304
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.365,
-      "value": 452.74,
+      "currentPriceEUR": 149.369,
+      "value": 452.75,
       "pnlPercent": 6.31,
-      "change24h": 0.010043521928366106
+      "change24h": 0.012721794442588186
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 626.6,
-      "value": 2266.88,
-      "pnlPercent": 19.44,
-      "change24h": 2.5867714472822643
+      "currentPriceEUR": 635.9,
+      "value": 2300.53,
+      "pnlPercent": 21.22,
+      "change24h": 4.109364767518013
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 55.94,
-      "value": 1093.92,
-      "pnlPercent": 4.64,
-      "change24h": 0
+      "currentPriceEUR": 56.94,
+      "value": 1113.47,
+      "pnlPercent": 6.51,
+      "change24h": 1.787629603146228
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-15T07:00:22.999Z",
+    "generatedAt": "2026-06-15T10:00:21.417Z",
     "eurUsd": 0.8620689655172414
   }
 }
