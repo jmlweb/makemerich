@@ -7,11 +7,62 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,480.41 |
 | Total Return | -10.39% |
-| Days Active | 122 |
+| Days Active | 123 |
 
 ---
 
 ## Daily Log
+
+### Day 122 — June 15, 2026 21:30 CET
+
+**Balance:** €4,480.41 | **Total Return:** -10.4%
+**Day P&L:** +€0.00 (+0.0%) vs Day 121 (€4,480.41)
+
+**Prices at close:**
+- 4GLD: €117.21 (+2.93% 24h) — stop €105.88
+- XEON: €149.37 (+0.01% 24h)
+- EQQQ: €626.60 (+2.59% 24h) — stop €508.78
+- ITX: €55.94 (+-0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8630
+- SP500: 7,431.46 (+2.26%)
+- NASDAQ: 25,888.84 (+2.86%)
+- GOLD: 4,328.30 (+2.11%)
+- IBEX35: 18,764.40 (+0.00%)
+- EUROSTOXX50: 6,187.63 (+-0.00%)
+- DAX: 24,635.30 (+1.76%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,266.88 | 50.6% | +19.4% | +2.59% |
+| ITX | €1,093.92 | 24.4% | +4.6% | +-0.00% |
+| XEON | €452.74 | 10.1% | +6.3% | +0.01% |
+| 4GLD | €441.93 | 9.9% | -5.9% | +2.93% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.53% vs SMA50, VIX 17.68)
+- BUY: ALV
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, SIE, AIR, NOVO, TTE
+- SELL: MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.7% away)
+- EQQQ: stop EUR 508.78 (18.8% away)
+- ITX: stop EUR 50.63 (9.5% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Strong global risk-on session — SP500 +2.26%, NASDAQ +2.86%, GOLD +2.11% — drove EQQQ and 4GLD higher while ITX and XEON stayed flat. Portfolio lags the market gain because XEON is a money-market proxy and ITX is range-bound, diluting beta exposure. Quant signals flag ALV as new BUY but available cash is only €224.94 (5%), limiting actionable size.
+
+**HOLD — Las posiciones actuales se benefician del momentum alcista y con solo €224.94 en caja no hay capital suficiente para una entrada significativa en ALV.**
+
+---
+
 
 ### Day 121 — June 14, 2026 21:30 CET
 
