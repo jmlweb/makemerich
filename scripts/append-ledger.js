@@ -45,6 +45,10 @@ function main() {
   // Read current LEDGER
   let ledger = fs.readFileSync(LEDGER_FILE, "utf8");
 
+  // Extract day number from new entry (e.g. "### Day 122")
+  const dayMatch = entry.match(/^### Day (\d+)/m);
+  const dayHeader = dayMatch ? `### Day ${dayMatch[1]}` : null;
+
   // Find insertion point: right after "## Daily Log\n"
   const marker = "## Daily Log";
   const markerIdx = ledger.indexOf(marker);
@@ -53,17 +57,40 @@ function main() {
     process.exit(1);
   }
 
-  // Find the end of the marker line (after the newline)
   const afterMarker = ledger.indexOf("\n", markerIdx);
   if (afterMarker === -1) {
     console.error("ERROR: unexpected LEDGER format");
     process.exit(1);
   }
 
-  // Insert: marker line + blank + new entry + blank + rest
-  const before = ledger.slice(0, afterMarker + 1);
-  const after = ledger.slice(afterMarker + 1);
-  ledger = before + "\n" + entry + "\n\n" + after;
+  // If same-day entry exists, replace it (keep only latest)
+  if (dayHeader) {
+    const existingIdx = ledger.indexOf(dayHeader, afterMarker);
+    if (existingIdx !== -1) {
+      // Find the end of the existing entry (next ### or end of file)
+      const nextEntryMatch = ledger.slice(existingIdx + dayHeader.length).match(/\n### Day \d+/);
+      const entryEnd = nextEntryMatch
+        ? existingIdx + dayHeader.length + nextEntryMatch.index
+        : ledger.length;
+      // Remove old entry, insert new one in its place
+      const beforeOld = ledger.slice(0, existingIdx);
+      const afterOld = ledger.slice(entryEnd);
+      ledger = beforeOld + entry + "\n\n" + afterOld.replace(/^\n+/, "");
+      console.log(`LEDGER.md updated — replaced existing ${dayHeader} entry`);
+    } else {
+      // No existing entry — insert at top
+      const before = ledger.slice(0, afterMarker + 1);
+      const after = ledger.slice(afterMarker + 1);
+      ledger = before + "\n" + entry + "\n\n" + after;
+      console.log("LEDGER.md updated — entry inserted at top of Daily Log");
+    }
+  } else {
+    // Fallback: can't parse day number, insert at top
+    const before = ledger.slice(0, afterMarker + 1);
+    const after = ledger.slice(afterMarker + 1);
+    ledger = before + "\n" + entry + "\n\n" + after;
+    console.log("LEDGER.md updated — entry inserted at top of Daily Log (no day header found)");
+  }
 
   // Update Summary table with current portfolio data
   if (fs.existsSync(PORTFOLIO_FILE)) {
