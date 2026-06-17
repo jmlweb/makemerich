@@ -7,11 +7,60 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,526.62 |
 | Total Return | -9.47% |
-| Days Active | 124 |
+| Days Active | 125 |
 
 ---
 
 ## Daily Log
+
+### Day 124 — June 17, 2026 21:30 CET
+
+**Balance:** €4,526.62 | **Total Return:** -9.5%
+**Day P&L:** +€0.00 (+0.0%) vs Day 123 (€4,526.62)
+
+**Prices at close:**
+- 4GLD: €119.87 (-0.66% 24h) — stop €105.88
+- XEON: €149.37 (+0.00% 24h)
+- EQQQ: €636.60 (-0.92% 24h) — stop €508.78
+- ITX: €55.94 (+-0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,511.35 (+1.08%)
+- NASDAQ: 26,376.34 (+1.88%)
+- GOLD: 4,348.60 (+0.41%)
+- IBEX35: 19,163.60 (+-0.00%)
+- EUROSTOXX50: 6,257.42 (+-0.00%)
+- DAX: 24,910.41 (+0.07%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,303.06 | 50.9% | +21.4% | -0.92% |
+| ITX | €1,093.92 | 24.2% | +4.6% | +-0.00% |
+| XEON | €452.75 | 10.0% | +6.3% | +0.00% |
+| 4GLD | €451.96 | 10.0% | -3.8% | -0.66% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.10% vs SMA50, VIX 16.41)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, ALV, TTE
+- SELL: SAP, MC, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (11.7% away)
+- EQQQ: stop EUR 508.78 (20.1% away)
+- ITX: stop EUR 50.63 (9.5% away)
+
+**Analysis:**
+US markets closed strong (SP500 +1.08%, NASDAQ +1.88%) with RISK-ON regime intact (VIX 16.41), but European indices flat suggesting divergence. Portfolio unchanged on the day; EQQQ remains dominant at 50.9% with +21.4% gain from entry, while 4GLD continues lagging (-3.8% entry, -0.66% today) though stop at 11.7% away provides adequate buffer. Quant signals confirm HOLD across all current holdings with no actionable triggers near current prices.
+
+**HOLD — todas las señales cuantitativas confirman mantener posiciones y el régimen de mercado RISK-ON respalda la cartera actual sin señales de salida inminentes.**
+
+---
+
 
 ### Day 123 — June 16, 2026 21:30 CET
 
@@ -26,9 +75,9 @@
 
 **Market context:**
 - EUR/USD: 0.8620
-- SP500: 7,537.39 (+1.43%)
-- NASDAQ: 26,527.23 (+2.47%)
-- GOLD: 4,345.90 (+0.41%)
+- SP500: 7,522.61 (+1.23%)
+- NASDAQ: 26,473.65 (+2.26%)
+- GOLD: 4,360.10 (+0.74%)
 - IBEX35: 19,163.60 (+0.69%)
 - EUROSTOXX50: 6,257.42 (+0.45%)
 - DAX: 24,910.41 (+1.12%)
@@ -55,9 +104,9 @@
 - ITX: stop EUR 50.63 (9.5% away)
 
 **Analysis:**
-Strong risk-on session — NASDAQ +2.47%, SP500 +1.43% lifted EQQQ +1.60%, while 4GLD caught renewed gold momentum (+2.27%). ITX lagged at -1.24%, diverging from positive macro, but all stops remain well clear (9.5–20.1% away). Quant regime confirms RISK-ON with low VIX (16.15) and SP500 comfortably above SMA50.
+US markets led a broad risk-on session (SP500 +1.23%, NASDAQ +2.26%) while European indices posted modest gains; gold extended its rally with XEON flat. Portfolio underperformed its benchmark peers as ITX drag (-1.24%) and XEON flatness offset EQQQ (+1.60%) and 4GLD (+2.27%) gains, producing a -€38.05 day despite favorable macro conditions. Quant regime remains RISK-ON with all held positions signaled HOLD and no actionable entry triggers identified.
 
-**HOLD — las señales cuantitativas confirman mantener todas las posiciones con el régimen en RISK-ON y sin ninguna alerta cercana a activarse.**
+**HOLD — El régimen cuantitativo confirma mercado en modo riesgo y todas las posiciones actuales mantienen señal de HOLD sin catalizadores de entrada o salida inminentes.**
 
 ---
 
