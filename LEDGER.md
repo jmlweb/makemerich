@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,526.74 |
-| Total Return | -9.47% |
+| Current Balance | €4,524.65 |
+| Total Return | -9.51% |
 | Days Active | 125 |
 
 ---
@@ -15,49 +15,49 @@
 
 ### Day 124 — June 17, 2026 21:30 CET
 
-**Balance:** €4,526.74 | **Total Return:** -9.5%
-**Day P&L:** +€0.12 (+0.0%) vs Day 123 (€4,526.62)
+**Balance:** €4,524.65 | **Total Return:** -9.5%
+**Day P&L:** €1.97 (-0.0%) vs Day 123 (€4,526.62)
 
 **Prices at close:**
-- 4GLD: €120.04 (-0.52% 24h) — stop €105.88
-- XEON: €149.38 (+0.00% 24h)
-- EQQQ: €635.80 (-1.04% 24h) — stop €508.78
-- ITX: €56.06 (+0.21% 24h) — stop €50.63
+- 4GLD: €120.08 (-0.49% 24h) — stop €105.88
+- XEON: €149.38 (+0.01% 24h)
+- EQQQ: €635.50 (-1.09% 24h) — stop €508.78
+- ITX: €56.00 (+0.11% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8610
-- SP500: 7,511.35 (+1.08%)
-- NASDAQ: 26,376.34 (+1.88%)
-- GOLD: 4,346.70 (+0.36%)
-- IBEX35: 19,254.80 (+0.48%)
-- EUROSTOXX50: 6,284.39 (+0.43%)
-- DAX: 24,890.05 (-0.02%)
+- SP500: 7,520.68 (-0.44%)
+- NASDAQ: 26,376.34 (-1.15%)
+- GOLD: 4,351.90 (+0.48%)
+- IBEX35: 19,277.60 (+0.59%)
+- EUROSTOXX50: 6,278.13 (+0.33%)
+- DAX: 24,857.95 (-0.14%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,300.16 | 50.8% | +21.2% | -1.04% |
-| ITX | €1,096.26 | 24.2% | +4.9% | +0.21% |
-| XEON | €452.77 | 10.0% | +6.3% | +0.00% |
-| 4GLD | €452.60 | 10.0% | -3.6% | -0.52% |
+| EQQQ | €2,299.08 | 50.8% | +21.1% | -1.09% |
+| ITX | €1,095.09 | 24.2% | +4.8% | +0.11% |
+| XEON | €452.79 | 10.0% | +6.3% | +0.01% |
+| 4GLD | €452.75 | 10.0% | -3.6% | -0.49% |
 | CASH | €224.94 | 5.0% | — | — |
 
 **Trades today:** None.
 
 **Quantitative signals (generate-quant-signals.js):**
-- Market regime: RISK-ON (SP500 +3.10% vs SMA50, VIX 16.33)
+- Market regime: RISK-ON (SP500 +2.98% vs SMA50, VIX 16.33)
 - HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, SIE, AIR, NOVO, ALV, TTE, DTE
 - SELL: SAP, MC
 
 **Active alerts:**
 - 4GLD: stop EUR 105.88 (11.8% away)
-- EQQQ: stop EUR 508.78 (20.0% away)
-- ITX: stop EUR 50.63 (9.7% away)
+- EQQQ: stop EUR 508.78 (19.9% away)
+- ITX: stop EUR 50.63 (9.6% away)
 
 **Analysis:**
-US markets rallied strongly (SP500 +1.08%, NASDAQ +1.88%) while EQQQ shed -1.04% intraday — European close before US strength, suggesting EQQQ may recover. Quant regime is RISK-ON with all portfolio positions on HOLD; SAP and MC SELL signals are irrelevant as neither is held. All stops remain comfortably distant (9.7–20% below current prices).
+US tech led losses with NASDAQ -1.15% and SP500 -0.44%, dragging EQQQ down -1.09% as the largest portfolio position. European indices bucked the trend (IBEX +0.59%, EUROSTOXX +0.33%), supporting ITX's resilience. All stops remain far from current prices and quant regime stays RISK-ON.
 
-**HOLD — régimen RISK-ON confirmado, stops alejados y sin señales de entrada/salida para los activos en cartera.**
+**HOLD — señales cuantitativas confirman mantener todas las posiciones con stops holgados y sin catalizadores de cambio.**
 
 ---
 
