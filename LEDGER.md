@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,533.54 |
-| Total Return | -9.33% |
+| Current Balance | €4,547.54 |
+| Total Return | -9.05% |
 | Days Active | 126 |
 
 ---
@@ -15,53 +15,51 @@
 
 ### Day 125 — June 18, 2026 21:30 CET
 
-**Balance:** €4,533.54 | **Total Return:** -9.3%
-**Day P&L:** +€0.00 (+0.0%) vs Day 124 (€4,533.54)
+**Balance:** €4,547.54 | **Total Return:** -9.1%
+**Day P&L:** +€14.00 (+0.3%) vs Day 124 (€4,533.54)
 
 **Prices at close:**
-- 4GLD: €120.84 (+0.81% 24h) — stop €105.88
-- XEON: €149.37 (+-0.00% 24h)
-- EQQQ: €634.80 (-0.28% 24h) — stop €508.78
-- ITX: €56.44 (+-0.00% 24h) — stop €50.63
+- 4GLD: €119.49 (-0.32% 24h) — stop €105.88
+- XEON: €149.39 (+0.01% 24h)
+- EQQQ: €641.90 (+0.80% 24h) — stop €508.78
+- ITX: €56.10 (-0.64% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8660
 - SP500: 7,420.10 (-1.78%)
 - NASDAQ: 26,021.66 (-2.48%)
-- GOLD: 4,324.70 (-0.78%)
-- IBEX35: 19,421.90 (+0.00%)
-- EUROSTOXX50: 6,300.07 (+-0.00%)
-- DAX: 24,934.67 (+0.10%)
+- GOLD: 4,288.60 (-1.61%)
+- IBEX35: 19,356.60 (-0.34%)
+- EUROSTOXX50: 6,304.83 (+0.08%)
+- DAX: 24,947.27 (+0.15%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,296.55 | 50.7% | +21.0% | -0.28% |
-| ITX | €1,103.69 | 24.3% | +5.6% | +-0.00% |
-| 4GLD | €455.62 | 10.0% | -3.0% | +0.81% |
-| XEON | €452.74 | 10.0% | +6.3% | +-0.00% |
-| CASH | €224.94 | 5.0% | — | — |
+| EQQQ | €2,322.23 | 51.1% | +22.4% | +0.80% |
+| ITX | €1,097.05 | 24.1% | +4.9% | -0.64% |
+| XEON | €452.80 | 10.0% | +6.3% | +0.01% |
+| 4GLD | €450.53 | 9.9% | -4.1% | -0.32% |
+| CASH | €224.94 | 4.9% | — | — |
 
 **Trades today:** None.
 
 **Quantitative signals (generate-quant-signals.js):**
-- Market regime: RISK-ON (SP500 +1.63% vs SMA50, VIX 18.44)
+- Market regime: RISK-ON (SP500 +1.63% vs SMA50, VIX 17.05)
 - BUY: TTE
-- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, ASML, MC, SIE, AIR, NOVO, ALV, DTE
-- SELL: SAP
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (12.4% away)
-- EQQQ: stop EUR 508.78 (19.9% away)
-- ITX: stop EUR 50.63 (10.3% away)
+- 4GLD: stop EUR 105.88 (11.4% away)
+- EQQQ: stop EUR 508.78 (20.7% away)
+- ITX: stop EUR 50.63 (9.8% away)
 
 **Analysis:**
-US markets sold off sharply (SP500 -1.78%, NASDAQ -2.48%) while European indices closed flat or slightly positive, suggesting rotation rather than broad risk-off. Quant regime remains RISK-ON with VIX at 18.44, and all current holdings signal HOLD. With only 5% cash (€224), TTE BUY signal cannot be meaningfully acted upon without liquidating an existing position.
+US markets sold off sharply (SP500 -1.78%, NASDAQ -2.48%) while European indices held flat to slightly positive, suggesting divergence rather than broad risk-off. Portfolio gained +€14 on the day driven by EQQQ's +0.80% move, which held despite Nasdaq weakness — likely price timing lag. Quant regime stays RISK-ON with VIX at 17 and SP500 above SMA50, but cash is limited at €224.94 and two rule violations occurred this session.
 
-**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales y el efectivo disponible es insuficiente para abrir una nueva posición en TTE.**
+**HOLD — Con el efectivo limitado (4.9%) y la venta masiva en EE.UU. como señal de cautela, no se ejecutan nuevas posiciones aunque TTE muestre señal de compra.**
 
 ---
-
 
 ### Day 124 — June 17, 2026 21:30 CET
 
