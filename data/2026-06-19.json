@@ -2,14 +2,14 @@
   "date": "2026-06-19",
   "day": 126,
   "balance": {
-    "total": 4550.5,
+    "total": 4548.65,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -8.99,
+  "totalReturn": -9.03,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 116.98,
-      "value": 441.06,
-      "pnlPercent": -6.09,
-      "change24h": -3.194306521019529
+      "currentPriceEUR": 116.43,
+      "value": 438.99,
+      "pnlPercent": -6.53,
+      "change24h": -3.6494538232373355
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.41,
-      "value": 452.88,
-      "pnlPercent": 6.34,
-      "change24h": 0.029457841811377897
+      "currentPriceEUR": 149.433,
+      "value": 452.95,
+      "pnlPercent": 6.36,
+      "change24h": 0.04485625912187435
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 646.5,
-      "value": 2338.87,
-      "pnlPercent": 23.24,
-      "change24h": 1.843100189035924
+      "currentPriceEUR": 647.3,
+      "value": 2341.77,
+      "pnlPercent": 23.39,
+      "change24h": 1.9691241335853815
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 55.88,
-      "value": 1092.74,
-      "pnlPercent": 4.53,
-      "change24h": -1.0973451327433583
+      "currentPriceEUR": 55.74,
+      "value": 1090.01,
+      "pnlPercent": 4.26,
+      "change24h": -1.3451327433628284
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-19T13:30:08.586Z",
+    "generatedAt": "2026-06-19T16:00:08.243Z",
     "eurUsd": 0.8695652173913044
   }
 }
