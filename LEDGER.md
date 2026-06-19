@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,551.30 |
-| Total Return | -8.97% |
+| Current Balance | €4,550.50 |
+| Total Return | -8.99% |
 | Days Active | 127 |
 
 ---
@@ -15,31 +15,31 @@
 
 ### Day 126 — June 19, 2026 21:30 CET
 
-**Balance:** €4,551.30 | **Total Return:** -9.0%
-**Day P&L:** €7.86 (-0.2%) vs Day 125 (€4,559.16)
+**Balance:** €4,550.50 | **Total Return:** -9.0%
+**Day P&L:** €8.66 (-0.2%) vs Day 125 (€4,559.16)
 
 **Prices at close:**
-- 4GLD: €116.76 (-3.38% 24h) — stop €105.88
+- 4GLD: €116.98 (-3.19% 24h) — stop €105.88
 - XEON: €149.41 (+0.03% 24h)
-- EQQQ: €646.30 (+1.81% 24h) — stop €508.78
-- ITX: €56.00 (-0.88% 24h) — stop €50.63
+- EQQQ: €646.50 (+1.84% 24h) — stop €508.78
+- ITX: €55.88 (-1.10% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8720
 - SP500: 7,420.10 (-1.21%)
 - NASDAQ: 26,021.66 (-1.34%)
-- GOLD: 4,181.60 (-4.07%)
-- IBEX35: 19,425.40 (+0.11%)
-- EUROSTOXX50: 6,321.10 (-0.03%)
-- DAX: 25,095.78 (+0.65%)
+- GOLD: 4,182.40 (-4.05%)
+- IBEX35: 19,397.30 (-0.04%)
+- EUROSTOXX50: 6,317.60 (-0.09%)
+- DAX: 25,043.69 (+0.44%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,338.15 | 51.4% | +23.2% | +1.81% |
-| ITX | €1,095.09 | 24.1% | +4.8% | -0.88% |
-| XEON | €452.89 | 10.0% | +6.3% | +0.03% |
-| 4GLD | €440.23 | 9.7% | -6.3% | -3.38% |
+| EQQQ | €2,338.87 | 51.4% | +23.2% | +1.84% |
+| ITX | €1,092.74 | 24.0% | +4.5% | -1.10% |
+| XEON | €452.88 | 10.0% | +6.3% | +0.03% |
+| 4GLD | €441.06 | 9.7% | -6.1% | -3.19% |
 | CASH | €224.94 | 4.9% | — | — |
 
 **Trades today:** None.
@@ -50,14 +50,14 @@
 - HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (9.3% away)
+- 4GLD: stop EUR 105.88 (9.5% away)
 - EQQQ: stop EUR 508.78 (21.3% away)
-- ITX: stop EUR 50.63 (9.6% away)
+- ITX: stop EUR 50.63 (9.4% away)
 
 **Analysis:**
-Gold's sharp 4% intraday drop drags 4GLD to -6.3% from entry, though the position remains 9.3% above its stop — no action triggered. US equities retreated today but the regime stays RISK-ON (SP500 +1.63% vs SMA50), and EQQQ continues leading the portfolio at +23.2% from entry despite the NASDAQ dip. Quant signals flag VWCE as a BUY opportunity, but available cash (4.9%) is insufficient for a meaningful position without rebalancing.
+US markets sold off (SP500 -1.21%, NASDAQ -1.34%) while European indices held near flat; gold took a significant -4.05% hit, pressuring 4GLD further into negative territory at -6.1% from entry. EQQQ gained +1.84% despite NASDAQ weakness, likely driven by EUR/USD dynamics with euro at 0.8720. All stops remain distant (9-21%) and quant regime stays RISK-ON with no exit signals triggered.
 
-**HOLD — todos los activos siguen por encima de sus stops, el régimen de mercado es RISK-ON y no hay señales de venta activas en ninguna posición.**
+**HOLD — El portafolio aguanta bien con las posiciones actuales y ninguna alerta de stop se ha activado, por lo que no hay acción necesaria.**
 
 ---
 
