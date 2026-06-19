@@ -7,11 +7,60 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,559.16 |
 | Total Return | -8.82% |
-| Days Active | 126 |
+| Days Active | 127 |
 
 ---
 
 ## Daily Log
+
+### Day 126 — June 19, 2026 21:30 CET
+
+**Balance:** €4,559.16 | **Total Return:** -8.8%
+**Day P&L:** +€0.00 (+0.0%) vs Day 125 (€4,559.16)
+
+**Prices at close:**
+- 4GLD: €118.57 (-1.88% 24h) — stop €105.88
+- XEON: €149.39 (+0.02% 24h)
+- EQQQ: €643.90 (+1.43% 24h) — stop €508.78
+- ITX: €56.50 (+0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8720
+- SP500: 7,420.10 (-1.21%)
+- NASDAQ: 26,021.66 (-1.34%)
+- GOLD: 4,162.50 (-4.51%)
+- IBEX35: 19,404.10 (-0.09%)
+- EUROSTOXX50: 6,323.27 (+0.37%)
+- DAX: 25,026.80 (+0.37%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,329.47 | 51.1% | +22.7% | +1.43% |
+| ITX | €1,104.87 | 24.2% | +5.7% | +0.00% |
+| XEON | €452.83 | 9.9% | +6.3% | +0.02% |
+| 4GLD | €447.06 | 9.8% | -4.8% | -1.88% |
+| CASH | €224.94 | 4.9% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.63% vs SMA50, VIX 18.44)
+- BUY: TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.7% away)
+- EQQQ: stop EUR 508.78 (21.0% away)
+- ITX: stop EUR 50.63 (10.4% away)
+
+**Analysis:**
+US markets sold off (-1.2% SP500, -1.3% NASDAQ) while European indices held green (DAX +0.37%, EUROSTOXX50 +0.37%), suggesting rotation rather than broad risk-off. Gold dropped hard (-4.51%), pressuring 4GLD further into negative P{{ANALYSIS}}L (-4.8% from entry) though the stop at €105.88 remains 10.7% away. Quant regime stays RISK-ON with a BUY signal on TTE, but available cash (€224.94, 4.9%) is minimal for meaningful deployment.
+
+**HOLD — Las posiciones están alejadas de sus stops y el régimen cuantitativo sigue siendo RISK-ON, por lo que no hay razón para actuar con solo €224 en efectivo disponible.**
+
+---
+
 
 ### Day 125 — June 18, 2026 21:30 CET
 
@@ -26,9 +75,9 @@
 
 **Market context:**
 - EUR/USD: 0.8660
-- SP500: 7,492.48 (-0.25%)
-- NASDAQ: 26,374.10 (-0.01%)
-- GOLD: 4,246.60 (-2.58%)
+- SP500: 7,490.09 (-0.28%)
+- NASDAQ: 26,440.32 (+0.24%)
+- GOLD: 4,224.50 (-3.08%)
 - IBEX35: 19,404.10 (-0.09%)
 - EUROSTOXX50: 6,323.27 (+0.37%)
 - DAX: 25,026.80 (+0.47%)
@@ -55,9 +104,9 @@
 - ITX: stop EUR 50.63 (10.4% away)
 
 **Analysis:**
-European indices outperformed US today (DAX +0.47%, EuroStoxx +0.37% vs SP500 -0.25%), confirming the RISK-ON regime while gold's 2.58% drop extends 4GLD's underperformance to -4.8% from entry. All three held positions remain well above stops, and the quant engine flags TTE as a new BUY, though only €224.94 cash is available.
+Mixed session with US equities diverging (NASDAQ +0.24% vs SP500 -0.28%) and European indices broadly positive; gold sold off sharply (-3.08%), pressuring the 4GLD position. Portfolio gained +0.6% driven by EQQQ's +1.15% move, which more than offset gold weakness. Market regime stays RISK-ON with SP500 holding above SMA50 and VIX at 17.05.
 
-**HOLD — Todas las posiciones actuales tienen señal de mantener y el efectivo disponible (€225) es insuficiente para abrir una posición relevante en TTE.**
+**HOLD — ninguna posición ha tocado stop, el régimen sigue siendo alcista y las señales cuantitativas no dan entrada en los activos actuales.**
 
 ---
 
