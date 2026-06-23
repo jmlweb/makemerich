@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,475.21 |
-| Total Return | -10.50% |
+| Current Balance | €4,486.73 |
+| Total Return | -10.27% |
 | Days Active | 131 |
 
 ---
@@ -15,31 +15,31 @@
 
 ### Day 130 — June 23, 2026 21:30 CET
 
-**Balance:** €4,475.21 | **Total Return:** -10.5%
-**Day P&L:** €66.92 (-1.5%) vs Day 129 (€4,542.13)
+**Balance:** €4,486.73 | **Total Return:** -10.3%
+**Day P&L:** €55.40 (-1.2%) vs Day 129 (€4,542.13)
 
 **Prices at close:**
-- 4GLD: €116.10 (-0.28% 24h) — stop €105.88
+- 4GLD: €116.75 (+0.27% 24h) — stop €105.88
 - XEON: €149.42 (-0.01% 24h)
-- EQQQ: €631.90 (-2.38% 24h) — stop €508.78
-- ITX: €54.90 (-0.47% 24h) — stop €50.63
+- EQQQ: €633.00 (-2.21% 24h) — stop €508.78
+- ITX: €55.16 (+-0.00% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8740
-- SP500: 7,359.74 (-1.88%)
-- NASDAQ: 26,166.60 (-1.32%)
-- GOLD: 4,125.10 (-1.36%)
-- IBEX35: 19,404.70 (-0.70%)
-- EUROSTOXX50: 6,229.48 (-1.30%)
-- DAX: 24,882.52 (-0.41%)
+- SP500: 7,388.17 (-1.50%)
+- NASDAQ: 25,729.96 (-2.97%)
+- GOLD: 4,152.80 (-0.70%)
+- IBEX35: 19,476.50 (-0.34%)
+- EUROSTOXX50: 6,230.55 (-1.28%)
+- DAX: 24,893.58 (-0.37%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,286.05 | 51.1% | +20.4% | -2.38% |
-| ITX | €1,073.58 | 24.0% | +2.7% | -0.47% |
-| XEON | €452.89 | 10.1% | +6.3% | -0.01% |
-| 4GLD | €437.74 | 9.8% | -6.8% | -0.28% |
+| EQQQ | €2,290.03 | 51.0% | +20.7% | -2.21% |
+| ITX | €1,078.66 | 24.0% | +3.2% | +-0.00% |
+| XEON | €452.90 | 10.1% | +6.3% | -0.01% |
+| 4GLD | €440.19 | 9.8% | -6.3% | +0.27% |
 | CASH | €224.94 | 5.0% | — | — |
 
 **Trades today:** None.
@@ -51,15 +51,15 @@
 - SELL: MC
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (8.8% away)
-- EQQQ: stop EUR 508.78 (19.5% away)
-- ITX: stop EUR 50.63 (7.8% away)
-- Portfolio drawdown: -10.5%
+- 4GLD: stop EUR 105.88 (9.3% away)
+- EQQQ: stop EUR 508.78 (19.6% away)
+- ITX: stop EUR 50.63 (8.2% away)
+- Portfolio drawdown: -10.3%
 
 **Analysis:**
-Broad risk-off session with SP500 down 1.88% and NASDAQ down 1.32%, pulling EQQQ hard (-2.38%) while gold also retreated (-1.36%). Portfolio shed €66.92 on the day but all stops remain well-cushioned, with EQQQ stop 19.5% away despite the drawdown. Quant signals flag ASML and SIE as BUY opportunities but no current holdings require action.
+US markets sold off sharply today (NASDAQ -2.97%, SP500 -1.50%), dragging EQQQ down 2.21% and generating a €55 day loss. Despite the drawdown, all three equity positions remain well above their stops (8-20% buffer), and the quant model still reads RISK-ON with no sell signal on current holdings. Portfolio drawdown at -10.3% is a soft alert but below any hard exit threshold.
 
-**HOLD — Todas las posiciones están dentro de tolerancia y los stops tienen margen suficiente para absorber la corrección actual sin intervención.**
+**HOLD — las señales cuantitativas confirman mantener todas las posiciones y los stops siguen lejos a pesar de la caída del mercado americano.**
 
 ---
 

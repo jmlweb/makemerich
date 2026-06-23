@@ -2,14 +2,14 @@
   "date": "2026-06-23",
   "day": 130,
   "balance": {
-    "total": 4475.21,
+    "total": 4486.73,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.5,
+  "totalReturn": -10.27,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 116.1,
-      "value": 437.74,
-      "pnlPercent": -6.79,
-      "change24h": -0.2834321051275552
+      "currentPriceEUR": 116.75,
+      "value": 440.19,
+      "pnlPercent": -6.27,
+      "change24h": 0.2748432534570069
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.415,
-      "value": 452.89,
+      "currentPriceEUR": 149.418,
+      "value": 452.9,
       "pnlPercent": 6.35,
-      "change24h": -0.012045532111381478
+      "change24h": -0.010037943426141721
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 631.9,
-      "value": 2286.05,
-      "pnlPercent": 20.45,
-      "change24h": -2.379113239610687
+      "currentPriceEUR": 633,
+      "value": 2290.03,
+      "pnlPercent": 20.66,
+      "change24h": -2.2091765796384917
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 54.9,
-      "value": 1073.58,
-      "pnlPercent": 2.69,
-      "change24h": -0.4713560551123967
+      "currentPriceEUR": 55.16,
+      "value": 1078.66,
+      "pnlPercent": 3.18,
+      "change24h": 0
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-23T13:30:11.171Z",
+    "generatedAt": "2026-06-23T16:00:18.785Z",
     "eurUsd": 0.8771929824561404
   }
 }
