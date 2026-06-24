@@ -7,11 +7,62 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,486.73 |
 | Total Return | -10.27% |
-| Days Active | 131 |
+| Days Active | 132 |
 
 ---
 
 ## Daily Log
+
+### Day 131 — June 24, 2026 21:30 CET
+
+**Balance:** €4,486.73 | **Total Return:** -10.3%
+**Day P&L:** +€0.00 (+0.0%) vs Day 130 (€4,486.73)
+
+**Prices at close:**
+- 4GLD: €116.75 (-0.73% 24h) — stop €105.88
+- XEON: €149.42 (-0.01% 24h)
+- EQQQ: €633.00 (-2.22% 24h) — stop €508.78
+- ITX: €55.16 (+-0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8780
+- SP500: 7,365.46 (-1.80%)
+- NASDAQ: 25,587.04 (-3.51%)
+- GOLD: 4,105.40 (-0.59%)
+- IBEX35: 19,476.50 (+0.00%)
+- EUROSTOXX50: 6,230.55 (+-0.00%)
+- DAX: 24,893.58 (-0.98%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,290.03 | 51.0% | +20.7% | -2.22% |
+| ITX | €1,078.66 | 24.0% | +3.2% | +-0.00% |
+| XEON | €452.90 | 10.1% | +6.3% | -0.01% |
+| 4GLD | €440.19 | 9.8% | -6.3% | -0.73% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.35% vs SMA50, VIX 19.49)
+- BUY: SIE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, AIR, NOVO, ALV, TTE, DTE
+- SELL: MC
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.3% away)
+- EQQQ: stop EUR 508.78 (19.6% away)
+- ITX: stop EUR 50.63 (8.2% away)
+- Portfolio drawdown: -10.3%
+
+**Analysis:**
+NASDAQ dropped -3.51% and SP500 -1.80% today, dragging EQQQ down -2.22% — broad US tech selloff likely macro/rate driven. Market regime remains technically RISK-ON (SP500 still above SMA50, VIX 19.49) but margin is thin. All positions remain well above stops (8-20% cushion), portfolio drawdown at -10.3% is the only active violation.
+
+**HOLD — todas las posiciones mantienen margen suficiente sobre sus stops y el régimen sigue siendo RISK-ON, por lo que no hay razón para actuar ante una corrección puntual.**
+
+---
+
 
 ### Day 130 — June 23, 2026 21:30 CET
 
@@ -26,9 +77,9 @@
 
 **Market context:**
 - EUR/USD: 0.8740
-- SP500: 7,388.17 (-1.50%)
-- NASDAQ: 25,729.96 (-2.97%)
-- GOLD: 4,152.80 (-0.70%)
+- SP500: 7,378.77 (-1.62%)
+- NASDAQ: 25,656.61 (-3.25%)
+- GOLD: 4,135.90 (-1.10%)
 - IBEX35: 19,476.50 (-0.34%)
 - EUROSTOXX50: 6,230.55 (-1.28%)
 - DAX: 24,893.58 (-0.37%)
@@ -57,9 +108,9 @@
 - Portfolio drawdown: -10.3%
 
 **Analysis:**
-US markets sold off sharply today (NASDAQ -2.97%, SP500 -1.50%), dragging EQQQ down 2.21% and generating a €55 day loss. Despite the drawdown, all three equity positions remain well above their stops (8-20% buffer), and the quant model still reads RISK-ON with no sell signal on current holdings. Portfolio drawdown at -10.3% is a soft alert but below any hard exit threshold.
+NASDAQ shed -3.25% and SP500 -1.62% in a broad US tech selloff, dragging EQQQ down -2.21% and accounting for most of the day's €55 loss; European indices held relatively firm (-0.34% to -1.28%), suggesting the damage is US-tech-specific rather than systemic. Gold retreated -1.10% despite the risk tone, pointing to profit-taking or rate pressure rather than a flight-to-safety regime shift. All stops remain safely distant (EQQQ 19.6%, ITX 8.2%, 4GLD 9.3%) and quant regime stays RISK-ON.
 
-**HOLD — las señales cuantitativas confirman mantener todas las posiciones y los stops siguen lejos a pesar de la caída del mercado americano.**
+**HOLD — las caídas son principalmente técnicas en EE.UU. y los stops están suficientemente lejos para aguantar la volatilidad sin acción.**
 
 ---
 
