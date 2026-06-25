@@ -2,14 +2,14 @@
   "date": "2026-06-25",
   "day": 132,
   "balance": {
-    "total": 4494.57,
+    "total": 4519.55,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.11,
+  "totalReturn": -9.61,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 113.5,
-      "value": 427.94,
-      "pnlPercent": -8.88,
-      "change24h": -2.7837259100642395
+      "currentPriceEUR": 112.81,
+      "value": 425.34,
+      "pnlPercent": -9.43,
+      "change24h": -3.374732334047107
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.421,
-      "value": 452.91,
-      "pnlPercent": 6.35,
-      "change24h": 0.0020077902260677446
+      "currentPriceEUR": 149.443,
+      "value": 452.98,
+      "pnlPercent": 6.37,
+      "change24h": 0.016731585217313633
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 635.2,
-      "value": 2297.99,
-      "pnlPercent": 21.08,
-      "change24h": 0.3475513428120135
+      "currentPriceEUR": 641.4,
+      "value": 2320.42,
+      "pnlPercent": 22.26,
+      "change24h": 1.327014218009475
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 55.78,
-      "value": 1090.79,
-      "pnlPercent": 4.34,
-      "change24h": 0
+      "currentPriceEUR": 56.04,
+      "value": 1095.87,
+      "pnlPercent": 4.83,
+      "change24h": 0.4661168877733919
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-25T07:00:23.345Z",
+    "generatedAt": "2026-06-25T10:00:19.960Z",
     "eurUsd": 0.8771929824561404
   }
 }
