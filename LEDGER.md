@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,535.37 |
-| Total Return | -9.29% |
+| Current Balance | €4,490.97 |
+| Total Return | -10.18% |
 | Days Active | 133 |
 
 ---
@@ -15,31 +15,31 @@
 
 ### Day 132 — June 25, 2026 21:30 CET
 
-**Balance:** €4,535.37 | **Total Return:** -9.3%
-**Day P&L:** +€40.80 (+0.9%) vs Day 131 (€4,494.57)
+**Balance:** €4,490.97 | **Total Return:** -10.2%
+**Day P&L:** €3.60 (-0.1%) vs Day 131 (€4,494.57)
 
 **Prices at close:**
-- 4GLD: €114.17 (-2.21% 24h) — stop €105.88
-- XEON: €149.46 (+0.03% 24h)
-- EQQQ: €642.50 (+1.50% 24h) — stop €508.78
-- ITX: €56.38 (+1.04% 24h) — stop €50.63
+- 4GLD: €113.68 (-2.63% 24h) — stop €105.88
+- XEON: €149.44 (+0.01% 24h)
+- EQQQ: €630.00 (-0.47% 24h) — stop €508.78
+- ITX: €56.52 (+1.33% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8810
-- SP500: 7,404.91 (+0.54%)
-- NASDAQ: 25,476.64 (-0.43%)
-- GOLD: 4,039.00 (+1.22%)
-- IBEX35: 19,476.00 (+0.45%)
-- EUROSTOXX50: 6,272.32 (+0.93%)
-- DAX: 24,988.10 (+0.38%)
+- SP500: 7,369.41 (+0.05%)
+- NASDAQ: 25,364.75 (-0.87%)
+- GOLD: 4,047.20 (+1.43%)
+- IBEX35: 19,513.60 (+0.64%)
+- EUROSTOXX50: 6,267.53 (+0.85%)
+- DAX: 24,994.83 (+0.41%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,324.40 | 51.3% | +22.5% | +1.50% |
-| ITX | €1,102.52 | 24.3% | +5.5% | +1.04% |
-| XEON | €453.04 | 10.0% | +6.4% | +0.03% |
-| 4GLD | €430.47 | 9.5% | -8.3% | -2.21% |
+| EQQQ | €2,279.18 | 50.8% | +20.1% | -0.47% |
+| ITX | €1,105.26 | 24.6% | +5.7% | +1.33% |
+| XEON | €452.97 | 10.1% | +6.4% | +0.01% |
+| 4GLD | €428.62 | 9.5% | -8.7% | -2.63% |
 | CASH | €224.94 | 5.0% | — | — |
 
 **Trades today:** None.
@@ -50,14 +50,15 @@
 - HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (7.3% away)
-- EQQQ: stop EUR 508.78 (20.8% away)
-- ITX: stop EUR 50.63 (10.2% away)
+- 4GLD: stop EUR 105.88 (6.9% away)
+- EQQQ: stop EUR 508.78 (19.2% away)
+- ITX: stop EUR 50.63 (10.4% away)
+- Portfolio drawdown: -10.2%
 
 **Analysis:**
-European and US indices closed broadly positive, but NASDAQ slipped -0.43% while SP500 gained, signaling tech rotation pressure; EQQQ's +1.50% gain likely driven by EUR/USD tailwind (euro at 0.88 vs USD). 4GLD fell -2.21% despite gold spot rising +1.22%, suggesting ETC-specific drag or spread widening worth watching. Portfolio delivered +0.9% on the day with EQQQ (51% weight) carrying performance; all stops remain comfortably distant.
+Gold pulled back 2.63% while European equities and IBEX held gains; NASDAQ weakness dragged EQQQ slightly lower but the broader regime remains risk-on with SP500 above SMA50. ITX continues recovering (+1.33%), partially offsetting 4GLD drag. Portfolio drawdown stays at -10.2%, within tolerance but bears watching given quant BUY signal on TTE suggesting rotation opportunity.
 
-**HOLD — Todas las posiciones están por encima de sus stops, el régimen es RISK-ON y no hay señal de compra para ningún activo en cartera.**
+**HOLD — Las posiciones actuales mantienen tendencias intactas y los stops siguen alejados, por lo que no hay motivo para actuar hasta que el mercado ofrezca una señal más clara.**
 
 ---
 
