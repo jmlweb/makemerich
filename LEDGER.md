@@ -7,11 +7,61 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,494.57 |
 | Total Return | -10.11% |
-| Days Active | 132 |
+| Days Active | 133 |
 
 ---
 
 ## Daily Log
+
+### Day 132 — June 25, 2026 21:30 CET
+
+**Balance:** €4,494.57 | **Total Return:** -10.1%
+**Day P&L:** +€0.00 (+0.0%) vs Day 131 (€4,494.57)
+
+**Prices at close:**
+- 4GLD: €113.50 (-2.78% 24h) — stop €105.88
+- XEON: €149.42 (+0.00% 24h)
+- EQQQ: €635.20 (+0.35% 24h) — stop €508.78
+- ITX: €55.78 (+-0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8810
+- SP500: 7,358.22 (-1.53%)
+- NASDAQ: 25,476.64 (-2.64%)
+- GOLD: 3,998.10 (+0.20%)
+- IBEX35: 19,389.50 (+0.00%)
+- EUROSTOXX50: 6,214.70 (+0.00%)
+- DAX: 24,740.36 (-0.62%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,297.99 | 51.1% | +21.1% | +0.35% |
+| ITX | €1,090.79 | 24.3% | +4.3% | +-0.00% |
+| XEON | €452.91 | 10.1% | +6.3% | +0.00% |
+| 4GLD | €427.94 | 9.5% | -8.9% | -2.78% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.13% vs SMA50, VIX 18.63)
+- BUY: ITX, TTE
+- HOLD: 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (6.7% away)
+- EQQQ: stop EUR 508.78 (19.9% away)
+- ITX: stop EUR 50.63 (9.2% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+US markets sold off sharply (SP500 -1.53%, NASDAQ -2.64%) while gold edged up +0.20%, pressuring 4GLD which dropped -2.78% and now sits 6.7% from its stop. Portfolio drawdown hits -10.1%, triggering the violation threshold, though European markets were flat. Quant regime remains RISK-ON with ITX flagged as BUY, but no positions changed intraday.
+
+**HOLD — La cartera mantiene posiciones sin cambios; el drawdown del -10.1% activa la alerta pero ningún stop ha sido tocado, y el régimen cuantitativo sigue en RISK-ON.**
+
+---
+
 
 ### Day 131 — June 24, 2026 21:30 CET
 
@@ -26,9 +76,9 @@
 
 **Market context:**
 - EUR/USD: 0.8780
-- SP500: 7,410.16 (-0.84%)
-- NASDAQ: 25,756.03 (-1.57%)
-- GOLD: 4,029.90 (-2.42%)
+- SP500: 7,348.82 (-1.66%)
+- NASDAQ: 25,428.82 (-2.82%)
+- GOLD: 3,994.30 (-3.28%)
 - IBEX35: 19,389.50 (-0.45%)
 - EUROSTOXX50: 6,214.70 (-0.25%)
 - DAX: 24,740.36 (-1.59%)
@@ -56,9 +106,9 @@
 - Portfolio drawdown: -10.1%
 
 **Analysis:**
-Broad risk-off session with NASDAQ -1.57%, DAX -1.59%, and GOLD -2.42%, yet quant regime holds RISK-ON as SP500 remains above SMA50 and ITX showed relative strength (+1.12%) against the selloff. 4GLD continues to underperform (-8.9% from entry, -3.49% today) and is the portfolio's weakest link. Portfolio drawdown at exactly -10.1% flags a violation, but all stops remain safely distant.
+Major indices sold off sharply (SP500 -1.66%, NASDAQ -2.82%, Gold -3.28%) yet portfolio gained +0.2% on ITX strength, suggesting relative resilience. Quant model holds RISK-ON regime despite the broad selloff, with all stops comfortably distant (4GLD 6.7%, ITX 9.2%, EQQQ 19.9%). 4GLD remains the weakest position at -8.9% from entry and accelerating downside today.
 
-**HOLD — El régimen cuantitativo se mantiene RISK-ON y las posiciones actuales están por encima de sus stops, por lo que no hay motivo para actuar en una jornada de corrección generalizada.**
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales; los stops están suficientemente alejados y no hay señales de venta activadas.**
 
 ---
 

@@ -1,115 +1,115 @@
 {
-  "fetchedAt": "2026-06-24T16:00:07.202Z",
-  "eurUsd": 0.878,
+  "fetchedAt": "2026-06-25T07:00:05.912Z",
+  "eurUsd": 0.881,
   "prices": {
     "4GLD": {
-      "priceUSD": 129.27107061503418,
+      "priceUSD": 128.83087400681043,
       "priceEUR": 113.5,
-      "change": "-3.49"
+      "change": "-2.78"
     },
     "XEON": {
-      "priceUSD": 170.18337727679207,
+      "priceUSD": 169.60386520888017,
       "priceEUR": 149.42100524902344,
-      "change": "-0.01"
+      "change": "0.00"
     },
     "EQQQ": {
-      "priceUSD": 723.4624284818124,
+      "priceUSD": 720.9988787821013,
       "priceEUR": 635.2000122070312,
-      "change": "-1.88"
+      "change": "0.35"
     },
     "ITX": {
-      "priceUSD": 63.53075031810578,
+      "priceUSD": 63.3144140514153,
       "priceEUR": 55.779998779296875,
-      "change": "1.12"
+      "change": "-0.00"
     },
     "BTC": {
-      "priceUSD": 60202,
-      "priceEUR": 52857.356,
-      "change": "-3.94"
+      "priceUSD": 61624.91015625,
+      "priceEUR": 54291.54584765625,
+      "change": "1.03"
     },
     "SOL": {
-      "priceUSD": 67.22000122070312,
-      "priceEUR": 59.01916107177735,
-      "change": "-3.48"
+      "priceUSD": 69.3499984741211,
+      "priceEUR": 61.097348655700685,
+      "change": "2.01"
     },
     "SXR8": {
-      "priceUSD": 801.799522173975,
+      "priceUSD": 799.0692173311578,
       "priceEUR": 703.97998046875,
-      "change": "0.05"
+      "change": "0.85"
     },
     "VWCE": {
-      "priceUSD": 187.69932010450776,
+      "priceUSD": 187.06016237429944,
       "priceEUR": 164.8000030517578,
-      "change": "-0.75"
+      "change": "0.54"
     },
     "SAP": {
-      "priceUSD": 153.59908953343003,
+      "priceUSD": 153.07605063604038,
       "priceEUR": 134.86000061035156,
-      "change": "2.00"
+      "change": "0.25"
     },
     "ASML": {
-      "priceUSD": 1769.7039280502563,
+      "priceUSD": 1763.6776944700623,
       "priceEUR": 1553.800048828125,
-      "change": "-0.45"
+      "change": "0.00"
     },
     "MC": {
-      "priceUSD": 561.503416856492,
+      "priceUSD": 559.5913734392735,
       "priceEUR": 493,
-      "change": "1.92"
+      "change": "0.00"
     },
     "SIE": {
-      "priceUSD": 309.1116103604606,
+      "priceUSD": 308.05901690860884,
       "priceEUR": 271.3999938964844,
-      "change": "-2.72"
+      "change": "-0.31"
     },
     "AIR": {
-      "priceUSD": 222.20957414979,
+      "priceUSD": 221.45290136607903,
       "priceEUR": 195.10000610351562,
-      "change": "0.95"
+      "change": "0.00"
     },
     "NOVO": {
-      "priceUSD": 47.56575506619492,
-      "priceEUR": 41.76273294811914,
-      "change": "1.23"
+      "priceUSD": 47.50268738714403,
+      "priceEUR": 41.84986758807389,
+      "change": "0.21"
     },
     "ALV": {
-      "priceUSD": 460.70615034168566,
+      "priceUSD": 459.1373439273553,
       "priceEUR": 404.5,
-      "change": "-0.52"
+      "change": "-0.17"
     },
     "TTE": {
-      "priceUSD": 79.16856735333766,
+      "priceUSD": 78.89898085837737,
       "priceEUR": 69.51000213623047,
-      "change": "-1.84"
+      "change": "0.00"
     },
     "DTE": {
-      "priceUSD": 30.11389582466699,
+      "priceUSD": 30.011351343992754,
       "priceEUR": 26.440000534057617,
-      "change": "1.23"
+      "change": "0.69"
     },
     "SP500": {
-      "value": 7410.16015625,
-      "change": "-0.84"
+      "value": 7358.22021484375,
+      "change": "-1.53"
     },
     "NASDAQ": {
-      "value": 25756.029296875,
-      "change": "-1.57"
+      "value": 25476.640625,
+      "change": "-2.64"
     },
     "GOLD": {
-      "value": 4029.89990234375,
-      "change": "-2.42"
+      "value": 3998.10009765625,
+      "change": "0.20"
     },
     "IBEX35": {
       "value": 19389.5,
-      "change": "-0.45"
+      "change": "0.00"
     },
     "EUROSTOXX50": {
       "value": 6214.7001953125,
-      "change": "-0.25"
+      "change": "0.00"
     },
     "DAX": {
       "value": 24740.359375,
-      "change": "-1.59"
+      "change": "-0.62"
     }
   }
 }
