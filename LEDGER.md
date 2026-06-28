@@ -7,11 +7,61 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,480.24 |
 | Total Return | -10.40% |
-| Days Active | 135 |
+| Days Active | 136 |
 
 ---
 
 ## Daily Log
+
+### Day 135 — June 28, 2026 21:30 CET
+
+**Balance:** €4,480.24 | **Total Return:** -10.4%
+**Day P&L:** +€0.00 (+0.0%) vs Day 134 (€4,480.24)
+
+**Prices at close:**
+- 4GLD: €115.13 (+1.44% 24h) — stop €105.88
+- XEON: €149.48 (+0.04% 24h)
+- EQQQ: €628.30 (-1.09% 24h) — stop €508.78
+- ITX: €56.00 (-0.92% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8780
+- SP500: 7,354.02 (-0.06%)
+- NASDAQ: 25,297.62 (-0.70%)
+- GOLD: 4,096.30 (+0.43%)
+- IBEX35: 19,425.30 (-0.45%)
+- EUROSTOXX50: 6,221.55 (-0.73%)
+- DAX: 24,671.22 (-0.28%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,273.03 | 50.7% | +19.8% | -1.09% |
+| ITX | €1,095.09 | 24.4% | +4.8% | -0.92% |
+| XEON | €453.09 | 10.1% | +6.4% | +0.04% |
+| 4GLD | €434.09 | 9.7% | -7.6% | +1.44% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-OFF (SP500 -0.13% vs SMA50, VIX 18.41)
+- BUY: ITX, TTE
+- HOLD: 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (8.0% away)
+- EQQQ: stop EUR 508.78 (19.0% away)
+- ITX: stop EUR 50.63 (9.6% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+European and US indices closed broadly lower with tech leading weakness (NASDAQ -0.70%), while gold gained +0.43% confirming continued safe-haven demand consistent with RISK-OFF regime (SP500 below SMA50, VIX 18.41). EQQQ's -1.09% session loss is the primary concern given its 50.7% portfolio weight, though the 19% stop buffer remains comfortable. Weekend session with no market access; quant signals confirm HOLD across all current positions.
+
+**HOLD — Fin de semana sin mercado abierto, régimen RISK-OFF activo y señales cuantitativas confirman mantener posiciones sin cambios.**
+
+---
+
 
 ### Day 134 — June 27, 2026 21:30 CET
 
