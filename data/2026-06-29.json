@@ -2,14 +2,14 @@
   "date": "2026-06-29",
   "day": 136,
   "balance": {
-    "total": 4467.08,
+    "total": 4467.39,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.66,
+  "totalReturn": -10.65,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 114.06,
-      "value": 430.05,
-      "pnlPercent": -8.43,
-      "change24h": 0.3342716396903549
+      "currentPriceEUR": 114.12,
+      "value": 430.28,
+      "pnlPercent": -8.38,
+      "change24h": 0.38705137227304515
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.482,
+      "currentPriceEUR": 149.481,
       "value": 453.09,
       "pnlPercent": 6.39,
-      "change24h": 0.028104925053534253
+      "change24h": 0.027435760171304082
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 630.1,
-      "value": 2279.54,
-      "pnlPercent": 20.11,
-      "change24h": 0.015873015873019484
+      "currentPriceEUR": 629.8,
+      "value": 2278.46,
+      "pnlPercent": 20.05,
+      "change24h": -0.03174603174603897
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 55.2,
-      "value": 1079.45,
-      "pnlPercent": 3.25,
-      "change24h": -1.4285714285714235
+      "currentPriceEUR": 55.26,
+      "value": 1080.62,
+      "pnlPercent": 3.37,
+      "change24h": -1.321428571428575
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-29T10:00:17.789Z",
+    "generatedAt": "2026-06-29T13:30:08.791Z",
     "eurUsd": 0.8771929824561404
   }
 }
