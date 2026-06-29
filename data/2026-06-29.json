@@ -2,14 +2,14 @@
   "date": "2026-06-29",
   "day": 136,
   "balance": {
-    "total": 4480.24,
+    "total": 4467.08,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.4,
+  "totalReturn": -10.66,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 115.13,
-      "value": 434.09,
-      "pnlPercent": -7.57,
-      "change24h": 1.2755102040816226
+      "currentPriceEUR": 114.06,
+      "value": 430.05,
+      "pnlPercent": -8.43,
+      "change24h": 0.3342716396903549
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.481,
+      "currentPriceEUR": 149.482,
       "value": 453.09,
       "pnlPercent": 6.39,
-      "change24h": 0.027435760171304082
+      "change24h": 0.028104925053534253
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 628.3,
-      "value": 2273.03,
-      "pnlPercent": 19.77,
-      "change24h": -0.26984126984127704
+      "currentPriceEUR": 630.1,
+      "value": 2279.54,
+      "pnlPercent": 20.11,
+      "change24h": 0.015873015873019484
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 56,
-      "value": 1095.09,
-      "pnlPercent": 4.75,
-      "change24h": 0
+      "currentPriceEUR": 55.2,
+      "value": 1079.45,
+      "pnlPercent": 3.25,
+      "change24h": -1.4285714285714235
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-29T07:00:22.529Z",
+    "generatedAt": "2026-06-29T10:00:17.789Z",
     "eurUsd": 0.8771929824561404
   }
 }
