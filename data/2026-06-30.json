@@ -2,14 +2,14 @@
   "date": "2026-06-30",
   "day": 137,
   "balance": {
-    "total": 4470.81,
+    "total": 4502.46,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.58,
+  "totalReturn": -9.95,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 113.23,
-      "value": 426.92,
-      "pnlPercent": -9.1,
-      "change24h": -1.6503083470858955
+      "currentPriceEUR": 113.35,
+      "value": 427.37,
+      "pnlPercent": -9,
+      "change24h": -1.5460783462173207
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.5,
-      "value": 453.15,
+      "currentPriceEUR": 149.51,
+      "value": 453.18,
       "pnlPercent": 6.41,
-      "change24h": 0.012710645500100653
+      "change24h": 0.019400458921198255
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 630.9,
-      "value": 2282.44,
-      "pnlPercent": 20.26,
-      "change24h": 0.41381505650167477
+      "currentPriceEUR": 639.3,
+      "value": 2312.83,
+      "pnlPercent": 21.86,
+      "change24h": 1.7507560082763014
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 55.4,
-      "value": 1083.36,
-      "pnlPercent": 3.63,
-      "change24h": 0
+      "currentPriceEUR": 55.44,
+      "value": 1084.14,
+      "pnlPercent": 3.7,
+      "change24h": 0.07220216606498042
     }
   ],
   "metadata": {
-    "generatedAt": "2026-06-30T07:00:22.365Z",
+    "generatedAt": "2026-06-30T10:00:21.067Z",
     "eurUsd": 0.8771929824561404
   }
 }
