@@ -7,11 +7,61 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,470.81 |
 | Total Return | -10.58% |
-| Days Active | 137 |
+| Days Active | 138 |
 
 ---
 
 ## Daily Log
+
+### Day 137 — June 30, 2026 21:30 CET
+
+**Balance:** €4,470.81 | **Total Return:** -10.6%
+**Day P&L:** +€0.00 (+0.0%) vs Day 136 (€4,470.81)
+
+**Prices at close:**
+- 4GLD: €113.23 (-1.65% 24h) — stop €105.88
+- XEON: €149.50 (+0.01% 24h)
+- EQQQ: €630.90 (+0.41% 24h) — stop €508.78
+- ITX: €55.40 (+0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8760
+- SP500: 7,440.43 (+1.13%)
+- NASDAQ: 25,820.14 (+1.82%)
+- GOLD: 4,043.60 (+0.53%)
+- IBEX35: 19,387.40 (+0.00%)
+- EUROSTOXX50: 6,231.63 (+-0.00%)
+- DAX: 24,626.89 (-0.18%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,282.44 | 51.1% | +20.3% | +0.41% |
+| ITX | €1,083.36 | 24.2% | +3.6% | +0.00% |
+| XEON | €453.15 | 10.1% | +6.4% | +0.01% |
+| 4GLD | €426.92 | 9.5% | -9.1% | -1.65% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.94% vs SMA50, VIX 17.65)
+- BUY: ITX, TTE
+- HOLD: 4GLD, XEON, EQQQ, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (6.5% away)
+- EQQQ: stop EUR 508.78 (19.4% away)
+- ITX: stop EUR 50.63 (8.6% away)
+- Portfolio drawdown: -10.6%
+
+**Analysis:**
+Risk-on regime confirmed with SP500 +1.13% and NASDAQ +1.82%, but European indices flat/negative and 4GLD sliding -1.65% signals rotation away from defensive assets. Portfolio holds +20.3% on EQQQ (dominant position) and ITX quant-flagged BUY, though 4GLD entry P{{ANALYSIS}}L at -9.1% is a drag. All stops remain well below current prices; no immediate action required.
+
+**HOLD — Los mercados americanos suben con fuerza pero Europa no acompaña, y con el portfolio en -10.6% desde inicio conviene no añadir riesgo sin confirmación de ruptura alcista en Europa.**
+
+---
+
 
 ### Day 136 — June 29, 2026 21:30 CET
 
@@ -26,9 +76,9 @@
 
 **Market context:**
 - EUR/USD: 0.8780
-- SP500: 7,413.61 (+0.76%)
-- NASDAQ: 25,661.33 (+1.19%)
-- GOLD: 4,041.00 (-1.35%)
+- SP500: 7,437.87 (+1.09%)
+- NASDAQ: 25,805.20 (+1.76%)
+- GOLD: 4,023.40 (-1.78%)
 - IBEX35: 19,387.40 (-0.20%)
 - EUROSTOXX50: 6,231.63 (+0.16%)
 - DAX: 24,626.89 (-1.47%)
@@ -56,9 +106,9 @@
 - Portfolio drawdown: -10.6%
 
 **Analysis:**
-US markets strong (SP500 +0.76%, NASDAQ +1.19%) confirming risk-on regime, but gold weakness (-1.35%) drags 4GLD further into loss territory (-9.1% from entry). European indices mixed with DAX underperforming (-1.47%) while EQQQ holds steady (+0.14%), remaining the portfolio's main anchor at 51% weight. Portfolio drawdown at -10.6% with all stops well-distanced; quant flags TTE as only new BUY but cash at 5% limits deployment capacity.
+US tech rally (NASDAQ +1.76%) supports EQQQ dominance at 51% portfolio weight, while gold weakness (-1.78%) continues compressing 4GLD — already -9.1% from entry and approaching meaningful support. European divergence (DAX -1.47% vs EUROSTOXX50 flat) kept ITX under pressure intraday despite holding above stop.
 
-**HOLD — Sin posición de caja suficiente para nueva entrada en TTE y con el drawdown acumulado del -10.6%, se mantiene la cartera actual sin cambios hasta mejorar condiciones.**
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones; TTE aparece como BUY pero sin capital libre suficiente para actuar sin reducir exposición actual.**
 
 ---
 
