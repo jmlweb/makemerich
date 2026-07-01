@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,516.97 |
-| Total Return | -9.66% |
+| Current Balance | €4,510.02 |
+| Total Return | -9.80% |
 | Days Active | 139 |
 
 ---
@@ -15,52 +15,52 @@
 
 ### Day 138 — July 1, 2026 21:30 CET
 
-**Balance:** €4,516.97 | **Total Return:** -9.7%
-**Day P&L:** +€0.00 (+0.0%) vs Day 137 (€4,516.97)
+**Balance:** €4,510.02 | **Total Return:** -9.8%
+**Day P&L:** €6.95 (-0.2%) vs Day 137 (€4,516.97)
 
 **Prices at close:**
-- 4GLD: €113.48 (+0.22% 24h) — stop €105.88
+- 4GLD: €112.43 (-0.71% 24h) — stop €105.88
 - XEON: €149.52 (+0.01% 24h)
-- EQQQ: €644.90 (+2.22% 24h) — stop €508.78
-- ITX: €55.12 (+-0.00% 24h) — stop €50.63
+- EQQQ: €645.80 (+2.36% 24h) — stop €508.78
+- ITX: €54.80 (-0.62% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8770
 - SP500: 7,499.36 (+1.98%)
 - NASDAQ: 26,213.72 (+3.62%)
-- GOLD: 3,983.50 (-0.98%)
-- IBEX35: 19,471.90 (+0.00%)
-- EUROSTOXX50: 6,328.09 (+-0.00%)
-- DAX: 24,995.81 (+1.50%)
+- GOLD: 3,998.80 (-0.60%)
+- IBEX35: 19,377.40 (-0.49%)
+- EUROSTOXX50: 6,319.97 (-0.13%)
+- DAX: 25,081.59 (+1.85%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,333.09 | 51.7% | +22.9% | +2.22% |
-| ITX | €1,077.88 | 23.9% | +3.1% | +-0.00% |
+| EQQQ | €2,336.34 | 51.8% | +23.1% | +2.36% |
+| ITX | €1,071.62 | 23.8% | +2.5% | -0.62% |
 | XEON | €453.20 | 10.0% | +6.4% | +0.01% |
-| 4GLD | €427.86 | 9.5% | -8.9% | +0.22% |
+| 4GLD | €423.91 | 9.4% | -9.7% | -0.71% |
 | CASH | €224.94 | 5.0% | — | — |
 
 **Trades today:** None.
 
 **Quantitative signals (generate-quant-signals.js):**
-- Market regime: RISK-ON (SP500 +1.63% vs SMA50, VIX 16.45)
-- BUY: TTE
-- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+- Market regime: RISK-ON (SP500 +1.63% vs SMA50, VIX 16.91)
+- BUY: ASML, SIE, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, AIR, NOVO, ALV, DTE
+- SELL: MC
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (6.7% away)
-- EQQQ: stop EUR 508.78 (21.1% away)
-- ITX: stop EUR 50.63 (8.1% away)
+- 4GLD: stop EUR 105.88 (5.8% away)
+- EQQQ: stop EUR 508.78 (21.2% away)
+- ITX: stop EUR 50.63 (7.6% away)
 
 **Analysis:**
-Strong risk-on globally — NASDAQ +3.62%, SP500 +1.98%, DAX +1.50% — with EQQQ capturing +2.22% today, now +22.9% from entry and dominant at 51.7% of portfolio. Gold slipped -0.98%, keeping 4GLD in negative territory at -8.9% from entry. Quant regime confirms RISK-ON with a BUY signal on TTE while all current holdings rate HOLD.
+US markets surged strongly (NASDAQ +3.62%, SP500 +1.98%) driving a risk-on regime while European indices lagged — EQQQ benefits directly and is now up +23.1% from entry. Gold fell -0.60% compounding 4GLD's -9.7% drawdown from entry, remaining the portfolio's weak link. All current holdings are on HOLD per quant signals; BUY signals exist for ASML, SIE, TTE but available cash (€224.94, 5%) is insufficient for a meaningful position.
 
-**BUY — Régimen de mercado alcista confirmado y señal cuantitativa activa en TTE justifican usar la caja disponible (€224.94, 5%) para iniciar posición.**
+**HOLD — La fortaleza del NASDAQ refuerza EQQQ y el régimen risk-on soporta la cartera, pero el efectivo disponible es insuficiente para ejecutar las señales de compra de forma significativa.**
 
 ---
-
 
 ### Day 137 — June 30, 2026 21:30 CET
 
