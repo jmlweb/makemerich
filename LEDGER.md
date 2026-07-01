@@ -7,11 +7,60 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,516.97 |
 | Total Return | -9.66% |
-| Days Active | 138 |
+| Days Active | 139 |
 
 ---
 
 ## Daily Log
+
+### Day 138 — July 1, 2026 21:30 CET
+
+**Balance:** €4,516.97 | **Total Return:** -9.7%
+**Day P&L:** +€0.00 (+0.0%) vs Day 137 (€4,516.97)
+
+**Prices at close:**
+- 4GLD: €113.48 (+0.22% 24h) — stop €105.88
+- XEON: €149.52 (+0.01% 24h)
+- EQQQ: €644.90 (+2.22% 24h) — stop €508.78
+- ITX: €55.12 (+-0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8770
+- SP500: 7,499.36 (+1.98%)
+- NASDAQ: 26,213.72 (+3.62%)
+- GOLD: 3,983.50 (-0.98%)
+- IBEX35: 19,471.90 (+0.00%)
+- EUROSTOXX50: 6,328.09 (+-0.00%)
+- DAX: 24,995.81 (+1.50%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,333.09 | 51.7% | +22.9% | +2.22% |
+| ITX | €1,077.88 | 23.9% | +3.1% | +-0.00% |
+| XEON | €453.20 | 10.0% | +6.4% | +0.01% |
+| 4GLD | €427.86 | 9.5% | -8.9% | +0.22% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.63% vs SMA50, VIX 16.45)
+- BUY: TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (6.7% away)
+- EQQQ: stop EUR 508.78 (21.1% away)
+- ITX: stop EUR 50.63 (8.1% away)
+
+**Analysis:**
+Strong risk-on globally — NASDAQ +3.62%, SP500 +1.98%, DAX +1.50% — with EQQQ capturing +2.22% today, now +22.9% from entry and dominant at 51.7% of portfolio. Gold slipped -0.98%, keeping 4GLD in negative territory at -8.9% from entry. Quant regime confirms RISK-ON with a BUY signal on TTE while all current holdings rate HOLD.
+
+**BUY — Régimen de mercado alcista confirmado y señal cuantitativa activa en TTE justifican usar la caja disponible (€224.94, 5%) para iniciar posición.**
+
+---
+
 
 ### Day 137 — June 30, 2026 21:30 CET
 
@@ -26,9 +75,9 @@
 
 **Market context:**
 - EUR/USD: 0.8760
-- SP500: 7,486.02 (+1.79%)
-- NASDAQ: 26,121.73 (+3.26%)
-- GOLD: 4,047.20 (+0.62%)
+- SP500: 7,502.02 (+2.01%)
+- NASDAQ: 26,218.42 (+3.64%)
+- GOLD: 4,038.70 (+0.41%)
 - IBEX35: 19,471.90 (+0.44%)
 - EUROSTOXX50: 6,328.09 (+1.55%)
 - DAX: 24,995.81 (+1.32%)
@@ -55,9 +104,9 @@
 - ITX: stop EUR 50.63 (8.1% away)
 
 **Analysis:**
-NASDAQ surged +3.26% on risk-on momentum, lifting EQQQ to +2.64% and driving today's +€46 gain. Quant regime remains RISK-ON with TTE flagged as the only new BUY, but available cash (€224.94 / 5%) limits new entries. 4GLD continues dragging at -8.9% from entry despite gold +0.62% today, widening the gap vs the risk-on portfolio.
+Strong US session with S{{ANALYSIS}}P500 +2.01% and NASDAQ +3.64% signals broad risk-on rotation, likely driven by month-end rebalancing and macro optimism. EQQQ leading portfolio at +2.64% confirms tech exposure is well-positioned; 4GLD lagging at -1.43% consistent with gold underperforming in risk-on environments. All positions well above stops, quant regime confirms RISK-ON, no action warranted.
 
-**HOLD — todas las posiciones mantienen señal HOLD, el cash disponible es insuficiente para una entrada significativa en TTE, y la cartera cierra el mes con recuperación positiva en el día.**
+**HOLD — El mercado está en modo risk-on con todas las posiciones por encima de stops y el régimen cuantitativo confirmando tendencia alcista, por lo que no hay razón para mover nada a cierre de mes.**
 
 ---
 
