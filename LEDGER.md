@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,515.49 |
-| Total Return | -9.69% |
+| Current Balance | €4,535.72 |
+| Total Return | -9.29% |
 | Days Active | 139 |
 
 ---
@@ -15,31 +15,31 @@
 
 ### Day 138 — July 1, 2026 21:30 CET
 
-**Balance:** €4,515.49 | **Total Return:** -9.7%
-**Day P&L:** €1.48 (-0.0%) vs Day 137 (€4,516.97)
+**Balance:** €4,535.72 | **Total Return:** -9.3%
+**Day P&L:** +€18.75 (+0.4%) vs Day 137 (€4,516.97)
 
 **Prices at close:**
-- 4GLD: €113.81 (+0.51% 24h) — stop €105.88
+- 4GLD: €115.23 (+1.77% 24h) — stop €105.88
 - XEON: €149.53 (+0.02% 24h)
-- EQQQ: €645.00 (+2.23% 24h) — stop €508.78
-- ITX: €54.96 (-0.29% 24h) — stop €50.63
+- EQQQ: €644.90 (+2.22% 24h) — stop €508.78
+- ITX: €55.74 (+1.12% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8770
-- SP500: 7,478.84 (+0.52%)
-- NASDAQ: 26,213.72 (+1.52%)
-- GOLD: 4,038.50 (+0.39%)
-- IBEX35: 19,315.20 (-0.80%)
-- EUROSTOXX50: 6,275.05 (-0.84%)
-- DAX: 24,895.93 (+1.09%)
+- SP500: 7,515.73 (+1.01%)
+- NASDAQ: 26,154.30 (+1.29%)
+- GOLD: 4,098.30 (+1.87%)
+- IBEX35: 19,406.60 (-0.34%)
+- EUROSTOXX50: 6,282.50 (-0.72%)
+- DAX: 25,040.28 (+1.68%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,333.45 | 51.7% | +22.9% | +2.23% |
-| ITX | €1,074.75 | 23.8% | +2.8% | -0.29% |
-| XEON | €453.24 | 10.0% | +6.4% | +0.02% |
-| 4GLD | €429.11 | 9.5% | -8.6% | +0.51% |
+| EQQQ | €2,333.09 | 51.4% | +22.9% | +2.22% |
+| ITX | €1,090.01 | 24.0% | +4.3% | +1.12% |
+| XEON | €453.23 | 10.0% | +6.4% | +0.02% |
+| 4GLD | €434.46 | 9.6% | -7.5% | +1.77% |
 | CASH | €224.94 | 5.0% | — | — |
 
 **Trades today:** None.
@@ -51,14 +51,14 @@
 - SELL: MC
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (7.0% away)
+- 4GLD: stop EUR 105.88 (8.1% away)
 - EQQQ: stop EUR 508.78 (21.1% away)
-- ITX: stop EUR 50.63 (7.9% away)
+- ITX: stop EUR 50.63 (9.2% away)
 
 **Analysis:**
-NASDAQ +1.52% and SP500 +0.52% drove EQQQ to +2.23% today, offsetting ITX's slight dip; portfolio nearly flat on the day. European indices split — DAX +1.09% while IBEX35 and EUROSTOXX50 both shed ~0.8%, reflecting divergence between tech and traditional European sectors. Quant regime remains RISK-ON but all held positions signal HOLD, and cash at 5% limits new entries.
+US markets closed strong across the board (SP500 +1.01%, NASDAQ +1.29%, DAX +1.68%) in a clear risk-on session, with gold also advancing +1.87%. Portfolio gained +€18.75 on the day driven by EQQQ (+2.22%) and ITX (+1.12%), though total return remains negative at -9.3%. Quant signals confirm HOLD on all current positions; BUY signals for ASML/SIE/TTE exist but cash reserves (€224.94, 5%) are insufficient for meaningful entry.
 
-**HOLD — Todas las posiciones mantienen señal HOLD del sistema cuantitativo y los stops están lejos, sin catalizador para actuar hoy.**
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales y el efectivo disponible es insuficiente para abrir nuevas posiciones con garantías.**
 
 ---
 
