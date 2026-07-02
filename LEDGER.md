@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,531.86 |
-| Total Return | -9.36% |
+| Current Balance | €4,504.73 |
+| Total Return | -9.91% |
 | Days Active | 140 |
 
 ---
@@ -15,31 +15,31 @@
 
 ### Day 139 — July 2, 2026 21:30 CET
 
-**Balance:** €4,531.86 | **Total Return:** -9.4%
-**Day P&L:** €3.86 (-0.1%) vs Day 138 (€4,535.72)
+**Balance:** €4,504.73 | **Total Return:** -9.9%
+**Day P&L:** €30.99 (-0.7%) vs Day 138 (€4,535.72)
 
 **Prices at close:**
-- 4GLD: €115.85 (+2.09% 24h) — stop €105.88
-- XEON: €149.52 (+0.00% 24h)
-- EQQQ: €638.00 (-1.07% 24h) — stop €508.78
-- ITX: €56.70 (+1.72% 24h) — stop €50.63
+- 4GLD: €116.04 (+2.26% 24h) — stop €105.88
+- XEON: €149.54 (+0.01% 24h)
+- EQQQ: €630.40 (-2.25% 24h) — stop €508.78
+- ITX: €56.68 (+1.69% 24h) — stop €50.63
 
 **Market context:**
 - EUR/USD: 0.8780
-- SP500: 7,495.14 (-0.06%)
-- NASDAQ: 26,040.03 (-0.66%)
-- GOLD: 4,130.40 (+1.53%)
-- IBEX35: 19,719.20 (+1.61%)
-- EUROSTOXX50: 6,363.68 (+1.29%)
-- DAX: 25,445.81 (+1.80%)
+- SP500: 7,473.06 (-0.35%)
+- NASDAQ: 25,856.51 (-1.36%)
+- GOLD: 4,140.90 (+1.78%)
+- IBEX35: 19,671.80 (+1.37%)
+- EUROSTOXX50: 6,360.47 (+1.24%)
+- DAX: 25,580.88 (+2.34%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,308.12 | 50.9% | +21.6% | -1.07% |
-| ITX | €1,108.78 | 24.5% | +6.1% | +1.72% |
-| XEON | €453.21 | 10.0% | +6.4% | +0.00% |
-| 4GLD | €436.80 | 9.6% | -7.0% | +2.09% |
+| EQQQ | €2,280.63 | 50.6% | +20.2% | -2.25% |
+| ITX | €1,108.39 | 24.6% | +6.0% | +1.69% |
+| XEON | €453.26 | 10.1% | +6.4% | +0.01% |
+| 4GLD | €437.52 | 9.7% | -6.8% | +2.26% |
 | CASH | €224.94 | 5.0% | — | — |
 
 **Trades today:** None.
@@ -51,14 +51,14 @@
 - SELL: SAP
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (8.6% away)
-- EQQQ: stop EUR 508.78 (20.3% away)
+- 4GLD: stop EUR 105.88 (8.8% away)
+- EQQQ: stop EUR 508.78 (19.3% away)
 - ITX: stop EUR 50.63 (10.7% away)
 
 **Analysis:**
-European markets led today (+1.3–1.8%) while US lagged slightly; gold's +1.53% move helped 4GLD recover toward entry. Quant regime remains RISK-ON with all portfolio holdings on HOLD signal and stops comfortably distant (8.6–20.3% away).
+European markets outperformed US today (DAX +2.34%, IBEX +1.37% vs NASDAQ -1.36%), creating divergence that benefited ITX and 4GLD while dragging EQQQ. Gold's +1.78% move confirms risk-off rotation in US while European equities show resilience. Quant regime remains RISK-ON with a TTE BUY signal, but only 5% cash limits deployment options.
 
-**HOLD — todas las posiciones muestran señal de mantener con stops alejados y el régimen de mercado sigue siendo positivo.**
+**HOLD — todas las posiciones actuales tienen señal HOLD con stops lejanos, y el cash disponible (5%) es insuficiente para una entrada significativa en TTE.**
 
 ---
 
