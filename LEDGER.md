@@ -7,11 +7,60 @@
 | Starting Capital | €5,000.00 |
 | Current Balance | €4,535.72 |
 | Total Return | -9.29% |
-| Days Active | 139 |
+| Days Active | 140 |
 
 ---
 
 ## Daily Log
+
+### Day 139 — July 2, 2026 21:30 CET
+
+**Balance:** €4,535.72 | **Total Return:** -9.3%
+**Day P&L:** +€0.00 (+0.0%) vs Day 138 (€4,535.72)
+
+**Prices at close:**
+- 4GLD: €115.23 (+1.54% 24h) — stop €105.88
+- XEON: €149.53 (+0.01% 24h)
+- EQQQ: €644.90 (+0.00% 24h) — stop €508.78
+- ITX: €55.74 (+0.00% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8780
+- SP500: 7,483.23 (+0.58%)
+- NASDAQ: 26,040.03 (+0.85%)
+- GOLD: 4,086.10 (+0.44%)
+- IBEX35: 19,406.60 (+-0.00%)
+- EUROSTOXX50: 6,282.50 (+0.00%)
+- DAX: 25,040.28 (+0.18%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,333.09 | 51.4% | +22.9% | +0.00% |
+| ITX | €1,090.01 | 24.0% | +4.3% | +0.00% |
+| XEON | €453.23 | 10.0% | +6.4% | +0.01% |
+| 4GLD | €434.46 | 9.6% | -7.5% | +1.54% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.31% vs SMA50, VIX 16.59)
+- BUY: TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (8.1% away)
+- EQQQ: stop EUR 508.78 (21.1% away)
+- ITX: stop EUR 50.63 (9.2% away)
+
+**Analysis:**
+Risk-on regime holds with SP500 +0.58% and NASDAQ +0.85% while European markets flatlined; 4GLD recovering +1.54% intraday but still -7.5% from entry. Quant signals flag TTE as BUY but available cash is only €224.94 (5%), making any new position negligible in portfolio impact. All current holdings signal HOLD with stops comfortably distant.
+
+**HOLD — Con solo €224.94 de liquidez disponible, abrir posición en TTE tendría impacto mínimo en la cartera; se mantiene hasta disponer de mayor capacidad de compra.**
+
+---
+
 
 ### Day 138 — July 1, 2026 21:30 CET
 
@@ -26,9 +75,9 @@
 
 **Market context:**
 - EUR/USD: 0.8770
-- SP500: 7,515.73 (+1.01%)
-- NASDAQ: 26,154.30 (+1.29%)
-- GOLD: 4,098.30 (+1.87%)
+- SP500: 7,497.80 (+0.77%)
+- NASDAQ: 26,124.63 (+1.18%)
+- GOLD: 4,075.60 (+1.31%)
 - IBEX35: 19,406.60 (-0.34%)
 - EUROSTOXX50: 6,282.50 (-0.72%)
 - DAX: 25,040.28 (+1.68%)
@@ -56,9 +105,9 @@
 - ITX: stop EUR 50.63 (9.2% away)
 
 **Analysis:**
-US markets closed strong across the board (SP500 +1.01%, NASDAQ +1.29%, DAX +1.68%) in a clear risk-on session, with gold also advancing +1.87%. Portfolio gained +€18.75 on the day driven by EQQQ (+2.22%) and ITX (+1.12%), though total return remains negative at -9.3%. Quant signals confirm HOLD on all current positions; BUY signals for ASML/SIE/TTE exist but cash reserves (€224.94, 5%) are insufficient for meaningful entry.
+Strong risk-on session driven by DAX (+1.68%) and US tech (NASDAQ +1.18%), while European indices diverged negatively (IBEX -0.34%, EUROSTOXX -0.72%). Portfolio gained +€18.75 on the day, led by EQQQ (+2.22%) and ITX (+1.12%), with 4GLD recovering partially (+1.77%). Quant signals confirm RISK-ON regime and flag ASML, SIE, TTE as potential entries, but portfolio concentration in EQQQ (51.4%) limits immediate rebalancing urgency.
 
-**HOLD — Las señales cuantitativas confirman mantener todas las posiciones actuales y el efectivo disponible es insuficiente para abrir nuevas posiciones con garantías.**
+**HOLD — El portafolio muestra momentum positivo con todas las posiciones por encima de sus stops y el régimen de mercado en RISK-ON, por lo que no hay necesidad de actuar hoy.**
 
 ---
 
