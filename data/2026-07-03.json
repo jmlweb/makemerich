@@ -2,14 +2,14 @@
   "date": "2026-07-03",
   "day": 140,
   "balance": {
-    "total": 4514.11,
+    "total": 4525.91,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.72,
+  "totalReturn": -9.48,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 117.17,
-      "value": 441.78,
-      "pnlPercent": -5.93,
-      "change24h": 1.6835893430530224
+      "currentPriceEUR": 117.1,
+      "value": 441.51,
+      "pnlPercent": -5.99,
+      "change24h": 1.6228412739737832
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.541,
+      "currentPriceEUR": 149.54,
       "value": 453.27,
       "pnlPercent": 6.43,
-      "change24h": 0.010031700172536118
+      "change24h": 0.009362920161029908
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 633,
-      "value": 2290.03,
-      "pnlPercent": 20.66,
-      "change24h": -1.845247325166689
+      "currentPriceEUR": 633.2,
+      "value": 2290.76,
+      "pnlPercent": 20.7,
+      "change24h": -1.8142347650798467
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 56.46,
-      "value": 1104.09,
-      "pnlPercent": 5.61,
-      "change24h": -0.38814396612561547
+      "currentPriceEUR": 57.04,
+      "value": 1115.43,
+      "pnlPercent": 6.7,
+      "change24h": 0.6351446718419186
     }
   ],
   "metadata": {
-    "generatedAt": "2026-07-03T10:00:19.975Z",
+    "generatedAt": "2026-07-03T13:30:09.146Z",
     "eurUsd": 0.8771929824561404
   }
 }
