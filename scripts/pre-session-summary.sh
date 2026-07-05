@@ -41,10 +41,11 @@ echo "[Prices]"
 "$PYTHON" -c "
 import json
 d = json.load(open('$PRICES'))
+pf = json.load(open('$PORTFOLIO'))
 p = d['prices']
 print(f'EUR/USD: {d[\"eurUsd\"]:.4f}')
 print()
-for sym in ['ETH', '4GLD', 'XEON']:
+for sym in [k for k in pf['holdings'] if k != 'CASH']:
     if sym in p:
         a = p[sym]
         usd = a.get('priceUSD', 0)

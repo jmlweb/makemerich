@@ -134,7 +134,7 @@ TRADE_ORDERS=$(node scripts/execute-signals.js 2>/dev/null || echo "No trade ord
 
 # Pre-check: skip agent when nothing actionable
 TRIMMED_TRIGGERS=$(echo "$NEAR_TRIGGERS" | tr -d '[:space:]')
-ACTUAL_ORDERS=$(echo "$TRADE_ORDERS" | grep "ORDERS (0)" > /dev/null 2>&1 && echo "0" || echo "1")
+ACTUAL_ORDERS=$(echo "$TRADE_ORDERS" | grep -q "NO ORDERS" && echo "0" || echo "1")
 
 if [ "$FORCE_AGENT" -eq 0 ] && [ "${VIOLATION_COUNT:-0}" = "0" ] && [ -z "$TRIMMED_TRIGGERS" ] && [ "$ACTUAL_ORDERS" = "0" ]; then
   echo "pre-check: skip (no violations, no triggers, no trade orders)"
@@ -213,9 +213,10 @@ else
   echo "Claude CLI not found — using fallback"
 fi
 
-# Append LEDGER entry (with analysis filled in)
+# Append LEDGER entry only when trades were executed (LEDGER is for 21:30 close;
+# intraday sessions only log if they actually changed positions)
 DRAFT_FILE="data/.ledger-draft.md"
-if [ -f "$DRAFT_FILE" ]; then
+if [ -f "$DRAFT_FILE" ] && [ "${TRADES_EXECUTED:-0}" -gt 0 ]; then
   FILLED_DRAFT=$(cat "$DRAFT_FILE")
   FILLED_DRAFT="${FILLED_DRAFT/\{\{ANALYSIS\}\}/$ANALYSIS_TEXT}"
   FILLED_DRAFT="${FILLED_DRAFT/\{\{DECISION\}\}/$DECISION_WORD — $DECISION_REASON}"
