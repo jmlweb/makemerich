@@ -23,9 +23,26 @@ function getAllEntries() {
     .map(f => JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), 'utf8')));
 }
 
+const CHART_MAX_POINTS = 60;
+
+// Caps the chart to a fixed point budget so the quickchart.io URL stays well
+// under GitHub camo's proxy URL-length limit for the full year of the run,
+// not just today (README image went 414 Request-URI-Too-Large past ~140 days).
+function downsampleEntries(entries, maxPoints) {
+  if (entries.length <= maxPoints) {
+    return entries.map((entry, i) => ({ day: i + 1, entry }));
+  }
+  const step = (entries.length - 1) / (maxPoints - 1);
+  return Array.from({ length: maxPoints }, (_, i) => {
+    const idx = Math.round(i * step);
+    return { day: idx + 1, entry: entries[idx] };
+  });
+}
+
 function generateChartUrl(entries) {
-  const labels = entries.map((_, i) => `Day ${i + 1}`);
-  const data = entries.map(e => Number(e.balance.total.toFixed(2)));
+  const points = downsampleEntries(entries, CHART_MAX_POINTS);
+  const labels = points.map(p => p.day);
+  const data = points.map(p => Number(p.entry.balance.total.toFixed(2)));
 
   const config = {
     type: 'line',
