@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,530.70 |
-| Total Return | -9.39% |
-| Days Active | 142 |
+| Current Balance | €4,520.79 |
+| Total Return | -9.58% |
+| Days Active | 144 |
 
 ---
 
 ## Daily Log
+
+### Day 143 — July 6, 2026 21:30 CET
+
+**Balance:** €4,520.79 | **Total Return:** -9.6%
+**Day P&L:** €9.91 (-0.2%) vs Day 142 (€4,530.70)
+
+**Prices at close:**
+- 4GLD: €116.90 (+0.74% 24h) — stop €105.88
+- XEON: €149.57 (+0.02% 24h)
+- EQQQ: €637.70 (+1.16% 24h) — stop €508.78
+- ITX: €55.98 (-2.13% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8740
+- SP500: 7,550.05 (+0.89%)
+- NASDAQ: 26,177.84 (+0.53%)
+- GOLD: 4,173.10 (+1.15%)
+- IBEX35: 19,683.80 (-0.85%)
+- EUROSTOXX50: 6,398.01 (-0.23%)
+- DAX: 25,817.89 (+0.93%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,307.04 | 51.0% | +21.6% | +1.16% |
+| ITX | €1,094.70 | 24.2% | +4.7% | -2.13% |
+| XEON | €453.36 | 10.0% | +6.5% | +0.02% |
+| 4GLD | €440.76 | 9.7% | -6.2% | +0.74% |
+| CASH | €224.94 | 5.0% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.45% vs SMA50, VIX 16.35)
+- BUY: SIE, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.4% away)
+- EQQQ: stop EUR 508.78 (20.2% away)
+- ITX: stop EUR 50.63 (9.6% away)
+
+**Analysis:**
+US markets led gains (SP500 +0.89%, GOLD +1.15%) while European indices diverged — IBEX35 -0.85%, EUROSTOXX50 -0.23% — reflecting transatlantic strength gap. ITX dragged with -2.13% on the day, offsetting EQQQ's +1.16% gain and leaving portfolio nearly flat at +€9.91. Quant regime remains RISK-ON with BUY signals on SIE and TTE, but all current holdings confirmed HOLD.
+
+**HOLD — Las señales cuantitativas confirman mantener todas las posiciones; SIE y TTE quedan en vigilancia pero no hay acción necesaria hoy.**
+
+---
+
 
 ### Day 141 — July 4, 2026 21:30 CET
 
