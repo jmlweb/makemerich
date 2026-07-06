@@ -2,14 +2,14 @@
   "date": "2026-07-06",
   "day": 143,
   "balance": {
-    "total": 4530.7,
+    "total": 4531.49,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.39,
+  "totalReturn": -9.37,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 117.14,
-      "value": 441.66,
-      "pnlPercent": -5.96,
-      "change24h": 0.9479489831092678
+      "currentPriceEUR": 116.65,
+      "value": 439.82,
+      "pnlPercent": -6.35,
+      "change24h": 0.5256807997242324
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.561,
-      "value": 453.33,
+      "currentPriceEUR": 149.566,
+      "value": 453.35,
       "pnlPercent": 6.45,
-      "change24h": 0.016049539578833937
+      "change24h": 0.01939319365775451
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 633.6,
-      "value": 2292.2,
-      "pnlPercent": 20.78,
-      "change24h": 0.5076142131979768
+      "currentPriceEUR": 634,
+      "value": 2293.65,
+      "pnlPercent": 20.85,
+      "change24h": 0.5710659898477194
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 57.2,
-      "value": 1118.56,
-      "pnlPercent": 7,
-      "change24h": 0
+      "currentPriceEUR": 57.26,
+      "value": 1119.73,
+      "pnlPercent": 7.11,
+      "change24h": 0.10489510489509644
     }
   ],
   "metadata": {
-    "generatedAt": "2026-07-06T07:00:21.558Z",
+    "generatedAt": "2026-07-06T10:00:19.527Z",
     "eurUsd": 0.8771929824561404
   }
 }
