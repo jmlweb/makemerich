@@ -2,14 +2,14 @@
   "date": "2026-07-07",
   "day": 144,
   "balance": {
-    "total": 4501.19,
+    "total": 4507.3,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.98,
+  "totalReturn": -9.85,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 116.32,
-      "value": 438.57,
-      "pnlPercent": -6.62,
-      "change24h": -0.700017073587167
+      "currentPriceEUR": 117.3,
+      "value": 442.27,
+      "pnlPercent": -5.83,
+      "change24h": 0.1365886972852967
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.57,
-      "value": 453.36,
-      "pnlPercent": 6.46,
-      "change24h": 0.006017611543106913
+      "currentPriceEUR": 149.565,
+      "value": 453.35,
+      "pnlPercent": 6.45,
+      "change24h": 0.002674494019156516
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 629.1,
-      "value": 2275.92,
-      "pnlPercent": 19.92,
-      "change24h": -0.7102272727272727
+      "currentPriceEUR": 628.8,
+      "value": 2274.84,
+      "pnlPercent": 19.86,
+      "change24h": -0.7575757575757683
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 56.68,
-      "value": 1108.39,
-      "pnlPercent": 6.02,
-      "change24h": 1.250446588067172
+      "currentPriceEUR": 56.86,
+      "value": 1111.91,
+      "pnlPercent": 6.36,
+      "change24h": 1.5719899964273
     }
   ],
   "metadata": {
-    "generatedAt": "2026-07-07T10:00:23.109Z",
+    "generatedAt": "2026-07-07T13:30:08.325Z",
     "eurUsd": 0.8771929824561404
   }
 }
