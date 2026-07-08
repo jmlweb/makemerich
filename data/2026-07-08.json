@@ -2,14 +2,14 @@
   "date": "2026-07-08",
   "day": 145,
   "balance": {
-    "total": 4401.13,
+    "total": 4434.76,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -11.98,
+  "totalReturn": -11.3,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 114.05,
-      "value": 430.01,
-      "pnlPercent": -8.44,
-      "change24h": -2.4379811804961578
+      "currentPriceEUR": 114.8,
+      "value": 432.84,
+      "pnlPercent": -7.84,
+      "change24h": -1.7964071856287498
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.572,
-      "value": 453.37,
+      "currentPriceEUR": 149.583,
+      "value": 453.4,
       "pnlPercent": 6.46,
-      "change24h": 0.0026743688489454143
+      "change24h": 0.010028883183559557
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 615.7,
-      "value": 2227.45,
-      "pnlPercent": 17.37,
-      "change24h": -3.449898071193351
+      "currentPriceEUR": 621.5,
+      "value": 2248.43,
+      "pnlPercent": 18.47,
+      "change24h": -2.5403794887878384
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 54.48,
-      "value": 1065.37,
-      "pnlPercent": 1.91,
-      "change24h": -3.472714386959605
+      "currentPriceEUR": 54.98,
+      "value": 1075.14,
+      "pnlPercent": 2.84,
+      "change24h": -2.5868178596739915
     }
   ],
   "metadata": {
-    "generatedAt": "2026-07-08T10:00:19.647Z",
+    "generatedAt": "2026-07-08T13:30:07.741Z",
     "eurUsd": 0.8771929824561404
   }
 }
