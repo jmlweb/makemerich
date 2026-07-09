@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,471.65 |
-| Total Return | -10.57% |
-| Days Active | 145 |
+| Current Balance | €4,407.66 |
+| Total Return | -11.85% |
+| Days Active | 146 |
 
 ---
 
 ## Daily Log
+
+### Day 145 — July 8, 2026 21:30 CET
+
+**Balance:** €4,407.66 | **Total Return:** -11.8%
+**Day P&L:** €63.99 (-1.4%) vs Day 144 (€4,471.65)
+
+**Prices at close:**
+- 4GLD: €113.70 (-2.74% 24h) — stop €105.88
+- XEON: €149.57 (+0.00% 24h)
+- EQQQ: €619.60 (-2.84% 24h) — stop €508.78
+- ITX: €54.16 (-4.04% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8760
+- SP500: 7,479.95 (-0.76%)
+- NASDAQ: 25,830.68 (-1.11%)
+- GOLD: 4,096.60 (-1.17%)
+- IBEX35: 19,104.30 (-2.73%)
+- EUROSTOXX50: 6,204.91 (-1.82%)
+- DAX: 24,897.45 (-3.57%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,241.56 | 50.9% | +18.1% | -2.84% |
+| ITX | €1,059.11 | 24.0% | +1.3% | -4.04% |
+| XEON | €453.36 | 10.3% | +6.5% | +0.00% |
+| 4GLD | €428.69 | 9.7% | -8.7% | -2.74% |
+| CASH | €224.94 | 5.1% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.68% vs SMA50, VIX 18.58)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (6.9% away)
+- EQQQ: stop EUR 508.78 (17.9% away)
+- ITX: stop EUR 50.63 (6.5% away)
+- Portfolio drawdown: -11.8%
+
+**Analysis:**
+Broad risk-off day across EU and US indices — DAX -3.57%, IBEX -2.73%, NASDAQ -1.11% — dragged all four holdings into the red, led by ITX (-4.04%) and 4GLD (-2.74%). Despite the pullback, quant regime reads RISK-ON (SP500 above SMA50, VIX 18.58) and no stop levels were breached. No trade orders generated; portfolio drawdown sits at -11.8%.
+
+**HOLD — cierre automatico, sin analisis de agente**
+
+---
+
 
 ### Day 144 — July 7, 2026 21:30 CET
 
