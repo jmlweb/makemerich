@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-06-03",
+    "time": "10:01 UTC",
+    "action": "SELL",
+    "asset": "ETH",
+    "units": 0.658029,
+    "price_usd": 1874.43,
+    "amount_eur": 1062.94,
+    "fee_eur": 5.31,
+    "reason": "Stop-loss triggered: ETH $1,874.43 <= stop $1,900.00. Reconstructed 2026-07-13 from commit 478b3c2 (stoploss-watch.sh sold without logging trade — see FINDINGS.md §7)",
+    "session": "stoploss-watch"
+  },
+  {
     "date": "2026-06-04",
     "time": "07:00 UTC",
     "action": "BUY",

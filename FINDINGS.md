@@ -116,6 +116,35 @@ chain with reasons) and documented it in AGENTS.md.
 
 ---
 
+## 7. Unlogged auto stop-loss sell — ETH 2026-06-03 (HIGH) — FIXED 2026-07-13
+
+**Symptom:** `validate-data.js` check 5 failed at the 2026-07-13 daily close:
+"ETH disappeared on 2026-06-03 with no SELL logged" — commit/push gate blocked.
+
+**Root cause:** `scripts/stoploss-watch.sh` (BullMQ, every 5 min) executed the ETH
+stop-loss on 2026-06-03 10:01 UTC (commit `478b3c2`): it removed the holding from
+`portfolio.json`, credited cash, committed and pushed — but never wrote a record to
+`data/trades/2026-06.json` (invariant 6 violation). Its take-profit path had the
+same gap. The nightly validation gate then failed every weekday close from
+2026-06-03 to 2026-07-13, silently skipping the 21:30 commit; intraday/weekend
+`session.sh` runs (no gate) swept the data into the next morning's commit, which is
+why history stayed continuous in git. LEDGER Day 110 says "Trades today: None" —
+wrong, left as-is per the append-only invariant; this entry is the correction.
+
+**Source of truth used:** commit `478b3c2` message and diff — SELL 0.658029 ETH @
+$1,874.43 (trigger $1,900.00), gross €1,062.94, fee 0.5% = €5.31, net €1,057.63.
+
+**Cash reconciliation:** Day 109 cash €213.78 + €1,057.63 = €1,271.41 = Day 110
+cash ✓ (exact). No past balance or P&L changed — daily files already reflected the
+sale; only the missing trade record was back-filled into `data/trades/2026-06.json`.
+
+**Recurrence guard:** `stoploss-watch.sh` now appends a canonical trade record
+(`log_trade()`) in both the stop-loss and take-profit paths and stages
+`data/trades/` in its auto-commit. Verified with a sandbox dry-run (fabricated
+trigger → schema-valid record written).
+
+---
+
 ## Validation
 
 `node scripts/validate-data.js` → **ALL CHECKS PASS** (10 informational):
