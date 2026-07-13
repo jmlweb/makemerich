@@ -2,14 +2,14 @@
   "date": "2026-07-13",
   "day": 149,
   "balance": {
-    "total": 4488.91,
+    "total": 4475.47,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.22,
+  "totalReturn": -10.49,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 115.43,
-      "value": 435.22,
-      "pnlPercent": -7.33,
-      "change24h": -0.5770887166235896
+      "currentPriceEUR": 114.59,
+      "value": 432.05,
+      "pnlPercent": -8,
+      "change24h": -1.3006029285098974
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.606,
-      "value": 453.47,
-      "pnlPercent": 6.48,
-      "change24h": 0.012701638511371615
+      "currentPriceEUR": 149.62,
+      "value": 453.51,
+      "pnlPercent": 6.49,
+      "change24h": 0.02206074057238628
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 635.9,
-      "value": 2300.53,
-      "pnlPercent": 21.22,
-      "change24h": 0.2996845425867472
+      "currentPriceEUR": 632.4,
+      "value": 2287.86,
+      "pnlPercent": 20.55,
+      "change24h": -0.2523659305993727
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 54.96,
-      "value": 1074.75,
-      "pnlPercent": 2.81,
-      "change24h": 0
+      "currentPriceEUR": 55.08,
+      "value": 1077.1,
+      "pnlPercent": 3.03,
+      "change24h": 0.21834061135370714
     }
   ],
   "metadata": {
-    "generatedAt": "2026-07-13T07:00:24.424Z",
+    "generatedAt": "2026-07-13T10:00:21.327Z",
     "eurUsd": 0.8771929824561404
   }
 }
