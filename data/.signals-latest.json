@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-07-17T07:00:22.614Z",
-  "balance": 4424.11,
-  "totalReturn": -11.52,
+  "generatedAt": "2026-07-17T10:00:20.873Z",
+  "balance": 4355.51,
+  "totalReturn": -12.89,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 112.77,
+      "currentPrice": 112.36,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 6.11,
+      "distancePct": 5.77,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 624.4,
+      "currentPrice": 609.1,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 18.52,
+      "distancePct": 16.47,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 54.28,
+      "currentPrice": 53.68,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 6.72,
+      "distancePct": 5.68,
       "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -11.52,
+      "pnlPct": -12.89,
       "status": "WARNING",
-      "detail": "Portfolio down -11.5% from start"
+      "detail": "Portfolio down -12.9% from start"
     }
   ]
 }
