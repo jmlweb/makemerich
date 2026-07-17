@@ -5,13 +5,62 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,424.11 |
-| Total Return | -11.52% |
-| Days Active | 153 |
+| Current Balance | €4,362.68 |
+| Total Return | -12.75% |
+| Days Active | 154 |
 
 ---
 
 ## Daily Log
+
+### Day 153 — July 17, 2026 21:30 CET
+
+**Balance:** €4,362.68 | **Total Return:** -12.8%
+**Day P&L:** €61.43 (-1.4%) vs Day 152 (€4,424.11)
+
+**Prices at close:**
+- 4GLD: €112.79 (-0.92% 24h) — stop €105.88
+- XEON: €149.67 (+0.01% 24h)
+- EQQQ: €610.30 (-2.99% 24h) — stop €508.78
+- ITX: €53.74 (-0.99% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8730
+- SP500: 7,458.13 (-1.51%)
+- NASDAQ: 25,530.88 (-2.81%)
+- GOLD: 4,010.70 (+0.63%)
+- IBEX35: 19,216.90 (-0.45%)
+- EUROSTOXX50: 6,230.87 (-0.84%)
+- DAX: 24,830.98 (-0.67%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,207.91 | 50.6% | +16.3% | -2.99% |
+| ITX | €1,050.90 | 24.1% | +0.5% | -0.99% |
+| XEON | €453.67 | 10.4% | +6.5% | +0.01% |
+| 4GLD | €425.26 | 9.7% | -9.4% | -0.92% |
+| CASH | €224.94 | 5.2% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-OFF (SP500 -0.27% vs SMA50, VIX 18.46)
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SOL, SXR8, VWCE, SAP, ASML, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (6.1% away)
+- EQQQ: stop EUR 508.78 (16.6% away)
+- ITX: stop EUR 50.63 (5.8% away)
+- Portfolio drawdown: -12.8%
+
+**Analysis:**
+Risk-off regime deepens — NASDAQ -2.81%, EQQQ -2.99% drags portfolio (50.6% weight) to Day P{{ANALYSIS}}L -1.4%. Gold up +0.63% as safe-haven flow, but 4GLD position still down -9.4% from entry. Stops on 4GLD (6.1% away) and ITX (5.8% away) worth watching if selloff continues.
+
+**HOLD — sin órdenes del script de señales, régimen risk-off no cambia posiciones sin trigger mecánico.**
+
+---
+
 
 ### Day 152 — July 16, 2026 21:30 CET
 
