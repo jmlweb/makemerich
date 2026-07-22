@@ -2,14 +2,14 @@
   "date": "2026-07-22",
   "day": 158,
   "balance": {
-    "total": 4420.51,
+    "total": 4418.86,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -11.59,
+  "totalReturn": -11.62,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 116.1,
-      "value": 437.74,
-      "pnlPercent": -6.79,
-      "change24h": 2.6162276825172297
+      "currentPriceEUR": 116.3,
+      "value": 438.5,
+      "pnlPercent": -6.63,
+      "change24h": 2.792999823227856
     },
     {
       "asset": "XEON",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 620,
-      "value": 2243,
-      "pnlPercent": 18.19,
-      "change24h": 0.35610229847847935
+      "currentPriceEUR": 617.5,
+      "value": 2233.96,
+      "pnlPercent": 17.71,
+      "change24h": -0.0485594043379661
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 54.26,
-      "value": 1061.06,
-      "pnlPercent": 1.5,
-      "change24h": 0.2957486136783671
+      "currentPriceEUR": 54.6,
+      "value": 1067.71,
+      "pnlPercent": 2.13,
+      "change24h": 0.9242144177449167
     }
   ],
   "metadata": {
-    "generatedAt": "2026-07-22T10:00:21.139Z",
+    "generatedAt": "2026-07-22T13:30:08.866Z",
     "eurUsd": 0.8771929824561404
   }
 }
