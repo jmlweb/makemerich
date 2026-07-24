@@ -2,14 +2,14 @@
   "date": "2026-07-24",
   "day": 160,
   "balance": {
-    "total": 4375.23,
+    "total": 4380.27,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -12.5,
+  "totalReturn": -12.39,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 114.49,
-      "value": 431.67,
-      "pnlPercent": -8.08,
-      "change24h": -2.3039508490485563
+      "currentPriceEUR": 115.11,
+      "value": 434.01,
+      "pnlPercent": -7.59,
+      "change24h": -1.774895468896662
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.73,
-      "value": 453.85,
+      "currentPriceEUR": 149.735,
+      "value": 453.86,
       "pnlPercent": 6.57,
-      "change24h": 0.016031421586309776
+      "change24h": 0.019371301083473465
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 611.3,
-      "value": 2211.53,
-      "pnlPercent": 16.53,
-      "change24h": -2.0352564102564177
+      "currentPriceEUR": 608.8,
+      "value": 2202.48,
+      "pnlPercent": 16.05,
+      "change24h": -2.4358974358974432
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 53.86,
-      "value": 1053.24,
-      "pnlPercent": 0.75,
-      "change24h": 0
+      "currentPriceEUR": 54.46,
+      "value": 1064.98,
+      "pnlPercent": 1.87,
+      "change24h": 1.113999257333831
     }
   ],
   "metadata": {
-    "generatedAt": "2026-07-24T13:30:08.773Z",
+    "generatedAt": "2026-07-24T16:00:07.797Z",
     "eurUsd": 0.8771929824561404
   }
 }
