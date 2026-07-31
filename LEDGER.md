@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,379.46 |
-| Total Return | -12.41% |
-| Days Active | 167 |
+| Current Balance | €4,366.42 |
+| Total Return | -12.67% |
+| Days Active | 168 |
 
 ---
 
 ## Daily Log
+
+### Day 167 — July 31, 2026 21:30 CET
+
+**Balance:** €4,366.42 | **Total Return:** -12.7%
+**Day P&L:** €13.04 (-0.3%) vs Day 166 (€4,379.46)
+
+**Prices at close:**
+- 4GLD: €112.93 (-0.38% 24h) — stop €105.88
+- XEON: €149.78 (+0.01% 24h)
+- EQQQ: €596.50 (+1.20% 24h) — stop €508.78
+- ITX: €56.44 (-1.81% 24h) — stop €50.63
+
+**Market context:**
+- EUR/USD: 0.8690
+- SP500: 7,498.20 (+2.49%)
+- NASDAQ: 25,384.77 (+3.85%)
+- GOLD: 4,104.80 (+0.11%)
+- IBEX35: 19,782.90 (+0.13%)
+- EUROSTOXX50: 6,358.01 (+0.21%)
+- DAX: 25,629.24 (+0.66%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,157.99 | 49.4% | +13.7% | +1.20% |
+| ITX | €1,103.69 | 25.3% | +5.6% | -1.81% |
+| XEON | €454.01 | 10.4% | +6.6% | +0.01% |
+| 4GLD | €425.79 | 9.8% | -9.3% | -0.38% |
+| CASH | €224.94 | 5.2% | — | — |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.02% vs SMA50, VIX 16.83)
+- BUY: AIR
+- HOLD: 4GLD, XEON, EQQQ, ITX, BTC, SXR8, VWCE, SAP, ASML, SIE, NOVO, ALV, TTE, DTE
+- SELL: SOL, MC
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (6.2% away)
+- EQQQ: stop EUR 508.78 (14.7% away)
+- ITX: stop EUR 50.63 (10.3% away)
+- Portfolio drawdown: -12.7%
+
+**Analysis:**
+Automated close — agent unavailable.
+
+**HOLD — cierre automatico, sin analisis de agente**
+
+---
+
 
 ### Day 166 — July 30, 2026 21:30 CET
 
