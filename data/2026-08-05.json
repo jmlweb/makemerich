@@ -2,14 +2,14 @@
   "date": "2026-08-05",
   "day": 172,
   "balance": {
-    "total": 4540.02,
+    "total": 4543.55,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.2,
+  "totalReturn": -9.13,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 115.82,
-      "value": 436.69,
-      "pnlPercent": -7.02,
-      "change24h": 2.6682031734775205
+      "currentPriceEUR": 116.63,
+      "value": 439.74,
+      "pnlPercent": -6.37,
+      "change24h": 3.386224625476459
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.83,
-      "value": 454.15,
+      "currentPriceEUR": 149.824,
+      "value": 454.13,
       "pnlPercent": 6.64,
-      "change24h": 0.012015058873788937
+      "change24h": 0.008010039249192625
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 630.3,
-      "value": 2280.27,
-      "pnlPercent": 20.15,
-      "change24h": 3.5145344063064505
+      "currentPriceEUR": 631.3,
+      "value": 2283.88,
+      "pnlPercent": 20.34,
+      "change24h": 3.678764986040397
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 58.5,
-      "value": 1143.98,
-      "pnlPercent": 9.43,
-      "change24h": 0.5500171880371266
+      "currentPriceEUR": 58.34,
+      "value": 1140.85,
+      "pnlPercent": 9.13,
+      "change24h": 0.2750085940185694
     }
   ],
   "metadata": {
-    "generatedAt": "2026-08-05T10:00:19.721Z",
+    "generatedAt": "2026-08-05T13:30:08.855Z",
     "eurUsd": 0.8695652173913044
   }
 }
