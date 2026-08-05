@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T19:30:07.003Z",
+  "generatedAt": "2026-08-05T07:00:22.769Z",
   "balance": 4513.12,
   "totalReturn": -9.74,
   "alerts": [
@@ -20,13 +20,6 @@
       "currency": "EUR",
       "distancePct": 18.8,
       "status": "ACTIVE"
-    },
-    {
-      "asset": "EQQQ",
-      "type": "HIGH_VOLATILITY",
-      "change24h": 5.05,
-      "status": "INFO",
-      "detail": "EQQQ moved +5.05% in 24h"
     },
     {
       "asset": "ITX",
