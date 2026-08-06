@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T19:30:07.393Z",
+  "generatedAt": "2026-08-06T07:00:23.071Z",
   "balance": 4545.82,
   "totalReturn": -9.08,
   "alerts": [
@@ -11,13 +11,6 @@
       "currency": "EUR",
       "distancePct": 10.73,
       "status": "ACTIVE"
-    },
-    {
-      "asset": "4GLD",
-      "type": "HIGH_VOLATILITY",
-      "change24h": 5.13,
-      "status": "INFO",
-      "detail": "4GLD moved +5.13% in 24h"
     },
     {
       "asset": "EQQQ",
