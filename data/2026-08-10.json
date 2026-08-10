@@ -2,14 +2,14 @@
   "date": "2026-08-10",
   "day": 177,
   "balance": {
-    "total": 4556.64,
+    "total": 4565.57,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -8.87,
+  "totalReturn": -8.69,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 3.7704,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 121.1,
-      "value": 456.6,
-      "pnlPercent": -2.78,
-      "change24h": 2.1079258010118047
+      "currentPriceEUR": 120.87,
+      "value": 455.73,
+      "pnlPercent": -2.96,
+      "change24h": 1.9139966273187272
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.86,
-      "value": 454.24,
-      "pnlPercent": 6.66,
-      "change24h": 0.012680107580705853
+      "currentPriceEUR": 149.85,
+      "value": 454.21,
+      "pnlPercent": 6.65,
+      "change24h": 0.006006366748744422
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 628.5,
-      "value": 2273.75,
-      "pnlPercent": 19.81,
-      "change24h": 0.5599999999999999
+      "currentPriceEUR": 631,
+      "value": 2282.8,
+      "pnlPercent": 20.28,
+      "change24h": 0.96
     },
     {
       "asset": "ITX",
@@ -56,14 +56,14 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 58.66,
-      "value": 1147.11,
-      "pnlPercent": 9.73,
-      "change24h": 0
+      "currentPriceEUR": 58.7,
+      "value": 1147.89,
+      "pnlPercent": 9.8,
+      "change24h": 0.06818956699626023
     }
   ],
   "metadata": {
-    "generatedAt": "2026-08-10T07:00:25.533Z",
+    "generatedAt": "2026-08-10T10:00:22.906Z",
     "eurUsd": 0.8620689655172414
   }
 }
