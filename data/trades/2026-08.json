@@ -58,5 +58,29 @@
     "fee_eur": 0.12,
     "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive",
     "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-08-11",
+    "time": "19:30 UTC",
+    "action": "SELL",
+    "asset": "4GLD",
+    "units": 0.2358,
+    "price_eur": 122.01,
+    "amount_eur": 28.77,
+    "fee_eur": 0.03,
+    "reason": "trend: SMA50 < SMA200 (bearish), price above SMA20; momentum: RSI high (66.0); meanReversion: at upper BB + RSI > 65 (overbought); macd: MACD histogram positive",
+    "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-08-12",
+    "time": "07:00 UTC",
+    "action": "BUY",
+    "asset": "ASML",
+    "units": 0.055425,
+    "price_eur": 1554,
+    "amount_eur": 86.13,
+    "fee_eur": 0.09,
+    "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20; macd: MACD histogram crossed positive",
+    "session": "makemerich-2130"
   }
 ]

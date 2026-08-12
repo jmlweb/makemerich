@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-11T16:00:07.533Z",
-  "balance": 4558.51,
+  "generatedAt": "2026-08-12T07:00:22.928Z",
+  "balance": 4558.3,
   "totalReturn": -8.83,
   "alerts": [
     {
@@ -38,6 +38,15 @@
       "currency": "EUR",
       "distancePct": 6.58,
       "status": "ACTIVE"
+    },
+    {
+      "asset": "AIR",
+      "type": "STOP_LOSS",
+      "currentPrice": 212.5,
+      "triggerPrice": 202.1531,
+      "currency": "EUR",
+      "distancePct": 4.87,
+      "status": "NEAR"
     }
   ]
 }

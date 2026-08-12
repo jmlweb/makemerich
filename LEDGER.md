@@ -5,18 +5,77 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,558.33 |
-| Total Return | -8.83% |
-| Days Active | 179 |
+| Current Balance | €4,558.21 |
+| Total Return | -8.84% |
+| Days Active | 180 |
 
 ---
 
 ## Daily Log
 
+### Day 179 — August 12, 2026 21:30 CET
+
+**Balance:** €4,558.21 | **Total Return:** -8.8%
+**Day P&L:** €0.12 (-0.0%) vs Day 178 (€4,558.33)
+
+**Prices at close:**
+- 4GLD: €122.01 (+0.67% 24h) — stop €105.88
+- XEON: €149.86 (+0.01% 24h)
+- EQQQ: €626.50 (-0.18% 24h) — stop €508.78
+- ITX: €58.88 (-0.37% 24h) — stop €50.63
+- SIE: €280.25 (+1.19% 24h) — stop €261.80
+- AIR: €212.50 (-1.00% 24h) — stop €202.15
+- ASML: €1,554.00 (+2.66% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8660
+- SP500: 7,728.20 (-0.38%)
+- NASDAQ: 26,445.45 (-0.92%)
+- GOLD: 4,459.70 (+1.75%)
+- IBEX35: 20,213.60 (+-0.00%)
+- EUROSTOXX50: 6,551.22 (+0.00%)
+- DAX: 26,391.42 (+0.26%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,266.52 | 49.7% | +19.4% | -0.18% |
+| ITX | €1,151.41 | 25.3% | +10.1% | -0.37% |
+| XEON | €454.24 | 10.0% | +6.7% | +0.01% |
+| CASH | €227.82 | 5.0% | — | — |
+| SIE | €227.28 | 5.0% | +0.8% | +1.19% |
+| AIR | €116.03 | 2.5% | +0.0% | -1.00% |
+| ASML | €86.13 | 1.9% | +0.0% | +2.66% |
+| 4GLD | €28.78 | 0.6% | -2.0% | +0.67% |
+
+**Trades:**
+- **BUY ASML**: 0.055425 units @ EUR 1,554.00 = EUR 86.13 (fee EUR 0.09)
+  Reason: trend: SMA50 > SMA200 (bullish), price above SMA20; macd: MACD histogram crossed positive
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.03% vs SMA50, VIX 15.28)
+- BUY: EQQQ, SIE, ASML, TTE
+- HOLD: 4GLD, XEON, ITX, AIR, BTC, SOL, SXR8, VWCE, SAP, MC, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.2% away)
+- EQQQ: stop EUR 508.78 (18.8% away)
+- ITX: stop EUR 50.63 (14.0% away)
+- SIE: stop EUR 261.80 (6.6% away)
+- AIR: stop EUR 202.15 (4.9% away)
+
+**Analysis:**
+Session automatica.
+
+**HOLD — sesion automatica, sin analisis de agente**
+
+---
+
+
 ### Day 178 — August 11, 2026 21:30 CET
 
-**Balance:** €4,558.33 | **Total Return:** -8.8%
-**Day P&L:** €4.00 (-0.1%) vs Day 177 (€4,562.33)
+**Balance:** €4,558.30 | **Total Return:** -8.8%
+**Day P&L:** €4.03 (-0.1%) vs Day 177 (€4,562.33)
 
 **Prices at close:**
 - 4GLD: €122.01 (+0.75% 24h) — stop €105.88
@@ -28,9 +87,9 @@
 
 **Market context:**
 - EUR/USD: 0.8660
-- SP500: 7,743.77 (-0.18%)
-- NASDAQ: 26,510.61 (-0.67%)
-- GOLD: 4,435.80 (+1.70%)
+- SP500: 7,729.39 (-0.36%)
+- NASDAQ: 26,441.23 (-0.93%)
+- GOLD: 4,421.60 (+1.37%)
 - IBEX35: 20,213.60 (+0.20%)
 - EUROSTOXX50: 6,551.22 (+0.24%)
 - DAX: 26,391.42 (+0.27%)
@@ -41,10 +100,10 @@
 | EQQQ | €2,266.52 | 49.7% | +19.4% | -0.32% |
 | ITX | €1,151.41 | 25.3% | +10.1% | -0.37% |
 | XEON | €454.24 | 10.0% | +6.7% | +0.00% |
-| CASH | €285.30 | 6.3% | — | — |
+| CASH | €314.04 | 6.9% | — | — |
 | SIE | €227.28 | 5.0% | +0.8% | +0.16% |
 | AIR | €116.03 | 2.5% | +0.0% | -1.00% |
-| 4GLD | €57.55 | 1.3% | -2.0% | +0.75% |
+| 4GLD | €28.78 | 0.6% | -2.0% | +0.75% |
 
 **Trades:**
 - **SELL 4GLD**: 1.884596 units @ EUR 121.92 = EUR 229.77 (fee EUR 0.23)
@@ -57,6 +116,8 @@
   Reason: trend: SMA50 < SMA200 (bearish), price above SMA20; momentum: RSI high (66.0); meanReversion: at upper BB + RSI > 65 (overbought); macd: MACD histogram positive
 - **BUY AIR**: 0.546024 units @ EUR 212.50 = EUR 116.03 (fee EUR 0.12)
   Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
+- **SELL 4GLD**: 0.2358 units @ EUR 122.01 = EUR 28.77 (fee EUR 0.03)
+  Reason: trend: SMA50 < SMA200 (bearish), price above SMA20; momentum: RSI high (66.0); meanReversion: at upper BB + RSI > 65 (overbought); macd: MACD histogram positive
 
 **Quantitative signals (generate-quant-signals.js):**
 - Market regime: RISK-ON (SP500 +3.49% vs SMA50, VIX 15.52)
@@ -69,11 +130,12 @@
 - EQQQ: stop EUR 508.78 (18.8% away)
 - ITX: stop EUR 50.63 (14.0% away)
 - SIE: stop EUR 261.80 (6.6% away)
+- AIR: stop EUR 202.15 (4.9% away)
 
 **Analysis:**
-Session automatica.
+Automated close — agent unavailable.
 
-**HOLD — sesion automatica, sin analisis de agente**
+**HOLD — cierre automatico, sin analisis de agente**
 
 ---
 
