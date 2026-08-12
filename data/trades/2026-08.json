@@ -94,5 +94,17 @@
     "fee_eur": 0.01,
     "reason": "trend: SMA50 < SMA200 (bearish), price above SMA20; momentum: RSI high (68.1); meanReversion: at upper BB + RSI > 65 (overbought); macd: MACD histogram positive",
     "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-08-12",
+    "time": "13:30 UTC",
+    "action": "SELL",
+    "asset": "4GLD",
+    "units": 0.058976,
+    "price_eur": 123.1,
+    "amount_eur": 7.26,
+    "fee_eur": 0.01,
+    "reason": "trend: SMA50 < SMA200 (bearish), price above SMA20; momentum: RSI high (68.1); meanReversion: at upper BB + RSI > 65 (overbought); macd: MACD histogram positive",
+    "session": "makemerich-2130"
   }
 ]
