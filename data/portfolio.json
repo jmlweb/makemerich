@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-08-12T16:00:08.195Z",
+  "last_updated": "2026-08-13T07:00:23.455Z",
   "holdings": {
     "CASH": {
-      "amount_eur": 253.2
+      "amount_eur": 255.93
     },
     "4GLD": {
-      "units": 0.029526,
+      "units": 0.007363,
       "entry_price_eur": 124.56,
       "current_price_eur": 123.18,
-      "amount_eur": 3.64,
+      "amount_eur": 0.91,
       "pnl_pct": -1.11,
       "stop_loss_eur": 105.88
     },

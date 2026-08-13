@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-12",
-  "day": 179,
+  "date": "2026-08-13",
+  "day": 180,
   "balance": {
     "total": 4554.71,
     "currency": "EUR"
@@ -14,19 +14,19 @@
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 253.2,
+      "value": 255.02,
       "pnlPercent": 0
     },
     {
       "asset": "4GLD",
       "type": "ETC",
       "description": "Xetra-Gold ETC (1g/unit)",
-      "units": 0.029526,
+      "units": 0.014751,
       "entryPriceEUR": 124.56,
       "currentPriceEUR": 123.18,
-      "value": 3.64,
+      "value": 1.82,
       "pnlPercent": -1.11,
-      "change24h": 1.633663366336637
+      "change24h": 0.958937791984265
     },
     {
       "asset": "XEON",
@@ -37,7 +37,7 @@
       "currentPriceEUR": 149.871,
       "value": 454.27,
       "pnlPercent": 6.67,
-      "change24h": 0.015348886872027743
+      "change24h": 0.007340184171890885
     },
     {
       "asset": "EQQQ",
@@ -48,7 +48,7 @@
       "currentPriceEUR": 630,
       "value": 2279.18,
       "pnlPercent": 20.09,
-      "change24h": 0.382409177820264
+      "change24h": 0.5586592178770949
     },
     {
       "asset": "ITX",
@@ -70,7 +70,7 @@
       "currentPriceEUR": 281.95,
       "value": 228.66,
       "pnlPercent": 1.37,
-      "change24h": 1.8053800324968408
+      "change24h": 0.6066012488849202
     },
     {
       "asset": "AIR",
@@ -96,7 +96,7 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-08-12T19:30:07.082Z",
+    "generatedAt": "2026-08-13T07:00:23.284Z",
     "eurUsd": 0.8695652173913044
   }
 }
