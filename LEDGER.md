@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,560.26 |
-| Total Return | -8.79% |
-| Days Active | 182 |
+| Current Balance | €4,551.16 |
+| Total Return | -8.98% |
+| Days Active | 185 |
 
 ---
 
 ## Daily Log
+
+### Day 184 — August 17, 2026 21:30 CET
+
+**Balance:** €4,551.16 | **Total Return:** -9.0%
+**Day P&L:** €9.10 (-0.2%) vs Day 183 (€4,560.26)
+
+**Prices at close:**
+- 4GLD: €122.79 (+0.93% 24h) — stop €105.88
+- XEON: €149.93 (+0.01% 24h)
+- EQQQ: €636.30 (-0.11% 24h) — stop €508.78
+- ITX: €56.36 (-2.15% 24h) — stop €50.63
+- SIE: €282.30 (-0.63% 24h) — stop €261.80
+- AIR: €214.25 (-0.53% 24h) — stop €202.15
+- ASML: €1,621.20 (+2.63% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8640
+- SP500: 7,751.57 (-0.61%)
+- NASDAQ: 26,654.18 (-0.56%)
+- GOLD: 4,471.30 (+0.77%)
+- IBEX35: 19,981.90 (-0.87%)
+- EUROSTOXX50: 6,530.45 (-0.14%)
+- DAX: 26,338.61 (+0.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,301.97 | 50.6% | +21.3% | -0.11% |
+| ITX | €1,102.13 | 24.2% | +5.4% | -2.15% |
+| XEON | €454.44 | 10.0% | +6.7% | +0.01% |
+| CASH | €256.38 | 5.6% | — | — |
+| SIE | €228.95 | 5.0% | +1.5% | -0.63% |
+| AIR | €116.99 | 2.6% | +0.8% | -0.53% |
+| ASML | €89.86 | 2.0% | +4.3% | +2.63% |
+| 4GLD | €0.45 | 0.0% | -1.4% | +0.93% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +3.58% vs SMA50, VIX 14.97)
+- BUY: EQQQ, SIE, ASML, SXR8, VWCE, TTE
+- HOLD: 4GLD, XEON, ITX, AIR, BTC, SOL, SAP, MC, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.8% away)
+- EQQQ: stop EUR 508.78 (20.0% away)
+- ITX: stop EUR 50.63 (10.2% away)
+- SIE: stop EUR 261.80 (7.3% away)
+- AIR: stop EUR 202.15 (5.7% away)
+- ASML: stop EUR 1,372.87 (15.3% away)
+
+**Analysis:**
+Automated close — agent unavailable.
+
+**HOLD — cierre automatico, sin analisis de agente**
+
+---
+
 
 ### Day 181 — August 14, 2026 21:30 CET
 
