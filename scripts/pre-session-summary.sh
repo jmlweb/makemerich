@@ -8,7 +8,9 @@
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_DIR"
 
+# Prefer project venv, fall back to system python3 (only stdlib is used)
 PYTHON="/home/hustle/.config/hustle/venv/bin/python3"
+[ -x "$PYTHON" ] || PYTHON="$(command -v python3)"
 PRICES="data/.prices-latest.json"
 SIGNALS="data/.signals-latest.json"
 QUANT="data/.quant-signals-latest.json"
