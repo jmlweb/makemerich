@@ -2,14 +2,14 @@
   "date": "2026-08-18",
   "day": 185,
   "balance": {
-    "total": 4511.96,
+    "total": 4503.59,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.76,
+  "totalReturn": -9.93,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 0.003664,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 121.99,
-      "value": 0.45,
-      "pnlPercent": -2.06,
-      "change24h": 0.13133054255930116
+      "currentPriceEUR": 121.07,
+      "value": 0.44,
+      "pnlPercent": -2.8,
+      "change24h": -0.623820077156698
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 149.936,
-      "value": 454.47,
+      "currentPriceEUR": 149.942,
+      "value": 454.49,
       "pnlPercent": 6.72,
-      "change24h": 0.009338189191719698
+      "change24h": 0.013340270273882572
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 625,
-      "value": 2261.09,
-      "pnlPercent": 19.14,
-      "change24h": -1.138880101233794
+      "currentPriceEUR": 622.7,
+      "value": 2252.77,
+      "pnlPercent": 18.7,
+      "change24h": -1.5026890224612464
     },
     {
       "asset": "ITX",
@@ -56,10 +56,10 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 56.9,
-      "value": 1112.69,
-      "pnlPercent": 6.43,
-      "change24h": 0.9581263307310134
+      "currentPriceEUR": 57.06,
+      "value": 1115.82,
+      "pnlPercent": 6.73,
+      "change24h": 1.24201561391058
     },
     {
       "asset": "SIE",
@@ -67,10 +67,10 @@
       "description": "Siemens — Industrial Conglomerate",
       "units": 0.811001,
       "entryPriceEUR": 278.15,
-      "currentPriceEUR": 277.75,
-      "value": 225.26,
-      "pnlPercent": -0.14,
-      "change24h": -2.2007042253521125
+      "currentPriceEUR": 275.8,
+      "value": 223.67,
+      "pnlPercent": -0.84,
+      "change24h": -2.887323943661968
     },
     {
       "asset": "AIR",
@@ -78,10 +78,10 @@
       "description": "Airbus — Aerospace & Defence",
       "units": 0.546024,
       "entryPriceEUR": 212.5,
-      "currentPriceEUR": 210.85,
-      "value": 115.13,
-      "pnlPercent": -0.78,
-      "change24h": -1.5869311551925347
+      "currentPriceEUR": 209.8,
+      "value": 114.56,
+      "pnlPercent": -1.27,
+      "change24h": -2.077012835472573
     },
     {
       "asset": "ASML",
@@ -89,14 +89,14 @@
       "description": "ASML Holding — Semiconductor Equipment",
       "units": 0.055425,
       "entryPriceEUR": 1554,
-      "currentPriceEUR": 1560.6,
-      "value": 86.5,
-      "pnlPercent": 0.42,
-      "change24h": -3.737971872686907
+      "currentPriceEUR": 1541.8,
+      "value": 85.45,
+      "pnlPercent": -0.79,
+      "change24h": -4.897606711078219
     }
   ],
   "metadata": {
-    "generatedAt": "2026-08-18T13:30:09.346Z",
+    "generatedAt": "2026-08-18T16:00:10.021Z",
     "eurUsd": 0.8620689655172414
   }
 }
