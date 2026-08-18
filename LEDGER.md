@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,551.16 |
-| Total Return | -8.98% |
-| Days Active | 185 |
+| Current Balance | €4,503.59 |
+| Total Return | -9.93% |
+| Days Active | 186 |
 
 ---
 
 ## Daily Log
+
+### Day 185 — August 18, 2026 21:30 CET
+
+**Balance:** €4,503.59 | **Total Return:** -9.9%
+**Day P&L:** €47.57 (-1.0%) vs Day 184 (€4,551.16)
+
+**Prices at close:**
+- 4GLD: €121.07 (-0.62% 24h) — stop €105.88
+- XEON: €149.94 (+0.01% 24h)
+- EQQQ: €622.70 (-1.50% 24h) — stop €508.78
+- ITX: €57.06 (+1.24% 24h) — stop €50.63
+- SIE: €275.80 (-2.89% 24h) — stop €261.80
+- AIR: €209.80 (-2.08% 24h) — stop €202.15
+- ASML: €1,541.80 (-4.90% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8630
+- SP500: 7,699.70 (-1.11%)
+- NASDAQ: 26,305.71 (-1.58%)
+- GOLD: 4,409.40 (-0.19%)
+- IBEX35: 19,934.90 (-0.24%)
+- EUROSTOXX50: 6,468.17 (-0.95%)
+- DAX: 26,128.36 (-1.18%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,252.77 | 50.0% | +18.7% | -1.50% |
+| ITX | €1,115.82 | 24.8% | +6.7% | +1.24% |
+| XEON | €454.49 | 10.1% | +6.7% | +0.01% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €223.67 | 5.0% | -0.8% | -2.89% |
+| AIR | €114.56 | 2.5% | -1.3% | -2.08% |
+| ASML | €85.45 | 1.9% | -0.8% | -4.90% |
+| 4GLD | €0.44 | 0.0% | -2.8% | -0.62% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.53% vs SMA50, VIX 16.01)
+- BUY: EQQQ, SIE, AIR, ASML, SXR8, VWCE
+- HOLD: 4GLD, XEON, ITX, BTC, SOL, SAP, MC, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.6% away)
+- EQQQ: stop EUR 508.78 (18.3% away)
+- ITX: stop EUR 50.63 (11.3% away)
+- SIE: stop EUR 261.80 (5.1% away)
+- AIR: stop EUR 202.15 (3.6% away)
+- ASML: stop EUR 1,372.87 (11.0% away)
+
+**Analysis:**
+Risk-off day despite RISK-ON regime flag — SP500/NASDAQ/DAX down 1-1.6%, ASML hit hardest (-4.90%) on chip-sector weakness. Portfolio down -1.0% day, tracking broad market pullback. Growth signal (BUY on EQQQ/SIE/AIR/ASML/SXR8/VWCE) exists but no trade orders generated today.
+
+**HOLD — Sin órdenes de trade generadas hoy, la caída sigue el mercado general sin romper ningún stop.**
+
+---
+
 
 ### Day 184 — August 17, 2026 21:30 CET
 
