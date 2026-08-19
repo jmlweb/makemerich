@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,503.59 |
-| Total Return | -9.93% |
-| Days Active | 186 |
+| Current Balance | €4,509.33 |
+| Total Return | -9.81% |
+| Days Active | 187 |
 
 ---
 
 ## Daily Log
+
+### Day 186 — August 19, 2026 21:30 CET
+
+**Balance:** €4,509.33 | **Total Return:** -9.8%
+**Day P&L:** +€5.74 (+0.1%) vs Day 185 (€4,503.59)
+
+**Prices at close:**
+- 4GLD: €123.69 (+0.73% 24h) — stop €105.88
+- XEON: €149.93 (+0.00% 24h)
+- EQQQ: €618.30 (-2.83% 24h) — stop €508.78
+- ITX: €58.28 (+2.14% 24h) — stop €50.63
+- SIE: €276.65 (-2.00% 24h) — stop €261.80
+- AIR: €208.05 (-0.83% 24h) — stop €202.15
+- ASML: €1,507.60 (-2.22% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8640
+- SP500: 7,716.25 (-0.37%)
+- NASDAQ: 26,355.13 (-1.09%)
+- GOLD: 4,562.70 (+4.51%)
+- IBEX35: 19,847.50 (-0.44%)
+- EUROSTOXX50: 6,444.46 (-0.37%)
+- DAX: 26,091.33 (-0.94%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,236.85 | 49.6% | +17.9% | -2.83% |
+| ITX | €1,139.68 | 25.3% | +9.0% | +2.14% |
+| XEON | €454.44 | 10.1% | +6.7% | +0.00% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €224.36 | 5.0% | -0.5% | -2.00% |
+| AIR | €113.60 | 2.5% | -2.1% | -0.83% |
+| ASML | €83.56 | 1.9% | -3.0% | -2.22% |
+| 4GLD | €0.45 | 0.0% | -0.7% | +0.73% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.60% vs SMA50, VIX 15.86)
+- BUY: EQQQ, ITX, AIR, ASML, SXR8, VWCE
+- HOLD: 4GLD, XEON, SIE, BTC, SOL, SAP, MC, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (14.4% away)
+- EQQQ: stop EUR 508.78 (17.7% away)
+- ITX: stop EUR 50.63 (13.1% away)
+- SIE: stop EUR 261.80 (5.4% away)
+- AIR: stop EUR 202.15 (2.8% away)
+- ASML: stop EUR 1,372.87 (8.9% away)
+
+**Analysis:**
+RISK-ON regime, VIX low (15.86), but tech soft today — NASDAQ -1.09%, EQQQ -2.83%. Gold spike +4.51% signal risk-off hedging elsewhere despite equity regime read. ITX strong (+2.14%) offset EQQQ/SIE/ASML drag, portfolio net flat (+0.1%).
+
+**HOLD — señales de sistema no generaron órdenes de trade hoy, mantener posiciones actuales.**
+
+---
+
 
 ### Day 185 — August 18, 2026 21:30 CET
 
