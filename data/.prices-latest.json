@@ -1,115 +1,115 @@
 {
-  "fetchedAt": "2026-08-19T19:30:07.162Z",
-  "eurUsd": 0.864,
+  "fetchedAt": "2026-08-20T07:00:04.621Z",
+  "eurUsd": 0.858,
   "prices": {
     "4GLD": {
-      "priceUSD": 143.1597250479239,
+      "priceUSD": 144.16084200630098,
       "priceEUR": 123.69000244140625,
-      "change": "0.73"
+      "change": "2.16"
     },
     "XEON": {
-      "priceUSD": 173.5266226309317,
+      "priceUSD": 174.7400955164627,
       "priceEUR": 149.927001953125,
-      "change": "0.00"
+      "change": "-0.01"
     },
     "EQQQ": {
-      "priceUSD": 715.6249858714916,
+      "priceUSD": 720.6293564020615,
       "priceEUR": 618.2999877929688,
-      "change": "-2.83"
+      "change": "-0.71"
     },
     "ITX": {
-      "priceUSD": 67.45370229085286,
+      "priceUSD": 67.925406502677,
       "priceEUR": 58.279998779296875,
       "change": "2.14"
     },
     "SIE": {
-      "priceUSD": 320.19675219500505,
+      "priceUSD": 322.43589032224287,
       "priceEUR": 276.6499938964844,
-      "change": "-2.00"
+      "change": "0.31"
     },
     "AIR": {
-      "priceUSD": 240.7986146432382,
+      "priceUSD": 242.48252103934476,
       "priceEUR": 208.0500030517578,
       "change": "-0.83"
     },
     "ASML": {
-      "priceUSD": 1744.9073791503906,
+      "priceUSD": 1757.109528654939,
       "priceEUR": 1507.5999755859375,
       "change": "-2.22"
     },
     "BTC": {
-      "priceUSD": 68164.2421875,
-      "priceEUR": 58893.905249999996,
-      "change": "5.39"
+      "priceUSD": 69813.9921875,
+      "priceEUR": 59900.405296875,
+      "change": "0.76"
     },
     "SOL": {
-      "priceUSD": 82.16999816894531,
-      "priceEUR": 70.99487841796875,
-      "change": "6.67"
+      "priceUSD": 85.8499984741211,
+      "priceEUR": 73.6592986907959,
+      "change": "0.58"
     },
     "SXR8": {
-      "priceUSD": 826.3888888888889,
+      "priceUSD": 832.1678321678322,
       "priceEUR": 714,
-      "change": "-1.24"
+      "change": "-0.34"
     },
     "VWCE": {
-      "priceUSD": 192.70833333333334,
+      "priceUSD": 194.05594405594405,
       "priceEUR": 166.5,
-      "change": "-1.51"
+      "change": "-0.24"
     },
     "SAP": {
-      "priceUSD": 215.16202997278285,
+      "priceUSD": 216.6666595530121,
       "priceEUR": 185.89999389648438,
-      "change": "3.52"
+      "change": "1.86"
     },
     "MC": {
-      "priceUSD": 527.7777777777778,
+      "priceUSD": 531.4685314685315,
       "priceEUR": 456,
       "change": "1.84"
     },
     "NOVO": {
-      "priceUSD": 46.45920405853305,
+      "priceUSD": 46.78409359740391,
       "priceEUR": 40.14075230657255,
       "change": "1.05"
     },
     "ALV": {
-      "priceUSD": 506.94444444444446,
+      "priceUSD": 510.4895104895105,
       "priceEUR": 438,
-      "change": "-0.14"
+      "change": "-0.90"
     },
     "TTE": {
-      "priceUSD": 89.88426349781177,
+      "priceUSD": 90.51282478101326,
       "priceEUR": 77.66000366210938,
       "change": "0.99"
     },
     "DTE": {
-      "priceUSD": 33.77314850136086,
+      "priceUSD": 34.00932436500674,
       "priceEUR": 29.18000030517578,
-      "change": "2.78"
+      "change": "1.11"
     },
     "SP500": {
-      "value": 7716.25,
-      "change": "-0.37"
+      "value": 7707.97998046875,
+      "change": "-0.48"
     },
     "NASDAQ": {
-      "value": 26355.130859375,
-      "change": "-1.09"
+      "value": 26331.08984375,
+      "change": "-1.18"
     },
     "GOLD": {
-      "value": 4562.7001953125,
-      "change": "4.51"
+      "value": 4550.5,
+      "change": "1.36"
     },
     "IBEX35": {
       "value": 19847.5,
-      "change": "-0.44"
+      "change": "0.00"
     },
     "EUROSTOXX50": {
       "value": 6444.4599609375,
-      "change": "-0.37"
+      "change": "-0.00"
     },
     "DAX": {
       "value": 26091.330078125,
-      "change": "-0.94"
+      "change": "-0.14"
     }
   }
 }
