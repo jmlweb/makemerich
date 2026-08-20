@@ -5,13 +5,73 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,509.33 |
-| Total Return | -9.81% |
-| Days Active | 187 |
+| Current Balance | €4,469.50 |
+| Total Return | -10.61% |
+| Days Active | 188 |
 
 ---
 
 ## Daily Log
+
+### Day 187 — August 20, 2026 21:30 CET
+
+**Balance:** €4,469.50 | **Total Return:** -10.6%
+**Day P&L:** €39.83 (-0.9%) vs Day 186 (€4,509.33)
+
+**Prices at close:**
+- 4GLD: €124.62 (+2.93% 24h) — stop €105.88
+- XEON: €149.98 (+0.03% 24h)
+- EQQQ: €611.70 (-1.77% 24h) — stop €508.78
+- ITX: €57.58 (-1.20% 24h) — stop €50.63
+- SIE: €276.00 (+0.07% 24h) — stop €261.80
+- AIR: €204.80 (-1.56% 24h) — stop €202.15
+- ASML: €1,505.40 (-0.15% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,652.41 (-0.51%)
+- NASDAQ: 26,087.02 (-0.77%)
+- GOLD: 4,582.30 (+2.07%)
+- IBEX35: 19,811.00 (-0.18%)
+- EUROSTOXX50: 6,422.06 (-0.35%)
+- DAX: 25,983.04 (-0.56%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,212.98 | 49.5% | +16.6% | -1.77% |
+| ITX | €1,125.99 | 25.2% | +7.7% | -1.20% |
+| XEON | €454.60 | 10.2% | +6.8% | +0.03% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €223.84 | 5.0% | -0.8% | +0.07% |
+| AIR | €111.83 | 2.5% | -3.6% | -1.56% |
+| ASML | €83.44 | 1.9% | -3.1% | -0.15% |
+| 4GLD | €0.46 | 0.0% | +0.1% | +2.93% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.96% vs SMA50, VIX 15.2)
+- BUY: ASML
+- HOLD: 4GLD, XEON, EQQQ, ITX, SIE, AIR, SXR8, VWCE, SAP, MC, NOVO, ALV, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (15.0% away)
+- EQQQ: stop EUR 508.78 (16.8% away)
+- ITX: stop EUR 50.63 (12.1% away)
+- SIE: stop EUR 261.80 (5.1% away)
+- AIR: stop EUR 202.15 (1.3% away)
+- ASML: stop EUR 1,372.87 (8.8% away)
+- Portfolio drawdown: -10.6%
+
+**Analysis:**
+Risk-on regime but portfolio red day, drag by EQQQ/ITX/AIR/ASML pullback despite gold pop. Quant flag BUY ASML, no sell triggers, stops all safe distance away.
+
+**HOLD — sin señal de venta ni orden ejecutable, se mantiene posición según reglas del sistema.**
+
+---
+
 
 ### Day 186 — August 19, 2026 21:30 CET
 
