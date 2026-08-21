@@ -5,13 +5,72 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,469.50 |
-| Total Return | -10.61% |
-| Days Active | 188 |
+| Current Balance | €4,492.98 |
+| Total Return | -10.14% |
+| Days Active | 189 |
 
 ---
 
 ## Daily Log
+
+### Day 188 — August 21, 2026 21:30 CET
+
+**Balance:** €4,492.98 | **Total Return:** -10.1%
+**Day P&L:** +€23.48 (+0.5%) vs Day 187 (€4,469.50)
+
+**Prices at close:**
+- 4GLD: €126.88 (+2.58% 24h) — stop €105.88
+- XEON: €149.99 (+0.04% 24h)
+- EQQQ: €613.90 (-0.71% 24h) — stop €508.78
+- ITX: €58.22 (+1.11% 24h) — stop €50.63
+- SIE: €280.35 (+1.34% 24h) — stop €261.80
+- AIR: €203.70 (-0.54% 24h) — stop €202.15
+- ASML: €1,506.00 (+0.04% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,679.14 (-0.37%)
+- NASDAQ: 26,188.04 (-0.54%)
+- GOLD: 4,679.70 (+3.62%)
+- IBEX35: 19,961.50 (+0.76%)
+- EUROSTOXX50: 6,462.22 (+0.63%)
+- DAX: 26,136.56 (+0.17%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,220.93 | 49.4% | +17.0% | -0.71% |
+| ITX | €1,138.50 | 25.3% | +8.9% | +1.11% |
+| XEON | €454.63 | 10.1% | +6.8% | +0.04% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €227.36 | 5.1% | +0.8% | +1.34% |
+| AIR | €111.23 | 2.5% | -4.1% | -0.54% |
+| ASML | €83.47 | 1.9% | -3.1% | +0.04% |
+| 4GLD | €0.46 | 0.0% | +1.9% | +2.58% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.77% vs SMA50, VIX 15.69)
+- HOLD: 4GLD, XEON, EQQQ, ITX, SIE, AIR, ASML, SXR8, VWCE, SAP, MC, NOVO, ALV, TTE, DTE
+- SELL: BTC, SOL
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (16.6% away)
+- EQQQ: stop EUR 508.78 (17.1% away)
+- ITX: stop EUR 50.63 (13.0% away)
+- SIE: stop EUR 261.80 (6.6% away)
+- AIR: stop EUR 202.15 (0.8% away)
+- ASML: stop EUR 1,372.87 (8.8% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+Risk-on regime hold, VIX low 15.69. Gold spike +3.62% notable, portfolio gold position tiny (irrelevant). AIR stop close (0.8% away) — watch, no signal to act though.
+
+**HOLD — sin señales de venta activas, posiciones dentro de límites de stop-loss.**
+
+---
+
 
 ### Day 187 — August 20, 2026 21:30 CET
 
