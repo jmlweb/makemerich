@@ -15,6 +15,17 @@ send_tg() {
   node "$SEND_TG" "$1" || echo "Warning: telegram send failed"
 }
 
+# The daily close report is muted unless it carries something actionable
+# (stop-loss / drawdown alerts or rule violations). MAKEMERICH_NOTIFY=1 forces
+# it through for on-demand runs. Error paths above always use send_tg directly.
+send_tg_routine() {
+  if [ "${MAKEMERICH_NOTIFY:-0}" = "1" ] || [ -n "$2" ]; then
+    send_tg "$1"
+  else
+    echo "routine report suppressed (no alerts, no violations)" | tee -a "$LOG_FILE"
+  fi
+}
+
 # Load nvm / node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
@@ -37,7 +48,9 @@ node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { send_tg "⚠️ makeme
 
 # 4. Validate rules
 echo "[4/9] Validating rules..." | tee -a "$LOG_FILE"
-node scripts/validate-rules.js >> "$LOG_FILE" 2>&1 || true
+VIOLATIONS=$(node scripts/validate-rules.js 2>/dev/null || true)
+echo "$VIOLATIONS" >> "$LOG_FILE"
+VIOLATION_COUNT=$(echo "$VIOLATIONS" | grep "VIOLATIONS (" | grep -oP '\d+' | head -1 || echo "0")
 
 # 5. Generate threshold signals
 echo "[5/9] Generating signals..." | tee -a "$LOG_FILE"
@@ -120,17 +133,7 @@ else: print('$BALANCE')
   local sign=""
   if [ "$(echo "$day_change" | grep -c "^-")" -eq 0 ]; then sign="+"; fi
 
-  # Build alerts from signals
-  local alerts
-  alerts=$("$VENV_PYTHON" -c "
-import json
-s = json.load(open('data/.signals-latest.json'))
-for a in s.get('alerts', []):
-    if a.get('type') == 'STOP_LOSS':
-        print(f'⚠️ {a[\"asset\"]} stop {a[\"currency\"]} {a[\"triggerPrice\"]:.0f} ({a[\"distancePct\"]:.0f}% margen)')
-    elif a.get('type') == 'PORTFOLIO_DRAWDOWN':
-        print(f'⚠️ Drawdown cartera {a[\"pnlPct\"]:.1f}%')
-" 2>/dev/null || true)
+  local alerts="$ALERTS"
 
   local msg
   msg="📊 Day $DAY_NUMBER | EUR ${BALANCE} (${PNL}%)
@@ -216,7 +219,22 @@ fi
 set -e
 
 # --- Post-agent: send Telegram (built from template, no Claude) ---
+ALERTS=$("$VENV_PYTHON" -c "
+import json
+s = json.load(open('data/.signals-latest.json'))
+for a in s.get('alerts', []):
+    if a.get('type') == 'STOP_LOSS':
+        print(f'⚠️ {a[\"asset\"]} stop {a[\"currency\"]} {a[\"triggerPrice\"]:.0f} ({a[\"distancePct\"]:.0f}% margen)')
+    elif a.get('type') == 'PORTFOLIO_DRAWDOWN':
+        print(f'⚠️ Drawdown cartera {a[\"pnlPct\"]:.1f}%')
+" 2>/dev/null || true)
+
+ALERT_SIGNAL="$ALERTS"
+if [ "${VIOLATION_COUNT:-0}" != "0" ]; then
+  ALERT_SIGNAL="${ALERT_SIGNAL} violations:${VIOLATION_COUNT}"
+fi
+
 TELEGRAM_MSG=$(build_telegram_msg "$DECISION_WORD" "$DECISION_REASON")
-send_tg "$TELEGRAM_MSG"
+send_tg_routine "$TELEGRAM_MSG" "$ALERT_SIGNAL"
 
 echo "[$(date)] Daily close complete." | tee -a "$LOG_FILE"

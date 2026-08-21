@@ -39,6 +39,17 @@ send_tg() {
   node "$SEND_TG" "$1" || echo "Warning: telegram send failed"
 }
 
+# Routine session reports are muted: hustle only pushes failures and alerts to
+# Telegram. A non-empty second argument (alerts / rule violations) or
+# MAKEMERICH_NOTIFY=1 (on-demand run via /makemerich) forces the send.
+send_tg_routine() {
+  if [ "${MAKEMERICH_NOTIFY:-0}" = "1" ] || [ -n "$2" ]; then
+    send_tg "$1"
+  else
+    echo "routine report suppressed (no alerts, no violations)"
+  fi
+}
+
 read_portfolio_state() {
   BALANCE=$("$PYTHON" -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"balance_eur\"]:.2f}')" 2>/dev/null || echo "?")
   PNL=$("$PYTHON" -c "import json; p=json.load(open('data/portfolio.json')); print(f'{p[\"totals\"][\"pnl_pct\"]:.1f}')" 2>/dev/null || echo "?")
@@ -139,7 +150,7 @@ ACTUAL_ORDERS=$(echo "$TRADE_ORDERS" | grep -q "NO ORDERS" && echo "0" || echo "
 if [ "$FORCE_AGENT" -eq 0 ] && [ "${VIOLATION_COUNT:-0}" = "0" ] && [ -z "$TRIMMED_TRIGGERS" ] && [ "$ACTUAL_ORDERS" = "0" ]; then
   echo "pre-check: skip (no violations, no triggers, no trade orders)"
   read_portfolio_state
-  send_tg "$(build_telegram_msg "HOLD" "sesion automatica, sin novedades" "")"
+  send_tg_routine "$(build_telegram_msg "HOLD" "sesion automatica, sin novedades" "")" ""
   echo "=== Session $SESSION_LABEL complete (pre-check skip) ==="
   exit 0
 fi
@@ -234,7 +245,11 @@ else
 fi
 set -e
 
-# Send Telegram
-send_tg "$(build_telegram_msg "$DECISION_WORD" "$DECISION_REASON" "$ALERTS")"
+# Send Telegram — only when something needs Jose's eyes
+ALERT_SIGNAL="$ALERTS"
+if [ "${VIOLATION_COUNT:-0}" != "0" ]; then
+  ALERT_SIGNAL="${ALERT_SIGNAL} violations:${VIOLATION_COUNT}"
+fi
+send_tg_routine "$(build_telegram_msg "$DECISION_WORD" "$DECISION_REASON" "$ALERTS")" "$ALERT_SIGNAL"
 
 echo "=== Session $SESSION_LABEL complete ==="

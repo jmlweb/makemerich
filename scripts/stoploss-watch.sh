@@ -195,9 +195,16 @@ else:
         os.remove('/tmp/makemerich-alert.txt')
 PYEOF
 
+# Executed stop-loss / take-profit is logged and committed either way; the
+# Telegram push is muted unless this is an on-demand run (MAKEMERICH_NOTIFY=1).
+# The action still shows up in the next /makemerich report.
 if [ -f "$ALERT_FILE" ]; then
   MSG=$(cat "$ALERT_FILE")
-  node "$SEND_TG" "🚨 *Accion automatica*
+  if [ "${MAKEMERICH_NOTIFY:-0}" = "1" ]; then
+    node "$SEND_TG" "🚨 *Accion automatica*
 
 ${MSG}" || echo "Warning: telegram send failed"
+  else
+    echo "auto-action report suppressed: ${MSG}"
+  fi
 fi
