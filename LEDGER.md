@@ -5,13 +5,73 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,492.98 |
-| Total Return | -10.14% |
-| Days Active | 189 |
+| Current Balance | €4,477.91 |
+| Total Return | -10.44% |
+| Days Active | 192 |
 
 ---
 
 ## Daily Log
+
+### Day 191 — August 24, 2026 21:30 CET
+
+**Balance:** €4,477.91 | **Total Return:** -10.4%
+**Day P&L:** €15.07 (-0.3%) vs Day 190 (€4,492.98)
+
+**Prices at close:**
+- 4GLD: €128.82 (+3.37% 24h) — stop €105.88
+- XEON: €149.99 (+0.00% 24h)
+- EQQQ: €609.00 (-0.44% 24h) — stop €508.78
+- ITX: €58.42 (+0.34% 24h) — stop €50.63
+- SIE: €280.60 (+1.67% 24h) — stop €261.80
+- AIR: €202.70 (-0.49% 24h) — stop €202.15
+- ASML: €1,489.80 (-1.08% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8560
+- SP500: 7,657.88 (+0.22%)
+- NASDAQ: 26,035.15 (-0.12%)
+- GOLD: 4,699.00 (+0.39%)
+- IBEX35: 20,098.60 (+0.69%)
+- EUROSTOXX50: 6,447.98 (-0.22%)
+- DAX: 26,106.60 (+0.48%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,203.21 | 49.2% | +16.1% | -0.44% |
+| ITX | €1,142.41 | 25.5% | +9.3% | +0.34% |
+| XEON | €454.62 | 10.2% | +6.8% | +0.00% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €227.57 | 5.1% | +0.9% | +1.67% |
+| AIR | €110.68 | 2.5% | -4.6% | -0.49% |
+| ASML | €82.57 | 1.8% | -4.1% | -1.08% |
+| 4GLD | €0.47 | 0.0% | +3.4% | +3.37% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.55% vs SMA50, VIX 15.89)
+- BUY: SIE, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, AIR, ASML, SXR8, VWCE, SAP, NOVO, ALV, DTE
+- SELL: BTC, SOL, MC
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (17.8% away)
+- EQQQ: stop EUR 508.78 (16.5% away)
+- ITX: stop EUR 50.63 (13.3% away)
+- SIE: stop EUR 261.80 (6.7% away)
+- AIR: stop EUR 202.15 (0.3% away)
+- ASML: stop EUR 1,372.87 (7.8% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Risk-on regime, VIX low. Portfolio flat day (-0.3%), stops far except AIR (0.3% away, tight). Quant flags BUY on SIE/TTE — not held new positions, no orders generated (invariant 1: mechanical execution only).
+
+**HOLD — sin órdenes de execute-signals.js, día plano, stops sin activar.**
+
+---
+
 
 ### Day 188 — August 21, 2026 21:30 CET
 
