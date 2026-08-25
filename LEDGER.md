@@ -5,13 +5,73 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,477.91 |
-| Total Return | -10.44% |
-| Days Active | 192 |
+| Current Balance | €4,490.98 |
+| Total Return | -10.18% |
+| Days Active | 193 |
 
 ---
 
 ## Daily Log
+
+### Day 192 — August 25, 2026 21:30 CET
+
+**Balance:** €4,490.98 | **Total Return:** -10.2%
+**Day P&L:** +€13.07 (+0.3%) vs Day 191 (€4,477.91)
+
+**Prices at close:**
+- 4GLD: €128.20 (+1.04% 24h) — stop €105.88
+- XEON: €150.00 (+0.00% 24h)
+- EQQQ: €611.80 (-0.34% 24h) — stop €508.78
+- ITX: €58.28 (-0.24% 24h) — stop €50.63
+- SIE: €285.55 (+1.85% 24h) — stop €261.80
+- AIR: €204.55 (+0.91% 24h) — stop €202.15
+- ASML: €1,501.00 (+0.75% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8570
+- SP500: 7,670.04 (-0.06%)
+- NASDAQ: 26,100.34 (-0.31%)
+- GOLD: 4,723.60 (+1.78%)
+- IBEX35: 20,056.60 (-0.21%)
+- EUROSTOXX50: 6,455.63 (+0.12%)
+- DAX: 26,266.14 (+0.50%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,213.34 | 49.3% | +16.6% | -0.34% |
+| ITX | €1,139.68 | 25.4% | +9.0% | -0.24% |
+| XEON | €454.65 | 10.1% | +6.8% | +0.00% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €231.58 | 5.2% | +2.7% | +1.85% |
+| AIR | €111.69 | 2.5% | -3.7% | +0.91% |
+| ASML | €83.19 | 1.9% | -3.4% | +0.75% |
+| 4GLD | €0.47 | 0.0% | +2.9% | +1.04% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.70% vs SMA50, VIX 15.84)
+- BUY: SIE, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, AIR, ASML, SXR8, VWCE, SAP, NOVO, ALV, DTE
+- SELL: BTC, SOL, MC
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (17.4% away)
+- EQQQ: stop EUR 508.78 (16.8% away)
+- ITX: stop EUR 50.63 (13.1% away)
+- SIE: stop EUR 261.80 (8.3% away)
+- AIR: stop EUR 202.15 (1.2% away)
+- ASML: stop EUR 1,372.87 (8.5% away)
+- Portfolio drawdown: -10.2%
+
+**Analysis:**
+RISK-ON regime hold, SP500/DAX green, gold +1.78% strong. Portfolio flat day (+0.3%), all stops safe distance 'cept AIR (1.2% away). No trade orders generated — signals show BUY SIE/TTE but no execution order present.
+
+**HOLD — sin órdenes de ejecución generadas, no hay trade que ejecutar.**
+
+---
+
 
 ### Day 191 — August 24, 2026 21:30 CET
 
