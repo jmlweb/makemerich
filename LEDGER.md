@@ -5,13 +5,73 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,490.98 |
-| Total Return | -10.18% |
-| Days Active | 193 |
+| Current Balance | €4,494.97 |
+| Total Return | -10.10% |
+| Days Active | 194 |
 
 ---
 
 ## Daily Log
+
+### Day 193 — August 26, 2026 21:30 CET
+
+**Balance:** €4,494.97 | **Total Return:** -10.1%
+**Day P&L:** +€3.99 (+0.1%) vs Day 192 (€4,490.98)
+
+**Prices at close:**
+- 4GLD: €126.90 (-1.49% 24h) — stop €105.88
+- XEON: €149.99 (+0.00% 24h)
+- EQQQ: €612.30 (+0.54% 24h) — stop €508.78
+- ITX: €58.26 (-0.03% 24h) — stop €50.63
+- SIE: €288.10 (+2.67% 24h) — stop €261.80
+- AIR: €205.85 (+0.64% 24h) — stop €202.15
+- ASML: €1,497.60 (-0.23% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8570
+- SP500: 7,686.31 (+0.44%)
+- NASDAQ: 26,163.44 (+0.71%)
+- GOLD: 4,646.30 (+0.18%)
+- IBEX35: 20,067.30 (+0.05%)
+- EUROSTOXX50: 6,470.74 (+0.23%)
+- DAX: 26,285.96 (+0.69%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,215.15 | 49.3% | +16.7% | +0.54% |
+| ITX | €1,139.28 | 25.3% | +9.0% | -0.03% |
+| XEON | €454.64 | 10.1% | +6.8% | +0.00% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €233.65 | 5.2% | +3.6% | +2.67% |
+| AIR | €112.40 | 2.5% | -3.1% | +0.64% |
+| ASML | €83.00 | 1.8% | -3.6% | -0.23% |
+| 4GLD | €0.46 | 0.0% | +1.9% | -1.49% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.45% vs SMA50, VIX 15.7)
+- BUY: SIE, NOVO
+- HOLD: 4GLD, XEON, EQQQ, ITX, AIR, ASML, BTC, SOL, SXR8, VWCE, SAP, ALV, TTE, DTE
+- SELL: MC
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (16.6% away)
+- EQQQ: stop EUR 508.78 (16.9% away)
+- ITX: stop EUR 50.63 (13.1% away)
+- SIE: stop EUR 261.80 (9.1% away)
+- AIR: stop EUR 202.15 (1.8% away)
+- ASML: stop EUR 1,372.87 (8.3% away)
+- Portfolio drawdown: -10.1%
+
+**Analysis:**
+Risk-on regime, indices green across board. SIE strong +2.67%, quant flags BUY on SIE/NOVO but no trade orders generated. Portfolio flat day (+0.1%), drawdown -10.1% unchanged, no stops near trigger.
+
+**HOLD — sin órdenes de trade generadas, no hay decisión discrecional que tomar.**
+
+---
+
 
 ### Day 192 — August 25, 2026 21:30 CET
 
