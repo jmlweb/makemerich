@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,494.97 |
-| Total Return | -10.10% |
-| Days Active | 194 |
+| Current Balance | €4,506.52 |
+| Total Return | -9.87% |
+| Days Active | 195 |
 
 ---
 
 ## Daily Log
+
+### Day 194 — August 27, 2026 21:30 CET
+
+**Balance:** €4,506.52 | **Total Return:** -9.9%
+**Day P&L:** +€11.55 (+0.3%) vs Day 193 (€4,494.97)
+
+**Prices at close:**
+- 4GLD: €126.91 (-1.01% 24h) — stop €105.88
+- XEON: €150.02 (+0.01% 24h)
+- EQQQ: €619.30 (+1.23% 24h) — stop €508.78
+- ITX: €57.70 (-0.96% 24h) — stop €50.63
+- SIE: €286.95 (+0.49% 24h) — stop €261.80
+- AIR: €203.40 (-1.19% 24h) — stop €202.15
+- ASML: €1,486.40 (-0.75% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,716.72 (+0.51%)
+- NASDAQ: 26,465.48 (+1.20%)
+- GOLD: 4,665.70 (+1.47%)
+- IBEX35: 19,881.60 (-0.93%)
+- EUROSTOXX50: 6,424.73 (-0.71%)
+- DAX: 26,367.24 (+0.38%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,240.47 | 49.7% | +18.1% | +1.23% |
+| ITX | €1,128.33 | 25.0% | +7.9% | -0.96% |
+| XEON | €454.71 | 10.1% | +6.8% | +0.01% |
+| CASH | €256.38 | 5.7% | — | — |
+| SIE | €232.72 | 5.2% | +3.2% | +0.49% |
+| AIR | €111.06 | 2.5% | -4.3% | -1.19% |
+| ASML | €82.38 | 1.8% | -4.3% | -0.75% |
+| 4GLD | €0.46 | 0.0% | +1.9% | -1.01% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.90% vs SMA50, VIX 14.89)
+- BUY: SIE
+- HOLD: 4GLD, XEON, EQQQ, ITX, AIR, ASML, BTC, SOL, SXR8, VWCE, SAP, MC, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (16.6% away)
+- EQQQ: stop EUR 508.78 (17.9% away)
+- ITX: stop EUR 50.63 (12.3% away)
+- SIE: stop EUR 261.80 (8.8% away)
+- AIR: stop EUR 202.15 (0.6% away)
+- ASML: stop EUR 1,372.87 (7.6% away)
+
+**Analysis:**
+Risk-on regime hold. NASDAQ/SP500 up, EQQQ +1.23% lead gainer. Quant fire BUY signal on SIE, but no trade order file exist — mechanical execution only, no signal-to-trade this session.
+
+**HOLD — sin órdenes de trade generadas, se mantiene posición actual.**
+
+---
+
 
 ### Day 193 — August 26, 2026 21:30 CET
 
