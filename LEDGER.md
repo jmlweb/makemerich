@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,506.52 |
-| Total Return | -9.87% |
-| Days Active | 195 |
+| Current Balance | €4,545.20 |
+| Total Return | -9.10% |
+| Days Active | 196 |
 
 ---
 
 ## Daily Log
+
+### Day 195 — August 28, 2026 21:30 CET
+
+**Balance:** €4,545.20 | **Total Return:** -9.1%
+**Day P&L:** +€38.68 (+0.9%) vs Day 194 (€4,506.52)
+
+**Prices at close:**
+- 4GLD: €126.33 (-0.45% 24h) — stop €105.88
+- XEON: €150.04 (+0.03% 24h)
+- EQQQ: €625.90 (+2.22% 24h) — stop €508.78
+- ITX: €58.32 (+1.07% 24h) — stop €50.63
+- SIE: €289.85 (+0.61% 24h) — stop €261.80
+- AIR: €203.05 (-0.17% 24h) — stop €202.15
+- ASML: €1,494.40 (+0.54% 24h) — stop €1,372.87
+
+**Market context:**
+- EUR/USD: 0.8580
+- SP500: 7,712.70 (+0.48%)
+- NASDAQ: 26,409.63 (+1.07%)
+- GOLD: 4,509.50 (-2.17%)
+- IBEX35: 20,041.90 (+0.81%)
+- EUROSTOXX50: 6,485.67 (+0.95%)
+- DAX: 26,569.99 (+1.08%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,264.35 | 49.8% | +19.3% | +2.22% |
+| ITX | €1,140.46 | 25.1% | +9.1% | +1.07% |
+| XEON | €454.79 | 10.0% | +6.8% | +0.03% |
+| CASH | €256.38 | 5.6% | — | — |
+| SIE | €235.07 | 5.2% | +4.2% | +0.61% |
+| AIR | €110.87 | 2.4% | -4.5% | -0.17% |
+| ASML | €82.83 | 1.8% | -3.8% | +0.54% |
+| 4GLD | €0.46 | 0.0% | +1.4% | -0.45% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +2.26% vs SMA50, VIX 14.5)
+- HOLD: 4GLD, XEON, EQQQ, ITX, SIE, AIR, ASML, BTC, SXR8, VWCE, SAP, NOVO, ALV, TTE, DTE
+- SELL: SOL, MC
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (16.2% away)
+- EQQQ: stop EUR 508.78 (18.7% away)
+- ITX: stop EUR 50.63 (13.2% away)
+- SIE: stop EUR 261.80 (9.7% away)
+- AIR: stop EUR 202.15 (0.4% away)
+- ASML: stop EUR 1,372.87 (8.1% away)
+
+**Analysis:**
+Risk-on regime confirmed — NASDAQ +1.07%, SP500 near highs, VIX low 14.5. Gold pull back -2.17% (rotation outta safe haven into equities). Portfolio gain +0.9% day, EQQQ lead (+2.22%). No sell signals on held names, all stops intact.
+
+**HOLD — sin señales de venta, mercado risk-on favorece posiciones actuales.**
+
+---
+
 
 ### Day 194 — August 27, 2026 21:30 CET
 
