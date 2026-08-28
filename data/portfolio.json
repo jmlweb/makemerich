@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-28T13:30:12.814Z",
+  "last_updated": "2026-08-28T16:00:14.593Z",
   "holdings": {
     "CASH": {
       "amount_eur": 256.38
@@ -7,9 +7,9 @@
     "4GLD": {
       "units": 0.003664,
       "entry_price_eur": 124.56,
-      "current_price_eur": 127,
-      "amount_eur": 0.47,
-      "pnl_pct": 1.96,
+      "current_price_eur": 126.33,
+      "amount_eur": 0.46,
+      "pnl_pct": 1.42,
       "stop_loss_eur": 105.88
     },
     "XEON": {
@@ -24,48 +24,48 @@
     "EQQQ": {
       "units": 3.617747,
       "entry_price_eur": 524.6,
-      "current_price_eur": 621.1,
-      "amount_eur": 2246.98,
-      "pnl_pct": 18.39,
+      "current_price_eur": 625.9,
+      "amount_eur": 2264.35,
+      "pnl_pct": 19.31,
       "stop_loss_eur": 508.7824
     },
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 57.94,
-      "amount_eur": 1133.03,
-      "pnl_pct": 8.38,
+      "current_price_eur": 58.32,
+      "amount_eur": 1140.46,
+      "pnl_pct": 9.09,
       "stop_loss_eur": 50.6326
     },
     "SIE": {
       "units": 0.811001,
       "entry_price_eur": 278.15,
-      "current_price_eur": 291.4,
-      "amount_eur": 236.33,
-      "pnl_pct": 4.76,
+      "current_price_eur": 289.85,
+      "amount_eur": 235.07,
+      "pnl_pct": 4.21,
       "stop_loss_eur": 261.7998
     },
     "AIR": {
       "units": 0.546024,
       "entry_price_eur": 212.5,
-      "current_price_eur": 202.95,
-      "amount_eur": 110.82,
-      "pnl_pct": -4.49,
+      "current_price_eur": 203.05,
+      "amount_eur": 110.87,
+      "pnl_pct": -4.45,
       "stop_loss_eur": 202.1531
     },
     "ASML": {
       "units": 0.055425,
       "entry_price_eur": 1554,
-      "current_price_eur": 1492.2,
-      "amount_eur": 82.71,
-      "pnl_pct": -3.98,
+      "current_price_eur": 1494.4,
+      "amount_eur": 82.83,
+      "pnl_pct": -3.84,
       "stop_loss_eur": 1372.8737
     }
   },
   "totals": {
-    "balance_eur": 4521.49,
+    "balance_eur": 4545.2,
     "initial_eur": 5000,
-    "pnl_eur": -478.51,
-    "pnl_pct": -9.57
+    "pnl_eur": -454.8,
+    "pnl_pct": -9.1
   }
 }
