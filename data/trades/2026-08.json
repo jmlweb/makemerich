@@ -154,5 +154,17 @@
     "fee_eur": 0,
     "reason": "trend: SMA50 < SMA200 (bearish), price above SMA20; momentum: RSI high (68.4); meanReversion: at upper BB + RSI > 65 (overbought); macd: MACD histogram positive",
     "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-08-31",
+    "time": "10:00 UTC",
+    "action": "SELL",
+    "asset": "AIR",
+    "units": 0.546024,
+    "price_eur": 201.3,
+    "amount_eur": 109.91,
+    "fee_eur": 0.11,
+    "reason": "Stop-loss triggered: AIR EUR 201.30 <= stop EUR 202.15",
+    "session": "stoploss-watch"
   }
 ]
