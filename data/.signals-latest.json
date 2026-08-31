@@ -1,60 +1,51 @@
 {
-  "generatedAt": "2026-08-31T07:00:31.653Z",
-  "balance": 4545.2,
-  "totalReturn": -9.1,
+  "generatedAt": "2026-08-31T19:30:06.850Z",
+  "balance": 4502.05,
+  "totalReturn": -9.96,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 126.33,
+      "currentPrice": 122.68,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 16.19,
+      "distancePct": 13.69,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 625.9,
+      "currentPrice": 617.6,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 18.71,
+      "distancePct": 17.62,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 58.32,
+      "currentPrice": 58,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 13.18,
+      "distancePct": 12.7,
       "status": "ACTIVE"
     },
     {
       "asset": "SIE",
       "type": "STOP_LOSS",
-      "currentPrice": 289.85,
+      "currentPrice": 285.6,
       "triggerPrice": 261.7998,
       "currency": "EUR",
-      "distancePct": 9.68,
+      "distancePct": 8.33,
       "status": "ACTIVE"
-    },
-    {
-      "asset": "AIR",
-      "type": "STOP_LOSS",
-      "currentPrice": 203.05,
-      "triggerPrice": 202.1531,
-      "currency": "EUR",
-      "distancePct": 0.44,
-      "status": "NEAR"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1494.4,
+      "currentPrice": 1451.8,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 8.13,
+      "distancePct": 5.44,
       "status": "ACTIVE"
     }
   ]
