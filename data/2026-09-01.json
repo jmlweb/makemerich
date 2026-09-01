@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-01",
+  "day": 199,
+  "balance": {
+    "total": 4473.21,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": -10.54,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 366.18,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 0.003664,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 121.23,
+      "value": 0.44,
+      "pnlPercent": -2.67,
+      "change24h": -4.037045832343857
+    },
+    {
+      "asset": "XEON",
+      "type": "ETF",
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 150.055,
+      "value": 454.83,
+      "pnlPercent": 6.8,
+      "change24h": 0.009997334044264717
+    },
+    {
+      "asset": "EQQQ",
+      "type": "ETF",
+      "description": "Invesco NASDAQ-100 UCITS",
+      "units": 3.617747,
+      "entryPriceEUR": 524.6,
+      "currentPriceEUR": 614.7,
+      "value": 2223.83,
+      "pnlPercent": 17.17,
+      "change24h": -1.7894232305480002
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex — Fashion Retail",
+      "units": 19.555182,
+      "entryPriceEUR": 53.46,
+      "currentPriceEUR": 57.26,
+      "value": 1119.73,
+      "pnlPercent": 7.11,
+      "change24h": -1.2758620689655207
+    },
+    {
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens — Industrial Conglomerate",
+      "units": 0.811001,
+      "entryPriceEUR": 278.15,
+      "currentPriceEUR": 280.9,
+      "value": 227.81,
+      "pnlPercent": 0.99,
+      "change24h": -3.0878040365706556
+    },
+    {
+      "asset": "ASML",
+      "type": "Stock",
+      "description": "ASML Holding — Semiconductor Equipment",
+      "units": 0.055425,
+      "entryPriceEUR": 1554,
+      "currentPriceEUR": 1450.4,
+      "value": 80.39,
+      "pnlPercent": -6.67,
+      "change24h": -0.09643201542911307
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-09-01T10:00:21.349Z",
+    "eurUsd": 0.8620689655172414
+  }
+}

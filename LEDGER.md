@@ -5,13 +5,76 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,502.05 |
-| Total Return | -9.96% |
-| Days Active | 199 |
+| Current Balance | €4,473.07 |
+| Total Return | -10.54% |
+| Days Active | 200 |
 
 ---
 
 ## Daily Log
+
+### Day 199 — September 1, 2026 21:30 CET
+
+**Balance:** €4,473.07 | **Total Return:** -10.5%
+**Day P&L:** €28.98 (-0.6%) vs Day 198 (€4,502.05)
+
+**Prices at close:**
+- 4GLD: €121.23 (-4.14% 24h) — stop €105.88
+- XEON: €150.06 (+0.01% 24h)
+- EQQQ: €614.70 (-1.79% 24h) — stop €508.78
+- ITX: €57.26 (-1.31% 24h) — stop €50.63
+- SIE: €280.90 (-3.12% 24h) — stop €261.80
+- ASML: €1,450.40 (-0.11% 24h) — stop €1,372.87
+- AIR: €194.38 (-1.45% 24h) — stop €186.06
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,686.14 (-0.58%)
+- NASDAQ: 26,370.89 (-0.64%)
+- GOLD: 4,418.30 (-0.29%)
+- IBEX35: 19,751.60 (-1.11%)
+- EUROSTOXX50: 6,361.45 (-0.91%)
+- DAX: 25,941.25 (-2.37%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,223.83 | 49.7% | +17.2% | -1.79% |
+| ITX | €1,119.73 | 25.0% | +7.1% | -1.31% |
+| XEON | €454.83 | 10.2% | +6.8% | +0.01% |
+| SIE | €227.81 | 5.1% | +1.0% | -3.12% |
+| CASH | €223.74 | 5.0% | — | — |
+| AIR | €142.52 | 3.2% | +0.0% | -1.45% |
+| ASML | €80.39 | 1.8% | -6.7% | -0.11% |
+| 4GLD | €0.22 | 0.0% | -2.7% | -4.14% |
+
+**Trades:**
+- **SELL 4GLD**: 0.001817 units @ EUR 121.10 = EUR 0.22 (fee EUR 0.00)
+  Reason: trend: SMA50 < SMA200 (bearish), price below SMA20; macd: MACD histogram crossed negative
+- **BUY AIR**: 0.733203 units @ EUR 194.38 = EUR 142.52 (fee EUR 0.14)
+  Reason: trend: SMA50 > SMA200 (bullish), price below SMA20; momentum: RSI low (34.1); meanReversion: at lower BB + RSI < 35 (oversold bounce); macd: MACD histogram negative
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.57% vs SMA50, VIX 15.91)
+- BUY: AIR
+- HOLD: XEON, EQQQ, ITX, SIE, ASML, BTC, SOL, SXR8, VWCE, SAP, MC, NOVO, ALV, TTE, DTE
+- SELL: 4GLD
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.7% away)
+- EQQQ: stop EUR 508.78 (17.2% away)
+- ITX: stop EUR 50.63 (11.6% away)
+- SIE: stop EUR 261.80 (6.8% away)
+- ASML: stop EUR 1,372.87 (5.3% away)
+- Portfolio drawdown: -10.5%
+
+**Analysis:**
+Broad selloff — SP500/NASDAQ/DAX/IBEX all red, gold down too, no safe haven bid. Portfolio stops hold comfortably (5-17% away), no breach today. Trade orders already executed (SELL 4GLD, BUY AIR) per signals — no discretionary action needed.
+
+**HOLD — sin nuevas señales tras ejecución automática, stops lejos de trigger, mantener posiciones actuales.**
+
+---
+
 
 ### Day 198 — August 31, 2026 21:30 CET
 

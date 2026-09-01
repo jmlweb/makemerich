@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-09-01",
+    "time": "10:00 UTC",
+    "action": "SELL",
+    "asset": "4GLD",
+    "units": 0.001817,
+    "price_eur": 121.1,
+    "amount_eur": 0.22,
+    "fee_eur": 0,
+    "reason": "trend: SMA50 < SMA200 (bearish), price below SMA20; macd: MACD histogram crossed negative",
+    "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-09-01",
+    "time": "10:00 UTC",
+    "action": "BUY",
+    "asset": "AIR",
+    "units": 0.733203,
+    "price_eur": 194.38,
+    "amount_eur": 142.52,
+    "fee_eur": 0.14,
+    "reason": "trend: SMA50 > SMA200 (bullish), price below SMA20; momentum: RSI low (34.1); meanReversion: at lower BB + RSI < 35 (oversold bounce); macd: MACD histogram negative",
+    "session": "makemerich-2130"
+  }
+]
