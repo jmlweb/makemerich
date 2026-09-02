@@ -46,5 +46,29 @@
     "fee_eur": 0,
     "reason": "trend: SMA50 < SMA200 (bearish), price below SMA20; macd: MACD histogram crossed negative",
     "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-09-01",
+    "time": "19:30 UTC",
+    "action": "SELL",
+    "asset": "4GLD",
+    "units": 0.000248,
+    "price_eur": 121.06,
+    "amount_eur": 0.03,
+    "fee_eur": 0,
+    "reason": "trend: SMA50 < SMA200 (bearish), price below SMA20; macd: MACD histogram crossed negative",
+    "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-09-02",
+    "time": "07:00 UTC",
+    "action": "SELL",
+    "asset": "4GLD",
+    "units": 0.000083,
+    "price_eur": 121.06,
+    "amount_eur": 0.01,
+    "fee_eur": 0,
+    "reason": "trend: SMA50 < SMA200 (bearish), price below SMA20; macd: MACD histogram crossed negative",
+    "session": "makemerich-2130"
   }
 ]
