@@ -1,67 +1,67 @@
 {
-  "generatedAt": "2026-09-02T10:00:21.494Z",
-  "balance": 4437.53,
-  "totalReturn": -11.25,
+  "generatedAt": "2026-09-02T13:30:09.039Z",
+  "balance": 4452.91,
+  "totalReturn": -10.94,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 119.78,
+      "currentPrice": 120.59,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 11.6,
+      "distancePct": 12.2,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 610.8,
+      "currentPrice": 612.7,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 16.7,
+      "distancePct": 16.96,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 56.52,
+      "currentPrice": 56.74,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 10.42,
+      "distancePct": 10.76,
       "status": "ACTIVE"
     },
     {
       "asset": "SIE",
       "type": "STOP_LOSS",
-      "currentPrice": 273.6,
+      "currentPrice": 275.35,
       "triggerPrice": 261.7998,
       "currency": "EUR",
-      "distancePct": 4.31,
+      "distancePct": 4.92,
       "status": "NEAR"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1433.4,
+      "currentPrice": 1438.8,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 4.22,
+      "distancePct": 4.58,
       "status": "NEAR"
     },
     {
       "asset": "AIR",
       "type": "STOP_LOSS",
-      "currentPrice": 194.22,
+      "currentPrice": 197.5,
       "triggerPrice": 186.0625,
       "currency": "EUR",
-      "distancePct": 4.2,
-      "status": "NEAR"
+      "distancePct": 5.79,
+      "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -11.25,
+      "pnlPct": -10.94,
       "status": "WARNING",
-      "detail": "Portfolio down -11.3% from start"
+      "detail": "Portfolio down -10.9% from start"
     }
   ]
 }
