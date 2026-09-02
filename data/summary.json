@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01",
+  "lastUpdated": "2026-09-02",
   "months": [
     {
       "month": "2026-01",
@@ -68,18 +68,18 @@
     {
       "month": "2026-09",
       "start_balance": 4478.63,
-      "end_balance": 4478.63,
-      "pnl_eur": 0,
-      "pnl_pct": 0,
-      "trades_count": 5
+      "end_balance": 4447.08,
+      "pnl_eur": -31.55,
+      "pnl_pct": -0.7,
+      "trades_count": 6
     }
   ],
   "all_time": {
     "start_date": "2026-01-27",
     "total_deposited": 5000,
     "total_withdrawn": 0,
-    "current_balance": 4478.63,
-    "pnl_eur": -521.37,
-    "pnl_pct": -10.43
+    "current_balance": 4447.08,
+    "pnl_eur": -552.92,
+    "pnl_pct": -11.06
   }
 }
