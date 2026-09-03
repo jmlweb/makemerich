@@ -5,13 +5,72 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,447.08 |
-| Total Return | -11.06% |
-| Days Active | 201 |
+| Current Balance | €4,477.98 |
+| Total Return | -10.44% |
+| Days Active | 202 |
 
 ---
 
 ## Daily Log
+
+### Day 201 — September 3, 2026 21:30 CET
+
+**Balance:** €4,477.98 | **Total Return:** -10.4%
+**Day P&L:** +€30.90 (+0.7%) vs Day 200 (€4,447.08)
+
+**Prices at close:**
+- 4GLD: €124.56 (+2.89% 24h) — stop €105.88
+- XEON: €150.10 (+0.04% 24h)
+- EQQQ: €620.70 (+0.84% 24h) — stop €508.78
+- ITX: €56.80 (+1.14% 24h) — stop €50.63
+- SIE: €270.60 (-2.61% 24h) — stop €261.80
+- ASML: €1,423.40 (-1.55% 24h) — stop €1,372.87
+- AIR: €197.00 (+0.05% 24h) — stop €186.06
+
+**Market context:**
+- EUR/USD: 0.8630
+- SP500: 7,750.84 (+1.56%)
+- NASDAQ: 26,608.52 (+1.95%)
+- GOLD: 4,524.30 (+3.62%)
+- IBEX35: 20,000.20 (+1.12%)
+- EUROSTOXX50: 6,382.59 (+0.32%)
+- DAX: 26,003.32 (+0.13%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,245.54 | 50.1% | +18.3% | +0.84% |
+| ITX | €1,110.73 | 24.8% | +6.3% | +1.14% |
+| XEON | €454.95 | 10.2% | +6.8% | +0.04% |
+| CASH | €223.95 | 5.0% | — | — |
+| SIE | €219.46 | 4.9% | -2.7% | -2.61% |
+| AIR | €144.44 | 3.2% | +1.4% | +0.05% |
+| ASML | €78.89 | 1.8% | -8.4% | -1.55% |
+| 4GLD | €0.01 | 0.0% | +0.0% | +2.89% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.53% vs SMA50, VIX 15.25)
+- BUY: NOVO, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, SIE, ASML, AIR, BTC, SOL, SXR8, VWCE, SAP, MC, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (15.0% away)
+- EQQQ: stop EUR 508.78 (18.0% away)
+- ITX: stop EUR 50.63 (10.9% away)
+- SIE: stop EUR 261.80 (3.3% away)
+- ASML: stop EUR 1,372.87 (3.5% away)
+- AIR: stop EUR 186.06 (5.5% away)
+- Portfolio drawdown: -10.4%
+
+**Analysis:**
+Risk-on regime hold, indices up (SP500 +1.56%, NASDAQ +1.95%), gold spike +3.62%. Portfolio +0.7% day, EQQQ/ITX lead gains. SIE/ASML dip slight, stops still comfortable distance away (3.3-3.5% closest).
+
+**HOLD — cierre automatico, sin analisis de agente**
+
+---
+
 
 ### Day 200 — September 2, 2026 21:30 CET
 
