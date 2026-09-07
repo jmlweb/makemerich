@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-07T10:00:20.716Z",
-  "balance": 4496.75,
-  "totalReturn": -10.07,
+  "generatedAt": "2026-09-07T13:30:08.383Z",
+  "balance": 4502.2,
+  "totalReturn": -9.96,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 121.96,
+      "currentPrice": 121.77,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 13.18,
+      "distancePct": 13.05,
       "status": "ACTIVE"
     },
     {
@@ -24,10 +24,10 @@
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 57.24,
+      "currentPrice": 57.5,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 11.54,
+      "distancePct": 11.94,
       "status": "ACTIVE"
     },
     {
@@ -42,26 +42,20 @@
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1487.8,
+      "currentPrice": 1495.4,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 7.72,
+      "distancePct": 8.19,
       "status": "ACTIVE"
     },
     {
       "asset": "AIR",
       "type": "STOP_LOSS",
-      "currentPrice": 198.18,
+      "currentPrice": 198.12,
       "triggerPrice": 186.0625,
       "currency": "EUR",
-      "distancePct": 6.11,
+      "distancePct": 6.09,
       "status": "ACTIVE"
-    },
-    {
-      "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -10.07,
-      "status": "WARNING",
-      "detail": "Portfolio down -10.1% from start"
     }
   ]
 }

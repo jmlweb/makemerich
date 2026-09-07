@@ -2,14 +2,14 @@
   "date": "2026-09-07",
   "day": 205,
   "balance": {
-    "total": 4496.75,
+    "total": 4502.2,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.07,
+  "totalReturn": -9.96,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 0.000104,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 121.96,
+      "currentPriceEUR": 121.77,
       "value": 0.01,
-      "pnlPercent": -2.09,
-      "change24h": -2.0873474630700133
+      "pnlPercent": -2.24,
+      "change24h": -2.2398843930635888
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 150.129,
-      "value": 455.06,
+      "currentPriceEUR": 150.125,
+      "value": 455.04,
       "pnlPercent": 6.85,
-      "change24h": 0.022652320197202983
+      "change24h": 0.019987341350478787
     },
     {
       "asset": "EQQQ",
@@ -56,10 +56,10 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 57.24,
-      "value": 1119.34,
-      "pnlPercent": 7.07,
-      "change24h": -0.3481894150417753
+      "currentPriceEUR": 57.5,
+      "value": 1124.42,
+      "pnlPercent": 7.56,
+      "change24h": 0.10445682451253877
     },
     {
       "asset": "SIE",
@@ -78,10 +78,10 @@
       "description": "ASML Holding — Semiconductor Equipment",
       "units": 0.055425,
       "entryPriceEUR": 1554,
-      "currentPriceEUR": 1487.8,
-      "value": 82.46,
-      "pnlPercent": -4.26,
-      "change24h": 1.390213983917123
+      "currentPriceEUR": 1495.4,
+      "value": 82.88,
+      "pnlPercent": -3.77,
+      "change24h": 1.9081368406705737
     },
     {
       "asset": "AIR",
@@ -89,14 +89,14 @@
       "description": "Airbus — Aerospace & Defence",
       "units": 0.733203,
       "entryPriceEUR": 194.38,
-      "currentPriceEUR": 198.18,
-      "value": 145.31,
-      "pnlPercent": 1.95,
-      "change24h": -0.3920386007237642
+      "currentPriceEUR": 198.12,
+      "value": 145.26,
+      "pnlPercent": 1.92,
+      "change24h": -0.4221954161640548
     }
   ],
   "metadata": {
-    "generatedAt": "2026-09-07T10:00:20.658Z",
+    "generatedAt": "2026-09-07T13:30:08.324Z",
     "eurUsd": 0.8620689655172414
   }
 }
