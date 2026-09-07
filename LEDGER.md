@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,493.54 |
-| Total Return | -10.13% |
-| Days Active | 203 |
+| Current Balance | €4,501.48 |
+| Total Return | -9.97% |
+| Days Active | 206 |
 
 ---
 
 ## Daily Log
+
+### Day 205 — September 7, 2026 21:30 CET
+
+**Balance:** €4,501.48 | **Total Return:** -10.0%
+**Day P&L:** +€7.94 (+0.2%) vs Day 204 (€4,493.54)
+
+**Prices at close:**
+- 4GLD: €122.03 (-2.03% 24h) — stop €105.88
+- XEON: €150.12 (+0.01% 24h)
+- EQQQ: €621.60 (+0.14% 24h) — stop €508.78
+- ITX: €57.56 (+0.21% 24h) — stop €50.63
+- SIE: €270.40 (-0.07% 24h) — stop €261.80
+- ASML: €1,500.40 (+2.25% 24h) — stop €1,372.87
+- AIR: €198.66 (-0.15% 24h) — stop €186.06
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,718.60 (+0.68%)
+- NASDAQ: 26,506.99 (+1.10%)
+- GOLD: 4,476.60 (+1.06%)
+- IBEX35: 20,021.80 (-0.14%)
+- EUROSTOXX50: 6,403.99 (+0.17%)
+- DAX: 26,006.53 (+0.01%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,248.79 | 50.0% | +18.5% | +0.14% |
+| ITX | €1,125.60 | 25.0% | +7.7% | +0.21% |
+| XEON | €455.02 | 10.1% | +6.8% | +0.01% |
+| CASH | €223.95 | 5.0% | — | — |
+| SIE | €219.29 | 4.9% | -2.8% | -0.07% |
+| AIR | €145.66 | 3.2% | +2.2% | -0.15% |
+| ASML | €83.16 | 1.8% | -3.5% | +2.25% |
+| 4GLD | €0.01 | 0.0% | -2.0% | -2.03% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.67% vs SMA50, VIX 15.04)
+- BUY: EQQQ, VWCE
+- HOLD: 4GLD, XEON, ITX, SIE, ASML, AIR, BTC, SOL, SXR8, SAP, MC, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.2% away)
+- EQQQ: stop EUR 508.78 (18.1% away)
+- ITX: stop EUR 50.63 (12.0% away)
+- SIE: stop EUR 261.80 (3.2% away)
+- ASML: stop EUR 1,372.87 (8.5% away)
+- AIR: stop EUR 186.06 (6.3% away)
+
+**Analysis:**
+Risk-on regime hold. NASDAQ +1.10%, EQQQ +18.5% since entry, quant signal say BUY EQQQ/VWCE — momentum strong, no stops threatened. SIE tightest stop, 3.2% away, only near-term risk.
+
+**HOLD — no hay órdenes de trade generadas hoy, se mantiene posición actual.**
+
+---
+
 
 ### Day 202 — September 4, 2026 21:30 CET
 
