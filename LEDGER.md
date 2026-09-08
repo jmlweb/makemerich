@@ -5,13 +5,72 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,501.48 |
-| Total Return | -9.97% |
-| Days Active | 206 |
+| Current Balance | €4,485.74 |
+| Total Return | -10.29% |
+| Days Active | 207 |
 
 ---
 
 ## Daily Log
+
+### Day 206 — September 8, 2026 21:30 CET
+
+**Balance:** €4,485.74 | **Total Return:** -10.3%
+**Day P&L:** €15.74 (-0.3%) vs Day 205 (€4,501.48)
+
+**Prices at close:**
+- 4GLD: €121.75 (-0.91% 24h) — stop €105.88
+- XEON: €150.14 (+0.02% 24h)
+- EQQQ: €621.70 (+0.27% 24h) — stop €508.78
+- ITX: €56.52 (-1.81% 24h) — stop €50.63
+- SIE: €272.50 (-0.06% 24h) — stop €261.80
+- ASML: €1,518.00 (+1.17% 24h) — stop €1,372.87
+- AIR: €200.70 (+1.03% 24h) — stop €186.06
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,684.07 (-0.82%)
+- NASDAQ: 26,441.31 (-0.54%)
+- GOLD: 4,412.50 (-1.43%)
+- IBEX35: 19,997.10 (-0.12%)
+- EUROSTOXX50: 6,413.17 (+0.14%)
+- DAX: 26,007.63 (-0.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,249.15 | 50.1% | +18.5% | +0.27% |
+| ITX | €1,105.26 | 24.6% | +5.7% | -1.81% |
+| XEON | €455.07 | 10.1% | +6.9% | +0.02% |
+| CASH | €223.95 | 5.0% | — | — |
+| SIE | €221.00 | 4.9% | -2.0% | -0.06% |
+| AIR | €147.15 | 3.3% | +3.3% | +1.03% |
+| ASML | €84.14 | 1.9% | -2.3% | +1.17% |
+| 4GLD | €0.01 | 0.0% | -2.3% | -0.91% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.47% vs SMA50, VIX 15.6)
+- BUY: EQQQ, TTE
+- HOLD: 4GLD, XEON, ITX, SIE, ASML, AIR, BTC, SOL, SXR8, VWCE, SAP, MC, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.0% away)
+- EQQQ: stop EUR 508.78 (18.2% away)
+- ITX: stop EUR 50.63 (10.4% away)
+- SIE: stop EUR 261.80 (3.9% away)
+- ASML: stop EUR 1,372.87 (9.6% away)
+- AIR: stop EUR 186.06 (7.3% away)
+- Portfolio drawdown: -10.3%
+
+**Analysis:**
+Risk-on regime hold, SP500/NASDAQ dip small but VIX low. EQQQ buy signal fire but no order file exist — no trade. Gold, ITX drop 24h, rest flat-to-up.
+
+**HOLD — sin señal de operación ejecutada, no hay orden que tomar.**
+
+---
+
 
 ### Day 205 — September 7, 2026 21:30 CET
 
