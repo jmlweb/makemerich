@@ -1,67 +1,67 @@
 {
-  "generatedAt": "2026-09-08T13:30:09.280Z",
-  "balance": 4497.99,
-  "totalReturn": -10.04,
+  "generatedAt": "2026-09-08T16:00:08.582Z",
+  "balance": 4485.74,
+  "totalReturn": -10.29,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 121.9,
+      "currentPrice": 121.75,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 13.14,
+      "distancePct": 13.03,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 623.2,
+      "currentPrice": 621.7,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 18.36,
+      "distancePct": 18.16,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 56.94,
+      "currentPrice": 56.52,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 11.08,
+      "distancePct": 10.42,
       "status": "ACTIVE"
     },
     {
       "asset": "SIE",
       "type": "STOP_LOSS",
-      "currentPrice": 271.6,
+      "currentPrice": 272.5,
       "triggerPrice": 261.7998,
       "currency": "EUR",
-      "distancePct": 3.61,
+      "distancePct": 3.93,
       "status": "NEAR"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1530.6,
+      "currentPrice": 1518,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 10.3,
+      "distancePct": 9.56,
       "status": "ACTIVE"
     },
     {
       "asset": "AIR",
       "type": "STOP_LOSS",
-      "currentPrice": 198.82,
+      "currentPrice": 200.7,
       "triggerPrice": 186.0625,
       "currency": "EUR",
-      "distancePct": 6.42,
+      "distancePct": 7.29,
       "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -10.04,
+      "pnlPct": -10.29,
       "status": "WARNING",
-      "detail": "Portfolio down -10.0% from start"
+      "detail": "Portfolio down -10.3% from start"
     }
   ]
 }
