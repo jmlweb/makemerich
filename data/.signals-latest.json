@@ -1,67 +1,67 @@
 {
-  "generatedAt": "2026-09-09T07:00:22.640Z",
-  "balance": 4485.74,
-  "totalReturn": -10.29,
+  "generatedAt": "2026-09-09T10:00:20.083Z",
+  "balance": 4417.5,
+  "totalReturn": -11.65,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 121.75,
+      "currentPrice": 121.56,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 13.03,
+      "distancePct": 12.9,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 621.7,
+      "currentPrice": 620,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 18.16,
+      "distancePct": 17.94,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 56.52,
+      "currentPrice": 53.9,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 10.42,
+      "distancePct": 6.06,
       "status": "ACTIVE"
     },
     {
       "asset": "SIE",
       "type": "STOP_LOSS",
-      "currentPrice": 272.5,
+      "currentPrice": 264.85,
       "triggerPrice": 261.7998,
       "currency": "EUR",
-      "distancePct": 3.93,
+      "distancePct": 1.15,
       "status": "NEAR"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1518,
+      "currentPrice": 1493.6,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 9.56,
+      "distancePct": 8.08,
       "status": "ACTIVE"
     },
     {
       "asset": "AIR",
       "type": "STOP_LOSS",
-      "currentPrice": 200.7,
+      "currentPrice": 196.18,
       "triggerPrice": 186.0625,
       "currency": "EUR",
-      "distancePct": 7.29,
+      "distancePct": 5.16,
       "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -10.29,
+      "pnlPct": -11.65,
       "status": "WARNING",
-      "detail": "Portfolio down -10.3% from start"
+      "detail": "Portfolio down -11.7% from start"
     }
   ]
 }
