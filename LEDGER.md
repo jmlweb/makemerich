@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,485.74 |
-| Total Return | -10.29% |
-| Days Active | 207 |
+| Current Balance | €4,423.42 |
+| Total Return | -11.53% |
+| Days Active | 208 |
 
 ---
 
 ## Daily Log
+
+### Day 207 — September 9, 2026 21:30 CET
+
+**Balance:** €4,423.42 | **Total Return:** -11.5%
+**Day P&L:** €62.32 (-1.4%) vs Day 206 (€4,485.74)
+
+**Prices at close:**
+- 4GLD: €121.78 (-0.20% 24h) — stop €105.88
+- XEON: €150.15 (+0.02% 24h)
+- EQQQ: €618.50 (-0.50% 24h) — stop €508.78
+- ITX: €54.48 (-3.61% 24h) — stop €50.63
+- SIE: €264.40 (-2.97% 24h) — stop €261.80
+- ASML: €1,497.60 (-1.34% 24h) — stop €1,372.87
+- AIR: €196.34 (-2.17% 24h) — stop €186.06
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,645.65 (-0.95%)
+- NASDAQ: 26,270.91 (-0.89%)
+- GOLD: 4,447.30 (+1.22%)
+- IBEX35: 19,695.30 (-1.51%)
+- EUROSTOXX50: 6,311.56 (-1.58%)
+- DAX: 25,576.45 (-1.65%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,237.58 | 50.6% | +17.9% | -0.50% |
+| ITX | €1,065.37 | 24.1% | +1.9% | -3.61% |
+| XEON | €455.12 | 10.3% | +6.9% | +0.02% |
+| CASH | €223.95 | 5.1% | — | — |
+| SIE | €214.43 | 4.8% | -4.9% | -2.97% |
+| AIR | €143.96 | 3.3% | +1.0% | -2.17% |
+| ASML | €83.00 | 1.9% | -3.6% | -1.34% |
+| 4GLD | €0.01 | 0.0% | -2.2% | -0.20% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.68% vs SMA50, VIX 15.99)
+- HOLD: 4GLD, XEON, EQQQ, ITX, SIE, ASML, AIR, BTC, SOL, SXR8, VWCE, SAP, MC, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.1% away)
+- EQQQ: stop EUR 508.78 (17.7% away)
+- ITX: stop EUR 50.63 (7.1% away)
+- SIE: stop EUR 261.80 (1.0% away)
+- ASML: stop EUR 1,372.87 (8.3% away)
+- AIR: stop EUR 186.06 (5.2% away)
+- Portfolio drawdown: -11.5%
+
+**Analysis:**
+Broad selloff hit European equities hard (ITX -3.61%, SIE -2.97%, AIR -2.17%), dragging portfolio down -1.4% on day despite gold strength (+1.22%). SIE stop now only 1.0% away, closest monitor in portfolio. Regime still RISK-ON per quant signals, no trade orders generated.
+
+**HOLD — sin señales de trade generadas, régimen sigue RISK-ON pese a caída de hoy.**
+
+---
+
 
 ### Day 206 — September 8, 2026 21:30 CET
 
