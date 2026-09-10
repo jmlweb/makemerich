@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,423.42 |
-| Total Return | -11.53% |
-| Days Active | 208 |
+| Current Balance | €4,404.99 |
+| Total Return | -11.90% |
+| Days Active | 209 |
 
 ---
 
 ## Daily Log
+
+### Day 208 — September 10, 2026 21:30 CET
+
+**Balance:** €4,404.99 | **Total Return:** -11.9%
+**Day P&L:** €18.43 (-0.4%) vs Day 207 (€4,423.42)
+
+**Prices at close:**
+- 4GLD: €120.87 (-0.72% 24h) — stop €105.88
+- XEON: €150.16 (+0.01% 24h)
+- EQQQ: €614.40 (-1.17% 24h) — stop €508.78
+- ITX: €54.58 (+0.18% 24h) — stop €50.63
+- ASML: €1,474.20 (-1.56% 24h) — stop €1,372.87
+- AIR: €195.78 (-0.29% 24h) — stop €186.06
+
+**Market context:**
+- EUR/USD: 0.8600
+- SP500: 7,589.10 (-1.10%)
+- NASDAQ: 26,083.58 (-1.28%)
+- GOLD: 4,362.10 (-1.22%)
+- IBEX35: 19,659.80 (-0.18%)
+- EUROSTOXX50: 6,268.97 (-0.67%)
+- DAX: 25,361.15 (-2.49%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,222.74 | 50.5% | +17.1% | -1.17% |
+| ITX | €1,067.32 | 24.2% | +2.1% | +0.18% |
+| XEON | €455.14 | 10.3% | +6.9% | +0.01% |
+| CASH | €434.52 | 9.9% | — | — |
+| AIR | €143.55 | 3.3% | +0.7% | -0.29% |
+| ASML | €81.71 | 1.9% | -5.1% | -1.56% |
+| 4GLD | €0.01 | 0.0% | -3.0% | -0.72% |
+
+**Trades:**
+- **SELL SIE**: 0.811001 units @ EUR 259.95 = EUR 210.78 (fee EUR 0.21)
+  Reason: Stop-loss triggered: SIE EUR 259.95 <= stop EUR 261.80
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-OFF (SP500 -0.14% vs SMA50, VIX 16.52)
+- BUY: SIE, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, AIR, BTC, SOL, SXR8, VWCE, SAP, MC, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.4% away)
+- EQQQ: stop EUR 508.78 (17.2% away)
+- ITX: stop EUR 50.63 (7.2% away)
+- ASML: stop EUR 1,372.87 (6.9% away)
+- AIR: stop EUR 186.06 (5.0% away)
+- Portfolio drawdown: -11.9%
+
+**Analysis:**
+Risk-off day, broad red across indices (DAX -2.49% hardest hit). Portfolio down -0.4% day, stops untouched but ASML/EQQQ closest to trigger. Quant signals flip BUY on SIE/TTE — not held, no action per rules (signal-only, no narrative trades).
+
+**HOLD — sin señales de venta activas, stops lejos de disparar, no hay orden mecánica que ejecutar.**
+
+---
+
 
 ### Day 207 — September 9, 2026 21:30 CET
 
