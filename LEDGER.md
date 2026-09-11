@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,421.31 |
-| Total Return | -11.57% |
+| Current Balance | €4,419.99 |
+| Total Return | -11.60% |
 | Days Active | 210 |
 
 ---
@@ -15,38 +15,38 @@
 
 ### Day 209 — September 11, 2026 21:30 CET
 
-**Balance:** €4,421.31 | **Total Return:** -11.6%
-**Day P&L:** +€16.32 (+0.4%) vs Day 208 (€4,404.99)
+**Balance:** €4,419.99 | **Total Return:** -11.6%
+**Day P&L:** +€15.00 (+0.3%) vs Day 208 (€4,404.99)
 
 **Prices at close:**
-- 4GLD: €121.63 (-0.12% 24h) — stop €105.88
-- XEON: €150.16 (+0.01% 24h)
-- EQQQ: €620.00 (+0.24% 24h) — stop €508.78
-- ITX: €54.24 (-0.62% 24h) — stop €50.63
-- ASML: €1,492.00 (+1.15% 24h) — stop €1,372.87
-- AIR: €198.42 (+1.33% 24h) — stop €186.06
-- TTE: €78.49 (+0.14% 24h) — stop €75.17
+- 4GLD: €121.16 (-0.51% 24h) — stop €105.88
+- XEON: €150.18 (+0.02% 24h)
+- EQQQ: €620.60 (+0.34% 24h) — stop €508.78
+- ITX: €54.02 (-1.03% 24h) — stop €50.63
+- ASML: €1,478.40 (+0.28% 24h) — stop €1,372.87
+- AIR: €199.40 (+1.85% 24h) — stop €186.06
+- TTE: €78.77 (+0.50% 24h) — stop €75.17
 
 **Market context:**
 - EUR/USD: 0.8610
-- SP500: 7,591.70 (-0.58%)
-- NASDAQ: 26,081.72 (-0.65%)
-- GOLD: 4,430.60 (+1.51%)
-- IBEX35: 19,862.60 (+1.03%)
-- EUROSTOXX50: 6,330.05 (+0.97%)
-- DAX: 25,539.60 (-0.14%)
+- SP500: 7,663.93 (+0.36%)
+- NASDAQ: 26,356.91 (+0.39%)
+- GOLD: 4,391.60 (+0.62%)
+- IBEX35: 19,838.50 (+0.91%)
+- EUROSTOXX50: 6,325.13 (+0.90%)
+- DAX: 25,568.56 (-0.03%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,243.00 | 50.7% | +18.2% | +0.24% |
-| ITX | €1,060.67 | 24.0% | +1.5% | -0.62% |
-| XEON | €455.15 | 10.3% | +6.9% | +0.01% |
+| EQQQ | €2,245.17 | 50.8% | +18.3% | +0.34% |
+| ITX | €1,056.37 | 23.9% | +1.1% | -1.03% |
+| XEON | €455.22 | 10.3% | +6.9% | +0.02% |
 | CASH | €220.87 | 5.0% | — | — |
-| TTE | €213.44 | 4.8% | +0.0% | +0.14% |
-| AIR | €145.48 | 3.3% | +2.1% | +1.33% |
-| ASML | €82.69 | 1.9% | -4.0% | +1.15% |
-| 4GLD | €0.01 | 0.0% | -2.4% | -0.12% |
+| TTE | €214.20 | 4.8% | +0.4% | +0.50% |
+| AIR | €146.20 | 3.3% | +2.6% | +1.85% |
+| ASML | €81.94 | 1.9% | -4.9% | +0.28% |
+| 4GLD | €0.01 | 0.0% | -2.7% | -0.51% |
 
 **Trades:**
 - **BUY TTE**: 2.719327 units @ EUR 78.49 = EUR 213.44 (fee EUR 0.21)
@@ -58,20 +58,20 @@
 - HOLD: 4GLD, XEON, EQQQ, ITX, ASML, AIR, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, NOVO, ALV, DTE
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (12.9% away)
-- EQQQ: stop EUR 508.78 (17.9% away)
-- ITX: stop EUR 50.63 (6.7% away)
-- ASML: stop EUR 1,372.87 (8.0% away)
-- AIR: stop EUR 186.06 (6.2% away)
+- 4GLD: stop EUR 105.88 (12.6% away)
+- EQQQ: stop EUR 508.78 (18.0% away)
+- ITX: stop EUR 50.63 (6.3% away)
+- ASML: stop EUR 1,372.87 (7.1% away)
+- AIR: stop EUR 186.06 (6.7% away)
+- TTE: stop EUR 75.17 (4.6% away)
 - Portfolio drawdown: -11.6%
 
 **Analysis:**
-Risk-on regime hold despite SP500/NASDAQ down day. TTE bought, gold up strong, IBEX/EUROSTOXX green. Stops all comfortably distant (6-18% away), no violations trigger action.
+Risk-on regime hold, market broad green (SP500, NASDAQ, IBEX, EUROSTOXX up). TTE buy executed on trend+MACD signal. Portfolio +0.3% day, still -11.6% total, no stops triggered.
 
-**HOLD — no hay órdenes de trade nuevas del script, solo mantener posiciones actuales.**
+**HOLD — sin señales de venta activas, TTE ya ejecutada según sistema cuantitativo.**
 
 ---
-
 
 ### Day 208 — September 10, 2026 21:30 CET
 
