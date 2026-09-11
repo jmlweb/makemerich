@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-11",
+  "day": 209,
+  "balance": {
+    "total": 4404.99,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": -11.9,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 434.52,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 0.000104,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 120.87,
+      "value": 0.01,
+      "pnlPercent": -2.96,
+      "change24h": -0.7472491377894536
+    },
+    {
+      "asset": "XEON",
+      "type": "ETF",
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 150.157,
+      "value": 455.14,
+      "pnlPercent": 6.87,
+      "change24h": 0.0046620046620079935
+    },
+    {
+      "asset": "EQQQ",
+      "type": "ETF",
+      "description": "Invesco NASDAQ-100 UCITS",
+      "units": 3.617747,
+      "entryPriceEUR": 524.6,
+      "currentPriceEUR": 614.4,
+      "value": 2222.74,
+      "pnlPercent": 17.12,
+      "change24h": -0.662894098625711
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex — Fashion Retail",
+      "units": 19.555182,
+      "entryPriceEUR": 53.46,
+      "currentPriceEUR": 54.58,
+      "value": 1067.32,
+      "pnlPercent": 2.1,
+      "change24h": 0.18355359765051657
+    },
+    {
+      "asset": "ASML",
+      "type": "Stock",
+      "description": "ASML Holding — Semiconductor Equipment",
+      "units": 0.055425,
+      "entryPriceEUR": 1554,
+      "currentPriceEUR": 1474.2,
+      "value": 81.71,
+      "pnlPercent": -5.14,
+      "change24h": -1.562499999999991
+    },
+    {
+      "asset": "AIR",
+      "type": "Stock",
+      "description": "Airbus — Aerospace & Defence",
+      "units": 0.733203,
+      "entryPriceEUR": 194.38,
+      "currentPriceEUR": 195.78,
+      "value": 143.55,
+      "pnlPercent": 0.72,
+      "change24h": -0.28521951716410426
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-09-11T07:00:32.980Z",
+    "eurUsd": 0.8620689655172414
+  }
+}
