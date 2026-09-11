@@ -64,7 +64,7 @@
     "time": "07:00 UTC",
     "action": "SELL",
     "asset": "4GLD",
-    "units": 8.3e-05,
+    "units": 0.000083,
     "price_eur": 121.06,
     "amount_eur": 0.01,
     "fee_eur": 0,
@@ -82,5 +82,17 @@
     "fee_eur": 0.21,
     "reason": "Stop-loss triggered: SIE EUR 259.95 <= stop EUR 261.80",
     "session": "stoploss-watch"
+  },
+  {
+    "date": "2026-09-11",
+    "time": "13:30 UTC",
+    "action": "BUY",
+    "asset": "TTE",
+    "units": 2.719327,
+    "price_eur": 78.49,
+    "amount_eur": 213.44,
+    "fee_eur": 0.21,
+    "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive",
+    "session": "makemerich-2130"
   }
 ]

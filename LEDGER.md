@@ -5,13 +5,73 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,404.99 |
-| Total Return | -11.90% |
-| Days Active | 209 |
+| Current Balance | €4,421.31 |
+| Total Return | -11.57% |
+| Days Active | 210 |
 
 ---
 
 ## Daily Log
+
+### Day 209 — September 11, 2026 21:30 CET
+
+**Balance:** €4,421.31 | **Total Return:** -11.6%
+**Day P&L:** +€16.32 (+0.4%) vs Day 208 (€4,404.99)
+
+**Prices at close:**
+- 4GLD: €121.63 (-0.12% 24h) — stop €105.88
+- XEON: €150.16 (+0.01% 24h)
+- EQQQ: €620.00 (+0.24% 24h) — stop €508.78
+- ITX: €54.24 (-0.62% 24h) — stop €50.63
+- ASML: €1,492.00 (+1.15% 24h) — stop €1,372.87
+- AIR: €198.42 (+1.33% 24h) — stop €186.06
+- TTE: €78.49 (+0.14% 24h) — stop €75.17
+
+**Market context:**
+- EUR/USD: 0.8610
+- SP500: 7,591.70 (-0.58%)
+- NASDAQ: 26,081.72 (-0.65%)
+- GOLD: 4,430.60 (+1.51%)
+- IBEX35: 19,862.60 (+1.03%)
+- EUROSTOXX50: 6,330.05 (+0.97%)
+- DAX: 25,539.60 (-0.14%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,243.00 | 50.7% | +18.2% | +0.24% |
+| ITX | €1,060.67 | 24.0% | +1.5% | -0.62% |
+| XEON | €455.15 | 10.3% | +6.9% | +0.01% |
+| CASH | €220.87 | 5.0% | — | — |
+| TTE | €213.44 | 4.8% | +0.0% | +0.14% |
+| AIR | €145.48 | 3.3% | +2.1% | +1.33% |
+| ASML | €82.69 | 1.9% | -4.0% | +1.15% |
+| 4GLD | €0.01 | 0.0% | -2.4% | -0.12% |
+
+**Trades:**
+- **BUY TTE**: 2.719327 units @ EUR 78.49 = EUR 213.44 (fee EUR 0.21)
+  Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.62% vs SMA50, VIX 17.22)
+- BUY: TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, AIR, BTC, SOL, SXR8, VWCE, SAP, MC, SIE, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.9% away)
+- EQQQ: stop EUR 508.78 (17.9% away)
+- ITX: stop EUR 50.63 (6.7% away)
+- ASML: stop EUR 1,372.87 (8.0% away)
+- AIR: stop EUR 186.06 (6.2% away)
+- Portfolio drawdown: -11.6%
+
+**Analysis:**
+Risk-on regime hold despite SP500/NASDAQ down day. TTE bought, gold up strong, IBEX/EUROSTOXX green. Stops all comfortably distant (6-18% away), no violations trigger action.
+
+**HOLD — no hay órdenes de trade nuevas del script, solo mantener posiciones actuales.**
+
+---
+
 
 ### Day 208 — September 10, 2026 21:30 CET
 
