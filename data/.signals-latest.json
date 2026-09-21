@@ -1,67 +1,67 @@
 {
-  "generatedAt": "2026-09-21T10:00:22.456Z",
-  "balance": 4445.65,
-  "totalReturn": -11.09,
+  "generatedAt": "2026-09-21T13:30:09.063Z",
+  "balance": 4440.93,
+  "totalReturn": -11.18,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 121.72,
+      "currentPrice": 122.22,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 13.01,
+      "distancePct": 13.37,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 637.9,
+      "currentPrice": 637.3,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 20.24,
+      "distancePct": 20.17,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 52.16,
+      "currentPrice": 52.1,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 2.93,
+      "distancePct": 2.82,
       "status": "NEAR"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1495,
+      "currentPrice": 1482.6,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 8.17,
+      "distancePct": 7.4,
       "status": "ACTIVE"
     },
     {
       "asset": "AIR",
       "type": "STOP_LOSS",
-      "currentPrice": 194.8,
+      "currentPrice": 194,
       "triggerPrice": 186.0625,
       "currency": "EUR",
-      "distancePct": 4.49,
+      "distancePct": 4.09,
       "status": "NEAR"
     },
     {
       "asset": "TTE",
       "type": "STOP_LOSS",
-      "currentPrice": 79.4,
+      "currentPrice": 79.38,
       "triggerPrice": 75.1694,
       "currency": "EUR",
-      "distancePct": 5.33,
+      "distancePct": 5.3,
       "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -11.09,
+      "pnlPct": -11.18,
       "status": "WARNING",
-      "detail": "Portfolio down -11.1% from start"
+      "detail": "Portfolio down -11.2% from start"
     }
   ]
 }
