@@ -5,13 +5,73 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,419.99 |
-| Total Return | -11.60% |
-| Days Active | 210 |
+| Current Balance | €4,461.92 |
+| Total Return | -10.76% |
+| Days Active | 211 |
 
 ---
 
 ## Daily Log
+
+### Day 210 — September 21, 2026 21:30 CET
+
+**Balance:** €4,461.92 | **Total Return:** -10.8%
+**Day P&L:** +€41.93 (+0.9%) vs Day 209 (€4,419.99)
+
+**Prices at close:**
+- 4GLD: €122.04 (-0.10% 24h) — stop €105.88
+- XEON: €150.24 (+0.01% 24h)
+- EQQQ: €645.30 (+3.02% 24h) — stop €508.78
+- ITX: €51.78 (+0.08% 24h) — stop €50.63
+- ASML: €1,481.40 (+2.45% 24h) — stop €1,372.87
+- AIR: €194.78 (+0.72% 24h) — stop €186.06
+- TTE: €78.56 (-0.96% 24h) — stop €75.17
+
+**Market context:**
+- EUR/USD: 0.8710
+- SP500: 7,771.27 (+1.75%)
+- NASDAQ: 27,146.19 (+2.76%)
+- GOLD: 4,383.20 (-0.94%)
+- IBEX35: 19,724.40 (+1.08%)
+- EUROSTOXX50: 6,318.20 (+1.31%)
+- DAX: 25,575.01 (-0.55%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,334.53 | 52.3% | +23.0% | +3.02% |
+| ITX | €1,012.57 | 22.7% | -3.1% | +0.08% |
+| XEON | €455.39 | 10.2% | +6.9% | +0.01% |
+| CASH | €220.87 | 5.0% | — | — |
+| TTE | €213.63 | 4.8% | +0.1% | -0.96% |
+| AIR | €142.81 | 3.2% | +0.2% | +0.72% |
+| ASML | €82.11 | 1.8% | -4.7% | +2.45% |
+| 4GLD | €0.01 | 0.0% | -2.0% | -0.10% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.04% vs SMA50, VIX 14.95)
+- BUY: BTC, VWCE
+- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, AIR, TTE, SOL, SXR8, SAP, MC, SIE, NOVO, ALV
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (13.2% away)
+- EQQQ: stop EUR 508.78 (21.2% away)
+- ITX: stop EUR 50.63 (2.2% away)
+- ASML: stop EUR 1,372.87 (7.3% away)
+- AIR: stop EUR 186.06 (4.5% away)
+- TTE: stop EUR 75.17 (4.3% away)
+- Portfolio drawdown: -10.8%
+
+**Analysis:**
+Automated close — agent unavailable.
+
+**HOLD — cierre automatico, sin analisis de agente**
+
+---
+
 
 ### Day 209 — September 11, 2026 21:30 CET
 
