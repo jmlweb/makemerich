@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21T07:00:23.893Z",
+  "last_updated": "2026-09-21T10:00:22.399Z",
   "holdings": {
     "CASH": {
       "amount_eur": 220.87
@@ -7,65 +7,65 @@
     "4GLD": {
       "units": 0.000104,
       "entry_price_eur": 124.56,
-      "current_price_eur": 122.17,
+      "current_price_eur": 121.72,
       "amount_eur": 0.01,
-      "pnl_pct": -1.92,
+      "pnl_pct": -2.28,
       "stop_loss_eur": 105.88
     },
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 150.226,
-      "amount_eur": 455.35,
-      "pnl_pct": 6.92,
+      "current_price_eur": 150.245,
+      "amount_eur": 455.41,
+      "pnl_pct": 6.94,
       "stop_loss_eur": null,
       "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
     },
     "EQQQ": {
       "units": 3.617747,
       "entry_price_eur": 524.6,
-      "current_price_eur": 627.7,
-      "amount_eur": 2270.86,
-      "pnl_pct": 19.65,
+      "current_price_eur": 637.9,
+      "amount_eur": 2307.76,
+      "pnl_pct": 21.6,
       "stop_loss_eur": 508.7824
     },
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 51.74,
-      "amount_eur": 1011.79,
-      "pnl_pct": -3.22,
+      "current_price_eur": 52.16,
+      "amount_eur": 1020,
+      "pnl_pct": -2.43,
       "stop_loss_eur": 50.6326
     },
     "ASML": {
       "units": 0.055425,
       "entry_price_eur": 1554,
-      "current_price_eur": 1446,
-      "amount_eur": 80.14,
-      "pnl_pct": -6.95,
+      "current_price_eur": 1495,
+      "amount_eur": 82.86,
+      "pnl_pct": -3.8,
       "stop_loss_eur": 1372.8737
     },
     "AIR": {
       "units": 0.733203,
       "entry_price_eur": 194.38,
-      "current_price_eur": 193.38,
-      "amount_eur": 141.79,
-      "pnl_pct": -0.51,
+      "current_price_eur": 194.8,
+      "amount_eur": 142.83,
+      "pnl_pct": 0.22,
       "stop_loss_eur": 186.0625
     },
     "TTE": {
       "units": 2.719327,
       "entry_price_eur": 78.49,
-      "current_price_eur": 79.32,
-      "amount_eur": 215.7,
-      "pnl_pct": 1.06,
+      "current_price_eur": 79.4,
+      "amount_eur": 215.91,
+      "pnl_pct": 1.16,
       "stop_loss_eur": 75.1694
     }
   },
   "totals": {
-    "balance_eur": 4396.51,
+    "balance_eur": 4445.65,
     "initial_eur": 5000,
-    "pnl_eur": -603.49,
-    "pnl_pct": -12.07
+    "pnl_eur": -554.35,
+    "pnl_pct": -11.09
   }
 }

@@ -1,67 +1,67 @@
 {
-  "generatedAt": "2026-09-21T07:00:23.955Z",
-  "balance": 4396.51,
-  "totalReturn": -12.07,
+  "generatedAt": "2026-09-21T10:00:22.456Z",
+  "balance": 4445.65,
+  "totalReturn": -11.09,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 122.17,
+      "currentPrice": 121.72,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 13.33,
+      "distancePct": 13.01,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 627.7,
+      "currentPrice": 637.9,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 18.94,
+      "distancePct": 20.24,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 51.74,
+      "currentPrice": 52.16,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 2.14,
+      "distancePct": 2.93,
       "status": "NEAR"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1446,
+      "currentPrice": 1495,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 5.06,
+      "distancePct": 8.17,
       "status": "ACTIVE"
     },
     {
       "asset": "AIR",
       "type": "STOP_LOSS",
-      "currentPrice": 193.38,
+      "currentPrice": 194.8,
       "triggerPrice": 186.0625,
       "currency": "EUR",
-      "distancePct": 3.78,
+      "distancePct": 4.49,
       "status": "NEAR"
     },
     {
       "asset": "TTE",
       "type": "STOP_LOSS",
-      "currentPrice": 79.32,
+      "currentPrice": 79.4,
       "triggerPrice": 75.1694,
       "currency": "EUR",
-      "distancePct": 5.23,
+      "distancePct": 5.33,
       "status": "ACTIVE"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -12.07,
+      "pnlPct": -11.09,
       "status": "WARNING",
-      "detail": "Portfolio down -12.1% from start"
+      "detail": "Portfolio down -11.1% from start"
     }
   ]
 }
