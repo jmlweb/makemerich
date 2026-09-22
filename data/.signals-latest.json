@@ -1,67 +1,67 @@
 {
-  "generatedAt": "2026-09-22T07:00:24.306Z",
-  "balance": 4461.92,
-  "totalReturn": -10.76,
+  "generatedAt": "2026-09-22T10:00:21.145Z",
+  "balance": 4494.19,
+  "totalReturn": -10.12,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 122.04,
+      "currentPrice": 121.16,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 13.24,
+      "distancePct": 12.61,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 645.3,
+      "currentPrice": 650,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 21.16,
+      "distancePct": 21.73,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 51.78,
+      "currentPrice": 52.62,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 2.22,
+      "distancePct": 3.78,
       "status": "NEAR"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1481.4,
+      "currentPrice": 1483.6,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 7.33,
+      "distancePct": 7.46,
       "status": "ACTIVE"
     },
     {
       "asset": "AIR",
       "type": "STOP_LOSS",
-      "currentPrice": 194.78,
+      "currentPrice": 195,
       "triggerPrice": 186.0625,
       "currency": "EUR",
-      "distancePct": 4.48,
+      "distancePct": 4.58,
       "status": "NEAR"
     },
     {
       "asset": "TTE",
       "type": "STOP_LOSS",
-      "currentPrice": 78.56,
+      "currentPrice": 78.01,
       "triggerPrice": 75.1694,
       "currency": "EUR",
-      "distancePct": 4.32,
+      "distancePct": 3.64,
       "status": "NEAR"
     },
     {
       "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -10.76,
+      "pnlPct": -10.12,
       "status": "WARNING",
-      "detail": "Portfolio down -10.8% from start"
+      "detail": "Portfolio down -10.1% from start"
     }
   ]
 }
