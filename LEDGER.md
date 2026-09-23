@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,525.13 |
-| Total Return | -9.50% |
-| Days Active | 212 |
+| Current Balance | €4,523.06 |
+| Total Return | -9.54% |
+| Days Active | 213 |
 
 ---
 
 ## Daily Log
+
+### Day 212 — September 23, 2026 21:30 CET
+
+**Balance:** €4,523.06 | **Total Return:** -9.5%
+**Day P&L:** €2.07 (-0.0%) vs Day 211 (€4,525.13)
+
+**Prices at close:**
+- 4GLD: €120.96 (-0.88% 24h) — stop €105.88
+- XEON: €150.27 (+0.02% 24h)
+- EQQQ: €654.10 (+1.36% 24h) — stop €508.78
+- ITX: €53.02 (-0.49% 24h) — stop €50.63
+- ASML: €1,515.80 (+0.56% 24h) — stop €1,372.87
+- AIR: €195.02 (+0.22% 24h) — stop €186.06
+- TTE: €79.62 (+1.88% 24h) — stop €75.17
+
+**Market context:**
+- EUR/USD: 0.8730
+- SP500: 7,705.96 (-0.76%)
+- NASDAQ: 26,938.54 (-0.68%)
+- GOLD: 4,320.60 (-1.28%)
+- IBEX35: 19,632.20 (-0.62%)
+- EUROSTOXX50: 6,299.82 (-0.39%)
+- DAX: 25,410.63 (-0.64%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,366.37 | 52.3% | +24.7% | +1.36% |
+| ITX | €1,036.82 | 22.9% | -0.8% | -0.49% |
+| XEON | €455.48 | 10.1% | +7.0% | +0.02% |
+| CASH | €220.87 | 4.9% | — | — |
+| TTE | €216.51 | 4.8% | +1.4% | +1.88% |
+| AIR | €142.99 | 3.2% | +0.3% | +0.22% |
+| ASML | €84.01 | 1.9% | -2.5% | +0.56% |
+| 4GLD | €0.01 | 0.0% | -2.9% | -0.88% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.20% vs SMA50, VIX 14.15)
+- BUY: ASML, SIE, NOVO
+- HOLD: 4GLD, XEON, EQQQ, ITX, AIR, TTE, BTC, SOL, SXR8, VWCE, SAP, MC, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (12.5% away)
+- EQQQ: stop EUR 508.78 (22.2% away)
+- ITX: stop EUR 50.63 (4.5% away)
+- ASML: stop EUR 1,372.87 (9.4% away)
+- AIR: stop EUR 186.06 (4.6% away)
+- TTE: stop EUR 75.17 (5.6% away)
+
+**Analysis:**
+Automated close — agent unavailable.
+
+**HOLD — cierre automatico, sin analisis de agente**
+
+---
+
 
 ### Day 211 — September 22, 2026 21:30 CET
 
