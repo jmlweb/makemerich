@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,529.20 |
-| Total Return | -9.42% |
-| Days Active | 215 |
+| Current Balance | €4,514.75 |
+| Total Return | -9.71% |
+| Days Active | 218 |
 
 ---
 
 ## Daily Log
+
+### Day 217 — September 28, 2026 21:30 CET
+
+**Balance:** €4,514.75 | **Total Return:** -9.7%
+**Day P&L:** €14.45 (-0.3%) vs Day 216 (€4,529.20)
+
+**Prices at close:**
+- 4GLD: €116.62 (-2.98% 24h) — stop €105.88
+- XEON: €150.33 (+0.03% 24h)
+- EQQQ: €649.80 (-0.08% 24h) — stop €508.78
+- ITX: €53.34 (+0.15% 24h) — stop €50.63
+- ASML: €1,537.00 (+0.95% 24h) — stop €1,372.87
+- AIR: €193.10 (+0.36% 24h) — stop €186.06
+- TTE: €80.00 (+0.01% 24h) — stop €75.17
+
+**Market context:**
+- EUR/USD: 0.8780
+- SP500: 7,689.50 (-0.19%)
+- NASDAQ: 26,850.83 (-0.33%)
+- GOLD: 4,168.10 (-3.54%)
+- IBEX35: 19,600.30 (-0.51%)
+- EUROSTOXX50: 6,301.28 (-0.02%)
+- DAX: 25,374.42 (+0.43%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,350.81 | 52.1% | +23.9% | -0.08% |
+| ITX | €1,043.07 | 23.1% | -0.2% | +0.15% |
+| XEON | €455.67 | 10.1% | +7.0% | +0.03% |
+| CASH | €220.87 | 4.9% | — | — |
+| TTE | €217.55 | 4.8% | +1.9% | +0.01% |
+| AIR | €141.58 | 3.1% | -0.7% | +0.36% |
+| ASML | €85.19 | 1.9% | -1.1% | +0.95% |
+| 4GLD | €0.01 | 0.0% | -6.4% | -2.98% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.92% vs SMA50, VIX 16.29)
+- BUY: ASML, BTC, VWCE, SAP, SIE
+- HOLD: 4GLD, XEON, EQQQ, ITX, AIR, TTE, SOL, SXR8, MC, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (9.2% away)
+- EQQQ: stop EUR 508.78 (21.7% away)
+- ITX: stop EUR 50.63 (5.1% away)
+- ASML: stop EUR 1,372.87 (10.7% away)
+- AIR: stop EUR 186.06 (3.6% away)
+- TTE: stop EUR 75.17 (6.0% away)
+
+**Analysis:**
+Market mixed, gold sharp drop -3.54% hit 4GLD hard. Risk-on regime hold (VIX low 16.29), SP500/NASDAQ small pullback, DAX green. No stop breaches, portfolio flat day (+0.3%).
+
+**HOLD — sin señales de compra ejecutables, gold cae pero 4GLD posición ya residual (€0.01), resto de stops lejos.**
+
+---
+
 
 ### Day 214 — September 25, 2026 21:30 CET
 
