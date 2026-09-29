@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-29",
+  "day": 218,
+  "balance": {
+    "total": 4514.75,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": -9.71,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 220.87,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 0.000104,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 116.62,
+      "value": 0.01,
+      "pnlPercent": -6.37,
+      "change24h": -3.508191295714045
+    },
+    {
+      "asset": "XEON",
+      "type": "ETF",
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 150.33,
+      "value": 455.67,
+      "pnlPercent": 7,
+      "change24h": 0.0033261267254441206
+    },
+    {
+      "asset": "EQQQ",
+      "type": "ETF",
+      "description": "Invesco NASDAQ-100 UCITS",
+      "units": 3.617747,
+      "entryPriceEUR": 524.6,
+      "currentPriceEUR": 649.8,
+      "value": 2350.81,
+      "pnlPercent": 23.87,
+      "change24h": -0.7332722273144009
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex — Fashion Retail",
+      "units": 19.555182,
+      "entryPriceEUR": 53.46,
+      "currentPriceEUR": 53.34,
+      "value": 1043.07,
+      "pnlPercent": -0.22,
+      "change24h": 0.15020653398423847
+    },
+    {
+      "asset": "ASML",
+      "type": "Stock",
+      "description": "ASML Holding — Semiconductor Equipment",
+      "units": 0.055425,
+      "entryPriceEUR": 1554,
+      "currentPriceEUR": 1537,
+      "value": 85.19,
+      "pnlPercent": -1.09,
+      "change24h": 0.9457506896098838
+    },
+    {
+      "asset": "AIR",
+      "type": "Stock",
+      "description": "Airbus — Aerospace & Defence",
+      "units": 0.733203,
+      "entryPriceEUR": 194.38,
+      "currentPriceEUR": 193.1,
+      "value": 141.58,
+      "pnlPercent": -0.66,
+      "change24h": 0.3638253638253579
+    },
+    {
+      "asset": "TTE",
+      "type": "Stock",
+      "description": "TotalEnergies — Oil & Gas",
+      "units": 2.719327,
+      "entryPriceEUR": 78.49,
+      "currentPriceEUR": 80,
+      "value": 217.55,
+      "pnlPercent": 1.92,
+      "change24h": 0.012501562695343315
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-09-29T07:00:22.338Z",
+    "eurUsd": 0.8771929824561404
+  }
+}
