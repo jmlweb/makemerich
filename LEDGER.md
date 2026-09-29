@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,514.75 |
-| Total Return | -9.71% |
-| Days Active | 218 |
+| Current Balance | €4,525.30 |
+| Total Return | -9.49% |
+| Days Active | 219 |
 
 ---
 
 ## Daily Log
+
+### Day 218 — September 29, 2026 21:30 CET
+
+**Balance:** €4,525.30 | **Total Return:** -9.5%
+**Day P&L:** +€10.55 (+0.2%) vs Day 217 (€4,514.75)
+
+**Prices at close:**
+- 4GLD: €118.00 (-2.37% 24h) — stop €105.88
+- XEON: €150.35 (+0.02% 24h)
+- EQQQ: €654.00 (-0.09% 24h) — stop €508.78
+- ITX: €53.28 (-0.11% 24h) — stop €50.63
+- ASML: €1,601.20 (+4.18% 24h) — stop €1,372.87
+- AIR: €190.48 (-1.36% 24h) — stop €186.06
+- TTE: €78.10 (-2.38% 24h) — stop €75.17
+
+**Market context:**
+- EUR/USD: 0.8790
+- SP500: 7,674.54 (-0.89%)
+- NASDAQ: 26,811.60 (-0.95%)
+- GOLD: 4,202.90 (+0.83%)
+- IBEX35: 19,517.50 (-0.42%)
+- EUROSTOXX50: 6,320.26 (+0.30%)
+- DAX: 25,399.21 (-0.04%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,366.01 | 52.3% | +24.7% | -0.09% |
+| ITX | €1,041.90 | 23.0% | -0.3% | -0.11% |
+| XEON | €455.73 | 10.1% | +7.0% | +0.02% |
+| CASH | €220.87 | 4.9% | — | — |
+| TTE | €212.38 | 4.7% | -0.5% | -2.38% |
+| AIR | €139.66 | 3.1% | -2.0% | -1.36% |
+| ASML | €88.75 | 2.0% | +3.0% | +4.18% |
+| 4GLD | €0.01 | 0.0% | -5.3% | -2.37% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.66% vs SMA50, VIX 16.07)
+- BUY: VWCE
+- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, AIR, TTE, BTC, SOL, SXR8, SAP, MC, SIE, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.3% away)
+- EQQQ: stop EUR 508.78 (22.2% away)
+- ITX: stop EUR 50.63 (5.0% away)
+- ASML: stop EUR 1,372.87 (14.3% away)
+- AIR: stop EUR 186.06 (2.3% away)
+- TTE: stop EUR 75.17 (3.8% away)
+
+**Analysis:**
+US equities slid, with SP500 down 0.89% and NASDAQ down 0.95%, while European indices held up better: EUROSTOXX50 rose 0.30% and DAX was flat. ASML jumped 4.18% against the tech weakness, and gold rose 0.83% even as 4GLD fell 2.37%. The regime is still RISK-ON with VIX at 16.07, and no position is close to its stop except AIR (2.3% away) and TTE (3.8% away).
+
+**HOLD — No hay órdenes en execute-signals.js; la señal de compra de VWCE no generó orden, así que se mantiene la cartera.**
+
+---
+
 
 ### Day 217 — September 28, 2026 21:30 CET
 
