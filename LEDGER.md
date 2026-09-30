@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,535.14 |
-| Total Return | -9.30% |
+| Current Balance | €4,547.10 |
+| Total Return | -9.06% |
 | Days Active | 220 |
 
 ---
@@ -15,64 +15,63 @@
 
 ### Day 219 — September 30, 2026 21:30 CET
 
-**Balance:** €4,535.14 | **Total Return:** -9.3%
-**Day P&L:** +€9.84 (+0.2%) vs Day 218 (€4,525.30)
+**Balance:** €4,547.10 | **Total Return:** -9.1%
+**Day P&L:** +€21.80 (+0.5%) vs Day 218 (€4,525.30)
 
 **Prices at close:**
-- 4GLD: €118.64 (+1.73% 24h) — stop €105.88
+- 4GLD: €117.76 (+0.98% 24h) — stop €105.88
 - XEON: €150.36 (+0.02% 24h)
-- EQQQ: €653.50 (+0.57% 24h) — stop €508.78
-- ITX: €54.06 (+1.46% 24h) — stop €50.63
-- ASML: €1,611.00 (+0.60% 24h) — stop €1,372.87
-- AIR: €191.92 (+0.73% 24h) — stop €186.06
-- TTE: €76.18 (-2.46% 24h) — stop €75.17
+- EQQQ: €658.40 (+1.32% 24h) — stop €508.78
+- ITX: €53.92 (+1.20% 24h) — stop €50.63
+- ASML: €1,596.80 (-0.27% 24h) — stop €1,372.87
+- AIR: €190.62 (+0.07% 24h) — stop €186.06
+- TTE: €75.70 (-3.07% 24h) — stop €75.17
 
 **Market context:**
 - EUR/USD: 0.8820
-- SP500: 7,670.84 (-0.94%)
-- NASDAQ: 26,797.54 (-1.00%)
-- GOLD: 4,218.80 (+0.94%)
-- IBEX35: 19,594.20 (+0.39%)
-- EUROSTOXX50: 6,309.14 (-0.18%)
-- DAX: 25,359.42 (-0.06%)
+- SP500: 7,692.13 (+0.11%)
+- NASDAQ: 27,018.76 (+0.74%)
+- GOLD: 4,183.70 (+0.10%)
+- IBEX35: 19,426.20 (-0.47%)
+- EUROSTOXX50: 6,269.02 (-0.81%)
+- DAX: 25,199.19 (-0.69%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,364.20 | 52.1% | +24.6% | +0.57% |
-| ITX | €1,057.15 | 23.3% | +1.1% | +1.46% |
-| XEON | €455.74 | 10.0% | +7.0% | +0.02% |
+| EQQQ | €2,381.92 | 52.4% | +25.5% | +1.32% |
+| ITX | €1,054.42 | 23.2% | +0.9% | +1.20% |
+| XEON | €455.76 | 10.0% | +7.0% | +0.02% |
 | CASH | €220.88 | 4.9% | — | — |
-| TTE | €207.16 | 4.6% | -2.9% | -2.46% |
-| AIR | €140.72 | 3.1% | -1.3% | +0.73% |
-| ASML | €89.29 | 2.0% | +3.7% | +0.60% |
-| 4GLD | €0.00 | 0.0% | -4.8% | +1.73% |
+| TTE | €205.85 | 4.5% | -3.5% | -3.07% |
+| AIR | €139.76 | 3.1% | -1.9% | +0.07% |
+| ASML | €88.50 | 1.9% | +2.8% | -0.27% |
+| 4GLD | €0.00 | 0.0% | -5.5% | +0.98% |
 
 **Trades:**
 - **SELL 4GLD**: 0.000084 units @ EUR 118.64 = EUR 0.01 (fee EUR 0.00)
   Reason: trend: SMA50 < SMA200 (bearish), price below SMA20, price below SMA50+200; macd: MACD histogram negative
 
 **Quantitative signals (generate-quant-signals.js):**
-- Market regime: RISK-ON (SP500 +0.34% vs SMA50, VIX 16.03)
+- Market regime: RISK-ON (SP500 +0.57% vs SMA50, VIX 16.03)
 - BUY: VWCE, SIE
 - HOLD: XEON, EQQQ, ITX, ASML, AIR, TTE, BTC, SOL, SXR8, SAP, MC, NOVO, ALV, DTE
 - SELL: 4GLD
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (10.8% away)
-- EQQQ: stop EUR 508.78 (22.1% away)
-- ITX: stop EUR 50.63 (6.3% away)
-- ASML: stop EUR 1,372.87 (14.8% away)
-- AIR: stop EUR 186.06 (3.0% away)
-- TTE: stop EUR 75.17 (1.3% away)
+- 4GLD: stop EUR 105.88 (10.1% away)
+- EQQQ: stop EUR 508.78 (22.7% away)
+- ITX: stop EUR 50.63 (6.1% away)
+- ASML: stop EUR 1,372.87 (14.0% away)
+- AIR: stop EUR 186.06 (2.4% away)
+- TTE: stop EUR 75.17 (0.7% away)
 
 **Analysis:**
-US equities slipped (SP500 -0.94%, NASDAQ -1.00%) while European indices were flat to slightly positive and gold gained 0.94%, though the quant regime stays RISK-ON with VIX at 16. The portfolio is stable at €4,535 (+0.2% on the day), with TTE (-2.46%) only 1.3% above its stop and AIR 3.0% above its stop, both still intact.
+Equities were mixed: Nasdaq (+0.74%) and EQQQ (+1.32%) led gains, while European indices fell (Eurostoxx -0.81%, DAX -0.69%) and TTE dropped 3.07%, leaving it only 0.7% above its stop. The regime stays RISK-ON (VIX 16.03), and the portfolio gained +€21.80 (+0.5%) on the day, with the 4GLD position fully liquidated through a mechanical bearish-trend SELL.
 
-**HOLD — El script solo ejecutó la venta residual de 4GLD y no hay más órdenes; ningún stop se ha activado, así que se mantiene la cartera.**
+**HOLD — Las señales cuantitativas de hoy (BUY VWCE y SIE) no generaron órdenes en `data/.trade-orders.json`, y la venta residual de 4GLD fue mecánica, así que no se hace ningún movimiento discrecional.**
 
 ---
-
 
 ### Day 218 — September 29, 2026 21:30 CET
 
