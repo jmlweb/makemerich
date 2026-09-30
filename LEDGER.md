@@ -5,13 +5,74 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,525.30 |
-| Total Return | -9.49% |
-| Days Active | 219 |
+| Current Balance | €4,535.14 |
+| Total Return | -9.30% |
+| Days Active | 220 |
 
 ---
 
 ## Daily Log
+
+### Day 219 — September 30, 2026 21:30 CET
+
+**Balance:** €4,535.14 | **Total Return:** -9.3%
+**Day P&L:** +€9.84 (+0.2%) vs Day 218 (€4,525.30)
+
+**Prices at close:**
+- 4GLD: €118.64 (+1.73% 24h) — stop €105.88
+- XEON: €150.36 (+0.02% 24h)
+- EQQQ: €653.50 (+0.57% 24h) — stop €508.78
+- ITX: €54.06 (+1.46% 24h) — stop €50.63
+- ASML: €1,611.00 (+0.60% 24h) — stop €1,372.87
+- AIR: €191.92 (+0.73% 24h) — stop €186.06
+- TTE: €76.18 (-2.46% 24h) — stop €75.17
+
+**Market context:**
+- EUR/USD: 0.8820
+- SP500: 7,670.84 (-0.94%)
+- NASDAQ: 26,797.54 (-1.00%)
+- GOLD: 4,218.80 (+0.94%)
+- IBEX35: 19,594.20 (+0.39%)
+- EUROSTOXX50: 6,309.14 (-0.18%)
+- DAX: 25,359.42 (-0.06%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,364.20 | 52.1% | +24.6% | +0.57% |
+| ITX | €1,057.15 | 23.3% | +1.1% | +1.46% |
+| XEON | €455.74 | 10.0% | +7.0% | +0.02% |
+| CASH | €220.88 | 4.9% | — | — |
+| TTE | €207.16 | 4.6% | -2.9% | -2.46% |
+| AIR | €140.72 | 3.1% | -1.3% | +0.73% |
+| ASML | €89.29 | 2.0% | +3.7% | +0.60% |
+| 4GLD | €0.00 | 0.0% | -4.8% | +1.73% |
+
+**Trades:**
+- **SELL 4GLD**: 0.000084 units @ EUR 118.64 = EUR 0.01 (fee EUR 0.00)
+  Reason: trend: SMA50 < SMA200 (bearish), price below SMA20, price below SMA50+200; macd: MACD histogram negative
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.34% vs SMA50, VIX 16.03)
+- BUY: VWCE, SIE
+- HOLD: XEON, EQQQ, ITX, ASML, AIR, TTE, BTC, SOL, SXR8, SAP, MC, NOVO, ALV, DTE
+- SELL: 4GLD
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.8% away)
+- EQQQ: stop EUR 508.78 (22.1% away)
+- ITX: stop EUR 50.63 (6.3% away)
+- ASML: stop EUR 1,372.87 (14.8% away)
+- AIR: stop EUR 186.06 (3.0% away)
+- TTE: stop EUR 75.17 (1.3% away)
+
+**Analysis:**
+US equities slipped (SP500 -0.94%, NASDAQ -1.00%) while European indices were flat to slightly positive and gold gained 0.94%, though the quant regime stays RISK-ON with VIX at 16. The portfolio is stable at €4,535 (+0.2% on the day), with TTE (-2.46%) only 1.3% above its stop and AIR 3.0% above its stop, both still intact.
+
+**HOLD — El script solo ejecutó la venta residual de 4GLD y no hay más órdenes; ningún stop se ha activado, así que se mantiene la cartera.**
+
+---
+
 
 ### Day 218 — September 29, 2026 21:30 CET
 
