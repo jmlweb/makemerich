@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-10-01",
+    "time": "10:00 UTC",
+    "action": "SELL",
+    "asset": "TTE",
+    "units": 2.719327,
+    "price_eur": 74.4,
+    "amount_eur": 202.35,
+    "fee_eur": 0.2,
+    "reason": "Stop-loss triggered: TTE EUR 74.40 <= stop EUR 75.17",
+    "session": "stoploss-watch"
+  }
+]
