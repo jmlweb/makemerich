@@ -5,13 +5,75 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,547.10 |
-| Total Return | -9.06% |
-| Days Active | 220 |
+| Current Balance | €4,560.61 |
+| Total Return | -8.79% |
+| Days Active | 221 |
 
 ---
 
 ## Daily Log
+
+### Day 220 — October 1, 2026 21:30 CET
+
+**Balance:** €4,560.61 | **Total Return:** -8.8%
+**Day P&L:** +€13.51 (+0.3%) vs Day 219 (€4,547.10)
+
+**Prices at close:**
+- 4GLD: €118.92 (+0.82% 24h) — stop €105.88
+- XEON: €150.36 (+0.01% 24h)
+- EQQQ: €662.60 (+1.31% 24h) — stop €508.78
+- ITX: €54.14 (+0.41% 24h) — stop €50.63
+- ASML: €1,597.60 (+0.08% 24h) — stop €1,372.87
+- AIR: €187.70 (-1.52% 24h) — stop €186.06
+- VWCE: €169.96 (+0.33% 24h) — stop €167.01
+
+**Market context:**
+- EUR/USD: 0.8820
+- SP500: 7,667.77 (-0.04%)
+- NASDAQ: 26,861.06 (+0.24%)
+- GOLD: 4,204.60 (+0.43%)
+- IBEX35: 19,277.00 (-0.77%)
+- EUROSTOXX50: 6,234.96 (-0.54%)
+- DAX: 25,167.39 (-0.91%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,397.12 | 52.6% | +26.3% | +1.31% |
+| ITX | €1,058.72 | 23.2% | +1.3% | +0.41% |
+| XEON | €455.76 | 10.0% | +7.0% | +0.01% |
+| CASH | €227.85 | 5.0% | — | — |
+| VWCE | €194.99 | 4.3% | +0.0% | +0.33% |
+| AIR | €137.62 | 3.0% | -3.4% | -1.52% |
+| ASML | €88.55 | 1.9% | +2.8% | +0.08% |
+| 4GLD | €0.00 | 0.0% | -4.5% | +0.82% |
+
+**Trades:**
+- **SELL TTE**: 2.719327 units @ EUR 74.40 = EUR 202.35 (fee EUR 0.20)
+  Reason: Stop-loss triggered: TTE EUR 74.40 <= stop EUR 75.17
+- **BUY VWCE**: 1.14727 units @ EUR 169.96 = EUR 194.99 (fee EUR 0.19)
+  Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.23% vs SMA50, VIX 16.58)
+- BUY: VWCE, SIE
+- HOLD: XEON, EQQQ, ITX, ASML, AIR, BTC, SOL, SXR8, SAP, MC, NOVO, ALV, TTE, DTE
+- SELL: 4GLD
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (11.0% away)
+- EQQQ: stop EUR 508.78 (23.2% away)
+- ITX: stop EUR 50.63 (6.5% away)
+- ASML: stop EUR 1,372.87 (14.1% away)
+- AIR: stop EUR 186.06 (0.9% away)
+
+**Analysis:**
+Risk-on regime holds, with SP500 slightly above its SMA50 and VIX at 16.58. Nasdaq and EQQQ led gains (+1.31%), while European indices fell 0.5–0.9%. The script executed a TTE stop-loss and rotated the proceeds into VWCE, and AIR now sits only 0.9% above its stop.
+
+**HOLD — El script ya ejecutó la venta de TTE y la compra de VWCE; no hay más órdenes pendientes, así que mantengo el resto de posiciones.**
+
+---
+
 
 ### Day 219 — September 30, 2026 21:30 CET
 

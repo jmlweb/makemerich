@@ -10,5 +10,17 @@
     "fee_eur": 0.2,
     "reason": "Stop-loss triggered: TTE EUR 74.40 <= stop EUR 75.17",
     "session": "stoploss-watch"
+  },
+  {
+    "date": "2026-10-01",
+    "time": "13:30 UTC",
+    "action": "BUY",
+    "asset": "VWCE",
+    "units": 1.14727,
+    "price_eur": 169.96,
+    "amount_eur": 194.99,
+    "fee_eur": 0.19,
+    "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive",
+    "session": "makemerich-2130"
   }
 ]
