@@ -34,5 +34,17 @@
     "fee_eur": 0.14,
     "reason": "Stop-loss triggered: AIR EUR 185.60 <= stop EUR 186.06",
     "session": "stoploss-watch"
+  },
+  {
+    "date": "2026-10-01",
+    "time": "19:30 UTC",
+    "action": "BUY",
+    "asset": "SIE",
+    "units": 0.505406,
+    "price_eur": 271.9,
+    "amount_eur": 137.42,
+    "fee_eur": 0.14,
+    "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive",
+    "session": "makemerich-2130"
   }
 ]

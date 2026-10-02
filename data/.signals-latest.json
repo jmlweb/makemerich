@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T16:00:09.922Z",
-  "balance": 4527.51,
-  "totalReturn": -9.45,
+  "generatedAt": "2026-10-02T07:00:24.560Z",
+  "balance": 4527.23,
+  "totalReturn": -9.46,
   "alerts": [
     {
       "asset": "4GLD",
@@ -40,21 +40,21 @@
       "status": "ACTIVE"
     },
     {
-      "asset": "AIR",
-      "type": "STOP_LOSS",
-      "currentPrice": 185.6,
-      "triggerPrice": 186.0625,
-      "currency": "EUR",
-      "distancePct": -0.25,
-      "status": "TRIGGERED"
-    },
-    {
       "asset": "VWCE",
       "type": "STOP_LOSS",
       "currentPrice": 169.38,
       "triggerPrice": 167.0091,
       "currency": "EUR",
       "distancePct": 1.4,
+      "status": "NEAR"
+    },
+    {
+      "asset": "SIE",
+      "type": "STOP_LOSS",
+      "currentPrice": 271.9,
+      "triggerPrice": 263.7792,
+      "currency": "EUR",
+      "distancePct": 2.99,
       "status": "NEAR"
     }
   ]

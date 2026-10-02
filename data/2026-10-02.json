@@ -1,20 +1,20 @@
 {
-  "date": "2026-10-01",
-  "day": 220,
+  "date": "2026-10-02",
+  "day": 221,
   "balance": {
-    "total": 4527.37,
+    "total": 4527.23,
     "currency": "EUR"
   },
   "change": {
-    "absolute": 0,
+    "absolute": -0.14,
     "percentage": 0
   },
-  "totalReturn": -9.45,
+  "totalReturn": -9.46,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 363.79,
+      "value": 226.23,
       "pnlPercent": 0
     },
     {
@@ -26,7 +26,7 @@
       "currentPriceEUR": 119.05,
       "value": 0,
       "pnlPercent": -4.42,
-      "change24h": 0.8898305084745739
+      "change24h": 1.0954483695652106
     },
     {
       "asset": "XEON",
@@ -37,7 +37,7 @@
       "currentPriceEUR": 150.37,
       "value": 455.79,
       "pnlPercent": 7.02,
-      "change24h": 0.013302294645833213
+      "change24h": 0.005320493209727044
     },
     {
       "asset": "EQQQ",
@@ -48,7 +48,7 @@
       "currentPriceEUR": 659.9,
       "value": 2387.35,
       "pnlPercent": 25.79,
-      "change24h": 0.9021406727828711
+      "change24h": 0.22782503037667073
     },
     {
       "asset": "ITX",
@@ -81,11 +81,22 @@
       "currentPriceEUR": 169.38,
       "value": 194.32,
       "pnlPercent": -0.34,
-      "change24h": -0.01180637544274512
+      "change24h": -0.2355990104841593
+    },
+    {
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens — Industrial Conglomerate",
+      "units": 0.505406,
+      "entryPriceEUR": 271.9,
+      "currentPriceEUR": 271.9,
+      "value": 137.42,
+      "pnlPercent": 0,
+      "change24h": -1.3067150635208793
     }
   ],
   "metadata": {
-    "generatedAt": "2026-10-01T19:30:07.098Z",
+    "generatedAt": "2026-10-02T07:00:24.494Z",
     "eurUsd": 0.8849557522123894
   }
 }
