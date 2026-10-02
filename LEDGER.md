@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,527.22 |
-| Total Return | -9.46% |
-| Days Active | 221 |
+| Current Balance | €4,571.32 |
+| Total Return | -8.57% |
+| Days Active | 222 |
 
 ---
 
 ## Daily Log
+
+### Day 221 — October 2, 2026 21:30 CET
+
+**Balance:** €4,571.32 | **Total Return:** -8.6%
+**Day P&L:** +€43.95 (+1.0%) vs Day 220 (€4,527.37)
+
+**Prices at close:**
+- 4GLD: €118.35 (+0.50% 24h) — stop €105.88
+- XEON: €150.39 (+0.02% 24h)
+- EQQQ: €669.10 (+1.63% 24h) — stop €508.78
+- ITX: €53.24 (+0.34% 24h) — stop €50.63
+- ASML: €1,653.00 (+3.51% 24h) — stop €1,372.87
+- VWCE: €171.14 (+0.80% 24h) — stop €167.01
+- SIE: €276.10 (+0.22% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8870
+- SP500: 7,721.95 (+0.92%)
+- NASDAQ: 27,173.01 (+1.16%)
+- GOLD: 4,175.90 (-0.63%)
+- IBEX35: 19,085.30 (+0.42%)
+- EUROSTOXX50: 6,238.50 (+1.02%)
+- DAX: 25,231.20 (+0.13%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,420.63 | 53.0% | +27.5% | +1.63% |
+| ITX | €1,041.12 | 22.8% | -0.4% | +0.34% |
+| XEON | €455.84 | 10.0% | +7.0% | +0.02% |
+| CASH | €226.23 | 4.9% | — | — |
+| VWCE | €196.34 | 4.3% | +0.7% | +0.80% |
+| SIE | €139.54 | 3.1% | +1.5% | +0.22% |
+| ASML | €91.62 | 2.0% | +6.4% | +3.51% |
+| 4GLD | €0.00 | 0.0% | -5.0% | +0.50% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.03% vs SMA50, VIX 15.94)
+- HOLD: XEON, EQQQ, ITX, ASML, VWCE, SIE, BTC, SOL, SXR8, SAP, MC, AIR, NOVO, ALV, TTE, DTE
+- SELL: 4GLD
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.5% away)
+- EQQQ: stop EUR 508.78 (24.0% away)
+- ITX: stop EUR 50.63 (4.9% away)
+- ASML: stop EUR 1,372.87 (16.9% away)
+- VWCE: stop EUR 167.01 (2.4% away)
+- SIE: stop EUR 263.78 (4.5% away)
+
+**Analysis:**
+Risk-on session: SP500 +0.92%, NASDAQ +1.16% and EuroStoxx50 +1.02% lifted EQQQ (+1.63%) and ASML (+3.51%), while gold slipped 0.63% and the VIX stayed calm at 15.94. Day P{{ANALYSIS}}L was +€43.95 with no trades; 4GLD is already fully sold (€0.00), and VWCE (2.4% from stop) and ITX/SIE (~4.5–4.9%) are the closest to their stops but remain intact.
+
+**HOLD — No hay órdenes de trade en execute-signals; el sistema mantiene las posiciones y las señales cuantitativas no requieren cambios.**
+
+---
+
 
 ### Day 220 — October 1, 2026 21:30 CET
 
