@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,571.32 |
-| Total Return | -8.57% |
-| Days Active | 222 |
+| Current Balance | €4,590.74 |
+| Total Return | -8.19% |
+| Days Active | 225 |
 
 ---
 
 ## Daily Log
+
+### Day 224 — October 5, 2026 21:30 CET
+
+**Balance:** €4,590.74 | **Total Return:** -8.2%
+**Day P&L:** +€19.42 (+0.4%) vs Day 223 (€4,571.32)
+
+**Prices at close:**
+- 4GLD: €118.69 (-0.30% 24h) — stop €105.88
+- XEON: €150.40 (+0.02% 24h)
+- EQQQ: €675.30 (+2.33% 24h) — stop €508.78
+- ITX: €53.00 (-0.45% 24h) — stop €50.63
+- ASML: €1,656.20 (+0.19% 24h) — stop €1,372.87
+- VWCE: €172.90 (+2.08% 24h) — stop €167.01
+- SIE: €275.00 (+1.14% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8890
+- SP500: 7,789.84 (+1.61%)
+- NASDAQ: 27,529.08 (+2.45%)
+- GOLD: 4,168.10 (+0.14%)
+- IBEX35: 19,299.70 (+1.12%)
+- EUROSTOXX50: 6,242.14 (+0.06%)
+- DAX: 25,254.21 (+1.26%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,443.06 | 53.2% | +28.7% | +2.33% |
+| ITX | €1,036.42 | 22.6% | -0.9% | -0.45% |
+| XEON | €455.88 | 9.9% | +7.0% | +0.02% |
+| CASH | €226.23 | 4.9% | — | — |
+| VWCE | €198.36 | 4.3% | +1.7% | +2.08% |
+| SIE | €138.99 | 3.0% | +1.1% | +1.14% |
+| ASML | €91.79 | 2.0% | +6.6% | +0.19% |
+| 4GLD | €0.00 | 0.0% | -4.7% | -0.30% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.86% vs SMA50, VIX 16.3)
+- HOLD: XEON, EQQQ, ITX, ASML, VWCE, SIE, BTC, SOL, SXR8, SAP, MC, AIR, NOVO, ALV, TTE
+- SELL: 4GLD, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.8% away)
+- EQQQ: stop EUR 508.78 (24.7% away)
+- ITX: stop EUR 50.63 (4.5% away)
+- ASML: stop EUR 1,372.87 (17.1% away)
+- VWCE: stop EUR 167.01 (3.4% away)
+- SIE: stop EUR 263.78 (4.1% away)
+
+**Analysis:**
+Risk-on session: Nasdaq rose 2.45% and the S{{ANALYSIS}}P 500 1.61%, lifting EQQQ 2.33% and VWCE 2.08%, while European indices were mixed (Eurostoxx 50 +0.06%, DAX +1.26%). Gold was flat at +0.14% and the 4GLD sell signal persists, but the position is already at zero. The portfolio gained €19.42 (+0.4%), and the nearest stops (VWCE 3.4%, SIE 4.1%, ITX 4.5% away) were not tested.
+
+**HOLD — No hay órdenes de trading en execute-signals.js, así que se mantiene la cartera sin cambios.**
+
+---
+
 
 ### Day 221 — October 2, 2026 21:30 CET
 
