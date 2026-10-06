@@ -5,13 +5,72 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,590.74 |
-| Total Return | -8.19% |
-| Days Active | 225 |
+| Current Balance | €4,624.74 |
+| Total Return | -7.51% |
+| Days Active | 226 |
 
 ---
 
 ## Daily Log
+
+### Day 225 — October 6, 2026 21:30 CET
+
+**Balance:** €4,624.74 | **Total Return:** -7.5%
+**Day P&L:** +€34.00 (+0.7%) vs Day 224 (€4,590.74)
+
+**Prices at close:**
+- 4GLD: €118.90 (+0.46% 24h) — stop €105.88
+- XEON: €150.40 (+0.01% 24h)
+- EQQQ: €679.80 (+1.60% 24h) — stop €508.78
+- ITX: €53.82 (+1.55% 24h) — stop €50.63
+- ASML: €1,636.40 (-1.20% 24h) — stop €1,372.87
+- VWCE: €173.56 (+1.41% 24h) — stop €167.01
+- SIE: €279.00 (+1.05% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8920
+- SP500: 7,824.89 (+1.32%)
+- NASDAQ: 27,645.71 (+1.67%)
+- GOLD: 4,202.40 (+1.10%)
+- IBEX35: 19,444.20 (+0.75%)
+- EUROSTOXX50: 6,272.23 (+0.48%)
+- DAX: 25,449.19 (+0.86%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,459.34 | 53.2% | +29.6% | +1.60% |
+| ITX | €1,052.46 | 22.8% | +0.7% | +1.55% |
+| XEON | €455.87 | 9.9% | +7.0% | +0.01% |
+| CASH | €226.23 | 4.9% | — | — |
+| VWCE | €199.12 | 4.3% | +2.1% | +1.41% |
+| SIE | €141.01 | 3.0% | +2.6% | +1.05% |
+| ASML | €90.70 | 2.0% | +5.3% | -1.20% |
+| 4GLD | €0.00 | 0.0% | -4.5% | +0.46% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.79% vs SMA50, VIX 15.42)
+- BUY: SIE
+- HOLD: XEON, EQQQ, ITX, ASML, VWCE, BTC, SOL, SXR8, SAP, MC, AIR, NOVO, ALV, TTE
+- SELL: 4GLD, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.9% away)
+- EQQQ: stop EUR 508.78 (25.2% away)
+- ITX: stop EUR 50.63 (5.9% away)
+- ASML: stop EUR 1,372.87 (16.1% away)
+- VWCE: stop EUR 167.01 (3.8% away)
+- SIE: stop EUR 263.78 (5.5% away)
+
+**Analysis:**
+Risk-on session: SP500 +1.32%, NASDAQ +1.67% and VIX at 15.42 lifted EQQQ (+1.60%) and most European holdings, while ASML slipped 1.20% and gold rose 1.10%. The portfolio gained €34.00 (+0.7%) to €4,624.74, with the nearest stops (VWCE 3.8%, SIE 5.5%, ITX 5.9%) still comfortably away.
+
+**HOLD — No hay órdenes en trade-orders.json, así que se mantienen las posiciones sin cambios.**
+
+---
+
 
 ### Day 224 — October 5, 2026 21:30 CET
 
