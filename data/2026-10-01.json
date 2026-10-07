@@ -2,19 +2,19 @@
   "date": "2026-10-01",
   "day": 220,
   "balance": {
-    "total": 4527.37,
+    "total": 4527.23,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.45,
+  "totalReturn": -9.46,
   "positions": [
     {
       "asset": "CASH",
       "type": "Cash",
-      "value": 363.79,
+      "value": 226.23,
       "pnlPercent": 0
     },
     {
@@ -82,6 +82,16 @@
       "value": 194.32,
       "pnlPercent": -0.34,
       "change24h": -0.01180637544274512
+    },
+    {
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens — Industrial Conglomerate",
+      "units": 0.505406,
+      "entryPriceEUR": 271.9,
+      "currentPriceEUR": 271.9,
+      "value": 137.42,
+      "pnlPercent": 0
     }
   ],
   "metadata": {

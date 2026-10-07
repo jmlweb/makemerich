@@ -187,3 +187,5 @@ defects, and predate this work. Left for a normal rebalancing session.
 **Not corrected (needs Jose's sign-off):** `data/2026-10-01.json` has no SIE holding and cash EUR 363.79, so it does not reflect the SIE BUY. Fixing it would change a past balance, so it is flagged only.
 
 **Recurrence guard:** `daily-update.sh` and `session.sh` now re-run `update-portfolio.js` after `apply-trades.js` when `tradesExecuted > 0`.
+
+**Resolution (2026-10-08, Jose sign-off):** `data/2026-10-01.json` corrected from the trade log and the 2026-10-02 daily file. Cash 363.79 → 226.23 (363.79 − 137.42 BUY − 0.14 fee; equals the 2026-10-02 cash). Added SIE 0.505406 @ 271.90 (value 137.42, valued at execution price). Total 4527.37 → 4527.23, totalReturn −9.45 → −9.46. `validate-data.js` passes. The file's `change` block (0/0) was already zero before this fix and is left as is.
