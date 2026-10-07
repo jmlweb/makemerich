@@ -68,6 +68,12 @@ node scripts/execute-signals.js >> "$LOG_FILE" 2>&1 || echo "No trade orders" >>
 echo "[8/9] Applying trades..." | tee -a "$LOG_FILE"
 node scripts/apply-trades.js >> "$LOG_FILE" 2>&1 || echo "Warning: apply-trades failed" >> "$LOG_FILE"
 
+# Trades change holdings after step 3 wrote the daily file; recalc so daily file matches portfolio.json
+if tail -n 40 "$LOG_FILE" | grep -qP '"tradesExecuted":\s*[1-9]'; then
+  echo "Trades applied — refreshing daily file..." | tee -a "$LOG_FILE"
+  node scripts/update-portfolio.js >> "$LOG_FILE" 2>&1 || { send_tg "⚠️ makemerich: post-trade portfolio refresh failed"; exit 1; }
+fi
+
 # 9. Regenerate summary.json + .daily-summary.txt from the freshly-updated daily files
 echo "[9/10] Regenerating summaries..." | tee -a "$LOG_FILE"
 node scripts/generate-summary.js >> "$LOG_FILE" 2>&1 || echo "Warning: generate-summary failed" >> "$LOG_FILE"

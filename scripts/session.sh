@@ -163,6 +163,12 @@ APPLY_OUTPUT=$(node scripts/apply-trades.js 2>&1 || echo "Warning: apply-trades 
 echo "$APPLY_OUTPUT"
 TRADES_EXECUTED=$(echo "$APPLY_OUTPUT" | grep -oP '"tradesExecuted":\s*\K\d+' || echo "0")
 
+# Trades change holdings after step 3 wrote the daily file; recalc so daily file matches portfolio.json
+if [ "$TRADES_EXECUTED" -gt 0 ]; then
+  echo "Trades applied — refreshing daily file..."
+  node scripts/update-portfolio.js 2>&1 || { echo "ERROR: post-trade update-portfolio failed"; exit 1; }
+fi
+
 # 9. Generate LEDGER draft + get agent analysis
 echo "[9/9] Generating LEDGER draft..."
 node scripts/generate-ledger-entry.js --date "$TODAY" 2>&1 || echo "Warning: ledger draft failed"

@@ -173,3 +173,17 @@ back-filled with fabricated trades.
 `validate-rules.js` reports two **current portfolio** rule breaches — EQQQ 50.4%
 (limit 50%) and cash 4.7% (min 5%). These are live allocation issues, not data-integrity
 defects, and predate this work. Left for a normal rebalancing session.
+
+---
+
+# Finding — 2026-10-01 daily close failed validation (2026-10-08)
+
+**Symptom:** `makemerich_daily_close` exited 1 at 21:30 CEST on 2026-10-01 ("Data validation FAILED — skipping commit/push"). No Day 220 portfolio-summary commit.
+
+**Root cause:** `daily-update.sh` wrote `data/2026-10-01.json` in step 3 (`update-portfolio.js`), then step 8 (`apply-trades.js`) executed a SIE BUY into `portfolio.json` and the trade log. The daily file was never refreshed, so `validate-data.js` failed (balance mismatch; SIE in portfolio.json but not in latest daily). `session.sh` had the same ordering. Only bites when a run actually applies trades.
+
+**Impact:** no data lost. The SIE BUY (0.505406 @ EUR 271.90) and the AIR/TTE stop-loss sells were committed by the 2026-10-02 09:00 session (`01c04bc`).
+
+**Not corrected (needs Jose's sign-off):** `data/2026-10-01.json` has no SIE holding and cash EUR 363.79, so it does not reflect the SIE BUY. Fixing it would change a past balance, so it is flagged only.
+
+**Recurrence guard:** `daily-update.sh` and `session.sh` now re-run `update-portfolio.js` after `apply-trades.js` when `tradesExecuted > 0`.
