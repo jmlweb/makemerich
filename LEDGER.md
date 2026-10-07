@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,624.74 |
-| Total Return | -7.51% |
-| Days Active | 226 |
+| Current Balance | €4,606.09 |
+| Total Return | -7.88% |
+| Days Active | 227 |
 
 ---
 
 ## Daily Log
+
+### Day 226 — October 7, 2026 21:30 CET
+
+**Balance:** €4,606.09 | **Total Return:** -7.9%
+**Day P&L:** €18.65 (-0.4%) vs Day 225 (€4,624.74)
+
+**Prices at close:**
+- 4GLD: €118.10 (-0.50% 24h) — stop €105.88
+- XEON: €150.44 (+0.03% 24h)
+- EQQQ: €678.90 (+0.53% 24h) — stop €508.78
+- ITX: €53.34 (-0.89% 24h) — stop €50.63
+- ASML: €1,610.20 (-1.60% 24h) — stop €1,372.87
+- VWCE: €172.92 (+0.01% 24h) — stop €167.01
+- SIE: €271.20 (-1.38% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8890
+- SP500: 7,797.71 (+0.31%)
+- NASDAQ: 27,503.61 (+0.10%)
+- GOLD: 4,135.00 (-1.24%)
+- IBEX35: 19,118.00 (-1.68%)
+- EUROSTOXX50: 6,180.29 (-1.47%)
+- DAX: 25,104.36 (-0.59%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,456.09 | 53.3% | +29.4% | +0.53% |
+| ITX | €1,043.07 | 22.6% | -0.2% | -0.89% |
+| XEON | €456.00 | 9.9% | +7.1% | +0.03% |
+| CASH | €226.23 | 4.9% | — | — |
+| VWCE | €198.39 | 4.3% | +1.7% | +0.01% |
+| SIE | €137.07 | 3.0% | -0.3% | -1.38% |
+| ASML | €89.25 | 1.9% | +3.6% | -1.60% |
+| 4GLD | €0.00 | 0.0% | -5.2% | -0.50% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.35% vs SMA50, VIX 15.39)
+- HOLD: XEON, EQQQ, ITX, ASML, VWCE, SIE, BTC, SOL, SXR8, SAP, MC, AIR, NOVO, ALV, TTE
+- SELL: 4GLD, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.3% away)
+- EQQQ: stop EUR 508.78 (25.1% away)
+- ITX: stop EUR 50.63 (5.1% away)
+- ASML: stop EUR 1,372.87 (14.7% away)
+- VWCE: stop EUR 167.01 (3.4% away)
+- SIE: stop EUR 263.78 (2.7% away)
+
+**Analysis:**
+European equities sold off broadly (IBEX35 -1.68%, EUROSTOXX50 -1.47%, DAX -0.59%) while US indices edged up, with SP500 +0.31% and NASDAQ +0.10%. Gold fell 1.24%, and the regime stays RISK-ON (VIX 15.39). The portfolio dipped slightly because ASML, SIE and ITX fell, while the EQQQ position rose and cushioned the loss.
+
+**HOLD — no hay órdenes de trading en la salida de execute-signals.js y los stops siguen sin activarse.**
+
+---
+
 
 ### Day 225 — October 6, 2026 21:30 CET
 
