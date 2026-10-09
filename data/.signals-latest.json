@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T19:30:12.962Z",
+  "generatedAt": "2026-10-09T07:00:22.912Z",
   "balance": 4583.68,
   "totalReturn": -8.33,
   "alerts": [
@@ -56,13 +56,6 @@
       "currency": "EUR",
       "distancePct": 0.18,
       "status": "NEAR"
-    },
-    {
-      "asset": "SIE",
-      "type": "HIGH_VOLATILITY",
-      "change24h": -5.29,
-      "status": "INFO",
-      "detail": "SIE moved -5.29% in 24h"
     }
   ]
 }
