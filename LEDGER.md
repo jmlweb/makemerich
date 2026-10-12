@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,593.46 |
-| Total Return | -8.13% |
-| Days Active | 229 |
+| Current Balance | €4,592.92 |
+| Total Return | -8.14% |
+| Days Active | 232 |
 
 ---
 
 ## Daily Log
+
+### Day 231 — October 12, 2026 21:30 CET
+
+**Balance:** €4,592.92 | **Total Return:** -8.1%
+**Day P&L:** €0.54 (-0.0%) vs Day 230 (€4,593.46)
+
+**Prices at close:**
+- 4GLD: €120.02 (+1.57% 24h) — stop €105.88
+- XEON: €150.49 (+0.04% 24h)
+- EQQQ: €671.80 (-0.68% 24h) — stop €508.78
+- ITX: €53.92 (+0.11% 24h) — stop €50.63
+- ASML: €1,575.80 (-1.61% 24h) — stop €1,372.87
+- VWCE: €173.48 (+0.92% 24h) — stop €167.01
+- SIE: €275.75 (+4.35% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8930
+- SP500: 7,799.95 (+0.45%)
+- NASDAQ: 27,234.20 (+0.15%)
+- GOLD: 4,188.10 (-0.67%)
+- IBEX35: 19,285.80 (+1.33%)
+- EUROSTOXX50: 6,201.21 (+0.45%)
+- DAX: 25,277.68 (+1.90%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,430.40 | 52.9% | +28.1% | -0.68% |
+| ITX | €1,054.42 | 23.0% | +0.9% | +0.11% |
+| XEON | €456.14 | 9.9% | +7.1% | +0.04% |
+| CASH | €226.23 | 4.9% | — | — |
+| VWCE | €199.03 | 4.3% | +2.1% | +0.92% |
+| SIE | €139.37 | 3.0% | +1.4% | +4.35% |
+| ASML | €87.34 | 1.9% | +1.4% | -1.61% |
+| 4GLD | €0.00 | 0.0% | -3.6% | +1.57% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.42% vs SMA50, VIX 15.49)
+- BUY: ASML
+- HOLD: 4GLD, XEON, EQQQ, ITX, VWCE, SIE, BTC, SOL, SXR8, SAP, MC, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (11.8% away)
+- EQQQ: stop EUR 508.78 (24.3% away)
+- ITX: stop EUR 50.63 (6.1% away)
+- ASML: stop EUR 1,372.87 (12.9% away)
+- VWCE: stop EUR 167.01 (3.7% away)
+- SIE: stop EUR 263.78 (4.3% away)
+
+**Analysis:**
+Risk-on session with equities broadly higher (DAX +1.90%, IBEX35 +1.33%, SP500 +0.45%) while gold slipped 0.67%, and the portfolio finished flat at €4,592.92 as SIE's +4.35% rally offset losses in EQQQ and ASML. The quant regime stays RISK-ON (SP500 +1.42% above its SMA50, VIX 15.49), though the ASML BUY signal produced no executable order, so nothing was traded. The nearest stops are VWCE (3.7% away) and SIE (4.3% away), both worth watching after today's moves.
+
+**HOLD — No hay órdenes de trade en `execute-signals.js`, así que se mantiene la cartera sin cambios.**
+
+---
+
 
 ### Day 228 — October 9, 2026 21:30 CET
 
