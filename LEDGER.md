@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,592.92 |
-| Total Return | -8.14% |
-| Days Active | 232 |
+| Current Balance | €4,566.20 |
+| Total Return | -8.68% |
+| Days Active | 233 |
 
 ---
 
 ## Daily Log
+
+### Day 232 — October 13, 2026 21:30 CET
+
+**Balance:** €4,566.20 | **Total Return:** -8.7%
+**Day P&L:** €26.72 (-0.6%) vs Day 231 (€4,592.92)
+
+**Prices at close:**
+- 4GLD: €119.58 (-0.62% 24h) — stop €105.88
+- XEON: €150.48 (+0.01% 24h)
+- EQQQ: €664.70 (-1.17% 24h) — stop €508.78
+- ITX: €54.14 (+0.41% 24h) — stop €50.63
+- ASML: €1,509.60 (-4.20% 24h) — stop €1,372.87
+- VWCE: €172.60 (-0.15% 24h) — stop €167.01
+- SIE: €274.50 (+0.88% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8950
+- SP500: 7,809.18 (-0.03%)
+- NASDAQ: 27,213.24 (-0.56%)
+- GOLD: 4,185.70 (-0.12%)
+- IBEX35: 19,210.70 (-0.39%)
+- EUROSTOXX50: 6,167.01 (-0.55%)
+- DAX: 25,259.90 (+0.69%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,404.72 | 52.7% | +26.7% | -1.17% |
+| ITX | €1,058.72 | 23.2% | +1.3% | +0.41% |
+| XEON | €456.11 | 10.0% | +7.1% | +0.01% |
+| CASH | €226.23 | 5.0% | — | — |
+| VWCE | €198.02 | 4.3% | +1.6% | -0.15% |
+| SIE | €138.73 | 3.0% | +1.0% | +0.88% |
+| ASML | €83.67 | 1.8% | -2.9% | -4.20% |
+| 4GLD | €0.00 | 0.0% | -4.0% | -0.62% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +1.18% vs SMA50, VIX 15.32)
+- BUY: ASML, SIE, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, VWCE, BTC, SOL, SXR8, SAP, MC, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (11.5% away)
+- EQQQ: stop EUR 508.78 (23.5% away)
+- ITX: stop EUR 50.63 (6.5% away)
+- ASML: stop EUR 1,372.87 (9.1% away)
+- VWCE: stop EUR 167.01 (3.2% away)
+- SIE: stop EUR 263.78 (3.9% away)
+
+**Analysis:**
+Risk-on regime persists (SP500 +1.18% vs SMA50, VIX 15.32), but US tech weakened with NASDAQ -0.56% while DAX gained +0.69%. ASML fell 4.20% and EQQQ 1.17%, yet both remain well above their stops (9.1% and 23.5% away), and the portfolio slipped 0.6% to €4,566.20. The quant BUY flags on ASML, SIE and TTE generated no trade orders, so nothing is actionable.
+
+**HOLD — No hay órdenes de trade en execute-signals.js, así que se mantiene la cartera sin cambios.**
+
+---
+
 
 ### Day 231 — October 12, 2026 21:30 CET
 
