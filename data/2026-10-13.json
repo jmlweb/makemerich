@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-13",
+  "day": 232,
+  "balance": {
+    "total": 4592.92,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": -8.14,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 226.23,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "4GLD",
+      "type": "ETC",
+      "description": "Xetra-Gold ETC (1g/unit)",
+      "units": 0.00002,
+      "entryPriceEUR": 124.56,
+      "currentPriceEUR": 120.02,
+      "value": 0,
+      "pnlPercent": -3.64,
+      "change24h": -0.2493351063829764
+    },
+    {
+      "asset": "XEON",
+      "type": "ETF",
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 150.486,
+      "value": 456.14,
+      "pnlPercent": 7.11,
+      "change24h": 0.012627353506069127
+    },
+    {
+      "asset": "EQQQ",
+      "type": "ETF",
+      "description": "Invesco NASDAQ-100 UCITS",
+      "units": 3.617747,
+      "entryPriceEUR": 524.6,
+      "currentPriceEUR": 671.8,
+      "value": 2430.4,
+      "pnlPercent": 28.06,
+      "change24h": -0.11894142134999527
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex — Fashion Retail",
+      "units": 19.555182,
+      "entryPriceEUR": 53.46,
+      "currentPriceEUR": 53.92,
+      "value": 1054.42,
+      "pnlPercent": 0.86,
+      "change24h": 0.11139992573338707
+    },
+    {
+      "asset": "ASML",
+      "type": "Stock",
+      "description": "ASML Holding — Semiconductor Equipment",
+      "units": 0.055425,
+      "entryPriceEUR": 1554,
+      "currentPriceEUR": 1575.8,
+      "value": 87.34,
+      "pnlPercent": 1.4,
+      "change24h": -1.6108891108891081
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 1.14727,
+      "entryPriceEUR": 169.96,
+      "currentPriceEUR": 173.48,
+      "value": 199.03,
+      "pnlPercent": 2.07,
+      "change24h": 0.35867175749159785
+    },
+    {
+      "asset": "SIE",
+      "type": "Stock",
+      "description": "Siemens — Industrial Conglomerate",
+      "units": 0.505406,
+      "entryPriceEUR": 271.9,
+      "currentPriceEUR": 275.75,
+      "value": 139.37,
+      "pnlPercent": 1.42,
+      "change24h": 1.341418596104365
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-10-13T07:00:23.564Z",
+    "eurUsd": 0.8928571428571428
+  }
+}
