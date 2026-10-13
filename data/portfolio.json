@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T10:00:19.827Z",
+  "last_updated": "2026-10-13T13:30:10.597Z",
   "holdings": {
     "CASH": {
       "amount_eur": 226.23
@@ -7,15 +7,15 @@
     "4GLD": {
       "units": 0.00002,
       "entry_price_eur": 124.56,
-      "current_price_eur": 120.35,
+      "current_price_eur": 120.01,
       "amount_eur": 0,
-      "pnl_pct": -3.38,
+      "pnl_pct": -3.65,
       "stop_loss_eur": 105.88
     },
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 150.487,
+      "current_price_eur": 150.488,
       "amount_eur": 456.14,
       "pnl_pct": 7.11,
       "stop_loss_eur": null,
@@ -24,48 +24,48 @@
     "EQQQ": {
       "units": 3.617747,
       "entry_price_eur": 524.6,
-      "current_price_eur": 668.2,
-      "amount_eur": 2417.38,
-      "pnl_pct": 27.37,
+      "current_price_eur": 665,
+      "amount_eur": 2405.8,
+      "pnl_pct": 26.76,
       "stop_loss_eur": 508.7824
     },
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 54.04,
-      "amount_eur": 1056.76,
-      "pnl_pct": 1.08,
+      "current_price_eur": 54.12,
+      "amount_eur": 1058.33,
+      "pnl_pct": 1.23,
       "stop_loss_eur": 50.6326
     },
     "ASML": {
       "units": 0.055425,
       "entry_price_eur": 1554,
-      "current_price_eur": 1555.8,
-      "amount_eur": 86.23,
-      "pnl_pct": 0.12,
+      "current_price_eur": 1522.8,
+      "amount_eur": 84.4,
+      "pnl_pct": -2.01,
       "stop_loss_eur": 1372.8737
     },
     "VWCE": {
       "units": 1.14727,
       "entry_price_eur": 169.96,
-      "current_price_eur": 173.34,
-      "amount_eur": 198.87,
-      "pnl_pct": 1.99,
+      "current_price_eur": 172.74,
+      "amount_eur": 198.18,
+      "pnl_pct": 1.64,
       "stop_loss_eur": 167.0091
     },
     "SIE": {
       "units": 0.505406,
       "entry_price_eur": 271.9,
-      "current_price_eur": 278.05,
-      "amount_eur": 140.53,
-      "pnl_pct": 2.26,
+      "current_price_eur": 274.75,
+      "amount_eur": 138.86,
+      "pnl_pct": 1.05,
       "stop_loss_eur": 263.7792
     }
   },
   "totals": {
-    "balance_eur": 4582.14,
+    "balance_eur": 4567.95,
     "initial_eur": 5000,
-    "pnl_eur": -417.86,
-    "pnl_pct": -8.36
+    "pnl_eur": -432.05,
+    "pnl_pct": -8.64
   }
 }
