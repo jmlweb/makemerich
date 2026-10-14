@@ -5,13 +5,71 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,566.20 |
-| Total Return | -8.68% |
-| Days Active | 233 |
+| Current Balance | €4,565.59 |
+| Total Return | -8.69% |
+| Days Active | 234 |
 
 ---
 
 ## Daily Log
+
+### Day 233 — October 14, 2026 21:30 CET
+
+**Balance:** €4,565.59 | **Total Return:** -8.7%
+**Day P&L:** €0.61 (-0.0%) vs Day 232 (€4,566.20)
+
+**Prices at close:**
+- 4GLD: €118.21 (-1.51% 24h) — stop €105.88
+- XEON: €150.51 (+0.01% 24h)
+- EQQQ: €663.10 (-1.30% 24h) — stop €508.78
+- ITX: €54.34 (+0.37% 24h) — stop €50.63
+- ASML: €1,528.20 (+1.23% 24h) — stop €1,372.87
+- VWCE: €172.48 (-0.58% 24h) — stop €167.01
+- SIE: €275.05 (-0.25% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8930
+- SP500: 7,713.75 (-1.20%)
+- NASDAQ: 26,695.16 (-2.02%)
+- GOLD: 4,125.30 (-1.24%)
+- IBEX35: 19,230.70 (+0.10%)
+- EUROSTOXX50: 6,190.37 (+0.38%)
+- DAX: 25,298.61 (+0.08%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,398.93 | 52.5% | +26.4% | -1.30% |
+| ITX | €1,062.63 | 23.3% | +1.6% | +0.37% |
+| XEON | €456.20 | 10.0% | +7.1% | +0.01% |
+| CASH | €226.23 | 5.0% | — | — |
+| VWCE | €197.88 | 4.3% | +1.5% | -0.58% |
+| SIE | €139.01 | 3.0% | +1.2% | -0.25% |
+| ASML | €84.70 | 1.9% | -1.7% | +1.23% |
+| 4GLD | €0.00 | 0.0% | -5.1% | -1.51% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.85% vs SMA50, VIX 15.19)
+- BUY: SIE, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, VWCE, BTC, SOL, SXR8, SAP, MC, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.4% away)
+- EQQQ: stop EUR 508.78 (23.3% away)
+- ITX: stop EUR 50.63 (6.8% away)
+- ASML: stop EUR 1,372.87 (10.2% away)
+- VWCE: stop EUR 167.01 (3.2% away)
+- SIE: stop EUR 263.78 (4.1% away)
+
+**Analysis:**
+Risk-off session in US equities, with the S{{ANALYSIS}}P 500 down 1.20% and the Nasdaq down 2.02%, which pulled EQQQ down 1.30% and gold down 1.24%. European indices held up (EuroStoxx 50 +0.38%, IBEX +0.10%), so ITX and ASML gained while the portfolio stayed almost flat at €4,565.59 (-8.7% total). The quant regime is still RISK-ON (VIX 15.19), and VWCE and SIE sit 3-4% above their stops, so they are the ones to watch.
+
+**HOLD — no hay órdenes en `.trade-orders.json`, así que se mantiene la cartera sin cambios.**
+
+---
+
 
 ### Day 232 — October 13, 2026 21:30 CET
 
