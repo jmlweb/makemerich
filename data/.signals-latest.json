@@ -1,67 +1,67 @@
 {
-  "generatedAt": "2026-10-15T10:00:18.519Z",
-  "balance": 4511.98,
-  "totalReturn": -9.76,
+  "generatedAt": "2026-10-15T13:30:09.740Z",
+  "balance": 4519.63,
+  "totalReturn": -9.61,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 119.13,
+      "currentPrice": 119.27,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 11.12,
+      "distancePct": 11.23,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 645.3,
+      "currentPrice": 645.8,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 21.16,
+      "distancePct": 21.22,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 55.42,
+      "currentPrice": 55.76,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 8.64,
+      "distancePct": 9.2,
       "status": "ACTIVE"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1448.2,
+      "currentPrice": 1446.6,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 5.2,
+      "distancePct": 5.1,
       "status": "ACTIVE"
     },
     {
       "asset": "ASML",
       "type": "HIGH_VOLATILITY",
-      "change24h": -5.27,
+      "change24h": -5.34,
       "status": "INFO",
-      "detail": "ASML moved -5.27% in 24h"
+      "detail": "ASML moved -5.34% in 24h"
     },
     {
       "asset": "VWCE",
       "type": "STOP_LOSS",
-      "currentPrice": 170.06,
+      "currentPrice": 170.12,
       "triggerPrice": 167.0091,
       "currency": "EUR",
-      "distancePct": 1.79,
+      "distancePct": 1.83,
       "status": "NEAR"
     },
     {
       "asset": "SIE",
       "type": "STOP_LOSS",
-      "currentPrice": 268.9,
+      "currentPrice": 267.4,
       "triggerPrice": 263.7792,
       "currency": "EUR",
-      "distancePct": 1.9,
+      "distancePct": 1.35,
       "status": "NEAR"
     }
   ]
