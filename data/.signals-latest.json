@@ -1,60 +1,67 @@
 {
-  "generatedAt": "2026-10-15T07:00:21.394Z",
-  "balance": 4565.59,
-  "totalReturn": -8.69,
+  "generatedAt": "2026-10-15T10:00:18.519Z",
+  "balance": 4511.98,
+  "totalReturn": -9.76,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 118.21,
+      "currentPrice": 119.13,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 10.43,
+      "distancePct": 11.12,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 663.1,
+      "currentPrice": 645.3,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 23.27,
+      "distancePct": 21.16,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 54.34,
+      "currentPrice": 55.42,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 6.82,
+      "distancePct": 8.64,
       "status": "ACTIVE"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1528.2,
+      "currentPrice": 1448.2,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 10.16,
+      "distancePct": 5.2,
       "status": "ACTIVE"
+    },
+    {
+      "asset": "ASML",
+      "type": "HIGH_VOLATILITY",
+      "change24h": -5.27,
+      "status": "INFO",
+      "detail": "ASML moved -5.27% in 24h"
     },
     {
       "asset": "VWCE",
       "type": "STOP_LOSS",
-      "currentPrice": 172.48,
+      "currentPrice": 170.06,
       "triggerPrice": 167.0091,
       "currency": "EUR",
-      "distancePct": 3.17,
+      "distancePct": 1.79,
       "status": "NEAR"
     },
     {
       "asset": "SIE",
       "type": "STOP_LOSS",
-      "currentPrice": 275.05,
+      "currentPrice": 268.9,
       "triggerPrice": 263.7792,
       "currency": "EUR",
-      "distancePct": 4.1,
+      "distancePct": 1.9,
       "status": "NEAR"
     }
   ]
