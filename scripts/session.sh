@@ -39,14 +39,14 @@ send_tg() {
   node "$SEND_TG" "$1" || echo "Warning: telegram send failed"
 }
 
-# Routine session reports are muted: hustle only pushes failures and alerts to
-# Telegram. A non-empty second argument (alerts / rule violations) or
+# Scheduled session reports are muted, alerts included: Jose only wants the
+# daily close and weekly reports. Alerts still reach him through the daily close.
 # MAKEMERICH_NOTIFY=1 (on-demand run via /makemerich) forces the send.
 send_tg_routine() {
-  if [ "${MAKEMERICH_NOTIFY:-0}" = "1" ] || [ -n "$2" ]; then
+  if [ "${MAKEMERICH_NOTIFY:-0}" = "1" ]; then
     send_tg "$1"
   else
-    echo "routine report suppressed (no alerts, no violations)"
+    echo "scheduled session report suppressed"
   fi
 }
 

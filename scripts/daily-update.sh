@@ -15,15 +15,10 @@ send_tg() {
   node "$SEND_TG" "$1" || echo "Warning: telegram send failed"
 }
 
-# The daily close report is muted unless it carries something actionable
-# (stop-loss / drawdown alerts or rule violations). MAKEMERICH_NOTIFY=1 forces
-# it through for on-demand runs. Error paths above always use send_tg directly.
+# The daily close report is the one routine makemerich message Jose wants every
+# trading day, so it is always sent. Error paths use send_tg directly.
 send_tg_routine() {
-  if [ "${MAKEMERICH_NOTIFY:-0}" = "1" ] || [ -n "$2" ]; then
-    send_tg "$1"
-  else
-    echo "routine report suppressed (no alerts, no violations)" | tee -a "$LOG_FILE"
-  fi
+  send_tg "$1"
 }
 
 # Load nvm / node
