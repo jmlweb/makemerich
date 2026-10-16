@@ -5,13 +5,72 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,532.16 |
-| Total Return | -9.36% |
-| Days Active | 235 |
+| Current Balance | €4,511.28 |
+| Total Return | -9.77% |
+| Days Active | 236 |
 
 ---
 
 ## Daily Log
+
+### Day 235 — October 16, 2026 21:30 CET
+
+**Balance:** €4,511.28 | **Total Return:** -9.8%
+**Day P&L:** €20.88 (-0.5%) vs Day 234 (€4,532.16)
+
+**Prices at close:**
+- 4GLD: €119.43 (+1.03% 24h) — stop €105.88
+- XEON: €150.53 (+0.01% 24h)
+- EQQQ: €641.90 (-3.20% 24h) — stop €508.78
+- ITX: €55.86 (+0.76% 24h) — stop €50.63
+- ASML: €1,477.20 (+0.89% 24h) — stop €1,372.87
+- VWCE: €170.44 (-1.18% 24h) — stop €167.01
+- SIE: €270.65 (-1.60% 24h) — stop €263.78
+
+**Market context:**
+- EUR/USD: 0.8920
+- SP500: 7,657.21 (-0.80%)
+- NASDAQ: 26,144.96 (-2.05%)
+- GOLD: 4,185.10 (+0.36%)
+- IBEX35: 19,326.30 (+0.77%)
+- EUROSTOXX50: 6,204.23 (+0.58%)
+- DAX: 25,622.61 (+1.28%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,322.23 | 51.5% | +22.4% | -3.20% |
+| ITX | €1,092.35 | 24.2% | +4.5% | +0.76% |
+| XEON | €456.26 | 10.1% | +7.1% | +0.01% |
+| CASH | €226.23 | 5.0% | — | — |
+| VWCE | €195.54 | 4.3% | +0.3% | -1.18% |
+| SIE | €136.79 | 3.0% | -0.5% | -1.60% |
+| ASML | €81.87 | 1.8% | -4.9% | +0.89% |
+| 4GLD | €0.00 | 0.0% | -4.1% | +1.03% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.59% vs SMA50, VIX 16.07)
+- BUY: SXR8, TTE
+- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, VWCE, SIE, BTC, SOL, SAP, MC, AIR, NOVO, ALV
+- SELL: DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (11.3% away)
+- EQQQ: stop EUR 508.78 (20.7% away)
+- ITX: stop EUR 50.63 (9.4% away)
+- ASML: stop EUR 1,372.87 (7.1% away)
+- VWCE: stop EUR 167.01 (2.0% away)
+- SIE: stop EUR 263.78 (2.5% away)
+
+**Analysis:**
+Risk-on regime held (VIX 16.07) but US tech sold off hard, with NASDAQ -2.05% and EQQQ -3.20%, while European indices (DAX +1.28%, IBEX +0.77%) and gold rose, so money rotated away from US growth. EQQQ is 51.5% of the portfolio and still +22.4% vs entry, 20.7% above its stop, so the drop dented the day (Day P{{ANALYSIS}}L -0.5%) without nearing any risk trigger. VWCE (2.0% from stop) and SIE (2.5% from stop) are the closest to their stops and worth watching.
+
+**HOLD — no hay órdenes en trade-orders.json y ningún stop está activado, así que se mantiene la cartera.**
+
+---
+
 
 ### Day 234 — October 15, 2026 21:30 CET
 
