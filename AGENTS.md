@@ -218,11 +218,11 @@ Every documented risk rule → the live code that enforces it. **A rule without 
 | Take-profit 25% at +30%, 25% at +50% | RULES §7, HUSTLE | `scripts/stoploss-watch.sh` `TAKE_PROFIT_LEVELS` loop; taken levels persisted in the holding's `tp_taken` | Enforced — once per level per position (A1 fixed 2026-10-18) |
 | Monthly rebalance if drift > 10% | RULES §7 | none | **NOT ENFORCED** |
 | Portfolio stop < EUR 1,000 → preservation | RULES §6 | `scripts/validate-rules.js` reports; nothing changes behavior | **Report only** |
-| Daily deploy cap 15%, 5-day cap 30% | STRATEGY velocity rules | none (only `simulate-history.js`) | **NOT ENFORCED** (A4) |
-| XEON auto-park when cash > 20% | STRATEGY velocity rules | none (only `simulate-history.js`) | **NOT ENFORCED** (A4) |
+| Daily deploy cap 15%, 5-day cap 30% | STRATEGY velocity rules | `scripts/execute-signals.js` `MAX_DEPLOY_PER_DAY` / `MAX_DEPLOY_PER_5_DAYS` via `sumRecentBuys()` | Enforced (A4 fixed 2026-10-18) |
+| ~~XEON auto-park when cash > 20%~~ | STRATEGY velocity rules | — | **REVOKED 2026-10-18** (no simulated effect; would starve BUYs) |
 | 48h cooling-off after a sell | LEARNINGS 2026-03-18 | `scripts/execute-signals.js` `loadLastSellTimes()` + `REENTRY_COOLDOWN_HOURS` (current + previous month, aliases resolved, stop-loss sells included) | Enforced (A6 fixed 2026-10-18) |
 | Max 2 trades per week | HUSTLE "Mistakes to Avoid" | none | **NOT ENFORCED** (2026-08-11 had 6 trades) |
-| Split deployments > 15% over 2+ sessions | LEARNINGS 2026-02-02 | none | **NOT ENFORCED** |
+| Split deployments > 15% over 2+ sessions | LEARNINGS 2026-02-02 | daily deploy cap (row above) | Enforced via the daily cap |
 | Every holdings change has a trade record | CLAUDE invariant 6 | `scripts/validate-data.js` check 5 | Enforced at the 21:30 gate |
 | `validate-data.js` passes before any commit touching `data/` | CLAUDE invariant 7 | `scripts/daily-update.sh:200` | **Close only** — `session.sh` and `stoploss-watch.sh` commit ungated (A9) |
 | English-only docs | RULES §10 | `monthly-audit` skill language sweep | Audit only |

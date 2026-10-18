@@ -94,10 +94,8 @@ After executing SXR8/VWCE stops on 27/03, cash is parked in XEON until all condi
 - 20% tactical (EQQQ if NASDAQ recovers)
 - Keep current crypto and 4GLD positions
 
-**Money market as permanent position:**
-Whenever >15% is in cash with no planned use within <2 weeks, move to XEON.
-
-> **Not enforced** — no live script parks cash into XEON (see "XEON auto-parking" below and FINDINGS.md 2026-10-18 A4).
+~~**Money market as permanent position:**
+Whenever >15% is in cash with no planned use within <2 weeks, move to XEON.~~ — **REVOKED 2026-10-18** together with XEON auto-parking (see below; LEARNINGS.md 2026-10-18 "XEON Parking Added Nothing").
 
 ---
 
@@ -143,9 +141,9 @@ Control the speed at which capital is deployed to avoid concentrated bets:
 
 - **Daily cap:** Max 15% of portfolio deployed per day (prevents all-in on day 1)
 - **5-day brake:** Max 30% deployed in any rolling 5-day window (prevents rapid-fire deployments)
-- **XEON auto-parking:** When cash exceeds 20% of portfolio, auto-BUY XEON (productive cash base earning 3.5% APY)
+- ~~**XEON auto-parking:** When cash exceeds 20% of portfolio, auto-BUY XEON (productive cash base earning 3.5% APY)~~ — **REVOKED 2026-10-18**: zero effect in the simulator replay, and live BUYs are funded from bare cash only, so parked cash would starve signals (LEARNINGS.md 2026-10-18)
 
-> **Not enforced (noted 2026-10-18):** all three rules exist only in `simulate-history.js`. TSK-003 was closed on simulator-only acceptance criteria, and `execute-signals.js` never received them. The daily cap would have fired on 2026-04-11 (EQQQ, 43.9% of balance) and 2026-06-04 (ITX, 23.1%). FINDINGS.md 2026-10-18 A4. Implementing them needs a backtest and Jose's sign-off.
+> **Status (2026-10-18):** the daily cap and 5-day brake are enforced live by `execute-signals.js` since 2026-10-18 (they had existed only in `simulate-history.js` — TSK-003 closed on simulator-only criteria). Caps are per calendar day and include BUYs from earlier sessions that day. XEON auto-parking is revoked. Evidence: FINDINGS.md 2026-10-18 A4.
 
 **Rationale:** Simulation shows that spreading buys across multiple days yields better entry points. The aggressive Day 2 all-in with 74% deployment in baseline lost the most in subsequent drawdowns.
 

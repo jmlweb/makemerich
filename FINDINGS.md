@@ -248,6 +248,19 @@ Forward-only result (sandbox run, 2026-10-16 prices): EQQQ 508.78 → 577.71 (10
 
 **Impact so far:** the 15% daily cap would have fired twice. 2026-04-11 BUY EQQQ EUR 1,897.87 = 43.9% of the prior-day balance (EUR 4,322.76). 2026-06-04 BUY ITX EUR 1,045.42 = 23.1% of EUR 4,519.81. The EQQQ entry is the portfolio's best trade (A2/A3 context), so a backtest must show whether enforcing the cap helps before it is wired in.
 
+**Resolution (2026-10-18, Jose sign-off): caps enforced, XEON parking revoked.** `simulate-history.js` buys only unheld assets, like live `execute-signals.js`, so its result applies to the live rule. It was re-run in a sandbox (`--dry-run`) on a 2-year history fetch; the default 1-year cache starts 2025-10-16 and lacks the SMA200 lookback for the Jan–Apr 2026 window. Variants:
+
+| Variant | Return | Max drawdown | Trades |
+|---------|-------:|-------------:|-------:|
+| Caps + parking (TSK-003 as shipped to the simulator) | −6.73% | −9.60% | 11 |
+| Caps only | −6.73% | −9.60% | 11 |
+| Parking only | −11.69% | −14.43% | 8 |
+| Neither (baseline) | −11.69% | −14.43% | 8 |
+
+The whole TSK-003 improvement comes from the velocity caps; parking had zero effect. Caveats: one 70-day crash window, and the TSK-003 gate targets were tuned on that same window. Live counter-example: the cap would have limited the 2026-04-11 EQQQ entry to ~15% of balance (≈ EUR 648 instead of EUR 1,897.87), about a third of its current gain. Both are recorded; the modeled evidence wins over one anecdote.
+
+`execute-signals.js` now caps BUYs at 15% of balance per UTC calendar day and 30% per rolling 5 days, counting BUYs already logged (this and last month's trade files) plus orders earlier in the same run. Sandbox: an SXR8 BUY sized EUR 1,686 was capped to EUR 942.76 (15% of EUR 6,285.05), and to EUR 442.76 after a logged EUR 500 BUY the same day. XEON parking is revoked: no simulated effect, and live BUYs spend bare cash only (A5), so parked cash would starve signals.
+
 ## A5. Cash reserve excludes XEON, contrary to RULES.md §4 (MEDIUM)
 
 **Evidence:** RULES.md §4 (2026-04-07): the 5% floor is "XEON + cash combined". `execute-signals.js:106` sets `cashValue` from `holdings.CASH` only and line 216 subtracts the 5% reserve from bare cash. `validate-rules.js:68` uses the same bare-cash basis.

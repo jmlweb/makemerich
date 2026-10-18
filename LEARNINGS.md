@@ -67,6 +67,8 @@ Mistakes, successes, and patterns. Updated when something notable happens.
 
 **Rule:** When deploying cash >15% of portfolio, split into at least 2 tranches over 2+ sessions. Exception: clear catalyst with time pressure (e.g., SGLD→4GLD rotation).
 
+> Enforced since 2026-10-18 by the 15% daily deployment cap in `execute-signals.js` (no catalyst exception — the pipeline has no catalyst input).
+
 ---
 
 ## 2026-02-06: Legal Compliance in Spain
@@ -357,6 +359,22 @@ Meanwhile, EQQQ (+22% unrealized) is protected by a stop 3% *below* its entry. T
 
 ---
 
+## 2026-10-18: Velocity Caps Carried Phase B; XEON Parking Added Nothing
+
+**Category:** Strategy / Validation  
+**Impact:** Daily/5-day deployment caps enforced live; XEON auto-parking revoked
+
+**What happened:** The velocity caps and XEON parking from TSK-003 had been documented as active since 2026-04-07 but existed only in `simulate-history.js`. Before deciding whether to implement or revoke them, the simulator was re-run with each rule switched off separately (FINDINGS.md 2026-10-18 A4). Caps alone reproduce the full Phase B result: −11.69% → −6.73% return, −14.43% → −9.60% max drawdown. Parking alone changes nothing.
+
+**Lesson:** A bundled result hides which part did the work. TSK-003 credited "Phase B" as a whole; ablation shows one half did all of it and the other half was dead weight. Parking would also have hurt live trading, because nothing sells XEON to fund a BUY. Also: the 1-year history cache silently degrades old replays (no SMA200 lookback), so a replay must check its history covers the warm-up period, or it measures a different strategy.
+
+**Rules derived:**
+1. Evaluate bundled rule changes one rule at a time (ablation) before shipping or keeping them.
+2. Replays of a past window need ≥ 200 trading days of history before the window start.
+3. Accepted cost: the cap would have shrunk the 2026-04-11 EQQQ entry to about a third. One great trade does not outweigh the modeled drawdown reduction.
+
+---
+
 ## Patterns
 
 | Pattern | Notes |
@@ -377,6 +395,7 @@ Meanwhile, EQQQ (+22% unrealized) is protected by a stop 3% *below* its entry. T
 | Prose rules decay | Rules written only in docs or the simulator were silently unenforced for months |
 | Guards must be symmetric | BUY had a EUR 50 floor, SELL had none → 4GLD halved down to EUR 0.01 |
 | Unowned flags never close | "Left for a rebalancing session" → EQQQ above 50% cap for 99 days |
+| Bundles hide dead weight | Velocity caps carried all of TSK-003's simulated gain; XEON parking added nothing |
 | A gate covers one door | Close-only validation let ungated intraday commits carry bad data for ~6 weeks while the nightly alert was ignored |
 
 ---

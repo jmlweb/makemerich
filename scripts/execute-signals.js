@@ -46,6 +46,12 @@ const REENTRY_COOLDOWN_HOURS = 48;
 // Holdings worth less than this are leftovers of partial sells, sold off in full.
 const DUST_EUR = 1;
 
+// Deployment velocity caps (STRATEGY.md 2026-04-07). The simulator replay of
+// Jan–Apr 2026 credits them with the whole Phase B gain: −11.69% → −6.73%
+// return, −14.43% → −9.60% max drawdown (FINDINGS.md 2026-10-18 A4).
+const MAX_DEPLOY_PER_DAY = 0.15;
+const MAX_DEPLOY_PER_5_DAYS = 0.30;
+
 // Fee structure (Bitpanda: 0.1% all asset classes)
 const FEES = {
   ETF: 0.001,
@@ -113,26 +119,42 @@ function isInverse(symbol) {
   return ASSET_META[symbol]?.inverse === true;
 }
 
-// Last SELL time per canonical ticker, from this month's and last month's trade
-// logs (so a sale on the 30th still blocks a BUY on the 1st). Includes
-// stop-loss sells, which are logged by stoploss-watch.sh.
-function loadLastSellTimes(now = new Date()) {
-  const aliases = fs.existsSync(ALIASES_PATH) ? load(ALIASES_PATH).resolve || {} : {};
+// This month's and last month's trades, so windows that cross a month boundary
+// (a sale on the 30th, BUYs over the last 5 days) still see every record.
+function loadRecentTrades(now = new Date()) {
   const monthKey = (d) => d.toISOString().slice(0, 7);
   const previousMonth = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - 1, 1));
-  const lastSell = {};
+  return [monthKey(previousMonth), monthKey(now)]
+    .map((month) => path.join(TRADES_DIR, `${month}.json`))
+    .filter((file) => fs.existsSync(file))
+    .flatMap((file) => load(file));
+}
 
-  for (const month of [monthKey(previousMonth), monthKey(now)]) {
-    const file = path.join(TRADES_DIR, `${month}.json`);
-    if (!fs.existsSync(file)) continue;
-    for (const trade of load(file)) {
-      if (trade.action !== 'SELL') continue;
-      const ticker = aliases[trade.asset] || trade.asset;
-      const soldAt = new Date(`${trade.date}T${(trade.time || '00:00').slice(0, 5)}:00Z`);
-      if (!lastSell[ticker] || soldAt > lastSell[ticker]) lastSell[ticker] = soldAt;
-    }
+// Last SELL time per canonical ticker. Includes stop-loss sells, which are
+// logged by stoploss-watch.sh.
+function findLastSellTimes(trades) {
+  const aliases = fs.existsSync(ALIASES_PATH) ? load(ALIASES_PATH).resolve || {} : {};
+  const lastSell = {};
+  for (const trade of trades) {
+    if (trade.action !== 'SELL') continue;
+    const ticker = aliases[trade.asset] || trade.asset;
+    const soldAt = new Date(`${trade.date}T${(trade.time || '00:00').slice(0, 5)}:00Z`);
+    if (!lastSell[ticker] || soldAt > lastSell[ticker]) lastSell[ticker] = soldAt;
   }
   return lastSell;
+}
+
+// EUR already deployed into BUYs today and over the last 5 days (trade dates are
+// UTC, as written by apply-trades.js). Same window as simulate-history.js.
+function sumRecentBuys(trades, now = new Date()) {
+  const today = now.toISOString().slice(0, 10);
+  const windowStart = new Date(now.getTime() - 5 * 86400000).toISOString().slice(0, 10);
+  const buys = trades.filter((t) => t.action === 'BUY');
+  const sum = (list) => list.reduce((total, t) => total + (t.amount_eur || 0), 0);
+  return {
+    today: sum(buys.filter((t) => t.date === today)),
+    last5Days: sum(buys.filter((t) => t.date >= windowStart)),
+  };
 }
 
 function computePortfolioState(portfolio) {
@@ -166,7 +188,9 @@ function computePortfolioState(portfolio) {
 
 function generateOrders(portfolio, signals) {
   const state = computePortfolioState(portfolio);
-  const lastSellTimes = loadLastSellTimes();
+  const recentTrades = loadRecentTrades();
+  const lastSellTimes = findLastSellTimes(recentTrades);
+  const deployed = sumRecentBuys(recentTrades);
   const orders = [];
   const warnings = [];
 
@@ -316,6 +340,15 @@ function generateOrders(portfolio, signals) {
           continue;
         }
         buyAmount = Math.min(buyAmount, inverseRoom);
+      }
+
+      // Enforce deployment velocity caps (includes BUYs already ordered this run)
+      const dailyRoom = state.balance * MAX_DEPLOY_PER_DAY - deployed.today - cashSpent;
+      const fiveDayRoom = state.balance * MAX_DEPLOY_PER_5_DAYS - deployed.last5Days - cashSpent;
+      const velocityRoom = Math.min(dailyRoom, fiveDayRoom);
+      if (velocityRoom < buyAmount) {
+        warnings.push(`${symbol}: BUY capped by deployment velocity (EUR ${buyAmount.toFixed(0)} → ${Math.max(velocityRoom, 0).toFixed(0)}; today EUR ${deployed.today.toFixed(0)}, 5 days EUR ${deployed.last5Days.toFixed(0)})`);
+        buyAmount = velocityRoom;
       }
 
       if (buyAmount < MIN_ORDER_EUR) {

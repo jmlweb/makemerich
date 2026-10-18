@@ -52,3 +52,4 @@ Phase B of PLN-001. Incremental improvement on top of Phase A regime filter. Add
 - [2026-04-07] Phase B results: -6.73% return, -9.60% max drawdown (5% improvement vs baseline)
 - [2026-04-07] DECISION GATE PASSED: Targets achieved (max dd < 10%, return > -5%)
 - [2026-04-07] Completed
+- [2026-10-18] Audit: B1 (live `execute-signals.js` caps) never shipped — acceptance criteria only tested `simulate-history.js`. Ablation re-run: caps alone = full Phase B gain, XEON parking = zero effect. Caps implemented live; parking revoked (FINDINGS.md 2026-10-18 A4)
