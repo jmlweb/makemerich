@@ -22,6 +22,8 @@ No fixed target — the goal is the best possible outcome over the full year whi
 
 ### Target Allocation (Aggressive Growth)
 
+> **Not enforced (noted 2026-10-18):** this February allocation predates the 2026-04-07 quant pivot. No live script targets these weights or rebalances toward them; allocation is whatever the quant signals and limits produce (EQQQ alone is 51.5% today). The portfolio has held no crypto since the ETH stop-out on 2026-06-03, and no crypto BUY has been executed since April. Keep or revoke is Jose's call.
+
 | Category | % | Assets | Risk |
 |----------|---|--------|------|
 | Core Global | 25% | VWCE | Medium |
@@ -79,6 +81,8 @@ See [HUSTLE.md](HUSTLE.md) for detailed entry/exit criteria and trading rules.
 
 After executing SXR8/VWCE stops on 27/03, cash is parked in XEON until all conditions are met:
 
+> **Not enforced (noted 2026-10-18):** superseded in practice by the 2026-04-07 quant pipeline, which re-entered equities via signals (EQQQ 2026-04-11). Condition 3 ("no new tariffs") is a news condition, and the pipeline has no news input (AGENTS.md "Data Sources"). Conditions 1–2 survive as the regime filter (RULES §8).
+
 **Re-entry trigger (all must be met):**
 1. VIX < 22 (market exiting fear territory)
 2. S&P500 trading above SMA50 (20 sessions)
@@ -92,6 +96,8 @@ After executing SXR8/VWCE stops on 27/03, cash is parked in XEON until all condi
 
 **Money market as permanent position:**
 Whenever >15% is in cash with no planned use within <2 weeks, move to XEON.
+
+> **Not enforced** — no live script parks cash into XEON (see "XEON auto-parking" below and FINDINGS.md 2026-10-18 A4).
 
 ---
 
@@ -117,6 +123,8 @@ Whenever >15% is in cash with no planned use within <2 weeks, move to XEON.
 4. **Leveraged and inverse ETFs** are restricted to max 15% of portfolio and require STRONG_BUY/STRONG_SELL signal
 5. **The LLM's role** is execution, reporting, and monitoring — not market prediction
 
+> Enforcement status (2026-10-18): rules 1, 2 and 5 hold — orders come only from `execute-signals.js`, and the pipeline's Claude call is text-only. Rule 3 (20% per thesis) has no live check. In rule 4, the 15% inverse/leveraged cap is enforced, but the STRONG_BUY requirement is **not** — `execute-signals.js` has no inverse-specific STRONG requirement (only the risk-off score ≥ 50 gate, which applies to every asset). See AGENTS.md "Rule Enforcement Map".
+
 ### Market Regimes (2026-04-07 addition)
 
 Three regimes based on VIX and S&P 500 technical position:
@@ -136,6 +144,8 @@ Control the speed at which capital is deployed to avoid concentrated bets:
 - **Daily cap:** Max 15% of portfolio deployed per day (prevents all-in on day 1)
 - **5-day brake:** Max 30% deployed in any rolling 5-day window (prevents rapid-fire deployments)
 - **XEON auto-parking:** When cash exceeds 20% of portfolio, auto-BUY XEON (productive cash base earning 3.5% APY)
+
+> **Not enforced (noted 2026-10-18):** all three rules exist only in `simulate-history.js`. TSK-003 was closed on simulator-only acceptance criteria, and `execute-signals.js` never received them. The daily cap would have fired on 2026-04-11 (EQQQ, 43.9% of balance) and 2026-06-04 (ITX, 23.1%). FINDINGS.md 2026-10-18 A4. Implementing them needs a backtest and Jose's sign-off.
 
 **Rationale:** Simulation shows that spreading buys across multiple days yields better entry points. The aggressive Day 2 all-in with 74% deployment in baseline lost the most in subsequent drawdowns.
 

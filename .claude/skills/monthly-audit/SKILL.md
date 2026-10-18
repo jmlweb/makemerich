@@ -41,7 +41,7 @@ done
 ```bash
 node scripts/validate-rules.js
 ```
-Breaches are **live allocation issues** → flag in the report for a rebalancing decision. Do not edit RULES.md and do not trade.
+Breaches are **live allocation issues** → make sure each has a FINDINGS.md entry and list it in the report as a decision for Jose (trim vs. rule change). Nothing rebalances automatically — a breach with no owner persists (EQQQ > 50% for 99 days). Do not edit RULES.md and do not trade.
 
 **SIGNALS.md vs generated signals:**
 ```bash
@@ -50,6 +50,15 @@ jq '.alerts' data/.signals-latest.json
 Stop-loss/take-profit rows in SIGNALS.md must match (asset, trigger, action). Watchlist must match the quant universe. Executed alerts move to Historical — never delete them.
 
 **STRATEGY.md mandates** — read the active mandate; confirm its dated rules still match what the scripts enforce (regime thresholds, deployment caps in `execute-signals.js` / `generate-quant-signals.js` constants). Numeric mismatch between doc and code is a FAIL — report which side is authoritative before touching either.
+
+**Rule Enforcement Map (AGENTS.md)** — every row must still point at live code. A rule that only exists in prose, or only in `simulate-history.js`, is not enforced (FINDINGS.md 2026-10-18: trailing stop, velocity caps and the 48h cooling-off were documented as active for months with no live code).
+```bash
+# every script:line cited in the map must still exist and still contain the check
+rg -o 'scripts/[a-z_-]+\.(js|sh):[0-9]+' AGENTS.md | sort -u
+# no live script may depend on the simulator for enforcement
+rg -n 'simulate-history' scripts/session.sh scripts/daily-update.sh scripts/pre-session.sh
+```
+Open each cited line; a moved or deleted check is a FAIL. Any rule added to RULES/STRATEGY/HUSTLE/LEARNINGS since the last audit without a map row is a FAIL. Also re-check the open items in FINDINGS.md "Rule-enforcement audit" and report which are still unresolved — a flag without an owner is how EQQQ stayed above the 50% cap for 99 days.
 
 **Backtest sanity:**
 ```bash

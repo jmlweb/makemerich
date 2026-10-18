@@ -189,3 +189,75 @@ defects, and predate this work. Left for a normal rebalancing session.
 **Recurrence guard:** `daily-update.sh` and `session.sh` now re-run `update-portfolio.js` after `apply-trades.js` when `tradesExecuted > 0`.
 
 **Resolution (2026-10-08, Jose sign-off):** `data/2026-10-01.json` corrected from the trade log and the 2026-10-02 daily file. Cash 363.79 → 226.23 (363.79 − 137.42 BUY − 0.14 fee; equals the 2026-10-02 cash). Added SIE 0.505406 @ 271.90 (value 137.42, valued at execution price). Total 4527.37 → 4527.23, totalReturn −9.45 → −9.46. `validate-data.js` passes. The file's `change` block (0/0) was already zero before this fix and is left as is.
+
+---
+
+# Finding — Rule-enforcement audit: documented rules vs. live code (2026-10-18)
+
+**Scope:** every risk rule in RULES.md, STRATEGY.md, HUSTLE.md and LEARNINGS.md was traced to the live pipeline (`session.sh`, `daily-update.sh`, `execute-signals.js`, `apply-trades.js`, `stoploss-watch.sh`). `simulate-history.js` is a one-off replay tool and does **not** count as enforcement. Full mapping: AGENTS.md → "Rule Enforcement Map".
+
+**Status of every item below: flagged, not fixed.** Each fix changes live trading behavior, so it needs a `backtest.js` run and Jose's sign-off (CLAUDE.md failure mode 1). No code or data was changed by this audit.
+
+Numbers are taken from `data/portfolio.json` and `data/trades/*.json` via `jq` as of the 2026-10-17 data.
+
+## A1. Take-profit re-fires every day (HIGH, latent)
+
+**Evidence:** `stoploss-watch.sh:140,159` deduplicates the +30% / +50% partial sell with a per-day flag (`/tmp/makemerich-tp30-{asset}-{date}`). `update-portfolio.js:225,246` recomputes `pnl_pct` from the immutable `entry_price`. A 25% partial sell does not change `entry_price`, so `pnl_pct` stays ≥ 30% and the next day's flag does not exist yet.
+
+**Failure scenario:** EQQQ (51.5% of the portfolio, `pnl_pct` +22.36%) needs +6.24% more to reach the +30% trigger (EUR 681.98). From then on, the watcher sells 25% of the remaining EQQQ **every day** the gain holds above 30%, instead of once. RULES.md §7 says once at +30% and once more at +50%.
+
+**Proposed fix (needs Jose):** persist "TP level already taken" on the holding in `portfolio.json` (e.g. `tp_taken: [30]`), not in `/tmp`.
+
+## A2. EQQQ above the 50% single-position cap for 99 days (HIGH)
+
+**Evidence:** EQQQ value / daily balance > 50% on 99 daily files, first 2026-05-28, last 2026-10-17, max 53.39% on 2026-10-08. `validate-rules.js` reports it every run. `execute-signals.js` auto-generates `LIMIT_VIOLATION` sells only for inverse/leveraged and high-risk drift (lines ~287–340). It caps single-position size at **entry** (line 234) but has no correction for drift **after** entry.
+
+**Root cause:** RULES.md §4 calls the limits "absolute", but only entry-time checks exist. The 2026-05-28 audit deferred the breach to "a normal rebalancing session". No such session or script exists, so the flag had no owner.
+
+**Proposed fix (needs Jose):** add a `MAX_SINGLE_POSITION` drift trim to `execute-signals.js` next to the high-risk correction, or amend RULES.md §4 to say the cap applies at entry only. Either way, the rule and the code must agree.
+
+## A3. Trailing stop is not live (HIGH)
+
+**Evidence:** RULES.md §6 and HUSTLE.md promise "exit any position down 10% from its high". The only high-watermark code is `simulate-history.js:433,470`. Live stops are written once at BUY (`apply-trades.js:121,139`, `stopPrice = price − 2×ATR14` from `generate-quant-signals.js`) and never raised.
+
+**Failure scenario:** EQQQ trades at EUR 641.90 with +EUR 424.36 unrealized gain, but its stop is still EUR 508.78 — 3.02% **below** the EUR 524.60 entry. The whole gain can be given back before any exit fires. (Also reported independently by a side agent during this audit.)
+
+**Proposed fix (needs Jose):** ratchet `stop_loss_eur` up in `update-portfolio.js` (max of current stop and `high × 0.90`), then backtest.
+
+## A4. Deployment velocity caps and XEON auto-parking are simulator-only (MEDIUM)
+
+**Evidence:** STRATEGY.md "Deployment Velocity Rules" (15% per day, 30% per rolling 5 days, auto-BUY XEON when cash > 20%). `computeDeploymentVelocity()` exists only in `simulate-history.js:106`. No live script references velocity or parking. TSK-003 (`.backlog/tasks/complete/`) planned B1 in `execute-signals.js`, but its acceptance criteria only tested `simulate-history.js`, so the task closed as complete without touching the live path.
+
+**Impact so far:** the 15% daily cap would have fired twice. 2026-04-11 BUY EQQQ EUR 1,897.87 = 43.9% of the prior-day balance (EUR 4,322.76). 2026-06-04 BUY ITX EUR 1,045.42 = 23.1% of EUR 4,519.81. The EQQQ entry is the portfolio's best trade (A2/A3 context), so a backtest must show whether enforcing the cap helps before it is wired in.
+
+## A5. Cash reserve excludes XEON, contrary to RULES.md §4 (MEDIUM)
+
+**Evidence:** RULES.md §4 (2026-04-07): the 5% floor is "XEON + cash combined". `execute-signals.js:106` sets `cashValue` from `holdings.CASH` only and line 216 subtracts the 5% reserve from bare cash. `validate-rules.js:68` uses the same bare-cash basis.
+
+**Effect:** BUY signals are rejected as "position too small (1 EUR)" (daily log 2026-10-16: SXR8, TTE) while EUR 456 of XEON sits as productive cash. Nothing converts XEON back to cash to fund a signal. The code is stricter than the rule; it is not a rules breach, but the documented rule is not the operative one.
+
+## A6. 48-hour re-entry cooling-off is not enforced (MEDIUM)
+
+**Evidence:** LEARNINGS.md 2026-03-18 rule: "After selling a position, enforce a 48-hour cooling-off period before re-entering the same asset". No live script implements it. AIR was stopped out 2026-08-31 10:00 UTC (EUR 201.30) and re-bought 2026-09-01 10:00 UTC (EUR 194.38) — 24 hours later. That second AIR position was stopped out on 2026-10-01 (−4.52%). SIE was re-bought 2026-10-01 after its 2026-09-10 stop (outside 48h; allowed).
+
+## A7. SELL signals have no minimum size → dust positions (LOW)
+
+**Evidence:** `execute-signals.js:172` sells a fixed 50% of the position on every `SELL` (100% only on `STRONG_SELL`). BUY orders have a EUR 50 minimum; SELL orders have none. 4GLD received SELL signals repeatedly between 2026-08-11 and 2026-09-30: 16 sells totalling EUR 460.52, of which 8 were under EUR 1 (the smallest EUR 0.01). 0.00002 units (EUR 0.00) remain in `portfolio.json` and still appear in ACTIVE MONITORS with a stop.
+
+**Proposed fix (needs Jose):** sell 100% when the remainder after a 50% sell would be below the EUR 50 BUY minimum.
+
+## A8. Every pipeline trade is labeled `makemerich-2130` (LOW, data quality)
+
+**Evidence:** `apply-trades.js:164,197` hardcode `session: "makemerich-2130"`, so 09:00/12:00/15:30/18:00 trades carry the 21:30 label (e.g. 2026-08-11 10:00, 13:30, 16:00 UTC). The `time` field is correct, so the record is still traceable. Past records stay as-is (append-only history); a fix should pass `SESSION_LABEL` from `session.sh`/`daily-update.sh`.
+
+## A9. Intraday and stop-loss commits bypass the validation gate (MEDIUM)
+
+**Evidence:** `validate-data.js` gates commits only in `daily-update.sh:200`. `session.sh:247` and `stoploss-watch.sh:188` commit and push without running it. CLAUDE.md invariant 7 requires validation before any commit touching `data/`. This is the same gap that let the 2026-06-03 unlogged ETH sell sit in git for 40 days (§7): the close gate failed every night, but the ungated intraday commits kept pushing the data.
+
+**Proposed fix:** run `validate-data.js` before `git commit` in both scripts; on failure, skip the commit and send a Telegram alert, as the close does. This changes no trading behavior, so it needs no backtest.
+
+## Recurrence guard
+
+- AGENTS.md now carries a **Rule Enforcement Map**: every rule → enforcing `script:line`, or **NOT ENFORCED**.
+- `monthly-audit` skill now re-verifies that map.
+- New rule (LEARNINGS.md 2026-10-18): a rule is not active until a live script enforces it; acceptance criteria must test the live pipeline, not `simulate-history.js`.

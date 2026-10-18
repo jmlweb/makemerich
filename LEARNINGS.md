@@ -272,6 +272,91 @@ Every bad decision traces back to the pressure of an unrealistic target. The qua
 
 ---
 
+## 2026-05-28: Derived Files Without a Live Generator Freeze Silently
+
+**Category:** Operations / Data Integrity  
+**Impact:** `summary.json` stuck at 2026-04-07 for 51 days; `.daily-summary.txt` orphaned at Day 73
+
+**What happened:** A data-integrity audit (FINDINGS.md §1–6) found six defects. Two had the same shape: a file that looked live was written only by a script that had left the pipeline. `summary.json` was written once by `simulate-history.js`; `.daily-summary.txt` only by `daily-routine.js`, which `daily-update.sh` had replaced with an inline flow.
+
+**Lesson:** A derived file is only as fresh as the last pipeline step that writes it. Removing or replacing a script silently orphans everything it used to produce, and nothing fails — the stale file still parses.
+
+**Rule:** Every derived artifact must have exactly one generator wired into the live pipeline (CLAUDE.md "New pipeline steps"). When a script leaves the pipeline, list what it wrote and re-home each output in the same change.
+
+---
+
+## 2026-07-13: A Gate That Fails Every Night Is Not a Gate
+
+**Category:** Operations / Data Integrity  
+**Impact:** Close commit skipped on every weekday from 2026-06-03 to 2026-07-13; one unlogged trade (ETH SELL EUR 1,062.94)
+
+**What happened:** `stoploss-watch.sh` sold ETH on 2026-06-03 and updated `portfolio.json` without writing a trade record. From then on, `validate-data.js` failed at every daily close and skipped the commit. The gate already sent a Telegram alert on failure (added 2026-05-28, commit `16a3fc1`), so the warning went out every weeknight for about six weeks. Nothing changed until 2026-07-13, because the ungated intraday `session.sh` commits kept pushing the data and git history looked continuous (FINDINGS.md §7).
+
+**Lesson:** Three things went wrong. Every script that changes holdings must log a trade, not just the "main" executor. A gate must cover *every* committing path; a gate that guards one door gets bypassed through the others. And an alert that repeats nightly with no escalation becomes noise: by the second night it was background.
+
+**Action:** `stoploss-watch.sh` now logs trades. Still open: `session.sh` and `stoploss-watch.sh` commit without the gate (FINDINGS.md 2026-10-18 A9). A repeated failure should escalate (e.g. a different message after N consecutive failures) rather than repeat the same text.
+
+---
+
+## 2026-08-11: Halving Sells Never Reach Zero
+
+**Category:** Execution / Signal Logic  
+**Impact:** 16 4GLD sells over 7 weeks, 8 of them under EUR 1 (smallest EUR 0.01); a EUR 0.00 position left behind
+
+**What happened:** 4GLD produced `SELL` signals (not `STRONG_SELL`) repeatedly between 2026-08-11 and 2026-09-30. `execute-signals.js` sells a fixed 50% of the current position per `SELL`, with no minimum order size. Each signalled session halved the remainder: EUR 229.77 → 115.41 → 57.55 → … → EUR 0.01. 0.00002 units are still held and still show up in ACTIVE MONITORS.
+
+**Lesson:** A fractional exit applied per session is a geometric series, not an exit. Repeated signals compound. BUY orders had a EUR 50 floor; SELL orders had none. Asymmetric guards create degenerate behavior on the unguarded side.
+
+**Proposed rule (needs Jose + backtest):** when a partial sell would leave less than the BUY minimum, sell 100% (FINDINGS.md 2026-10-18 A7).
+
+---
+
+## 2026-10-01: Small Single-Stock Entries Get Whipsawed Out
+
+**Category:** Strategy / Position Management  
+**Impact:** 4 of 4 closed satellite round trips since August stopped out: net EUR −39.81 after fees
+
+**What happened:** In risk-on regime, the quant system opened small EU single-stock positions (EUR 86–226) sized by 2% risk / 2×ATR14 stops. Every one closed so far hit its stop within ~1 month:
+
+| Asset | Buy | Sell (stop) | Net EUR | Price move |
+|-------|-----|-------------|--------:|-----------:|
+| AIR | 2026-08-11 | 2026-08-31 | −6.35 | −5.27% |
+| SIE | 2026-08-11 | 2026-09-10 | −15.24 | −6.54% |
+| AIR | 2026-09-01 | 2026-10-01 | −6.72 | −4.52% |
+| TTE | 2026-09-11 | 2026-10-01 | −11.50 | −5.21% |
+
+AIR was re-bought 24 hours after its first stop-out, despite the 48h cooling-off rule from 2026-03-18 (never coded — A6). The second AIR position also stopped out. Over the same period, the one large trend entry (EQQQ, 2026-04-11) carried the portfolio.
+
+**Lesson:** Four trades is not a statistically meaningful sample, so this is an observation, not a verdict. But a 2×ATR stop on a single stock sits inside its normal monthly noise (stop distances on current holdings range from 1.7% to 11.7% below entry, excluding the 4GLD dust). Small positions pay the stop-out without the size to matter when right.
+
+**Action:** None to trading logic. A `backtest.js` comparison of 2×ATR vs wider stops on the EU stock universe is the evidence required before any change (CLAUDE.md failure mode 1).
+
+---
+
+## 2026-10-18: A Rule Is Not a Rule Until Live Code Enforces It
+
+**Category:** Operations / Governance  
+**Impact:** 13 documented rules found unenforced, partially enforced, buggy, or enforced differently than written (AGENTS.md Rule Enforcement Map; FINDINGS.md 2026-10-18 A1–A9)
+
+**What happened:** An audit traced every rule in RULES, STRATEGY, HUSTLE and LEARNINGS to live code. Findings:
+- The trailing stop (RULES §6), deployment velocity caps and XEON auto-parking (STRATEGY) exist only in `simulate-history.js`.
+- TSK-003 was closed as "complete" because its acceptance criteria tested the simulator; the planned `execute-signals.js` change never shipped.
+- The 48h cooling-off and "max 2 trades/week" rules were written in LEARNINGS/HUSTLE and never coded.
+- The take-profit dedup is per-day, so the +30% partial sell would repeat daily.
+- EQQQ sat above the "absolute" 50% cap for 99 days, because limits are checked at entry only. The 2026-05-28 audit deferred the breach to "a normal rebalancing session" that no script or person owned.
+
+Meanwhile, EQQQ (+22% unrealized) is protected by a stop 3% *below* its entry. The docs promised a trailing stop that would have locked in most of the gain.
+
+**Lesson:** Prose rules decay into decoration. A session reading the docs believes protections exist that do not. A simulator implementing a rule proves the rule *would* help, not that it *does* run. "Flag for later" without an owner and a deadline is the same as ignoring it.
+
+**Rules derived:**
+1. **A rule is active only if AGENTS.md "Rule Enforcement Map" cites a live `script:line` for it.** Otherwise it is labeled NOT ENFORCED wherever it is documented — except RULES.md (Jose-only edits), where the map row is its label.
+2. **Acceptance criteria must exercise the live pipeline** (`session.sh` / `daily-update.sh` / `stoploss-watch.sh`), never only `simulate-history.js` or `backtest.js`.
+3. **Writing a rule into LEARNINGS or HUSTLE is a proposal, not a change.** It needs a map row and code, or it is not a rule.
+4. **Every deferred flag gets an owner:** a FINDINGS entry plus a re-check in the `monthly-audit` skill.
+
+---
+
 ## Patterns
 
 | Pattern | Notes |
@@ -287,6 +372,12 @@ Every bad decision traces back to the pressure of an unrealistic target. The qua
 | Fewer trades = better returns | 8 quant trades beat 50+ narrative trades by 3.16% |
 | Quant avoids crypto in bear markets | No technical signal triggered BUY for BTC/ETH/SOL |
 | Crashes are inevitable, recovery is the edge | Max drawdown nearly identical; difference is post-crash rotation |
+| One trend trade carries the year | EQQQ (2026-04-11) +EUR 424 unrealized vs EUR −39.81 from four stopped-out satellites |
+| Tight stops on small single stocks whipsaw | 4 of 4 closed satellite round trips since August hit their 2×ATR stop |
+| Prose rules decay | Rules written only in docs or the simulator were silently unenforced for months |
+| Guards must be symmetric | BUY had a EUR 50 floor, SELL had none → 4GLD halved down to EUR 0.01 |
+| Unowned flags never close | "Left for a rebalancing session" → EQQQ above 50% cap for 99 days |
+| A gate covers one door | Close-only validation let ungated intraday commits carry bad data for ~6 weeks while the nightly alert was ignored |
 
 ---
 
@@ -301,6 +392,12 @@ Every bad decision traces back to the pressure of an unrealistic target. The qua
 | 2026-03-29 | Sized positions on inflated balance (EUR 5,457 vs EUR 4,250) | DXS3 overconcentrated at 36.6% | Validate balance post-trade before new orders |
 | 2026-03-29 | Suspended position limits (Aggressive Maximization) | -15% drawdown | Position limits are absolute — never suspend |
 | 2026-03-30 | Speed Mandate: "act immediately" | NATO, impulsive trades | Speed without quantitative backing = faster losses |
+| 2026-04-07 | Velocity caps / XEON parking shipped to simulator only (TSK-003) | Rules documented as active, never ran | Acceptance criteria must test the live pipeline |
+| 2026-05-28 | Deferred EQQQ cap breach to a "rebalancing session" nobody owned | 99 days above an "absolute" limit | Every flag needs an owner and an audit re-check |
+| 2026-06-03 | Auto stop-loss sold ETH without a trade record | ~6 weeks of skipped close commits; nightly alert ignored | Every holdings writer logs a trade; gate every commit path; escalate repeated alerts |
+| 2026-08-11 | 50% SELL per session with no minimum | 16 4GLD sells, 8 under EUR 1 | Sell 100% when the remainder would be dust |
+| 2026-09-01 | Re-bought AIR 24h after its stop-out (48h rule never coded) | Second AIR stop-out, EUR −6.72 | A rule in LEARNINGS is not enforced until coded |
+| 2026-10-01 | Daily file written before trades applied | Close validation failed, commit skipped | Refresh derived files after every holdings change |
 
 ---
 
@@ -313,6 +410,9 @@ Every bad decision traces back to the pressure of an unrealistic target. The qua
 | 2026-03-27 | SGLD → 4GLD rotation | Better instrument | EUR-denominated, 0% TER, no FX drag |
 | 2026-04-07 | Pivot to quantitative signals | N/A | Replaced narrative trading with rule-based system |
 | 2026-04-07 | Historical simulation validates quant | +3.16% vs narrative | 8 trades, -11.69% vs -14.85% — fewer trades, better outcome |
+| 2026-04-07 | DXS3 cut from 35.9% to the 15% inverse cap by a mechanical LIMIT_VIOLATION order | Ended the narrative bet | Limit corrections that exist in code actually fire |
+| 2026-04-11 | EQQQ entry on a quant trend signal | +22.36% (+EUR 424.36 unrealized) | Trend + MACD confirmation, held without interference |
+| 2026-04-08 → 10-17 | Quant-only operation | Balance EUR 4,257.54 → 4,511.28 (+5.96%) | 22 non-dust trades in ~6 months; no narrative overrides |
 
 ---
 

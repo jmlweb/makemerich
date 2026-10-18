@@ -1,7 +1,7 @@
 # CLAUDE.md — Operating Manual
 
 You are the **maintenance engineer** of a live, automated, public trading simulation.
-You are NOT the trader. Cron owns trading (`scripts/session.sh` 4x/day + `scripts/daily-update.sh` at 21:30 CET, Mon–Fri; weekend crypto checks). Interactive sessions exist to fix scripts, repair data, sync docs, and improve the system.
+You are NOT the trader. The scheduler owns trading — hustle BullMQ workers outside this repo, no crontab — running `scripts/session.sh` 4x/day + `scripts/daily-update.sh` at 21:30 Europe/Madrid, Mon–Fri; weekend crypto checks; `scripts/stoploss-watch.sh` every 5 min 07:00–23:00. Interactive sessions exist to fix scripts, repair data, sync docs, and improve the system.
 
 €5,000 simulated capital, started 2026-01-27, ends 2027-01-27. Repo is **public** — everything you write ships to GitHub.
 
@@ -36,11 +36,16 @@ Within a file, newer dated rule beats older. RULES.md is never edited except its
 | 7 | Write a trades file as `{ "month": ..., "trades": [...] }` | Legacy shape, deprecated. Bare JSON array only (AGENTS.md schema) |
 | 8 | Read LEDGER.md (200KB+) or `data/history/*` whole | `head -120 LEDGER.md` for latest entry, `rg` for search, `jq` for JSON. Data dumps burn tokens for nothing |
 | 9 | Compute day number / dates by hand | Read `day` from `data/YYYY-MM-DD.json`. Timezone is Europe/Madrid; getting this wrong once created a duplicate day file |
-| 10 | Treat `validate-rules.js` failures as data bugs | It checks *live allocation* against RULES.md — breaches are portfolio issues for a rebalancing session, not something to "fix" in data. `validate-data.js` checks integrity — those you fix |
-| 11 | Re-fetch prices at session start | Cron keeps data fresh; the SessionStart hook prints freshness + summary. Only fetch if data age says stale AND you need current prices |
+| 10 | Treat `validate-rules.js` failures as data bugs | It checks *live allocation* against RULES.md — breaches are portfolio issues, not something to "fix" in data. Record them in FINDINGS.md for Jose's decision (trim vs. rule change); no automatic rebalancing exists (row 18). `validate-data.js` checks integrity — those you fix |
+| 11 | Re-fetch prices at session start | The scheduler keeps data fresh; the SessionStart hook prints freshness + summary. Only fetch if data age says stale AND you need current prices |
 | 12 | `npm install` something | Repo is dependency-free by design (Node stdlib + native fetch). Adding a dep requires asking Jose |
 | 13 | Commit forgetting README regenerates | `hooks/pre-commit` (installed by `setup-hooks.js`) auto-runs `update-readme.js` when `data/` or `scripts/` are staged. Never hand-edit README metrics — they get regenerated |
 | 14 | Make the pipeline depend on Claude succeeding | Agent calls in scripts are text-only (`--max-turns 1 --allowedTools ''`), timeout-wrapped, with hardcoded fallback text. The pipeline must complete with Claude down |
+| 15 | Assume a rule in RULES/STRATEGY/HUSTLE/LEARNINGS is live because it is written down | Check the AGENTS.md "Rule Enforcement Map" first. Trailing stop, velocity caps, XEON parking and the 48h cooling-off were documented as active for months with no live code (FINDINGS.md 2026-10-18) |
+| 16 | Close a task because `simulate-history.js` or `backtest.js` shows the behavior | The simulator is not the pipeline (TSK-003 precedent). Acceptance criteria must exercise `session.sh` / `daily-update.sh` / `stoploss-watch.sh`, and the map row must cite the live `script:line` |
+| 17 | Add a "rule" by writing a lesson in LEARNINGS.md | A lesson is a proposal. It becomes a rule only with code plus a map row. Until then, label it NOT ENFORCED where it is documented |
+| 18 | Defer a breach "for a rebalancing session" | No such session exists. Every deferred flag needs a FINDINGS entry and a `monthly-audit` re-check (EQQQ stayed above the 50% cap for 99 days this way) |
+| 19 | Leave interactive edits uncommitted "for Jose to review" | `session.sh` and `daily-update.sh` run `git add -A`: the next scheduled run ships every uncommitted file inside a `log: Day N` commit to the public repo. Finish with a commit (when Jose approves) or `git stash` before the next session slot |
 
 ## Conventions
 
@@ -83,6 +88,7 @@ Within a file, newer dated rule beats older. RULES.md is never edited except its
 - [ ] LEARNINGS.md entry explains why (what happened, impact, lesson)
 - [ ] If trading logic changed: `backtest.js` run and result recorded
 - [ ] All referencing files updated in the same commit (RULES/STRATEGY/HUSTLE/AGENTS)
+- [ ] AGENTS.md "Rule Enforcement Map" row added or updated with the live `script:line` (or marked NOT ENFORCED)
 
 ## When uncertain — escalation rules
 
@@ -93,7 +99,7 @@ Within a file, newer dated rule beats older. RULES.md is never edited except its
 
 **Flag (FINDINGS.md / session note) but don't change:**
 - Historically inconsistent values whose correction would move past balances or P&L
-- Live `validate-rules.js` breaches (note them; rebalancing handles them)
+- Live `validate-rules.js` breaches (FINDINGS.md entry + `monthly-audit` re-check; Jose decides — nothing rebalances automatically)
 - Suspicious-but-internally-consistent seed data
 
 **Stop and message Jose (Telegram via `_send-telegram.js`, or ask in session):**
