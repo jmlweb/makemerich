@@ -2,7 +2,8 @@
 # makemerich - Autonomous stop-loss / take-profit watcher
 # Runs every 5 minutes from 07:00 to 23:00 via hustle BullMQ.
 # Reads stop levels from data/portfolio.json, monitors held assets, triggers
-# automatic stop-loss exits and 25% take-profit at +30% / +50%.
+# automatic stop-loss exits and 25% take-profit at +30% / +50% (each level once
+# per position, tracked in the holding's tp_taken list).
 # Writes: data/portfolio.json, data/trades/YYYY-MM.json (one record per sale —
 # invariant 6), commits and pushes both.
 
@@ -129,51 +130,40 @@ for asset, data in list(holdings.items()):
     else:
         print(f"{now} {asset}={currency}{current_price:.2f} stop={stop:.2f} ok ({distance_pct:.1f}%)")
 
-# Take profit checks
+# Take profit checks — each level sells 25% once per position. Taken levels are
+# persisted on the holding (tp_taken) because pnl_pct is measured against the
+# immutable entry price and stays above the threshold after a partial sell; a
+# per-day /tmp flag re-fired every day (FINDINGS.md 2026-10-18 A1).
+TAKE_PROFIT_LEVELS = (30, 50)  # from RULES.md §7
 tp_actions = []
 for asset, data in list(holdings.items()):
     if asset == 'CASH' or asset == 'XEON':
         continue
     pnl = data.get('pnl_pct', 0)
+    taken = data.setdefault('tp_taken', [])
 
-    if pnl >= 50:
-        flag = Path(f"/tmp/makemerich-tp50-{asset}-{datetime.date.today()}")
-        if not flag.exists():
-            units = data.get('units', data.get('shares', 0))
-            sell_units = round(units * 0.25, 6)
-            sell_value = round(data.get('amount_eur', 0) * 0.25, 2)
-            fee_rate = 0.005 if asset in ('BTC', 'ETH', 'SOL') else 0.001
-            fee = round(sell_value * fee_rate, 2)
-            net = round(sell_value - fee, 2)
-            data['units'] = round(units - sell_units, 6)
-            data['amount_eur'] = round(data['amount_eur'] - sell_value, 2)
-            holdings['CASH']['amount_eur'] = round(holdings['CASH']['amount_eur'] + net, 2)
-            log_trade('SELL', asset, sell_units, 'price_eur',
-                      round(sell_value / sell_units, 4) if sell_units else 0,
-                      sell_value, fee,
-                      f"Take-profit 25% at +{pnl:.1f}% (>= +50% threshold)")
-            tp_actions.append(f"🟢 {asset} TAKE PROFIT 25% @ +{pnl:.1f}% — +EUR {net}")
-            flag.touch()
-            changed = True
-    elif pnl >= 30:
-        flag = Path(f"/tmp/makemerich-tp30-{asset}-{datetime.date.today()}")
-        if not flag.exists():
-            units = data.get('units', data.get('shares', 0))
-            sell_units = round(units * 0.25, 6)
-            sell_value = round(data.get('amount_eur', 0) * 0.25, 2)
-            fee_rate = 0.005 if asset in ('BTC', 'ETH', 'SOL') else 0.001
-            fee = round(sell_value * fee_rate, 2)
-            net = round(sell_value - fee, 2)
-            data['units'] = round(units - sell_units, 6)
-            data['amount_eur'] = round(data['amount_eur'] - sell_value, 2)
-            holdings['CASH']['amount_eur'] = round(holdings['CASH']['amount_eur'] + net, 2)
-            log_trade('SELL', asset, sell_units, 'price_eur',
-                      round(sell_value / sell_units, 4) if sell_units else 0,
-                      sell_value, fee,
-                      f"Take-profit 25% at +{pnl:.1f}% (>= +30% threshold)")
-            tp_actions.append(f"🟢 {asset} TAKE PROFIT 25% @ +{pnl:.1f}% — +EUR {net}")
-            flag.touch()
-            changed = True
+    for level in TAKE_PROFIT_LEVELS:
+        if pnl < level or level in taken:
+            continue
+        units = data.get('units', data.get('shares', 0))
+        sell_units = round(units * 0.25, 6)
+        sell_value = round(data.get('amount_eur', 0) * 0.25, 2)
+        fee_rate = 0.005 if asset in ('BTC', 'ETH', 'SOL') else 0.001
+        fee = round(sell_value * fee_rate, 2)
+        net = round(sell_value - fee, 2)
+        data['units'] = round(units - sell_units, 6)
+        data['amount_eur'] = round(data['amount_eur'] - sell_value, 2)
+        holdings['CASH']['amount_eur'] = round(holdings['CASH']['amount_eur'] + net, 2)
+        log_trade('SELL', asset, sell_units, 'price_eur',
+                  round(sell_value / sell_units, 4) if sell_units else 0,
+                  sell_value, fee,
+                  f"Take-profit 25% at +{pnl:.1f}% (>= +{level}% threshold)")
+        tp_actions.append(f"🟢 {asset} TAKE PROFIT 25% @ +{pnl:.1f}% — +EUR {net}")
+        taken.append(level)
+        changed = True
+
+    if not taken:
+        del data['tp_taken']
 
 if changed:
     total = sum(v.get('amount_eur', 0) if k != 'CASH' else v['amount_eur'] for k, v in holdings.items())

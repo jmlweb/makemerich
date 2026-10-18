@@ -215,7 +215,7 @@ Every documented risk rule → the live code that enforces it. **A rule without 
 | Minimum BUY EUR 50 | (code only) | `scripts/execute-signals.js:257` | Enforced — no SELL minimum (A7) |
 | Stop-loss | RULES §6 says −15% from entry | `scripts/stoploss-watch.sh:105` against `stop_loss_eur` set once at BUY (`scripts/apply-trades.js:121`) | **Differs from rule** — live stop is 2×ATR14 at entry — 1.7% (VWCE) to 11.7% (ASML) below entry on current holdings, excluding the 4GLD dust, not −15% |
 | Trailing stop −10% from high | RULES §6, HUSTLE | none (only `simulate-history.js`) | **NOT ENFORCED** (A3) |
-| Take-profit 25% at +30%, 25% at +50% | RULES §7, HUSTLE | `scripts/stoploss-watch.sh:139,158` | **Buggy** — re-fires daily (A1) |
+| Take-profit 25% at +30%, 25% at +50% | RULES §7, HUSTLE | `scripts/stoploss-watch.sh` `TAKE_PROFIT_LEVELS` loop; taken levels persisted in the holding's `tp_taken` | Enforced — once per level per position (A1 fixed 2026-10-18) |
 | Monthly rebalance if drift > 10% | RULES §7 | none | **NOT ENFORCED** |
 | Portfolio stop < EUR 1,000 → preservation | RULES §6 | `scripts/validate-rules.js` reports; nothing changes behavior | **Report only** |
 | Daily deploy cap 15%, 5-day cap 30% | STRATEGY velocity rules | none (only `simulate-history.js`) | **NOT ENFORCED** (A4) |

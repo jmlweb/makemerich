@@ -208,6 +208,8 @@ Numbers are taken from `data/portfolio.json` and `data/trades/*.json` via `jq` a
 
 **Proposed fix (needs Jose):** persist "TP level already taken" on the holding in `portfolio.json` (e.g. `tp_taken: [30]`), not in `/tmp`.
 
+**Resolution (2026-10-18, Jose sign-off):** implemented as proposed. `stoploss-watch.sh` loops over `TAKE_PROFIT_LEVELS = (30, 50)` and appends each executed level to the holding's `tp_taken`; a full exit deletes the holding and its record. Sandbox dry-run with EQQQ `pnl_pct` forced to 35: run 1 sold 25% (0.904437 units, EUR 580.56) and set `tp_taken: [30]`; run 2 sold nothing.
+
 ## A2. EQQQ above the 50% single-position cap for 99 days (HIGH)
 
 **Evidence:** EQQQ value / daily balance > 50% on 99 daily files, first 2026-05-28, last 2026-10-17, max 53.39% on 2026-10-08. `validate-rules.js` reports it every run. `execute-signals.js` auto-generates `LIMIT_VIOLATION` sells only for inverse/leveraged and high-risk drift (lines ~287–340). It caps single-position size at **entry** (line 234) but has no correction for drift **after** entry.

@@ -91,7 +91,7 @@ Example:
 | Second | +50% from entry | Sell another 25% |
 | Trailing | Let it run with trailing stop | |
 
-> Live: `stoploss-watch.sh` implements the +30% / +50% partial sells, but its dedup flag is per-day, so a level can re-fire daily (FINDINGS.md 2026-10-18 A1). The trailing row is **not enforced**.
+> Live: `stoploss-watch.sh` implements the +30% / +50% partial sells, each once per position (`tp_taken` on the holding; FINDINGS.md 2026-10-18 A1, fixed). The trailing row is **not enforced**.
 
 ### Exit Signals
 
