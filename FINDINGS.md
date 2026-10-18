@@ -228,6 +228,20 @@ Numbers are taken from `data/portfolio.json` and `data/trades/*.json` via `jq` a
 
 **Proposed fix (needs Jose):** ratchet `stop_loss_eur` up in `update-portfolio.js` (max of current stop and `high × 0.90`), then backtest.
 
+**Resolution (2026-10-18, Jose sign-off):** implemented in `update-portfolio.js` (`ratchetTrailingStop()`, EUR and USD stops, skipped for stale prices, stops only move up). **Start point: forward-only.** The high starts at max(entry, current price) on first run; history since entry is not backfilled. Reason: switching a rule on should not, by itself, sell positions at Friday's prices. For the record, a backfill from daily closes since entry would have set:
+
+| Holding | Max close since entry | Backfilled stop | Price 2026-10-16 | Effect |
+|---------|----------------------:|----------------:|-----------------:|--------|
+| EQQQ | 679.80 | 611.82 | 641.90 | 4.7% below price |
+| ITX | 59.10 | 53.19 | 55.86 | 4.8% below price |
+| ASML | 1,656.20 | 1,490.58 | 1,477.20 | **above price → immediate sale** |
+| SIE | 279.00 | 251.10 | 270.65 | below existing stop, no change |
+| VWCE | 173.56 | 156.20 | 170.94 | below existing stop, no change |
+
+Forward-only result (sandbox run, 2026-10-16 prices): EQQQ 508.78 → 577.71 (10% below price, ≈ +10% above entry locked in), ASML 1,372.87 → 1,398.60, 4GLD 105.88 → 112.10; others unchanged. A second run moved nothing. Jose can switch to the backfill start by setting `high_price_eur` on a holding by hand-approved data edit.
+
+**Backtest note:** `backtest.js` models signals only — no stops or portfolio limits — so it cannot evaluate this change. The 2026-04-07 `simulate-history.js` replay (LEARNINGS.md) already included a trailing stop.
+
 ## A4. Deployment velocity caps and XEON auto-parking are simulator-only (MEDIUM)
 
 **Evidence:** STRATEGY.md "Deployment Velocity Rules" (15% per day, 30% per rolling 5 days, auto-BUY XEON when cash > 20%). `computeDeploymentVelocity()` exists only in `simulate-history.js:106`. No live script references velocity or parking. TSK-003 (`.backlog/tasks/complete/`) planned B1 in `execute-signals.js`, but its acceptance criteria only tested `simulate-history.js`, so the task closed as complete without touching the live path.

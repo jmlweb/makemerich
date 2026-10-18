@@ -21,7 +21,7 @@ What the code actually does, in order. This section describes behavior; it does 
 5. **SELL** — SELL sells 50% of the position; STRONG_SELL sells 100%. No minimum size.
 6. **Limit corrections** — automatic SELL orders for high-risk > 30%, inverse/leveraged > 15%, and any single position > 50% (trimmed back to 48%, minimum order EUR 50).
 7. **Apply** — `apply-trades.js` executes the orders and writes the stop price once onto a new holding.
-8. **Stops & take-profit** — `stoploss-watch.sh` (every 5 min) sells 100% when price ≤ `stop_loss_eur`, and 25% at +30% / +50% P&L. Stops are never raised after entry.
+8. **Stops & take-profit** — `stoploss-watch.sh` (every 5 min) sells 100% when price ≤ `stop_loss_eur`, and 25% at +30% / +50% P&L (once per level). `update-portfolio.js` raises each stop to 90% of the holding's high price every session (trailing stop, RULES §6); stops never move down.
 
 ---
 
@@ -81,7 +81,7 @@ Example:
 | Trailing Stop | -10% from high | Sell 100% |
 | Portfolio Stop | Balance < EUR 1,000 | Conservation mode |
 
-> **Live behavior differs:** the hard stop is 2×ATR14 below entry (currently 1.7%–11.7% below entry, excluding the 4GLD dust), not −15%. The trailing stop is **not enforced** — stops are never raised (FINDINGS.md 2026-10-18 A3). The portfolio stop is reported by `validate-rules.js` but changes no behavior.
+> **Live behavior differs:** the hard stop is 2×ATR14 below entry (currently 1.7%–11.7% below entry, excluding the 4GLD dust), not −15%. The trailing stop is enforced since 2026-10-18 by `update-portfolio.js` (high tracked from max(entry, price) at that date; FINDINGS.md 2026-10-18 A3). The portfolio stop is reported by `validate-rules.js` but changes no behavior.
 
 ### Take Profit
 
@@ -91,7 +91,7 @@ Example:
 | Second | +50% from entry | Sell another 25% |
 | Trailing | Let it run with trailing stop | |
 
-> Live: `stoploss-watch.sh` implements the +30% / +50% partial sells, each once per position (`tp_taken` on the holding; FINDINGS.md 2026-10-18 A1, fixed). The trailing row is **not enforced**.
+> Live: `stoploss-watch.sh` implements the +30% / +50% partial sells, each once per position (`tp_taken` on the holding; FINDINGS.md 2026-10-18 A1, fixed). The trailing row is enforced by the trailing stop (A3).
 
 ### Exit Signals
 

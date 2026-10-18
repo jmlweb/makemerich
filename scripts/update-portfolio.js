@@ -5,6 +5,11 @@
  * Reads holdings from portfolio.json and updates with current prices.
  * Supports: UCITS ETFs (EUR/USD), Crypto, and ETCs.
  * 
+ * Also ratchets trailing stops (RULES.md §6): tracks each holding's high price
+ * (high_price_eur / high_price_usd) and raises stop_loss_* to 90% of it. Stops
+ * only move up. The high starts at max(entry, current) the first time a holding
+ * is seen — history is not backfilled (FINDINGS.md 2026-10-18 A3).
+ *
  * Usage:
  *   node scripts/update-portfolio.js [--date YYYY-MM-DD] [--dry-run]
  */
@@ -16,6 +21,24 @@ const https = require("https");
 const DATA_DIR = path.join(__dirname, "..", "data");
 const PORTFOLIO_FILE = path.join(DATA_DIR, "portfolio.json");
 const STARTING_CAPITAL = 5000.00;
+const TRAILING_STOP_PCT = 0.10; // from RULES.md §6
+
+const ratchetTrailingStop = (asset, holding, currentPrice, currency) => {
+  const suffix = currency === "EUR" ? "eur" : "usd";
+  const stopKey = `stop_loss_${suffix}`;
+  const highKey = `high_price_${suffix}`;
+  if (holding[stopKey] == null) return;
+
+  const entryPrice = holding[`entry_price_${suffix}`] || 0;
+  const high = Math.max(holding[highKey] || Math.max(entryPrice, currentPrice), currentPrice);
+  holding[highKey] = parseFloat(high.toFixed(4));
+
+  const trailingStop = parseFloat((high * (1 - TRAILING_STOP_PCT)).toFixed(4));
+  if (trailingStop > holding[stopKey]) {
+    console.log(`  ↑ ${asset} trailing stop ${holding[stopKey]} → ${trailingStop} (high ${high})`);
+    holding[stopKey] = trailingStop;
+  }
+};
 
 // Asset descriptions and Yahoo symbols
 const ASSET_INFO = {
@@ -223,6 +246,7 @@ async function main() {
       holding.current_price_eur = nativePrice;
       holding.amount_eur = parseFloat(currentValueEUR.toFixed(2));
       holding.pnl_pct = parseFloat(pnlPct.toFixed(2));
+      ratchetTrailingStop(asset, holding, nativePrice, "EUR");
     } else {
       // Non-EUR asset: convert to EUR via exchange rates
       const currencyCode = info.currency; // e.g., "USD", "DKK"
@@ -244,6 +268,7 @@ async function main() {
       holding.current_price_usd = nativePrice;
       holding.amount_eur = parseFloat(currentValueEUR.toFixed(2));
       holding.pnl_pct = parseFloat(pnlPct.toFixed(2));
+      ratchetTrailingStop(asset, holding, nativePrice, "USD");
     }
     
     totalValue += currentValueEUR;
