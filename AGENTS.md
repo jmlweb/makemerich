@@ -87,7 +87,7 @@ The trigger lives **outside this repo**: hustle BullMQ workers (`apps/core/src/w
 
 | Time | Script | Action |
 |------|--------|--------|
-| 09:00, 12:00, 15:30, 18:00 Mon–Fri | `scripts/session.sh <label>` | Full quant pipeline, apply orders; commits (`git add -A`) whenever the tree differs from HEAD, i.e. every run. LEDGER entry only if trades executed |
+| 09:00, 12:00, 15:30, 18:00 Mon–Fri | `scripts/session.sh <label>` | Full quant pipeline, apply orders. Exits early without committing when there are no violations, no near-stop triggers and no orders; otherwise commits (`git add -A`) whenever the tree differs from HEAD. LEDGER entry only if trades executed |
 | 21:30 Mon–Fri | `scripts/daily-update.sh` | **Close** — pipeline, LEDGER entry, validation gate, commit + push, Telegram summary |
 | Every 5 min, 07:00–23:00 | `scripts/stoploss-watch.sh` | Stop-loss exits and +30%/+50% partial take-profit; auto-commits on action |
 | Weekends | `scripts/session.sh weekend` | Crypto check (24/7 market) |
@@ -201,19 +201,19 @@ What actually reaches Jose (as of 2026-10-18, commit `d446051`):
 
 ## Rule Enforcement Map
 
-Every documented risk rule → the live code that enforces it. **A rule without a live `script:line` is NOT ENFORCED**, whatever the prose says. `simulate-history.js` does not count. Audited 2026-10-18 (FINDINGS.md "Rule-enforcement audit"); re-verified by the `monthly-audit` skill. Add a row whenever a rule is added.
+Every documented risk rule → the live code that enforces it. **A rule without a live `script:line` is NOT ENFORCED**, whatever the prose says. `simulate-history.js` does not count. Audited and partly fixed 2026-10-18 (FINDINGS.md "Rule-enforcement audit"); line numbers as of 2026-10-18; re-verified by the `monthly-audit` skill. Add a row whenever a rule is added.
 
 | Rule | Source | Live enforcement | Status |
 |------|--------|------------------|--------|
-| Max single position 50% | RULES §4 | `scripts/execute-signals.js:239` caps size at entry; `scripts/execute-signals.js:355` trims drift back to 48% (min order EUR 50) | Enforced (A2 fixed 2026-10-18) |
-| Min 5% reserve (XEON + cash) | RULES §4 | `scripts/execute-signals.js:216` (bare cash only), `scripts/validate-rules.js:68` | **Stricter than rule** — XEON excluded (A5) |
-| Max high-risk 30% | RULES §4 | `scripts/execute-signals.js:309` auto-SELL correction | Enforced |
-| Max inverse/leveraged 15% | RULES §4 | `scripts/execute-signals.js:284` auto-SELL correction | Enforced |
-| Market regime gating (risk-on / risk-off / crisis) | RULES §8, STRATEGY | `scripts/generate-quant-signals.js:44` detects; `scripts/execute-signals.js:198` gates BUYs | Enforced |
+| Max single position 50% | RULES §4 | `scripts/execute-signals.js:322` caps size at entry; `scripts/execute-signals.js:447` trims drift back to 48% (min order EUR 50) | Enforced (A2 fixed 2026-10-18) |
+| Min 5% reserve (XEON + cash) | RULES §4 | `scripts/execute-signals.js:304` (bare cash only), `scripts/validate-rules.js:68` | **Stricter than rule** — XEON excluded (A5) |
+| Max high-risk 30% | RULES §4 | `scripts/execute-signals.js:406` auto-SELL correction | Enforced |
+| Max inverse/leveraged 15% | RULES §4 | `scripts/execute-signals.js:381` auto-SELL correction | Enforced |
+| Market regime gating (risk-on / risk-off / crisis) | RULES §8, STRATEGY | `scripts/generate-quant-signals.js:44` detects; `scripts/execute-signals.js:279` gates BUYs | Enforced |
 | BUY only on quant signal (score ≥ 20) | STRATEGY, HUSTLE | `scripts/generate-quant-signals.js` thresholds; orders only from `scripts/execute-signals.js` | Enforced |
-| 2% risk per trade, ATR sizing | HUSTLE sizing | `scripts/execute-signals.js:225`; stop = price − 2×ATR14 (`scripts/generate-quant-signals.js:341`) | Enforced |
+| 2% risk per trade, ATR sizing | HUSTLE sizing | `scripts/execute-signals.js:313`; stop = price − 2×ATR14 (`scripts/generate-quant-signals.js:341`) | Enforced |
 | Minimum order EUR 50 | (code only) | `scripts/execute-signals.js` `MIN_ORDER_EUR`; a 50% SELL that would leave < EUR 50 sells 100%; holdings < EUR 1 get a `DUST_CLEANUP` sell | Enforced (A7 fixed 2026-10-18) |
-| Stop-loss | RULES §6 says −15% from entry | `scripts/stoploss-watch.sh:105` against `stop_loss_eur` set at BUY (`scripts/apply-trades.js:121`), then raised by the trailing stop | **Differs from rule** — initial live stop is 2×ATR14 at entry — 1.7% (VWCE) to 11.7% (ASML) below entry on current holdings, excluding the 4GLD dust, not −15% |
+| Stop-loss | RULES §6 says −15% from entry | `scripts/stoploss-watch.sh:106` against `stop_loss_eur` set at BUY (`scripts/apply-trades.js:126`), then raised by the trailing stop | **Differs from rule** — initial live stop is 2×ATR14 at entry — 1.7% (VWCE) to 11.7% (ASML) below entry on current holdings, excluding the 4GLD dust, not −15% |
 | Trailing stop −10% from high | RULES §6, HUSTLE | `scripts/update-portfolio.js` `ratchetTrailingStop()` raises `stop_loss_*` to 90% of `high_price_*` each run; `scripts/stoploss-watch.sh` executes | Enforced from 2026-10-18 — high starts at max(entry, price), no history backfill (A3) |
 | Take-profit 25% at +30%, 25% at +50% | RULES §7, HUSTLE | `scripts/stoploss-watch.sh` `TAKE_PROFIT_LEVELS` loop; taken levels persisted in the holding's `tp_taken` | Enforced — once per level per position (A1 fixed 2026-10-18) |
 | Monthly rebalance if drift > 10% | RULES §7 | none | **NOT ENFORCED** |

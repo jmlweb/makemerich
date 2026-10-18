@@ -196,7 +196,7 @@ defects, and predate this work. Left for a normal rebalancing session.
 
 **Scope:** every risk rule in RULES.md, STRATEGY.md, HUSTLE.md and LEARNINGS.md was traced to the live pipeline (`session.sh`, `daily-update.sh`, `execute-signals.js`, `apply-trades.js`, `stoploss-watch.sh`). `simulate-history.js` is a one-off replay tool and does **not** count as enforcement. Full mapping: AGENTS.md → "Rule Enforcement Map".
 
-**Status of every item below: flagged, not fixed.** Each fix changes live trading behavior, so it needs a `backtest.js` run and Jose's sign-off (CLAUDE.md failure mode 1). No code or data was changed by this audit.
+**Status:** the audit itself changed no code or data. Same day, with Jose's sign-off, A1, A2, A3, A4, A6 and A7 were fixed on branch `fix/rule-enforcement` (see each item's **Resolution**). A5, A8 and A9 remain open.
 
 Numbers are taken from `data/portfolio.json` and `data/trades/*.json` via `jq` as of the 2026-10-17 data.
 
@@ -238,7 +238,7 @@ Numbers are taken from `data/portfolio.json` and `data/trades/*.json` via `jq` a
 | SIE | 279.00 | 251.10 | 270.65 | below existing stop, no change |
 | VWCE | 173.56 | 156.20 | 170.94 | below existing stop, no change |
 
-Forward-only result (sandbox run, 2026-10-16 prices): EQQQ 508.78 → 577.71 (10% below price, ≈ +10% above entry locked in), ASML 1,372.87 → 1,398.60, 4GLD 105.88 → 112.10; others unchanged. A second run moved nothing. Jose can switch to the backfill start by setting `high_price_eur` on a holding by hand-approved data edit.
+Forward-only result (sandbox run, 2026-10-16 prices): EQQQ 508.78 → 577.71 (10% below price, ≈ +10% above entry locked in), ASML 1,372.87 → 1,398.60, 4GLD 105.88 → 112.10; others unchanged. A second run moved nothing. Jose can request the backfill start instead; it is a one-time `high_price_eur` data change per holding.
 
 **Backtest note:** `backtest.js` models signals only — no stops or portfolio limits — so it cannot evaluate this change. The 2026-04-07 `simulate-history.js` replay (LEARNINGS.md) already included a trailing stop.
 
