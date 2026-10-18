@@ -258,11 +258,15 @@ Forward-only result (sandbox run, 2026-10-16 prices): EQQQ 508.78 → 577.71 (10
 
 **Evidence:** LEARNINGS.md 2026-03-18 rule: "After selling a position, enforce a 48-hour cooling-off period before re-entering the same asset". No live script implements it. AIR was stopped out 2026-08-31 10:00 UTC (EUR 201.30) and re-bought 2026-09-01 10:00 UTC (EUR 194.38) — 24 hours later. That second AIR position was stopped out on 2026-10-01 (−4.52%). SIE was re-bought 2026-10-01 after its 2026-09-10 stop (outside 48h; allowed).
 
+**Resolution (2026-10-18, Jose sign-off):** `execute-signals.js` blocks a BUY when the same canonical ticker (via `.ticker-aliases.json`) has a SELL — signal, limit or stop-loss — within 48h, reading this and last month's trade logs. Sandbox test: a SELL of SXR8 24h earlier blocked a risk-on BUY (score 23) with "BUY blocked — sold 24h ago, cooldown 48h".
+
 ## A7. SELL signals have no minimum size → dust positions (LOW)
 
 **Evidence:** `execute-signals.js:172` sells a fixed 50% of the position on every `SELL` (100% only on `STRONG_SELL`). BUY orders have a EUR 50 minimum; SELL orders have none. 4GLD received SELL signals repeatedly between 2026-08-11 and 2026-09-30: 16 sells totalling EUR 460.52, of which 8 were under EUR 1 (the smallest EUR 0.01). 0.00002 units (EUR 0.00) remain in `portfolio.json` and still appear in ACTIVE MONITORS with a stop.
 
 **Proposed fix (needs Jose):** sell 100% when the remainder after a 50% sell would be below the EUR 50 BUY minimum.
+
+**Resolution (2026-10-18, Jose sign-off):** implemented as proposed. Holdings with units but a value under EUR 1 now get a `DUST_CLEANUP` 100% sell, recorded in the trade log like any other sale. `apply-trades.js` treats `sellPct: 100` as a full exit, and a BUY on top of dust resets the old stop, trailing high and `tp_taken`. Sandbox: 4GLD dust (0.00002 units) and an ASML SELL (EUR 81.87, half < EUR 50) both exited fully; `validate-data.js` passed. The live 4GLD dust is cleared by the first session after the merge.
 
 ## A8. Every pipeline trade is labeled `makemerich-2130` (LOW, data quality)
 

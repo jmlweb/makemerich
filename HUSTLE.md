@@ -17,8 +17,8 @@ What the code actually does, in order. This section describes behavior; it does 
 1. **Score** — `generate-quant-signals.js` computes a composite score in [−100, 100] per asset from price history only. Weights: trend 0.25 (SMA20/50/200), momentum 0.25 (RSI14), meanReversion 0.20 (Bollinger), macd 0.15, volatility 0.15 (ATR14 change).
 2. **Classify** — STRONG_BUY ≥ 50, BUY ≥ 20, SELL < −20, STRONG_SELL < −50, else HOLD.
 3. **Regime gate** — crisis (VIX > 30): only XEON may be bought. Risk-off (VIX 22–30 or S&P 500 below SMA50): only XEON/4GLD, and only at score ≥ 50. Risk-on: normal thresholds.
-4. **BUY** — only for assets **not already held** (no adding to positions). Size = 2% of balance ÷ stop distance, where stop = price − 2×ATR14. Capped by available bare cash above the 5% reserve, the 50% single-position cap, and the high-risk/inverse caps. Orders under EUR 50 are dropped.
-5. **SELL** — SELL sells 50% of the position; STRONG_SELL sells 100%. No minimum size.
+4. **BUY** — only for assets **not already held** (no adding to positions) and not sold in the last 48h (cooldown). Size = 2% of balance ÷ stop distance, where stop = price − 2×ATR14. Capped by available bare cash above the 5% reserve, the 50% single-position cap, and the high-risk/inverse caps. Orders under EUR 50 are dropped.
+5. **SELL** — SELL sells 50% of the position; STRONG_SELL sells 100%. A 50% sell that would leave less than EUR 50 sells 100%. Holdings worth < EUR 1 are cleared by a `DUST_CLEANUP` sell.
 6. **Limit corrections** — automatic SELL orders for high-risk > 30%, inverse/leveraged > 15%, and any single position > 50% (trimmed back to 48%, minimum order EUR 50).
 7. **Apply** — `apply-trades.js` executes the orders and writes the stop price once onto a new holding.
 8. **Stops & take-profit** — `stoploss-watch.sh` (every 5 min) sells 100% when price ≤ `stop_loss_eur`, and 25% at +30% / +50% P&L (once per level). `update-portfolio.js` raises each stop to 90% of the holding's high price every session (trailing stop, RULES §6); stops never move down.
@@ -128,7 +128,7 @@ Example:
 | Ignoring stops | Stops are sacred |
 | Confirmation bias | Look for counter-arguments |
 
-> "Maximum 2 trades per week" is **not enforced** (2026-08-11 alone had 6 trades). The 48h re-entry cooling-off from LEARNINGS.md 2026-03-18 is also **not enforced** (FINDINGS.md 2026-10-18 A6).
+> "Maximum 2 trades per week" is **not enforced** (2026-08-11 alone had 6 trades). The 48h re-entry cooling-off from LEARNINGS.md 2026-03-18 is enforced since 2026-10-18 by `execute-signals.js` (FINDINGS.md 2026-10-18 A6).
 
 ---
 

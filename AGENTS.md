@@ -212,7 +212,7 @@ Every documented risk rule → the live code that enforces it. **A rule without 
 | Market regime gating (risk-on / risk-off / crisis) | RULES §8, STRATEGY | `scripts/generate-quant-signals.js:44` detects; `scripts/execute-signals.js:198` gates BUYs | Enforced |
 | BUY only on quant signal (score ≥ 20) | STRATEGY, HUSTLE | `scripts/generate-quant-signals.js` thresholds; orders only from `scripts/execute-signals.js` | Enforced |
 | 2% risk per trade, ATR sizing | HUSTLE sizing | `scripts/execute-signals.js:225`; stop = price − 2×ATR14 (`scripts/generate-quant-signals.js:341`) | Enforced |
-| Minimum BUY EUR 50 | (code only) | `scripts/execute-signals.js:257` | Enforced — no SELL minimum (A7) |
+| Minimum order EUR 50 | (code only) | `scripts/execute-signals.js` `MIN_ORDER_EUR`; a 50% SELL that would leave < EUR 50 sells 100%; holdings < EUR 1 get a `DUST_CLEANUP` sell | Enforced (A7 fixed 2026-10-18) |
 | Stop-loss | RULES §6 says −15% from entry | `scripts/stoploss-watch.sh:105` against `stop_loss_eur` set at BUY (`scripts/apply-trades.js:121`), then raised by the trailing stop | **Differs from rule** — initial live stop is 2×ATR14 at entry — 1.7% (VWCE) to 11.7% (ASML) below entry on current holdings, excluding the 4GLD dust, not −15% |
 | Trailing stop −10% from high | RULES §6, HUSTLE | `scripts/update-portfolio.js` `ratchetTrailingStop()` raises `stop_loss_*` to 90% of `high_price_*` each run; `scripts/stoploss-watch.sh` executes | Enforced from 2026-10-18 — high starts at max(entry, price), no history backfill (A3) |
 | Take-profit 25% at +30%, 25% at +50% | RULES §7, HUSTLE | `scripts/stoploss-watch.sh` `TAKE_PROFIT_LEVELS` loop; taken levels persisted in the holding's `tp_taken` | Enforced — once per level per position (A1 fixed 2026-10-18) |
@@ -220,7 +220,7 @@ Every documented risk rule → the live code that enforces it. **A rule without 
 | Portfolio stop < EUR 1,000 → preservation | RULES §6 | `scripts/validate-rules.js` reports; nothing changes behavior | **Report only** |
 | Daily deploy cap 15%, 5-day cap 30% | STRATEGY velocity rules | none (only `simulate-history.js`) | **NOT ENFORCED** (A4) |
 | XEON auto-park when cash > 20% | STRATEGY velocity rules | none (only `simulate-history.js`) | **NOT ENFORCED** (A4) |
-| 48h cooling-off after a sell | LEARNINGS 2026-03-18 | none | **NOT ENFORCED** (A6) |
+| 48h cooling-off after a sell | LEARNINGS 2026-03-18 | `scripts/execute-signals.js` `loadLastSellTimes()` + `REENTRY_COOLDOWN_HOURS` (current + previous month, aliases resolved, stop-loss sells included) | Enforced (A6 fixed 2026-10-18) |
 | Max 2 trades per week | HUSTLE "Mistakes to Avoid" | none | **NOT ENFORCED** (2026-08-11 had 6 trades) |
 | Split deployments > 15% over 2+ sessions | LEARNINGS 2026-02-02 | none | **NOT ENFORCED** |
 | Every holdings change has a trade record | CLAUDE invariant 6 | `scripts/validate-data.js` check 5 | Enforced at the 21:30 gate |

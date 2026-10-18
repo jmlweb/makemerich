@@ -22,6 +22,8 @@ const PORTFOLIO_PATH = path.join(DATA_DIR, 'portfolio.json');
 const QUANT_PATH = path.join(DATA_DIR, '.quant-signals-latest.json');
 const PRICES_PATH = path.join(DATA_DIR, '.prices-latest.json');
 const OUTPUT_PATH = path.join(DATA_DIR, '.trade-orders.json');
+const TRADES_DIR = path.join(DATA_DIR, 'trades');
+const ALIASES_PATH = path.join(DATA_DIR, '.ticker-aliases.json');
 
 // Position limits (from RULES.md — these are absolute, no overrides)
 const LIMITS = {
@@ -36,6 +38,13 @@ const LIMITS = {
 // 50%, so ordinary price drift does not trigger a new trim every session.
 const SINGLE_POSITION_TRIM_TARGET = 0.48;
 const MIN_ORDER_EUR = 50;
+
+// No re-entry into an asset sold within this window (LEARNINGS.md 2026-03-18;
+// AIR was re-bought 24h after a stop-out and stopped out again — FINDINGS.md 2026-10-18 A6).
+const REENTRY_COOLDOWN_HOURS = 48;
+
+// Holdings worth less than this are leftovers of partial sells, sold off in full.
+const DUST_EUR = 1;
 
 // Fee structure (Bitpanda: 0.1% all asset classes)
 const FEES = {
@@ -104,6 +113,28 @@ function isInverse(symbol) {
   return ASSET_META[symbol]?.inverse === true;
 }
 
+// Last SELL time per canonical ticker, from this month's and last month's trade
+// logs (so a sale on the 30th still blocks a BUY on the 1st). Includes
+// stop-loss sells, which are logged by stoploss-watch.sh.
+function loadLastSellTimes(now = new Date()) {
+  const aliases = fs.existsSync(ALIASES_PATH) ? load(ALIASES_PATH).resolve || {} : {};
+  const monthKey = (d) => d.toISOString().slice(0, 7);
+  const previousMonth = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - 1, 1));
+  const lastSell = {};
+
+  for (const month of [monthKey(previousMonth), monthKey(now)]) {
+    const file = path.join(TRADES_DIR, `${month}.json`);
+    if (!fs.existsSync(file)) continue;
+    for (const trade of load(file)) {
+      if (trade.action !== 'SELL') continue;
+      const ticker = aliases[trade.asset] || trade.asset;
+      const soldAt = new Date(`${trade.date}T${(trade.time || '00:00').slice(0, 5)}:00Z`);
+      if (!lastSell[ticker] || soldAt > lastSell[ticker]) lastSell[ticker] = soldAt;
+    }
+  }
+  return lastSell;
+}
+
 function computePortfolioState(portfolio) {
   const holdings = portfolio.holdings;
   const balance = portfolio.totals.balance_eur;
@@ -135,8 +166,25 @@ function computePortfolioState(portfolio) {
 
 function generateOrders(portfolio, signals) {
   const state = computePortfolioState(portfolio);
+  const lastSellTimes = loadLastSellTimes();
   const orders = [];
   const warnings = [];
+
+  // Clear dust left by earlier partial sells, through a recorded SELL
+  for (const [symbol, holding] of Object.entries(portfolio.holdings)) {
+    if (symbol === 'CASH' || !(holding.units > 0) || (holding.amount_eur || 0) >= DUST_EUR) continue;
+    orders.push({
+      action: 'SELL',
+      symbol,
+      signal: 'DUST_CLEANUP',
+      score: 0,
+      sellPct: 100,
+      estimatedValueEur: +(holding.amount_eur || 0).toFixed(2),
+      estimatedFeeEur: 0,
+      reason: `Dust cleanup: ${holding.units} units worth EUR ${(holding.amount_eur || 0).toFixed(2)} left by partial sells`,
+      priority: 'MEDIUM',
+    });
+  }
 
   // Get market regime
   const regime = signals.marketRegime?.regime || 'unknown';
@@ -173,8 +221,12 @@ function generateOrders(portfolio, signals) {
     const feeRate = getFeeRate(symbol);
 
     // --- SELL signals ---
-    if ((signal === 'SELL' || signal === 'STRONG_SELL') && hasPosition) {
-      const sellPct = signal === 'STRONG_SELL' ? 1.0 : 0.5;
+    const alreadySelling = orders.some((o) => o.symbol === symbol && o.action === 'SELL');
+    if ((signal === 'SELL' || signal === 'STRONG_SELL') && hasPosition && !alreadySelling) {
+      // A 50% sell that would leave less than a minimum order exits fully, so
+      // repeated SELL signals don't halve a position down to dust (A7).
+      const halfLeavesDust = currentPosition.value * 0.5 < MIN_ORDER_EUR;
+      const sellPct = signal === 'STRONG_SELL' || halfLeavesDust ? 1.0 : 0.5;
       const sellValue = currentPosition.value * sellPct;
       const fee = sellValue * feeRate;
 
@@ -215,6 +267,13 @@ function generateOrders(portfolio, signals) {
 
       if (blocked) {
         warnings.push(`${symbol}: ${blockReason} (${signal}, score: ${score})`);
+        continue;
+      }
+
+      const lastSell = lastSellTimes[symbol];
+      const hoursSinceSell = lastSell ? (Date.now() - lastSell.getTime()) / 3600000 : Infinity;
+      if (hoursSinceSell < REENTRY_COOLDOWN_HOURS) {
+        warnings.push(`${symbol}: BUY blocked — sold ${hoursSinceSell.toFixed(0)}h ago, cooldown ${REENTRY_COOLDOWN_HOURS}h (${signal}, score: ${score})`);
         continue;
       }
       // Check if we can buy (cash available, limits respected)
@@ -259,7 +318,7 @@ function generateOrders(portfolio, signals) {
         buyAmount = Math.min(buyAmount, inverseRoom);
       }
 
-      if (buyAmount < 50) {
+      if (buyAmount < MIN_ORDER_EUR) {
         warnings.push(`${symbol}: BUY signal but position too small (${buyAmount.toFixed(0)} EUR)`);
         continue;
       }

@@ -70,7 +70,7 @@ function main() {
   console.log(`Cash available: EUR ${cashEur.toFixed(2)}\n`);
 
   for (const order of orders.orders) {
-    const { action, symbol, estimatedValueEur, estimatedFeeEur, stopPrice, reason } = order;
+    const { action, symbol, estimatedValueEur, estimatedFeeEur, stopPrice, sellPct, reason } = order;
     const currency = getAssetCurrency(symbol);
 
     // Get current price
@@ -104,6 +104,11 @@ function main() {
 
       // Add or update holding
       const existing = portfolio.holdings[symbol];
+      if (existing && (existing.amount_eur || 0) < 1) {
+        // Buying on top of leftover dust is a fresh position: drop the old
+        // position's stop, trailing high and take-profit history.
+        for (const key of ["stop_loss_eur", "stop_loss_usd", "high_price_eur", "high_price_usd", "tp_taken"]) delete existing[key];
+      }
       if (existing) {
         // Average into existing position
         const oldValue = existing.units * (currency === "USD" ? existing.current_price_usd : existing.current_price_eur);
@@ -173,7 +178,8 @@ function main() {
       // Determine units to sell
       const priceInNative = currency === "USD" ? priceUsd : priceEur;
       let unitsToSell = estimatedValueEur / priceEur;
-      if (unitsToSell >= holding.units * 0.99) {
+      const fullExit = sellPct >= 100 || unitsToSell >= holding.units * 0.99;
+      if (fullExit) {
         // Full liquidation
         unitsToSell = holding.units;
       }
@@ -197,7 +203,7 @@ function main() {
         session: "makemerich-2130"
       });
 
-      if (unitsToSell >= holding.units * 0.99) {
+      if (fullExit) {
         delete portfolio.holdings[symbol];
       } else {
         holding.units = parseFloat((holding.units - unitsToSell).toFixed(6));
