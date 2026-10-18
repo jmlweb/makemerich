@@ -205,7 +205,7 @@ Every documented risk rule → the live code that enforces it. **A rule without 
 
 | Rule | Source | Live enforcement | Status |
 |------|--------|------------------|--------|
-| Max single position 50% | RULES §4 | `scripts/execute-signals.js:234` caps size at entry; `scripts/validate-rules.js` reports drift | **Entry only** — drift never trimmed (EQQQ > 50% for 99 days, A2) |
+| Max single position 50% | RULES §4 | `scripts/execute-signals.js:239` caps size at entry; `scripts/execute-signals.js:355` trims drift back to 48% (min order EUR 50) | Enforced (A2 fixed 2026-10-18) |
 | Min 5% reserve (XEON + cash) | RULES §4 | `scripts/execute-signals.js:216` (bare cash only), `scripts/validate-rules.js:68` | **Stricter than rule** — XEON excluded (A5) |
 | Max high-risk 30% | RULES §4 | `scripts/execute-signals.js:309` auto-SELL correction | Enforced |
 | Max inverse/leveraged 15% | RULES §4 | `scripts/execute-signals.js:284` auto-SELL correction | Enforced |

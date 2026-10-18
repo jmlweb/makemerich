@@ -19,7 +19,7 @@ What the code actually does, in order. This section describes behavior; it does 
 3. **Regime gate** — crisis (VIX > 30): only XEON may be bought. Risk-off (VIX 22–30 or S&P 500 below SMA50): only XEON/4GLD, and only at score ≥ 50. Risk-on: normal thresholds.
 4. **BUY** — only for assets **not already held** (no adding to positions). Size = 2% of balance ÷ stop distance, where stop = price − 2×ATR14. Capped by available bare cash above the 5% reserve, the 50% single-position cap, and the high-risk/inverse caps. Orders under EUR 50 are dropped.
 5. **SELL** — SELL sells 50% of the position; STRONG_SELL sells 100%. No minimum size.
-6. **Limit corrections** — automatic SELL orders only for high-risk > 30% and inverse/leveraged > 15%. Single-position drift above 50% is reported, not corrected.
+6. **Limit corrections** — automatic SELL orders for high-risk > 30%, inverse/leveraged > 15%, and any single position > 50% (trimmed back to 48%, minimum order EUR 50).
 7. **Apply** — `apply-trades.js` executes the orders and writes the stop price once onto a new holding.
 8. **Stops & take-profit** — `stoploss-watch.sh` (every 5 min) sells 100% when price ≤ `stop_loss_eur`, and 25% at +30% / +50% P&L. Stops are never raised after entry.
 

@@ -32,6 +32,11 @@ const LIMITS = {
   MAX_RISK_PER_TRADE: 0.02,   // 2% risk per trade
 };
 
+// Drift above MAX_SINGLE_POSITION is trimmed back to this level, not to exactly
+// 50%, so ordinary price drift does not trigger a new trim every session.
+const SINGLE_POSITION_TRIM_TARGET = 0.48;
+const MIN_ORDER_EUR = 50;
+
 // Fee structure (Bitpanda: 0.1% all asset classes)
 const FEES = {
   ETF: 0.001,
@@ -339,6 +344,28 @@ function generateOrders(portfolio, signals) {
 
       excess -= sellAmount;
     }
+  }
+
+  // A position that grew past MAX_SINGLE_POSITION after entry is trimmed back.
+  // Entry-time caps alone let EQQQ sit above 50% for 99 days (FINDINGS.md 2026-10-18 A2).
+  for (const [symbol, pos] of Object.entries(state.positions)) {
+    if (pos.pct <= LIMITS.MAX_SINGLE_POSITION + 0.001) continue;
+    if (orders.find((o) => o.symbol === symbol && o.action === 'SELL')) continue;
+
+    const sellAmount = pos.value - state.balance * SINGLE_POSITION_TRIM_TARGET;
+    if (sellAmount < MIN_ORDER_EUR) continue;
+
+    orders.push({
+      action: 'SELL',
+      symbol,
+      signal: 'LIMIT_VIOLATION',
+      score: 0,
+      sellPct: +((sellAmount / pos.value) * 100).toFixed(1),
+      estimatedValueEur: +sellAmount.toFixed(2),
+      estimatedFeeEur: +(sellAmount * getFeeRate(symbol)).toFixed(2),
+      reason: `Single position at ${(pos.pct * 100).toFixed(1)}%, limit is ${LIMITS.MAX_SINGLE_POSITION * 100}%. Trimming ${symbol} to ${SINGLE_POSITION_TRIM_TARGET * 100}%`,
+      priority: 'HIGH',
+    });
   }
 
   // Sort: HIGH priority first, then SELL before BUY

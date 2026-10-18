@@ -218,6 +218,8 @@ Numbers are taken from `data/portfolio.json` and `data/trades/*.json` via `jq` a
 
 **Proposed fix (needs Jose):** add a `MAX_SINGLE_POSITION` drift trim to `execute-signals.js` next to the high-risk correction, or amend RULES.md §4 to say the cap applies at entry only. Either way, the rule and the code must agree.
 
+**Resolution (2026-10-18, Jose sign-off):** enforce the rule as written; RULES.md unchanged. `execute-signals.js` now emits a `LIMIT_VIOLATION` SELL for any position above 50%, trimming it to 48% (`SINGLE_POSITION_TRIM_TARGET`) so normal drift does not re-trigger every session; orders under EUR 50 are skipped. Dry-run on the 2026-10-16 prices: SELL EQQQ EUR 156.82 (6.8% of the position, 51.5% → 48%). First live execution: the next weekday session after the merge.
+
 ## A3. Trailing stop is not live (HIGH)
 
 **Evidence:** RULES.md §6 and HUSTLE.md promise "exit any position down 10% from its high". The only high-watermark code is `simulate-history.js:433,470`. Live stops are written once at BUY (`apply-trades.js:121,139`, `stopPrice = price − 2×ATR14` from `generate-quant-signals.js`) and never raised.
