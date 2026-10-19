@@ -2,14 +2,14 @@
   "date": "2026-10-19",
   "day": 238,
   "balance": {
-    "total": 4500.01,
+    "total": 4526.58,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10,
+  "totalReturn": -9.47,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Xetra-Gold ETC (1g/unit)",
       "units": 0.00002,
       "entryPriceEUR": 124.56,
-      "currentPriceEUR": 119.34,
+      "currentPriceEUR": 118.85,
       "value": 0,
-      "pnlPercent": -4.19,
-      "change24h": 0.1258494840171203
+      "pnlPercent": -4.58,
+      "change24h": -0.28525883043879807
     },
     {
       "asset": "XEON",
@@ -34,10 +34,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 150.517,
-      "value": 456.23,
-      "pnlPercent": 7.13,
-      "change24h": 0.0086376441822179
+      "currentPriceEUR": 150.53,
+      "value": 456.27,
+      "pnlPercent": 7.14,
+      "change24h": 0.0172752883644358
     },
     {
       "asset": "EQQQ",
@@ -45,10 +45,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.617747,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 644.5,
-      "value": 2331.64,
-      "pnlPercent": 22.86,
-      "change24h": -0.8461538461538461
+      "currentPriceEUR": 648.7,
+      "value": 2346.83,
+      "pnlPercent": 23.66,
+      "change24h": -0.19999999999999302
     },
     {
       "asset": "ITX",
@@ -56,10 +56,10 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 54.88,
-      "value": 1073.19,
-      "pnlPercent": 2.66,
-      "change24h": -1.754385964912275
+      "currentPriceEUR": 55.42,
+      "value": 1083.75,
+      "pnlPercent": 3.67,
+      "change24h": -0.7876834944504076
     },
     {
       "asset": "ASML",
@@ -67,10 +67,10 @@
       "description": "ASML Holding — Semiconductor Equipment",
       "units": 0.055425,
       "entryPriceEUR": 1554,
-      "currentPriceEUR": 1498.6,
-      "value": 83.06,
-      "pnlPercent": -3.56,
-      "change24h": 1.448686704576216
+      "currentPriceEUR": 1496,
+      "value": 82.92,
+      "pnlPercent": -3.73,
+      "change24h": 1.272678039534251
     },
     {
       "asset": "VWCE",
@@ -78,10 +78,10 @@
       "description": "Vanguard All-World UCITS",
       "units": 1.14727,
       "entryPriceEUR": 169.96,
-      "currentPriceEUR": 170.34,
-      "value": 195.43,
-      "pnlPercent": 0.22,
-      "change24h": -0.35100035100034765
+      "currentPriceEUR": 170.88,
+      "value": 196.05,
+      "pnlPercent": 0.54,
+      "change24h": -0.03510003510003643
     },
     {
       "asset": "SIE",
@@ -89,14 +89,14 @@
       "description": "Siemens — Industrial Conglomerate",
       "units": 0.505406,
       "entryPriceEUR": 271.9,
-      "currentPriceEUR": 265.6,
-      "value": 134.24,
-      "pnlPercent": -2.32,
-      "change24h": -1.8658784407906723
+      "currentPriceEUR": 266.2,
+      "value": 134.54,
+      "pnlPercent": -2.1,
+      "change24h": -1.644189913171989
     }
   ],
   "metadata": {
-    "generatedAt": "2026-10-19T13:30:09.119Z",
+    "generatedAt": "2026-10-19T16:00:07.276Z",
     "eurUsd": 0.8928571428571428
   }
 }
