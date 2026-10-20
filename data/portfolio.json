@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-10-20T10:00:38.165252+00:00",
+  "last_updated": "2026-10-20T13:30:05.619Z",
   "holdings": {
     "CASH": {
       "amount_eur": 355.53
     },
     "4GLD": {
-      "units": 2e-05,
+      "units": 0.00002,
       "entry_price_eur": 124.56,
-      "current_price_eur": 118.13,
+      "current_price_eur": 117.94,
       "amount_eur": 0,
-      "pnl_pct": -5.16,
+      "pnl_pct": -5.31,
       "stop_loss_eur": 105.88
     },
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 150.544,
-      "amount_eur": 456.31,
-      "pnl_pct": 7.15,
+      "current_price_eur": 150.538,
+      "amount_eur": 456.3,
+      "pnl_pct": 7.14,
       "stop_loss_eur": null,
-      "note": "Lyxor Smart Overnight Return UCITS ETF \u2014 money market EUR, ~3.5% APY"
+      "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
     },
     "EQQQ": {
       "units": 3.617747,
@@ -32,32 +32,32 @@
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 55.5,
-      "amount_eur": 1085.31,
-      "pnl_pct": 3.82,
+      "current_price_eur": 55.94,
+      "amount_eur": 1093.92,
+      "pnl_pct": 4.64,
       "stop_loss_eur": 50.6326
     },
     "ASML": {
       "units": 0.055425,
       "entry_price_eur": 1554,
-      "current_price_eur": 1457.4,
-      "amount_eur": 80.78,
-      "pnl_pct": -6.22,
+      "current_price_eur": 1456.8,
+      "amount_eur": 80.74,
+      "pnl_pct": -6.25,
       "stop_loss_eur": 1372.8737
     },
     "VWCE": {
       "units": 1.14727,
       "entry_price_eur": 169.96,
-      "current_price_eur": 169.62,
-      "amount_eur": 194.6,
-      "pnl_pct": -0.2,
+      "current_price_eur": 169.6,
+      "amount_eur": 194.58,
+      "pnl_pct": -0.21,
       "stop_loss_eur": 167.0091
     }
   },
   "totals": {
-    "balance_eur": 4491.51,
+    "balance_eur": 4500.04,
     "initial_eur": 5000,
-    "pnl_eur": -508.49,
-    "pnl_pct": -10.17
+    "pnl_eur": -499.96,
+    "pnl_pct": -10
   }
 }
