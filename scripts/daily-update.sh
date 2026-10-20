@@ -238,7 +238,8 @@ for a in s.get('alerts', []):
         print(f'⚠️ Drawdown cartera {a[\"pnlPct\"]:.1f}%')
 " 2>/dev/null || true)
 
-# Stops further than 5% away (status ACTIVE) are context, not an event. A stop
+# Stops further than 5% away (status ACTIVE) are context, not an event. Keys carry
+# the status, so NEAR -> TRIGGERED is a new event. A stop
 # that stays NEAR for days is one event, so only states absent from the last
 # close count; the file is rewritten every close, so a stop that leaves NEAR and
 # comes back alerts again.
@@ -248,7 +249,7 @@ import json
 s = json.load(open('data/.signals-latest.json'))
 for a in s.get('alerts', []):
     if a.get('type') == 'STOP_LOSS' and a.get('status') in ('NEAR', 'TRIGGERED'):
-        print(f'stop:{a[\"asset\"]}')
+        print(f'stop:{a[\"asset\"]}:{a[\"status\"]}')
     elif a.get('type') == 'PORTFOLIO_DRAWDOWN':
         print('drawdown')
 " 2>/dev/null | sort -u || true)
