@@ -1,61 +1,74 @@
 {
-  "generatedAt": "2026-10-20T07:00:18.309Z",
-  "balance": 4526.58,
-  "totalReturn": -9.47,
+  "generatedAt": "2026-10-20T10:00:16.612Z",
+  "balance": 4491.65,
+  "totalReturn": -10.17,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 118.85,
+      "currentPrice": 118.13,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 10.91,
+      "distancePct": 10.37,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 648.7,
+      "currentPrice": 641,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 21.57,
+      "distancePct": 20.63,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 55.42,
+      "currentPrice": 55.5,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 8.64,
+      "distancePct": 8.77,
       "status": "ACTIVE"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1496,
+      "currentPrice": 1457.4,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 8.23,
+      "distancePct": 5.8,
       "status": "ACTIVE"
     },
     {
       "asset": "VWCE",
       "type": "STOP_LOSS",
-      "currentPrice": 170.88,
+      "currentPrice": 169.62,
       "triggerPrice": 167.0091,
       "currency": "EUR",
-      "distancePct": 2.27,
+      "distancePct": 1.54,
       "status": "NEAR"
     },
     {
       "asset": "SIE",
       "type": "STOP_LOSS",
-      "currentPrice": 266.2,
+      "currentPrice": 256.1,
       "triggerPrice": 263.7792,
       "currency": "EUR",
-      "distancePct": 0.91,
-      "status": "NEAR"
+      "distancePct": -3,
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "SIE",
+      "type": "HIGH_VOLATILITY",
+      "change24h": -5.38,
+      "status": "INFO",
+      "detail": "SIE moved -5.38% in 24h"
+    },
+    {
+      "type": "PORTFOLIO_DRAWDOWN",
+      "pnlPct": -10.17,
+      "status": "WARNING",
+      "detail": "Portfolio down -10.2% from start"
     }
   ]
 }
