@@ -5,13 +5,67 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,519.81 |
-| Total Return | -9.60% |
-| Days Active | 240 |
+| Current Balance | €4,551.24 |
+| Total Return | -8.98% |
+| Days Active | 241 |
 
 ---
 
 ## Daily Log
+
+### Day 240 — October 21, 2026 21:30 CET
+
+**Balance:** €4,551.24 | **Total Return:** -9.0%
+**Day P&L:** +€31.43 (+0.7%) vs Day 239 (€4,519.81)
+
+**Prices at close:**
+- 4GLD: €118.60 (-0.21% 24h) — stop €105.88
+- XEON: €150.53 (+-0.00% 24h)
+- EQQQ: €649.40 (+0.11% 24h) — stop €508.78
+- ITX: €56.80 (+0.42% 24h) — stop €50.63
+- ASML: €1,493.80 (+2.64% 24h) — stop €1,372.87
+- VWCE: €171.32 (+0.26% 24h) — stop €167.01
+
+**Market context:**
+- EUR/USD: 0.8910
+- SP500: 7,757.86 (+0.87%)
+- NASDAQ: 26,709.63 (+1.05%)
+- GOLD: 4,136.50 (-0.15%)
+- IBEX35: 19,323.50 (+1.21%)
+- EUROSTOXX50: 6,207.52 (+1.40%)
+- DAX: 25,645.04 (+1.28%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,349.36 | 51.6% | +23.8% | +0.11% |
+| ITX | €1,110.73 | 24.4% | +6.3% | +0.42% |
+| XEON | €456.26 | 10.0% | +7.1% | +-0.00% |
+| CASH | €355.53 | 7.8% | — | — |
+| VWCE | €196.55 | 4.3% | +0.8% | +0.26% |
+| ASML | €82.79 | 1.8% | -3.9% | +2.64% |
+| 4GLD | €0.00 | 0.0% | -4.8% | -0.21% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.44% vs SMA50, VIX 17.38)
+- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, VWCE, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, TTE, DTE
+
+**Active alerts:**
+- 4GLD: stop EUR 105.88 (10.7% away)
+- EQQQ: stop EUR 508.78 (21.6% away)
+- ITX: stop EUR 50.63 (10.9% away)
+- ASML: stop EUR 1,372.87 (8.1% away)
+- VWCE: stop EUR 167.01 (2.5% away)
+
+**Analysis:**
+Broad risk-on rally: SP500 +0.87%, NASDAQ +1.05%, European indices up 1.2–1.4%, with ASML leading holdings at +2.64% and EQQQ edging higher. The portfolio gained +€31.43 (+0.7%) on the day, and the regime stays RISK-ON with VIX at 17.38. VWCE sits only 2.5% above its stop, but no stop was triggered.
+
+**HOLD — No hay órdenes de trading de execute-signals.js, así que se mantiene la cartera sin cambios.**
+
+---
+
 
 ### Day 239 — October 20, 2026 21:30 CET
 
