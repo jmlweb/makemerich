@@ -58,5 +58,17 @@
     "fee_eur": 0.13,
     "reason": "Stop-loss triggered: SIE EUR 256.10 <= stop EUR 263.78",
     "session": "stoploss-watch"
+  },
+  {
+    "date": "2026-10-22",
+    "time": "07:01 UTC",
+    "action": "BUY",
+    "asset": "TTE",
+    "units": 1.581829,
+    "price_eur": 80.9,
+    "amount_eur": 127.97,
+    "fee_eur": 0.13,
+    "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive",
+    "session": "makemerich-2130"
   }
 ]
