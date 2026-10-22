@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,551.11 |
-| Total Return | -8.98% |
+| Current Balance | €4,482.43 |
+| Total Return | -10.35% |
 | Days Active | 242 |
 
 ---
@@ -15,62 +15,63 @@
 
 ### Day 241 — October 22, 2026 21:30 CET
 
-**Balance:** €4,551.11 | **Total Return:** -9.0%
-**Day P&L:** €0.13 (-0.0%) vs Day 240 (€4,551.24)
+**Balance:** €4,482.43 | **Total Return:** -10.3%
+**Day P&L:** €68.81 (-1.5%) vs Day 240 (€4,551.24)
 
 **Prices at close:**
-- 4GLD: €118.60 (+0.25% 24h) — stop €105.88
-- XEON: €150.53 (+-0.00% 24h)
-- EQQQ: €649.40 (+1.01% 24h) — stop €508.78
-- ITX: €56.80 (+0.42% 24h) — stop €50.63
-- ASML: €1,493.80 (+2.64% 24h) — stop €1,372.87
-- VWCE: €171.32 (+0.56% 24h) — stop €167.01
-- TTE: €80.90 (+1.20% 24h) — stop €76.51
+- 4GLD: €116.37 (-1.63% 24h) — stop €105.88
+- XEON: €150.56 (+0.02% 24h)
+- EQQQ: €635.60 (-1.14% 24h) — stop €508.78
+- ITX: €56.24 (-0.99% 24h) — stop €50.63
+- ASML: €1,419.60 (-4.97% 24h) — stop €1,372.87
+- VWCE: €169.28 (-0.63% 24h) — stop €167.01
+- TTE: €79.98 (-1.14% 24h) — stop €76.51
 
 **Market context:**
 - EUR/USD: 0.8900
-- SP500: 7,757.17 (+0.86%)
-- NASDAQ: 26,702.86 (+1.03%)
-- GOLD: 4,109.90 (-0.97%)
-- IBEX35: 19,323.50 (+0.00%)
-- EUROSTOXX50: 6,207.52 (+0.00%)
-- DAX: 25,645.04 (+1.35%)
+- SP500: 7,655.82 (-0.74%)
+- NASDAQ: 26,000.18 (-1.61%)
+- GOLD: 4,043.80 (-2.56%)
+- IBEX35: 18,913.50 (-2.12%)
+- EUROSTOXX50: 6,087.01 (-1.94%)
+- DAX: 25,371.75 (+0.27%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,349.36 | 51.6% | +23.8% | +1.01% |
-| ITX | €1,110.73 | 24.4% | +6.3% | +0.42% |
-| XEON | €456.26 | 10.0% | +7.1% | +-0.00% |
-| CASH | €227.43 | 5.0% | — | — |
-| VWCE | €196.55 | 4.3% | +0.8% | +0.56% |
-| TTE | €127.97 | 2.8% | +0.0% | +1.20% |
-| ASML | €82.79 | 1.8% | -3.9% | +2.64% |
-| 4GLD | €0.00 | 0.0% | -4.8% | +0.25% |
+| EQQQ | €2,299.44 | 51.3% | +21.2% | -1.14% |
+| ITX | €1,099.78 | 24.5% | +5.2% | -0.99% |
+| XEON | €456.37 | 10.2% | +7.2% | +0.02% |
+| CASH | €227.43 | 5.1% | — | — |
+| VWCE | €194.21 | 4.3% | -0.4% | -0.63% |
+| TTE | €126.51 | 2.8% | -1.1% | -1.14% |
+| ASML | €78.68 | 1.8% | -8.7% | -4.97% |
+| 4GLD | €0.00 | 0.0% | -6.6% | -1.63% |
 
 **Trades:**
 - **BUY TTE**: 1.581829 units @ EUR 80.90 = EUR 127.97 (fee EUR 0.13)
   Reason: trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive
 
 **Quantitative signals (generate-quant-signals.js):**
-- Market regime: RISK-ON (SP500 +0.68% vs SMA50, VIX 16.68)
-- BUY: TTE
-- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, VWCE, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, DTE
+- Market regime: RISK-OFF (SP500 -0.19% vs SMA50, VIX 18.55)
+- HOLD: XEON, EQQQ, ITX, ASML, VWCE, TTE, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, DTE
+- SELL: 4GLD
 
 **Active alerts:**
-- 4GLD: stop EUR 105.88 (10.7% away)
-- EQQQ: stop EUR 508.78 (21.6% away)
-- ITX: stop EUR 50.63 (10.9% away)
-- ASML: stop EUR 1,372.87 (8.1% away)
-- VWCE: stop EUR 167.01 (2.5% away)
+- 4GLD: stop EUR 105.88 (9.0% away)
+- EQQQ: stop EUR 508.78 (19.9% away)
+- ITX: stop EUR 50.63 (10.0% away)
+- ASML: stop EUR 1,372.87 (3.3% away)
+- VWCE: stop EUR 167.01 (1.3% away)
+- TTE: stop EUR 76.51 (4.3% away)
+- Portfolio drawdown: -10.3%
 
 **Analysis:**
-Risk-on session: the S{{ANALYSIS}}P 500 (+0.86%), Nasdaq (+1.03%) and DAX (+1.35%) all rose, and the VIX is low at 16.68. Tech and semiconductors led the gains (EQQQ +1.01%, ASML +2.64%), while gold slipped 0.97%. The script's only order was a small TTE buy on a bullish trend and MACD, and the portfolio is almost flat at €4,551.11 (-9.0%).
+Risk-off session: Nasdaq fell 1.61%, the S{{ANALYSIS}}P 500 fell 0.74%, gold fell 2.56%, and the IBEX 35 and EuroStoxx 50 lost about 2%, while the DAX was flat. ASML dropped 4.97% and sits 3.3% above its stop, and VWCE is only 1.3% above its stop. The portfolio is down 10.3% from the start, with EQQQ at 51.3% of the portfolio.
 
-**BUY — La señal cuantitativa de TTE (tendencia alcista y MACD positivo) generó una orden ejecutada por el script, sin intervención discrecional.**
+**BUY — La única operación del día fue la compra de TTE (127,97 €) ordenada por las señales cuantitativas (tendencia alcista y MACD positivo); el resto se mantiene sin órdenes.**
 
 ---
-
 
 ### Day 240 — October 21, 2026 21:30 CET
 
