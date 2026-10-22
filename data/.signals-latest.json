@@ -1,61 +1,67 @@
 {
-  "generatedAt": "2026-10-17T08:00:21.718Z",
-  "balance": 4511.28,
-  "totalReturn": -9.77,
+  "generatedAt": "2026-10-22T19:30:04.879Z",
+  "balance": 4482.43,
+  "totalReturn": -10.35,
   "alerts": [
     {
       "asset": "4GLD",
       "type": "STOP_LOSS",
-      "currentPrice": 119.43,
+      "currentPrice": 116.37,
       "triggerPrice": 105.88,
       "currency": "EUR",
-      "distancePct": 11.35,
+      "distancePct": 9.01,
       "status": "ACTIVE"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 641.9,
+      "currentPrice": 635.6,
       "triggerPrice": 508.7824,
       "currency": "EUR",
-      "distancePct": 20.74,
+      "distancePct": 19.95,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 55.86,
+      "currentPrice": 56.24,
       "triggerPrice": 50.6326,
       "currency": "EUR",
-      "distancePct": 9.36,
+      "distancePct": 9.97,
       "status": "ACTIVE"
     },
     {
       "asset": "ASML",
       "type": "STOP_LOSS",
-      "currentPrice": 1477.2,
+      "currentPrice": 1419.6,
       "triggerPrice": 1372.8737,
       "currency": "EUR",
-      "distancePct": 7.06,
-      "status": "ACTIVE"
+      "distancePct": 3.29,
+      "status": "NEAR"
     },
     {
       "asset": "VWCE",
       "type": "STOP_LOSS",
-      "currentPrice": 170.44,
+      "currentPrice": 169.28,
       "triggerPrice": 167.0091,
       "currency": "EUR",
-      "distancePct": 2.01,
+      "distancePct": 1.34,
       "status": "NEAR"
     },
     {
-      "asset": "SIE",
+      "asset": "TTE",
       "type": "STOP_LOSS",
-      "currentPrice": 270.65,
-      "triggerPrice": 263.7792,
+      "currentPrice": 79.98,
+      "triggerPrice": 76.5114,
       "currency": "EUR",
-      "distancePct": 2.54,
+      "distancePct": 4.34,
       "status": "NEAR"
+    },
+    {
+      "type": "PORTFOLIO_DRAWDOWN",
+      "pnlPct": -10.35,
+      "status": "WARNING",
+      "detail": "Portfolio down -10.3% from start"
     }
   ]
 }

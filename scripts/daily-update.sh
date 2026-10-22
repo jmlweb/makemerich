@@ -15,10 +15,18 @@ send_tg() {
   node "$SEND_TG" "$1" || echo "Warning: telegram send failed"
 }
 
-# The daily close report is the one routine makemerich message Jose wants every
-# trading day, so it is always sent. Error paths use send_tg directly.
+# Jose only wants the daily close when something happened: a trade, a stop
+# within 5% (NEAR/TRIGGERED), a drawdown alert or a rule violation. A quiet HOLD
+# day is logged, not sent. Error paths use send_tg directly.
+# MAKEMERICH_NOTIFY=1 (on-demand run via /makemerich) forces the send.
 send_tg_routine() {
-  send_tg "$1"
+  local msg="$1"
+  local event="$2"
+  if [ "${MAKEMERICH_NOTIFY:-0}" = "1" ] || [ -n "$event" ]; then
+    send_tg "$msg"
+  else
+    echo "quiet daily close, report suppressed" | tee -a "$LOG_FILE"
+  fi
 }
 
 # Load nvm / node
@@ -230,7 +238,28 @@ for a in s.get('alerts', []):
         print(f'⚠️ Drawdown cartera {a[\"pnlPct\"]:.1f}%')
 " 2>/dev/null || true)
 
-ALERT_SIGNAL="$ALERTS"
+# Stops further than 5% away (status ACTIVE) are context, not an event. Keys carry
+# the status, so NEAR -> TRIGGERED is a new event. A stop
+# that stays NEAR for days is one event, so only states absent from the last
+# close count; the file is rewritten every close, so a stop that leaves NEAR and
+# comes back alerts again.
+CLOSE_ALERTS_FILE="$HOME/.config/hustle/state/makemerich-close-alerts"
+CURRENT_ALERTS=$("$VENV_PYTHON" -c "
+import json
+s = json.load(open('data/.signals-latest.json'))
+for a in s.get('alerts', []):
+    if a.get('type') == 'STOP_LOSS' and a.get('status') in ('NEAR', 'TRIGGERED'):
+        print(f'stop:{a[\"asset\"]}:{a[\"status\"]}')
+    elif a.get('type') == 'PORTFOLIO_DRAWDOWN':
+        print('drawdown')
+" 2>/dev/null | sort -u || true)
+PREVIOUS_ALERTS=$(cat "$CLOSE_ALERTS_FILE" 2>/dev/null || true)
+ALERT_SIGNAL=$(comm -13 <(echo "$PREVIOUS_ALERTS" | sed '/^$/d') <(echo "$CURRENT_ALERTS" | sed '/^$/d') | tr '\n' ' ')
+mkdir -p "$(dirname "$CLOSE_ALERTS_FILE")"
+echo "$CURRENT_ALERTS" > "$CLOSE_ALERTS_FILE"
+if [ "$DECISION_WORD" != "HOLD" ]; then
+  ALERT_SIGNAL="${ALERT_SIGNAL} decision:${DECISION_WORD}"
+fi
 if [ "${VIOLATION_COUNT:-0}" != "0" ]; then
   ALERT_SIGNAL="${ALERT_SIGNAL} violations:${VIOLATION_COUNT}"
 fi
