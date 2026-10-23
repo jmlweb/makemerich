@@ -2,14 +2,14 @@
   "date": "2026-10-23",
   "day": 242,
   "balance": {
-    "total": 4482.28,
+    "total": 4468.23,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -10.35,
+  "totalReturn": -10.64,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 150.563,
-      "value": 456.37,
-      "pnlPercent": 7.16,
-      "change24h": 0.024580471147826764
+      "currentPriceEUR": 150.578,
+      "value": 456.42,
+      "pnlPercent": 7.17,
+      "change24h": 0.03454552701858316
     },
     {
       "asset": "EQQQ",
@@ -34,10 +34,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.385101,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 635.6,
-      "value": 2151.57,
-      "pnlPercent": 21.16,
-      "change24h": -2.1250384970742155
+      "currentPriceEUR": 632.2,
+      "value": 2140.06,
+      "pnlPercent": 20.51,
+      "change24h": -2.6485987064982957
     },
     {
       "asset": "ITX",
@@ -45,10 +45,10 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 56.24,
-      "value": 1099.78,
-      "pnlPercent": 5.2,
-      "change24h": -0.9859154929577381
+      "currentPriceEUR": 56.04,
+      "value": 1095.87,
+      "pnlPercent": 4.83,
+      "change24h": -0.3556187766714133
     },
     {
       "asset": "ASML",
@@ -56,10 +56,10 @@
       "description": "ASML Holding — Semiconductor Equipment",
       "units": 0.055425,
       "entryPriceEUR": 1554,
-      "currentPriceEUR": 1419.6,
-      "value": 78.68,
-      "pnlPercent": -8.65,
-      "change24h": -4.967197750702908
+      "currentPriceEUR": 1404.6,
+      "value": 77.85,
+      "pnlPercent": -9.61,
+      "change24h": -1.0566356720202876
     },
     {
       "asset": "VWCE",
@@ -67,10 +67,10 @@
       "description": "Vanguard All-World UCITS",
       "units": 1.14727,
       "entryPriceEUR": 169.96,
-      "currentPriceEUR": 169.28,
-      "value": 194.21,
-      "pnlPercent": -0.4,
-      "change24h": -1.19075414429138
+      "currentPriceEUR": 168.98,
+      "value": 193.87,
+      "pnlPercent": -0.58,
+      "change24h": -1.365865047863649
     },
     {
       "asset": "TTE",
@@ -78,14 +78,14 @@
       "description": "TotalEnergies — Oil & Gas",
       "units": 1.581829,
       "entryPriceEUR": 80.9,
-      "currentPriceEUR": 79.98,
-      "value": 126.51,
-      "pnlPercent": -1.14,
-      "change24h": -1.1372064276885063
+      "currentPriceEUR": 81.56,
+      "value": 129.01,
+      "pnlPercent": 0.82,
+      "change24h": 1.9754938734683647
     }
   ],
   "metadata": {
-    "generatedAt": "2026-10-23T07:00:19.206Z",
+    "generatedAt": "2026-10-23T10:00:15.692Z",
     "eurUsd": 0.8928571428571428
   }
 }
