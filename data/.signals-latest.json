@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T19:30:04.879Z",
+  "generatedAt": "2026-10-23T07:00:18.137Z",
   "balance": 4482.43,
   "totalReturn": -10.35,
   "alerts": [
@@ -7,18 +7,18 @@
       "asset": "4GLD",
       "type": "STOP_LOSS",
       "currentPrice": 116.37,
-      "triggerPrice": 105.88,
+      "triggerPrice": 112.104,
       "currency": "EUR",
-      "distancePct": 9.01,
-      "status": "ACTIVE"
+      "distancePct": 3.67,
+      "status": "NEAR"
     },
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
       "currentPrice": 635.6,
-      "triggerPrice": 508.7824,
+      "triggerPrice": 572.04,
       "currency": "EUR",
-      "distancePct": 19.95,
+      "distancePct": 10,
       "status": "ACTIVE"
     },
     {
@@ -34,9 +34,9 @@
       "asset": "ASML",
       "type": "STOP_LOSS",
       "currentPrice": 1419.6,
-      "triggerPrice": 1372.8737,
+      "triggerPrice": 1398.6,
       "currency": "EUR",
-      "distancePct": 3.29,
+      "distancePct": 1.48,
       "status": "NEAR"
     },
     {

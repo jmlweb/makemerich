@@ -70,5 +70,29 @@
     "fee_eur": 0.13,
     "reason": "trend: SMA50 > SMA200 (bullish), price above SMA20, price above SMA50+200; macd: MACD histogram positive",
     "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-10-23",
+    "time": "07:00 UTC",
+    "action": "SELL",
+    "asset": "EQQQ",
+    "units": 0.232646,
+    "price_eur": 635.6,
+    "amount_eur": 147.87,
+    "fee_eur": 0.15,
+    "reason": "Single position at 51.3%, limit is 50%. Trimming EQQQ to 48%",
+    "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-10-23",
+    "time": "07:00 UTC",
+    "action": "SELL",
+    "asset": "4GLD",
+    "units": 0.00002,
+    "price_eur": 116.37,
+    "amount_eur": 0,
+    "fee_eur": 0,
+    "reason": "Dust cleanup: 0.00002 units worth EUR 0.00 left by partial sells",
+    "session": "makemerich-2130"
   }
 ]
