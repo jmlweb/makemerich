@@ -5,8 +5,8 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,482.28 |
-| Total Return | -10.35% |
+| Current Balance | €4,494.95 |
+| Total Return | -10.10% |
 | Days Active | 243 |
 
 ---
@@ -15,63 +15,61 @@
 
 ### Day 242 — October 23, 2026 21:30 CET
 
-**Balance:** €4,482.28 | **Total Return:** -10.3%
-**Day P&L:** €0.15 (-0.0%) vs Day 241 (€4,482.43)
+**Balance:** €4,494.95 | **Total Return:** -10.1%
+**Day P&L:** +€12.52 (+0.3%) vs Day 241 (€4,482.43)
 
 **Prices at close:**
-- XEON: €150.56 (+0.02% 24h)
-- EQQQ: €635.60 (-2.13% 24h) — stop €572.04
-- ITX: €56.24 (-0.99% 24h) — stop €50.63
-- ASML: €1,419.60 (-4.97% 24h) — stop €1,398.60
-- VWCE: €169.28 (-1.19% 24h) — stop €167.01
-- TTE: €79.98 (-1.14% 24h) — stop €76.51
+- XEON: €150.59 (+0.04% 24h)
+- EQQQ: €635.30 (-2.17% 24h) — stop €572.04
+- ITX: €56.74 (+0.89% 24h) — stop €51.07
+- VWCE: €169.30 (-1.18% 24h) — stop €167.01
+- TTE: €83.45 (+4.34% 24h) — stop €76.51
 
 **Market context:**
 - EUR/USD: 0.8920
-- SP500: 7,663.43 (-0.64%)
-- NASDAQ: 26,008.86 (-1.57%)
-- GOLD: 4,029.90 (-0.75%)
-- IBEX35: 18,913.50 (+0.00%)
-- EUROSTOXX50: 6,087.01 (+-0.00%)
-- DAX: 25,371.75 (-1.07%)
+- SP500: 7,629.16 (-1.65%)
+- NASDAQ: 25,969.50 (-2.75%)
+- GOLD: 4,009.70 (-1.25%)
+- IBEX35: 18,989.80 (+0.40%)
+- EUROSTOXX50: 6,068.22 (-0.31%)
+- DAX: 25,181.65 (-1.81%)
 
 **Performance by asset (vs entry):**
 | Asset | Value | % Portfolio | P&L entry | 24h |
 |-------|-------|-------------|-----------|-----|
-| EQQQ | €2,151.57 | 48.0% | +21.2% | -2.13% |
-| ITX | €1,099.78 | 24.5% | +5.2% | -0.99% |
-| XEON | €456.37 | 10.2% | +7.2% | +0.02% |
-| CASH | €375.15 | 8.4% | — | — |
-| VWCE | €194.21 | 4.3% | -0.4% | -1.19% |
-| TTE | €126.51 | 2.8% | -1.1% | -1.14% |
-| ASML | €78.68 | 1.8% | -8.7% | -4.97% |
+| EQQQ | €2,150.55 | 47.8% | +21.1% | -2.17% |
+| ITX | €1,109.56 | 24.7% | +6.1% | +0.89% |
+| XEON | €456.46 | 10.2% | +7.2% | +0.04% |
+| CASH | €452.14 | 10.1% | — | — |
+| VWCE | €194.23 | 4.3% | -0.4% | -1.18% |
+| TTE | €132.00 | 2.9% | +3.1% | +4.34% |
 
 **Trades:**
 - **SELL EQQQ**: 0.232646 units @ EUR 635.60 = EUR 147.87 (fee EUR 0.15)
   Reason: Single position at 51.3%, limit is 50%. Trimming EQQQ to 48%
 - **SELL 4GLD**: 0.00002 units @ EUR 116.37 = EUR 0.00 (fee EUR 0.00)
   Reason: Dust cleanup: 0.00002 units worth EUR 0.00 left by partial sells
+- **SELL ASML**: 0.055425 units @ EUR 1,390.60 = EUR 77.07 (fee EUR 0.08)
+  Reason: Stop-loss triggered: ASML EUR 1,390.60 <= stop EUR 1,398.60
 
 **Quantitative signals (generate-quant-signals.js):**
-- Market regime: RISK-OFF (SP500 -0.52% vs SMA50, VIX 19.03)
-- HOLD: 4GLD, XEON, EQQQ, ITX, ASML, VWCE, TTE, BTC, SOL, SXR8, SAP, MC, SIE, AIR, NOVO, ALV, DTE
+- Market regime: RISK-OFF (SP500 -0.99% vs SMA50, VIX 19.57)
+- BUY: ITX
+- HOLD: XEON, EQQQ, VWCE, TTE, BTC, SOL, SXR8, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
 
 **Active alerts:**
-- 4GLD: stop EUR 112.10 (3.7% away)
 - EQQQ: stop EUR 572.04 (10.0% away)
-- ITX: stop EUR 50.63 (10.0% away)
-- ASML: stop EUR 1,398.60 (1.5% away)
-- VWCE: stop EUR 167.01 (1.3% away)
-- TTE: stop EUR 76.51 (4.3% away)
-- Portfolio drawdown: -10.3%
+- ITX: stop EUR 51.07 (10.0% away)
+- VWCE: stop EUR 167.01 (1.4% away)
+- TTE: stop EUR 76.51 (8.3% away)
+- Portfolio drawdown: -10.1%
 
 **Analysis:**
-Risk-off tape deepened, with the Nasdaq down 1.57% and ASML falling 4.97%. That left ASML 1.5% above its stop and VWCE 1.3% above its stop, while the portfolio drawdown sits at -10.3%. The script trimmed EQQQ from 51.3% to 48% to restore the 50% position cap and cleaned up the 4GLD dust.
+Risk-off day: Nasdaq fell 2.75% and S{{ANALYSIS}}P 500 fell 1.65%, with EQQQ down 2.17% and VWCE down 1.18%. Europe held up better (IBEX +0.40%, EuroStoxx -0.31%), and TTE rose 4.34%. The portfolio finished slightly positive at +€12.52 despite the selloff. EQQQ was trimmed toward its 50% cap, ASML was stopped out, and VWCE now sits only 1.4% above its stop.
 
-**SELL — El script recortó EQQQ al 48% para cumplir el límite del 50% por posición y limpió el residuo de 4GLD.**
+**HOLD — Las órdenes del día (recorte de EQQQ, stop-loss de ASML) ya se ejecutaron y no quedan señales nuevas, así que se mantiene la cartera en régimen risk-off.**
 
 ---
-
 
 ### Day 241 — October 22, 2026 21:30 CET
 
