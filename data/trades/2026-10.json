@@ -88,11 +88,23 @@
     "time": "07:00 UTC",
     "action": "SELL",
     "asset": "4GLD",
-    "units": 0.00002,
+    "units": 2e-05,
     "price_eur": 116.37,
     "amount_eur": 0,
     "fee_eur": 0,
     "reason": "Dust cleanup: 0.00002 units worth EUR 0.00 left by partial sells",
     "session": "makemerich-2130"
+  },
+  {
+    "date": "2026-10-23",
+    "time": "13:30 UTC",
+    "action": "SELL",
+    "asset": "ASML",
+    "units": 0.055425,
+    "price_eur": 1390.6,
+    "amount_eur": 77.07,
+    "fee_eur": 0.08,
+    "reason": "Stop-loss triggered: ASML EUR 1,390.60 <= stop EUR 1,398.60",
+    "session": "stoploss-watch"
   }
 ]
