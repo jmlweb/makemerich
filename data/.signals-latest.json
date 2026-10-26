@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-26T11:00:14.484Z",
-  "balance": 4487.27,
-  "totalReturn": -10.25,
+  "generatedAt": "2026-10-26T14:30:05.572Z",
+  "balance": 4511.13,
+  "totalReturn": -9.78,
   "alerts": [
     {
       "asset": "EQQQ",
       "type": "STOP_LOSS",
-      "currentPrice": 632.5,
-      "triggerPrice": 572.04,
+      "currentPrice": 636.5,
+      "triggerPrice": 572.85,
       "currency": "EUR",
-      "distancePct": 9.56,
+      "distancePct": 10,
       "status": "ACTIVE"
     },
     {
       "asset": "ITX",
       "type": "STOP_LOSS",
-      "currentPrice": 56.9,
-      "triggerPrice": 51.21,
+      "currentPrice": 57.34,
+      "triggerPrice": 51.606,
       "currency": "EUR",
       "distancePct": 10,
       "status": "ACTIVE"
@@ -24,26 +24,20 @@
     {
       "asset": "VWCE",
       "type": "STOP_LOSS",
-      "currentPrice": 168.9,
+      "currentPrice": 169.8,
       "triggerPrice": 167.0091,
       "currency": "EUR",
-      "distancePct": 1.12,
+      "distancePct": 1.64,
       "status": "NEAR"
     },
     {
       "asset": "TTE",
       "type": "STOP_LOSS",
-      "currentPrice": 82.88,
+      "currentPrice": 83.3,
       "triggerPrice": 76.5114,
       "currency": "EUR",
-      "distancePct": 7.68,
+      "distancePct": 8.15,
       "status": "ACTIVE"
-    },
-    {
-      "type": "PORTFOLIO_DRAWDOWN",
-      "pnlPct": -10.25,
-      "status": "WARNING",
-      "detail": "Portfolio down -10.3% from start"
     }
   ]
 }

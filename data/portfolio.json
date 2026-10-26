@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T11:00:14.426Z",
+  "last_updated": "2026-10-26T14:30:05.503Z",
   "holdings": {
     "CASH": {
       "amount_eur": 452.14
@@ -7,53 +7,53 @@
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 150.6,
-      "amount_eur": 456.48,
-      "pnl_pct": 7.19,
+      "current_price_eur": 150.609,
+      "amount_eur": 456.51,
+      "pnl_pct": 7.2,
       "stop_loss_eur": null,
       "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
     },
     "EQQQ": {
       "units": 3.385101,
       "entry_price_eur": 524.6,
-      "current_price_eur": 632.5,
-      "amount_eur": 2141.08,
-      "pnl_pct": 20.57,
-      "stop_loss_eur": 572.04,
-      "high_price_eur": 635.6
+      "current_price_eur": 636.5,
+      "amount_eur": 2154.62,
+      "pnl_pct": 21.33,
+      "stop_loss_eur": 572.85,
+      "high_price_eur": 636.5
     },
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 56.9,
-      "amount_eur": 1112.69,
-      "pnl_pct": 6.43,
-      "stop_loss_eur": 51.21,
-      "high_price_eur": 56.9
+      "current_price_eur": 57.34,
+      "amount_eur": 1121.29,
+      "pnl_pct": 7.26,
+      "stop_loss_eur": 51.606,
+      "high_price_eur": 57.34
     },
     "VWCE": {
       "units": 1.14727,
       "entry_price_eur": 169.96,
-      "current_price_eur": 168.9,
-      "amount_eur": 193.77,
-      "pnl_pct": -0.62,
+      "current_price_eur": 169.8,
+      "amount_eur": 194.81,
+      "pnl_pct": -0.09,
       "stop_loss_eur": 167.0091,
       "high_price_eur": 169.96
     },
     "TTE": {
       "units": 1.581829,
       "entry_price_eur": 80.9,
-      "current_price_eur": 82.88,
-      "amount_eur": 131.1,
-      "pnl_pct": 2.45,
+      "current_price_eur": 83.3,
+      "amount_eur": 131.77,
+      "pnl_pct": 2.97,
       "stop_loss_eur": 76.5114,
       "high_price_eur": 83.45
     }
   },
   "totals": {
-    "balance_eur": 4487.27,
+    "balance_eur": 4511.13,
     "initial_eur": 5000,
-    "pnl_eur": -512.73,
-    "pnl_pct": -10.25
+    "pnl_eur": -488.87,
+    "pnl_pct": -9.78
   }
 }
