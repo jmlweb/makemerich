@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T08:00:17.125Z",
+  "last_updated": "2026-10-26T11:00:14.426Z",
   "holdings": {
     "CASH": {
       "amount_eur": 452.14
@@ -7,53 +7,53 @@
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 150.593,
-      "amount_eur": 456.46,
-      "pnl_pct": 7.18,
+      "current_price_eur": 150.6,
+      "amount_eur": 456.48,
+      "pnl_pct": 7.19,
       "stop_loss_eur": null,
       "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
     },
     "EQQQ": {
       "units": 3.385101,
       "entry_price_eur": 524.6,
-      "current_price_eur": 635.3,
-      "amount_eur": 2150.55,
-      "pnl_pct": 21.1,
+      "current_price_eur": 632.5,
+      "amount_eur": 2141.08,
+      "pnl_pct": 20.57,
       "stop_loss_eur": 572.04,
       "high_price_eur": 635.6
     },
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 56.74,
-      "amount_eur": 1109.56,
-      "pnl_pct": 6.14,
-      "stop_loss_eur": 51.066,
-      "high_price_eur": 56.74
+      "current_price_eur": 56.9,
+      "amount_eur": 1112.69,
+      "pnl_pct": 6.43,
+      "stop_loss_eur": 51.21,
+      "high_price_eur": 56.9
     },
     "VWCE": {
       "units": 1.14727,
       "entry_price_eur": 169.96,
-      "current_price_eur": 169.3,
-      "amount_eur": 194.23,
-      "pnl_pct": -0.39,
+      "current_price_eur": 168.9,
+      "amount_eur": 193.77,
+      "pnl_pct": -0.62,
       "stop_loss_eur": 167.0091,
       "high_price_eur": 169.96
     },
     "TTE": {
       "units": 1.581829,
       "entry_price_eur": 80.9,
-      "current_price_eur": 83.45,
-      "amount_eur": 132,
-      "pnl_pct": 3.15,
+      "current_price_eur": 82.88,
+      "amount_eur": 131.1,
+      "pnl_pct": 2.45,
       "stop_loss_eur": 76.5114,
       "high_price_eur": 83.45
     }
   },
   "totals": {
-    "balance_eur": 4494.95,
+    "balance_eur": 4487.27,
     "initial_eur": 5000,
-    "pnl_eur": -505.05,
-    "pnl_pct": -10.1
+    "pnl_eur": -512.73,
+    "pnl_pct": -10.25
   }
 }
