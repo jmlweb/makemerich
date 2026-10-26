@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,494.95 |
-| Total Return | -10.10% |
-| Days Active | 243 |
+| Current Balance | €4,524.11 |
+| Total Return | -9.52% |
+| Days Active | 246 |
 
 ---
 
 ## Daily Log
+
+### Day 245 — October 26, 2026 21:30 CET
+
+**Balance:** €4,524.11 | **Total Return:** -9.5%
+**Day P&L:** +€29.16 (+0.6%) vs Day 244 (€4,494.95)
+
+**Prices at close:**
+- XEON: €150.60 (+0.02% 24h)
+- EQQQ: €640.60 (+0.79% 24h) — stop €576.54
+- ITX: €57.24 (+0.88% 24h) — stop €51.61
+- VWCE: €170.00 (+0.43% 24h) — stop €167.01
+- TTE: €83.84 (+0.47% 24h) — stop €76.51
+
+**Market context:**
+- EUR/USD: 0.8920
+- SP500: 7,676.77 (+0.17%)
+- NASDAQ: 26,169.38 (+0.62%)
+- GOLD: 4,026.10 (+0.45%)
+- IBEX35: 19,033.30 (+0.23%)
+- EUROSTOXX50: 6,116.23 (+0.79%)
+- DAX: 25,410.84 (+0.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,168.50 | 47.9% | +22.1% | +0.79% |
+| ITX | €1,119.34 | 24.7% | +7.1% | +0.88% |
+| XEON | €456.47 | 10.1% | +7.2% | +0.02% |
+| CASH | €452.14 | 10.0% | — | — |
+| VWCE | €195.04 | 4.3% | +0.0% | +0.43% |
+| TTE | €132.62 | 2.9% | +3.6% | +0.47% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-OFF (SP500 -0.32% vs SMA50, VIX 19.63)
+- HOLD: XEON, EQQQ, ITX, VWCE, TTE, BTC, SOL, SXR8, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- EQQQ: stop EUR 576.54 (10.0% away)
+- ITX: stop EUR 51.61 (9.8% away)
+- VWCE: stop EUR 167.01 (1.8% away)
+- TTE: stop EUR 76.51 (8.7% away)
+
+**Analysis:**
+Equities closed higher across the board, with the Nasdaq up 0.62% and the EuroStoxx50 up 0.79%, which lifted EQQQ and ITX and added about €29 to the portfolio. The quant regime is still RISK-OFF (SP500 0.32% below its SMA50, VIX 19.63), and EQQQ at 47.9% sits close to its allocation cap. VWCE is the closest to its stop, only 1.8% away.
+
+**HOLD — no hay órdenes de trading en la salida de execute-signals.js y todas las señales cuantitativas indican mantener.**
+
+---
+
 
 ### Day 242 — October 23, 2026 21:30 CET
 
