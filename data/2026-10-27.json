@@ -2,14 +2,14 @@
   "date": "2026-10-27",
   "day": 246,
   "balance": {
-    "total": 4533.61,
+    "total": 4532.48,
     "currency": "EUR"
   },
   "change": {
     "absolute": 0,
     "percentage": 0
   },
-  "totalReturn": -9.33,
+  "totalReturn": -9.35,
   "positions": [
     {
       "asset": "CASH",
@@ -23,10 +23,10 @@
       "description": "Lyxor Smart Overnight Return (€STR)",
       "units": 3.0311,
       "entryPriceEUR": 140.5,
-      "currentPriceEUR": 150.62,
+      "currentPriceEUR": 150.619,
       "value": 456.54,
       "pnlPercent": 7.2,
-      "change24h": 0.017929120211440927
+      "change24h": 0.017265078722125505
     },
     {
       "asset": "EQQQ",
@@ -34,10 +34,10 @@
       "description": "Invesco NASDAQ-100 UCITS",
       "units": 3.385101,
       "entryPriceEUR": 524.6,
-      "currentPriceEUR": 644.2,
-      "value": 2180.68,
-      "pnlPercent": 22.8,
-      "change24h": 1.4009129545096948
+      "currentPriceEUR": 644,
+      "value": 2180.01,
+      "pnlPercent": 22.76,
+      "change24h": 1.3694317645207061
     },
     {
       "asset": "ITX",
@@ -45,10 +45,10 @@
       "description": "Inditex — Fashion Retail",
       "units": 19.555182,
       "entryPriceEUR": 53.46,
-      "currentPriceEUR": 57.12,
-      "value": 1116.99,
-      "pnlPercent": 6.85,
-      "change24h": -0.20964360587002892
+      "currentPriceEUR": 57.06,
+      "value": 1115.82,
+      "pnlPercent": 6.73,
+      "change24h": -0.31446540880503093
     },
     {
       "asset": "VWCE",
@@ -56,10 +56,10 @@
       "description": "Vanguard All-World UCITS",
       "units": 1.14727,
       "entryPriceEUR": 169.96,
-      "currentPriceEUR": 171,
-      "value": 196.18,
-      "pnlPercent": 0.61,
-      "change24h": 1.004134672179556
+      "currentPriceEUR": 170.68,
+      "value": 195.82,
+      "pnlPercent": 0.42,
+      "change24h": 0.815121086828113
     },
     {
       "asset": "TTE",
@@ -67,14 +67,14 @@
       "description": "TotalEnergies — Oil & Gas",
       "units": 1.581829,
       "entryPriceEUR": 80.9,
-      "currentPriceEUR": 82.86,
-      "value": 131.07,
-      "pnlPercent": 2.42,
-      "change24h": -1.168893129770997
+      "currentPriceEUR": 83.55,
+      "value": 132.16,
+      "pnlPercent": 3.28,
+      "change24h": -0.34589694656489295
     }
   ],
   "metadata": {
-    "generatedAt": "2026-10-27T11:00:32.999Z",
+    "generatedAt": "2026-10-27T14:30:49.746Z",
     "eurUsd": 0.8928571428571428
   }
 }

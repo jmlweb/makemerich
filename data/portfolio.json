@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T11:00:32.999Z",
+  "last_updated": "2026-10-27T14:30:49.746Z",
   "holdings": {
     "CASH": {
       "amount_eur": 452.14
@@ -7,7 +7,7 @@
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 150.62,
+      "current_price_eur": 150.619,
       "amount_eur": 456.54,
       "pnl_pct": 7.2,
       "stop_loss_eur": null,
@@ -16,44 +16,44 @@
     "EQQQ": {
       "units": 3.385101,
       "entry_price_eur": 524.6,
-      "current_price_eur": 644.2,
-      "amount_eur": 2180.68,
-      "pnl_pct": 22.8,
+      "current_price_eur": 644,
+      "amount_eur": 2180.01,
+      "pnl_pct": 22.76,
       "stop_loss_eur": 579.78,
       "high_price_eur": 644.2
     },
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 57.12,
-      "amount_eur": 1116.99,
-      "pnl_pct": 6.85,
+      "current_price_eur": 57.06,
+      "amount_eur": 1115.82,
+      "pnl_pct": 6.73,
       "stop_loss_eur": 51.606,
       "high_price_eur": 57.34
     },
     "VWCE": {
       "units": 1.14727,
       "entry_price_eur": 169.96,
-      "current_price_eur": 171,
-      "amount_eur": 196.18,
-      "pnl_pct": 0.61,
+      "current_price_eur": 170.68,
+      "amount_eur": 195.82,
+      "pnl_pct": 0.42,
       "stop_loss_eur": 167.0091,
       "high_price_eur": 171
     },
     "TTE": {
       "units": 1.581829,
       "entry_price_eur": 80.9,
-      "current_price_eur": 82.86,
-      "amount_eur": 131.07,
-      "pnl_pct": 2.42,
+      "current_price_eur": 83.55,
+      "amount_eur": 132.16,
+      "pnl_pct": 3.28,
       "stop_loss_eur": 76.5114,
       "high_price_eur": 83.84
     }
   },
   "totals": {
-    "balance_eur": 4533.61,
+    "balance_eur": 4532.48,
     "initial_eur": 5000,
-    "pnl_eur": -466.39,
-    "pnl_pct": -9.33
+    "pnl_eur": -467.52,
+    "pnl_pct": -9.35
   }
 }
