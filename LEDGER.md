@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,524.11 |
-| Total Return | -9.52% |
-| Days Active | 246 |
+| Current Balance | €4,555.29 |
+| Total Return | -8.89% |
+| Days Active | 247 |
 
 ---
 
 ## Daily Log
+
+### Day 246 — October 27, 2026 21:30 CET
+
+**Balance:** €4,555.29 | **Total Return:** -8.9%
+**Day P&L:** +€31.18 (+0.7%) vs Day 245 (€4,524.11)
+
+**Prices at close:**
+- XEON: €150.62 (+0.02% 24h)
+- EQQQ: €651.00 (+2.47% 24h) — stop €585.90
+- ITX: €57.00 (-0.42% 24h) — stop €51.61
+- VWCE: €171.68 (+1.41% 24h) — stop €167.01
+- TTE: €83.00 (-1.00% 24h) — stop €76.51
+
+**Market context:**
+- EUR/USD: 0.8940
+- SP500: 7,722.60 (+1.30%)
+- NASDAQ: 26,477.81 (+2.01%)
+- GOLD: 4,073.20 (+0.86%)
+- IBEX35: 19,160.60 (+0.67%)
+- EUROSTOXX50: 6,164.69 (+0.79%)
+- DAX: 25,590.77 (+1.62%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,203.70 | 48.4% | +24.1% | +2.47% |
+| ITX | €1,114.65 | 24.5% | +6.6% | -0.42% |
+| XEON | €456.54 | 10.0% | +7.2% | +0.02% |
+| CASH | €452.14 | 9.9% | — | — |
+| VWCE | €196.96 | 4.3% | +1.0% | +1.41% |
+| TTE | €131.29 | 2.9% | +2.6% | -1.00% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-OFF (SP500 -0.02% vs SMA50, VIX 18.45)
+- HOLD: XEON, EQQQ, ITX, VWCE, TTE, BTC, SOL, SXR8, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- EQQQ: stop EUR 585.90 (10.0% away)
+- ITX: stop EUR 51.61 (9.5% away)
+- VWCE: stop EUR 167.01 (2.7% away)
+- TTE: stop EUR 76.51 (7.8% away)
+
+**Analysis:**
+Broad risk-on rally: NASDAQ +2.01%, SP500 +1.30% and DAX +1.62% lifted EQQQ +2.47% and the portfolio +0.7% on the day, even though the regime is still RISK-OFF (SP500 flat vs SMA50). VWCE is the closest to its stop (2.7% away), while the other positions keep a comfortable cushion of 7.8–10.0%. EQQQ is at 48.4% of the portfolio, near the cap, so the rally increases concentration risk.
+
+**HOLD — no hay órdenes de trading en execute-signals.js y todas las señales cuantitativas indican mantener.**
+
+---
+
 
 ### Day 245 — October 26, 2026 21:30 CET
 
