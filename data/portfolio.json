@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T14:30:49.746Z",
+  "last_updated": "2026-10-27T14:32:19.494Z",
   "holdings": {
     "CASH": {
       "amount_eur": 452.14
@@ -25,35 +25,35 @@
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 57.06,
-      "amount_eur": 1115.82,
-      "pnl_pct": 6.73,
+      "current_price_eur": 57.04,
+      "amount_eur": 1115.43,
+      "pnl_pct": 6.7,
       "stop_loss_eur": 51.606,
       "high_price_eur": 57.34
     },
     "VWCE": {
       "units": 1.14727,
       "entry_price_eur": 169.96,
-      "current_price_eur": 170.68,
-      "amount_eur": 195.82,
-      "pnl_pct": 0.42,
+      "current_price_eur": 170.6,
+      "amount_eur": 195.72,
+      "pnl_pct": 0.38,
       "stop_loss_eur": 167.0091,
       "high_price_eur": 171
     },
     "TTE": {
       "units": 1.581829,
       "entry_price_eur": 80.9,
-      "current_price_eur": 83.55,
-      "amount_eur": 132.16,
-      "pnl_pct": 3.28,
+      "current_price_eur": 83.56,
+      "amount_eur": 132.18,
+      "pnl_pct": 3.29,
       "stop_loss_eur": 76.5114,
       "high_price_eur": 83.84
     }
   },
   "totals": {
-    "balance_eur": 4532.48,
+    "balance_eur": 4532.02,
     "initial_eur": 5000,
-    "pnl_eur": -467.52,
-    "pnl_pct": -9.35
+    "pnl_eur": -467.98,
+    "pnl_pct": -9.36
   }
 }
