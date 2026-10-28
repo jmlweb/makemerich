@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28T14:30:06.036Z",
+  "last_updated": "2026-10-28T17:00:05.798Z",
   "holdings": {
     "CASH": {
       "amount_eur": 452.14
@@ -7,53 +7,53 @@
     "XEON": {
       "units": 3.0311,
       "entry_price_eur": 140.5,
-      "current_price_eur": 150.63,
-      "amount_eur": 456.57,
-      "pnl_pct": 7.21,
+      "current_price_eur": 150.638,
+      "amount_eur": 456.6,
+      "pnl_pct": 7.22,
       "stop_loss_eur": null,
       "note": "Lyxor Smart Overnight Return UCITS ETF — money market EUR, ~3.5% APY"
     },
     "EQQQ": {
       "units": 3.385101,
       "entry_price_eur": 524.6,
-      "current_price_eur": 652,
-      "amount_eur": 2207.09,
-      "pnl_pct": 24.29,
+      "current_price_eur": 651.2,
+      "amount_eur": 2204.38,
+      "pnl_pct": 24.13,
       "stop_loss_eur": 588.87,
       "high_price_eur": 654.3
     },
     "ITX": {
       "units": 19.555182,
       "entry_price_eur": 53.46,
-      "current_price_eur": 57.44,
-      "amount_eur": 1123.25,
-      "pnl_pct": 7.44,
+      "current_price_eur": 57.08,
+      "amount_eur": 1116.21,
+      "pnl_pct": 6.77,
       "stop_loss_eur": 51.696,
       "high_price_eur": 57.44
     },
     "VWCE": {
       "units": 1.14727,
       "entry_price_eur": 169.96,
-      "current_price_eur": 172.08,
-      "amount_eur": 197.42,
-      "pnl_pct": 1.25,
+      "current_price_eur": 171.94,
+      "amount_eur": 197.26,
+      "pnl_pct": 1.16,
       "stop_loss_eur": 167.0091,
       "high_price_eur": 172.08
     },
     "TTE": {
       "units": 1.581829,
       "entry_price_eur": 80.9,
-      "current_price_eur": 83.32,
-      "amount_eur": 131.8,
-      "pnl_pct": 2.99,
+      "current_price_eur": 83.6,
+      "amount_eur": 132.24,
+      "pnl_pct": 3.34,
       "stop_loss_eur": 76.5114,
       "high_price_eur": 83.84
     }
   },
   "totals": {
-    "balance_eur": 4568.27,
+    "balance_eur": 4558.83,
     "initial_eur": 5000,
-    "pnl_eur": -431.73,
-    "pnl_pct": -8.63
+    "pnl_eur": -441.17,
+    "pnl_pct": -8.82
   }
 }
