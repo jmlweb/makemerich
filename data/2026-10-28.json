@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-28",
+  "day": 247,
+  "balance": {
+    "total": 4555.29,
+    "currency": "EUR"
+  },
+  "change": {
+    "absolute": 0,
+    "percentage": 0
+  },
+  "totalReturn": -8.89,
+  "positions": [
+    {
+      "asset": "CASH",
+      "type": "Cash",
+      "value": 452.14,
+      "pnlPercent": 0
+    },
+    {
+      "asset": "XEON",
+      "type": "ETF",
+      "description": "Lyxor Smart Overnight Return (€STR)",
+      "units": 3.0311,
+      "entryPriceEUR": 140.5,
+      "currentPriceEUR": 150.62,
+      "value": 456.54,
+      "pnlPercent": 7.2,
+      "change24h": 0.015272548589942782
+    },
+    {
+      "asset": "EQQQ",
+      "type": "ETF",
+      "description": "Invesco NASDAQ-100 UCITS",
+      "units": 3.385101,
+      "entryPriceEUR": 524.6,
+      "currentPriceEUR": 651,
+      "value": 2203.7,
+      "pnlPercent": 24.09,
+      "change24h": 1.6234779893849478
+    },
+    {
+      "asset": "ITX",
+      "type": "Stock",
+      "description": "Inditex — Fashion Retail",
+      "units": 19.555182,
+      "entryPriceEUR": 53.46,
+      "currentPriceEUR": 57,
+      "value": 1114.65,
+      "pnlPercent": 6.62,
+      "change24h": -0.4192872117400454
+    },
+    {
+      "asset": "VWCE",
+      "type": "ETF",
+      "description": "Vanguard All-World UCITS",
+      "units": 1.14727,
+      "entryPriceEUR": 169.96,
+      "currentPriceEUR": 171.68,
+      "value": 196.96,
+      "pnlPercent": 1.01,
+      "change24h": 0.9882352941176511
+    },
+    {
+      "asset": "TTE",
+      "type": "Stock",
+      "description": "TotalEnergies — Oil & Gas",
+      "units": 1.581829,
+      "entryPriceEUR": 80.9,
+      "currentPriceEUR": 83,
+      "value": 131.29,
+      "pnlPercent": 2.6,
+      "change24h": -1.001908396946569
+    }
+  ],
+  "metadata": {
+    "generatedAt": "2026-10-28T08:00:17.147Z",
+    "eurUsd": 0.9009009009009008
+  }
+}
