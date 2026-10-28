@@ -5,13 +5,64 @@
 | Metric | Value |
 |--------|-------|
 | Starting Capital | €5,000.00 |
-| Current Balance | €4,555.29 |
-| Total Return | -8.89% |
-| Days Active | 247 |
+| Current Balance | €4,558.83 |
+| Total Return | -8.82% |
+| Days Active | 248 |
 
 ---
 
 ## Daily Log
+
+### Day 247 — October 28, 2026 21:30 CET
+
+**Balance:** €4,558.83 | **Total Return:** -8.8%
+**Day P&L:** +€3.54 (+0.1%) vs Day 246 (€4,555.29)
+
+**Prices at close:**
+- XEON: €150.64 (+0.03% 24h)
+- EQQQ: €651.20 (+1.65% 24h) — stop €588.87
+- ITX: €57.08 (+0.14% 24h) — stop €51.70
+- VWCE: €171.94 (+1.14% 24h) — stop €167.01
+- TTE: €83.60 (+0.72% 24h) — stop €76.51
+
+**Market context:**
+- EUR/USD: 0.8970
+- SP500: 7,743.98 (+0.88%)
+- NASDAQ: 26,549.85 (+1.45%)
+- GOLD: 4,081.60 (+0.17%)
+- IBEX35: 18,883.50 (-1.45%)
+- EUROSTOXX50: 6,167.81 (+0.05%)
+- DAX: 25,704.02 (+1.15%)
+
+**Performance by asset (vs entry):**
+| Asset | Value | % Portfolio | P&L entry | 24h |
+|-------|-------|-------------|-----------|-----|
+| EQQQ | €2,204.38 | 48.4% | +24.1% | +1.65% |
+| ITX | €1,116.21 | 24.5% | +6.8% | +0.14% |
+| XEON | €456.60 | 10.0% | +7.2% | +0.03% |
+| CASH | €452.14 | 9.9% | — | — |
+| VWCE | €197.26 | 4.3% | +1.2% | +1.14% |
+| TTE | €132.24 | 2.9% | +3.3% | +0.72% |
+
+**Trades today:** None.
+
+**Quantitative signals (generate-quant-signals.js):**
+- Market regime: RISK-ON (SP500 +0.46% vs SMA50, VIX 17.52)
+- HOLD: XEON, EQQQ, ITX, VWCE, TTE, BTC, SOL, SXR8, SAP, ASML, MC, SIE, AIR, NOVO, ALV, DTE
+
+**Active alerts:**
+- EQQQ: stop EUR 588.87 (9.6% away)
+- ITX: stop EUR 51.70 (9.4% away)
+- VWCE: stop EUR 167.01 (2.9% away)
+- TTE: stop EUR 76.51 (8.5% away)
+
+**Analysis:**
+Risk assets rallied broadly, with the SP500 up 0.88% and the NASDAQ up 1.45%, while the IBEX35 fell 1.45% against gains in the DAX and EUROSTOXX50. EQQQ rose 1.65% and VWCE 1.14%, which lifted the portfolio by only +€3.54 because 48.4% of it sits in EQQQ and the rest is mostly flat XEON, cash and ITX. The regime remains RISK-ON and every position is far from its stop except VWCE, which sits 2.9% above its €167.01 stop.
+
+**HOLD — no hay órdenes de trade en la salida de las señales cuantitativas, así que se mantiene la cartera sin cambios.**
+
+---
+
 
 ### Day 246 — October 27, 2026 21:30 CET
 
