@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 0 |
+| Pending | 3 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -17,6 +17,9 @@ _No active tasks._
 
 | ID | Title | Priority | Tags | Created |
 |----|-------|----------|------|---------|
+| TSK-005 | Fix: session.sh and stoploss-watch.sh commit data/ without running validate-data.js | P3 |  | 2026-10-29 |
+| TSK-006 | Fix: stoploss-watch.sh never refreshes prices, so the 5-minute stop check only sees session snapshots | P3 |  | 2026-10-29 |
+| TSK-007 | Fix: apply-trades.js labels every pipeline trade session makemerich-2130 | P4 |  | 2026-10-29 |
 
 ## Recently Completed
 
