@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 7 |
+| Pending | 8 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -24,6 +24,7 @@ _No active tasks._
 | TSK-009 | Fix: apply-trades.js resets entry_price to market price when a BUY averages into an existing position | P2 | apply-trades, data-integrity | 2026-11-04 |
 | TSK-010 | Fix: pre-session-summary.sh drops NEAR and TRIGGERED stop-loss alerts from the session-start summary | P4 | pre-session, signals | 2026-11-04 |
 | TSK-011 | Fix: check-alerts.js uses a -20% stop-loss threshold while RULES.md sets -15% | P4 | check-alerts, rules | 2026-11-04 |
+| TSK-012 | Fix: execute-signals.js lets several BUYs in one run breach the 30% high-risk and 15% inverse limits | P2 |  | 2026-11-04 |
 
 ## Recently Completed
 
