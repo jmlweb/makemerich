@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 4 |
+| Pending | 7 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -21,6 +21,9 @@ _No active tasks._
 | TSK-006 | Fix: stoploss-watch.sh never refreshes prices, so the 5-minute stop check only sees session snapshots | P3 |  | 2026-10-29 |
 | TSK-007 | Fix: apply-trades.js labels every pipeline trade session makemerich-2130 | P4 |  | 2026-10-29 |
 | TSK-008 | Fix: Live BUY/SELL path charges crypto 0.1% fee while RULES.md and stoploss-watch.sh charge 0.5% | P3 |  | 2026-11-01 |
+| TSK-009 | Fix: apply-trades.js resets entry_price to market price when a BUY averages into an existing position | P2 | apply-trades, data-integrity | 2026-11-04 |
+| TSK-010 | Fix: pre-session-summary.sh drops NEAR and TRIGGERED stop-loss alerts from the session-start summary | P4 | pre-session, signals | 2026-11-04 |
+| TSK-011 | Fix: check-alerts.js uses a -20% stop-loss threshold while RULES.md sets -15% | P4 | check-alerts, rules | 2026-11-04 |
 
 ## Recently Completed
 
