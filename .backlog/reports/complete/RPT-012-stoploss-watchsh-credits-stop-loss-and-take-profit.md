@@ -1,12 +1,12 @@
 ---
-id: RPT-011
+id: RPT-012
 title: stoploss-watch.sh credits stop-loss and take-profit proceeds from the stale amount_eur, not units x trigger price
 type: bug
 severity: low
 status: triaged
 created: 2026-11-10
 triaged: 2026-11-10
-task-id: TSK-015
+task-id: TSK-016
 ---
 
 ## Observed

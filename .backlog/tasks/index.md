@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 11 |
+| Pending | 12 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -25,9 +25,10 @@ _No active tasks._
 | TSK-010 | Fix: pre-session-summary.sh drops NEAR and TRIGGERED stop-loss alerts from the session-start summary | P4 | pre-session, signals | 2026-11-04 |
 | TSK-011 | Fix: check-alerts.js uses a -20% stop-loss threshold while RULES.md sets -15% | P4 | check-alerts, rules | 2026-11-04 |
 | TSK-012 | Fix: execute-signals.js lets several BUYs in one run breach the 30% high-risk and 15% inverse limits | P2 |  | 2026-11-04 |
-| TSK-013 | Fix: update-portfolio.js zeroes the daily change on every same-day rerun, so every daily file records 0% | P3 |  | 2026-11-10 |
-| TSK-014 | Fix: generate-summary.js reports CASH as the best or worst position in the daily summary | P4 |  | 2026-11-10 |
-| TSK-015 | Fix: stoploss-watch.sh credits stop-loss and take-profit proceeds from the stale amount_eur, not units x trigger price | P4 |  | 2026-11-10 |
+| TSK-013 | Fix: update-portfolio.js zeroes the daily change on every re-run of the same day | P3 |  | 2026-11-12 |
+| TSK-014 | Fix: fetch-prices.js exits 0 and writes a fresh-stamped empty price file when every fetch fails | P3 |  | 2026-11-12 |
+| TSK-015 | Fix: generate-summary.js reports CASH as the best or worst position in the daily summary | P4 |  | 2026-11-10 |
+| TSK-016 | Fix: stoploss-watch.sh credits stop-loss and take-profit proceeds from the stale amount_eur, not units x trigger price | P4 |  | 2026-11-10 |
 
 ## Recently Completed
 

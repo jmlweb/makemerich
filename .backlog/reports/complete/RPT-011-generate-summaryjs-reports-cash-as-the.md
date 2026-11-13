@@ -1,12 +1,12 @@
 ---
-id: RPT-010
+id: RPT-011
 title: generate-summary.js reports CASH as the best or worst position in the daily summary
 type: bug
 severity: low
 status: triaged
 created: 2026-11-10
 triaged: 2026-11-10
-task-id: TSK-014
+task-id: TSK-015
 ---
 
 ## Observed

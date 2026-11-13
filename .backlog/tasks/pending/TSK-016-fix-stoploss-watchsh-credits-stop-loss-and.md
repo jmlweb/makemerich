@@ -1,11 +1,11 @@
 ---
-id: TSK-015
+id: TSK-016
 title: Fix: stoploss-watch.sh credits stop-loss and take-profit proceeds from the stale amount_eur, not units x trigger price
 status: pending
 priority: P4
 tags: []
 created: 2026-11-10
-source: report/RPT-011
+source: report/RPT-012
 depends-on: []
 ---
 
@@ -13,7 +13,7 @@ depends-on: []
 
 ## Description
 
-See RPT-011. `scripts/stoploss-watch.sh:108` and `:150` credit cash from the holding's `amount_eur` (last `update-portfolio.js` valuation) while the trade record logs the trigger price. Gaps are cents today (SIE 2026-09-10: 210.78 vs 210.82). They grow once TSK-006 makes the watcher refresh prices between sessions. Land this before or with TSK-006.
+See RPT-012. `scripts/stoploss-watch.sh:108` and `:150` credit cash from the holding's `amount_eur` (last `update-portfolio.js` valuation) while the trade record logs the trigger price. Gaps are cents today (SIE 2026-09-10: 210.78 vs 210.82). They grow once TSK-006 makes the watcher refresh prices between sessions. Land this before or with TSK-006.
 
 ## Acceptance Criteria
 
