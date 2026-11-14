@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 12 |
+| Pending | 13 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -29,6 +29,7 @@ _No active tasks._
 | TSK-014 | Fix: fetch-prices.js exits 0 and writes a fresh-stamped empty price file when every fetch fails | P3 |  | 2026-11-12 |
 | TSK-015 | Fix: generate-summary.js reports CASH as the best or worst position in the daily summary | P4 |  | 2026-11-10 |
 | TSK-016 | Fix: stoploss-watch.sh credits stop-loss and take-profit proceeds from the stale amount_eur, not units x trigger price | P4 |  | 2026-11-10 |
+| TSK-017 | Fix: NOVO BUY gets a DKK stop price stored as stop_loss_eur, so stoploss-watch.sh sells it within 5 minutes | P2 |  | 2026-11-14 |
 
 ## Recently Completed
 
