@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 15 |
+| Pending | 16 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -32,6 +32,7 @@ _No active tasks._
 | TSK-017 | Fix: NOVO BUY gets a DKK stop price stored as stop_loss_eur, so stoploss-watch.sh sells it within 5 minutes | P2 |  | 2026-11-14 |
 | TSK-018 | Fix: _send-telegram.js hardcodes a personal Telegram chat ID in the public repo | P3 |  | 2026-11-18 |
 | TSK-019 | Fix: session.sh and daily-update.sh glob only data/2026-*.json, so January 2027 day change compares against 2026-12-31 | P4 |  | 2026-11-18 |
+| TSK-020 | Fix: apply-trades.js re-applies a stale .trade-orders.json when execute-signals.js fails | P2 |  | 2026-11-16 |
 
 ## Recently Completed
 
