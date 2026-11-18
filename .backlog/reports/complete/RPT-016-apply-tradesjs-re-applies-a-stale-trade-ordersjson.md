@@ -1,12 +1,12 @@
 ---
-id: RPT-014
+id: RPT-016
 title: apply-trades.js re-applies a stale .trade-orders.json when execute-signals.js fails
 type: bug
 severity: high
 status: triaged
 created: 2026-11-16
 triaged: 2026-11-16
-task-id: TSK-018
+task-id: TSK-020
 ---
 
 ## Summary
