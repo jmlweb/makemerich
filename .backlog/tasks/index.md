@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 13 |
+| Pending | 15 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -30,6 +30,8 @@ _No active tasks._
 | TSK-015 | Fix: generate-summary.js reports CASH as the best or worst position in the daily summary | P4 |  | 2026-11-10 |
 | TSK-016 | Fix: stoploss-watch.sh credits stop-loss and take-profit proceeds from the stale amount_eur, not units x trigger price | P4 |  | 2026-11-10 |
 | TSK-017 | Fix: NOVO BUY gets a DKK stop price stored as stop_loss_eur, so stoploss-watch.sh sells it within 5 minutes | P2 |  | 2026-11-14 |
+| TSK-018 | Fix: _send-telegram.js hardcodes a personal Telegram chat ID in the public repo | P3 |  | 2026-11-18 |
+| TSK-019 | Fix: session.sh and daily-update.sh glob only data/2026-*.json, so January 2027 day change compares against 2026-12-31 | P4 |  | 2026-11-18 |
 
 ## Recently Completed
 
