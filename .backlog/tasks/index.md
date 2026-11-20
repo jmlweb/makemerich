@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 18 |
+| Pending | 19 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -35,6 +35,7 @@ _No active tasks._
 | TSK-020 | Fix: apply-trades.js re-applies a stale .trade-orders.json when execute-signals.js fails | P2 |  | 2026-11-16 |
 | TSK-021 | Fix: validate-data.js check 5 accepts any unit change as long as one trade exists in the window | P3 |  | 2026-11-18 |
 | TSK-022 | Fix: session.sh stop-loss and drawdown alert lines are always empty because the JSON parse always fails | P4 |  | 2026-11-18 |
+| TSK-023 | Fix: Pipeline git push is rejected non-fast-forward since 2026-10-29 and only logs a warning | P2 |  | 2026-11-20 |
 
 ## Recently Completed
 
