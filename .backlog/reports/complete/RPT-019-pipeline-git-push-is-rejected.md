@@ -36,7 +36,7 @@ Warning: git push failed
 
 `/tmp/makemerich-session.log` holds 22 `Warning: git push failed` lines.
 
-On GitHub, `origin/main` holds no `data/` commit after `f916f7e log: Day 247 — HOLD, portfolio summary (2026-10-28)`. `data/portfolio.json` `last_updated` is `2026-10-28T20:30:04Z`, and the newest daily file is `data/2026-10-28.json`. The local pipeline is at Day 270, so 23 trading days of daily files, LEDGER entries and README updates have not reached the public repo.
+On GitHub, `origin/main` holds no `data/` commit after `f916f7e log: Day 247 — HOLD, portfolio summary (2026-10-28)`. `data/portfolio.json` `last_updated` is `2026-10-28T20:30:04Z`, and the newest daily file is `data/2026-10-28.json`. The local pipeline is at Day 270, so 23 calendar days of daily files, LEDGER entries and README updates have not reached the public repo.
 
 ## Impact
 
