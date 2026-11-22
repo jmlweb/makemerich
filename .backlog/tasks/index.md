@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 19 |
+| Pending | 20 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -36,6 +36,7 @@ _No active tasks._
 | TSK-021 | Fix: validate-data.js check 5 accepts any unit change as long as one trade exists in the window | P3 |  | 2026-11-18 |
 | TSK-022 | Fix: session.sh stop-loss and drawdown alert lines are always empty because the JSON parse always fails | P4 |  | 2026-11-18 |
 | TSK-023 | Fix: Pipeline git push is rejected non-fast-forward since 2026-10-29 and only logs a warning | P2 |  | 2026-11-20 |
+| TSK-024 | Fix: execute-signals.js skips regime gating when regime is unknown, allowing BUYs during a VIX/SP500 data outage | P3 |  | 2026-11-22 |
 
 ## Recently Completed
 
