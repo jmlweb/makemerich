@@ -1,12 +1,12 @@
 ---
-id: RPT-020
+id: RPT-022
 title: execute-signals.js skips regime gating when regime is unknown, allowing BUYs during a VIX/SP500 data outage
 type: bug
 severity: medium
 status: triaged
 created: 2026-11-22
 triaged: 2026-11-22
-task-id: TSK-024
+task-id: TSK-026
 ---
 
 ## Summary

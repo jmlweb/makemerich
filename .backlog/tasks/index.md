@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 20 |
+| Pending | 22 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -36,7 +36,9 @@ _No active tasks._
 | TSK-021 | Fix: validate-data.js check 5 accepts any unit change as long as one trade exists in the window | P3 |  | 2026-11-18 |
 | TSK-022 | Fix: session.sh stop-loss and drawdown alert lines are always empty because the JSON parse always fails | P4 |  | 2026-11-18 |
 | TSK-023 | Fix: Pipeline git push is rejected non-fast-forward since 2026-10-29 and only logs a warning | P2 |  | 2026-11-20 |
-| TSK-024 | Fix: execute-signals.js skips regime gating when regime is unknown, allowing BUYs during a VIX/SP500 data outage | P3 |  | 2026-11-22 |
+| TSK-024 | Fix: update-readme.js computes README position allocation against starting capital, not current balance | P3 |  | 2026-11-24 |
+| TSK-025 | Fix: append-ledger.js and update-readme.js chart derive day number from file count, off by one versus the day field | P4 |  | 2026-11-24 |
+| TSK-026 | Fix: execute-signals.js skips regime gating when regime is unknown, allowing BUYs during a VIX/SP500 data outage | P3 |  | 2026-11-22 |
 
 ## Recently Completed
 
