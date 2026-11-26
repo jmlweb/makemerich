@@ -4,7 +4,7 @@
 
 | Status | Count |
 |--------|-------|
-| Pending | 22 |
+| Pending | 24 |
 | Active | 0 |
 | Blocked | 0 |
 | Complete | 4 |
@@ -39,6 +39,8 @@ _No active tasks._
 | TSK-024 | Fix: update-readme.js computes README position allocation against starting capital, not current balance | P3 |  | 2026-11-24 |
 | TSK-025 | Fix: append-ledger.js and update-readme.js chart derive day number from file count, off by one versus the day field | P4 |  | 2026-11-24 |
 | TSK-026 | Fix: execute-signals.js skips regime gating when regime is unknown, allowing BUYs during a VIX/SP500 data outage | P3 |  | 2026-11-22 |
+| TSK-027 | Fix: generate-quant-signals.js classifies boundary scores with strict comparisons, diverging from RULES.md and backtest.js | P3 |  | 2026-11-26 |
+| TSK-028 | Fix: fetch-history.js treats any cache whose last bar is today as fresh, so later sessions reuse the first same-day fetch | P3 |  | 2026-11-26 |
 
 ## Recently Completed
 
